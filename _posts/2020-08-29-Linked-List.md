@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  “Linked List Notes (First Blog)"
+title:  Linked List Notes (First Blog)
 date:   2020-08-29 19:40:57 -0400
 categories: note
 ---
