@@ -3,17 +3,22 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://foxisawesome.github.io/posts/first-post-linked-list/</loc>
-    <lastmod>2020-08-30T16:54:06-04:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://foxisawesome.github.io/</loc>
-    <lastmod>2020-08-30T16:54:06-04:00</lastmod>
+    <lastmod>2020-08-30T17:08:55-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/posts/</loc>
+    <lastmod>2020-08-30T17:08:55-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/sliding-window/</loc>
+    <lastmod>2020-08-30T17:08:55-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/first-post-linked-list/</loc>
     <lastmod>2020-08-30T16:54:06-04:00</lastmod>
   </url>
   
