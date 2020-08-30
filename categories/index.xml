@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Categories on Fox&#39;s Place</title>
+    <link>https://foxisawesome.github.io/categories/</link>
+    <description>Recent content in Categories on Fox&#39;s Place</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 29 Aug 2020 21:15:57 -0400</lastBuildDate>
+    
+	<atom:link href="https://foxisawesome.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>leetcode</title>
+      <link>https://foxisawesome.github.io/categories/leetcode/</link>
+      <pubDate>Sat, 29 Aug 2020 21:15:57 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/categories/leetcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>note</title>
+      <link>https://foxisawesome.github.io/categories/note/</link>
+      <pubDate>Sat, 29 Aug 2020 19:40:57 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/categories/note/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>

@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>leetcode &middot; Fox&#39;s Place</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="/categories/leetcode/index.xml" rel="alternate" type="application/rss+xml" title="Fox&#39;s Place" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Fox&#39;s Place</h2>
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/posts/">
+                
+                <span>Posts</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+    <h1>Category leetcode</h1>
+	<div class="catalogue">
+		
+			<a href="https://foxisawesome.github.io/posts/2020-08-29-206-reverse-linked-list/" class="catalogue-item">
+    <div>
+        <time datetime="2020-08-29 21:15:57 -0400 EDT" class="catalogue-time">August 29, 2020</time>
+        <h1 class="catalogue-title">206. Reverse Linked List</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            https://leetcode.com/problems/reverse-linked-list/
+ Reverse a singly linked list.
+Example:
+Input: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL Output: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL  class Solution: def reverseList_iter(self, head: ListNode) -&gt; ListNode: if not head: return None curr = head rev = None while curr: temp = curr.next curr.next = rev rev = curr curr = temp # return rev return ListNode.printListNode(rev) def reverseList_rec(self, head: ListNode) -&gt; ListNode: if not head or not head.next: return head p = self.reverseList(head.next) head.next.next = head head.
+        </p>
+    </div>
+</a>
+
+		
+			<a href="https://foxisawesome.github.io/posts/2020-08-29-82-remove-duplicates-from-sorted-list-ii/" class="catalogue-item">
+    <div>
+        <time datetime="0001-01-01 00:00:00 &#43;0000 UTC" class="catalogue-time">January 1, 0001</time>
+        <h1 class="catalogue-title">82 Remove dups from sorted list</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
+class Solution: def deleteDuplicates(self, head: ListNode) -&gt; ListNode: import collections if not head: return root = ListNode(0) root.next = head stat = [] while head: stat.append(head.val) head = head.next counter = collections.Counter(stat) head = root while head and head.next: if counter[head.next.val] != 1: head.next = head.next.next else: head = head.next # return root.next return ListNode.printListNode(root.next) so = Solution() indata = [1,1,2,3,3,3,4,4,5,6] head = ListNode.list2ListNode(indata) so.deleteDuplicates(head) 2020-08-29:
+ 感觉还有更好的解法，二刷再说吧  
+        </p>
+    </div>
+</a>
+
+		
+	</div>
+	
+	<div class="pagination">
+		
+		
+	
+		<span>1</span>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2020-08-30 16:46:53.722481 -0400 EDT m=&#43;0.055560441">2020</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>

@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>206. Reverse Linked List &middot; Fox&#39;s Place</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Fox&#39;s Place" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Fox&#39;s Place</h2>
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/posts/">
+                
+                <span>Posts</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        
+        <br>
+        <span>on&nbsp;</span><time datetime="2020-08-29 21:15:57 -0400 EDT">August 29, 2020</time>
+</div>
+
+		<h1 class="post-title">206. Reverse Linked List</h1>
+<div class="post-line"></div>
+
+		
+
+		<p><a href="https://leetcode.com/problems/reverse-linked-list/">https://leetcode.com/problems/reverse-linked-list/</a></p>
+<blockquote>
+<p>Reverse a singly linked list.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Input: <span style="color:#ae81ff">1</span><span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">2</span><span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">3</span><span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">4</span><span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">5</span><span style="color:#f92672">-&gt;</span>NULL
+Output: <span style="color:#ae81ff">5</span><span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">4</span><span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">3</span><span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">2</span><span style="color:#f92672">-&gt;</span><span style="color:#ae81ff">1</span><span style="color:#f92672">-&gt;</span>NULL
+</code></pre></div></blockquote>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">reverseList_iter</span>(self, head: ListNode) <span style="color:#f92672">-&gt;</span> ListNode:
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> head: <span style="color:#66d9ef">return</span> None
+
+        curr <span style="color:#f92672">=</span> head
+        rev <span style="color:#f92672">=</span> None
+        <span style="color:#66d9ef">while</span> curr:
+            temp <span style="color:#f92672">=</span> curr<span style="color:#f92672">.</span>next
+            curr<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> rev
+            rev <span style="color:#f92672">=</span> curr
+            curr <span style="color:#f92672">=</span> temp
+
+<span style="color:#75715e">#         return rev</span>
+        <span style="color:#66d9ef">return</span> ListNode<span style="color:#f92672">.</span>printListNode(rev)
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">reverseList_rec</span>(self, head: ListNode) <span style="color:#f92672">-&gt;</span> ListNode:
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> head <span style="color:#f92672">or</span> <span style="color:#f92672">not</span> head<span style="color:#f92672">.</span>next: <span style="color:#66d9ef">return</span> head
+        p <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>reverseList(head<span style="color:#f92672">.</span>next)
+        head<span style="color:#f92672">.</span>next<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> head
+        head<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> None
+        <span style="color:#66d9ef">return</span> ListNode<span style="color:#f92672">.</span>printListNode(p)
+    
+so <span style="color:#f92672">=</span> Solution()
+
+indata <span style="color:#f92672">=</span> [<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">2</span>,<span style="color:#ae81ff">3</span>,<span style="color:#ae81ff">4</span>,<span style="color:#ae81ff">5</span>,<span style="color:#ae81ff">6</span>]
+head <span style="color:#f92672">=</span> ListNode<span style="color:#f92672">.</span>list2ListNode(indata)
+
+<span style="color:#66d9ef">print</span>(so<span style="color:#f92672">.</span>reverseList_iter(head))
+<span style="color:#66d9ef">print</span>(so<span style="color:#f92672">.</span>reverseList_rec(head))
+</code></pre></div><p>2020/08/29:</p>
+<ul>
+<li>这题好深刻，好难，都好几刷了，还是没刷对！加油！今天要交MDD，不再像往年那样在乎了，安心刷题</li>
+<li>iterate 的方法因该是会了，recursion时抄的好好体会</li>
+<li>今天blog开张，准备把刷的题都放上来。</li>
+</ul>
+
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/2020-08-29-linked-list/" class="left arrow">&#8592;</a>
+		<a href="/posts/my-first-post/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2020-08-30 16:46:53.722041 -0400 EDT m=&#43;0.055119702">2020</time> . Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>
