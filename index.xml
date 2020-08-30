@@ -6,80 +6,18 @@
     <description>Recent content on Fox&#39;s Place</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Aug 2020 16:01:14 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 30 Aug 2020 16:54:06 -0400</lastBuildDate>
     
 	<atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>My First Post</title>
-      <link>https://foxisawesome.github.io/posts/my-first-post/</link>
-      <pubDate>Sun, 30 Aug 2020 16:01:14 -0400</pubDate>
+      <title>First Post Linked List</title>
+      <link>https://foxisawesome.github.io/posts/first-post-linked-list/</link>
+      <pubDate>Sun, 30 Aug 2020 16:54:06 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/my-first-post/</guid>
+      <guid>https://foxisawesome.github.io/posts/first-post-linked-list/</guid>
       <description></description>
-    </item>
-    
-    <item>
-      <title>206. Reverse Linked List</title>
-      <link>https://foxisawesome.github.io/posts/2020-08-29-206-reverse-linked-list/</link>
-      <pubDate>Sat, 29 Aug 2020 21:15:57 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/2020-08-29-206-reverse-linked-list/</guid>
-      <description>https://leetcode.com/problems/reverse-linked-list/
- Reverse a singly linked list.
-Example:
-Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL Output: 5-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;1-&amp;gt;NULL  class Solution: def reverseList_iter(self, head: ListNode) -&amp;gt; ListNode: if not head: return None curr = head rev = None while curr: temp = curr.next curr.next = rev rev = curr curr = temp # return rev return ListNode.printListNode(rev) def reverseList_rec(self, head: ListNode) -&amp;gt; ListNode: if not head or not head.next: return head p = self.reverseList(head.next) head.next.next = head head.</description>
-    </item>
-    
-    <item>
-      <title>Linked List Notes (First Blog)</title>
-      <link>https://foxisawesome.github.io/posts/2020-08-29-linked-list/</link>
-      <pubDate>Sat, 29 Aug 2020 19:40:57 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/2020-08-29-linked-list/</guid>
-      <description>It takes a while for me to get how exactly Linked List works. I used following utility functions to keep my leetcode solutions and run codes locally.
-Note:
- say head = ListNode(0), then head = head.next is to iterate to next node on the Linked List. use head.next = a to point to next node.  # My liked list utility functions:  class ListNode: def __init__(self, val=0, next=None): self.</description>
-    </item>
-    
-    <item>
-      <title>82 Remove dups from sorted list</title>
-      <link>https://foxisawesome.github.io/posts/2020-08-29-82-remove-duplicates-from-sorted-list-ii/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/2020-08-29-82-remove-duplicates-from-sorted-list-ii/</guid>
-      <description>https://leetcode.com/problems/remove-duplicates-from-sorted-list-ii/
-class Solution: def deleteDuplicates(self, head: ListNode) -&amp;gt; ListNode: import collections if not head: return root = ListNode(0) root.next = head stat = [] while head: stat.append(head.val) head = head.next counter = collections.Counter(stat) head = root while head and head.next: if counter[head.next.val] != 1: head.next = head.next.next else: head = head.next # return root.next return ListNode.printListNode(root.next) so = Solution() indata = [1,1,2,3,3,3,4,4,5,6] head = ListNode.list2ListNode(indata) so.deleteDuplicates(head) 2020-08-29:
- 感觉还有更好的解法，二刷再说吧  </description>
-    </item>
-    
-    <item>
-      <title>Backtracking Notes</title>
-      <link>https://foxisawesome.github.io/posts/2020-08-29-backtracking-notes/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/2020-08-29-backtracking-notes/</guid>
-      <description>Backtracking Template:
-def bt(path, choice_list): if (stopping condition): output.append(path[:]) return for i in choice_list: if not isValid(): continue # isvalid is to prune the tree. path.append() bt(path, (choice_list - path)) path.pop() Note:
- Time Complexity O(N!) in output.append(path[:]), need deep copy. hence path[:]. reference 1: labuladong \ reference 2: 负雪明烛  </description>
-    </item>
-    
-    <item>
-      <title>Sliding Window Note</title>
-      <link>https://foxisawesome.github.io/posts/2020-08-29-sliding-window-note/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/2020-08-29-sliding-window-note/</guid>
-      <description>滑动窗口算法的思路是这样：
-1、我们在字符串S中使用双指针中的左右指针技巧，初始化left = right = 0，把索引左闭右开区间[left, right)称为一个「窗口」。
-2、我们先不断地增加right指针扩大窗口[left, right)，直到窗口中的字符串符合要求（包含了T中的所有字符）。
-3、此时，我们停止增加right，转而不断增加left指针缩小窗口[left, right)，直到窗口中的字符串不再符合要求（不包含T中的所有字符了）。同时，每次增加left，我们都要更新一轮结果。
-4、重复第 2 和第 3 步，直到right到达字符串S的尽头。
-这个思路其实也不难，第 2 步相当于在寻找一个「可行解」，然后第 3 步在优化这个「可行解」，最终找到最优解，也就是最短的覆盖子串。左右指针轮流前进，窗口大小增增减减，窗口不断向右滑动，这就是「滑动窗口」这个名字的来历。
-refrence: wx:labuladong
-Code Template:
-def slidingWindow(s: str, t: str) -&amp;gt; str: target, window = {}, {} for i in t: target[i] = target.get(i,0) + 1 left, right, valid = 0, 0, 0 while (right &amp;lt; len(s)): # expand window right point to contain all t c = s[right] # move right index right += 1 # 进行窗口内数据的一系列更新 .</description>
     </item>
     
   </channel>
