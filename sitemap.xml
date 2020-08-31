@@ -3,20 +3,93 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://foxisawesome.github.io/about/</loc>
-    <priority>0</priority>
+    <loc>https://foxisawesome.github.io/posts/141-linked-list-cycle/</loc>
+    <lastmod>2020-08-30T21:35:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/categories/algo/</loc>
+    <lastmod>2020-08-30T21:35:50-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/categories/</loc>
+    <lastmod>2020-08-30T21:35:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/leetcode-linkedlist/</loc>
+    <lastmod>2020-08-30T21:35:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/</loc>
+    <lastmod>2020-08-30T21:35:50-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/</loc>
+    <lastmod>2020-08-30T21:35:50-04:00</lastmod>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/tags/</loc>
+    <lastmod>2020-08-30T21:35:50-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/328-odd-even-linked-list/</loc>
+    <lastmod>2020-08-30T21:27:32-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/1266-minimum-time-visiting-all-points/</loc>
+    <lastmod>2020-08-30T21:24:22-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/leetcode/</loc>
+    <lastmod>2020-08-30T21:24:22-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/530-min-abs-dif-bst/</loc>
+    <lastmod>2020-08-30T20:59:36-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/leetcode-bst/</loc>
+    <lastmod>2020-08-30T20:59:36-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/98-valid-bst/</loc>
+    <lastmod>2020-08-30T20:59:02-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/701-insert-into-bst/</loc>
+    <lastmod>2020-08-30T20:58:29-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/sliding-window/</loc>
+    <lastmod>2020-08-30T17:08:55-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/template/</loc>
+    <lastmod>2020-08-30T17:08:55-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/first-post-linked-list/</loc>
+    <lastmod>2020-08-30T16:54:06-04:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/about/</loc>
+    <priority>0</priority>
   </url>
   
 </urlset>

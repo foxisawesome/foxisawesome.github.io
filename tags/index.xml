@@ -6,9 +6,46 @@
     <description>Recent content in Tags on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Sun, 30 Aug 2020 21:35:50 -0400</lastBuildDate>
     
 	<atom:link href="https://foxisawesome.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>leetcode linkedlist</title>
+      <link>https://foxisawesome.github.io/tags/leetcode-linkedlist/</link>
+      <pubDate>Sun, 30 Aug 2020 21:35:50 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/tags/leetcode-linkedlist/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>leetcode</title>
+      <link>https://foxisawesome.github.io/tags/leetcode/</link>
+      <pubDate>Sun, 30 Aug 2020 21:24:22 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/tags/leetcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>leetcode BST</title>
+      <link>https://foxisawesome.github.io/tags/leetcode-bst/</link>
+      <pubDate>Sun, 30 Aug 2020 20:59:36 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/tags/leetcode-bst/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>template</title>
+      <link>https://foxisawesome.github.io/tags/template/</link>
+      <pubDate>Sun, 30 Aug 2020 17:08:55 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/tags/template/</guid>
+      <description></description>
+    </item>
     
   </channel>
 </rss>
