@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>530 Min Abs Dif BST &middot; Fox&#39;s Notes</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+		<link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon.png">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Fox&#39;s Notes" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Fox&#39;s Notes</h2>
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/posts/">
+                
+                <span>Posts</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/about/">
+                
+                <span>About</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Q. W.
+        <br>
+        <span>on&nbsp;</span><time datetime="2020-08-30 20:59:36 -0400 EDT">August 30, 2020</time>
+</div>
+
+		<h1 class="post-title">530 Min Abs Dif BST</h1>
+<div class="post-line"></div>
+
+		
+
+		<p><a href="https://leetcode.com/problems/minimum-absolute-difference-in-bst/">LC 530</a></p>
+<p>Given a binary search tree with non-negative values, find the minimum absolute difference between values of any two nodes.</p>
+<blockquote>
+<p>Given a binary search tree with non-negative values, find the minimum <a href="https://en.wikipedia.org/wiki/Absolute_difference">absolute difference</a> between values of any two nodes.</p>
+<p><strong>Example:</strong></p>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python">Input:
+
+   <span style="color:#ae81ff">1</span>
+    \
+     <span style="color:#ae81ff">3</span>
+    <span style="color:#f92672">/</span>
+   <span style="color:#ae81ff">2</span>
+
+Output:
+<span style="color:#ae81ff">1</span>
+
+Explanation:
+The minimum absolute difference <span style="color:#f92672">is</span> <span style="color:#ae81ff">1</span>, which <span style="color:#f92672">is</span> the difference between <span style="color:#ae81ff">2</span> <span style="color:#f92672">and</span> <span style="color:#ae81ff">1</span> (<span style="color:#f92672">or</span> between <span style="color:#ae81ff">2</span> <span style="color:#f92672">and</span> <span style="color:#ae81ff">3</span>)<span style="color:#f92672">.</span>
+</code></pre></div></blockquote>
+<p>8/30/2020 Note:</p>
+<ul>
+<li>BST has a property that: if in-order traverse, the output is a sorted list. Time complex is O(N), if store everything, then space complexity is O(N). I can only maintain min_diff in each root step to reduce space complexity to O(1).</li>
+<li>recursion here is pretty easy: standard in-order traversal recursion.</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Definition for a binary tree node.</span>
+<span style="color:#75715e"># class TreeNode:</span>
+<span style="color:#75715e">#     def __init__(self, val=0, left=None, right=None):</span>
+<span style="color:#75715e">#         self.val = val</span>
+<span style="color:#75715e">#         self.left = left</span>
+<span style="color:#75715e">#         self.right = right</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">getMinimumDifference</span>(self, root: TreeNode) <span style="color:#f92672">-&gt;</span> int:
+        self<span style="color:#f92672">.</span>prev <span style="color:#f92672">=</span> None
+        self<span style="color:#f92672">.</span>min_diff <span style="color:#f92672">=</span> float(<span style="color:#e6db74">&#39;inf&#39;</span>)
+        self<span style="color:#f92672">.</span>inorder(root)
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>min_diff
+    
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">inorder</span>(self, root):
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> root: <span style="color:#66d9ef">return</span> 
+        self<span style="color:#f92672">.</span>inorder(root<span style="color:#f92672">.</span>left)
+        <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>prev <span style="color:#f92672">is</span> <span style="color:#f92672">not</span> None: self<span style="color:#f92672">.</span>min_diff <span style="color:#f92672">=</span> min(self<span style="color:#f92672">.</span>min_diff, root<span style="color:#f92672">.</span>val <span style="color:#f92672">-</span> self<span style="color:#f92672">.</span>prev)
+        self<span style="color:#f92672">.</span>prev <span style="color:#f92672">=</span> root<span style="color:#f92672">.</span>val
+        self<span style="color:#f92672">.</span>inorder(root<span style="color:#f92672">.</span>right)
+</code></pre></div>
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/98-valid-bst/" class="left arrow">&#8592;</a>
+		<a href="/posts/1266-minimum-time-visiting-all-points/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2020-08-30 21:47:14.103761 -0400 EDT m=&#43;0.055101089">2020</time> Q. W.. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>

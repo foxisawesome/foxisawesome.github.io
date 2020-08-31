@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>leetcode on Fox&#39;s Notes</title>
+    <link>https://foxisawesome.github.io/tags/leetcode/</link>
+    <description>Recent content in leetcode on Fox&#39;s Notes</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sun, 30 Aug 2020 21:24:22 -0400</lastBuildDate>
+    
+	<atom:link href="https://foxisawesome.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>1266 Minimum Time Visiting All Points</title>
+      <link>https://foxisawesome.github.io/posts/1266-minimum-time-visiting-all-points/</link>
+      <pubDate>Sun, 30 Aug 2020 21:24:22 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1266-minimum-time-visiting-all-points/</guid>
+      <description>LC 1266
+ On a plane there are n points with integer coordinates points[i] = [xi, yi]. Your task is to find the minimum time in seconds to visit all points.
+You can move according to the next rules:
+ In one second always you can either move vertically, horizontally by one unit or diagonally (it means to move one unit vertically and one unit horizontally in one second). You have to visit the points in the same order as they appear in the array.</description>
+    </item>
+    
+  </channel>
+</rss>
