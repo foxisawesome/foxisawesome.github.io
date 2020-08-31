@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>Fox&#39;s Place</title>
+    <title>Fox&#39;s Notes</title>
     <link>https://foxisawesome.github.io/</link>
-    <description>Recent content on Fox&#39;s Place</description>
+    <description>Recent content on Fox&#39;s Notes</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Sun, 30 Aug 2020 17:08:55 -0400</lastBuildDate>
@@ -38,6 +38,17 @@ def slidingWindow(s: str, t: str) -&amp;gt; str: target, window = {}, {} for i i
 It takes a while for me to get how exactly Linked List works. I used following utility functions to keep my leetcode solutions and run codes locally.
 Note:
  say head = ListNode(0), then head = head.next is to iterate to next node on the Linked List. use head.next = a to point to next node.  # My liked list utility functions:  class ListNode: def __init__(self, val=0, next=None): self.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://foxisawesome.github.io/about/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://foxisawesome.github.io/about/</guid>
+      <description>Dr. Q. W. Research and Interests Data Analysis Probability and Statistics • Bayesian Analysis • Machine Learning • Time Series Analysis • Natural Language Processing • Visualization.
+Others Knowledge Sharing • Data Science • Clean Code
+Hobbies Photography • Sports</description>
     </item>
     
   </channel>
