@@ -4,7 +4,7 @@
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-		<title>template &middot; Q. Weng</title>
+		<title>algo &middot; Q. Weng</title>
 
 		
   		<link rel="stylesheet" href="/css/style.css">
@@ -17,7 +17,7 @@
 		<link rel="manifest" href="/site.webmanifest">
 
 		
-		<link href="/tags/template/index.xml" rel="alternate" type="application/rss+xml" title="Q. Weng" />
+		<link href="/categories/algo/index.xml" rel="alternate" type="application/rss+xml" title="Q. Weng" />
 	</head>
 
     <body>
@@ -52,29 +52,8 @@
         
 
 <main>
-    <h1>Tag template</h1>
+    <h1>Category algo</h1>
 	<div class="catalogue">
-		
-			<a href="https://foxisawesome.github.io/posts/sliding-window/" class="catalogue-item">
-    <div>
-        <time datetime="2020-08-30 17:08:55 -0400 EDT" class="catalogue-time">August 30, 2020</time>
-        <h1 class="catalogue-title">Sliding Window</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            滑动窗口算法的思路是这样：
-1、我们在字符串S中使用双指针中的左右指针技巧，初始化left = right = 0，把索引左闭右开区间[left, right)称为一个「窗口」。
-2、我们先不断地增加right指针扩大窗口[left, right)，直到窗口中的字符串符合要求（包含了T中的所有字符）。
-3、此时，我们停止增加right，转而不断增加left指针缩小窗口[left, right)，直到窗口中的字符串不再符合要求（不包含T中的所有字符了）。同时，每次增加left，我们都要更新一轮结果。
-4、重复第 2 和第 3 步，直到right到达字符串S的尽头。
-这个思路其实也不难，第 2 步相当于在寻找一个「可行解」，然后第 3 步在优化这个「可行解」，最终找到最优解，也就是最短的覆盖子串。左右指针轮流前进，窗口大小增增减减，窗口不断向右滑动，这就是「滑动窗口」这个名字的来历。
-refrence: wx:labuladong
-Code Template:
-def slidingWindow(s: str, t: str) -&gt; str: target, window = {}, {} for i in t: target[i] = target.get(i,0) + 1 left, right, valid = 0, 0, 0 while (right &lt; len(s)): # expand window right point to contain all t c = s[right] # move right index right += 1 # 进行窗口内数据的一系列更新 .
-        </p>
-    </div>
-</a>
-
 		
 			<a href="https://foxisawesome.github.io/posts/first-post-linked-list/" class="catalogue-item">
     <div>
@@ -96,16 +75,18 @@ Note:
 	
 	<div class="pagination">
 		
+			<a href="/categories/algo/" class="left arrow">&#8592;</a>
+		
 		
 	
-		<span>1</span>
+		<span>2</span>
 	</div>
 </main>
 
 
         		<footer>
 			<span>
-			&copy; <time datetime="2020-08-31 22:19:15.792029 -0400 EDT m=&#43;0.061373989">2020</time> Q. W.. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			&copy; <time datetime="2020-08-31 22:19:15.796033 -0400 EDT m=&#43;0.065377979">2020</time> Q. W.. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
 			</span>
 		</footer>
 

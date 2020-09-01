@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>1041 Robot Bounded in Circle &middot; Q. Weng</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Q. Weng" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Q. Weng</h2>
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/posts/">
+                
+                <span>Posts</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/about/">
+                
+                <span>About</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Q. W.
+        <br>
+        <span>on&nbsp;</span><time datetime="2020-08-31 22:14:45 -0400 EDT">August 31, 2020</time>
+</div>
+
+		<h1 class="post-title">1041 Robot Bounded in Circle</h1>
+<div class="post-line"></div>
+
+		
+
+		<p><a href="https://leetcode.com/problems/robot-bounded-in-circle/">LC 1041 Robot Bounded in Circle </a></p>
+<blockquote>
+<p>On an infinite plane, a robot initially stands at <code>(0, 0)</code> and faces north. The robot can receive one of three instructions:</p>
+<ul>
+<li><code>&quot;G&quot;</code>: go straight 1 unit;</li>
+<li><code>&quot;L&quot;</code>: turn 90 degrees to the left;</li>
+<li><code>&quot;R&quot;</code>: turn 90 degress to the right.</li>
+</ul>
+<p>The robot performs the <code>instructions</code> given in order, and repeats them forever.</p>
+<p>Return <code>true</code> if and only if there exists a circle in the plane such that the robot never leaves the circle.</p>
+</blockquote>
+<p>2020-08-31 Notes:</p>
+<ul>
+<li>没见过这种implementation。好经典的做法，二刷希望能刷出来。</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">isRobotBounded</span>(self, instructions: str) <span style="color:#f92672">-&gt;</span> bool:
+        <span style="color:#75715e"># north = 0, east = 1, south = 2, west = 3</span>
+        directions <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>],[<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>],[<span style="color:#ae81ff">0</span>,<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>],[<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>]]
+        x <span style="color:#f92672">=</span> y <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+        idx <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+        
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> instructions:
+            <span style="color:#66d9ef">if</span> i <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;L&#39;</span>:
+                idx <span style="color:#f92672">=</span> (idx <span style="color:#f92672">+</span> <span style="color:#ae81ff">3</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">4</span>
+            <span style="color:#66d9ef">elif</span> i <span style="color:#f92672">==</span> <span style="color:#e6db74">&#39;R&#39;</span>:
+                idx <span style="color:#f92672">=</span> (idx <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>) <span style="color:#f92672">%</span> <span style="color:#ae81ff">4</span>
+            <span style="color:#66d9ef">else</span>:
+                x <span style="color:#f92672">+=</span> directions[idx][<span style="color:#ae81ff">0</span>]
+                y <span style="color:#f92672">+=</span> directions[idx][<span style="color:#ae81ff">1</span>]
+                
+        <span style="color:#66d9ef">return</span> (x<span style="color:#f92672">==</span><span style="color:#ae81ff">0</span> <span style="color:#f92672">and</span> y<span style="color:#f92672">==</span><span style="color:#ae81ff">0</span>) <span style="color:#f92672">or</span> idx <span style="color:#f92672">!=</span> <span style="color:#ae81ff">0</span>
+</code></pre></div>
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/957-prison-cells/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2020-08-31 22:19:15.786974 -0400 EDT m=&#43;0.056318942">2020</time> Q. W.. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>

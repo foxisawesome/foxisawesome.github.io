@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>957 Prison Cells &middot; Q. Weng</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Q. Weng" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Q. Weng</h2>
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/posts/">
+                
+                <span>Posts</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/about/">
+                
+                <span>About</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Q. W.
+        <br>
+        <span>on&nbsp;</span><time datetime="2020-08-31 19:26:18 -0400 EDT">August 31, 2020</time>
+</div>
+
+		<h1 class="post-title">957 Prison Cells</h1>
+<div class="post-line"></div>
+
+		
+
+		<p><a href="https://leetcode.com/problems/prison-cells-after-n-days/">LC 957 Prison Cells </a></p>
+<blockquote>
+<p>There are 8 prison cells in a row, and each cell is either occupied or vacant.</p>
+<p>Each day, whether the cell is occupied or vacant changes according to the following rules:</p>
+<ul>
+<li>If a cell has two adjacent neighbors that are both occupied or both vacant, then the cell becomes occupied.</li>
+<li>Otherwise, it becomes vacant.</li>
+</ul>
+<p>(Note that because the prison is a row, the first and the last cells in the row can&rsquo;t have two adjacent neighbors.)</p>
+<p>We describe the current state of the prison in the following way: <code>cells[i] == 1</code> if the <code>i</code>-th cell is occupied, else <code>cells[i] == 0</code>.</p>
+</blockquote>
+<p>2020-08-31 Notes:</p>
+<ul>
+<li>这题做了好久，终于明白了， cycle = 14</li>
+<li>two cases:
+<ul>
+<li>
+<ol>
+<li>head in the cycle of 14;  <code>days %= 14</code></li>
+</ol>
+</li>
+<li>
+<ol start="2">
+<li>head not in the cycle of 14. in this case, <code>days = (days-1)%14</code>,</li>
+</ol>
+</li>
+</ul>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">nextDay</span>(self, cells):
+        cells_nd <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>]
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>,len(cells)<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>):
+            <span style="color:#66d9ef">if</span> cells[i<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>] <span style="color:#f92672">==</span> cells[i<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>]: 
+                cells_nd<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">1</span>)
+            <span style="color:#66d9ef">else</span>: 
+                cells_nd<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">0</span>)        
+        cells_nd<span style="color:#f92672">.</span>append(<span style="color:#ae81ff">0</span>)
+        <span style="color:#66d9ef">return</span> cells_nd
+    
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">prisonAfterNDays</span>(self, cells: List[int], N: int) <span style="color:#f92672">-&gt;</span> List[int]:
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> cells: <span style="color:#66d9ef">return</span> []
+        <span style="color:#66d9ef">if</span> N <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>: <span style="color:#66d9ef">return</span> cells
+        
+        memo <span style="color:#f92672">=</span> dict()
+        memo[str(cells[:])] <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+        n <span style="color:#f92672">=</span> len(cells)
+
+        <span style="color:#66d9ef">for</span> d <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">1</span>,N<span style="color:#f92672">+</span><span style="color:#ae81ff">1</span>):
+            cells <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>nextDay(cells)
+            <span style="color:#66d9ef">print</span>(d,cells)
+            <span style="color:#66d9ef">if</span> str(cells) <span style="color:#f92672">in</span> memo: 
+                cycle <span style="color:#f92672">=</span> d <span style="color:#f92672">-</span> memo[str(cells)]
+                <span style="color:#66d9ef">break</span>
+            memo[str(cells[:])] <span style="color:#f92672">=</span> d
+        <span style="color:#75715e"># cycle is always 14. But two cases: 1. head is in the cycle; 2. head is not in the cycle.</span>
+        <span style="color:#66d9ef">if</span> d <span style="color:#f92672">&lt;</span> N:
+            <span style="color:#66d9ef">if</span> memo[str(cells)]<span style="color:#f92672">==</span><span style="color:#ae81ff">0</span>: <span style="color:#75715e"># head in the cycle case</span>
+                days <span style="color:#f92672">=</span> (N)<span style="color:#f92672">%</span>cycle
+            <span style="color:#66d9ef">else</span>: <span style="color:#75715e"># head not in the cycle case.</span>
+                days <span style="color:#f92672">=</span> (N<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">%</span>cycle
+            <span style="color:#66d9ef">for</span> d <span style="color:#f92672">in</span> range(days):
+                cells <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>nextDay(cells)
+        <span style="color:#66d9ef">return</span> cells
+</code></pre></div>
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/735-aseroid-collision/" class="left arrow">&#8592;</a>
+		<a href="/posts/1041-robot-bounded-in-circle/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2020-08-31 22:19:15.787502 -0400 EDT m=&#43;0.056846234">2020</time> Q. W.. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>

@@ -6,10 +6,46 @@
     <description>Recent content in algo on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sun, 30 Aug 2020 21:35:50 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 31 Aug 2020 22:14:45 -0400</lastBuildDate>
     
 	<atom:link href="https://foxisawesome.github.io/categories/algo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1041 Robot Bounded in Circle</title>
+      <link>https://foxisawesome.github.io/posts/1041-robot-bounded-in-circle/</link>
+      <pubDate>Mon, 31 Aug 2020 22:14:45 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1041-robot-bounded-in-circle/</guid>
+      <description>LC 1041 Robot Bounded in Circle 
+ On an infinite plane, a robot initially stands at (0, 0) and faces north. The robot can receive one of three instructions:
+ &amp;quot;G&amp;quot;: go straight 1 unit; &amp;quot;L&amp;quot;: turn 90 degrees to the left; &amp;quot;R&amp;quot;: turn 90 degress to the right.  The robot performs the instructions given in order, and repeats them forever.
+Return true if and only if there exists a circle in the plane such that the robot never leaves the circle.</description>
+    </item>
+    
+    <item>
+      <title>957 Prison Cells</title>
+      <link>https://foxisawesome.github.io/posts/957-prison-cells/</link>
+      <pubDate>Mon, 31 Aug 2020 19:26:18 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/957-prison-cells/</guid>
+      <description>LC 957 Prison Cells 
+ There are 8 prison cells in a row, and each cell is either occupied or vacant.
+Each day, whether the cell is occupied or vacant changes according to the following rules:
+ If a cell has two adjacent neighbors that are both occupied or both vacant, then the cell becomes occupied. Otherwise, it becomes vacant.  (Note that because the prison is a row, the first and the last cells in the row can&amp;rsquo;t have two adjacent neighbors.</description>
+    </item>
+    
+    <item>
+      <title>735 Aseroid Collision</title>
+      <link>https://foxisawesome.github.io/posts/735-aseroid-collision/</link>
+      <pubDate>Mon, 31 Aug 2020 19:05:25 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/735-aseroid-collision/</guid>
+      <description>LC 735 Aseroid Collision 
+ We are given an array asteroids of integers representing asteroids in a row.
+For each asteroid, the absolute value represents its size, and the sign represents its direction (positive meaning right, negative meaning left). Each asteroid moves at the same speed.
+Find out the state of the asteroids after all collisions. If two asteroids meet, the smaller one will explode. If both are the same size, both will explode.</description>
+    </item>
     
     <item>
       <title>141 Linked List Cycle</title>

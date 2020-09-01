@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>stack on Q. Weng</title>
+    <link>https://foxisawesome.github.io/tags/stack/</link>
+    <description>Recent content in stack on Q. Weng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Mon, 31 Aug 2020 19:05:25 -0400</lastBuildDate>
+    
+	<atom:link href="https://foxisawesome.github.io/tags/stack/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>735 Aseroid Collision</title>
+      <link>https://foxisawesome.github.io/posts/735-aseroid-collision/</link>
+      <pubDate>Mon, 31 Aug 2020 19:05:25 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/735-aseroid-collision/</guid>
+      <description>LC 735 Aseroid Collision 
+ We are given an array asteroids of integers representing asteroids in a row.
+For each asteroid, the absolute value represents its size, and the sign represents its direction (positive meaning right, negative meaning left). Each asteroid moves at the same speed.
+Find out the state of the asteroids after all collisions. If two asteroids meet, the smaller one will explode. If both are the same size, both will explode.</description>
+    </item>
+    
+  </channel>
+</rss>
