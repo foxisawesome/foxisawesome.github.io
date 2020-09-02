@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>206 Reverse Linked List &middot; Q. Weng</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Q. Weng" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Q. Weng</h2>
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/posts/">
+                
+                <span>Posts</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/about/">
+                
+                <span>About</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Q. W.
+        <br>
+        <span>on&nbsp;</span><time datetime="2020-08-01 20:06:27 -0400 EDT">August 1, 2020</time>
+</div>
+
+		<h1 class="post-title">206 Reverse Linked List</h1>
+<div class="post-line"></div>
+
+		
+
+
+		<h2 id="lc-206-reverse-linked-list-httpsleetcodecomproblemsreverse-linked-list"><a href="https://leetcode.com/problems/reverse-linked-list/">LC 206 Reverse Linked List </a></h2>
+<blockquote>
+<p>Reverse a singly linked list.</p>
+<p><strong>Example:</strong></p>
+<pre><code>Input: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL
+Output: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL
+</code></pre></blockquote>
+<h2 id="solution">Solution</h2>
+<p>2020-09-01 Notes:</p>
+<ul>
+<li>这题刷了不下10遍了，终于明白iteration这里的四步操作了。</li>
+<li>recursion的做法还是似懂非懂，还得再看看。感觉TreeNode, ListNode 的recursion 都是<code>if not head/root: return head/root</code>。 另外，recession 这里返回的是 以<code>head.next</code>为头reversed 的list，只需要再把<code>head.next	</code> reverse 下就好了。</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Definition for singly-linked list.</span>
+<span style="color:#75715e"># class ListNode:</span>
+<span style="color:#75715e">#     def __init__(self, val=0, next=None):</span>
+<span style="color:#75715e">#         self.val = val</span>
+<span style="color:#75715e">#         self.next = next</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+<span style="color:#75715e"># iteration</span>
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">reverseList_iter</span>(self, head: ListNode) <span style="color:#f92672">-&gt;</span> ListNode:
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> head: <span style="color:#66d9ef">return</span> None
+        
+        prev <span style="color:#f92672">=</span> None
+        curr <span style="color:#f92672">=</span> head
+        <span style="color:#66d9ef">while</span> curr:
+            temp <span style="color:#f92672">=</span> curr<span style="color:#f92672">.</span>next
+            curr<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> prev
+            prev <span style="color:#f92672">=</span> curr
+            curr <span style="color:#f92672">=</span> temp
+            
+        <span style="color:#66d9ef">return</span> prev
+</code></pre></div><div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># recursion </span>
+	<span style="color:#66d9ef">def</span> <span style="color:#a6e22e">reverseList_rec</span>(self, head: ListNode) <span style="color:#f92672">-&gt;</span> ListNode:
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> head <span style="color:#f92672">or</span> <span style="color:#f92672">not</span> head<span style="color:#f92672">.</span>next: <span style="color:#66d9ef">return</span> head
+        p <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>reverseList(head<span style="color:#f92672">.</span>next)
+        head<span style="color:#f92672">.</span>next<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> head
+        head<span style="color:#f92672">.</span>next <span style="color:#f92672">=</span> None
+        <span style="color:#66d9ef">return</span> p
+    
+<span style="color:#75715e"># Time O(N) for iteration</span>
+<span style="color:#75715e"># Space O(1)</span>
+</code></pre></div>
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/about/" class="left arrow">&#8592;</a>
+		<a href="/posts/first-post-linked-list/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2020-09-01 21:58:41.643762 -0400 EDT m=&#43;0.057159160">2020</time> Q. W.. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>

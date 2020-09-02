@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>79 Word Search &middot; Q. Weng</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Q. Weng" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Q. Weng</h2>
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/posts/">
+                
+                <span>Posts</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/about/">
+                
+                <span>About</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Q. W.
+        <br>
+        <span>on&nbsp;</span><time datetime="2020-09-01 16:07:12 -0400 EDT">September 1, 2020</time>
+</div>
+
+		<h1 class="post-title">79 Word Search</h1>
+<div class="post-line"></div>
+
+		
+
+
+		<h2 id="lc-79-word-search-httpsleetcodecomproblemsword-search"><a href="https://leetcode.com/problems/word-search/">LC 79 Word Search </a></h2>
+<blockquote>
+<p>Given a 2D board and a word, find if the word exists in the grid.</p>
+<p>The word can be constructed from letters of sequentially adjacent cell, where &ldquo;adjacent&rdquo; cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.</p>
+<p><strong>Example:</strong></p>
+<pre><code>board =
+[
+  ['A','B','C','E'],
+  ['S','F','C','S'],
+  ['A','D','E','E']
+]
+
+Given word = &quot;ABCCED&quot;, return true.
+Given word = &quot;SEE&quot;, return true.
+Given word = &quot;ABCB&quot;, return false.
+</code></pre></blockquote>
+<h2 id="solution">Solution</h2>
+<p>2020-09-01 Notes:</p>
+<ul>
+<li>classic DFS/backtracking problem.</li>
+<li>The biggest thing I&rsquo;ve learnt from this: to return True/False instead of a list of retults. one needs to pass the true from bottom to top. Line 31-32 is doing this! Otherwise, if only line 23, on the the bottom DFS functions returns True, other lays return None.</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">exist</span>(self, board: List[List[str]], word: str) <span style="color:#f92672">-&gt;</span> bool:
+        n <span style="color:#f92672">=</span> len(board)
+        m <span style="color:#f92672">=</span> len(board[<span style="color:#ae81ff">0</span>])
+        directions <span style="color:#f92672">=</span> [[<span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>], [<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>,<span style="color:#ae81ff">0</span>], [<span style="color:#ae81ff">0</span>,<span style="color:#ae81ff">1</span>], [<span style="color:#ae81ff">0</span>,<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>]]
+        inits <span style="color:#f92672">=</span> []
+        
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n):
+            <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(m):
+                <span style="color:#66d9ef">if</span> board[i][j] <span style="color:#f92672">==</span> word[<span style="color:#ae81ff">0</span>]:
+                    inits<span style="color:#f92672">.</span>append((i,j))
+        <span style="color:#66d9ef">while</span> inits:
+            start <span style="color:#f92672">=</span> inits<span style="color:#f92672">.</span>pop()
+            visited <span style="color:#f92672">=</span> set()
+            visited<span style="color:#f92672">.</span>add(start)
+            <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>dfs(board, word, directions, word[<span style="color:#ae81ff">0</span>], start, visited, m,n):
+                <span style="color:#66d9ef">return</span> True
+        <span style="color:#66d9ef">return</span> False
+            
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dfs</span>(self, board, word, directions, path, point, visited,m,n):
+        i, j <span style="color:#f92672">=</span> point[<span style="color:#ae81ff">0</span>], point[<span style="color:#ae81ff">1</span>]
+        <span style="color:#66d9ef">if</span> path <span style="color:#f92672">==</span> word:
+            <span style="color:#66d9ef">return</span> True
+        
+        <span style="color:#66d9ef">for</span> d <span style="color:#f92672">in</span> directions:
+            x0, y0 <span style="color:#f92672">=</span> d[<span style="color:#ae81ff">0</span>], d[<span style="color:#ae81ff">1</span>]
+            x1, y1 <span style="color:#f92672">=</span> x0<span style="color:#f92672">+</span>i, y0<span style="color:#f92672">+</span>j
+            <span style="color:#66d9ef">if</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">&lt;=</span>x1<span style="color:#f92672">&lt;</span>n <span style="color:#f92672">and</span> <span style="color:#ae81ff">0</span><span style="color:#f92672">&lt;=</span>y1<span style="color:#f92672">&lt;</span>m <span style="color:#f92672">and</span> (x1,y1) <span style="color:#f92672">not</span> <span style="color:#f92672">in</span> visited <span style="color:#f92672">and</span> board[x1][y1]<span style="color:#f92672">==</span>word[len(path)]:
+                next_pt <span style="color:#f92672">=</span> (x1,y1)
+                visited<span style="color:#f92672">.</span>add(next_pt)
+                <span style="color:#66d9ef">if</span> self<span style="color:#f92672">.</span>dfs(board, word, directions, path<span style="color:#f92672">+</span>board[x1][y1],next_pt,visited,m,n):
+                    <span style="color:#66d9ef">return</span> True
+                visited<span style="color:#f92672">.</span>remove(next_pt)
+ 
+<span style="color:#75715e"># Time O(N*3^L), where L is the length of word</span>
+<span style="color:#75715e"># Space O(N)</span>
+</code></pre></div>
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/981-time-based-key-value-store/" class="left arrow">&#8592;</a>
+		<a href="/posts/148-sort-list/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2020-09-01 21:58:41.644866 -0400 EDT m=&#43;0.058263602">2020</time> Q. W.. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>

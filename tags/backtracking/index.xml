@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>backtracking on Q. Weng</title>
+    <link>https://foxisawesome.github.io/tags/backtracking/</link>
+    <description>Recent content in backtracking on Q. Weng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Tue, 01 Sep 2020 16:07:12 -0400</lastBuildDate>
+    
+	<atom:link href="https://foxisawesome.github.io/tags/backtracking/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>79 Word Search</title>
+      <link>https://foxisawesome.github.io/posts/79-word-search/</link>
+      <pubDate>Tue, 01 Sep 2020 16:07:12 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/79-word-search/</guid>
+      <description>LC 79 Word Search   Given a 2D board and a word, find if the word exists in the grid.
+The word can be constructed from letters of sequentially adjacent cell, where &amp;ldquo;adjacent&amp;rdquo; cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.
+Example:
+board = [ [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;E&#39;], [&#39;S&#39;,&#39;F&#39;,&#39;C&#39;,&#39;S&#39;], [&#39;A&#39;,&#39;D&#39;,&#39;E&#39;,&#39;E&#39;] ] Given word = &amp;quot;ABCCED&amp;quot;, return true. Given word = &amp;quot;SEE&amp;quot;, return true.</description>
+    </item>
+    
+  </channel>
+</rss>

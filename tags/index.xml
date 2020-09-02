@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Mon, 31 Aug 2020 22:14:45 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 01 Sep 2020 21:33:10 -0400</lastBuildDate>
     
 	<atom:link href="https://foxisawesome.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,36 @@
     <item>
       <title>leetcode</title>
       <link>https://foxisawesome.github.io/tags/leetcode/</link>
-      <pubDate>Mon, 31 Aug 2020 22:14:45 -0400</pubDate>
+      <pubDate>Tue, 01 Sep 2020 21:33:10 -0400</pubDate>
       
       <guid>https://foxisawesome.github.io/tags/leetcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>backtracking</title>
+      <link>https://foxisawesome.github.io/tags/backtracking/</link>
+      <pubDate>Tue, 01 Sep 2020 16:07:12 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/tags/backtracking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>DFS</title>
+      <link>https://foxisawesome.github.io/tags/dfs/</link>
+      <pubDate>Tue, 01 Sep 2020 16:07:12 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/tags/dfs/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>BFS</title>
+      <link>https://foxisawesome.github.io/tags/bfs/</link>
+      <pubDate>Mon, 31 Aug 2020 22:24:46 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/tags/bfs/</guid>
       <description></description>
     </item>
     
@@ -62,6 +89,15 @@
       <pubDate>Sun, 30 Aug 2020 17:08:55 -0400</pubDate>
       
       <guid>https://foxisawesome.github.io/tags/template/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>linkedList</title>
+      <link>https://foxisawesome.github.io/tags/linkedlist/</link>
+      <pubDate>Sat, 01 Aug 2020 20:06:27 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/tags/linkedlist/</guid>
       <description></description>
     </item>
     

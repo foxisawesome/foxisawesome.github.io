@@ -65,6 +65,7 @@
 
 		
 
+
 		<p><a href="https://leetcode.com/problems/prison-cells-after-n-days/">LC 957 Prison Cells </a></p>
 <blockquote>
 <p>There are 8 prison cells in a row, and each cell is either occupied or vacant.</p>
@@ -78,20 +79,18 @@
 </blockquote>
 <p>2020-08-31 Notes:</p>
 <ul>
-<li>这题做了好久，终于明白了， cycle = 14</li>
-<li>two cases:
-<ul>
 <li>
+<p>这题做了好久，好多corner case没过。最后才明白：</p>
 <ol>
-<li>head in the cycle of 14;  <code>days %= 14</code></li>
-</ol>
+<li>
+<p>cycle = 14</p>
 </li>
 <li>
-<ol start="2">
-<li>head not in the cycle of 14. in this case, <code>days = (days-1)%14</code>,</li>
-</ol>
+<p>two cases:</p>
+<p>​	a. head in the cycle of 14;  <code>days %= 14</code></p>
+<p>​	b. head not in the cycle of 14. in this case, <code>days = (days-1)%14</code>,</p>
 </li>
-</ul>
+</ol>
 </li>
 </ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
@@ -145,7 +144,7 @@
 
         		<footer>
 			<span>
-			&copy; <time datetime="2020-08-31 22:19:15.787502 -0400 EDT m=&#43;0.056846234">2020</time> Q. W.. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			&copy; <time datetime="2020-09-01 21:58:41.644777 -0400 EDT m=&#43;0.058173959">2020</time> Q. W.. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
 			</span>
 		</footer>
 

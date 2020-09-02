@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>295 Find Median From Data Stream &middot; Q. Weng</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Q. Weng" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Q. Weng</h2>
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/posts/">
+                
+                <span>Posts</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/about/">
+                
+                <span>About</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Q. W.
+        <br>
+        <span>on&nbsp;</span><time datetime="2020-09-01 21:33:10 -0400 EDT">September 1, 2020</time>
+</div>
+
+		<h1 class="post-title">295 Find Median From Data Stream</h1>
+<div class="post-line"></div>
+
+		
+
+
+		<h2 id="lc-295-find-median-from-data-stream-httpsleetcodecomproblemsfind-median-from-data-stream"><a href="https://leetcode.com/problems/find-median-from-data-stream/">LC 295 Find Median From Data Stream </a></h2>
+<blockquote>
+<p>Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value.</p>
+<p>For example,</p>
+<pre><code>[2,3,4], the median is 3
+[2,3], the median is (2 + 3) / 2 = 2.5
+</code></pre></blockquote>
+<h2 id="solution">Solution</h2>
+<p>2020-09-01 Notes:</p>
+<ul>
+<li>
+<p>Follow 了<a href="https://zxi.mytechroad.com/blog/leetcode/leetcode-295-find-median-from-data-stream/">花花酱的solu#1</a>。 python the heapq implementation is a bit messy, while involving max heapq. python heapq library default heap is min-heap. filp all nums to -num to a heap, then it becomes a max-heap. Recover while pop.</p>
+</li>
+<li>
+<p>Algo 想法挺简单但很巧: 分两堆：small (max-heap) 在左，large (min-heap)在右。</p>
+<ul>
+<li>Step1: add number to small heap while num &lt;= small[0]</li>
+<li>Step2: balancing two heaps, <code>0&lt;=len(small)-len(large)&lt;2</code></li>
+</ul>
+<p><img src="/img/295-ep51-2.png" alt=""></p>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">MedianFinder</span>:
+	<span style="color:#f92672">import</span> heapq
+    <span style="color:#66d9ef">def</span> __init__(self):
+        self<span style="color:#f92672">.</span>large <span style="color:#f92672">=</span> [] <span style="color:#75715e"># min heap, right heap</span>
+        self<span style="color:#f92672">.</span>small <span style="color:#f92672">=</span> [] <span style="color:#75715e"># max heap, left heap</span>
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">addNum</span>(self, num: int) <span style="color:#f92672">-&gt;</span> None:
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> self<span style="color:#f92672">.</span>small <span style="color:#f92672">or</span> num <span style="color:#f92672">&lt;=</span> <span style="color:#f92672">-</span>self<span style="color:#f92672">.</span>small[<span style="color:#ae81ff">0</span>] :
+            <span style="color:#75715e">#default heapq is min heap, use -1*num will turn it as max heapq </span>
+            heapq<span style="color:#f92672">.</span>heappush(self<span style="color:#f92672">.</span>small, <span style="color:#f92672">-</span>num)
+        <span style="color:#66d9ef">else</span>:
+            heapq<span style="color:#f92672">.</span>heappush(self<span style="color:#f92672">.</span>large, num)
+        <span style="color:#75715e"># balance two heaps</span>
+        <span style="color:#66d9ef">if</span> len(self<span style="color:#f92672">.</span>small) <span style="color:#f92672">&lt;</span> len(self<span style="color:#f92672">.</span>large):
+            heapq<span style="color:#f92672">.</span>heappush(self<span style="color:#f92672">.</span>small, <span style="color:#f92672">-</span>heapq<span style="color:#f92672">.</span>heappop(self<span style="color:#f92672">.</span>large))
+        <span style="color:#66d9ef">elif</span> len(self<span style="color:#f92672">.</span>small) <span style="color:#f92672">-</span> len(self<span style="color:#f92672">.</span>large) <span style="color:#f92672">==</span> <span style="color:#ae81ff">2</span>:
+            heapq<span style="color:#f92672">.</span>heappush(self<span style="color:#f92672">.</span>large, <span style="color:#f92672">-</span>heapq<span style="color:#f92672">.</span>heappop(self<span style="color:#f92672">.</span>small))
+
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">findMedian</span>(self) <span style="color:#f92672">-&gt;</span> float:
+        <span style="color:#66d9ef">if</span> len(self<span style="color:#f92672">.</span>small) <span style="color:#f92672">==</span> len(self<span style="color:#f92672">.</span>large):
+            <span style="color:#66d9ef">return</span> (<span style="color:#f92672">-</span>self<span style="color:#f92672">.</span>small[<span style="color:#ae81ff">0</span>] <span style="color:#f92672">+</span> self<span style="color:#f92672">.</span>large[<span style="color:#ae81ff">0</span>])<span style="color:#f92672">/</span><span style="color:#ae81ff">2</span>
+        <span style="color:#66d9ef">else</span>:
+            <span style="color:#66d9ef">return</span> <span style="color:#f92672">-</span>self<span style="color:#f92672">.</span>small[<span style="color:#ae81ff">0</span>]
+
+<span style="color:#75715e"># Your MedianFinder object will be instantiated and called as such:</span>
+<span style="color:#75715e"># obj = MedianFinder()</span>
+<span style="color:#75715e"># obj.addNum(num)</span>
+<span style="color:#75715e"># param_2 = obj.findMedian()</span>
+
+<span style="color:#75715e"># Time O(nlogn)</span>
+<span style="color:#75715e"># Space O(N)</span>
+</code></pre></div>
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/148-sort-list/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2020-09-01 21:58:41.642331 -0400 EDT m=&#43;0.055727809">2020</time> Q. W.. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>

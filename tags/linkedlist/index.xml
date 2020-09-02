@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>linkedList on Q. Weng</title>
+    <link>https://foxisawesome.github.io/tags/linkedlist/</link>
+    <description>Recent content in linkedList on Q. Weng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Sat, 01 Aug 2020 20:06:27 -0400</lastBuildDate>
+    
+	<atom:link href="https://foxisawesome.github.io/tags/linkedlist/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>206 Reverse Linked List</title>
+      <link>https://foxisawesome.github.io/posts/206-reverse-linked-list/</link>
+      <pubDate>Sat, 01 Aug 2020 20:06:27 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/206-reverse-linked-list/</guid>
+      <description>LC 206 Reverse Linked List   Reverse a singly linked list.
+Example:
+Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL Output: 5-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;1-&amp;gt;NULL  Solution 2020-09-01 Notes:
+ 这题刷了不下10遍了，终于明白iteration这里的四步操作了。 recursion的做法还是似懂非懂，还得再看看。感觉TreeNode, ListNode 的recursion 都是if not head/root: return head/root。 另外，recession 这里返回的是 以head.next为头reversed 的list，只需要再把head.next	 reverse 下就好了。  # Definition for singly-linked list. # class ListNode: # def __init__(self, val=0, next=None): # self.val = val # self.next = next class Solution: # iteration def reverseList_iter(self, head: ListNode) -&amp;gt; ListNode: if not head: return None prev = None curr = head while curr: temp = curr.</description>
+    </item>
+    
+  </channel>
+</rss>

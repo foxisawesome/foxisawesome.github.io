@@ -54,6 +54,91 @@
 <main>
 	<div class="catalogue">
 		
+			<a href="https://foxisawesome.github.io/posts/1266-minimum-time-visiting-all-points/" class="catalogue-item">
+    <div>
+        <time datetime="2020-08-30 21:24:22 -0400 EDT" class="catalogue-time">August 30, 2020</time>
+        <h1 class="catalogue-title">1266 Minimum Time Visiting All Points</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            LC 1266
+ On a plane there are n points with integer coordinates points[i] = [xi, yi]. Your task is to find the minimum time in seconds to visit all points.
+You can move according to the next rules:
+ In one second always you can either move vertically, horizontally by one unit or diagonally (it means to move one unit vertically and one unit horizontally in one second). You have to visit the points in the same order as they appear in the array.
+        </p>
+    </div>
+</a>
+
+		
+			<a href="https://foxisawesome.github.io/posts/530-min-abs-dif-bst/" class="catalogue-item">
+    <div>
+        <time datetime="2020-08-30 20:59:36 -0400 EDT" class="catalogue-time">August 30, 2020</time>
+        <h1 class="catalogue-title">530 Min Abs Dif BST</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            LC 530
+Given a binary search tree with non-negative values, find the minimum absolute difference between values of any two nodes.
+ Given a binary search tree with non-negative values, find the minimum absolute difference between values of any two nodes.
+Example:
+Input: 1 \ 3 / 2 Output: 1 Explanation: The minimum absolute difference is 1, which is the difference between 2 and 1 (or between 2 and 3).  8/30/2020 Note:
+        </p>
+    </div>
+</a>
+
+		
+			<a href="https://foxisawesome.github.io/posts/98-valid-bst/" class="catalogue-item">
+    <div>
+        <time datetime="2020-08-30 20:59:02 -0400 EDT" class="catalogue-time">August 30, 2020</time>
+        <h1 class="catalogue-title">98 Valid BST</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            LC 98
+Given a binary tree, determine if it is a valid binary search tree (BST).
+Assume a BST is defined as follows:
+ The left subtree of a node contains only nodes with keys less than the node&rsquo;s key. The right subtree of a node contains only nodes with keys greater than the node&rsquo;s key. Both the left and right subtrees must also be binary search trees.  Example 1:
+        </p>
+    </div>
+</a>
+
+		
+			<a href="https://foxisawesome.github.io/posts/701-insert-into-bst/" class="catalogue-item">
+    <div>
+        <time datetime="2020-08-30 20:58:29 -0400 EDT" class="catalogue-time">August 30, 2020</time>
+        <h1 class="catalogue-title">701 Insert Into BST</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            LC 701
+ Given the root node of a binary search tree (BST) and a value to be inserted into the tree, insert the value into the BST. Return the root node of the BST after the insertion. It is guaranteed that the new value does not exist in the original BST.
+Note that there may exist multiple valid ways for the insertion, as long as the tree remains a BST after insertion.
+        </p>
+    </div>
+</a>
+
+		
+			<a href="https://foxisawesome.github.io/posts/sliding-window/" class="catalogue-item">
+    <div>
+        <time datetime="2020-08-30 17:08:55 -0400 EDT" class="catalogue-time">August 30, 2020</time>
+        <h1 class="catalogue-title">Sliding Window</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            滑动窗口算法的思路是这样：
+1、我们在字符串S中使用双指针中的左右指针技巧，初始化left = right = 0，把索引左闭右开区间[left, right)称为一个「窗口」。
+2、我们先不断地增加right指针扩大窗口[left, right)，直到窗口中的字符串符合要求（包含了T中的所有字符）。
+3、此时，我们停止增加right，转而不断增加left指针缩小窗口[left, right)，直到窗口中的字符串不再符合要求（不包含T中的所有字符了）。同时，每次增加left，我们都要更新一轮结果。
+4、重复第 2 和第 3 步，直到right到达字符串S的尽头。
+这个思路其实也不难，第 2 步相当于在寻找一个「可行解」，然后第 3 步在优化这个「可行解」，最终找到最优解，也就是最短的覆盖子串。左右指针轮流前进，窗口大小增增减减，窗口不断向右滑动，这就是「滑动窗口」这个名字的来历。
+refrence: wx:labuladong
+Code Template:
+def slidingWindow(s: str, t: str) -&gt; str: target, window = {}, {} for i in t: target[i] = target.get(i,0) + 1 left, right, valid = 0, 0, 0 while (right &lt; len(s)): # expand window right point to contain all t c = s[right] # move right index right += 1 # 进行窗口内数据的一系列更新 .
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://foxisawesome.github.io/posts/first-post-linked-list/" class="catalogue-item">
     <div>
         <time datetime="2020-08-30 16:54:06 -0400 EDT" class="catalogue-time">August 30, 2020</time>
@@ -65,6 +150,22 @@
 It takes a while for me to get how exactly Linked List works. I used following utility functions to keep my leetcode solutions and run codes locally.
 Note:
  say head = ListNode(0), then head = head.next is to iterate to next node on the Linked List. use head.next = a to point to next node.  # My liked list utility functions:  class ListNode: def __init__(self, val=0, next=None): self.
+        </p>
+    </div>
+</a>
+
+		
+			<a href="https://foxisawesome.github.io/posts/206-reverse-linked-list/" class="catalogue-item">
+    <div>
+        <time datetime="2020-08-01 20:06:27 -0400 EDT" class="catalogue-time">August 1, 2020</time>
+        <h1 class="catalogue-title">206 Reverse Linked List</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            LC 206 Reverse Linked List   Reverse a singly linked list.
+Example:
+Input: 1-&gt;2-&gt;3-&gt;4-&gt;5-&gt;NULL Output: 5-&gt;4-&gt;3-&gt;2-&gt;1-&gt;NULL  Solution 2020-09-01 Notes:
+ 这题刷了不下10遍了，终于明白iteration这里的四步操作了。 recursion的做法还是似懂非懂，还得再看看。感觉TreeNode, ListNode 的recursion 都是if not head/root: return head/root。 另外，recession 这里返回的是 以head.next为头reversed 的list，只需要再把head.next	 reverse 下就好了。  # Definition for singly-linked list. # class ListNode: # def __init__(self, val=0, next=None): # self.val = val # self.next = next class Solution: # iteration def reverseList_iter(self, head: ListNode) -&gt; ListNode: if not head: return None prev = None curr = head while curr: temp = curr.
         </p>
     </div>
 </a>
@@ -85,7 +186,7 @@ Note:
 
         		<footer>
 			<span>
-			&copy; <time datetime="2020-08-31 22:19:15.796074 -0400 EDT m=&#43;0.065418973">2020</time> Q. W.. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			&copy; <time datetime="2020-09-01 21:58:41.655307 -0400 EDT m=&#43;0.068703849">2020</time> Q. W.. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
 			</span>
 		</footer>
 
