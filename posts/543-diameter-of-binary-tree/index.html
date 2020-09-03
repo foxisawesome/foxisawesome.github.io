@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>543 Diameter of Binary Tree &middot; Q. Weng</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Q. Weng" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Q. Weng</h2>
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/posts/">
+                
+                <span>Posts</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/about/">
+                
+                <span>About</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Q. W.
+        <br>
+        <span>on&nbsp;</span><time datetime="2020-09-02 15:49:49 -0400 EDT">September 2, 2020</time>
+</div>
+
+		<h1 class="post-title">543 Diameter of Binary Tree</h1>
+<div class="post-line"></div>
+
+		
+
+
+		<h2 id="lc-543-diameter-of-binary-tree-httpsleetcodecomproblemsdiameter-of-binary-tree"><a href="https://leetcode.com/problems/diameter-of-binary-tree">LC 543 Diameter of Binary Tree </a></h2>
+<blockquote>
+<p>Given a binary tree, you need to compute the length of the diameter of the tree. The diameter of a binary tree is the length of the <strong>longest</strong> path between any two nodes in a tree. This path may or may not pass through the root.</p>
+<p><strong>Example:</strong>
+Given a binary tree</p>
+<pre><code>          1
+         / \
+        2   3
+       / \     
+      4   5    
+</code></pre><p>Return <strong>3</strong>, which is the length of the path [4,2,1,3] or [5,2,1,3].</p>
+</blockquote>
+<h2 id="solution">Solution</h2>
+<p>2020-09-02 Notes:</p>
+<ul>
+<li>Height of a tree: max(left_height, right_height) + 1</li>
+<li>width of a tree (diameter): max(left_height + right_height)</li>
+<li>Diameter needs to be calculated along the way in this case.</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#75715e"># Definition for a binary tree node.</span>
+<span style="color:#75715e"># class TreeNode:</span>
+<span style="color:#75715e">#     def __init__(self, val=0, left=None, right=None):</span>
+<span style="color:#75715e">#         self.val = val</span>
+<span style="color:#75715e">#         self.left = left</span>
+<span style="color:#75715e">#         self.right = right</span>
+<span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">diameterOfBinaryTree</span>(self, root: TreeNode) <span style="color:#f92672">-&gt;</span> int:
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> root: <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+        self<span style="color:#f92672">.</span>diameter <span style="color:#f92672">=</span> <span style="color:#ae81ff">0</span>
+        self<span style="color:#f92672">.</span>DFS(root)
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>diameter
+    
+    
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">DFS</span>(self, root) <span style="color:#f92672">-&gt;</span> int: <span style="color:#75715e"># DFS returns the height</span>
+        <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> root: <span style="color:#66d9ef">return</span> <span style="color:#ae81ff">0</span>
+        L_height <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>DFS(root<span style="color:#f92672">.</span>left)
+        R_height <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>DFS(root<span style="color:#f92672">.</span>right)
+        self<span style="color:#f92672">.</span>diameter <span style="color:#f92672">=</span> max(self<span style="color:#f92672">.</span>diameter, L_height<span style="color:#f92672">+</span>R_height)
+        <span style="color:#66d9ef">return</span> max(L_height, R_height) <span style="color:#f92672">+</span> <span style="color:#ae81ff">1</span>
+
+<span style="color:#75715e"># Time O(N)</span>
+<span style="color:#75715e"># Space O(N)</span>
+</code></pre></div>
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/48-rotate-image/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2020-09-02 22:47:29.699536 -0400 EDT m=&#43;0.058108940">2020</time> Q. W.. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>

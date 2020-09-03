@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>48 Rotate Image &middot; Q. Weng</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Q. Weng" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Q. Weng</h2>
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/posts/">
+                
+                <span>Posts</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/about/">
+                
+                <span>About</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Q. W.
+        <br>
+        <span>on&nbsp;</span><time datetime="2020-09-02 14:16:29 -0400 EDT">September 2, 2020</time>
+</div>
+
+		<h1 class="post-title">48 Rotate Image</h1>
+<div class="post-line"></div>
+
+		
+
+
+		<h2 id="lc-48-rotate-image-"><a href="">LC 48 Rotate Image </a></h2>
+<blockquote>
+<p>You are given an <em>n</em> x <em>n</em> 2D <code>matrix</code> representing an image, rotate the image by 90 degrees (clockwise).</p>
+<p>You have to rotate the image <a href="https://en.wikipedia.org/wiki/In-place_algorithm"><strong>in-place</strong></a>, which means you have to modify the input 2D matrix directly. <strong>DO NOT</strong> allocate another 2D matrix and do the rotation.</p>
+<p><img src="/img/mat1.jpg" alt="img"></p>
+</blockquote>
+<h2 id="solution">Solution</h2>
+<p>2020-09-02T14:16:29-04:00 Notes:</p>
+<ul>
+<li>
+<p>Algo #1: tranpose the matrix first, then reverse the rows. it requires two passes.</p>
+</li>
+<li>
+<p>Algo #2: one pass, same time complexity. some details need to figure out.</p>
+<ol>
+<li>
+<p>rotation algo: <code>r, c = c, n-r-1</code></p>
+</li>
+<li>
+<p><code>row in range(n//2+n%2)</code> and  <code>col in range(n//2)</code></p>
+</li>
+<li>
+<p>while rotating the k, cycle from the last element: <code>t[(k-1)%4]</code></p>
+</li>
+</ol>
+</li>
+</ul>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">rotate</span>(self, matrix: List[List[int]]) <span style="color:#f92672">-&gt;</span> None:
+        n <span style="color:#f92672">=</span> len(matrix)
+        <span style="color:#75715e"># two-pass: 1. transpose; 2. reverse rows</span>
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n):
+            <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(i,n):
+                matrix[i][j], matrix[j][i] <span style="color:#f92672">=</span> matrix[j][i], matrix[i][j]
+            
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n):
+            matrix[i]<span style="color:#f92672">.</span>reverse()
+            
+        <span style="color:#75715e"># one-pass:</span>
+        <span style="color:#66d9ef">for</span> i <span style="color:#f92672">in</span> range(n<span style="color:#f92672">//</span><span style="color:#ae81ff">2</span><span style="color:#f92672">+</span>n<span style="color:#f92672">%</span><span style="color:#ae81ff">2</span>):
+            <span style="color:#66d9ef">for</span> j <span style="color:#f92672">in</span> range(n<span style="color:#f92672">//</span><span style="color:#ae81ff">2</span>):
+                r, c <span style="color:#f92672">=</span> i, j
+                t <span style="color:#f92672">=</span> [<span style="color:#ae81ff">0</span>]<span style="color:#f92672">*</span><span style="color:#ae81ff">4</span>
+                <span style="color:#66d9ef">for</span> k <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">4</span>):
+                    t[k] <span style="color:#f92672">=</span> matrix[r][c]
+                    r, c <span style="color:#f92672">=</span> c, n<span style="color:#f92672">-</span>r<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+                <span style="color:#66d9ef">for</span> k <span style="color:#f92672">in</span> range(<span style="color:#ae81ff">4</span>):
+                    matrix[r][c] <span style="color:#f92672">=</span> t[(k<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>)<span style="color:#f92672">%</span><span style="color:#ae81ff">4</span>]
+                    r, c <span style="color:#f92672">=</span> c, n<span style="color:#f92672">-</span>r<span style="color:#f92672">-</span><span style="color:#ae81ff">1</span>
+
+<span style="color:#75715e"># Time O(N^2)</span>
+<span style="color:#75715e"># Space O(1)</span>
+</code></pre></div>
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/528-random-pick-with-weight/" class="left arrow">&#8592;</a>
+		<a href="/posts/543-diameter-of-binary-tree/" class="right arrow">&#8594;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2020-09-02 22:47:29.699406 -0400 EDT m=&#43;0.057978835">2020</time> Q. W.. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>
