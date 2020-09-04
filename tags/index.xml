@@ -6,7 +6,7 @@
     <description>Recent content in Tags on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Wed, 02 Sep 2020 15:49:49 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 03 Sep 2020 22:17:11 -0400</lastBuildDate>
     
 	<atom:link href="https://foxisawesome.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
@@ -14,9 +14,36 @@
     <item>
       <title>leetcode</title>
       <link>https://foxisawesome.github.io/tags/leetcode/</link>
-      <pubDate>Wed, 02 Sep 2020 15:49:49 -0400</pubDate>
+      <pubDate>Thu, 03 Sep 2020 22:17:11 -0400</pubDate>
       
       <guid>https://foxisawesome.github.io/tags/leetcode/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>backtracking</title>
+      <link>https://foxisawesome.github.io/tags/backtracking/</link>
+      <pubDate>Thu, 03 Sep 2020 21:26:20 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/tags/backtracking/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>dp</title>
+      <link>https://foxisawesome.github.io/tags/dp/</link>
+      <pubDate>Thu, 03 Sep 2020 21:26:20 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/tags/dp/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>recursion</title>
+      <link>https://foxisawesome.github.io/tags/recursion/</link>
+      <pubDate>Thu, 03 Sep 2020 21:26:20 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/tags/recursion/</guid>
       <description></description>
     </item>
     
@@ -39,15 +66,6 @@
     </item>
     
     <item>
-      <title>backtracking</title>
-      <link>https://foxisawesome.github.io/tags/backtracking/</link>
-      <pubDate>Tue, 01 Sep 2020 16:07:12 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/tags/backtracking/</guid>
-      <description></description>
-    </item>
-    
-    <item>
       <title>DFS</title>
       <link>https://foxisawesome.github.io/tags/dfs/</link>
       <pubDate>Tue, 01 Sep 2020 16:07:12 -0400</pubDate>
@@ -62,15 +80,6 @@
       <pubDate>Mon, 31 Aug 2020 22:24:46 -0400</pubDate>
       
       <guid>https://foxisawesome.github.io/tags/bfs/</guid>
-      <description></description>
-    </item>
-    
-    <item>
-      <title>recursion</title>
-      <link>https://foxisawesome.github.io/tags/recursion/</link>
-      <pubDate>Mon, 31 Aug 2020 19:05:25 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/tags/recursion/</guid>
       <description></description>
     </item>
     

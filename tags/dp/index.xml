@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="utf-8" standalone="yes"?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
-    <title>recursion on Q. Weng</title>
-    <link>https://foxisawesome.github.io/tags/recursion/</link>
-    <description>Recent content in recursion on Q. Weng</description>
+    <title>dp on Q. Weng</title>
+    <link>https://foxisawesome.github.io/tags/dp/</link>
+    <description>Recent content in dp on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     <lastBuildDate>Thu, 03 Sep 2020 21:26:20 -0400</lastBuildDate>
     
-	<atom:link href="https://foxisawesome.github.io/tags/recursion/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://foxisawesome.github.io/tags/dp/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
@@ -19,18 +19,6 @@
       <guid>https://foxisawesome.github.io/posts/140-word-break-ii/</guid>
       <description>LC 140 Word Break II   Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, add spaces in s to construct a sentence where each word is a valid dictionary word. Return all such possible sentences.
 Input: s = &amp;quot;pineapplepenapple&amp;quot; wordDict = [&amp;quot;apple&amp;quot;, &amp;quot;pen&amp;quot;, &amp;quot;applepen&amp;quot;, &amp;quot;pine&amp;quot;, &amp;quot;pineapple&amp;quot;] Output: [ &amp;quot;pine apple pen apple&amp;quot;, &amp;quot;pineapple pen apple&amp;quot;, &amp;quot;pine applepen apple&amp;quot; ]  Solution 2020-09-03 Notes:</description>
-    </item>
-    
-    <item>
-      <title>735 Aseroid Collision</title>
-      <link>https://foxisawesome.github.io/posts/735-aseroid-collision/</link>
-      <pubDate>Mon, 31 Aug 2020 19:05:25 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/735-aseroid-collision/</guid>
-      <description>LC 735 Aseroid Collision 
- We are given an array asteroids of integers representing asteroids in a row.
-For each asteroid, the absolute value represents its size, and the sign represents its direction (positive meaning right, negative meaning left). Each asteroid moves at the same speed.
-Find out the state of the asteroids after all collisions. If two asteroids meet, the smaller one will explode. If both are the same size, both will explode.</description>
     </item>
     
   </channel>

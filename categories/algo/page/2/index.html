@@ -55,6 +55,52 @@
     <h1>Category algo</h1>
 	<div class="catalogue">
 		
+			<a href="https://foxisawesome.github.io/posts/981-time-based-key-value-store/" class="catalogue-item">
+    <div>
+        <time datetime="2020-09-01 14:15:51 -0400 EDT" class="catalogue-time">September 1, 2020</time>
+        <h1 class="catalogue-title">981 Time Based Key Value Store</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            LC 981 Time Based Key Value Store   Create a timebased key-value store class TimeMap, that supports two operations.
+ set(string key, string value, int timestamp)   Stores the key and value, along with the given timestamp.  get(string key, int timestamp)   Returns a value such that set(key, value, timestamp_prev) was called previously, with timestamp_prev &lt;= timestamp. If there are multiple such values, it returns the one with the largest timestamp_prev.
+        </p>
+    </div>
+</a>
+
+		
+			<a href="https://foxisawesome.github.io/posts/1197-minimum-knight-moves/" class="catalogue-item">
+    <div>
+        <time datetime="2020-08-31 22:24:46 -0400 EDT" class="catalogue-time">August 31, 2020</time>
+        <h1 class="catalogue-title">1197 Minimum Knight Moves</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            LC 1197 Minimum Knight Moves 
+ In an infinite chess board with coordinates from -infinity to +infinity, you have a knight at square [0, 0].
+A knight has 8 possible moves it can make, as illustrated below. Each move is two squares in a cardinal direction, then one square in an orthogonal direction.
+Return the minimum number of steps needed to move the knight to the square [x, y]. It is guaranteed the answer exists.
+        </p>
+    </div>
+</a>
+
+		
+			<a href="https://foxisawesome.github.io/posts/1041-robot-bounded-in-circle/" class="catalogue-item">
+    <div>
+        <time datetime="2020-08-31 22:14:45 -0400 EDT" class="catalogue-time">August 31, 2020</time>
+        <h1 class="catalogue-title">1041 Robot Bounded in Circle</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            LC 1041 Robot Bounded in Circle 
+ On an infinite plane, a robot initially stands at (0, 0) and faces north. The robot can receive one of three instructions:
+ &quot;G&quot;: go straight 1 unit; &quot;L&quot;: turn 90 degrees to the left; &quot;R&quot;: turn 90 degress to the right.  The robot performs the instructions given in order, and repeats them forever.
+Return true if and only if there exists a circle in the plane such that the robot never leaves the circle.
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://foxisawesome.github.io/posts/957-prison-cells/" class="catalogue-item">
     <div>
         <time datetime="2020-08-31 19:26:18 -0400 EDT" class="catalogue-time">August 31, 2020</time>
@@ -171,58 +217,6 @@ Assume a BST is defined as follows:
 </a>
 
 		
-			<a href="https://foxisawesome.github.io/posts/701-insert-into-bst/" class="catalogue-item">
-    <div>
-        <time datetime="2020-08-30 20:58:29 -0400 EDT" class="catalogue-time">August 30, 2020</time>
-        <h1 class="catalogue-title">701 Insert Into BST</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            LC 701
- Given the root node of a binary search tree (BST) and a value to be inserted into the tree, insert the value into the BST. Return the root node of the BST after the insertion. It is guaranteed that the new value does not exist in the original BST.
-Note that there may exist multiple valid ways for the insertion, as long as the tree remains a BST after insertion.
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://foxisawesome.github.io/posts/sliding-window/" class="catalogue-item">
-    <div>
-        <time datetime="2020-08-30 17:08:55 -0400 EDT" class="catalogue-time">August 30, 2020</time>
-        <h1 class="catalogue-title">Sliding Window</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            滑动窗口算法的思路是这样：
-1、我们在字符串S中使用双指针中的左右指针技巧，初始化left = right = 0，把索引左闭右开区间[left, right)称为一个「窗口」。
-2、我们先不断地增加right指针扩大窗口[left, right)，直到窗口中的字符串符合要求（包含了T中的所有字符）。
-3、此时，我们停止增加right，转而不断增加left指针缩小窗口[left, right)，直到窗口中的字符串不再符合要求（不包含T中的所有字符了）。同时，每次增加left，我们都要更新一轮结果。
-4、重复第 2 和第 3 步，直到right到达字符串S的尽头。
-这个思路其实也不难，第 2 步相当于在寻找一个「可行解」，然后第 3 步在优化这个「可行解」，最终找到最优解，也就是最短的覆盖子串。左右指针轮流前进，窗口大小增增减减，窗口不断向右滑动，这就是「滑动窗口」这个名字的来历。
-refrence: wx:labuladong
-Code Template:
-def slidingWindow(s: str, t: str) -&gt; str: target, window = {}, {} for i in t: target[i] = target.get(i,0) + 1 left, right, valid = 0, 0, 0 while (right &lt; len(s)): # expand window right point to contain all t c = s[right] # move right index right += 1 # 进行窗口内数据的一系列更新 .
-        </p>
-    </div>
-</a>
-
-		
-			<a href="https://foxisawesome.github.io/posts/first-post-linked-list/" class="catalogue-item">
-    <div>
-        <time datetime="2020-08-30 16:54:06 -0400 EDT" class="catalogue-time">August 30, 2020</time>
-        <h1 class="catalogue-title">First Post Linked List</h1>
-        <div class="catalogue-line"></div>
-
-        <p>
-            开始刷Leetcode 好几个月了，今天开始学很多人用blog 记录下自己的notes，也激励自己好好刷题！First post!
-It takes a while for me to get how exactly Linked List works. I used following utility functions to keep my leetcode solutions and run codes locally.
-Note:
- say head = ListNode(0), then head = head.next is to iterate to next node on the Linked List. use head.next = a to point to next node.  # My liked list utility functions:  class ListNode: def __init__(self, val=0, next=None): self.
-        </p>
-    </div>
-</a>
-
-		
 	</div>
 	
 	<div class="pagination">
@@ -240,7 +234,7 @@ Note:
 
         		<footer>
 			<span>
-			&copy; <time datetime="2020-09-02 22:47:29.713455 -0400 EDT m=&#43;0.072028085">2020</time> Q. W.. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			&copy; <time datetime="2020-09-03 22:23:47.268345 -0400 EDT m=&#43;0.092618941">2020</time> Q. W.. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
 			</span>
 		</footer>
 
