@@ -109,20 +109,23 @@ Output:
 <span style="color:#75715e"># Time O()</span>
 <span style="color:#75715e"># Space O()</span>
 </code></pre></div><p>recursion with memo:</p>
+<ul>
+<li>need to add <code>()</code> to this <code>res.append(w + ('' if not r else &quot; &quot; + r))</code>. Otherwise, it will interperate as <code>res.append((w + '') if not r else (&quot; &quot; + r))</code></li>
+</ul>
 <div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
     <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">wordBreak</span>(self, s: str, wordDict: List[str]) <span style="color:#f92672">-&gt;</span> List[str]:
         res <span style="color:#f92672">=</span> []
         memo <span style="color:#f92672">=</span> dict()
-        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>dfs(s,wordDict,res,memo)
+        <span style="color:#66d9ef">return</span> self<span style="color:#f92672">.</span>dfs(s,wordDict,memo)
     
-    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dfs</span>(self, s,wordDict,res,memo):
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">dfs</span>(self, s,wordDict,memo):
         <span style="color:#66d9ef">if</span> s <span style="color:#f92672">in</span> memo: <span style="color:#66d9ef">return</span> memo[s]
         <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> s: <span style="color:#66d9ef">return</span> [<span style="color:#e6db74">&#34;&#34;</span>]
         
         res <span style="color:#f92672">=</span> []
         <span style="color:#66d9ef">for</span> w <span style="color:#f92672">in</span> wordDict:
             <span style="color:#66d9ef">if</span> s[:len(w)] <span style="color:#f92672">==</span> w:
-                <span style="color:#66d9ef">for</span> r <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>dfs(s[len(w):], wordDict, res, memo):
+                <span style="color:#66d9ef">for</span> r <span style="color:#f92672">in</span> self<span style="color:#f92672">.</span>dfs(s[len(w):], wordDict, memo):
                     res<span style="color:#f92672">.</span>append(w <span style="color:#f92672">+</span> (<span style="color:#e6db74">&#39;&#39;</span> <span style="color:#66d9ef">if</span> <span style="color:#f92672">not</span> r <span style="color:#66d9ef">else</span> <span style="color:#e6db74">&#34; &#34;</span> <span style="color:#f92672">+</span> r))
         memo[s] <span style="color:#f92672">=</span> res
         <span style="color:#66d9ef">return</span> res
@@ -142,7 +145,7 @@ Output:
 
         		<footer>
 			<span>
-			&copy; <time datetime="2020-09-03 22:26:31.394952 -0400 EDT m=&#43;0.056275066">2020</time> Q. W.. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			&copy; <time datetime="2020-09-04 22:40:51.51236 -0400 EDT m=&#43;0.060086764">2020</time> Q. W.. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
 			</span>
 		</footer>
 
