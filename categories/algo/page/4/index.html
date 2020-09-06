@@ -55,6 +55,22 @@
     <h1>Category algo</h1>
 	<div class="catalogue">
 		
+			<a href="https://foxisawesome.github.io/posts/first-post-linked-list/" class="catalogue-item">
+    <div>
+        <time datetime="2020-08-30 16:54:06 -0400 EDT" class="catalogue-time">August 30, 2020</time>
+        <h1 class="catalogue-title">First Post Linked List</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            开始刷Leetcode 好几个月了，今天开始学很多人用blog 记录下自己的notes，也激励自己好好刷题！First post!
+It takes a while for me to get how exactly Linked List works. I used following utility functions to keep my leetcode solutions and run codes locally.
+Note:
+ say head = ListNode(0), then head = head.next is to iterate to next node on the Linked List. use head.next = a to point to next node.  # My liked list utility functions:  class ListNode: def __init__(self, val=0, next=None): self.
+        </p>
+    </div>
+</a>
+
+		
 			<a href="https://foxisawesome.github.io/posts/206-reverse-linked-list/" class="catalogue-item">
     <div>
         <time datetime="2020-08-01 20:06:27 -0400 EDT" class="catalogue-time">August 1, 2020</time>
@@ -87,6 +103,22 @@ Input: (2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4) Output: 7 -&gt; 0 -&gt; 8 Expla
 </a>
 
 		
+			<a href="https://foxisawesome.github.io/posts/1-two-sum/" class="catalogue-item">
+    <div>
+        <time datetime="2020-02-01 14:01:30 -0400 -0400" class="catalogue-time">February 1, 2020</time>
+        <h1 class="catalogue-title">1 Two Sum</h1>
+        <div class="catalogue-line"></div>
+
+        <p>
+            LC 1 Two Sum   Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have *exactly* one solution, and you may not use the same element twice.
+ Solution 2020-02-01 Notes:
+ use hash table, one-pass.  class Solution: def twoSum(self, nums: List[int], target: int) -&gt; List[int]: if not nums or target is None: return [] d = dict() for i, val in enumerate(nums): if target - val not in d: d[val] = i else: return [d[target - val], i] # Time O(N) # Space O(N) 
+        </p>
+    </div>
+</a>
+
+		
 	</div>
 	
 	<div class="pagination">
@@ -102,7 +134,7 @@ Input: (2 -&gt; 4 -&gt; 3) + (5 -&gt; 6 -&gt; 4) Output: 7 -&gt; 0 -&gt; 8 Expla
 
         		<footer>
 			<span>
-			&copy; <time datetime="2020-09-05 21:09:00.908845 -0400 EDT m=&#43;0.142207034">2020</time> Q. W.. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			&copy; <time datetime="2020-09-05 22:33:43.66389 -0400 EDT m=&#43;0.097453828">2020</time> Q. W.. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
 			</span>
 		</footer>
 

@@ -6,10 +6,24 @@
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 05 Sep 2020 21:08:15 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2020 22:05:28 -0400</lastBuildDate>
     
 	<atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>166 Fraction to Recurring Decimal</title>
+      <link>https://foxisawesome.github.io/posts/166-fraction-to-recurring-decimal/</link>
+      <pubDate>Sat, 05 Sep 2020 22:05:28 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/166-fraction-to-recurring-decimal/</guid>
+      <description>LC 166 Fraction to Recurring Decimal   Given two integers representing the numerator and denominator of a fraction, return the fraction in string format.
+If the fractional part is repeating, enclose the repeating part in parentheses.
+If multiple answers are possible, just return any of them.
+Extreme case: numer = -2147483648, denominator = -1999
+ Solution 2020-09-05 Notes:
+ Details: python built-in divmod() returns floor, which is not friendly in negative case.</description>
+    </item>
     
     <item>
       <title>159 Longest Substring With at Most Two Distinct Characters</title>
@@ -17,8 +31,9 @@
       <pubDate>Sat, 05 Sep 2020 21:08:15 -0400</pubDate>
       
       <guid>https://foxisawesome.github.io/posts/159-longest-substring-with-at-most-two-distinct-characters/</guid>
-      <description>LC 159 Longest Substring With at Most Two Distinct Characters    Solution 2020-09-05T21:08:15-04:00 Notes:
-   # Time O() # Space O() </description>
+      <description>LC 159 Longest Substring With at Most Two Distinct Characters   Given a string *s* , find the length of the longest substring *t* that contains at most 2 distinct characters.
+Input: &amp;quot;ccaabbb&amp;quot; Output: 5 Explanation: t is &amp;quot;aabbb&amp;quot; which its length is 5.  Solution 2020-09-05 Notes:
+ 今天周末出去走了一圈，回家刷题效率可以啊。  class Solution: def lengthOfLongestSubstringTwoDistinct(self, s: str) -&amp;gt; int: if not s: return 0 out = 0 n = len(s) for i in range(n): l = 1 while i+l &amp;lt; n and len(set(s[i:i+l+1])) &amp;lt; 3: l += 1 out = max(out, l) return out # Time O(N) # Space O(1) </description>
     </item>
     
     <item>
@@ -394,6 +409,18 @@ Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL Output: 5-&amp;gt;
 You may assume the two numbers do not contain any leading zero, except the number 0 itself.
 Example:
 Input: (2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt; 6 -&amp;gt; 4) Output: 7 -&amp;gt; 0 -&amp;gt; 8 Explanation: 342 + 465 = 807.</description>
+    </item>
+    
+    <item>
+      <title>1 Two Sum</title>
+      <link>https://foxisawesome.github.io/posts/1-two-sum/</link>
+      <pubDate>Sat, 01 Feb 2020 14:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1-two-sum/</guid>
+      <description>LC 1 Two Sum   Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have *exactly* one solution, and you may not use the same element twice.
+ Solution 2020-02-01 Notes:
+ use hash table, one-pass.  class Solution: def twoSum(self, nums: List[int], target: int) -&amp;gt; List[int]: if not nums or target is None: return [] d = dict() for i, val in enumerate(nums): if target - val not in d: d[val] = i else: return [d[target - val], i] # Time O(N) # Space O(N) </description>
     </item>
     
     <item>

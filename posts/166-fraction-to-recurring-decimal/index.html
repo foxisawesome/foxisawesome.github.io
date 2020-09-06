@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en-us">
+    <head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+		<title>166 Fraction to Recurring Decimal &middot; Q. Weng</title>
+
+		
+  		<link rel="stylesheet" href="/css/style.css">
+		<link rel="stylesheet" href="/css/fonts.css">
+		
+
+		<link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+		<link rel="manifest" href="/site.webmanifest">
+
+		
+		<link href="" rel="alternate" type="application/rss+xml" title="Q. Weng" />
+	</head>
+
+    <body>
+        		<nav class="nav">
+			<div class="nav-container">
+				<a href="/">
+					<h2 class="nav-title">Q. Weng</h2>
+				</a>
+				<ul>
+    
+    
+        <li>
+            <a href="/posts/">
+                
+                <span>Posts</span>
+                
+            </a>
+        </li>
+    
+        <li>
+            <a href="/about/">
+                
+                <span>About</span>
+                
+            </a>
+        </li>
+    
+</ul>
+			</div>
+		</nav>
+
+        
+
+<main>
+	<div class="post">
+		<div class="post-info">
+    <span>Written by</span>
+        Q. W.
+        <br>
+        <span>on&nbsp;</span><time datetime="2020-09-05 22:05:28 -0400 EDT">September 5, 2020</time>
+</div>
+
+		<h1 class="post-title">166 Fraction to Recurring Decimal</h1>
+<div class="post-line"></div>
+
+		
+
+
+		<h2 id="lc-166-fraction-to-recurring-decimal-httpsleetcodecomproblemsfraction-to-recurring-decimal"><a href="https://leetcode.com/problems/fraction-to-recurring-decimal/">LC 166 Fraction to Recurring Decimal </a></h2>
+<blockquote>
+<p>Given two integers representing the numerator and denominator of a fraction, return the fraction in string format.</p>
+<p>If the fractional part is repeating, enclose the repeating part in parentheses.</p>
+<p>If multiple answers are possible, just return any of them.</p>
+<p>Extreme case: numer = -2147483648, denominator = -1999</p>
+</blockquote>
+<h2 id="solution">Solution</h2>
+<p>2020-09-05 Notes:</p>
+<ol>
+<li>Details: python built-in divmod() returns floor, which is not friendly in negative case. need to take int(a/b)</li>
+<li>I was scared what if the division tests on a infinite unreapted, then toasted. However, the test cases have none.</li>
+<li>convet all calc to postive nums once determined.</li>
+<li>Loop through mod and record each mod’s index place.</li>
+</ol>
+<div class="highlight"><pre style="color:#f8f8f2;background-color:#272822;-moz-tab-size:4;-o-tab-size:4;tab-size:4"><code class="language-python" data-lang="python"><span style="color:#66d9ef">class</span> <span style="color:#a6e22e">Solution</span>:
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">fractionToDecimal</span>(self, numerator: int, denominator: int) <span style="color:#f92672">-&gt;</span> str:
+        <span style="color:#66d9ef">if</span> denominator <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>: <span style="color:#66d9ef">return</span> <span style="color:#e6db74">&#39;&#39;</span>
+        
+        ans <span style="color:#f92672">=</span> <span style="color:#e6db74">&#39;-&#39;</span> <span style="color:#66d9ef">if</span> numerator <span style="color:#f92672">*</span> denominator <span style="color:#f92672">&lt;</span> <span style="color:#ae81ff">0</span> <span style="color:#66d9ef">else</span> <span style="color:#e6db74">&#39;&#39;</span>
+        numerator, denominator <span style="color:#f92672">=</span> abs(numerator), abs(denominator)
+        d <span style="color:#f92672">=</span> dict()
+        div, mod <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>myDivmod(numerator, denominator)
+        
+        <span style="color:#66d9ef">if</span> mod <span style="color:#f92672">==</span> <span style="color:#ae81ff">0</span>: 
+            ans <span style="color:#f92672">+=</span> str(div)
+            <span style="color:#66d9ef">return</span> ans
+        
+        ans <span style="color:#f92672">+=</span> str(div) <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;.&#39;</span>
+        d[mod] <span style="color:#f92672">=</span> len(ans)
+        
+        <span style="color:#66d9ef">while</span> mod:
+            div, mod <span style="color:#f92672">=</span> self<span style="color:#f92672">.</span>myDivmod(mod<span style="color:#f92672">*</span><span style="color:#ae81ff">10</span>, denominator)
+            ans <span style="color:#f92672">+=</span> str(div)
+            <span style="color:#66d9ef">if</span> mod <span style="color:#f92672">in</span> d:
+                idx <span style="color:#f92672">=</span> d[mod]
+                ans <span style="color:#f92672">=</span> ans[:idx] <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;(&#39;</span> <span style="color:#f92672">+</span> ans[idx:] <span style="color:#f92672">+</span> <span style="color:#e6db74">&#39;)&#39;</span>
+                <span style="color:#66d9ef">break</span>
+            <span style="color:#66d9ef">else</span>:
+                d[mod] <span style="color:#f92672">=</span> len(ans)
+        <span style="color:#66d9ef">return</span> ans
+        
+    <span style="color:#66d9ef">def</span> <span style="color:#a6e22e">myDivmod</span>(self, a, b):
+        d <span style="color:#f92672">=</span> int(a<span style="color:#f92672">/</span>b)
+        m <span style="color:#f92672">=</span> a <span style="color:#f92672">-</span> d<span style="color:#f92672">*</span>b
+        <span style="color:#66d9ef">return</span> (d, m)
+</code></pre></div>
+
+		
+	</div>
+
+	<div class="pagination">
+		<a href="/posts/159-longest-substring-with-at-most-two-distinct-characters/" class="left arrow">&#8592;</a>
+
+		<a href="#" class="top">Top</a>
+	</div>
+</main>
+
+
+        		<footer>
+			<span>
+			&copy; <time datetime="2020-09-05 22:33:43.630354 -0400 EDT m=&#43;0.063916633">2020</time> Q. W.. Made with <a href='https://gohugo.io'>Hugo</a> using the <a href='https://github.com/EmielH/tale-hugo/'>Tale</a> theme.
+			</span>
+		</footer>
+
+    </body>
+</html>
