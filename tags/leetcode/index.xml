@@ -1,22 +1,21 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>leetcode on Q. Weng</title>
     <link>https://foxisawesome.github.io/tags/leetcode/</link>
     <description>Recent content in leetcode on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     <lastBuildDate>Sat, 05 Sep 2020 22:05:28 -0400</lastBuildDate>
     
-	<atom:link href="https://foxisawesome.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://foxisawesome.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>166 Fraction to Recurring Decimal</title>
-      <link>https://foxisawesome.github.io/posts/166-fraction-to-recurring-decimal/</link>
+      <link>https://foxisawesome.github.io/166-fraction-to-recurring-decimal/</link>
       <pubDate>Sat, 05 Sep 2020 22:05:28 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/166-fraction-to-recurring-decimal/</guid>
+      <guid>https://foxisawesome.github.io/166-fraction-to-recurring-decimal/</guid>
       <description>LC 166 Fraction to Recurring Decimal   Given two integers representing the numerator and denominator of a fraction, return the fraction in string format.
 If the fractional part is repeating, enclose the repeating part in parentheses.
 If multiple answers are possible, just return any of them.
@@ -27,21 +26,19 @@ Extreme case: numer = -2147483648, denominator = -1999
     
     <item>
       <title>159 Longest Substring With at Most Two Distinct Characters</title>
-      <link>https://foxisawesome.github.io/posts/159-longest-substring-with-at-most-two-distinct-characters/</link>
+      <link>https://foxisawesome.github.io/159-longest-substring-with-at-most-two-distinct-characters/</link>
       <pubDate>Sat, 05 Sep 2020 21:08:15 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/159-longest-substring-with-at-most-two-distinct-characters/</guid>
-      <description>LC 159 Longest Substring With at Most Two Distinct Characters   Given a string *s* , find the length of the longest substring *t* that contains at most 2 distinct characters.
-Input: &amp;quot;ccaabbb&amp;quot; Output: 5 Explanation: t is &amp;quot;aabbb&amp;quot; which its length is 5.  Solution 2020-09-05 Notes:
- 今天周末出去走了一圈，回家刷题效率可以啊。  class Solution: def lengthOfLongestSubstringTwoDistinct(self, s: str) -&amp;gt; int: if not s: return 0 out = 0 n = len(s) for i in range(n): l = 1 while i+l &amp;lt; n and len(set(s[i:i+l+1])) &amp;lt; 3: l += 1 out = max(out, l) return out # Time O(N) # Space O(1) </description>
+      <guid>https://foxisawesome.github.io/159-longest-substring-with-at-most-two-distinct-characters/</guid>
+      <description>LC 159 Longest Substring With at Most Two Distinct Characters Given a string *s* , find the length of the longest substring *t* that contains at most 2 distinct characters. Input: &amp;quot;ccaabbb&amp;quot; Output: 5 Explanation: t is &amp;quot;aabbb&amp;quot; which its length is 5. Solution 2020-09-05 Notes: 今天周末出去走了一圈，回家刷题效率可以啊。 class Solution: def</description>
     </item>
     
     <item>
       <title>136 Single Number</title>
-      <link>https://foxisawesome.github.io/posts/136-single-number/</link>
+      <link>https://foxisawesome.github.io/136-single-number/</link>
       <pubDate>Sat, 05 Sep 2020 20:58:41 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/136-single-number/</guid>
+      <guid>https://foxisawesome.github.io/136-single-number/</guid>
       <description>LC 136 Single Number   Given a non-empty array of integers, every element appears twice except for one. Find that single one.
 Note: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
  Solution 2020-09-05 Notes:
@@ -50,312 +47,171 @@ Note: Your algorithm should have a linear runtime complexity. Could you implemen
     
     <item>
       <title>187 Repeated Dna Sequences</title>
-      <link>https://foxisawesome.github.io/posts/187-repeated-dna-sequences/</link>
+      <link>https://foxisawesome.github.io/187-repeated-dna-sequences/</link>
       <pubDate>Sat, 05 Sep 2020 20:17:11 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/187-repeated-dna-sequences/</guid>
-      <description>LC 187 Repeated Dna Sequences   All DNA is composed of a series of nucleotides abbreviated as A, C, G, and T, for example: &amp;ldquo;ACGAATTCCG&amp;rdquo;. When studying DNA, it is sometimes useful to identify repeated sequences within the DNA.
-Write a function to find all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule.
- Solution 2020-09-05 Notes:
- 很简单的题，两个小陷进：  Substring = s[i-9:i+1] NOT s[i-10:i] because 0-indexed.</description>
+      <guid>https://foxisawesome.github.io/187-repeated-dna-sequences/</guid>
+      <description>LC 187 Repeated Dna Sequences All DNA is composed of a series of nucleotides abbreviated as A, C, G, and T, for example: &amp;ldquo;ACGAATTCCG&amp;rdquo;. When studying DNA, it is sometimes useful to identify repeated sequences within the DNA. Write a function to find all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule. Solution 2020-09-05 Notes: 很简单的题，两个小陷</description>
     </item>
     
     <item>
-      <title>316 Remove Dup Letters</title>
-      <link>https://foxisawesome.github.io/posts/316-remove-dup-letters/</link>
-      <pubDate>Fri, 04 Sep 2020 19:56:18 -0400</pubDate>
+      <title>Das</title>
+      <link>https://foxisawesome.github.io/to_do/das/</link>
+      <pubDate>Sat, 05 Sep 2020 20:09:29 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/316-remove-dup-letters/</guid>
-      <description>LC 316 Remove Dup Letters  Given a string which contains only lowercase letters, remove duplicate letters so that every letter appears once and only once. You must make sure your result is the smallest in lexicographical order among all possible results.
-Input: &amp;quot;cbacdcbc&amp;quot; Output: &amp;quot;acdb&amp;quot;  Solution 2020-09-04 Notes:
-  Need one-pass of s to get the counter of each letter.
-  a second pass, dial down counter at each iteration.</description>
+      <guid>https://foxisawesome.github.io/to_do/das/</guid>
+      <description>LC Das    Solution 2020-09-05T20:09:29-04:00 Notes:
+   # Time O() # Space O()  </description>
     </item>
     
     <item>
-      <title>1081 Smallest Subsequence of Distinct Char</title>
-      <link>https://foxisawesome.github.io/posts/1081-smallest-subsequence-of-distinct-char/</link>
-      <pubDate>Fri, 04 Sep 2020 19:55:50 -0400</pubDate>
+      <title>142 Linked List Cycle Ii</title>
+      <link>https://foxisawesome.github.io/to_do/142-linked-list-cycle-ii/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/1081-smallest-subsequence-of-distinct-char/</guid>
-      <description>LC 1081 Smallest Subsequence of Distinct Char   Return the lexicographically smallest subsequence of text that contains all the distinct characters of text exactly once.
-Input: &amp;quot;ecbacba&amp;quot; Output: &amp;quot;eacb&amp;quot;  Solution 2020-09-04 Notes:
-  Need one-pass of s to get the counter of each letter.
-  a second pass, dial down counter at each iteration. use a stack to record every distinct letter and keep the order of recorded letter same as their orders in the string.</description>
+      <guid>https://foxisawesome.github.io/to_do/142-linked-list-cycle-ii/</guid>
+      <description>LC 142 Linked List Cycle Ii    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
     </item>
     
     <item>
-      <title>80 Remove Dup From Sorted Array II</title>
-      <link>https://foxisawesome.github.io/posts/80-remove-dup-from-sorted-array-ii/</link>
-      <pubDate>Fri, 04 Sep 2020 14:05:24 -0400</pubDate>
+      <title>146 Lru Cach</title>
+      <link>https://foxisawesome.github.io/to_do/146-lru-cach/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/80-remove-dup-from-sorted-array-ii/</guid>
-      <description>LC 80 Remove Dup From Sorted Array II   Given a sorted array nums, remove the duplicates in-place such that duplicates appeared at most twice and return the new length.
-Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
-Given nums = [0,0,1,1,1,1,2,3,3], output [0,0,1,1,2,3,3]  Solution 2020-09-04 Notes:
- Same thing as LC 26.  class Solution: def removeDuplicates(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 count = dict() count[nums[0]] = 1 slow, fast = 0, 1 while fast &amp;lt; len(nums): count[nums[fast]] = count.</description>
+      <guid>https://foxisawesome.github.io/to_do/146-lru-cach/</guid>
+      <description>LC 146 Lru Cach    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
     </item>
     
     <item>
-      <title>26 Remove Dup From Sorted Array</title>
-      <link>https://foxisawesome.github.io/posts/26-remove-dup-from-sorted-array/</link>
-      <pubDate>Fri, 04 Sep 2020 13:45:50 -0400</pubDate>
+      <title>198 House Robbe</title>
+      <link>https://foxisawesome.github.io/to_do/198-house-robbe/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/26-remove-dup-from-sorted-array/</guid>
-      <description>LC 26 Remove Dup From Sorted Array   Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.
-Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
-Given nums = [0,0,1,1,1,2,2,3,3,4], Your function should return length = 5, with the first five elements of nums being modified to 0, 1, 2, 3, and 4 respectively.</description>
+      <guid>https://foxisawesome.github.io/to_do/198-house-robbe/</guid>
+      <description>LC 198 House Robbe    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
     </item>
     
     <item>
-      <title>18 K Sum</title>
-      <link>https://foxisawesome.github.io/posts/18-k-sum/</link>
-      <pubDate>Thu, 03 Sep 2020 22:17:11 -0400</pubDate>
+      <title>213 House Robber Ii</title>
+      <link>https://foxisawesome.github.io/to_do/213-house-robber-ii/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/18-k-sum/</guid>
-      <description>LC 18 4Sum   Given an array nums of n integers and an integer target, are there elements a, b, c, and d in nums such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.
-Note: The solution set must not contain duplicate quadruplets.
- Solution 2020-09-03 Notes:
-K - sum algo:
- sort nums recursion top down, reduce to a 2-Sum problem two pointers: l, r to find target  Note: to skip duplicates: if not (i &amp;gt; 0 and nums[i]==nums[i-1]):</description>
+      <guid>https://foxisawesome.github.io/to_do/213-house-robber-ii/</guid>
+      <description>LC 213 House Robber Ii    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
     </item>
     
     <item>
-      <title>140 Word Break II</title>
-      <link>https://foxisawesome.github.io/posts/140-word-break-ii/</link>
-      <pubDate>Thu, 03 Sep 2020 21:26:20 -0400</pubDate>
+      <title>496 Next Greater Element I</title>
+      <link>https://foxisawesome.github.io/to_do/496-next-greater-element-i/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/140-word-break-ii/</guid>
-      <description>LC 140 Word Break II   Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, add spaces in s to construct a sentence where each word is a valid dictionary word. Return all such possible sentences.
-Input: s = &amp;quot;pineapplepenapple&amp;quot; wordDict = [&amp;quot;apple&amp;quot;, &amp;quot;pen&amp;quot;, &amp;quot;applepen&amp;quot;, &amp;quot;pine&amp;quot;, &amp;quot;pineapple&amp;quot;] Output: [ &amp;quot;pine apple pen apple&amp;quot;, &amp;quot;pineapple pen apple&amp;quot;, &amp;quot;pine applepen apple&amp;quot; ]  Solution 2020-09-03 Notes:</description>
+      <guid>https://foxisawesome.github.io/to_do/496-next-greater-element-i/</guid>
+      <description>LC 496 Next Greater Element I    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
     </item>
     
     <item>
-      <title>128 Longest Consecutive Sequence</title>
-      <link>https://foxisawesome.github.io/posts/128-longest-consecutive-sequence/</link>
-      <pubDate>Thu, 03 Sep 2020 20:41:05 -0400</pubDate>
+      <title>503 Next Greater Element Ii</title>
+      <link>https://foxisawesome.github.io/to_do/503-next-greater-element-ii/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/128-longest-consecutive-sequence/</guid>
-      <description>LC 128 Longest Consecutive Sequence   Given an unsorted array of integers, find the length of the longest consecutive elements sequence.
-Your algorithm should run in O(n) complexity.
-Example:
-Input: [100, 4, 200, 1, 3, 2] Output: 4 Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4.  Solution 2020-09-03 Notes:
-  题目 time complexity 要求O(N)，那没其他办法只能 hash table做了，看了花花的视频， 没话说一讲就很简单了。
-  solution #1: 用dictionary做，key记录nums里的每个数，val=但这个数字的最长连续数字长度。查看num-1 和 num+1的val.</description>
+      <guid>https://foxisawesome.github.io/to_do/503-next-greater-element-ii/</guid>
+      <description>LC 503 Next Greater Element Ii    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
     </item>
     
     <item>
-      <title>543 Diameter of Binary Tree</title>
-      <link>https://foxisawesome.github.io/posts/543-diameter-of-binary-tree/</link>
-      <pubDate>Wed, 02 Sep 2020 15:49:49 -0400</pubDate>
+      <title>700 Find Mode in Binary Search Tree</title>
+      <link>https://foxisawesome.github.io/to_do/700-find-mode-in-binary-search-tree/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/543-diameter-of-binary-tree/</guid>
-      <description>LC 543 Diameter of Binary Tree   Given a binary tree, you need to compute the length of the diameter of the tree. The diameter of a binary tree is the length of the longest path between any two nodes in a tree. This path may or may not pass through the root.
-Example: Given a binary tree
- 1 / \ 2 3 / \ 4 5 Return 3, which is the length of the path [4,2,1,3] or [5,2,1,3].</description>
+      <guid>https://foxisawesome.github.io/to_do/700-find-mode-in-binary-search-tree/</guid>
+      <description>LC 700 Find Mode in Binary Search Tree    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
     </item>
     
     <item>
-      <title>48 Rotate Image</title>
-      <link>https://foxisawesome.github.io/posts/48-rotate-image/</link>
-      <pubDate>Wed, 02 Sep 2020 14:16:29 -0400</pubDate>
+      <title>82 Remove Duplicates From Sorted List Ii</title>
+      <link>https://foxisawesome.github.io/to_do/82-remove-duplicates-from-sorted-list-ii/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/48-rotate-image/</guid>
-      <description>LC 48 Rotate Image   You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
-You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.
- Solution 2020-09-02T14:16:29-04:00 Notes:
-  Algo #1: tranpose the matrix first, then reverse the rows. it requires two passes.</description>
+      <guid>https://foxisawesome.github.io/to_do/82-remove-duplicates-from-sorted-list-ii/</guid>
+      <description>LC 82 Remove Duplicates From Sorted List Ii    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
     </item>
     
     <item>
-      <title>528 Random Pick With Weight</title>
-      <link>https://foxisawesome.github.io/posts/528-random-pick-with-weight/</link>
-      <pubDate>Wed, 02 Sep 2020 14:11:21 -0400</pubDate>
+      <title>1007 Minimum Domino Rotations for Equal Row</title>
+      <link>https://foxisawesome.github.io/to_do/1007-minimum-domino-rotations-for-equal-row/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/528-random-pick-with-weight/</guid>
-      <description>LC 528 Random Pick With Weight   Given an array of positive integers w. where w[i] describes the weight of i``th index (0-indexed).
-We need to call the function pickIndex() which randomly returns an integer in the range [0, w.length - 1]. pickIndex() should return the integer proportional to its weight in the w array. For example, for w = [1, 3], the probability of picking index 0 is 1 / (1 + 3) = 0.</description>
+      <guid>https://foxisawesome.github.io/to_do/1007-minimum-domino-rotations-for-equal-row/</guid>
+      <description>LC 1007 Minimum Domino Rotations for Equal Row    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
     </item>
     
     <item>
-      <title>445 Add Two Num II</title>
-      <link>https://foxisawesome.github.io/posts/445-add-two-num-ii/</link>
-      <pubDate>Wed, 02 Sep 2020 09:38:40 -0400</pubDate>
+      <title>1249 Minimum Remove to Make Valid Parentheses</title>
+      <link>https://foxisawesome.github.io/to_do/1249-minimum-remove-to-make-valid-parentheses/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/445-add-two-num-ii/</guid>
-      <description>LC 445 Add Two Num II   You are given two non-empty linked lists representing two non-negative integers. The most significant digit comes first and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
-You may assume the two numbers do not contain any leading zero, except the number 0 itself.
-Follow up: What if you cannot modify the input lists?</description>
+      <guid>https://foxisawesome.github.io/to_do/1249-minimum-remove-to-make-valid-parentheses/</guid>
+      <description>LC 1249 Minimum Remove to Make Valid Parentheses    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
     </item>
     
     <item>
-      <title>295 Find Median From Data Stream</title>
-      <link>https://foxisawesome.github.io/posts/295-find-median-from-data-stream/</link>
-      <pubDate>Tue, 01 Sep 2020 21:33:10 -0400</pubDate>
+      <title>139 Word Break</title>
+      <link>https://foxisawesome.github.io/to_do/139-word-break/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/295-find-median-from-data-stream/</guid>
-      <description>LC 295 Find Median From Data Stream   Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value.
-For example,
-[2,3,4], the median is 3 [2,3], the median is (2 + 3) / 2 = 2.5  Solution 2020-09-01 Notes:
-  Follow 了花花酱的solu#1。 python the heapq implementation is a bit messy, while involving max heapq.</description>
+      <guid>https://foxisawesome.github.io/to_do/139-word-break/</guid>
+      <description>LC 139 Word Break    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
     </item>
     
     <item>
-      <title>148 Sort List</title>
-      <link>https://foxisawesome.github.io/posts/148-sort-list/</link>
-      <pubDate>Tue, 01 Sep 2020 19:26:00 -0400</pubDate>
+      <title>15 3sum</title>
+      <link>https://foxisawesome.github.io/to_do/15-3sum/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/148-sort-list/</guid>
-      <description>LC 148 Sort List   Sort a linked list in O(n log n) time using constant space complexity.
-Example 1:
-Input: 4-&amp;gt;2-&amp;gt;1-&amp;gt;3 Output: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4 Example 2:
-Input: -1-&amp;gt;5-&amp;gt;3-&amp;gt;4-&amp;gt;0 Output: -1-&amp;gt;0-&amp;gt;3-&amp;gt;4-&amp;gt;5  Solution 2020-09-01 Notes:
- Time Complaxity O(nlogn) indicates merge sort algo. in the sortList, line 8:if not head or not head.next: return head actually returns head not None. slow and fast pointers to divide list into two need a lfet tail pointer: l_tail to cut off left linked list.</description>
+      <guid>https://foxisawesome.github.io/to_do/15-3sum/</guid>
+      <description>LC 15 3sum    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
     </item>
     
     <item>
-      <title>79 Word Search</title>
-      <link>https://foxisawesome.github.io/posts/79-word-search/</link>
-      <pubDate>Tue, 01 Sep 2020 16:07:12 -0400</pubDate>
+      <title>16 3sum Closest</title>
+      <link>https://foxisawesome.github.io/to_do/16-3sum-closest/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/79-word-search/</guid>
-      <description>LC 79 Word Search   Given a 2D board and a word, find if the word exists in the grid.
-The word can be constructed from letters of sequentially adjacent cell, where &amp;ldquo;adjacent&amp;rdquo; cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.
-Example:
-board = [ [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;E&#39;], [&#39;S&#39;,&#39;F&#39;,&#39;C&#39;,&#39;S&#39;], [&#39;A&#39;,&#39;D&#39;,&#39;E&#39;,&#39;E&#39;] ] Given word = &amp;quot;ABCCED&amp;quot;, return true. Given word = &amp;quot;SEE&amp;quot;, return true.</description>
+      <guid>https://foxisawesome.github.io/to_do/16-3sum-closest/</guid>
+      <description>LC 16 3sum Closest    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
     </item>
     
     <item>
-      <title>981 Time Based Key Value Store</title>
-      <link>https://foxisawesome.github.io/posts/981-time-based-key-value-store/</link>
-      <pubDate>Tue, 01 Sep 2020 14:15:51 -0400</pubDate>
+      <title>19 Remove Nth Node From End of List</title>
+      <link>https://foxisawesome.github.io/to_do/19-remove-nth-node-from-end-of-list/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/981-time-based-key-value-store/</guid>
-      <description>LC 981 Time Based Key Value Store   Create a timebased key-value store class TimeMap, that supports two operations.
- set(string key, string value, int timestamp)   Stores the key and value, along with the given timestamp.  get(string key, int timestamp)   Returns a value such that set(key, value, timestamp_prev) was called previously, with timestamp_prev &amp;lt;= timestamp. If there are multiple such values, it returns the one with the largest timestamp_prev.</description>
+      <guid>https://foxisawesome.github.io/to_do/19-remove-nth-node-from-end-of-list/</guid>
+      <description>LC 19 Remove Nth Node From End of List    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
     </item>
     
     <item>
-      <title>1197 Minimum Knight Moves</title>
-      <link>https://foxisawesome.github.io/posts/1197-minimum-knight-moves/</link>
-      <pubDate>Mon, 31 Aug 2020 22:24:46 -0400</pubDate>
+      <title>200 Number of Islands</title>
+      <link>https://foxisawesome.github.io/to_do/200-number-of-islands/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/1197-minimum-knight-moves/</guid>
-      <description>LC 1197 Minimum Knight Moves 
- In an infinite chess board with coordinates from -infinity to +infinity, you have a knight at square [0, 0].
-A knight has 8 possible moves it can make, as illustrated below. Each move is two squares in a cardinal direction, then one square in an orthogonal direction.
-Return the minimum number of steps needed to move the knight to the square [x, y]. It is guaranteed the answer exists.</description>
-    </item>
-    
-    <item>
-      <title>1041 Robot Bounded in Circle</title>
-      <link>https://foxisawesome.github.io/posts/1041-robot-bounded-in-circle/</link>
-      <pubDate>Mon, 31 Aug 2020 22:14:45 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1041-robot-bounded-in-circle/</guid>
-      <description>LC 1041 Robot Bounded in Circle 
- On an infinite plane, a robot initially stands at (0, 0) and faces north. The robot can receive one of three instructions:
- &amp;quot;G&amp;quot;: go straight 1 unit; &amp;quot;L&amp;quot;: turn 90 degrees to the left; &amp;quot;R&amp;quot;: turn 90 degress to the right.  The robot performs the instructions given in order, and repeats them forever.
-Return true if and only if there exists a circle in the plane such that the robot never leaves the circle.</description>
-    </item>
-    
-    <item>
-      <title>957 Prison Cells</title>
-      <link>https://foxisawesome.github.io/posts/957-prison-cells/</link>
-      <pubDate>Mon, 31 Aug 2020 19:26:18 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/957-prison-cells/</guid>
-      <description>LC 957 Prison Cells 
- There are 8 prison cells in a row, and each cell is either occupied or vacant.
-Each day, whether the cell is occupied or vacant changes according to the following rules:
- If a cell has two adjacent neighbors that are both occupied or both vacant, then the cell becomes occupied. Otherwise, it becomes vacant.  (Note that because the prison is a row, the first and the last cells in the row can&amp;rsquo;t have two adjacent neighbors.</description>
-    </item>
-    
-    <item>
-      <title>735 Aseroid Collision</title>
-      <link>https://foxisawesome.github.io/posts/735-aseroid-collision/</link>
-      <pubDate>Mon, 31 Aug 2020 19:05:25 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/735-aseroid-collision/</guid>
-      <description>LC 735 Aseroid Collision 
- We are given an array asteroids of integers representing asteroids in a row.
-For each asteroid, the absolute value represents its size, and the sign represents its direction (positive meaning right, negative meaning left). Each asteroid moves at the same speed.
-Find out the state of the asteroids after all collisions. If two asteroids meet, the smaller one will explode. If both are the same size, both will explode.</description>
-    </item>
-    
-    <item>
-      <title>141 Linked List Cycle</title>
-      <link>https://foxisawesome.github.io/posts/141-linked-list-cycle/</link>
-      <pubDate>Sun, 30 Aug 2020 21:35:50 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/141-linked-list-cycle/</guid>
-      <description>LC 141 Linked List Cycle 
- Given a linked list, determine if it has a cycle in it.
-To represent a cycle in the given linked list, we use an integer pos which represents the position (0-indexed) in the linked list where tail connects to. If pos is -1, then there is no cycle in the linked list.
-Example 1:
-Input: head = [3,2,0,-4], pos = 1 Output: true Explanation: There is a cycle in the linked list, where tail connects to the second node.</description>
-    </item>
-    
-    <item>
-      <title>328 Odd Even Linked List</title>
-      <link>https://foxisawesome.github.io/posts/328-odd-even-linked-list/</link>
-      <pubDate>Sun, 30 Aug 2020 21:27:32 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/328-odd-even-linked-list/</guid>
-      <description>LC 328
- Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes.
-You should try to do it in place. The program should run in O(1) space complexity and O(nodes) time complexity.
-Example 1:
-Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL Output: 1-&amp;gt;3-&amp;gt;5-&amp;gt;2-&amp;gt;4-&amp;gt;NULL  linked list 终于在周末刷出感觉了。这题也一遍就过了。
-class Solution: def oddEvenList(self, head: ListNode) -&amp;gt; ListNode: if not head: return odd = p1 = ListNode(1) even = p2 = ListNode(0) count = 1 while head: if count % 2 == 1: odd.</description>
-    </item>
-    
-    <item>
-      <title>1266 Minimum Time Visiting All Points</title>
-      <link>https://foxisawesome.github.io/posts/1266-minimum-time-visiting-all-points/</link>
-      <pubDate>Sun, 30 Aug 2020 21:24:22 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1266-minimum-time-visiting-all-points/</guid>
-      <description>LC 1266
- On a plane there are n points with integer coordinates points[i] = [xi, yi]. Your task is to find the minimum time in seconds to visit all points.
-You can move according to the next rules:
- In one second always you can either move vertically, horizontally by one unit or diagonally (it means to move one unit vertically and one unit horizontally in one second). You have to visit the points in the same order as they appear in the array.</description>
-    </item>
-    
-    <item>
-      <title>206 Reverse Linked List</title>
-      <link>https://foxisawesome.github.io/posts/206-reverse-linked-list/</link>
-      <pubDate>Sat, 01 Aug 2020 20:06:27 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/206-reverse-linked-list/</guid>
-      <description>LC 206 Reverse Linked List   Reverse a singly linked list.
-Example:
-Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL Output: 5-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;1-&amp;gt;NULL  Solution 2020-09-01 Notes:
- 这题刷了不下10遍了，终于明白iteration这里的四步操作了。 recursion的做法还是似懂非懂，还得再看看。感觉TreeNode, ListNode 的recursion 都是if not head/root: return head/root。 另外，recession 这里返回的是 以head.next为头reversed 的list，只需要再把head.next	 reverse 下就好了。  # Definition for singly-linked list. # class ListNode: # def __init__(self, val=0, next=None): # self.val = val # self.next = next class Solution: # iteration def reverseList_iter(self, head: ListNode) -&amp;gt; ListNode: if not head: return None prev = None curr = head while curr: temp = curr.</description>
-    </item>
-    
-    <item>
-      <title>2 Add Two Num</title>
-      <link>https://foxisawesome.github.io/posts/2-add-two-num/</link>
-      <pubDate>Thu, 02 Jul 2020 10:08:20 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/2-add-two-num/</guid>
-      <description>LC 2 Add Two Num   You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
-You may assume the two numbers do not contain any leading zero, except the number 0 itself.
-Example:
-Input: (2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt; 6 -&amp;gt; 4) Output: 7 -&amp;gt; 0 -&amp;gt; 8 Explanation: 342 + 465 = 807.</description>
-    </item>
-    
-    <item>
-      <title>1 Two Sum</title>
-      <link>https://foxisawesome.github.io/posts/1-two-sum/</link>
-      <pubDate>Sat, 01 Feb 2020 14:01:30 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1-two-sum/</guid>
-      <description>LC 1 Two Sum   Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
-You may assume that each input would have *exactly* one solution, and you may not use the same element twice.
- Solution 2020-02-01 Notes:
- use hash table, one-pass.  class Solution: def twoSum(self, nums: List[int], target: int) -&amp;gt; List[int]: if not nums or target is None: return [] d = dict() for i, val in enumerate(nums): if target - val not in d: d[val] = i else: return [d[target - val], i] # Time O(N) # Space O(N) </description>
+      <guid>https://foxisawesome.github.io/to_do/200-number-of-islands/</guid>
+      <description>LC 200 Number of Islands    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
     </item>
     
   </channel>

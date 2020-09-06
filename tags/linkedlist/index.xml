@@ -1,101 +1,217 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>linkedList on Q. Weng</title>
     <link>https://foxisawesome.github.io/tags/linkedlist/</link>
     <description>Recent content in linkedList on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     <lastBuildDate>Wed, 02 Sep 2020 09:38:40 -0400</lastBuildDate>
     
-	<atom:link href="https://foxisawesome.github.io/tags/linkedlist/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://foxisawesome.github.io/tags/linkedlist/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>445 Add Two Num II</title>
-      <link>https://foxisawesome.github.io/posts/445-add-two-num-ii/</link>
-      <pubDate>Wed, 02 Sep 2020 09:38:40 -0400</pubDate>
+      <title>166 Fraction to Recurring Decimal</title>
+      <link>https://foxisawesome.github.io/166-fraction-to-recurring-decimal/</link>
+      <pubDate>Sat, 05 Sep 2020 22:05:28 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/445-add-two-num-ii/</guid>
-      <description>LC 445 Add Two Num II   You are given two non-empty linked lists representing two non-negative integers. The most significant digit comes first and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
-You may assume the two numbers do not contain any leading zero, except the number 0 itself.
-Follow up: What if you cannot modify the input lists?</description>
+      <guid>https://foxisawesome.github.io/166-fraction-to-recurring-decimal/</guid>
+      <description>LC 166 Fraction to Recurring Decimal   Given two integers representing the numerator and denominator of a fraction, return the fraction in string format.
+If the fractional part is repeating, enclose the repeating part in parentheses.
+If multiple answers are possible, just return any of them.
+Extreme case: numer = -2147483648, denominator = -1999
+ Solution 2020-09-05 Notes:
+ Details: python built-in divmod() returns floor, which is not friendly in negative case.</description>
     </item>
     
     <item>
-      <title>148 Sort List</title>
-      <link>https://foxisawesome.github.io/posts/148-sort-list/</link>
-      <pubDate>Tue, 01 Sep 2020 19:26:00 -0400</pubDate>
+      <title>159 Longest Substring With at Most Two Distinct Characters</title>
+      <link>https://foxisawesome.github.io/159-longest-substring-with-at-most-two-distinct-characters/</link>
+      <pubDate>Sat, 05 Sep 2020 21:08:15 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/148-sort-list/</guid>
-      <description>LC 148 Sort List   Sort a linked list in O(n log n) time using constant space complexity.
-Example 1:
-Input: 4-&amp;gt;2-&amp;gt;1-&amp;gt;3 Output: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4 Example 2:
-Input: -1-&amp;gt;5-&amp;gt;3-&amp;gt;4-&amp;gt;0 Output: -1-&amp;gt;0-&amp;gt;3-&amp;gt;4-&amp;gt;5  Solution 2020-09-01 Notes:
- Time Complaxity O(nlogn) indicates merge sort algo. in the sortList, line 8:if not head or not head.next: return head actually returns head not None. slow and fast pointers to divide list into two need a lfet tail pointer: l_tail to cut off left linked list.</description>
+      <guid>https://foxisawesome.github.io/159-longest-substring-with-at-most-two-distinct-characters/</guid>
+      <description>LC 159 Longest Substring With at Most Two Distinct Characters Given a string *s* , find the length of the longest substring *t* that contains at most 2 distinct characters. Input: &amp;quot;ccaabbb&amp;quot; Output: 5 Explanation: t is &amp;quot;aabbb&amp;quot; which its length is 5. Solution 2020-09-05 Notes: 今天周末出去走了一圈，回家刷题效率可以啊。 class Solution: def</description>
     </item>
     
     <item>
-      <title>141 Linked List Cycle</title>
-      <link>https://foxisawesome.github.io/posts/141-linked-list-cycle/</link>
-      <pubDate>Sun, 30 Aug 2020 21:35:50 -0400</pubDate>
+      <title>136 Single Number</title>
+      <link>https://foxisawesome.github.io/136-single-number/</link>
+      <pubDate>Sat, 05 Sep 2020 20:58:41 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/141-linked-list-cycle/</guid>
-      <description>LC 141 Linked List Cycle 
- Given a linked list, determine if it has a cycle in it.
-To represent a cycle in the given linked list, we use an integer pos which represents the position (0-indexed) in the linked list where tail connects to. If pos is -1, then there is no cycle in the linked list.
-Example 1:
-Input: head = [3,2,0,-4], pos = 1 Output: true Explanation: There is a cycle in the linked list, where tail connects to the second node.</description>
+      <guid>https://foxisawesome.github.io/136-single-number/</guid>
+      <description>LC 136 Single Number   Given a non-empty array of integers, every element appears twice except for one. Find that single one.
+Note: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
+ Solution 2020-09-05 Notes:
+ Space O(1) solution is a bit tricky.  class Solution: def singleNumber(self, nums: List[int]) -&amp;gt; int: stack = set() for num in nums: if num not in stack: stack.</description>
     </item>
     
     <item>
-      <title>328 Odd Even Linked List</title>
-      <link>https://foxisawesome.github.io/posts/328-odd-even-linked-list/</link>
-      <pubDate>Sun, 30 Aug 2020 21:27:32 -0400</pubDate>
+      <title>187 Repeated Dna Sequences</title>
+      <link>https://foxisawesome.github.io/187-repeated-dna-sequences/</link>
+      <pubDate>Sat, 05 Sep 2020 20:17:11 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/328-odd-even-linked-list/</guid>
-      <description>LC 328
- Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes.
-You should try to do it in place. The program should run in O(1) space complexity and O(nodes) time complexity.
-Example 1:
-Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL Output: 1-&amp;gt;3-&amp;gt;5-&amp;gt;2-&amp;gt;4-&amp;gt;NULL  linked list 终于在周末刷出感觉了。这题也一遍就过了。
-class Solution: def oddEvenList(self, head: ListNode) -&amp;gt; ListNode: if not head: return odd = p1 = ListNode(1) even = p2 = ListNode(0) count = 1 while head: if count % 2 == 1: odd.</description>
+      <guid>https://foxisawesome.github.io/187-repeated-dna-sequences/</guid>
+      <description>LC 187 Repeated Dna Sequences All DNA is composed of a series of nucleotides abbreviated as A, C, G, and T, for example: &amp;ldquo;ACGAATTCCG&amp;rdquo;. When studying DNA, it is sometimes useful to identify repeated sequences within the DNA. Write a function to find all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule. Solution 2020-09-05 Notes: 很简单的题，两个小陷</description>
     </item>
     
     <item>
-      <title>First Post Linked List</title>
-      <link>https://foxisawesome.github.io/posts/first-post-linked-list/</link>
-      <pubDate>Sun, 30 Aug 2020 16:54:06 -0400</pubDate>
+      <title>Das</title>
+      <link>https://foxisawesome.github.io/to_do/das/</link>
+      <pubDate>Sat, 05 Sep 2020 20:09:29 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/first-post-linked-list/</guid>
-      <description>开始刷Leetcode 好几个月了，今天开始学很多人用blog 记录下自己的notes，也激励自己好好刷题！First post!
-It takes a while for me to get how exactly Linked List works. I used following utility functions to keep my leetcode solutions and run codes locally.
-Note:
- say head = ListNode(0), then head = head.next is to iterate to next node on the Linked List. use head.next = a to point to next node.  # My liked list utility functions:  class ListNode: def __init__(self, val=0, next=None): self.</description>
+      <guid>https://foxisawesome.github.io/to_do/das/</guid>
+      <description>LC Das    Solution 2020-09-05T20:09:29-04:00 Notes:
+   # Time O() # Space O()  </description>
     </item>
     
     <item>
-      <title>206 Reverse Linked List</title>
-      <link>https://foxisawesome.github.io/posts/206-reverse-linked-list/</link>
-      <pubDate>Sat, 01 Aug 2020 20:06:27 -0400</pubDate>
+      <title>142 Linked List Cycle Ii</title>
+      <link>https://foxisawesome.github.io/to_do/142-linked-list-cycle-ii/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/206-reverse-linked-list/</guid>
-      <description>LC 206 Reverse Linked List   Reverse a singly linked list.
-Example:
-Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL Output: 5-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;1-&amp;gt;NULL  Solution 2020-09-01 Notes:
- 这题刷了不下10遍了，终于明白iteration这里的四步操作了。 recursion的做法还是似懂非懂，还得再看看。感觉TreeNode, ListNode 的recursion 都是if not head/root: return head/root。 另外，recession 这里返回的是 以head.next为头reversed 的list，只需要再把head.next	 reverse 下就好了。  # Definition for singly-linked list. # class ListNode: # def __init__(self, val=0, next=None): # self.val = val # self.next = next class Solution: # iteration def reverseList_iter(self, head: ListNode) -&amp;gt; ListNode: if not head: return None prev = None curr = head while curr: temp = curr.</description>
+      <guid>https://foxisawesome.github.io/to_do/142-linked-list-cycle-ii/</guid>
+      <description>LC 142 Linked List Cycle Ii    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
     </item>
     
     <item>
-      <title>2 Add Two Num</title>
-      <link>https://foxisawesome.github.io/posts/2-add-two-num/</link>
-      <pubDate>Thu, 02 Jul 2020 10:08:20 -0400</pubDate>
+      <title>146 Lru Cach</title>
+      <link>https://foxisawesome.github.io/to_do/146-lru-cach/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/2-add-two-num/</guid>
-      <description>LC 2 Add Two Num   You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
-You may assume the two numbers do not contain any leading zero, except the number 0 itself.
-Example:
-Input: (2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt; 6 -&amp;gt; 4) Output: 7 -&amp;gt; 0 -&amp;gt; 8 Explanation: 342 + 465 = 807.</description>
+      <guid>https://foxisawesome.github.io/to_do/146-lru-cach/</guid>
+      <description>LC 146 Lru Cach    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>198 House Robbe</title>
+      <link>https://foxisawesome.github.io/to_do/198-house-robbe/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/198-house-robbe/</guid>
+      <description>LC 198 House Robbe    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>213 House Robber Ii</title>
+      <link>https://foxisawesome.github.io/to_do/213-house-robber-ii/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/213-house-robber-ii/</guid>
+      <description>LC 213 House Robber Ii    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>496 Next Greater Element I</title>
+      <link>https://foxisawesome.github.io/to_do/496-next-greater-element-i/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/496-next-greater-element-i/</guid>
+      <description>LC 496 Next Greater Element I    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>503 Next Greater Element Ii</title>
+      <link>https://foxisawesome.github.io/to_do/503-next-greater-element-ii/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/503-next-greater-element-ii/</guid>
+      <description>LC 503 Next Greater Element Ii    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>700 Find Mode in Binary Search Tree</title>
+      <link>https://foxisawesome.github.io/to_do/700-find-mode-in-binary-search-tree/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/700-find-mode-in-binary-search-tree/</guid>
+      <description>LC 700 Find Mode in Binary Search Tree    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>82 Remove Duplicates From Sorted List Ii</title>
+      <link>https://foxisawesome.github.io/to_do/82-remove-duplicates-from-sorted-list-ii/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/82-remove-duplicates-from-sorted-list-ii/</guid>
+      <description>LC 82 Remove Duplicates From Sorted List Ii    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>1007 Minimum Domino Rotations for Equal Row</title>
+      <link>https://foxisawesome.github.io/to_do/1007-minimum-domino-rotations-for-equal-row/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/1007-minimum-domino-rotations-for-equal-row/</guid>
+      <description>LC 1007 Minimum Domino Rotations for Equal Row    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>1249 Minimum Remove to Make Valid Parentheses</title>
+      <link>https://foxisawesome.github.io/to_do/1249-minimum-remove-to-make-valid-parentheses/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/1249-minimum-remove-to-make-valid-parentheses/</guid>
+      <description>LC 1249 Minimum Remove to Make Valid Parentheses    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>139 Word Break</title>
+      <link>https://foxisawesome.github.io/to_do/139-word-break/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/139-word-break/</guid>
+      <description>LC 139 Word Break    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>15 3sum</title>
+      <link>https://foxisawesome.github.io/to_do/15-3sum/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/15-3sum/</guid>
+      <description>LC 15 3sum    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>16 3sum Closest</title>
+      <link>https://foxisawesome.github.io/to_do/16-3sum-closest/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/16-3sum-closest/</guid>
+      <description>LC 16 3sum Closest    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>19 Remove Nth Node From End of List</title>
+      <link>https://foxisawesome.github.io/to_do/19-remove-nth-node-from-end-of-list/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/19-remove-nth-node-from-end-of-list/</guid>
+      <description>LC 19 Remove Nth Node From End of List    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>200 Number of Islands</title>
+      <link>https://foxisawesome.github.io/to_do/200-number-of-islands/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/200-number-of-islands/</guid>
+      <description>LC 200 Number of Islands    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
     </item>
     
   </channel>

@@ -1,36 +1,217 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>recursion on Q. Weng</title>
     <link>https://foxisawesome.github.io/tags/recursion/</link>
     <description>Recent content in recursion on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <language>en-us</language>
     <lastBuildDate>Thu, 03 Sep 2020 21:26:20 -0400</lastBuildDate>
     
-	<atom:link href="https://foxisawesome.github.io/tags/recursion/index.xml" rel="self" type="application/rss+xml" />
+        <atom:link href="https://foxisawesome.github.io/tags/recursion/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>140 Word Break II</title>
-      <link>https://foxisawesome.github.io/posts/140-word-break-ii/</link>
-      <pubDate>Thu, 03 Sep 2020 21:26:20 -0400</pubDate>
+      <title>166 Fraction to Recurring Decimal</title>
+      <link>https://foxisawesome.github.io/166-fraction-to-recurring-decimal/</link>
+      <pubDate>Sat, 05 Sep 2020 22:05:28 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/140-word-break-ii/</guid>
-      <description>LC 140 Word Break II   Given a non-empty string s and a dictionary wordDict containing a list of non-empty words, add spaces in s to construct a sentence where each word is a valid dictionary word. Return all such possible sentences.
-Input: s = &amp;quot;pineapplepenapple&amp;quot; wordDict = [&amp;quot;apple&amp;quot;, &amp;quot;pen&amp;quot;, &amp;quot;applepen&amp;quot;, &amp;quot;pine&amp;quot;, &amp;quot;pineapple&amp;quot;] Output: [ &amp;quot;pine apple pen apple&amp;quot;, &amp;quot;pineapple pen apple&amp;quot;, &amp;quot;pine applepen apple&amp;quot; ]  Solution 2020-09-03 Notes:</description>
+      <guid>https://foxisawesome.github.io/166-fraction-to-recurring-decimal/</guid>
+      <description>LC 166 Fraction to Recurring Decimal   Given two integers representing the numerator and denominator of a fraction, return the fraction in string format.
+If the fractional part is repeating, enclose the repeating part in parentheses.
+If multiple answers are possible, just return any of them.
+Extreme case: numer = -2147483648, denominator = -1999
+ Solution 2020-09-05 Notes:
+ Details: python built-in divmod() returns floor, which is not friendly in negative case.</description>
     </item>
     
     <item>
-      <title>735 Aseroid Collision</title>
-      <link>https://foxisawesome.github.io/posts/735-aseroid-collision/</link>
-      <pubDate>Mon, 31 Aug 2020 19:05:25 -0400</pubDate>
+      <title>159 Longest Substring With at Most Two Distinct Characters</title>
+      <link>https://foxisawesome.github.io/159-longest-substring-with-at-most-two-distinct-characters/</link>
+      <pubDate>Sat, 05 Sep 2020 21:08:15 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/735-aseroid-collision/</guid>
-      <description>LC 735 Aseroid Collision 
- We are given an array asteroids of integers representing asteroids in a row.
-For each asteroid, the absolute value represents its size, and the sign represents its direction (positive meaning right, negative meaning left). Each asteroid moves at the same speed.
-Find out the state of the asteroids after all collisions. If two asteroids meet, the smaller one will explode. If both are the same size, both will explode.</description>
+      <guid>https://foxisawesome.github.io/159-longest-substring-with-at-most-two-distinct-characters/</guid>
+      <description>LC 159 Longest Substring With at Most Two Distinct Characters Given a string *s* , find the length of the longest substring *t* that contains at most 2 distinct characters. Input: &amp;quot;ccaabbb&amp;quot; Output: 5 Explanation: t is &amp;quot;aabbb&amp;quot; which its length is 5. Solution 2020-09-05 Notes: 今天周末出去走了一圈，回家刷题效率可以啊。 class Solution: def</description>
+    </item>
+    
+    <item>
+      <title>136 Single Number</title>
+      <link>https://foxisawesome.github.io/136-single-number/</link>
+      <pubDate>Sat, 05 Sep 2020 20:58:41 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/136-single-number/</guid>
+      <description>LC 136 Single Number   Given a non-empty array of integers, every element appears twice except for one. Find that single one.
+Note: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
+ Solution 2020-09-05 Notes:
+ Space O(1) solution is a bit tricky.  class Solution: def singleNumber(self, nums: List[int]) -&amp;gt; int: stack = set() for num in nums: if num not in stack: stack.</description>
+    </item>
+    
+    <item>
+      <title>187 Repeated Dna Sequences</title>
+      <link>https://foxisawesome.github.io/187-repeated-dna-sequences/</link>
+      <pubDate>Sat, 05 Sep 2020 20:17:11 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/187-repeated-dna-sequences/</guid>
+      <description>LC 187 Repeated Dna Sequences All DNA is composed of a series of nucleotides abbreviated as A, C, G, and T, for example: &amp;ldquo;ACGAATTCCG&amp;rdquo;. When studying DNA, it is sometimes useful to identify repeated sequences within the DNA. Write a function to find all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule. Solution 2020-09-05 Notes: 很简单的题，两个小陷</description>
+    </item>
+    
+    <item>
+      <title>Das</title>
+      <link>https://foxisawesome.github.io/to_do/das/</link>
+      <pubDate>Sat, 05 Sep 2020 20:09:29 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/das/</guid>
+      <description>LC Das    Solution 2020-09-05T20:09:29-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>142 Linked List Cycle Ii</title>
+      <link>https://foxisawesome.github.io/to_do/142-linked-list-cycle-ii/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/142-linked-list-cycle-ii/</guid>
+      <description>LC 142 Linked List Cycle Ii    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>146 Lru Cach</title>
+      <link>https://foxisawesome.github.io/to_do/146-lru-cach/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/146-lru-cach/</guid>
+      <description>LC 146 Lru Cach    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>198 House Robbe</title>
+      <link>https://foxisawesome.github.io/to_do/198-house-robbe/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/198-house-robbe/</guid>
+      <description>LC 198 House Robbe    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>213 House Robber Ii</title>
+      <link>https://foxisawesome.github.io/to_do/213-house-robber-ii/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/213-house-robber-ii/</guid>
+      <description>LC 213 House Robber Ii    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>496 Next Greater Element I</title>
+      <link>https://foxisawesome.github.io/to_do/496-next-greater-element-i/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/496-next-greater-element-i/</guid>
+      <description>LC 496 Next Greater Element I    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>503 Next Greater Element Ii</title>
+      <link>https://foxisawesome.github.io/to_do/503-next-greater-element-ii/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/503-next-greater-element-ii/</guid>
+      <description>LC 503 Next Greater Element Ii    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>700 Find Mode in Binary Search Tree</title>
+      <link>https://foxisawesome.github.io/to_do/700-find-mode-in-binary-search-tree/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/700-find-mode-in-binary-search-tree/</guid>
+      <description>LC 700 Find Mode in Binary Search Tree    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>82 Remove Duplicates From Sorted List Ii</title>
+      <link>https://foxisawesome.github.io/to_do/82-remove-duplicates-from-sorted-list-ii/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:31 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/82-remove-duplicates-from-sorted-list-ii/</guid>
+      <description>LC 82 Remove Duplicates From Sorted List Ii    Solution 2020-09-05T14:01:31-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>1007 Minimum Domino Rotations for Equal Row</title>
+      <link>https://foxisawesome.github.io/to_do/1007-minimum-domino-rotations-for-equal-row/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/1007-minimum-domino-rotations-for-equal-row/</guid>
+      <description>LC 1007 Minimum Domino Rotations for Equal Row    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>1249 Minimum Remove to Make Valid Parentheses</title>
+      <link>https://foxisawesome.github.io/to_do/1249-minimum-remove-to-make-valid-parentheses/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/1249-minimum-remove-to-make-valid-parentheses/</guid>
+      <description>LC 1249 Minimum Remove to Make Valid Parentheses    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>139 Word Break</title>
+      <link>https://foxisawesome.github.io/to_do/139-word-break/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/139-word-break/</guid>
+      <description>LC 139 Word Break    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>15 3sum</title>
+      <link>https://foxisawesome.github.io/to_do/15-3sum/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/15-3sum/</guid>
+      <description>LC 15 3sum    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>16 3sum Closest</title>
+      <link>https://foxisawesome.github.io/to_do/16-3sum-closest/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/16-3sum-closest/</guid>
+      <description>LC 16 3sum Closest    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>19 Remove Nth Node From End of List</title>
+      <link>https://foxisawesome.github.io/to_do/19-remove-nth-node-from-end-of-list/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/19-remove-nth-node-from-end-of-list/</guid>
+      <description>LC 19 Remove Nth Node From End of List    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>200 Number of Islands</title>
+      <link>https://foxisawesome.github.io/to_do/200-number-of-islands/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/to_do/200-number-of-islands/</guid>
+      <description>LC 200 Number of Islands    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
     </item>
     
   </channel>
