@@ -6,19 +6,43 @@
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Fri, 04 Sep 2020 20:11:54 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 05 Sep 2020 21:08:15 -0400</lastBuildDate>
     
 	<atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>212 Word Search Ii</title>
-      <link>https://foxisawesome.github.io/posts/212-word-search-ii/</link>
-      <pubDate>Fri, 04 Sep 2020 20:11:54 -0400</pubDate>
+      <title>159 Longest Substring With at Most Two Distinct Characters</title>
+      <link>https://foxisawesome.github.io/posts/159-longest-substring-with-at-most-two-distinct-characters/</link>
+      <pubDate>Sat, 05 Sep 2020 21:08:15 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/212-word-search-ii/</guid>
-      <description>LC 212 Word Search Ii    Solution 2020-09-04T20:11:54-04:00 Notes:
+      <guid>https://foxisawesome.github.io/posts/159-longest-substring-with-at-most-two-distinct-characters/</guid>
+      <description>LC 159 Longest Substring With at Most Two Distinct Characters    Solution 2020-09-05T21:08:15-04:00 Notes:
    # Time O() # Space O() </description>
+    </item>
+    
+    <item>
+      <title>136 Single Number</title>
+      <link>https://foxisawesome.github.io/posts/136-single-number/</link>
+      <pubDate>Sat, 05 Sep 2020 20:58:41 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/136-single-number/</guid>
+      <description>LC 136 Single Number   Given a non-empty array of integers, every element appears twice except for one. Find that single one.
+Note: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
+ Solution 2020-09-05 Notes:
+ Space O(1) solution is a bit tricky.  class Solution: def singleNumber(self, nums: List[int]) -&amp;gt; int: stack = set() for num in nums: if num not in stack: stack.</description>
+    </item>
+    
+    <item>
+      <title>187 Repeated Dna Sequences</title>
+      <link>https://foxisawesome.github.io/posts/187-repeated-dna-sequences/</link>
+      <pubDate>Sat, 05 Sep 2020 20:17:11 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/187-repeated-dna-sequences/</guid>
+      <description>LC 187 Repeated Dna Sequences   All DNA is composed of a series of nucleotides abbreviated as A, C, G, and T, for example: &amp;ldquo;ACGAATTCCG&amp;rdquo;. When studying DNA, it is sometimes useful to identify repeated sequences within the DNA.
+Write a function to find all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule.
+ Solution 2020-09-05 Notes:
+ 很简单的题，两个小陷进：  Substring = s[i-9:i+1] NOT s[i-10:i] because 0-indexed.</description>
     </item>
     
     <item>
