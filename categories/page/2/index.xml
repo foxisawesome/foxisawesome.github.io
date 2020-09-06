@@ -5,215 +5,164 @@
     <link>https://foxisawesome.github.io/categories/</link>
     <description>Recent content in Categories on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 05 Sep 2020 22:05:28 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2020 18:35:02 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
-      <title>215 Kth Largest Element in an Array</title>
-      <link>https://foxisawesome.github.io/to_do/215-kth-largest-element-in-an-array/</link>
-      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      <title>1041 Robot Bounded in Circle</title>
+      <link>https://foxisawesome.github.io/1041-robot-bounded-in-circle/</link>
+      <pubDate>Mon, 31 Aug 2020 22:14:45 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/to_do/215-kth-largest-element-in-an-array/</guid>
-      <description>LC 215 Kth Largest Element in an Array    Solution 2020-09-05T14:01:30-04:00 Notes:
-   # Time O() # Space O()  </description>
+      <guid>https://foxisawesome.github.io/1041-robot-bounded-in-circle/</guid>
+      <description>LC 1041 Robot Bounded in Circle On an infinite plane, a robot initially stands at (0, 0) and faces north. The robot can receive one of three instructions: &amp;quot;G&amp;quot;: go straight 1 unit; &amp;quot;L&amp;quot;: turn 90 degrees to the left; &amp;quot;R&amp;quot;: turn 90 degress to the right. The robot performs the instructions given in order, and repeats them forever. Return true if and only if there exists a circle in</description>
     </item>
     
     <item>
-      <title>22 Generate Parentheses</title>
-      <link>https://foxisawesome.github.io/to_do/22-generate-parentheses/</link>
-      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      <title>957 Prison Cells</title>
+      <link>https://foxisawesome.github.io/957-prison-cells/</link>
+      <pubDate>Mon, 31 Aug 2020 19:26:18 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/to_do/22-generate-parentheses/</guid>
-      <description>LC 22 Generate Parentheses    Solution 2020-09-05T14:01:30-04:00 Notes:
-   # Time O() # Space O()  </description>
+      <guid>https://foxisawesome.github.io/957-prison-cells/</guid>
+      <description>LC 957 Prison Cells There are 8 prison cells in a row, and each cell is either occupied or vacant. Each day, whether the cell is occupied or vacant changes according to the following rules: If a cell has two adjacent neighbors that are both occupied or both vacant, then the cell becomes occupied. Otherwise, it becomes vacant. (Note that because the prison is a row, the first and the</description>
     </item>
     
     <item>
-      <title>239 Sliding Window Maximum</title>
-      <link>https://foxisawesome.github.io/to_do/239-sliding-window-maximum/</link>
-      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      <title>735 Aseroid Collision</title>
+      <link>https://foxisawesome.github.io/735-aseroid-collision/</link>
+      <pubDate>Mon, 31 Aug 2020 19:05:25 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/to_do/239-sliding-window-maximum/</guid>
-      <description>LC 239 Sliding Window Maximum    Solution 2020-09-05T14:01:30-04:00 Notes:
-   # Time O() # Space O()  </description>
+      <guid>https://foxisawesome.github.io/735-aseroid-collision/</guid>
+      <description>LC 735 Aseroid Collision We are given an array asteroids of integers representing asteroids in a row. For each asteroid, the absolute value represents its size, and the sign represents its direction (positive meaning right, negative meaning left). Each asteroid moves at the same speed. Find out the state of the asteroids after all collisions. If two asteroids meet, the smaller one will explode. If both are the same size,</description>
     </item>
     
     <item>
-      <title>279 Perfect Squares</title>
-      <link>https://foxisawesome.github.io/to_do/279-perfect-squares/</link>
-      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      <title>141 Linked List Cycle</title>
+      <link>https://foxisawesome.github.io/141-linked-list-cycle/</link>
+      <pubDate>Sun, 30 Aug 2020 21:35:50 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/to_do/279-perfect-squares/</guid>
-      <description>LC 279 Perfect Squares    Solution 2020-09-05T14:01:30-04:00 Notes:
-   # Time O() # Space O()  </description>
+      <guid>https://foxisawesome.github.io/141-linked-list-cycle/</guid>
+      <description>LC 141 Linked List Cycle Given a linked list, determine if it has a cycle in it. To represent a cycle in the given linked list, we use an integer pos which represents the position (0-indexed) in the linked list where tail connects to. If pos is -1, then there is no cycle in the linked list. Example 1: Input: head = [3,2,0,-4], pos = 1 Output: true Explanation: There</description>
     </item>
     
     <item>
-      <title>283 Move Zeroes</title>
-      <link>https://foxisawesome.github.io/to_do/283-move-zeroes/</link>
-      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      <title>328 Odd Even Linked List</title>
+      <link>https://foxisawesome.github.io/328-odd-even-linked-list/</link>
+      <pubDate>Sun, 30 Aug 2020 21:27:32 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/to_do/283-move-zeroes/</guid>
-      <description>LC 283 Move Zeroes    Solution 2020-09-05T14:01:30-04:00 Notes:
-   # Time O() # Space O()  </description>
+      <guid>https://foxisawesome.github.io/328-odd-even-linked-list/</guid>
+      <description>LC 328 Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes. You should try to do it in place. The program should run in O(1) space complexity and O(nodes) time complexity. Example 1: Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL Output: 1-&amp;gt;3-&amp;gt;5-&amp;gt;2-&amp;gt;4-&amp;gt;NULL linked list 终于在周末刷出感</description>
     </item>
     
     <item>
-      <title>322 Coin Change</title>
-      <link>https://foxisawesome.github.io/to_do/322-coin-change/</link>
-      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      <title>1266 Minimum Time Visiting All Points</title>
+      <link>https://foxisawesome.github.io/1266-minimum-time-visiting-all-points/</link>
+      <pubDate>Sun, 30 Aug 2020 21:24:22 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/to_do/322-coin-change/</guid>
-      <description>LC 322 Coin Change    Solution 2020-09-05T14:01:30-04:00 Notes:
-   # Time O() # Space O()  </description>
+      <guid>https://foxisawesome.github.io/1266-minimum-time-visiting-all-points/</guid>
+      <description>LC 1266 On a plane there are n points with integer coordinates points[i] = [xi, yi]. Your task is to find the minimum time in seconds to visit all points. You can move according to the next rules: In one second always you can either move vertically, horizontally by one unit or diagonally (it means to move one unit vertically and one unit horizontally in one second). You have to</description>
     </item>
     
     <item>
-      <title>4 Median of Two Sorted Arrays</title>
-      <link>https://foxisawesome.github.io/to_do/4-median-of-two-sorted-arrays/</link>
-      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      <title>530 Min Abs Dif BST</title>
+      <link>https://foxisawesome.github.io/530-min-abs-dif-bst/</link>
+      <pubDate>Sun, 30 Aug 2020 20:59:36 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/to_do/4-median-of-two-sorted-arrays/</guid>
-      <description>LC 4 Median of Two Sorted Arrays    Solution 2020-09-05T14:01:30-04:00 Notes:
-   # Time O() # Space O()  </description>
+      <guid>https://foxisawesome.github.io/530-min-abs-dif-bst/</guid>
+      <description>LC 530
+Given a binary search tree with non-negative values, find the minimum absolute difference between values of any two nodes.
+ Given a binary search tree with non-negative values, find the minimum absolute difference between values of any two nodes.
+Example:
+Input: 1 \ 3 / 2 Output: 1 Explanation: The minimum absolute difference is 1, which is the difference between 2 and 1 (or between 2 and 3).   8/30/2020 Note:</description>
     </item>
     
     <item>
-      <title>416 Partition Equal Subset Sum</title>
-      <link>https://foxisawesome.github.io/to_do/416-partition-equal-subset-sum/</link>
-      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      <title>98 Valid BST</title>
+      <link>https://foxisawesome.github.io/98-valid-bst/</link>
+      <pubDate>Sun, 30 Aug 2020 20:59:02 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/to_do/416-partition-equal-subset-sum/</guid>
-      <description>LC 416 Partition Equal Subset Sum    Solution 2020-09-05T14:01:30-04:00 Notes:
-   # Time O() # Space O()  </description>
+      <guid>https://foxisawesome.github.io/98-valid-bst/</guid>
+      <description>LC 98 Valid BST Given a binary tree, determine if it is a valid binary search tree (BST). Assume a BST is defined as follows: The left subtree of a node contains only nodes with keys less than the node&amp;rsquo;s key. The right subtree of a node contains only nodes with keys greater than the node&amp;rsquo;s key. Both the left and right subtrees must also be binary search trees. Example</description>
     </item>
     
     <item>
-      <title>509 Fibonacci Number</title>
-      <link>https://foxisawesome.github.io/to_do/509-fibonacci-number/</link>
-      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      <title>701 Insert Into BST</title>
+      <link>https://foxisawesome.github.io/701-insert-into-bst/</link>
+      <pubDate>Sun, 30 Aug 2020 20:58:29 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/to_do/509-fibonacci-number/</guid>
-      <description>LC 509 Fibonacci Number    Solution 2020-09-05T14:01:30-04:00 Notes:
-   # Time O() # Space O()  </description>
+      <guid>https://foxisawesome.github.io/701-insert-into-bst/</guid>
+      <description>LC 701 Given the root node of a binary search tree (BST) and a value to be inserted into the tree, insert the value into the BST. Return the root node of the BST after the insertion. It is guaranteed that the new value does not exist in the original BST. Note that there may exist multiple valid ways for the insertion, as long as the tree remains a BST</description>
     </item>
     
     <item>
-      <title>516 Longest Palindromic Subsequence</title>
-      <link>https://foxisawesome.github.io/to_do/516-longest-palindromic-subsequence/</link>
-      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      <title>Sliding Window Note</title>
+      <link>https://foxisawesome.github.io/sliding-window-note/</link>
+      <pubDate>Sun, 30 Aug 2020 17:08:55 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/to_do/516-longest-palindromic-subsequence/</guid>
-      <description>LC 516 Longest Palindromic Subsequence    Solution 2020-09-05T14:01:30-04:00 Notes:
-   # Time O() # Space O()  </description>
+      <guid>https://foxisawesome.github.io/sliding-window-note/</guid>
+      <description>滑动窗口算法的思路是这样： 1、我们在字符串S中使用双指针中的左右指针技巧，初始化left = right = 0，把索引左闭右开区间[left, right)</description>
     </item>
     
     <item>
-      <title>523 Continuous Subarray Sum</title>
-      <link>https://foxisawesome.github.io/to_do/523-continuous-subarray-sum/</link>
-      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      <title>Linked List Note (First Post)</title>
+      <link>https://foxisawesome.github.io/linked-list-note/</link>
+      <pubDate>Sun, 30 Aug 2020 16:54:06 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/to_do/523-continuous-subarray-sum/</guid>
-      <description>LC 523 Continuous Subarray Sum    Solution 2020-09-05T14:01:30-04:00 Notes:
-   # Time O() # Space O()  </description>
+      <guid>https://foxisawesome.github.io/linked-list-note/</guid>
+      <description>开始刷Leetcode 好几个月了，今天开始学很多人用blog 记录下自己的notes，也激励自己好好刷题！First post! It takes a while for me to get how exactly Linked List</description>
     </item>
     
     <item>
-      <title>651 4 Keys Keyboard</title>
-      <link>https://foxisawesome.github.io/to_do/651-4-keys-keyboard/</link>
-      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      <title>42 Trapping Rain Water</title>
+      <link>https://foxisawesome.github.io/42-trapping-rain-water/</link>
+      <pubDate>Wed, 05 Aug 2020 14:01:29 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/to_do/651-4-keys-keyboard/</guid>
-      <description>LC 651 4 Keys Keyboard    Solution 2020-09-05T14:01:30-04:00 Notes:
-   # Time O() # Space O()  </description>
+      <guid>https://foxisawesome.github.io/42-trapping-rain-water/</guid>
+      <description>LC 42 Trapping Rain Water Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining. Solution 2020-08-05 Notes: 短边原理，左右指针同时走，r_max 大时短边在left，所以计算lef</description>
     </item>
     
     <item>
-      <title>76 Minimum Window Substring</title>
-      <link>https://foxisawesome.github.io/to_do/76-minimum-window-substring/</link>
-      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      <title>206 Reverse Linked List</title>
+      <link>https://foxisawesome.github.io/206-reverse-linked-list/</link>
+      <pubDate>Sat, 01 Aug 2020 20:06:27 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/to_do/76-minimum-window-substring/</guid>
-      <description>LC 76 Minimum Window Substring    Solution 2020-09-05T14:01:30-04:00 Notes:
-   # Time O() # Space O()  </description>
+      <guid>https://foxisawesome.github.io/206-reverse-linked-list/</guid>
+      <description>LC 206 Reverse Linked List Reverse a singly linked list. Example: Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL Output: 5-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;1-&amp;gt;NULL Solution 2020-09-01 Notes: 这题刷了不下10遍了，终于明白iteration这里的四步操作了。 recursion的做法还是似懂非懂，</description>
     </item>
     
     <item>
-      <title>83 Remove Duplicates From Sorted List</title>
-      <link>https://foxisawesome.github.io/to_do/83-remove-duplicates-from-sorted-list/</link>
-      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      <title>2 Add Two Num</title>
+      <link>https://foxisawesome.github.io/2-add-two-num/</link>
+      <pubDate>Thu, 02 Jul 2020 10:08:20 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/to_do/83-remove-duplicates-from-sorted-list/</guid>
-      <description>LC 83 Remove Duplicates From Sorted List    Solution 2020-09-05T14:01:30-04:00 Notes:
-   # Time O() # Space O()  </description>
+      <guid>https://foxisawesome.github.io/2-add-two-num/</guid>
+      <description>LC 2 Add Two Num You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list. You may assume the two numbers do not contain any leading zero, except the number 0 itself. Example: Input: (2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt;</description>
     </item>
     
     <item>
-      <title>542 01 Matrix</title>
-      <link>https://foxisawesome.github.io/to_do/542-01-matrix/</link>
-      <pubDate>Sat, 05 Sep 2020 14:01:29 -0400</pubDate>
+      <title>1 Two Sum</title>
+      <link>https://foxisawesome.github.io/1-two-sum/</link>
+      <pubDate>Sat, 01 Feb 2020 14:01:30 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/to_do/542-01-matrix/</guid>
-      <description>LC 542 01 Matrix    Solution 2020-09-05T14:01:29-04:00 Notes:
-   # Time O() # Space O()  </description>
+      <guid>https://foxisawesome.github.io/1-two-sum/</guid>
+      <description>LC 1 Two Sum   Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have *exactly* one solution, and you may not use the same element twice.
+ Solution 2020-02-01 Notes:
+ use hash table, one-pass.  class Solution: def twoSum(self, nums: List[int], target: int) -&amp;gt; List[int]: if not nums or target is None: return [] d = dict() for i, val in enumerate(nums): if target - val not in d: d[val] = i else: return [d[target - val], i] # Time O(N) # Space O(N)  </description>
     </item>
     
     <item>
-      <title>131 Panlidrome Partitioning</title>
-      <link>https://foxisawesome.github.io/to_do/131-panlidrome-partitioning/</link>
-      <pubDate>Sat, 05 Sep 2020 09:55:31 -0400</pubDate>
+      <title>About</title>
+      <link>https://foxisawesome.github.io/about/</link>
+      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
       
-      <guid>https://foxisawesome.github.io/to_do/131-panlidrome-partitioning/</guid>
-      <description>LC 131 Panlidrome Partitioning    Solution 2020-09-05T09:55:31-04:00 Notes:
-   # Time O() # Space O()  </description>
-    </item>
-    
-    <item>
-      <title>212 Word Search Ii</title>
-      <link>https://foxisawesome.github.io/to_do/212-word-search-ii/</link>
-      <pubDate>Fri, 04 Sep 2020 20:11:54 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/to_do/212-word-search-ii/</guid>
-      <description>LC 212 Word Search Ii    Solution 2020-09-04T20:11:54-04:00 Notes:
-   # Time O() # Space O()  </description>
-    </item>
-    
-    <item>
-      <title>316 Remove Dup Letters</title>
-      <link>https://foxisawesome.github.io/316-remove-dup-letters/</link>
-      <pubDate>Fri, 04 Sep 2020 19:56:18 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/316-remove-dup-letters/</guid>
-      <description>LC 316 Remove Dup Letters  Given a string which contains only lowercase letters, remove duplicate letters so that every letter appears once and only once. You must make sure your result is the smallest in lexicographical order among all possible results.
-Input: &amp;quot;cbacdcbc&amp;quot; Output: &amp;quot;acdb&amp;quot;   Solution 2020-09-04 Notes:
-  Need one-pass of s to get the counter of each letter.
-  a second pass, dial down counter at each iteration.</description>
-    </item>
-    
-    <item>
-      <title>1081 Smallest Subsequence of Distinct Char</title>
-      <link>https://foxisawesome.github.io/1081-smallest-subsequence-of-distinct-char/</link>
-      <pubDate>Fri, 04 Sep 2020 19:55:50 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/1081-smallest-subsequence-of-distinct-char/</guid>
-      <description>LC 1081 Smallest Subsequence of Distinct Char   Return the lexicographically smallest subsequence of text that contains all the distinct characters of text exactly once.
-Input: &amp;quot;ecbacba&amp;quot; Output: &amp;quot;eacb&amp;quot;   Solution 2020-09-04 Notes:
-  Need one-pass of s to get the counter of each letter.
-  a second pass, dial down counter at each iteration. use a stack to record every distinct letter and keep the order of recorded letter same as their orders in the string.</description>
-    </item>
-    
-    <item>
-      <title>80 Remove Dup From Sorted Array II</title>
-      <link>https://foxisawesome.github.io/80-remove-dup-from-sorted-array-ii/</link>
-      <pubDate>Fri, 04 Sep 2020 14:05:24 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/80-remove-dup-from-sorted-array-ii/</guid>
-      <description>LC 80 Remove Dup From Sorted Array II   Given a sorted array nums, remove the duplicates in-place such that duplicates appeared at most twice and return the new length.
-Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
-Given nums = [0,0,1,1,1,1,2,3,3], output [0,0,1,1,2,3,3]   Solution 2020-09-04 Notes:
- Same thing as LC 26.  class Solution: def removeDuplicates(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 count = dict() count[nums[0]] = 1 slow, fast = 0, 1 while fast &amp;lt; len(nums): count[nums[fast]] = count.</description>
+      <guid>https://foxisawesome.github.io/about/</guid>
+      <description>Dr. Q. Weng   Github
+  Email: Fox.Weng@me.com
+  Research and Interests Data Analysis Probability and Statistics • Bayesian Analysis • Machine Learning • Time Series Analysis • Natural Language Processing • Visualization.
+Others Knowledge Sharing • Data Science • Clean Code
+Hobbies Photography • Sports</description>
     </item>
     
   </channel>

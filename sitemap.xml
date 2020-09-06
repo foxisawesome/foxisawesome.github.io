@@ -3,6 +3,55 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://foxisawesome.github.io/categories/</loc>
+    <lastmod>2020-09-06T18:35:02-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/</loc>
+    <lastmod>2020-09-06T18:35:02-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/</loc>
+    <lastmod>2020-09-06T18:35:02-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/categories/sql/</loc>
+    <lastmod>2020-09-06T18:35:02-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/sql-notes/</loc>
+    <lastmod>2020-09-06T18:35:02-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/</loc>
+    <lastmod>2020-09-06T18:35:02-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/template/</loc>
+    <lastmod>2020-09-06T18:35:02-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://foxisawesome.github.io/166-fraction-to-recurring-decimal/</loc>
     <lastmod>2020-09-05T22:05:28-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -17,35 +66,7 @@
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/categories/</loc>
-    <lastmod>2020-09-05T22:05:28-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://foxisawesome.github.io/tags/leetcode/</loc>
-    <lastmod>2020-09-05T22:05:28-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/posts/</loc>
-    <lastmod>2020-09-05T22:05:28-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/</loc>
-    <lastmod>2020-09-05T22:05:28-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/tags/</loc>
     <lastmod>2020-09-05T22:05:28-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -68,244 +89,6 @@
   <url>
     <loc>https://foxisawesome.github.io/187-repeated-dna-sequences/</loc>
     <lastmod>2020-09-05T20:17:11-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/das/</loc>
-    <lastmod>2020-09-05T20:09:29-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/</loc>
-    <lastmod>2020-09-05T20:09:29-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/142-linked-list-cycle-ii/</loc>
-    <lastmod>2020-09-05T14:01:31-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/146-lru-cach/</loc>
-    <lastmod>2020-09-05T14:01:31-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/198-house-robbe/</loc>
-    <lastmod>2020-09-05T14:01:31-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/213-house-robber-ii/</loc>
-    <lastmod>2020-09-05T14:01:31-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/496-next-greater-element-i/</loc>
-    <lastmod>2020-09-05T14:01:31-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/503-next-greater-element-ii/</loc>
-    <lastmod>2020-09-05T14:01:31-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/700-find-mode-in-binary-search-tree/</loc>
-    <lastmod>2020-09-05T14:01:31-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/82-remove-duplicates-from-sorted-list-ii/</loc>
-    <lastmod>2020-09-05T14:01:31-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/1007-minimum-domino-rotations-for-equal-row/</loc>
-    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/1249-minimum-remove-to-make-valid-parentheses/</loc>
-    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/139-word-break/</loc>
-    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/15-3sum/</loc>
-    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/16-3sum-closest/</loc>
-    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/19-remove-nth-node-from-end-of-list/</loc>
-    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/200-number-of-islands/</loc>
-    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/215-kth-largest-element-in-an-array/</loc>
-    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/22-generate-parentheses/</loc>
-    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/239-sliding-window-maximum/</loc>
-    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/279-perfect-squares/</loc>
-    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/283-move-zeroes/</loc>
-    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/322-coin-change/</loc>
-    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/4-median-of-two-sorted-arrays/</loc>
-    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/416-partition-equal-subset-sum/</loc>
-    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/509-fibonacci-number/</loc>
-    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/516-longest-palindromic-subsequence/</loc>
-    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/523-continuous-subarray-sum/</loc>
-    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/651-4-keys-keyboard/</loc>
-    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/76-minimum-window-substring/</loc>
-    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/83-remove-duplicates-from-sorted-list/</loc>
-    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/542-01-matrix/</loc>
-    <lastmod>2020-09-05T14:01:29-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/131-panlidrome-partitioning/</loc>
-    <lastmod>2020-09-05T09:55:31-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/to_do/212-word-search-ii/</loc>
-    <lastmod>2020-09-04T20:11:54-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -388,13 +171,6 @@
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/to_do/337-house-rober-iii/</loc>
-    <lastmod>2020-09-02T22:30:47-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://foxisawesome.github.io/543-diameter-of-binary-tree/</loc>
     <lastmod>2020-09-02T15:49:49-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -472,20 +248,6 @@
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/to_do/1197-minimum-knight-moves/</loc>
-    <lastmod>2020-08-31T22:24:46-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/tags/bfs/</loc>
-    <lastmod>2020-08-31T22:24:46-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://foxisawesome.github.io/1041-robot-bounded-in-circle/</loc>
     <lastmod>2020-08-31T22:14:45-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -542,7 +304,7 @@
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/tags/leetcode-bst/</loc>
+    <loc>https://foxisawesome.github.io/tags/bst/</loc>
     <lastmod>2020-08-30T20:59:36-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -563,21 +325,14 @@
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/sliding-window/</loc>
+    <loc>https://foxisawesome.github.io/sliding-window-note/</loc>
     <lastmod>2020-08-30T17:08:55-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/tags/template/</loc>
-    <lastmod>2020-08-30T17:08:55-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/first-post-linked-list/</loc>
+    <loc>https://foxisawesome.github.io/linked-list-note/</loc>
     <lastmod>2020-08-30T16:54:06-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
