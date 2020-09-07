@@ -3,22 +3,57 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://foxisawesome.github.io/1512-number-of-good-pairs/</loc>
+    <lastmod>2020-09-06T21:03:48-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/categories/algo/</loc>
+    <lastmod>2020-09-06T21:03:48-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://foxisawesome.github.io/categories/</loc>
-    <lastmod>2020-09-06T18:35:02-04:00</lastmod>
+    <lastmod>2020-09-06T21:03:48-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/hashtable/</loc>
+    <lastmod>2020-09-06T21:03:48-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/leetcode/</loc>
+    <lastmod>2020-09-06T21:03:48-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/posts/</loc>
-    <lastmod>2020-09-06T18:35:02-04:00</lastmod>
+    <lastmod>2020-09-06T21:03:48-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/</loc>
-    <lastmod>2020-09-06T18:35:02-04:00</lastmod>
+    <lastmod>2020-09-06T21:03:48-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/</loc>
+    <lastmod>2020-09-06T21:03:48-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
@@ -38,13 +73,6 @@
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/tags/</loc>
-    <lastmod>2020-09-06T18:35:02-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://foxisawesome.github.io/tags/template/</loc>
     <lastmod>2020-09-06T18:35:02-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -53,20 +81,6 @@
   
   <url>
     <loc>https://foxisawesome.github.io/166-fraction-to-recurring-decimal/</loc>
-    <lastmod>2020-09-05T22:05:28-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/categories/algo/</loc>
-    <lastmod>2020-09-05T22:05:28-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/tags/leetcode/</loc>
     <lastmod>2020-09-05T22:05:28-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -89,6 +103,13 @@
   <url>
     <loc>https://foxisawesome.github.io/187-repeated-dna-sequences/</loc>
     <lastmod>2020-09-05T20:17:11-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/1249-minimum-remove-to-make-valid-parentheses/</loc>
+    <lastmod>2020-09-05T14:01:30-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

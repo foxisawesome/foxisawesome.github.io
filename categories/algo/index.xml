@@ -5,10 +5,23 @@
     <link>https://foxisawesome.github.io/categories/algo/</link>
     <description>Recent content in algo on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 05 Sep 2020 22:05:28 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 06 Sep 2020 21:03:48 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/algo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1512 Number of Good Pairs</title>
+      <link>https://foxisawesome.github.io/1512-number-of-good-pairs/</link>
+      <pubDate>Sun, 06 Sep 2020 21:03:48 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/1512-number-of-good-pairs/</guid>
+      <description>LC 1512 Number of Good Pairs   Given an array of integers nums.
+A pair (i,j) is called good if nums[i] == nums[j] and i &amp;lt; j.
+Return the number of good pairs.
+ Solution 2020-09-06 Notes:
+ One-pass using hash table. line 7-9, if gets a match, how many pairs it can make to previous ones is d[num].  class Solution: def numIdenticalPairs(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 ans = 0 d = dict() for num in nums: if num in d: ans += d[num] d[num] += 1 else: d[num] = 1 return ans # Time O(N) # Space O(N)   Use double loop:  class Solution: def numIdenticalPairs(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 n = len(nums) ans = 0 for i in range(n): j = i+1 while j &amp;lt; n: if nums[i] == nums[j]: ans += 1 j += 1 return ans # Time O(N^2) # Space O(1)  </description>
+    </item>
     
     <item>
       <title>SQL Notes</title>
@@ -61,6 +74,16 @@ Note: Your algorithm should have a linear runtime complexity. Could you implemen
       
       <guid>https://foxisawesome.github.io/187-repeated-dna-sequences/</guid>
       <description>LC 187 Repeated Dna Sequences All DNA is composed of a series of nucleotides abbreviated as A, C, G, and T, for example: &amp;ldquo;ACGAATTCCG&amp;rdquo;. When studying DNA, it is sometimes useful to identify repeated sequences within the DNA. Write a function to find all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule. Solution 2020-09-05 Notes: 很简单的题，两个小陷</description>
+    </item>
+    
+    <item>
+      <title>1249 Minimum Remove to Make Valid Parentheses</title>
+      <link>https://foxisawesome.github.io/1249-minimum-remove-to-make-valid-parentheses/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/1249-minimum-remove-to-make-valid-parentheses/</guid>
+      <description>LC 1249 Minimum Remove to Make Valid Parentheses    Solution 2020-09-05T14:01:30-04:00 Notes:
+   # Time O() # Space O()  </description>
     </item>
     
     <item>
@@ -205,27 +228,6 @@ Example 1:
 Input: 4-&amp;gt;2-&amp;gt;1-&amp;gt;3 Output: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4  Example 2:
 Input: -1-&amp;gt;5-&amp;gt;3-&amp;gt;4-&amp;gt;0 Output: -1-&amp;gt;0-&amp;gt;3-&amp;gt;4-&amp;gt;5   Solution 2020-09-01 Notes:
  Time Complaxity O(nlogn) indicates merge sort algo. in the sortList, line 8:if not head or not head.next: return head actually returns head not None. slow and fast pointers to divide list into two need a lfet tail pointer: l_tail to cut off left linked list.</description>
-    </item>
-    
-    <item>
-      <title>79 Word Search</title>
-      <link>https://foxisawesome.github.io/79-word-search/</link>
-      <pubDate>Tue, 01 Sep 2020 16:07:12 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/79-word-search/</guid>
-      <description>LC 79 Word Search   Given a 2D board and a word, find if the word exists in the grid.
-The word can be constructed from letters of sequentially adjacent cell, where &amp;ldquo;adjacent&amp;rdquo; cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.
-Example:
-board = [ [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;E&#39;], [&#39;S&#39;,&#39;F&#39;,&#39;C&#39;,&#39;S&#39;], [&#39;A&#39;,&#39;D&#39;,&#39;E&#39;,&#39;E&#39;] ] Given word = &amp;quot;ABCCED&amp;quot;, return true. Given word = &amp;quot;SEE&amp;quot;, return true.</description>
-    </item>
-    
-    <item>
-      <title>981 Time Based Key Value Store</title>
-      <link>https://foxisawesome.github.io/981-time-based-key-value-store/</link>
-      <pubDate>Tue, 01 Sep 2020 14:15:51 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/981-time-based-key-value-store/</guid>
-      <description>LC 981 Time Based Key Value Store Create a timebased key-value store class TimeMap, that supports two operations. set(string key, string value, int timestamp) Stores the key and value, along with the given timestamp. get(string key, int timestamp) Returns a value such that set(key, value, timestamp_prev) was called previously, with timestamp_prev &amp;lt;= timestamp. If there are multiple such values, it returns the one with the largest timestamp_prev. If there are</description>
     </item>
     
   </channel>
