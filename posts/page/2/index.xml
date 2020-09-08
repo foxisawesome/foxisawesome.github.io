@@ -5,10 +5,30 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 07 Sep 2020 22:03:58 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2020 15:07:27 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>445 Add Two Num II</title>
+      <link>https://foxisawesome.github.io/445-add-two-num-ii/</link>
+      <pubDate>Wed, 02 Sep 2020 09:38:40 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/445-add-two-num-ii/</guid>
+      <description>LC 445 Add Two Num II   You are given two non-empty linked lists representing two non-negative integers. The most significant digit comes first and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+Follow up: What if you cannot modify the input lists?</description>
+    </item>
+    
+    <item>
+      <title>295 Find Median From Data Stream</title>
+      <link>https://foxisawesome.github.io/295-find-median-from-data-stream/</link>
+      <pubDate>Tue, 01 Sep 2020 21:33:10 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/295-find-median-from-data-stream/</guid>
+      <description>LC 295 Find Median From Data Stream Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value. For example, [2,3,4], the median is 3 [2,3], the median is (2 + 3) / 2 = 2.5 Solution 2020-09-01 Notes: Follow 了花花酱的so</description>
+    </item>
     
     <item>
       <title>148 Sort List</title>
@@ -181,31 +201,6 @@ Input: 1 \ 3 / 2 Output: 1 Explanation: The minimum absolute difference is 1, wh
       
       <guid>https://foxisawesome.github.io/69-sqrtx/</guid>
       <description>LC 69 Sqrtx Implement int sqrt(int x). Sqrt(8) = 2 Solution 2020-03-07 Notes: 标准的binary search 模版， right 从x//2开始。 class Solution: def mySqrt(self, x: int) -&amp;gt; int: if x &amp;lt; 2: return x left = 1 right = x//2 while left &amp;lt;= right: mid = left + (right - left)//2 if mid**2 == x:</description>
-    </item>
-    
-    <item>
-      <title>1 Two Sum</title>
-      <link>https://foxisawesome.github.io/1-two-sum/</link>
-      <pubDate>Sat, 01 Feb 2020 14:01:30 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/1-two-sum/</guid>
-      <description>LC 1 Two Sum   Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
-You may assume that each input would have *exactly* one solution, and you may not use the same element twice.
- Solution 2020-02-01 Notes:
- use hash table, one-pass.  class Solution: def twoSum(self, nums: List[int], target: int) -&amp;gt; List[int]: if not nums or target is None: return [] d = dict() for i, val in enumerate(nums): if target - val not in d: d[val] = i else: return [d[target - val], i] # Time O(N) # Space O(N)  </description>
-    </item>
-    
-    <item>
-      <title>About</title>
-      <link>https://foxisawesome.github.io/about/</link>
-      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
-      
-      <guid>https://foxisawesome.github.io/about/</guid>
-      <description>Dr. Q. Weng   Github
-  Email: Fox.Weng@me.com
-  Research and Interests Data Analysis Probability and Statistics • Bayesian Analysis • Machine Learning • Time Series Analysis • Natural Language Processing • Visualization.
-Others Knowledge Sharing • Data Science • Clean Code
-Hobbies Photography • Sports</description>
     </item>
     
   </channel>
