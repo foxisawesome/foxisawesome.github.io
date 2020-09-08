@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 06 Sep 2020 21:03:48 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 07 Sep 2020 22:03:58 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1539 Kth Missing Positive Number</title>
+      <link>https://foxisawesome.github.io/1539-kth-missing-positive-number/</link>
+      <pubDate>Mon, 07 Sep 2020 22:03:58 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/1539-kth-missing-positive-number/</guid>
+      <description>LC 1539 Kth Missing Positive Number Given an array arr of positive integers sorted in a strictly increasing order, and an integer k. Find the kth positive integer that is missing from this array. Input: arr = [2,3,4,7,11], k = 5 Output: 9 Explanation: The missing positive integers are [1,5,6,8,9,10,12,13,...]. The 5th missing positive integer is 9. Solution 2020-09-07 Notes: O(N) solution is pretty easy, but not optimal. the binary</description>
+    </item>
     
     <item>
       <title>1512 Number of Good Pairs</title>
@@ -215,19 +224,6 @@ Follow up: What if you cannot modify the input lists?</description>
       
       <guid>https://foxisawesome.github.io/295-find-median-from-data-stream/</guid>
       <description>LC 295 Find Median From Data Stream Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value. For example, [2,3,4], the median is 3 [2,3], the median is (2 + 3) / 2 = 2.5 Solution 2020-09-01 Notes: Follow 了花花酱的so</description>
-    </item>
-    
-    <item>
-      <title>148 Sort List</title>
-      <link>https://foxisawesome.github.io/148-sort-list/</link>
-      <pubDate>Tue, 01 Sep 2020 19:26:00 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/148-sort-list/</guid>
-      <description>LC 148 Sort List   Sort a linked list in O(n log n) time using constant space complexity.
-Example 1:
-Input: 4-&amp;gt;2-&amp;gt;1-&amp;gt;3 Output: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4  Example 2:
-Input: -1-&amp;gt;5-&amp;gt;3-&amp;gt;4-&amp;gt;0 Output: -1-&amp;gt;0-&amp;gt;3-&amp;gt;4-&amp;gt;5   Solution 2020-09-01 Notes:
- Time Complaxity O(nlogn) indicates merge sort algo. in the sortList, line 8:if not head or not head.next: return head actually returns head not None. slow and fast pointers to divide list into two need a lfet tail pointer: l_tail to cut off left linked list.</description>
     </item>
     
   </channel>
