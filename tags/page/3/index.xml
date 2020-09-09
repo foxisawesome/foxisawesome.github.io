@@ -5,10 +5,64 @@
     <link>https://foxisawesome.github.io/tags/</link>
     <description>Recent content in Tags on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 08 Sep 2020 15:07:27 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 08 Sep 2020 22:19:55 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Sliding Window Note</title>
+      <link>https://foxisawesome.github.io/sliding-window-note/</link>
+      <pubDate>Sun, 30 Aug 2020 17:08:55 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sliding-window-note/</guid>
+      <description>滑动窗口算法的思路是这样： 1、我们在字符串S中使用双指针中的左右指针技巧，初始化left = right = 0，把索引左闭右开区间[left, right)</description>
+    </item>
+    
+    <item>
+      <title>Linked List Note (First Post)</title>
+      <link>https://foxisawesome.github.io/linked-list-note/</link>
+      <pubDate>Sun, 30 Aug 2020 16:54:06 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/linked-list-note/</guid>
+      <description>开始刷Leetcode 好几个月了，今天开始学很多人用blog 记录下自己的notes，也激励自己好好刷题！First post! It takes a while for me to get how exactly Linked List</description>
+    </item>
+    
+    <item>
+      <title>42 Trapping Rain Water</title>
+      <link>https://foxisawesome.github.io/42-trapping-rain-water/</link>
+      <pubDate>Wed, 05 Aug 2020 14:01:29 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/42-trapping-rain-water/</guid>
+      <description>LC 42 Trapping Rain Water Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining. Solution 2020-08-05 Notes: 短边原理，左右指针同时走，r_max 大时短边在left，所以计算lef</description>
+    </item>
+    
+    <item>
+      <title>206 Reverse Linked List</title>
+      <link>https://foxisawesome.github.io/206-reverse-linked-list/</link>
+      <pubDate>Sat, 01 Aug 2020 20:06:27 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/206-reverse-linked-list/</guid>
+      <description>LC 206 Reverse Linked List Reverse a singly linked list. Example: Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL Output: 5-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;1-&amp;gt;NULL Solution 2020-09-01 Notes: 这题刷了不下10遍了，终于明白iteration这里的四步操作了。 # Definition for singly-linked list. # class ListNode: # def __init__(self, val=0, next=None): # self.val = val # self.next</description>
+    </item>
+    
+    <item>
+      <title>2 Add Two Num</title>
+      <link>https://foxisawesome.github.io/2-add-two-num/</link>
+      <pubDate>Thu, 02 Jul 2020 10:08:20 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/2-add-two-num/</guid>
+      <description>LC 2 Add Two Num You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list. You may assume the two numbers do not contain any leading zero, except the number 0 itself. Example: Input: (2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>69 Sqrtx</title>
+      <link>https://foxisawesome.github.io/69-sqrtx/</link>
+      <pubDate>Sat, 07 Mar 2020 22:51:59 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/69-sqrtx/</guid>
+      <description>LC 69 Sqrtx Implement int sqrt(int x). Sqrt(8) = 2 Solution 2020-03-07 Notes: 标准的binary search 模版， right 从x//2开始。 class Solution: def mySqrt(self, x: int) -&amp;gt; int: if x &amp;lt; 2: return x left = 1 right = x//2 while left &amp;lt;= right: mid = left + (right - left)//2 if mid**2 == x:</description>
+    </item>
     
     <item>
       <title>1 Two Sum</title>

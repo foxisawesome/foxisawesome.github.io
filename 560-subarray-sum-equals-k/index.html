@@ -39,11 +39,11 @@
 <meta itemprop="description" content="LC 560 Subarray Sum Equals K Given an array of integers and an integer k, you need to find the total number of continuous subarrays whose sum equals to k. Input:nums = [1,1,1], k = 2 Output: 2 Solution 2020-09-08 Notes: 看了labuladong 的总结 预先算一个cumulativ">
 <meta itemprop="datePublished" content="2020-09-08T15:07:27-04:00" />
 <meta itemprop="dateModified" content="2020-09-08T15:07:27-04:00" />
-<meta itemprop="wordCount" content="178">
+<meta itemprop="wordCount" content="190">
 
 
 
-<meta itemprop="keywords" content="leetcode,array," />
+<meta itemprop="keywords" content="leetcode,array,hashtable," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="560 Subarray Sum Equals K"/>
 <meta name="twitter:description" content="LC 560 Subarray Sum Equals K Given an array of integers and an integer k, you need to find the total number of continuous subarrays whose sum equals to k. Input:nums = [1,1,1], k = 2 Output: 2 Solution 2020-09-08 Notes: 看了labuladong 的总结 预先算一个cumulativ"/>
@@ -147,7 +147,8 @@
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">40</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">45</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">1</span></li>
         </ul>
     </div>
@@ -159,7 +160,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/array/" class="tag-list-link">array</a><span
-                    class="tag-list-count">3</span></li>
+                    class="tag-list-count">4</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/backtracking/" class="tag-list-link">backtracking</a><span
@@ -167,7 +168,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/binarysearch/" class="tag-list-link">binarysearch</a><span
-                    class="tag-list-count">2</span></li>
+                    class="tag-list-count">3</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/bst/" class="tag-list-link">bst</a><span
@@ -187,15 +188,19 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/hashtable/" class="tag-list-link">hashtable</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/kmeans/" class="tag-list-link">kmeans</a><span
                     class="tag-list-count">1</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">38</span></li>
+                    class="tag-list-count">43</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
-                    class="tag-list-count">7</span></li>
+                    class="tag-list-count">8</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/recursion/" class="tag-list-link">recursion</a><span
@@ -263,6 +268,7 @@
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
     <a class="article-tag-link" href="/tags/array/"> array </a>
+    <a class="article-tag-link" href="/tags/hashtable/"> hashtable </a>
   </span>
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/560-subarray-sum-equals-k/#comments"
@@ -287,7 +293,7 @@ Output: 2
 <p>预先算一个cumulative sum 的dictionary，只要 <code>cum_sum - k in d</code> 那么 ans 就叠加次数。</p>
 </li>
 <li>
-<p>需要dict 因为nums可能有0。</p>
+<p>需要dict记录frequency, (nums可能有0)。</p>
 </li>
 <li>
 <p>FB 热门题</p>
@@ -329,6 +335,11 @@ Output: 2
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
             </li>
+            <li class="next">
+                <a href="https://foxisawesome.github.io/325-maximum-size-subarray-sum-equals-k/"
+                    title="325 Maximum Size Subarray Sum Equals K"><span>Newer&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
             
             <li class="toggle-toc">
                 <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
@@ -341,8 +352,6 @@ Output: 2
             </li>
         </ul>
         <div class="bar-right">
-            <div class="share-component" data-sites="linkedin"
-                data-mobile-sites="weibo,qq,qzone"></div>
         </div>
     </div>
 </nav>
