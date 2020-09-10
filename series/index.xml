@@ -10,6 +10,34 @@
     
     
     <item>
+      <title>124 Binary Tree Maximum Path Sum</title>
+      <link>https://foxisawesome.github.io/124-binary-tree-maximum-path-sum/</link>
+      <pubDate>Wed, 09 Sep 2020 14:41:35 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/124-binary-tree-maximum-path-sum/</guid>
+      <description>LC 124 Binary Tree Maximum Path Sum Given a non-empty binary tree, find the maximum path sum. For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The path must contain at least one node and does not need to go through the root. Input: [-10,9,20,null,null,15,7] -10 / \ 9 20 / \ 15</description>
+    </item>
+    
+    <item>
+      <title>987 Vertical Order Traversal of a Binary Tree</title>
+      <link>https://foxisawesome.github.io/987-vertical-order-traversal-of-a-binary-tree/</link>
+      <pubDate>Wed, 09 Sep 2020 13:59:40 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/987-vertical-order-traversal-of-a-binary-tree/</guid>
+      <description>LC 987 Vertical Order Traversal of a Binary Tree    Solution 2020-09-09T13:59:40-04:00 Notes:
+   # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>236 Lowest Common Ancestor of a Binary Tree</title>
+      <link>https://foxisawesome.github.io/236-lowest-common-ancestor-of-a-binary-tree/</link>
+      <pubDate>Wed, 09 Sep 2020 13:57:55 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/236-lowest-common-ancestor-of-a-binary-tree/</guid>
+      <description>LC 236 Lowest Common Ancestor of a Binary Tree Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be</description>
+    </item>
+    
+    <item>
       <title>392 Is Subsequence</title>
       <link>https://foxisawesome.github.io/392-is-subsequence/</link>
       <pubDate>Tue, 08 Sep 2020 22:19:55 -0400</pubDate>
@@ -186,41 +214,6 @@ Note: Your algorithm should have a linear runtime complexity. Could you implemen
 Input: &amp;quot;cbacdcbc&amp;quot; Output: &amp;quot;acdb&amp;quot;   Solution 2020-09-04 Notes:
   Need one-pass of s to get the counter of each letter.
   a second pass, dial down counter at each iteration.</description>
-    </item>
-    
-    <item>
-      <title>1081 Smallest Subsequence of Distinct Char</title>
-      <link>https://foxisawesome.github.io/1081-smallest-subsequence-of-distinct-char/</link>
-      <pubDate>Fri, 04 Sep 2020 19:55:50 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/1081-smallest-subsequence-of-distinct-char/</guid>
-      <description>LC 1081 Smallest Subsequence of Distinct Char   Return the lexicographically smallest subsequence of text that contains all the distinct characters of text exactly once.
-Input: &amp;quot;ecbacba&amp;quot; Output: &amp;quot;eacb&amp;quot;   Solution 2020-09-04 Notes:
-  Need one-pass of s to get the counter of each letter.
-  a second pass, dial down counter at each iteration. use a stack to record every distinct letter and keep the order of recorded letter same as their orders in the string.</description>
-    </item>
-    
-    <item>
-      <title>80 Remove Dup From Sorted Array II</title>
-      <link>https://foxisawesome.github.io/80-remove-dup-from-sorted-array-ii/</link>
-      <pubDate>Fri, 04 Sep 2020 14:05:24 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/80-remove-dup-from-sorted-array-ii/</guid>
-      <description>LC 80 Remove Dup From Sorted Array II   Given a sorted array nums, remove the duplicates in-place such that duplicates appeared at most twice and return the new length.
-Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
-Given nums = [0,0,1,1,1,1,2,3,3], output [0,0,1,1,2,3,3]   Solution 2020-09-04 Notes:
- Same thing as LC 26.  class Solution: def removeDuplicates(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 count = dict() count[nums[0]] = 1 slow, fast = 0, 1 while fast &amp;lt; len(nums): count[nums[fast]] = count.</description>
-    </item>
-    
-    <item>
-      <title>26 Remove Dup From Sorted Array</title>
-      <link>https://foxisawesome.github.io/26-remove-dup-from-sorted-array/</link>
-      <pubDate>Fri, 04 Sep 2020 13:45:50 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/26-remove-dup-from-sorted-array/</guid>
-      <description>LC 26 Remove Dup From Sorted Array   Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.
-Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
-Given nums = [0,0,1,1,1,2,2,3,3,4], Your function should return length = 5, with the first five elements of nums being modified to 0, 1, 2, 3, and 4 respectively.</description>
     </item>
     
   </channel>

@@ -45,7 +45,7 @@ A subsequence of a string is a new string which is formed from the original stri
  Solution 2020-09-08 Notes:">
 <meta itemprop="datePublished" content="2020-09-08T22:19:55-04:00" />
 <meta itemprop="dateModified" content="2020-09-08T22:19:55-04:00" />
-<meta itemprop="wordCount" content="133">
+<meta itemprop="wordCount" content="243">
 
 
 
@@ -155,7 +155,7 @@ A subsequence of a string is a new string which is formed from the original stri
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">45</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">48</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">1</span></li>
         </ul>
@@ -204,7 +204,7 @@ A subsequence of a string is a new string which is formed from the original stri
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">43</span></li>
+                    class="tag-list-count">46</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -224,7 +224,7 @@ A subsequence of a string is a new string which is formed from the original stri
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/tree/" class="tag-list-link">tree</a><span
-                    class="tag-list-count">4</span></li>
+                    class="tag-list-count">6</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/twopointers/" class="tag-list-link">twopointers</a><span
@@ -306,16 +306,39 @@ A subsequence of a string is a new string which is formed from the original stri
                 l += 1
         return out == s
 
-# Time O(N), N:len(t)
+# Time O(M), M:len(t)
 # Space O(1)
 </code></pre>
 <ul>
-<li>O(MlogN) solution using binary search is pretty hard to think of:</li>
+<li>the follow-up of this questions: while s&raquo;t, O(N) is not satisfied. here is O(MlogN) solution using binary search is pretty hard to think of:</li>
 </ul>
-<pre><code class="language-python">
+<pre><code class="language-python">class Solution:
+    def isSubsequence(self, s: str, t: str) -&gt; bool:
+        d = dict()
+        for i, val in enumerate(t):
+            if val not in d: d[val] = [i]
+            else: d[val].append(i)
 
-# Time O()
-# Space O()
+        tar = 0
+        for i, val in enumerate(s):
+            if val not in d: return False
+            pos = self.leftBound(d[val],tar)
+            if pos == len(d[val]): return False
+            tar = d[val][pos] + 1
+        return True
+    
+    def leftBound(self, idx_ls, p):
+        l, r = 0, len(idx_ls)
+        while l &lt; r:
+            m = l + (r-l)//2
+            if idx_ls[m] &lt; p:
+                l = m + 1
+            elif idx_ls[m] &gt;= p:
+                r = m
+        return l
+
+# Time O(MlogN), N:len(s), M:len(t)
+# Space O(M)
 </code></pre>
 
     </div>
@@ -332,6 +355,11 @@ A subsequence of a string is a new string which is formed from the original stri
                 <a href="https://foxisawesome.github.io/268-missing-number/" title="268 Missing Number"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            <li class="next">
+                <a href="https://foxisawesome.github.io/236-lowest-common-ancestor-of-a-binary-tree/"
+                    title="236 Lowest Common Ancestor of a Binary Tree"><span>Newer&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">

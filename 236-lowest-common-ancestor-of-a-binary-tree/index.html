@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <title>
-        Q. Weng</title>
+        236 Lowest Common Ancestor of a Binary Tree - Q. Weng
+      </title>
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport"
@@ -19,26 +20,33 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    
+    <meta name="description" content="LC 236 Lowest Common Ancestor of a Binary Tree Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be" />
     <meta name="generator" content="Hugo 0.74.3 with theme pure" />
-    <title>Q. Weng</title>
+    <title>236 Lowest Common Ancestor of a Binary Tree - Q. Weng</title>
     
-    <link rel="alternate" type="application/rss+xml" href="https://foxisawesome.github.io/tags/linkedlist/index.xml" title="Q. Weng" />
     
     <link rel="stylesheet" href="https://foxisawesome.github.io/css/style.min.beafa50fa5ad41e6883bb04d480ca19d4894f851851787afff361d389b6829ee.css">
     
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-    <meta property="og:title" content="linkedList" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://foxisawesome.github.io/tags/linkedlist/" />
-<meta property="og:updated_time" content="2020-09-08T20:54:03-04:00" />
-<meta itemprop="name" content="linkedList">
-<meta itemprop="description" content="">
+    <meta property="og:title" content="236 Lowest Common Ancestor of a Binary Tree" />
+<meta property="og:description" content="LC 236 Lowest Common Ancestor of a Binary Tree Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://foxisawesome.github.io/236-lowest-common-ancestor-of-a-binary-tree/" />
+<meta property="article:published_time" content="2020-09-09T13:57:55-04:00" />
+<meta property="article:modified_time" content="2020-09-09T13:57:55-04:00" />
+<meta itemprop="name" content="236 Lowest Common Ancestor of a Binary Tree">
+<meta itemprop="description" content="LC 236 Lowest Common Ancestor of a Binary Tree Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be">
+<meta itemprop="datePublished" content="2020-09-09T13:57:55-04:00" />
+<meta itemprop="dateModified" content="2020-09-09T13:57:55-04:00" />
+<meta itemprop="wordCount" content="481">
+
+
+
+<meta itemprop="keywords" content="leetcode,tree," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="linkedList"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="236 Lowest Common Ancestor of a Binary Tree"/>
+<meta name="twitter:description" content="LC 236 Lowest Common Ancestor of a Binary Tree Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -223,165 +231,129 @@
 
     
     
-<main class="main" role="main">
-    <article class="content article article-tags post-type-list" itemscope="">
-        <header class="article-header">
-            <h1 itemprop="name" class="hidden-xs">linkedList</h1>
-            <p class="text-muted hidden-xs">Total 16 tags</p>
-            <nav role="navigation" id="nav-main" class="okayNav">
-                <ul>
-                    <li><a href="https://foxisawesome.github.io/tags">All</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/array/">array</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/backtracking/">backtracking</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/binarysearch/">binarySearch</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/bst/">BST</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/dfs/">DFS</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/dictionary/">dictionary</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/dp/">dp</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/hashtable/">hashtable</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/kmeans/">kmeans</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/leetcode/">leetcode</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/linkedlist/">linkedList</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/recursion/">recursion</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/stack/">stack</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/template/">template</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/tree/">tree</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/twopointers/">twopointers</a></li>
-                </ul>
-            </nav>
-        </header>
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/236-lowest-common-ancestor-of-a-binary-tree/"
+    >236 Lowest Common Ancestor of a Binary Tree</a
+  >
+</h1>
+
+      <div class="article-meta">
         
-        <div class="article-body">
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-09-08 20:54:03 -0400 EDT"
-                itemprop="datePublished">2020-09-08</time>
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/236-lowest-common-ancestor-of-a-binary-tree/" class="article-date">
+  <time datetime="2020-09-09 13:57:55 -0400 EDT" itemprop="datePublished">2020-09-09</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/algo/"> algo </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+    <a class="article-tag-link" href="/tags/tree/"> tree </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/236-lowest-common-ancestor-of-a-binary-tree/#comments"
+            class="article-comment-link">Comments</a></span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h2 id="lc-236-lowest-common-ancestor-of-a-binary-tree-httpsleetcodecomproblemslowest-common-ancestor-of-a-binary-tree"><a href="https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/">LC 236 Lowest Common Ancestor of a Binary Tree </a></h2>
+<blockquote>
+<p>Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree.</p>
+<p>According to the <a href="https://en.wikipedia.org/wiki/Lowest_common_ancestor">definition of LCA on Wikipedia</a>: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow <strong>a node to be a descendant of itself</strong>).”</p>
+</blockquote>
+<h2 id="solution">Solution</h2>
+<p>2020-09-09 Notes:</p>
+<ul>
+<li>递归灵魂三问 (reference: <a href="https://mp.weixin.qq.com/s/9RKzBcr3I592spAsuMH45g">labuladong</a>)：
+<ol>
+<li>递归函数return的是什么？</li>
+<li>递归函数的arguments？</li>
+<li>如何利用递归函数的返回值？</li>
+</ol>
+</li>
+<li>part 1: 最底层返回条件，root== p 或 q时， 返回root。 这题底层就两种情况，啥也没找到 Null，找到p, q，就不再开新的recursion， 直接返回p, q。</li>
+<li>part 2: 固定的binary tree recursion模版</li>
+<li>part 3: 此处是post-order, 返回值的利用，就三种情况：a. p, q 同时都在root里, 那么root就是LCA, 把这个LCA一层层返回上去。 b. p,q 都不在root里, 返回None。c. p,q 其一在root里，那个层层返回p 或 q 的这两个单独节点，直到他们相遇的root才是LCA。</li>
+</ul>
+<pre><code class="language-python"># Definition for a binary tree node. 
+# class TreeNode:
+#     def __init__(self, x):
+#         self.val = x
+#         self.left = None
+#         self.right = None
+
+class Solution:
+    def lowestCommonAncestor(self, root: 'TreeNode', p: 'TreeNode', q: 'TreeNode') -&gt; 'TreeNode':
+        # part 1
+        if root is None: return None
+        if root == p or root == q: return root
+        # part 2
+        left = self.lowestCommonAncestor(root.left, p, q)
+        right = self.lowestCommonAncestor(root.right, p, q)
+        # part 3
+        if left and right: return root
+        if not left and not right: return None
+        return left if left else right 
+
+# Time O(N)
+# Space O(?)
+</code></pre>
+
+    </div>
+    <div class="article-footer">
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://foxisawesome.github.io/392-is-subsequence/" title="392 Is Subsequence"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            <li class="next">
+                <a href="https://foxisawesome.github.io/987-vertical-order-traversal-of-a-binary-tree/"
+                    title="987 Vertical Order Traversal of a Binary Tree"><span>Newer&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
         </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://foxisawesome.github.io/234-palindrome-linked-list/">234 Palindrome Linked List</a>
-        </h3>
     </div>
-    <div class="panel-footer">
-        <a href="https://foxisawesome.github.io/tags/leetcode" class="label label-default mb">leetcode</a>
-        <a href="https://foxisawesome.github.io/tags/linkedlist" class="label label-default mb">linkedlist</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-09-02 09:38:40 -0400 EDT"
-                itemprop="datePublished">2020-09-02</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://foxisawesome.github.io/445-add-two-num-ii/">445 Add Two Num II</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://foxisawesome.github.io/tags/leetcode" class="label label-default mb">leetcode</a>
-        <a href="https://foxisawesome.github.io/tags/linkedlist" class="label label-default mb">linkedList</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-09-01 19:26:00 -0400 EDT"
-                itemprop="datePublished">2020-09-01</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://foxisawesome.github.io/148-sort-list/">148 Sort List</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://foxisawesome.github.io/tags/leetcode" class="label label-default mb">leetcode</a>
-        <a href="https://foxisawesome.github.io/tags/linkedlist" class="label label-default mb">linkedList</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-08-30 21:35:50 -0400 EDT"
-                itemprop="datePublished">2020-08-30</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://foxisawesome.github.io/141-linked-list-cycle/">141 Linked List Cycle</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://foxisawesome.github.io/tags/leetcode" class="label label-default mb">leetcode</a>
-        <a href="https://foxisawesome.github.io/tags/linkedlist" class="label label-default mb">linkedList</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-08-30 21:27:32 -0400 EDT"
-                itemprop="datePublished">2020-08-30</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://foxisawesome.github.io/328-odd-even-linked-list/">328 Odd Even Linked List</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://foxisawesome.github.io/tags/leetcode" class="label label-default mb">leetcode</a>
-        <a href="https://foxisawesome.github.io/tags/linkedlist" class="label label-default mb">linkedList</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-08-30 16:54:06 -0400 EDT"
-                itemprop="datePublished">2020-08-30</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://foxisawesome.github.io/linked-list-note/">Linked List Note (First Post)</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://foxisawesome.github.io/tags/template" class="label label-default mb">template</a>
-        <a href="https://foxisawesome.github.io/tags/linkedlist" class="label label-default mb">linkedList</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-08-01 20:06:27 -0400 EDT"
-                itemprop="datePublished">2020-08-01</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://foxisawesome.github.io/206-reverse-linked-list/">206 Reverse Linked List</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://foxisawesome.github.io/tags/leetcode" class="label label-default mb">leetcode</a>
-        <a href="https://foxisawesome.github.io/tags/linkedlist" class="label label-default mb">linkedList</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-07-02 10:08:20 -0400 EDT"
-                itemprop="datePublished">2020-07-02</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://foxisawesome.github.io/2-add-two-num/">2 Add Two Num</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://foxisawesome.github.io/tags/leetcode" class="label label-default mb">leetcode</a>
-        <a href="https://foxisawesome.github.io/tags/linkedlist" class="label label-default mb">linkedList</a>
-    </div>
-</article>
-            </div>
-        </div>
-    </article>
+</nav>
+
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
     <li><a href="https://github.com/foxisawesome" target="_blank" title="github" data-toggle=tooltip data-placement=top >
@@ -458,6 +430,7 @@
         hasInnerContainers: true,
     });
 </script>
+
 
 <script type="application/javascript">
 var doNotTrack = false;

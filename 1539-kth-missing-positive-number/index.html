@@ -39,7 +39,7 @@
 <meta itemprop="description" content="LC 1539 Kth Missing Positive Number Given an array arr of positive integers sorted in a strictly increasing order, and an integer k. Find the kth positive integer that is missing from this array. Input: arr = [2,3,4,7,11], k = 5 Output: 9 Explanation: The missing positive integers are [1,5,6,8,9,10,12,13,...]. The 5th missing positive integer is 9. Solution 2020-09-07 Notes: O(N) solution is pretty easy, but not optimal. the binary">
 <meta itemprop="datePublished" content="2020-09-07T22:03:58-04:00" />
 <meta itemprop="dateModified" content="2020-09-07T22:03:58-04:00" />
-<meta itemprop="wordCount" content="419">
+<meta itemprop="wordCount" content="457">
 
 
 
@@ -147,7 +147,7 @@
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">45</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">48</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">1</span></li>
         </ul>
@@ -196,7 +196,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">43</span></li>
+                    class="tag-list-count">46</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -216,7 +216,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/tree/" class="tag-list-link">tree</a><span
-                    class="tag-list-count">4</span></li>
+                    class="tag-list-count">6</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/twopointers/" class="tag-list-link">twopointers</a><span
@@ -292,22 +292,33 @@ Explanation: The missing positive integers are [1,5,6,8,9,10,12,13,...].
 <li>the binary solution is optimal.
 <ol>
 <li><code>arr[i]-(i+1)</code>: 返回的是 <code>arr[i]</code>和<code>i+1</code> 之间miss了几个数，如果arr没miss数，返回的因该是0. 所以这个条件和k比较可以快速找到最接近的位置。</li>
-<li>我疏忽的是：binary search 跳出条件是 <code>l==r</code> in this case, 并不是 <code>arr[i]-(i+1)==k</code>。所以只能return <code>l+k</code>。还有这题是求逼近，而不是找 exact的 target (需要保证存在唯一解，才能用)，所以在binary search时例举 <code>arr[i]-(i+1)==k</code> 跳出会报错。所以 <code>while l &lt; r</code> 外加列举<code>&lt;</code>和 <code>&gt;=</code>两种情况这种写法才对。</li>
+<li>我疏忽的是：这题是求k-th missing value 的起始左边界，以下是搜索左边界的标准做法。</li>
+<li>Binary search而不是找 exact的 target (需要保证存在唯一解，才能用)，是搜索target的左边界，所以在binary search时单独例举 <code>arr[i]-(i+1)==k</code> 跳出会报错。应该合并 <code>&gt;=</code>两种情况这种写法才对。</li>
 <li>另外这题是 1-indexed，所以会有 <code>i+1</code>,  <code>l+k</code>  这种小细节要搞清。</li>
 </ol>
 </li>
 </ul>
 <pre><code class="language-python">class Solution:
     def findKthPositive(self, arr: List[int], k: int) -&gt; int:
-        l, r = 0, len(arr)-1
-        
+        l, r = 0, len(arr)
         while l&lt;r:
             m = l + (r-l)//2
             if arr[m] - (m+1) &lt; k:
                 l = m + 1
             elif arr[m] - (m+1) &gt;= k:
+                r = m
+        return l+k
+    
+    # 2nd way of writing this left boundary search. same results.
+    def findKthPositive(self, arr: List[int], k: int) -&gt; int:
+        l, r = 0, len(arr)-1
+        
+        while l&lt;=r:
+            m = l + (r-l)//2
+            if arr[m] - (m+1) &lt; k:
+                l = m + 1
+            elif arr[m] - (m+1) &gt;= k:
                 r = m - 1
-			
         return l+k
 # Time O(logN)
 # Space O(1)
@@ -322,7 +333,6 @@ Explanation: The missing positive integers are [1,5,6,8,9,10,12,13,...].
             stack = [i for i in range(1, arr[-1]+1)]
             [stack.remove(i) for i in arr]
             return stack[k-1]
-
 # Time O(N)
 # Space O(N)
 </code></pre>

@@ -2,7 +2,8 @@
 <html lang="en">
   <head>
     <title>
-        Q. Weng</title>
+        987 Vertical Order Traversal of a Binary Tree - Q. Weng
+      </title>
         <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
     <meta name="viewport"
@@ -19,26 +20,37 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    
+    <meta name="description" content="LC 987 Vertical Order Traversal of a Binary Tree    Solution 2020-09-09T13:59:40-04:00 Notes:
+   # Time O() # Space O()  " />
     <meta name="generator" content="Hugo 0.74.3 with theme pure" />
-    <title>Q. Weng</title>
+    <title>987 Vertical Order Traversal of a Binary Tree - Q. Weng</title>
     
-    <link rel="alternate" type="application/rss+xml" href="https://foxisawesome.github.io/tags/linkedlist/index.xml" title="Q. Weng" />
     
     <link rel="stylesheet" href="https://foxisawesome.github.io/css/style.min.beafa50fa5ad41e6883bb04d480ca19d4894f851851787afff361d389b6829ee.css">
     
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
-    <meta property="og:title" content="linkedList" />
-<meta property="og:description" content="" />
-<meta property="og:type" content="website" />
-<meta property="og:url" content="https://foxisawesome.github.io/tags/linkedlist/" />
-<meta property="og:updated_time" content="2020-09-08T20:54:03-04:00" />
-<meta itemprop="name" content="linkedList">
-<meta itemprop="description" content="">
+    <meta property="og:title" content="987 Vertical Order Traversal of a Binary Tree" />
+<meta property="og:description" content="LC 987 Vertical Order Traversal of a Binary Tree    Solution 2020-09-09T13:59:40-04:00 Notes:
+   # Time O() # Space O()  " />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://foxisawesome.github.io/987-vertical-order-traversal-of-a-binary-tree/" />
+<meta property="article:published_time" content="2020-09-09T13:59:40-04:00" />
+<meta property="article:modified_time" content="2020-09-09T13:59:40-04:00" />
+<meta itemprop="name" content="987 Vertical Order Traversal of a Binary Tree">
+<meta itemprop="description" content="LC 987 Vertical Order Traversal of a Binary Tree    Solution 2020-09-09T13:59:40-04:00 Notes:
+   # Time O() # Space O()  ">
+<meta itemprop="datePublished" content="2020-09-09T13:59:40-04:00" />
+<meta itemprop="dateModified" content="2020-09-09T13:59:40-04:00" />
+<meta itemprop="wordCount" content="18">
+
+
+
+<meta itemprop="keywords" content="leetcode," />
 <meta name="twitter:card" content="summary"/>
-<meta name="twitter:title" content="linkedList"/>
-<meta name="twitter:description" content=""/>
+<meta name="twitter:title" content="987 Vertical Order Traversal of a Binary Tree"/>
+<meta name="twitter:description" content="LC 987 Vertical Order Traversal of a Binary Tree    Solution 2020-09-09T13:59:40-04:00 Notes:
+   # Time O() # Space O()  "/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -223,165 +235,99 @@
 
     
     
-<main class="main" role="main">
-    <article class="content article article-tags post-type-list" itemscope="">
-        <header class="article-header">
-            <h1 itemprop="name" class="hidden-xs">linkedList</h1>
-            <p class="text-muted hidden-xs">Total 16 tags</p>
-            <nav role="navigation" id="nav-main" class="okayNav">
-                <ul>
-                    <li><a href="https://foxisawesome.github.io/tags">All</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/array/">array</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/backtracking/">backtracking</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/binarysearch/">binarySearch</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/bst/">BST</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/dfs/">DFS</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/dictionary/">dictionary</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/dp/">dp</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/hashtable/">hashtable</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/kmeans/">kmeans</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/leetcode/">leetcode</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/linkedlist/">linkedList</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/recursion/">recursion</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/stack/">stack</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/template/">template</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/tree/">tree</a></li>
-                    <li><a href="https://foxisawesome.github.io/tags/twopointers/">twopointers</a></li>
-                </ul>
-            </nav>
-        </header>
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/987-vertical-order-traversal-of-a-binary-tree/"
+    >987 Vertical Order Traversal of a Binary Tree</a
+  >
+</h1>
+
+      <div class="article-meta">
         
-        <div class="article-body">
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-09-08 20:54:03 -0400 EDT"
-                itemprop="datePublished">2020-09-08</time>
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/987-vertical-order-traversal-of-a-binary-tree/" class="article-date">
+  <time datetime="2020-09-09 13:59:40 -0400 EDT" itemprop="datePublished">2020-09-09</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/algo/"> algo </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/987-vertical-order-traversal-of-a-binary-tree/#comments"
+            class="article-comment-link">Comments</a></span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h2 id="lc-987-vertical-order-traversal-of-a-binary-tree-httpsleetcodecomproblemsvertical-order-traversal-of-a-binary-tree"><a href="https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/">LC 987 Vertical Order Traversal of a Binary Tree </a></h2>
+<blockquote>
+</blockquote>
+<h2 id="solution">Solution</h2>
+<p>2020-09-09T13:59:40-04:00 Notes:</p>
+<ul>
+<li></li>
+</ul>
+<pre><code class="language-python">
+
+# Time O()
+# Space O()
+</code></pre>
+
+    </div>
+    <div class="article-footer">
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div><nav class="bar bar-footer clearfix" data-stick-bottom>
+    <div class="bar-inner">
+        <ul class="pager pull-left">
+            <li class="prev">
+                <a href="https://foxisawesome.github.io/236-lowest-common-ancestor-of-a-binary-tree/" title="236 Lowest Common Ancestor of a Binary Tree"><i
+                        class="icon icon-angle-left"
+                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            <li class="next">
+                <a href="https://foxisawesome.github.io/124-binary-tree-maximum-path-sum/"
+                    title="124 Binary Tree Maximum Path Sum"><span>Newer&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
+            </li>
+            
+            <li class="toggle-toc">
+                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
+                    title="Catalogue" role="button">
+                    <span>[&nbsp;</span><span>Catalogue</span>
+                    <i class="text-collapsed icon icon-anchor"></i>
+                    <i class="text-in icon icon-close"></i>
+                    <span>]</span>
+                </a>
+            </li>
+        </ul>
+        <div class="bar-right">
         </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://foxisawesome.github.io/234-palindrome-linked-list/">234 Palindrome Linked List</a>
-        </h3>
     </div>
-    <div class="panel-footer">
-        <a href="https://foxisawesome.github.io/tags/leetcode" class="label label-default mb">leetcode</a>
-        <a href="https://foxisawesome.github.io/tags/linkedlist" class="label label-default mb">linkedlist</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-09-02 09:38:40 -0400 EDT"
-                itemprop="datePublished">2020-09-02</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://foxisawesome.github.io/445-add-two-num-ii/">445 Add Two Num II</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://foxisawesome.github.io/tags/leetcode" class="label label-default mb">leetcode</a>
-        <a href="https://foxisawesome.github.io/tags/linkedlist" class="label label-default mb">linkedList</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-09-01 19:26:00 -0400 EDT"
-                itemprop="datePublished">2020-09-01</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://foxisawesome.github.io/148-sort-list/">148 Sort List</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://foxisawesome.github.io/tags/leetcode" class="label label-default mb">leetcode</a>
-        <a href="https://foxisawesome.github.io/tags/linkedlist" class="label label-default mb">linkedList</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-08-30 21:35:50 -0400 EDT"
-                itemprop="datePublished">2020-08-30</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://foxisawesome.github.io/141-linked-list-cycle/">141 Linked List Cycle</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://foxisawesome.github.io/tags/leetcode" class="label label-default mb">leetcode</a>
-        <a href="https://foxisawesome.github.io/tags/linkedlist" class="label label-default mb">linkedList</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-08-30 21:27:32 -0400 EDT"
-                itemprop="datePublished">2020-08-30</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://foxisawesome.github.io/328-odd-even-linked-list/">328 Odd Even Linked List</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://foxisawesome.github.io/tags/leetcode" class="label label-default mb">leetcode</a>
-        <a href="https://foxisawesome.github.io/tags/linkedlist" class="label label-default mb">linkedList</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-08-30 16:54:06 -0400 EDT"
-                itemprop="datePublished">2020-08-30</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://foxisawesome.github.io/linked-list-note/">Linked List Note (First Post)</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://foxisawesome.github.io/tags/template" class="label label-default mb">template</a>
-        <a href="https://foxisawesome.github.io/tags/linkedlist" class="label label-default mb">linkedList</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-08-01 20:06:27 -0400 EDT"
-                itemprop="datePublished">2020-08-01</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://foxisawesome.github.io/206-reverse-linked-list/">206 Reverse Linked List</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://foxisawesome.github.io/tags/leetcode" class="label label-default mb">leetcode</a>
-        <a href="https://foxisawesome.github.io/tags/linkedlist" class="label label-default mb">linkedList</a>
-    </div>
-</article>
-            </div>
-            <div class="col-md-6"><article class="panel panel-default hover-shadow hover-grow" itemscope itemtype="http://schema.org/BlogPosting">
-    <div class="panel-body">
-        <div class="article-meta">
-            <time datetime="2020-07-02 10:08:20 -0400 EDT"
-                itemprop="datePublished">2020-07-02</time>
-        </div>
-        <h3 class="article-title" itemprop="name">
-            <a class="article-link" href="https://foxisawesome.github.io/2-add-two-num/">2 Add Two Num</a>
-        </h3>
-    </div>
-    <div class="panel-footer">
-        <a href="https://foxisawesome.github.io/tags/leetcode" class="label label-default mb">leetcode</a>
-        <a href="https://foxisawesome.github.io/tags/linkedlist" class="label label-default mb">linkedList</a>
-    </div>
-</article>
-            </div>
-        </div>
-    </article>
+</nav>
+
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
     <li><a href="https://github.com/foxisawesome" target="_blank" title="github" data-toggle=tooltip data-placement=top >
@@ -458,6 +404,7 @@
         hasInnerContainers: true,
     });
 </script>
+
 
 <script type="application/javascript">
 var doNotTrack = false;
