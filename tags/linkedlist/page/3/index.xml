@@ -11,6 +11,42 @@
     
     
     <item>
+      <title>735 Aseroid Collision</title>
+      <link>https://foxisawesome.github.io/735-aseroid-collision/</link>
+      <pubDate>Mon, 31 Aug 2020 19:05:25 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/735-aseroid-collision/</guid>
+      <description>LC 735 Aseroid Collision We are given an array asteroids of integers representing asteroids in a row. For each asteroid, the absolute value represents its size, and the sign represents its direction (positive meaning right, negative meaning left). Each asteroid moves at the same speed. Find out the state of the asteroids after all collisions. If two asteroids meet, the smaller one will explode. If both are the same size,</description>
+    </item>
+    
+    <item>
+      <title>141 Linked List Cycle</title>
+      <link>https://foxisawesome.github.io/141-linked-list-cycle/</link>
+      <pubDate>Sun, 30 Aug 2020 21:35:50 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/141-linked-list-cycle/</guid>
+      <description>LC 141 Linked List Cycle Given a linked list, determine if it has a cycle in it. To represent a cycle in the given linked list, we use an integer pos which represents the position (0-indexed) in the linked list where tail connects to. If pos is -1, then there is no cycle in the linked list. Example 1: Input: head = [3,2,0,-4], pos = 1 Output: true Explanation: There</description>
+    </item>
+    
+    <item>
+      <title>328 Odd Even Linked List</title>
+      <link>https://foxisawesome.github.io/328-odd-even-linked-list/</link>
+      <pubDate>Sun, 30 Aug 2020 21:27:32 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/328-odd-even-linked-list/</guid>
+      <description>LC 328 Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes. You should try to do it in place. The program should run in O(1) space complexity and O(nodes) time complexity. Example 1: Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL Output: 1-&amp;gt;3-&amp;gt;5-&amp;gt;2-&amp;gt;4-&amp;gt;NULL linked list 终于在周末刷出感</description>
+    </item>
+    
+    <item>
+      <title>1266 Minimum Time Visiting All Points</title>
+      <link>https://foxisawesome.github.io/1266-minimum-time-visiting-all-points/</link>
+      <pubDate>Sun, 30 Aug 2020 21:24:22 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/1266-minimum-time-visiting-all-points/</guid>
+      <description>LC 1266 On a plane there are n points with integer coordinates points[i] = [xi, yi]. Your task is to find the minimum time in seconds to visit all points. You can move according to the next rules: In one second always you can either move vertically, horizontally by one unit or diagonally (it means to move one unit vertically and one unit horizontally in one second). You have to</description>
+    </item>
+    
+    <item>
       <title>530 Min Abs Dif BST</title>
       <link>https://foxisawesome.github.io/530-min-abs-dif-bst/</link>
       <pubDate>Sun, 30 Aug 2020 20:59:36 -0400</pubDate>
