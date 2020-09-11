@@ -5,10 +5,62 @@
     <link>https://foxisawesome.github.io/tags/dp/</link>
     <description>Recent content in dp on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 03 Sep 2020 21:26:20 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 10 Sep 2020 20:58:53 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/dp/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>148 Sort List</title>
+      <link>https://foxisawesome.github.io/148-sort-list/</link>
+      <pubDate>Tue, 01 Sep 2020 19:26:00 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/148-sort-list/</guid>
+      <description>LC 148 Sort List   Sort a linked list in O(n log n) time using constant space complexity.
+Example 1:
+Input: 4-&amp;gt;2-&amp;gt;1-&amp;gt;3 Output: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4  Example 2:
+Input: -1-&amp;gt;5-&amp;gt;3-&amp;gt;4-&amp;gt;0 Output: -1-&amp;gt;0-&amp;gt;3-&amp;gt;4-&amp;gt;5   Solution 2020-09-01 Notes:
+ Time Complaxity O(nlogn) indicates merge sort algo. in the sortList, line 8:if not head or not head.next: return head actually returns head not None. slow and fast pointers to divide list into two need a lfet tail pointer: l_tail to cut off left linked list.</description>
+    </item>
+    
+    <item>
+      <title>79 Word Search</title>
+      <link>https://foxisawesome.github.io/79-word-search/</link>
+      <pubDate>Tue, 01 Sep 2020 16:07:12 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/79-word-search/</guid>
+      <description>LC 79 Word Search   Given a 2D board and a word, find if the word exists in the grid.
+The word can be constructed from letters of sequentially adjacent cell, where &amp;ldquo;adjacent&amp;rdquo; cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.
+Example:
+board = [ [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;E&#39;], [&#39;S&#39;,&#39;F&#39;,&#39;C&#39;,&#39;S&#39;], [&#39;A&#39;,&#39;D&#39;,&#39;E&#39;,&#39;E&#39;] ] Given word = &amp;quot;ABCCED&amp;quot;, return true. Given word = &amp;quot;SEE&amp;quot;, return true.</description>
+    </item>
+    
+    <item>
+      <title>981 Time Based Key Value Store</title>
+      <link>https://foxisawesome.github.io/981-time-based-key-value-store/</link>
+      <pubDate>Tue, 01 Sep 2020 14:15:51 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/981-time-based-key-value-store/</guid>
+      <description>LC 981 Time Based Key Value Store Create a timebased key-value store class TimeMap, that supports two operations. set(string key, string value, int timestamp) Stores the key and value, along with the given timestamp. get(string key, int timestamp) Returns a value such that set(key, value, timestamp_prev) was called previously, with timestamp_prev &amp;lt;= timestamp. If there are multiple such values, it returns the one with the largest timestamp_prev. If there are</description>
+    </item>
+    
+    <item>
+      <title>1041 Robot Bounded in Circle</title>
+      <link>https://foxisawesome.github.io/1041-robot-bounded-in-circle/</link>
+      <pubDate>Mon, 31 Aug 2020 22:14:45 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/1041-robot-bounded-in-circle/</guid>
+      <description>LC 1041 Robot Bounded in Circle On an infinite plane, a robot initially stands at (0, 0) and faces north. The robot can receive one of three instructions: &amp;quot;G&amp;quot;: go straight 1 unit; &amp;quot;L&amp;quot;: turn 90 degrees to the left; &amp;quot;R&amp;quot;: turn 90 degress to the right. The robot performs the instructions given in order, and repeats them forever. Return true if and only if there exists a circle in</description>
+    </item>
+    
+    <item>
+      <title>957 Prison Cells</title>
+      <link>https://foxisawesome.github.io/957-prison-cells/</link>
+      <pubDate>Mon, 31 Aug 2020 19:26:18 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/957-prison-cells/</guid>
+      <description>LC 957 Prison Cells There are 8 prison cells in a row, and each cell is either occupied or vacant. Each day, whether the cell is occupied or vacant changes according to the following rules: If a cell has two adjacent neighbors that are both occupied or both vacant, then the cell becomes occupied. Otherwise, it becomes vacant. (Note that because the prison is a row, the first and the</description>
+    </item>
     
     <item>
       <title>735 Aseroid Collision</title>

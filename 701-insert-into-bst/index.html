@@ -39,7 +39,7 @@
 <meta itemprop="description" content="LC 701 Given the root node of a binary search tree (BST) and a value to be inserted into the tree, insert the value into the BST. Return the root node of the BST after the insertion. It is guaranteed that the new value does not exist in the original BST. Note that there may exist multiple valid ways for the insertion, as long as the tree remains a BST">
 <meta itemprop="datePublished" content="2020-08-30T20:58:29-04:00" />
 <meta itemprop="dateModified" content="2020-08-30T20:58:29-04:00" />
-<meta itemprop="wordCount" content="250">
+<meta itemprop="wordCount" content="326">
 
 
 
@@ -147,9 +147,9 @@
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">52</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">56</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">1</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">2</span></li>
         </ul>
     </div>
 </div>
@@ -184,7 +184,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dp/" class="tag-list-link">dp</a><span
-                    class="tag-list-count">1</span></li>
+                    class="tag-list-count">2</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/hashtable/" class="tag-list-link">hashtable</a><span
@@ -196,7 +196,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">50</span></li>
+                    class="tag-list-count">55</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -204,7 +204,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/recursion/" class="tag-list-link">recursion</a><span
-                    class="tag-list-count">2</span></li>
+                    class="tag-list-count">3</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/stack/" class="tag-list-link">stack</a><span
@@ -216,7 +216,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/tree/" class="tag-list-link">tree</a><span
-                    class="tag-list-count">10</span></li>
+                    class="tag-list-count">13</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/twopointers/" class="tag-list-link">twopointers</a><span
@@ -311,6 +311,8 @@ And the value to insert: 5
 <li>这个recursion 好高级，似懂非懂回头还得在刷。</li>
 <li>一定要明确 resursion function return 的是什么。 这个return的是TreeNode。</li>
 </ul>
+<p>9/10/2020 Note:</p>
+<p>刷了一阵tree之后终于搞懂了，给tree添加leaf node的操作是 root.left = TreeNode(val), 所以<code>if not root: return root.val</code>. 最后添加完之后就是return这个root 一层一层返回。</p>
 <pre><code class="language-python"># Definition for a binary tree node.
 # class TreeNode:
 #     def __init__(self, val=0, left=None, right=None):
