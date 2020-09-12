@@ -5,10 +5,28 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 11 Sep 2020 20:35:06 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2020 22:01:16 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>701 Insert Into BST</title>
+      <link>https://foxisawesome.github.io/701-insert-into-bst/</link>
+      <pubDate>Sun, 30 Aug 2020 20:58:29 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/701-insert-into-bst/</guid>
+      <description>LC 701 Given the root node of a binary search tree (BST) and a value to be inserted into the tree, insert the value into the BST. Return the root node of the BST after the insertion. It is guaranteed that the new value does not exist in the original BST. Note that there may exist multiple valid ways for the insertion, as long as the tree remains a BST</description>
+    </item>
+    
+    <item>
+      <title>Sliding Window Note</title>
+      <link>https://foxisawesome.github.io/sliding-window-note/</link>
+      <pubDate>Sun, 30 Aug 2020 17:08:55 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sliding-window-note/</guid>
+      <description>滑动窗口算法的思路是这样： 1、我们在字符串S中使用双指针中的左右指针技巧，初始化left = right = 0，把索引左闭右开区间[left, right)</description>
+    </item>
     
     <item>
       <title>Linked List Note (First Post)</title>
@@ -35,6 +53,15 @@
       
       <guid>https://foxisawesome.github.io/206-reverse-linked-list/</guid>
       <description>LC 206 Reverse Linked List Reverse a singly linked list. Example: Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL Output: 5-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;1-&amp;gt;NULL Solution 2020-09-01 Notes: 这题刷了不下10遍了，终于明白iteration这里的四步操作了。 # Definition for singly-linked list. # class ListNode: # def __init__(self, val=0, next=None): # self.val = val # self.next</description>
+    </item>
+    
+    <item>
+      <title>回溯算法详解</title>
+      <link>https://foxisawesome.github.io/reading/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3%E4%BF%AE%E8%AE%A2%E7%89%88/</link>
+      <pubDate>Sat, 11 Jul 2020 21:59:37 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/reading/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3%E4%BF%AE%E8%AE%A2%E7%89%88/</guid>
+      <description>这篇文章是很久之前的一篇《回溯算法详解》的进阶版，之前那篇不够清楚，就不必看了，看这篇就行。把框架给你讲清楚，你会发现回溯算法问题都是一个套</description>
     </item>
     
     <item>
@@ -79,6 +106,15 @@ You may assume that each input would have *exactly* one solution, and you may no
   Research and Interests Data Analysis Probability and Statistics • Bayesian Analysis • Machine Learning • Time Series Analysis • Natural Language Processing • Visualization.
 Others Knowledge Sharing • Data Science • Clean Code
 Hobbies Photography • Sports</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://foxisawesome.github.io/reading/%E5%89%8D%E7%BC%80%E5%92%8C%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://foxisawesome.github.io/reading/%E5%89%8D%E7%BC%80%E5%92%8C%E6%8A%80%E5%B7%A7/</guid>
+      <description>前缀和技巧 今天来聊一道简单却十分巧妙的算法问题：算出一共有几个和为 k 的子数组。 那我把所有子数组都穷举出来，算它们的和，看看谁的和等于 k 不就行</description>
     </item>
     
   </channel>

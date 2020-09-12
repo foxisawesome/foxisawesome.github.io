@@ -5,10 +5,30 @@
     <link>https://foxisawesome.github.io/reading/</link>
     <description>Recent content in Readings on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 11 Sep 2020 14:40:26 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 11 Sep 2020 22:01:16 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/reading/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>236 Lowest Common Ancestor of a Binary Tree</title>
+      <link>https://foxisawesome.github.io/236-lowest-common-ancestor-of-a-binary-tree/</link>
+      <pubDate>Wed, 09 Sep 2020 13:57:55 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/236-lowest-common-ancestor-of-a-binary-tree/</guid>
+      <description>LC 236 Lowest Common Ancestor of a Binary Tree Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be</description>
+    </item>
+    
+    <item>
+      <title>392 Is Subsequence</title>
+      <link>https://foxisawesome.github.io/392-is-subsequence/</link>
+      <pubDate>Tue, 08 Sep 2020 22:19:55 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/392-is-subsequence/</guid>
+      <description>LC 392 Is Subsequence   Given a string s and a string t, check if s is subsequence of t.
+A subsequence of a string is a new string which is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (ie, &amp;quot;ace&amp;quot; is a subsequence of &amp;quot;abcde&amp;quot; while &amp;quot;aec&amp;quot; is not).
+ Solution 2020-09-08 Notes:</description>
+    </item>
     
     <item>
       <title>268 Missing Number</title>
@@ -200,30 +220,6 @@ Input: &amp;quot;ecbacba&amp;quot; Output: &amp;quot;eacb&amp;quot;   Solution 2
 Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
 Given nums = [0,0,1,1,1,1,2,3,3], output [0,0,1,1,2,3,3]   Solution 2020-09-04 Notes:
  Same thing as LC 26.  class Solution: def removeDuplicates(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 count = dict() count[nums[0]] = 1 slow, fast = 0, 1 while fast &amp;lt; len(nums): count[nums[fast]] = count.</description>
-    </item>
-    
-    <item>
-      <title>26 Remove Dup From Sorted Array</title>
-      <link>https://foxisawesome.github.io/26-remove-dup-from-sorted-array/</link>
-      <pubDate>Fri, 04 Sep 2020 13:45:50 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/26-remove-dup-from-sorted-array/</guid>
-      <description>LC 26 Remove Dup From Sorted Array   Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.
-Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
-Given nums = [0,0,1,1,1,2,2,3,3,4], Your function should return length = 5, with the first five elements of nums being modified to 0, 1, 2, 3, and 4 respectively.</description>
-    </item>
-    
-    <item>
-      <title>18 K Sum</title>
-      <link>https://foxisawesome.github.io/18-k-sum/</link>
-      <pubDate>Thu, 03 Sep 2020 22:17:11 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/18-k-sum/</guid>
-      <description>LC 18 4Sum   Given an array nums of n integers and an integer target, are there elements a, b, c, and d in nums such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.
-Note: The solution set must not contain duplicate quadruplets.
- Solution 2020-09-03 Notes:
-K - sum algo:
- sort nums recursion top down, reduce to a 2-Sum problem two pointers: l, r to find target  Note: to skip duplicates: if not (i &amp;gt; 0 and nums[i]==nums[i-1]):</description>
     </item>
     
   </channel>
