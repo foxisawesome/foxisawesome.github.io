@@ -20,8 +20,7 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    <meta name="description" content="LC 987 Vertical Order Traversal of a Binary Tree    Solution 2020-09-09T13:59:40-04:00 Notes:
-   # Time O() # Space O()  " />
+    <meta name="description" content="LC 987 Vertical Order Traversal of a Binary Tree Given a binary tree, return the vertical order traversal of its nodes values. For each node at position (X, Y), its left and right children respectively will be at positions (X-1, Y-1) and (X&#43;1, Y-1). Running a vertical line from X = -infinity to X = &#43;infinity, whenever the vertical line touches some nodes, we report the values of the nodes" />
     <meta name="generator" content="Hugo 0.74.3 with theme pure" />
     <title>987 Vertical Order Traversal of a Binary Tree - Q. Weng</title>
     
@@ -31,26 +30,23 @@
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
     <meta property="og:title" content="987 Vertical Order Traversal of a Binary Tree" />
-<meta property="og:description" content="LC 987 Vertical Order Traversal of a Binary Tree    Solution 2020-09-09T13:59:40-04:00 Notes:
-   # Time O() # Space O()  " />
+<meta property="og:description" content="LC 987 Vertical Order Traversal of a Binary Tree Given a binary tree, return the vertical order traversal of its nodes values. For each node at position (X, Y), its left and right children respectively will be at positions (X-1, Y-1) and (X&#43;1, Y-1). Running a vertical line from X = -infinity to X = &#43;infinity, whenever the vertical line touches some nodes, we report the values of the nodes" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://foxisawesome.github.io/posts/987-vertical-order-traversal-of-a-binary-tree/" />
-<meta property="article:published_time" content="2020-09-09T13:59:40-04:00" />
-<meta property="article:modified_time" content="2020-09-09T13:59:40-04:00" />
+<meta property="article:published_time" content="2020-09-13T13:59:40-04:00" />
+<meta property="article:modified_time" content="2020-09-13T13:59:40-04:00" />
 <meta itemprop="name" content="987 Vertical Order Traversal of a Binary Tree">
-<meta itemprop="description" content="LC 987 Vertical Order Traversal of a Binary Tree    Solution 2020-09-09T13:59:40-04:00 Notes:
-   # Time O() # Space O()  ">
-<meta itemprop="datePublished" content="2020-09-09T13:59:40-04:00" />
-<meta itemprop="dateModified" content="2020-09-09T13:59:40-04:00" />
-<meta itemprop="wordCount" content="18">
+<meta itemprop="description" content="LC 987 Vertical Order Traversal of a Binary Tree Given a binary tree, return the vertical order traversal of its nodes values. For each node at position (X, Y), its left and right children respectively will be at positions (X-1, Y-1) and (X&#43;1, Y-1). Running a vertical line from X = -infinity to X = &#43;infinity, whenever the vertical line touches some nodes, we report the values of the nodes">
+<meta itemprop="datePublished" content="2020-09-13T13:59:40-04:00" />
+<meta itemprop="dateModified" content="2020-09-13T13:59:40-04:00" />
+<meta itemprop="wordCount" content="429">
 
 
 
-<meta itemprop="keywords" content="leetcode," />
+<meta itemprop="keywords" content="leetcode,tree,sort," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="987 Vertical Order Traversal of a Binary Tree"/>
-<meta name="twitter:description" content="LC 987 Vertical Order Traversal of a Binary Tree    Solution 2020-09-09T13:59:40-04:00 Notes:
-   # Time O() # Space O()  "/>
+<meta name="twitter:description" content="LC 987 Vertical Order Traversal of a Binary Tree Given a binary tree, return the vertical order traversal of its nodes values. For each node at position (X, Y), its left and right children respectively will be at positions (X-1, Y-1) and (X&#43;1, Y-1). Running a vertical line from X = -infinity to X = &#43;infinity, whenever the vertical line touches some nodes, we report the values of the nodes"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -151,10 +147,11 @@
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">65</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">70</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/noidea/" class="category-list-link">noidea</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">4</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">5</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">9</span></li>
         </ul>
     </div>
 </div>
@@ -201,11 +198,11 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">66</span></li>
+                    class="tag-list-count">75</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
-                    class="tag-list-count">9</span></li>
+                    class="tag-list-count">11</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/math/" class="tag-list-link">math</a><span
@@ -214,6 +211,10 @@
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/recursion/" class="tag-list-link">recursion</a><span
                     class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/sort/" class="tag-list-link">sort</a><span
+                    class="tag-list-count">1</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/stack/" class="tag-list-link">stack</a><span
@@ -229,7 +230,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/tree/" class="tag-list-link">tree</a><span
-                    class="tag-list-count">14</span></li>
+                    class="tag-list-count">17</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/twopointers/" class="tag-list-link">twopointers</a><span
@@ -270,7 +271,7 @@
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
 <a href="https://foxisawesome.github.io/posts/987-vertical-order-traversal-of-a-binary-tree/" class="article-date">
-  <time datetime="2020-09-09 13:59:40 -0400 EDT" itemprop="datePublished">2020-09-09</time>
+  <time datetime="2020-09-13 13:59:40 -0400 EDT" itemprop="datePublished">2020-09-13</time>
 </a>
 </span>
 <span class="article-category">
@@ -280,6 +281,8 @@
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+    <a class="article-tag-link" href="/tags/tree/"> tree </a>
+    <a class="article-tag-link" href="/tags/sort/"> sort </a>
   </span>
 
         <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/posts/987-vertical-order-traversal-of-a-binary-tree/#comments"
@@ -287,18 +290,59 @@
       </div>
     </div>
     <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
-      <h2 id="lc-987-vertical-order-traversal-of-a-binary-tree-httpsleetcodecomproblemsvertical-order-traversal-of-a-binary-tree"><a href="https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/">LC 987 Vertical Order Traversal of a Binary Tree </a></h2>
+      <h2 id="lc-987-vertical-order-traversal-of-a-binary-tree-httpsleetcodecomproblemsvertical-order-traversal-of-a-binary-treehttpsleetcodecomproblemsvertical-order-traversal-of-a-binary-tree"><a href="https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/https://leetcode.com/problems/vertical-order-traversal-of-a-binary-tree/">LC 987 Vertical Order Traversal of a Binary Tree </a></h2>
 <blockquote>
+<p>Given a binary tree, return the <em>vertical order</em> traversal of its nodes values.</p>
+<p>For each node at position <code>(X, Y)</code>, its left and right children respectively will be at positions <code>(X-1, Y-1)</code> and <code>(X+1, Y-1)</code>.</p>
+<p>Running a vertical line from <code>X = -infinity</code> to <code>X = +infinity</code>, whenever the vertical line touches some nodes, we report the values of the nodes in order from top to bottom (decreasing <code>Y</code> coordinates).</p>
+<p>If two nodes have the same position, then the value of the node that is reported first is the value that is smaller.</p>
+<p>Return an list of non-empty reports in order of <code>X</code> coordinate. Every report will have a list of values of nodes.</p>
+<p><img src="/img/987_example_1.PNG" alt="img"></p>
+<pre><code>Input: [3,9,20,null,null,15,7]
+Output: [[9],[3,15],[20],[7]]
+Explanation: 
+Without loss of generality, we can assume the root node is at position (0, 0):
+Then, the node with value 9 occurs at position (-1, -1);
+The nodes with values 3 and 15 occur at positions (0, 0) and (0, -2);
+The node with value 20 occurs at position (1, -1);
+The node with value 7 occurs at position (2, -2).
+</code></pre>
 </blockquote>
 <h2 id="solution">Solution</h2>
-<p>2020-09-09T13:59:40-04:00 Notes:</p>
+<p>2020-09-09 Notes:</p>
 <ul>
-<li></li>
+<li>这题最难的部分不是recursion， 而是需要经过三层sort得到题目要求的排序结果。。。题目要求：首先需要根据 x坐标排序，然后根据y坐标排序，最后若y相同再从小到大排序。。。于是line13-20都在茫茫的排序中。。。排了我美好Sunday的一个小时。。</li>
 </ul>
-<pre><code class="language-python">
+<pre><code class="language-python"># Definition for a binary tree node.
+# class TreeNode:
+#     def __init__(self, val=0, left=None, right=None):
+#         self.val = val
+#         self.left = left
+#         self.right = right
+class Solution:
+    def verticalTraversal(self, root: TreeNode) -&gt; List[List[int]]:
+        if not root: return None
+        ans = []
+        d = collections.defaultdict(list)
+        self.preOrder(root,d,0,0)      
+        temp = [val for i, val in sorted(d.items(), key=lambda item: item[0])]
+        for i in temp:
+            t = []
+            i = sorted(i, key = lambda x: (x[0], x[1]))
+            for j in i:
+                t.append(j[1])
+            ans.append(t)
+        return ans
+    
+    def preOrder(self, root, d, x, y):
+        if not root: return None
+        d[x].append((y,root.val))
+        self.preOrder(root.left, d, x-1, y+1)
+        self.preOrder(root.right,d, x+1, y+1)
+        return
 
-# Time O()
-# Space O()
+# Time O(N)
+# Space O(H)
 </code></pre>
 
     </div>
@@ -312,13 +356,13 @@
     <div class="bar-inner">
         <ul class="pager pull-left">
             <li class="prev">
-                <a href="https://foxisawesome.github.io/posts/236-lowest-common-ancestor-of-a-binary-tree/" title="236 Lowest Common Ancestor of a Binary Tree"><i
+                <a href="https://foxisawesome.github.io/posts/501-find-mode-in-binary-search-tree/" title="501 Find Mode in Binary Search Tree"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
             </li>
             <li class="next">
-                <a href="https://foxisawesome.github.io/posts/124-binary-tree-maximum-path-sum/"
-                    title="124 Binary Tree Maximum Path Sum"><span>Newer&nbsp;&nbsp;</span><i
+                <a href="https://foxisawesome.github.io/posts/199-binary-tree-right-side-view/"
+                    title="199 Binary Tree Right Side View"><span>Newer&nbsp;&nbsp;</span><i
                         class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
