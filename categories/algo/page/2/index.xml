@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/categories/algo/</link>
     <description>Recent content in algo on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 13 Sep 2020 21:16:45 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 13 Sep 2020 22:09:11 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/algo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>829 Consecutive Numbers Sum</title>
+      <link>https://foxisawesome.github.io/posts/829-consecutive-numbers-sum/</link>
+      <pubDate>Fri, 11 Sep 2020 13:50:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/829-consecutive-numbers-sum/</guid>
+      <description>LC 829 Consecutive Numbers Sum Given a positive integer N, how many ways can we write it as a sum of consecutive positive integers? Input: 15 Output: 4 Explanation: 15 = 15 = 8 + 7 = 4 + 5 + 6 = 1 + 2 + 3 + 4 + 5 Solution 2020-09-11 Notes: 以为又是backtrackin</description>
+    </item>
     
     <item>
       <title>197 Rising Temperature</title>
@@ -204,15 +213,6 @@ E-M (Expectation-Maximization) algorithm is a “soft” version of K-means
   Algorithm intuition (see example implemented in numpy below ):
   Pre-set $K$: use elbow plot: loss vs $K$ to determine K or use automatic: gap statistics method to determine $K$.
   Randomly assign initial cluster centroid $k$.</description>
-    </item>
-    
-    <item>
-      <title>325 Maximum Size Subarray Sum Equals K</title>
-      <link>https://foxisawesome.github.io/posts/325-maximum-size-subarray-sum-equals-k/</link>
-      <pubDate>Tue, 08 Sep 2020 17:08:48 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/325-maximum-size-subarray-sum-equals-k/</guid>
-      <description>LC 325 Maximum Size Subarray Sum Equals K Given an array nums and a target value k, find the maximum length of a subarray that sums to k. If there isn&amp;rsquo;t one, return 0 instead. Input: nums = [1, -1, 5, -2, 3], k = 3 Output: 4 Explanation: The subarray [1, -1, 5, -2] sums to 3 and is the longest. Solution 2020-09-08 Notes: 此题解法跟</description>
     </item>
     
   </channel>

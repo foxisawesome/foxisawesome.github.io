@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>2 Add Two Num</title>
+      <link>https://foxisawesome.github.io/posts/2-add-two-num/</link>
+      <pubDate>Thu, 02 Jul 2020 10:08:20 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/2-add-two-num/</guid>
+      <description>LC 2 Add Two Num You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list. You may assume the two numbers do not contain any leading zero, except the number 0 itself. Example: Input: (2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt;</description>
+    </item>
+    
+    <item>
       <title>204 Count Primes</title>
       <link>https://foxisawesome.github.io/posts/204-count-primes/</link>
       <pubDate>Sun, 12 Apr 2020 21:33:18 -0400</pubDate>
