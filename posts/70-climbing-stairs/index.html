@@ -39,7 +39,7 @@
 <meta itemprop="description" content="LC 70 Climbing Stairs You are climbing a stair case. It takes n steps to reach to the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top? Solution 2020-09-15 Notes: 最经典的dp题了。dp[i] = dp[i-1] &#43; dp[i-2], 主要是dp[i] 和">
 <meta itemprop="datePublished" content="2020-09-15T16:48:27-04:00" />
 <meta itemprop="dateModified" content="2020-09-15T16:48:27-04:00" />
-<meta itemprop="wordCount" content="225">
+<meta itemprop="wordCount" content="231">
 
 
 
@@ -147,7 +147,7 @@
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">80</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">86</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/noidea/" class="category-list-link">noidea</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">5</span></li>
@@ -162,7 +162,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/array/" class="tag-list-link">array</a><span
-                    class="tag-list-count">4</span></li>
+                    class="tag-list-count">6</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/backtracking/" class="tag-list-link">backtracking</a><span
@@ -181,16 +181,16 @@
                     class="tag-list-count">1</span></li>
             
             
-            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dictionary/" class="tag-list-link">dictionary</a><span
-                    class="tag-list-count">2</span></li>
-            
-            
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dp/" class="tag-list-link">dp</a><span
-                    class="tag-list-count">6</span></li>
+                    class="tag-list-count">9</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/hashtable/" class="tag-list-link">hashtable</a><span
-                    class="tag-list-count">4</span></li>
+                    class="tag-list-count">9</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/heap/" class="tag-list-link">heap</a><span
+                    class="tag-list-count">2</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/kmeans/" class="tag-list-link">kmeans</a><span
@@ -198,7 +198,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">85</span></li>
+                    class="tag-list-count">91</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -213,16 +213,12 @@
                     class="tag-list-count">3</span></li>
             
             
-            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/sliding_widow/" class="tag-list-link">sliding_widow</a><span
-                    class="tag-list-count">1</span></li>
-            
-            
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/sliding_window/" class="tag-list-link">sliding_window</a><span
-                    class="tag-list-count">1</span></li>
+                    class="tag-list-count">2</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/sort/" class="tag-list-link">sort</a><span
-                    class="tag-list-count">2</span></li>
+                    class="tag-list-count">4</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/stack/" class="tag-list-link">stack</a><span
@@ -306,6 +302,7 @@
 <h4 id="2020-09-15-notes">2020-09-15 Notes:</h4>
 <ul>
 <li>最经典的dp题了。<code>dp[i] = dp[i-1] + dp[i-2]</code>, 主要是dp[i] 和 dp[i-1]直接差了一步，多走一步但毅然还是那条path。同理 dp[i] 与 dp[i-2]差了两步，但依然是同一条path，所以是之和。还可以继续优化sapce to O(1).</li>
+<li>与 <a href="https://foxisawesome.github.io/posts/91-decode-ways/">LC 91</a> 一样。</li>
 </ul>
 <pre><code class="language-python">class Solution:
     def climbStairs(self, n: int) -&gt; int:
@@ -348,6 +345,11 @@
                 <a href="https://foxisawesome.github.io/posts/91-decode-ways/" title="91 Decode Ways"><i
                         class="icon icon-angle-left"
                         aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
+            </li>
+            <li class="next">
+                <a href="https://foxisawesome.github.io/posts/953-verifying-an-alien-dictionary/"
+                    title="953 Verifying an Alien Dictionary"><span>Newer&nbsp;&nbsp;</span><i
+                        class="icon icon-angle-right" aria-hidden="true"></i></a>
             </li>
             
             <li class="toggle-toc">
