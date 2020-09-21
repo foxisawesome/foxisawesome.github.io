@@ -5,10 +5,97 @@
     <link>https://foxisawesome.github.io/tags/heap/</link>
     <description>Recent content in heap on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 19 Sep 2020 21:00:53 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 20 Sep 2020 18:20:53 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/heap/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linked List Note (First Post)</title>
+      <link>https://foxisawesome.github.io/posts/linked-list-note/</link>
+      <pubDate>Sun, 30 Aug 2020 16:54:06 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/linked-list-note/</guid>
+      <description>开始刷Leetcode 好几个月了，今天开始学很多人用blog 记录下自己的notes，也激励自己好好刷题！First post! It takes a while for me to get how exactly Linked List</description>
+    </item>
+    
+    <item>
+      <title>滑动窗口技巧</title>
+      <link>https://foxisawesome.github.io/posts/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Mon, 10 Aug 2020 21:59:37 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%8A%80%E5%B7%A7/</guid>
+      <description>本文详解「滑动窗口」这种高级双指针技巧的算法框架，带你秒杀几道高难度的子字符串匹配问题。 LeetCode 上至少有 9 道题目可以用此方法高效解决。但是有几道是</description>
+    </item>
+    
+    <item>
+      <title>42 Trapping Rain Water</title>
+      <link>https://foxisawesome.github.io/posts/42-trapping-rain-water/</link>
+      <pubDate>Wed, 05 Aug 2020 14:01:29 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/42-trapping-rain-water/</guid>
+      <description>LC 42 Trapping Rain Water Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining. Solution 2020-08-05 Notes: 短边原理，左右指针同时走，r_max 大时短边在left，所以计算lef</description>
+    </item>
+    
+    <item>
+      <title>206 Reverse Linked List</title>
+      <link>https://foxisawesome.github.io/posts/206-reverse-linked-list/</link>
+      <pubDate>Sat, 01 Aug 2020 20:06:27 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/206-reverse-linked-list/</guid>
+      <description>LC 206 Reverse Linked List Reverse a singly linked list. Example: Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL Output: 5-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;1-&amp;gt;NULL Solution 2020-09-01 Notes: 这题刷了不下10遍了，终于明白iteration这里的四步操作了。 # Definition for singly-linked list. # class ListNode: # def __init__(self, val=0, next=None): # self.val = val # self.next</description>
+    </item>
+    
+    <item>
+      <title>回溯算法详解</title>
+      <link>https://foxisawesome.github.io/posts/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3%E4%BF%AE%E8%AE%A2%E7%89%88/</link>
+      <pubDate>Sat, 11 Jul 2020 21:59:37 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3%E4%BF%AE%E8%AE%A2%E7%89%88/</guid>
+      <description>这篇文章是很久之前的一篇《回溯算法详解》的进阶版，之前那篇不够清楚，就不必看了，看这篇就行。把框架给你讲清楚，你会发现回溯算法问题都是一个套</description>
+    </item>
+    
+    <item>
+      <title>2 Add Two Num</title>
+      <link>https://foxisawesome.github.io/posts/2-add-two-num/</link>
+      <pubDate>Thu, 02 Jul 2020 10:08:20 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/2-add-two-num/</guid>
+      <description>LC 2 Add Two Num You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list. You may assume the two numbers do not contain any leading zero, except the number 0 itself. Example: Input: (2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>204 Count Primes</title>
+      <link>https://foxisawesome.github.io/posts/204-count-primes/</link>
+      <pubDate>Sun, 12 Apr 2020 21:33:18 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/204-count-primes/</guid>
+      <description>LC 204 Count Primes   Count the number of prime numbers less than a non-negative number, **n**.
+ Solution 2020-09-12 Notes:
+  In mathematics, the sieve of Eratosthenes is an ancient algorithm for finding all prime numbers up to any given limit.
+  class Solution: def countPrimes(self, n: int) -&amp;gt; int: if n &amp;lt; 2: return 0 grid = [1] * n grid[0] = 0 grid[1] = 0 for i in range(2,int(n**0.</description>
+    </item>
+    
+    <item>
+      <title>69 Sqrtx</title>
+      <link>https://foxisawesome.github.io/posts/69-sqrtx/</link>
+      <pubDate>Sat, 07 Mar 2020 22:51:59 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/69-sqrtx/</guid>
+      <description>LC 69 Sqrtx Implement int sqrt(int x). Sqrt(8) = 2 Solution 2020-03-07 Notes: 标准的binary search 模版， right 从x//2开始。 class Solution: def mySqrt(self, x: int) -&amp;gt; int: if x &amp;lt; 2: return x left = 1 right = x//2 while left &amp;lt;= right: mid = left + (right - left)//2 if mid**2 == x:</description>
+    </item>
+    
+    <item>
+      <title>1 Two Sum</title>
+      <link>https://foxisawesome.github.io/posts/1-two-sum/</link>
+      <pubDate>Sat, 01 Feb 2020 14:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1-two-sum/</guid>
+      <description>LC 1 Two Sum   Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have *exactly* one solution, and you may not use the same element twice.
+ Solution 2020-02-01 Notes:
+ use hash table, one-pass.  class Solution: def twoSum(self, nums: List[int], target: int) -&amp;gt; List[int]: if not nums or target is None: return [] d = dict() for i, val in enumerate(nums): if target - val not in d: d[val] = i else: return [d[target - val], i] # Time O(N) # Space O(N)  </description>
+    </item>
     
     <item>
       <title>About</title>
