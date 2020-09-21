@@ -5,10 +5,28 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 20 Sep 2020 19:00:41 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 20 Sep 2020 21:05:02 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>56 Merge Intervals</title>
+      <link>https://foxisawesome.github.io/posts/56-merge-intervals/</link>
+      <pubDate>Tue, 15 Sep 2020 13:14:34 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/56-merge-intervals/</guid>
+      <description>LC 56 Merge Intervals Given a collection of intervals, merge all overlapping intervals. Input: intervals = [[1,3],[2,6],[8,10],[15,18]] Output: [[1,6],[8,10],[15,18]] Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6]. Solution 2020-09-15 Notes: 先sort一遍 by x[0], x[1] 比较 ans[-1][1] 与 x[0]的关系， 很简单。 class Solution: def merge(self, intervals: List[List[int]]) -&amp;gt; List[List[int]]: if not intervals:</description>
+    </item>
+    
+    <item>
+      <title>23 Merge K Sorted Lists</title>
+      <link>https://foxisawesome.github.io/posts/23-merge-k-sorted-lists/</link>
+      <pubDate>Mon, 14 Sep 2020 21:04:50 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/23-merge-k-sorted-lists/</guid>
+      <description>LC 23 Merge K Sorted Lists You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list and return it. Input: lists = [[1,4,5],[1,3,4],[2,6]] Output: [1,1,2,3,4,4,5,6] Explanation: The linked-lists are: [ 1-&amp;gt;4-&amp;gt;5, 1-&amp;gt;3-&amp;gt;4, 2-&amp;gt;6 ] merging them into one sorted list: 1-&amp;gt;1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;4-&amp;gt;5-&amp;gt;6 Solution 2020-09-14 Notes: 最简单暴力，最挫的方法。</description>
+    </item>
     
     <item>
       <title>3 Longest Substring Without Repeating Characters</title>
@@ -175,24 +193,6 @@ Input: [1,3,null,null,2] Output: [3,1,null,null,2]   Solution 2020-09-13 Notes:
       
       <guid>https://foxisawesome.github.io/posts/300-longest-increasing-subsequence/</guid>
       <description>LC 300 Longest Increasing Subsequence Given an unsorted array of integers, find the length of longest increasing subsequence. Example: Input: [10,9,2,5,3,7,101,18] Output: 4 Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4. Solution 2020-09-12 Notes: $\mathcal{O}(N^2)$的解，25%通过了。经典的d</description>
-    </item>
-    
-    <item>
-      <title>767 Reorganize String</title>
-      <link>https://foxisawesome.github.io/posts/767-reorganize-string/</link>
-      <pubDate>Sat, 12 Sep 2020 15:53:16 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/767-reorganize-string/</guid>
-      <description>LC 767 Reorganize String Given a string S, check if the letters can be rearranged so that two characters that are adjacent to each other are not the same. If possible, output any possible result. If not possible, return the empty string. Input: S = &amp;quot;aab&amp;quot; Output: &amp;quot;aba&amp;quot; Solution 2020-09-12 Notes: 这题的思路来自这： 有个dynamic的</description>
-    </item>
-    
-    <item>
-      <title>双指针技巧总结</title>
-      <link>https://foxisawesome.github.io/posts/%E5%8F%8C%E6%8C%87%E9%92%88%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/</link>
-      <pubDate>Fri, 11 Sep 2020 22:01:16 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/%E5%8F%8C%E6%8C%87%E9%92%88%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/</guid>
-      <description>双指针技巧总结 我把双指针技巧再分为两类，一类是「快慢指针」，一类是「左右指针」。前者解决主要解决链表中的问题，比如典型的判定链表中是否包含环</description>
     </item>
     
   </channel>

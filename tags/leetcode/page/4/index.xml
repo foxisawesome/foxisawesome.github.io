@@ -5,10 +5,30 @@
     <link>https://foxisawesome.github.io/tags/leetcode/</link>
     <description>Recent content in leetcode on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 20 Sep 2020 19:00:41 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 20 Sep 2020 21:05:02 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>236 Lowest Common Ancestor of a Binary Tree</title>
+      <link>https://foxisawesome.github.io/posts/236-lowest-common-ancestor-of-a-binary-tree/</link>
+      <pubDate>Wed, 09 Sep 2020 13:57:55 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/236-lowest-common-ancestor-of-a-binary-tree/</guid>
+      <description>LC 236 Lowest Common Ancestor of a Binary Tree Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be</description>
+    </item>
+    
+    <item>
+      <title>392 Is Subsequence</title>
+      <link>https://foxisawesome.github.io/posts/392-is-subsequence/</link>
+      <pubDate>Tue, 08 Sep 2020 22:19:55 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/392-is-subsequence/</guid>
+      <description>LC 392 Is Subsequence   Given a string s and a string t, check if s is subsequence of t.
+A subsequence of a string is a new string which is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (ie, &amp;quot;ace&amp;quot; is a subsequence of &amp;quot;abcde&amp;quot; while &amp;quot;aec&amp;quot; is not).
+ Solution 2020-09-08 Notes:  O(N) is easy.</description>
+    </item>
     
     <item>
       <title>268 Missing Number</title>
@@ -99,8 +119,7 @@ E-M (Expectation-Maximization) algorithm is a “soft” version of K-means
       <description>LC 1512 Number of Good Pairs   Given an array of integers nums.
 A pair (i,j) is called good if nums[i] == nums[j] and i &amp;lt; j.
 Return the number of good pairs.
- Solution 2020-09-06 Notes:
- One-pass using hash table. line 7-9, if gets a match, how many pairs it can make to previous ones is d[num].  class Solution: def numIdenticalPairs(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 ans = 0 d = dict() for num in nums: if num in d: ans += d[num] d[num] += 1 else: d[num] = 1 return ans # Time O(N) # Space O(N)   Use double loop:  class Solution: def numIdenticalPairs(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 n = len(nums) ans = 0 for i in range(n): j = i+1 while j &amp;lt; n: if nums[i] == nums[j]: ans += 1 j += 1 return ans # Time O(N^2) # Space O(1)  </description>
+ Solution 2020-09-06 Notes:  One-pass using hash table. line 7-9, if gets a match, how many pairs it can make to previous ones is d[num].  class Solution: def numIdenticalPairs(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 ans = 0 d = dict() for num in nums: if num in d: ans += d[num] d[num] += 1 else: d[num] = 1 return ans # Time O(N) # Space O(N)   Use double loop:  class Solution: def numIdenticalPairs(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 n = len(nums) ans = 0 for i in range(n): j = i+1 while j &amp;lt; n: if nums[i] == nums[j]: ans += 1 j += 1 return ans # Time O(N^2) # Space O(1)  </description>
     </item>
     
     <item>
@@ -122,8 +141,7 @@ Return the number of good pairs.
 If the fractional part is repeating, enclose the repeating part in parentheses.
 If multiple answers are possible, just return any of them.
 Extreme case: numer = -2147483648, denominator = -1999
- Solution 2020-09-05 Notes:
- Details: python built-in divmod() returns floor, which is not friendly in negative case.</description>
+ Solution 2020-09-05 Notes:  Details: python built-in divmod() returns floor, which is not friendly in negative case.</description>
     </item>
     
     <item>
@@ -143,8 +161,7 @@ Extreme case: numer = -2147483648, denominator = -1999
       <guid>https://foxisawesome.github.io/posts/136-single-number/</guid>
       <description>LC 136 Single Number   Given a non-empty array of integers, every element appears twice except for one. Find that single one.
 Note: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
- Solution 2020-09-05 Notes:
- Space O(1) solution is a bit tricky.  class Solution: def singleNumber(self, nums: List[int]) -&amp;gt; int: stack = set() for num in nums: if num not in stack: stack.</description>
+ Solution 2020-09-05 Notes:  Space O(1) solution is a bit tricky.  class Solution: def singleNumber(self, nums: List[int]) -&amp;gt; int: stack = set() for num in nums: if num not in stack: stack.</description>
     </item>
     
     <item>
@@ -162,8 +179,7 @@ Note: Your algorithm should have a linear runtime complexity. Could you implemen
       <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
       
       <guid>https://foxisawesome.github.io/posts/1249-minimum-remove-to-make-valid-parentheses/</guid>
-      <description>LC 1249 Minimum Remove to Make Valid Parentheses    Solution 2020-09-05T14:01:30-04:00 Notes:
-   # Time O() # Space O()  </description>
+      <description>LC 1249 Minimum Remove to Make Valid Parentheses Given a string s of &#39;(&#39; , &#39;)&#39; and lowercase English characters. Your task is to remove the minimum number of parentheses ( &#39;(&#39; or &#39;)&#39;, in any positions ) so that the resulting parentheses string is valid and return any valid string. Input: s = &amp;quot;lee(t(c)o)de)&amp;quot; Output: &amp;quot;lee(t(c)o)de&amp;quot; Explanation: &amp;quot;lee(t(co)de)&amp;quot; , &amp;quot;lee(t(c)ode)&amp;quot; would also be accepted. Solution 2020-09-05 Notes: 很简</description>
     </item>
     
     <item>
@@ -173,8 +189,7 @@ Note: Your algorithm should have a linear runtime complexity. Could you implemen
       
       <guid>https://foxisawesome.github.io/posts/316-remove-dup-letters/</guid>
       <description>LC 316 Remove Dup Letters  Given a string which contains only lowercase letters, remove duplicate letters so that every letter appears once and only once. You must make sure your result is the smallest in lexicographical order among all possible results.
-Input: &amp;quot;cbacdcbc&amp;quot; Output: &amp;quot;acdb&amp;quot;   Solution 2020-09-04 Notes:
-  Need one-pass of s to get the counter of each letter.
+Input: &amp;quot;cbacdcbc&amp;quot; Output: &amp;quot;acdb&amp;quot;   Solution 2020-09-04 Notes:   Need one-pass of s to get the counter of each letter.
   a second pass, dial down counter at each iteration.</description>
     </item>
     
@@ -185,8 +200,7 @@ Input: &amp;quot;cbacdcbc&amp;quot; Output: &amp;quot;acdb&amp;quot;   Solution 
       
       <guid>https://foxisawesome.github.io/posts/1081-smallest-subsequence-of-distinct-char/</guid>
       <description>LC 1081 Smallest Subsequence of Distinct Char   Return the lexicographically smallest subsequence of text that contains all the distinct characters of text exactly once.
-Input: &amp;quot;ecbacba&amp;quot; Output: &amp;quot;eacb&amp;quot;   Solution 2020-09-04 Notes:
-  Need one-pass of s to get the counter of each letter.
+Input: &amp;quot;ecbacba&amp;quot; Output: &amp;quot;eacb&amp;quot;   Solution 2020-09-04 Notes:   Need one-pass of s to get the counter of each letter.
   a second pass, dial down counter at each iteration. use a stack to record every distinct letter and keep the order of recorded letter same as their orders in the string.</description>
     </item>
     
@@ -200,30 +214,6 @@ Input: &amp;quot;ecbacba&amp;quot; Output: &amp;quot;eacb&amp;quot;   Solution 2
 Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
 Given nums = [0,0,1,1,1,1,2,3,3], output [0,0,1,1,2,3,3]   Solution 2020-09-04 Notes:
  Same thing asLC 26.  class Solution: def removeDuplicates(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 count = dict() count[nums[0]] = 1 slow, fast = 0, 1 while fast &amp;lt; len(nums): count[nums[fast]] = count.</description>
-    </item>
-    
-    <item>
-      <title>26 Remove Dup From Sorted Array</title>
-      <link>https://foxisawesome.github.io/posts/26-remove-dup-from-sorted-array/</link>
-      <pubDate>Fri, 04 Sep 2020 13:45:50 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/26-remove-dup-from-sorted-array/</guid>
-      <description>LC 26 Remove Dup From Sorted Array   Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.
-Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
-Given nums = [0,0,1,1,1,2,2,3,3,4], Your function should return length = 5, with the first five elements of nums being modified to 0, 1, 2, 3, and 4 respectively.</description>
-    </item>
-    
-    <item>
-      <title>18 K Sum</title>
-      <link>https://foxisawesome.github.io/posts/18-k-sum/</link>
-      <pubDate>Thu, 03 Sep 2020 22:17:11 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/18-k-sum/</guid>
-      <description>LC 18 4Sum   Given an array nums of n integers and an integer target, are there elements a, b, c, and d in nums such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.
-Note: The solution set must not contain duplicate quadruplets.
- Solution 2020-09-03 Notes:
-K - sum algo:
- sort nums recursion top down, reduce to a 2-Sum problem two pointers: l, r to find target  Note: to skip duplicates: if not (i &amp;gt; 0 and nums[i]==nums[i-1]):</description>
     </item>
     
   </channel>

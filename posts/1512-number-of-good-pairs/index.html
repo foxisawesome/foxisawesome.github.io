@@ -23,8 +23,7 @@
     <meta name="description" content="LC 1512 Number of Good Pairs   Given an array of integers nums.
 A pair (i,j) is called good if nums[i] == nums[j] and i &amp;lt; j.
 Return the number of good pairs.
- Solution 2020-09-06 Notes:
- One-pass using hash table. line 7-9, if gets a match, how many pairs it can make to previous ones is d[num].  class Solution: def numIdenticalPairs(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 ans = 0 d = dict() for num in nums: if num in d: ans &#43;= d[num] d[num] &#43;= 1 else: d[num] = 1 return ans # Time O(N) # Space O(N)   Use double loop:  class Solution: def numIdenticalPairs(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 n = len(nums) ans = 0 for i in range(n): j = i&#43;1 while j &amp;lt; n: if nums[i] == nums[j]: ans &#43;= 1 j &#43;= 1 return ans # Time O(N^2) # Space O(1)  " />
+ Solution 2020-09-06 Notes:  One-pass using hash table. line 7-9, if gets a match, how many pairs it can make to previous ones is d[num].  class Solution: def numIdenticalPairs(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 ans = 0 d = dict() for num in nums: if num in d: ans &#43;= d[num] d[num] &#43;= 1 else: d[num] = 1 return ans # Time O(N) # Space O(N)   Use double loop:  class Solution: def numIdenticalPairs(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 n = len(nums) ans = 0 for i in range(n): j = i&#43;1 while j &amp;lt; n: if nums[i] == nums[j]: ans &#43;= 1 j &#43;= 1 return ans # Time O(N^2) # Space O(1)  " />
     <meta name="generator" content="Hugo 0.74.3 with theme pure" />
     <title>1512 Number of Good Pairs - Q. Weng</title>
     
@@ -37,8 +36,7 @@ Return the number of good pairs.
 <meta property="og:description" content="LC 1512 Number of Good Pairs   Given an array of integers nums.
 A pair (i,j) is called good if nums[i] == nums[j] and i &lt; j.
 Return the number of good pairs.
- Solution 2020-09-06 Notes:
- One-pass using hash table. line 7-9, if gets a match, how many pairs it can make to previous ones is d[num].  class Solution: def numIdenticalPairs(self, nums: List[int]) -&gt; int: if not nums: return 0 ans = 0 d = dict() for num in nums: if num in d: ans &#43;= d[num] d[num] &#43;= 1 else: d[num] = 1 return ans # Time O(N) # Space O(N)   Use double loop:  class Solution: def numIdenticalPairs(self, nums: List[int]) -&gt; int: if not nums: return 0 n = len(nums) ans = 0 for i in range(n): j = i&#43;1 while j &lt; n: if nums[i] == nums[j]: ans &#43;= 1 j &#43;= 1 return ans # Time O(N^2) # Space O(1)  " />
+ Solution 2020-09-06 Notes:  One-pass using hash table. line 7-9, if gets a match, how many pairs it can make to previous ones is d[num].  class Solution: def numIdenticalPairs(self, nums: List[int]) -&gt; int: if not nums: return 0 ans = 0 d = dict() for num in nums: if num in d: ans &#43;= d[num] d[num] &#43;= 1 else: d[num] = 1 return ans # Time O(N) # Space O(N)   Use double loop:  class Solution: def numIdenticalPairs(self, nums: List[int]) -&gt; int: if not nums: return 0 n = len(nums) ans = 0 for i in range(n): j = i&#43;1 while j &lt; n: if nums[i] == nums[j]: ans &#43;= 1 j &#43;= 1 return ans # Time O(N^2) # Space O(1)  " />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://foxisawesome.github.io/posts/1512-number-of-good-pairs/" />
 <meta property="article:published_time" content="2020-09-06T21:03:48-04:00" />
@@ -47,8 +45,7 @@ Return the number of good pairs.
 <meta itemprop="description" content="LC 1512 Number of Good Pairs   Given an array of integers nums.
 A pair (i,j) is called good if nums[i] == nums[j] and i &lt; j.
 Return the number of good pairs.
- Solution 2020-09-06 Notes:
- One-pass using hash table. line 7-9, if gets a match, how many pairs it can make to previous ones is d[num].  class Solution: def numIdenticalPairs(self, nums: List[int]) -&gt; int: if not nums: return 0 ans = 0 d = dict() for num in nums: if num in d: ans &#43;= d[num] d[num] &#43;= 1 else: d[num] = 1 return ans # Time O(N) # Space O(N)   Use double loop:  class Solution: def numIdenticalPairs(self, nums: List[int]) -&gt; int: if not nums: return 0 n = len(nums) ans = 0 for i in range(n): j = i&#43;1 while j &lt; n: if nums[i] == nums[j]: ans &#43;= 1 j &#43;= 1 return ans # Time O(N^2) # Space O(1)  ">
+ Solution 2020-09-06 Notes:  One-pass using hash table. line 7-9, if gets a match, how many pairs it can make to previous ones is d[num].  class Solution: def numIdenticalPairs(self, nums: List[int]) -&gt; int: if not nums: return 0 ans = 0 d = dict() for num in nums: if num in d: ans &#43;= d[num] d[num] &#43;= 1 else: d[num] = 1 return ans # Time O(N) # Space O(N)   Use double loop:  class Solution: def numIdenticalPairs(self, nums: List[int]) -&gt; int: if not nums: return 0 n = len(nums) ans = 0 for i in range(n): j = i&#43;1 while j &lt; n: if nums[i] == nums[j]: ans &#43;= 1 j &#43;= 1 return ans # Time O(N^2) # Space O(1)  ">
 <meta itemprop="datePublished" content="2020-09-06T21:03:48-04:00" />
 <meta itemprop="dateModified" content="2020-09-06T21:03:48-04:00" />
 <meta itemprop="wordCount" content="152">
@@ -61,8 +58,7 @@ Return the number of good pairs.
 <meta name="twitter:description" content="LC 1512 Number of Good Pairs   Given an array of integers nums.
 A pair (i,j) is called good if nums[i] == nums[j] and i &lt; j.
 Return the number of good pairs.
- Solution 2020-09-06 Notes:
- One-pass using hash table. line 7-9, if gets a match, how many pairs it can make to previous ones is d[num].  class Solution: def numIdenticalPairs(self, nums: List[int]) -&gt; int: if not nums: return 0 ans = 0 d = dict() for num in nums: if num in d: ans &#43;= d[num] d[num] &#43;= 1 else: d[num] = 1 return ans # Time O(N) # Space O(N)   Use double loop:  class Solution: def numIdenticalPairs(self, nums: List[int]) -&gt; int: if not nums: return 0 n = len(nums) ans = 0 for i in range(n): j = i&#43;1 while j &lt; n: if nums[i] == nums[j]: ans &#43;= 1 j &#43;= 1 return ans # Time O(N^2) # Space O(1)  "/>
+ Solution 2020-09-06 Notes:  One-pass using hash table. line 7-9, if gets a match, how many pairs it can make to previous ones is d[num].  class Solution: def numIdenticalPairs(self, nums: List[int]) -&gt; int: if not nums: return 0 ans = 0 d = dict() for num in nums: if num in d: ans &#43;= d[num] d[num] &#43;= 1 else: d[num] = 1 return ans # Time O(N) # Space O(N)   Use double loop:  class Solution: def numIdenticalPairs(self, nums: List[int]) -&gt; int: if not nums: return 0 n = len(nums) ans = 0 for i in range(n): j = i&#43;1 while j &lt; n: if nums[i] == nums[j]: ans &#43;= 1 j &#43;= 1 return ans # Time O(N^2) # Space O(1)  "/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -163,7 +159,7 @@ Return the number of good pairs.
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">93</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">95</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/noidea/" class="category-list-link">noidea</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">5</span></li>
@@ -182,7 +178,7 @@ Return the number of good pairs.
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/backtracking/" class="tag-list-link">backtracking</a><span
-                    class="tag-list-count">3</span></li>
+                    class="tag-list-count">4</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/bfs/" class="tag-list-link">bfs</a><span
@@ -218,7 +214,7 @@ Return the number of good pairs.
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">100</span></li>
+                    class="tag-list-count">102</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -242,7 +238,7 @@ Return the number of good pairs.
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/stack/" class="tag-list-link">stack</a><span
-                    class="tag-list-count">2</span></li>
+                    class="tag-list-count">4</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/string/" class="tag-list-link">string</a><span
@@ -320,7 +316,7 @@ Return the number of good pairs.
 <p>Return the number of <em>good</em> pairs.</p>
 </blockquote>
 <h2 id="solution">Solution</h2>
-<p>2020-09-06 Notes:</p>
+<h4 id="2020-09-06-notes">2020-09-06 Notes:</h4>
 <ul>
 <li>One-pass using hash table. line 7-9, if gets a match, how many pairs it can make to previous ones is <code>d[num]</code>.</li>
 </ul>

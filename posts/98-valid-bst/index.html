@@ -39,7 +39,7 @@
 <meta itemprop="description" content="LC 98 Valid BST Given a binary tree, determine if it is a valid binary search tree (BST). Assume a BST is defined as follows: The left subtree of a node contains only nodes with keys less than the node&rsquo;s key. The right subtree of a node contains only nodes with keys greater than the node&rsquo;s key. Both the left and right subtrees must also be binary search trees. Example">
 <meta itemprop="datePublished" content="2020-08-30T20:59:02-04:00" />
 <meta itemprop="dateModified" content="2020-08-30T20:59:02-04:00" />
-<meta itemprop="wordCount" content="197">
+<meta itemprop="wordCount" content="198">
 
 
 
@@ -147,7 +147,7 @@
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">93</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">95</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/noidea/" class="category-list-link">noidea</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">5</span></li>
@@ -166,7 +166,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/backtracking/" class="tag-list-link">backtracking</a><span
-                    class="tag-list-count">3</span></li>
+                    class="tag-list-count">4</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/bfs/" class="tag-list-link">bfs</a><span
@@ -202,7 +202,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">100</span></li>
+                    class="tag-list-count">102</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -226,7 +226,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/stack/" class="tag-list-link">stack</a><span
-                    class="tag-list-count">2</span></li>
+                    class="tag-list-count">4</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/string/" class="tag-list-link">string</a><span
@@ -325,7 +325,8 @@ Input: [5,1,4,null,null,3,6]
 Output: false
 Explanation: The root node's value is 5 but its right child's value is 4.
 </code></pre>
-<p>08/30/2020 Notes:</p>
+<h2 id="solution">Solution</h2>
+<h4 id="08302020-notes">08/30/2020 Notes:</h4>
 <ol>
 <li>two ways: 1. Check if a sorted list returned after in-order traversal. 2. check if alway root.right.val &gt; root.val &gt; root.left.val</li>
 <li>I used the first way. 这又是个很高级的recursion。</li>
