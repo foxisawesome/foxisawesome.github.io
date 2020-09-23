@@ -5,10 +5,64 @@
     <link>https://foxisawesome.github.io/tags/tree/</link>
     <description>Recent content in tree on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 13 Sep 2020 14:55:14 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2020 14:58:07 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/tree/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>701 Insert Into BST</title>
+      <link>https://foxisawesome.github.io/posts/701-insert-into-bst/</link>
+      <pubDate>Sun, 30 Aug 2020 20:58:29 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/701-insert-into-bst/</guid>
+      <description>LC 701 Given the root node of a binary search tree (BST) and a value to be inserted into the tree, insert the value into the BST. Return the root node of the BST after the insertion. It is guaranteed that the new value does not exist in the original BST. Note that there may exist multiple valid ways for the insertion, as long as the tree remains a BST</description>
+    </item>
+    
+    <item>
+      <title>Sliding Window Note</title>
+      <link>https://foxisawesome.github.io/posts/sliding-window-note/</link>
+      <pubDate>Sun, 30 Aug 2020 17:08:55 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/sliding-window-note/</guid>
+      <description>滑动窗口算法的思路是这样： 1、我们在字符串S中使用双指针中的左右指针技巧，初始化left = right = 0，把索引左闭右开区间[left, right)</description>
+    </item>
+    
+    <item>
+      <title>Linked List Note (First Post)</title>
+      <link>https://foxisawesome.github.io/posts/linked-list-note/</link>
+      <pubDate>Sun, 30 Aug 2020 16:54:06 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/linked-list-note/</guid>
+      <description>开始刷Leetcode 好几个月了，今天开始学很多人用blog 记录下自己的notes，也激励自己好好刷题！First post! It takes a while for me to get how exactly Linked List</description>
+    </item>
+    
+    <item>
+      <title>滑动窗口技巧</title>
+      <link>https://foxisawesome.github.io/posts/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Mon, 10 Aug 2020 21:59:37 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%8A%80%E5%B7%A7/</guid>
+      <description>本文详解「滑动窗口」这种高级双指针技巧的算法框架，带你秒杀几道高难度的子字符串匹配问题。 LeetCode 上至少有 9 道题目可以用此方法高效解决。但是有几道是</description>
+    </item>
+    
+    <item>
+      <title>42 Trapping Rain Water</title>
+      <link>https://foxisawesome.github.io/posts/42-trapping-rain-water/</link>
+      <pubDate>Wed, 05 Aug 2020 14:01:29 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/42-trapping-rain-water/</guid>
+      <description>LC 42 Trapping Rain Water Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining. Solution 2020-08-05 Notes: 短边原理，左右指针同时走，r_max 大时短边在left，所以计算lef</description>
+    </item>
+    
+    <item>
+      <title>206 Reverse Linked List</title>
+      <link>https://foxisawesome.github.io/posts/206-reverse-linked-list/</link>
+      <pubDate>Sat, 01 Aug 2020 20:06:27 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/206-reverse-linked-list/</guid>
+      <description>LC 206 Reverse Linked List Reverse a singly linked list. Example: Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL Output: 5-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;1-&amp;gt;NULL Solution 2020-09-01 Notes: 这题刷了不下10遍了，终于明白iteration这里的四步操作了。 # Definition for singly-linked list. # class ListNode: # def __init__(self, val=0, next=None): # self.val = val # self.next</description>
+    </item>
     
     <item>
       <title>回溯算法详解</title>

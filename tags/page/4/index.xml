@@ -5,10 +5,64 @@
     <link>https://foxisawesome.github.io/tags/</link>
     <description>Recent content in Tags on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 22 Sep 2020 13:01:55 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 23 Sep 2020 15:14:28 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>767 Reorganize String</title>
+      <link>https://foxisawesome.github.io/posts/767-reorganize-string/</link>
+      <pubDate>Sat, 12 Sep 2020 15:53:16 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/767-reorganize-string/</guid>
+      <description>LC 767 Reorganize String Given a string S, check if the letters can be rearranged so that two characters that are adjacent to each other are not the same. If possible, output any possible result. If not possible, return the empty string. Input: S = &amp;quot;aab&amp;quot; Output: &amp;quot;aba&amp;quot; Solution 2020-09-12 Notes: 这题的思路来自这： 有个dynamic的</description>
+    </item>
+    
+    <item>
+      <title>双指针技巧总结</title>
+      <link>https://foxisawesome.github.io/posts/%E5%8F%8C%E6%8C%87%E9%92%88%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/</link>
+      <pubDate>Fri, 11 Sep 2020 22:01:16 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/%E5%8F%8C%E6%8C%87%E9%92%88%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/</guid>
+      <description>双指针技巧总结 我把双指针技巧再分为两类，一类是「快慢指针」，一类是「左右指针」。前者解决主要解决链表中的问题，比如典型的判定链表中是否包含环</description>
+    </item>
+    
+    <item>
+      <title>团灭LC股票问题</title>
+      <link>https://foxisawesome.github.io/posts/%E5%9B%A2%E7%81%ADlc%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98/</link>
+      <pubDate>Fri, 11 Sep 2020 21:59:37 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/%E5%9B%A2%E7%81%ADlc%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98/</guid>
+      <description>团灭 LeetCode 股票买卖问题 很多读者抱怨 LeetCode 的股票系列问题奇技淫巧太多，如果面试真的遇到这类问题，基本不会想到那些巧妙的办法，怎么办？所以本文拒绝奇技淫</description>
+    </item>
+    
+    <item>
+      <title>142 Linked List Cycle ii</title>
+      <link>https://foxisawesome.github.io/posts/142-linked-list-cycle-ii/</link>
+      <pubDate>Fri, 11 Sep 2020 20:35:06 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/142-linked-list-cycle-ii/</guid>
+      <description>LC 142 Linked List Cycle ii Given a linked list, return the node where the cycle begins. If there is no cycle, return null. To represent a cycle in the given linked list, we use an integer pos which represents the position (0-indexed) in the linked list where tail connects to. If pos is -1, then there is no cycle in the linked list. Solution 2020-09-11 Notes: 这题的</description>
+    </item>
+    
+    <item>
+      <title>4 Median of Two Sorted Arrays</title>
+      <link>https://foxisawesome.github.io/posts/4-median-of-two-sorted-arrays/</link>
+      <pubDate>Fri, 11 Sep 2020 14:40:26 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/4-median-of-two-sorted-arrays/</guid>
+      <description>LC 4 Median of Two Sorted Arrays Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays. Solution 2020-09-11 Notes: 山景城一姐的做法一目了然！第一种用了merge sort，第二种做法是binar</description>
+    </item>
+    
+    <item>
+      <title>二分查找详解</title>
+      <link>https://foxisawesome.github.io/posts/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Fri, 11 Sep 2020 14:40:26 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E8%AF%A6%E8%A7%A3/</guid>
+      <description>original labuladong post 先给大家讲个笑话乐呵一下： 有一天阿东到图书馆借了 N 本书，出图书馆的时候，警报响了，于是保安把阿东拦下，要检查一下哪本书没有登记出借。阿</description>
+    </item>
     
     <item>
       <title>829 Consecutive Numbers Sum</title>
@@ -149,70 +203,6 @@ Given binary tree [3,9,20,null,null,15,7],
       
       <guid>https://foxisawesome.github.io/posts/124-binary-tree-maximum-path-sum/</guid>
       <description>LC 124 Binary Tree Maximum Path Sum Given a non-empty binary tree, find the maximum path sum. For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The path must contain at least one node and does not need to go through the root. Input: [-10,9,20,null,null,15,7] -10 / \ 9 20 / \ 15</description>
-    </item>
-    
-    <item>
-      <title>236 Lowest Common Ancestor of a Binary Tree</title>
-      <link>https://foxisawesome.github.io/posts/236-lowest-common-ancestor-of-a-binary-tree/</link>
-      <pubDate>Wed, 09 Sep 2020 13:57:55 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/236-lowest-common-ancestor-of-a-binary-tree/</guid>
-      <description>LC 236 Lowest Common Ancestor of a Binary Tree Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be</description>
-    </item>
-    
-    <item>
-      <title>392 Is Subsequence</title>
-      <link>https://foxisawesome.github.io/posts/392-is-subsequence/</link>
-      <pubDate>Tue, 08 Sep 2020 22:19:55 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/392-is-subsequence/</guid>
-      <description>LC 392 Is Subsequence   Given a string s and a string t, check if s is subsequence of t.
-A subsequence of a string is a new string which is formed from the original string by deleting some (can be none) of the characters without disturbing the relative positions of the remaining characters. (ie, &amp;quot;ace&amp;quot; is a subsequence of &amp;quot;abcde&amp;quot; while &amp;quot;aec&amp;quot; is not).
- Solution 2020-09-08 Notes:  O(N) is easy.</description>
-    </item>
-    
-    <item>
-      <title>268 Missing Number</title>
-      <link>https://foxisawesome.github.io/posts/268-missing-number/</link>
-      <pubDate>Tue, 08 Sep 2020 21:54:19 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/268-missing-number/</guid>
-      <description>LC 268 Missing Number   Given an array containing n distinct numbers taken from 0, 1, 2, ..., n, find the one that is missing from the array.
- Solution 2020-09-08 Notes:
- Calculate it directly.  class Solution: def missingNumber(self, nums: List[int]) -&amp;gt; int: n = len(nums) return n*(n+1)//2 - sum(nums) # Time O(1) # Space O(1)  </description>
-    </item>
-    
-    <item>
-      <title>645 Set Mismatch</title>
-      <link>https://foxisawesome.github.io/posts/645-set-mismatch/</link>
-      <pubDate>Tue, 08 Sep 2020 21:25:19 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/645-set-mismatch/</guid>
-      <description>LC 645 Set Mismatch The set S originally contains numbers from 1 to n. But unfortunately, due to the data error, one of the numbers in the set got duplicated to another number in the set, which results in repetition of one number and loss of another number. Given an array nums representing the data status of this set after the error. Your task is to firstly find the number</description>
-    </item>
-    
-    <item>
-      <title>234 Palindrome Linked List</title>
-      <link>https://foxisawesome.github.io/posts/234-palindrome-linked-list/</link>
-      <pubDate>Tue, 08 Sep 2020 20:54:03 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/234-palindrome-linked-list/</guid>
-      <description>LC 234 Palindrome Linked List Given a singly linked list, determine if it is a palindrome. Solution 2020-09-08 Notes: Recursion solution参考了 labuladong 以下是一种比较直观但是不是optimal的解法 line 13 is a post-order traverse. # Definition for singly-linked list. # class ListNode: #</description>
-    </item>
-    
-    <item>
-      <title>ML Kmeans Algo Sample</title>
-      <link>https://foxisawesome.github.io/posts/ml-kmeans/</link>
-      <pubDate>Tue, 08 Sep 2020 18:41:56 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/ml-kmeans/</guid>
-      <description>Summary:
-  it minimizes “within” cluster distance or equivalently maximizes “in between” cluster distance/variance.
-  K-means algorithm is closely ralated to E-M algorithm
-E-M (Expectation-Maximization) algorithm is a “soft” version of K-means
-  Algorithm intuition (see example implemented in numpy below ):
-  Pre-set $K$: use elbow plot: loss vs $K$ to determine K or use automatic: gap statistics method to determine $K$.
-  Randomly assign initial cluster centroid $k$.</description>
     </item>
     
   </channel>
