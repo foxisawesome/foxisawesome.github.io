@@ -3,6 +3,69 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://foxisawesome.github.io/sql/181-employees-earning-more-than-their-managers/</loc>
+    <lastmod>2020-09-24T21:57:09-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/categories/</loc>
+    <lastmod>2020-09-24T21:57:09-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/leetcode/</loc>
+    <lastmod>2020-09-24T21:57:09-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/</loc>
+    <lastmod>2020-09-24T21:57:09-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/categories/sql/</loc>
+    <lastmod>2020-09-24T21:57:09-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/sql/</loc>
+    <lastmod>2020-09-24T21:57:09-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/</loc>
+    <lastmod>2020-09-24T21:57:09-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/sql/180-consecutive-numbers/</loc>
+    <lastmod>2020-09-24T21:41:16-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/sql/177-nth-highest-salary/</loc>
+    <lastmod>2020-09-24T21:16:18-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://foxisawesome.github.io/posts/875-koko-eating-bananas/</loc>
     <lastmod>2020-09-24T13:51:49-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -24,35 +87,7 @@
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/categories/</loc>
-    <lastmod>2020-09-24T13:51:49-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/tags/leetcode/</loc>
-    <lastmod>2020-09-24T13:51:49-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://foxisawesome.github.io/posts/</loc>
-    <lastmod>2020-09-24T13:51:49-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/</loc>
-    <lastmod>2020-09-24T13:51:49-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/tags/</loc>
     <lastmod>2020-09-24T13:51:49-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -116,20 +151,6 @@
   
   <url>
     <loc>https://foxisawesome.github.io/sql/1070-product-sales-analysis-iii/</loc>
-    <lastmod>2020-09-23T21:32:01-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/categories/sql/</loc>
-    <lastmod>2020-09-23T21:32:01-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/sql/</loc>
     <lastmod>2020-09-23T21:32:01-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

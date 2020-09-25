@@ -39,7 +39,7 @@
 <meta itemprop="description" content="LC 178 Rank Scores Write a SQL query to rank scores. If there is a tie between two scores, both should have the same ranking. Note that after a tie, the next ranking number should be the next consecutive integer value. In other words, there should be no &ldquo;holes&rdquo; between ranks. &#43;----&#43;-------&#43; | Id | Score | &#43;----&#43;-------&#43; | 1 | 3.50 | | 2 | 3.65 | | 3">
 <meta itemprop="datePublished" content="2020-09-10T21:57:47-04:00" />
 <meta itemprop="dateModified" content="2020-09-10T21:57:47-04:00" />
-<meta itemprop="wordCount" content="268">
+<meta itemprop="wordCount" content="282">
 
 
 
@@ -149,7 +149,7 @@
         <ul class="category-list">
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">131</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">5</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">12</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">15</span></li>
         </ul>
     </div>
 </div>
@@ -200,7 +200,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">139</span></li>
+                    class="tag-list-count">142</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -323,7 +323,7 @@
 <p><strong>Important Note:</strong> For MySQL solutions, to escape reserved words used as column names, you can use an apostrophe before and after the keyword. For example <strong><code>Rank</code></strong>.</p>
 </blockquote>
 <h2 id="solution">Solution</h2>
-<p>2020-09-10 Notes:</p>
+<h4 id="2020-09-10-notes">2020-09-10 Notes:</h4>
 <ul>
 <li>DENSE_RANK() 的解法比COUNT(DISTINCT)的解法要快一倍。window function更高效。</li>
 <li>好几天不刷SQL又手生了。。。</li>
@@ -332,6 +332,7 @@
 FROM scores
 ORDER BY 2
 </code></pre>
+<p>sub query的写法，效率慢。</p>
 <pre><code class="language-mysql">SELECT score, (SELECT COUNT(DISTINCT score) FROM scores WHERE score &gt;= a.score) as 'rank'
 FROM scores a
 ORDER BY 2
