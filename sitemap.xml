@@ -3,28 +3,203 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://foxisawesome.github.io/sql/181-employees-earning-more-than-their-managers/</loc>
-    <lastmod>2020-09-24T21:57:09-04:00</lastmod>
+    <loc>https://foxisawesome.github.io/posts/74-search-a-2d-matrix/</loc>
+    <lastmod>2020-09-25T19:49:42-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/categories/algo/</loc>
+    <lastmod>2020-09-25T19:49:42-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/binary_search/</loc>
+    <lastmod>2020-09-25T19:49:42-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/categories/</loc>
-    <lastmod>2020-09-24T21:57:09-04:00</lastmod>
+    <lastmod>2020-09-25T19:49:42-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/tags/leetcode/</loc>
-    <lastmod>2020-09-24T21:57:09-04:00</lastmod>
+    <lastmod>2020-09-25T19:49:42-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/</loc>
+    <lastmod>2020-09-25T19:49:42-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/</loc>
+    <lastmod>2020-09-25T19:49:42-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/</loc>
+    <lastmod>2020-09-25T19:49:42-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/cheatsheet/</loc>
+    <lastmod>2020-09-25T19:13:47-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/categories/note/</loc>
+    <lastmod>2020-09-25T19:13:47-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/36-valid-sudoku/</loc>
+    <lastmod>2020-09-25T19:13:25-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/matrix/</loc>
+    <lastmod>2020-09-25T19:13:25-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/771-jewels-and-stones/</loc>
+    <lastmod>2020-09-25T15:54:01-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/hashtable/</loc>
+    <lastmod>2020-09-25T15:54:01-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/62-unique-paths/</loc>
+    <lastmod>2020-09-25T15:47:03-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/dp/</loc>
+    <lastmod>2020-09-25T15:47:03-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/819-most-common-word/</loc>
+    <lastmod>2020-09-25T14:39:42-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/string/</loc>
+    <lastmod>2020-09-25T14:39:42-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/1137-n-th-tribonacci-number/</loc>
+    <lastmod>2020-09-25T14:13:22-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/recursion/</loc>
+    <lastmod>2020-09-25T14:13:22-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/303-range-sum-query-immutable/</loc>
+    <lastmod>2020-09-25T14:03:09-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/array/</loc>
+    <lastmod>2020-09-25T14:03:09-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/209-minimum-size-subarray-sum/</loc>
+    <lastmod>2020-09-25T11:08:36-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/sliding_window/</loc>
+    <lastmod>2020-09-25T11:08:36-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/167-two-sum-ii-input-array-is-sorted/</loc>
+    <lastmod>2020-09-25T10:36:56-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/two_pointers/</loc>
+    <lastmod>2020-09-25T10:36:56-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/75-sort-colors/</loc>
+    <lastmod>2020-09-25T10:27:10-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/sort/</loc>
+    <lastmod>2020-09-25T10:27:10-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/sql/181-employees-earning-more-than-their-managers/</loc>
     <lastmod>2020-09-24T21:57:09-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -39,13 +214,6 @@
   
   <url>
     <loc>https://foxisawesome.github.io/sql/</loc>
-    <lastmod>2020-09-24T21:57:09-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/tags/</loc>
     <lastmod>2020-09-24T21:57:09-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -67,27 +235,6 @@
   
   <url>
     <loc>https://foxisawesome.github.io/posts/875-koko-eating-bananas/</loc>
-    <lastmod>2020-09-24T13:51:49-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/categories/algo/</loc>
-    <lastmod>2020-09-24T13:51:49-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/tags/binary_search/</loc>
-    <lastmod>2020-09-24T13:51:49-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/posts/</loc>
     <lastmod>2020-09-24T13:51:49-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -136,13 +283,6 @@
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/tags/string/</loc>
-    <lastmod>2020-09-24T13:13:11-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://foxisawesome.github.io/posts/38-count-and-say/</loc>
     <lastmod>2020-09-24T12:56:27-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -171,13 +311,6 @@
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/tags/two_pointers/</loc>
-    <lastmod>2020-09-23T20:30:03-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://foxisawesome.github.io/posts/28-implement-strstr/</loc>
     <lastmod>2020-09-23T20:08:40-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -186,13 +319,6 @@
   
   <url>
     <loc>https://foxisawesome.github.io/posts/349-intersection-of-two-arrays/</loc>
-    <lastmod>2020-09-23T20:03:57-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/tags/hashtable/</loc>
     <lastmod>2020-09-23T20:03:57-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -263,13 +389,6 @@
   
   <url>
     <loc>https://foxisawesome.github.io/posts/518-coin-change-2/</loc>
-    <lastmod>2020-09-23T10:32:12-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/tags/dp/</loc>
     <lastmod>2020-09-23T10:32:12-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -500,13 +619,6 @@
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/tags/array/</loc>
-    <lastmod>2020-09-20T12:16:32-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://foxisawesome.github.io/posts/983-minimum-cost-for-tickets/</loc>
     <lastmod>2020-09-19T22:24:28-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -522,13 +634,6 @@
   
   <url>
     <loc>https://foxisawesome.github.io/posts/692-top-k-frequent-words/</loc>
-    <lastmod>2020-09-19T21:00:53-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/tags/sort/</loc>
     <lastmod>2020-09-19T21:00:53-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -592,13 +697,6 @@
   
   <url>
     <loc>https://foxisawesome.github.io/posts/3-longest-substring-without-repeating-characters/</loc>
-    <lastmod>2020-09-14T16:25:01-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/tags/sliding_window/</loc>
     <lastmod>2020-09-14T16:25:01-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -738,13 +836,6 @@
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/categories/note/</loc>
-    <lastmod>2020-09-11T22:01:16-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://foxisawesome.github.io/posts/%E5%8F%8C%E6%8C%87%E9%92%88%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/</loc>
     <lastmod>2020-09-11T22:01:16-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -816,13 +907,6 @@
   
   <url>
     <loc>https://foxisawesome.github.io/posts/312-burst-balloons/</loc>
-    <lastmod>2020-09-10T20:58:53-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/tags/recursion/</loc>
     <lastmod>2020-09-10T20:58:53-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1188,6 +1272,13 @@
   <url>
     <loc>https://foxisawesome.github.io/posts/linked-list-note/</loc>
     <lastmod>2020-08-30T16:54:06-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/50-powx-n/</loc>
+    <lastmod>2020-08-28T13:47:34-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
