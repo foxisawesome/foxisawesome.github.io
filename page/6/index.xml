@@ -5,10 +5,59 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 25 Sep 2020 19:49:42 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 27 Sep 2020 19:18:17 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>二分查找详解</title>
+      <link>https://foxisawesome.github.io/posts/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Fri, 11 Sep 2020 14:40:26 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E8%AF%A6%E8%A7%A3/</guid>
+      <description>original labuladong post 先给大家讲个笑话乐呵一下： 有一天阿东到图书馆借了 N 本书，出图书馆的时候，警报响了，于是保安把阿东拦下，要检查一下哪本书没有登记出借。阿</description>
+    </item>
+    
+    <item>
+      <title>829 Consecutive Numbers Sum</title>
+      <link>https://foxisawesome.github.io/posts/829-consecutive-numbers-sum/</link>
+      <pubDate>Fri, 11 Sep 2020 13:50:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/829-consecutive-numbers-sum/</guid>
+      <description>LC 829 Consecutive Numbers Sum Given a positive integer N, how many ways can we write it as a sum of consecutive positive integers? Input: 15 Output: 4 Explanation: 15 = 15 = 8 + 7 = 4 + 5 + 6 = 1 + 2 + 3 + 4 + 5 Solution 2020-09-11 Notes: 以为又是backtrackin</description>
+    </item>
+    
+    <item>
+      <title>197 Rising Temperature</title>
+      <link>https://foxisawesome.github.io/sql/197-rising-temperature/</link>
+      <pubDate>Fri, 11 Sep 2020 10:00:18 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/197-rising-temperature/</guid>
+      <description>LC 197 Rising Temperature   Write an SQL query to find all dates&amp;rsquo; id with higher temperature compared to its previous dates (yesterday).
+Weather +----+------------+-------------+ | id | recordDate | Temperature | +----+------------+-------------+ | 1 | 2015-01-01 | 10 | | 2 | 2015-01-02 | 25 | | 3 | 2015-01-03 | 20 | | 4 | 2015-01-04 | 30 | +----+------------+-------------+ Result table: +----+ | id | +----+ | 2 | | 4 | +----+   Solution 2020-09-11 Notes:</description>
+    </item>
+    
+    <item>
+      <title>184 Department Highest Salary</title>
+      <link>https://foxisawesome.github.io/sql/184-department-highest-salary/</link>
+      <pubDate>Fri, 11 Sep 2020 09:35:52 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/184-department-highest-salary/</guid>
+      <description>LC 184 Department Highest Salary   The Employee table holds all employees. Every employee has an Id, a salary, and there is also a column for the department Id.
++----+-------+--------+--------------+ | Id | Name | Salary | DepartmentId | +----+-------+--------+--------------+ | 1 | Joe | 70000 | 1 | | 2 | Jim | 90000 | 1 | | 3 | Henry | 80000 | 2 | | 4 | Sam | 60000 | 2 | | 5 | Max | 90000 | 1 | +----+-------+--------+--------------+  The Department table holds all departments of the company.</description>
+    </item>
+    
+    <item>
+      <title>182 Duplicate Emails</title>
+      <link>https://foxisawesome.github.io/sql/182-duplicate-emails/</link>
+      <pubDate>Thu, 10 Sep 2020 22:14:17 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/182-duplicate-emails/</guid>
+      <description>LC 182 Duplicate Emails   Write a SQL query to find all duplicate emails in a table named Person.
++----+---------+ | Id | Email | +----+---------+ | 1 | a@b.com | | 2 | c@d.com | | 3 | a@b.com | +----+---------+  For example, your query should return the following for the above table:
++---------+ | Email | +---------+ | a@b.com | +---------+   Solution 2020-09-10 Notes:</description>
+    </item>
     
     <item>
       <title>178 Rank Scores</title>
@@ -158,54 +207,6 @@ A subsequence of a string is a new string which is formed from the original stri
       
       <guid>https://foxisawesome.github.io/posts/234-palindrome-linked-list/</guid>
       <description>LC 234 Palindrome Linked List Given a singly linked list, determine if it is a palindrome. Solution 2020-09-08 Notes: Recursion solution参考了 labuladong 以下是一种比较直观但是不是optimal的解法 line 13 is a post-order traverse. # Definition for singly-linked list. # class ListNode: #</description>
-    </item>
-    
-    <item>
-      <title>325 Maximum Size Subarray Sum Equals K</title>
-      <link>https://foxisawesome.github.io/posts/325-maximum-size-subarray-sum-equals-k/</link>
-      <pubDate>Tue, 08 Sep 2020 17:08:48 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/325-maximum-size-subarray-sum-equals-k/</guid>
-      <description>LC 325 Maximum Size Subarray Sum Equals K Given an array nums and a target value k, find the maximum length of a subarray that sums to k. If there isn&amp;rsquo;t one, return 0 instead. Input: nums = [1, -1, 5, -2, 3], k = 3 Output: 4 Explanation: The subarray [1, -1, 5, -2] sums to 3 and is the longest. Solution 2020-09-08 Notes: 此题解法跟</description>
-    </item>
-    
-    <item>
-      <title>560 Subarray Sum Equals K</title>
-      <link>https://foxisawesome.github.io/posts/560-subarray-sum-equals-k/</link>
-      <pubDate>Tue, 08 Sep 2020 15:07:27 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/560-subarray-sum-equals-k/</guid>
-      <description>LC 560 Subarray Sum Equals K Given an array of integers and an integer k, you need to find the total number of continuous subarrays whose sum equals to k. Input:nums = [1,1,1], k = 2 Output: 2 Solution 2020-09-08 Notes: 看了labuladong 的总结 预先算一个cumulativ</description>
-    </item>
-    
-    <item>
-      <title>1109 Corporate Flight Bookings</title>
-      <link>https://foxisawesome.github.io/posts/1109-corporate-flight-bookings/</link>
-      <pubDate>Tue, 08 Sep 2020 13:44:08 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1109-corporate-flight-bookings/</guid>
-      <description>LC 1109 Corporate Flight Bookings There are n flights, and they are labeled from 1 to n. We have a list of flight bookings. The i-th booking bookings[i] = [i, j, k] means that we booked k seats from flights labeled i to j inclusive. Return an array answer of length n, representing the number of seats booked on each flight in order of their label. Input: bookings = [[1,2,10],[2,3,20],[2,5,25]],</description>
-    </item>
-    
-    <item>
-      <title>1539 Kth Missing Positive Number</title>
-      <link>https://foxisawesome.github.io/posts/1539-kth-missing-positive-number/</link>
-      <pubDate>Mon, 07 Sep 2020 22:03:58 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1539-kth-missing-positive-number/</guid>
-      <description>LC 1539 Kth Missing Positive Number Given an array arr of positive integers sorted in a strictly increasing order, and an integer k. Find the kth positive integer that is missing from this array. Input: arr = [2,3,4,7,11], k = 5 Output: 9 Explanation: The missing positive integers are [1,5,6,8,9,10,12,13,...]. The 5th missing positive integer is 9. Solution 2020-09-07 Notes: O(N) solution is pretty easy, but not optimal. the binary</description>
-    </item>
-    
-    <item>
-      <title>1512 Number of Good Pairs</title>
-      <link>https://foxisawesome.github.io/posts/1512-number-of-good-pairs/</link>
-      <pubDate>Sun, 06 Sep 2020 21:03:48 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1512-number-of-good-pairs/</guid>
-      <description>LC 1512 Number of Good Pairs   Given an array of integers nums.
-A pair (i,j) is called good if nums[i] == nums[j] and i &amp;lt; j.
-Return the number of good pairs.
- Solution 2020-09-06 Notes:  One-pass using hash table. line 7-9, if gets a match, how many pairs it can make to previous ones is d[num].  class Solution: def numIdenticalPairs(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 ans = 0 d = dict() for num in nums: if num in d: ans += d[num] d[num] += 1 else: d[num] = 1 return ans # Time O(N) # Space O(N)   Use double loop:  class Solution: def numIdenticalPairs(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 n = len(nums) ans = 0 for i in range(n): j = i+1 while j &amp;lt; n: if nums[i] == nums[j]: ans += 1 j += 1 return ans # Time O(N^2) # Space O(1)  </description>
     </item>
     
   </channel>
