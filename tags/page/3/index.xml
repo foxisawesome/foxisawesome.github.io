@@ -5,10 +5,82 @@
     <link>https://foxisawesome.github.io/tags/</link>
     <description>Recent content in Tags on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 27 Sep 2020 19:18:17 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2020 22:06:14 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>202 Happy Number</title>
+      <link>https://foxisawesome.github.io/posts/202-happy-number/</link>
+      <pubDate>Wed, 23 Sep 2020 19:33:27 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/202-happy-number/</guid>
+      <description>LC 202 Happy Number Write an algorithm to determine if a number n is &amp;ldquo;happy&amp;rdquo;. A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers</description>
+    </item>
+    
+    <item>
+      <title>278 First Bad Version</title>
+      <link>https://foxisawesome.github.io/posts/278-first-bad-version/</link>
+      <pubDate>Wed, 23 Sep 2020 19:18:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/278-first-bad-version/</guid>
+      <description>LC 278 First Bad Version You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad. Suppose you have n versions [1, 2, ..., n] and you want to find out the first bad one,</description>
+    </item>
+    
+    <item>
+      <title>35 Search Insert Position</title>
+      <link>https://foxisawesome.github.io/posts/35-search-insert-position/</link>
+      <pubDate>Wed, 23 Sep 2020 19:09:26 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/35-search-insert-position/</guid>
+      <description>LC 35 Search Insert Position Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order. Solution 2020-09-23 Notes: 标准的left bound 的binary search 写法。 初秋的夜晚很舒服。 class Solution: def</description>
+    </item>
+    
+    <item>
+      <title>134 Gas Station</title>
+      <link>https://foxisawesome.github.io/posts/134-gas-station/</link>
+      <pubDate>Wed, 23 Sep 2020 15:14:28 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/134-gas-station/</guid>
+      <description>LC 134 Gas Station There are N gas stations along a circular route, where the amount of gas at station i is gas[i]. You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from station i to its next station (i+1). You begin the journey with an empty tank at one of the gas stations. Return the starting gas station&amp;rsquo;s index if you</description>
+    </item>
+    
+    <item>
+      <title>103 Binary Tree Zigzag Level Order Traversal</title>
+      <link>https://foxisawesome.github.io/posts/103-binary-tree-zigzag-level-order-traversal/</link>
+      <pubDate>Wed, 23 Sep 2020 14:58:07 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/103-binary-tree-zigzag-level-order-traversal/</guid>
+      <description>LC 103 Binary Tree Zigzag Level Order Traversal Given a binary tree, return the zigzag level order traversal of its nodes&amp;rsquo; values. (ie, from left to right, then right to left for the next level and alternate between). For example: Given binary tree [3,9,20,null,null,15,7], 3 / \ 9 20 / \ 15 7 return its zigzag level order traversal as: [ [3], [20,9], [15,7] ] Solution 2020-09-23 Notes: 一个</description>
+    </item>
+    
+    <item>
+      <title>1283 Find the Smallest Divisor Given a Threshold</title>
+      <link>https://foxisawesome.github.io/posts/1283-find-the-smallest-divisor-given-a-threshold/</link>
+      <pubDate>Wed, 23 Sep 2020 14:22:33 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1283-find-the-smallest-divisor-given-a-threshold/</guid>
+      <description>LC 1283 Find the Smallest Divisor Given a Threshold a positive integer divisor and divide all the array by it and sum the result of the division. Find the smallest divisor such that the result mentioned above is less than or equal to threshold. Input: nums = [1,2,5,9], threshold = 6 Output: 5 Explanation: We can get a sum to 17 (1+2+5+9) if the divisor is 1. If the divisor</description>
+    </item>
+    
+    <item>
+      <title>179 Largest Number</title>
+      <link>https://foxisawesome.github.io/posts/179-largest-number/</link>
+      <pubDate>Wed, 23 Sep 2020 11:12:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/179-largest-number/</guid>
+      <description>LC 179 Largest Number Given a list of non negative integers, arrange them such that they form the largest number. Input: [3,30,34,5,9] Output: &amp;quot;9534330&amp;quot; Solution 2020-09-23 Notes: 开始的时候想复杂了，想着先比较第一位，要是第一位相同，再比较第二位，e.g. 5 &amp;amp; 54, 下一</description>
+    </item>
+    
+    <item>
+      <title>518 Coin Change 2</title>
+      <link>https://foxisawesome.github.io/posts/518-coin-change-2/</link>
+      <pubDate>Wed, 23 Sep 2020 10:32:12 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/518-coin-change-2/</guid>
+      <description>LC 518 Coin Change 2 You are given coins of different denominations and a total amount of money. Write a function to compute the number of combinations that make up that amount. You may assume that you have infinite number of each kind of coin. Input: amount = 5, coins = [1, 2, 5] Output: 4 Explanation: there are four ways to make up the amount: 5=5 5=2+2+1 5=2+1+1+1 5=1+1+1+1+1</description>
+    </item>
     
     <item>
       <title>64 Minimum Path Sum</title>
@@ -117,78 +189,6 @@
       
       <guid>https://foxisawesome.github.io/posts/77-combinations/</guid>
       <description>LC 77 Combinations Given two integers n and k, return all possible combinations of k numbers out of 1 &amp;hellip; n. Solution 2020-09-21 Notes: Dfs 模版搞一下。没啥特别的。 class Solution: def combine(self, n: int, k: int) -&amp;gt; List[List[int]]: out = [] nums = [i for i in range(1,n+1)] self.dfs(n,k,nums,[],out) return out def dfs(self, n, k, nums, path, out): if len(path)==k: out.append(path[:])</description>
-    </item>
-    
-    <item>
-      <title>40 Combination Sum Ii</title>
-      <link>https://foxisawesome.github.io/posts/40-combination-sum-ii/</link>
-      <pubDate>Mon, 21 Sep 2020 14:17:59 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/40-combination-sum-ii/</guid>
-      <description>LC 40 Combination Sum Ii Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target. Each number in candidates may only be used once in the combination. Input: candidates = [10,1,2,7,6,1,5], target = 8, A solution set is:[[1, 7], [1, 2, 5], [2, 6],[1, 1, 6]] Solution 2020-09-21 Notes: 这题与39题</description>
-    </item>
-    
-    <item>
-      <title>39 Combination Sum</title>
-      <link>https://foxisawesome.github.io/posts/39-combination-sum/</link>
-      <pubDate>Mon, 21 Sep 2020 14:11:52 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/39-combination-sum/</guid>
-      <description>LC 39 Combination Sum Given a set of candidate numbers (candidates) (without duplicates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target. Input: candidates = [2,3,6,7], target = 7, A solution set is: [[7],[2,2,3]] Solution 2020-09-21 Notes: 简单的DFS题，注意：path要是list(),</description>
-    </item>
-    
-    <item>
-      <title>17 Letter Combinations of a Phone Number</title>
-      <link>https://foxisawesome.github.io/posts/17-letter-combinations-of-a-phone-number/</link>
-      <pubDate>Mon, 21 Sep 2020 14:04:33 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/17-letter-combinations-of-a-phone-number/</guid>
-      <description>LC 17 Letter Combinations of a Phone Number Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Solution 2020-09-21 Notes: 很简单的一道backtracking题套模版就可以了。为了避免dups，每次传入r</description>
-    </item>
-    
-    <item>
-      <title>921 Minimum Add to Make Parentheses Valid</title>
-      <link>https://foxisawesome.github.io/posts/921-minimum-add-to-make-parentheses-valid/</link>
-      <pubDate>Sun, 20 Sep 2020 21:05:02 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/921-minimum-add-to-make-parentheses-valid/</guid>
-      <description>LC 921 Minimum Add to Make Parentheses Valid Given a string S of &#39;(&#39; and &#39;)&#39; parentheses, we add the minimum number of parentheses ( &#39;(&#39; or &#39;)&#39;, and in any positions ) so that the resulting parentheses string is valid. Solution 2020-09-20 Notes: 一遍就过的题没啥好说的。 class Solution: def minAddToMakeValid(self, S: str) -&amp;gt; int: if not S: return 0 stack</description>
-    </item>
-    
-    <item>
-      <title>22 Generate Parentheses</title>
-      <link>https://foxisawesome.github.io/posts/22-generate-parentheses/</link>
-      <pubDate>Sun, 20 Sep 2020 20:28:52 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/22-generate-parentheses/</guid>
-      <description>LC 22 Generate Parentheses Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses. For example, given n = 3, a solution set is: [ &amp;quot;((()))&amp;quot;, &amp;quot;(()())&amp;quot;, &amp;quot;(())()&amp;quot;, &amp;quot;()(())&amp;quot;, &amp;quot;()()()&amp;quot; ] Solution 2020-09-20 Notes: 可以直接套用backtracking的模版，主要是l&amp;lt;n</description>
-    </item>
-    
-    <item>
-      <title>618 Students Report by Geography</title>
-      <link>https://foxisawesome.github.io/sql/618-students-report-by-geography/</link>
-      <pubDate>Sun, 20 Sep 2020 19:00:41 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/618-students-report-by-geography/</guid>
-      <description>LC 618 Students Report by Geography input | name | continent | |--------|-----------| | Jack | America | | Pascal | Europe | | Xi | Asia | | Jane | America | output | America | Asia | Europe | |---------|------|--------| | Jack | Xi | Pascal | | Jane | | | Solution 2020-09-20 Notes: 很经典的hard SQL，p</description>
-    </item>
-    
-    <item>
-      <title>1179 Reformat Department Table</title>
-      <link>https://foxisawesome.github.io/sql/1179-reformat-department-table/</link>
-      <pubDate>Sun, 20 Sep 2020 18:55:05 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1179-reformat-department-table/</guid>
-      <description>LC 1179 Reformat Department Table Write an SQL query to reformat the table such that there is a department id column and a revenue column for each month. Solution 2020-09-20 Notes: 这题我想成了LC 618 SELECT id, SUM(if(month = &#39;Jan&#39;, revenue, null)) AS Jan_Revenue, SUM(if(month = &#39;Feb&#39;, revenue, null)) AS Feb_Revenue, SUM(if(month = &#39;Mar&#39;, revenue, null)) AS Mar_Revenue, SUM(if(month = &#39;Apr&#39;, revenue, null)) AS Apr_Revenue,</description>
-    </item>
-    
-    <item>
-      <title>253 Meeting Rooms II</title>
-      <link>https://foxisawesome.github.io/posts/253-meeting-rooms-ii/</link>
-      <pubDate>Sun, 20 Sep 2020 18:20:53 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/253-meeting-rooms-ii/</guid>
-      <description>LC 253 Meeting Rooms II Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si &amp;lt; ei), find the minimum number of conference rooms required. Input: [[0, 30],[5, 10],[15, 20]] Output: 2 Solution 2020-09-20 Notes: 核心是用 存 ending time to a min-heap, 用starting time与heap比较</description>
     </item>
     
   </channel>

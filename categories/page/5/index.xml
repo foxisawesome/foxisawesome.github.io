@@ -5,10 +5,84 @@
     <link>https://foxisawesome.github.io/categories/</link>
     <description>Recent content in Categories on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 27 Sep 2020 19:18:17 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 28 Sep 2020 22:06:14 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>70 Climbing Stairs</title>
+      <link>https://foxisawesome.github.io/posts/70-climbing-stairs/</link>
+      <pubDate>Tue, 15 Sep 2020 16:48:27 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/70-climbing-stairs/</guid>
+      <description>LC 70 Climbing Stairs You are climbing a stair case. It takes n steps to reach to the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top? Solution 2020-09-15 Notes: 最经典的dp题了。dp[i] = dp[i-1] + dp[i-2], 主要是dp[i] 和</description>
+    </item>
+    
+    <item>
+      <title>91 Decode Ways</title>
+      <link>https://foxisawesome.github.io/posts/91-decode-ways/</link>
+      <pubDate>Tue, 15 Sep 2020 13:32:28 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/91-decode-ways/</guid>
+      <description>LC 91 Decode Ways A message containing letters from A-Z is being encoded to numbers using the following mapping: &#39;A&#39; -&amp;gt; 1 &#39;B&#39; -&amp;gt; 2 ... &#39;Z&#39; -&amp;gt; 26 Given a non-empty string containing only digits, determine the total number of ways to decode it. Input: &amp;ldquo;226&amp;rdquo; Output: 3 Explanation: It could be decoded as &amp;ldquo;BZ&amp;rdquo; (2 26), &amp;ldquo;VF&amp;rdquo; (22 6), or &amp;ldquo;BBF&amp;rdquo; (2 2 6). Solution 2020-09-15 Notes: 开</description>
+    </item>
+    
+    <item>
+      <title>238 Product of Array Except Self</title>
+      <link>https://foxisawesome.github.io/posts/238-product-of-array-except-self/</link>
+      <pubDate>Tue, 15 Sep 2020 13:22:13 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/238-product-of-array-except-self/</guid>
+      <description>LC 238 Product of Array Except Self Given an array nums of n integers where n &amp;gt; 1, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i]. Input: [1,2,3,4] Output: [24,12,8,6] Solution 2020-09-15 Notes: 3-pass, space O(N) solution. L[i] = cumulative product of nums[:i], R[i] = cumulative product of nums[:i:-1] class Solution: def productExceptSelf(self, nums: List[int]) -&amp;gt; List[int]: n</description>
+    </item>
+    
+    <item>
+      <title>56 Merge Intervals</title>
+      <link>https://foxisawesome.github.io/posts/56-merge-intervals/</link>
+      <pubDate>Tue, 15 Sep 2020 13:14:34 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/56-merge-intervals/</guid>
+      <description>LC 56 Merge Intervals Given a collection of intervals, merge all overlapping intervals. Input: intervals = [[1,3],[2,6],[8,10],[15,18]] Output: [[1,6],[8,10],[15,18]] Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6]. Solution 2020-09-15 Notes: 先sort一遍 by x[0], x[1] 比较 ans[-1][1] 与 x[0]的关系， 很简单。 class Solution: def merge(self, intervals: List[List[int]]) -&amp;gt; List[List[int]]: if not intervals:</description>
+    </item>
+    
+    <item>
+      <title>23 Merge K Sorted Lists</title>
+      <link>https://foxisawesome.github.io/posts/23-merge-k-sorted-lists/</link>
+      <pubDate>Mon, 14 Sep 2020 21:04:50 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/23-merge-k-sorted-lists/</guid>
+      <description>LC 23 Merge K Sorted Lists You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list and return it. Input: lists = [[1,4,5],[1,3,4],[2,6]] Output: [1,1,2,3,4,4,5,6] Explanation: The linked-lists are: [ 1-&amp;gt;4-&amp;gt;5, 1-&amp;gt;3-&amp;gt;4, 2-&amp;gt;6 ] merging them into one sorted list: 1-&amp;gt;1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;4-&amp;gt;5-&amp;gt;6 Solution 2020-09-14 Notes: 最简单暴力，最挫的方法。</description>
+    </item>
+    
+    <item>
+      <title>3 Longest Substring Without Repeating Characters</title>
+      <link>https://foxisawesome.github.io/posts/3-longest-substring-without-repeating-characters/</link>
+      <pubDate>Mon, 14 Sep 2020 16:25:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/3-longest-substring-without-repeating-characters/</guid>
+      <description>LC 3 Longest Substring Without Repeating Characters Given a string s, find the length of the longest substring without repeating characters. Solution 2020-09-14 Notes: 经典题，要类似 LC5 longest palindrome 那么做，就得O(N^2) ，不能通过。应该用sliding window one pass 完成。 sliding w</description>
+    </item>
+    
+    <item>
+      <title>516 Longest Palindromic Subsequence</title>
+      <link>https://foxisawesome.github.io/posts/516-longest-palindromic-subsequence/</link>
+      <pubDate>Mon, 14 Sep 2020 15:20:17 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/516-longest-palindromic-subsequence/</guid>
+      <description>LC 516 Longest Palindromic Subsequence   Given a string s, find the longest palindromic subsequence&amp;rsquo;s length in s. You may assume that the maximum length of s is 1000.
+ Solution 2020-09-14 Notes:
+   class Solution: def longestPalindromeSubseq(self, s: str) -&amp;gt; int: n = len(s) # dp[i][j]: max palindromic length of s[i:j+1] # assume: dp[i+1][j-1] has max length # then: if s[i]==s[j]: dp[i][j] = dp[i+1][j-1]+2 # if s[i] !</description>
+    </item>
+    
+    <item>
+      <title>5 Longest Palindromic Substring</title>
+      <link>https://foxisawesome.github.io/posts/5-longest-palindromic-substring/</link>
+      <pubDate>Mon, 14 Sep 2020 10:05:40 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/5-longest-palindromic-substring/</guid>
+      <description>LC 5 Longest Palindromic Substring Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000. Input: &amp;quot;babad&amp;quot; Output: &amp;quot;bab&amp;quot; Note: &amp;quot;aba&amp;quot; is also a valid answer. Solution 2020-09-14 Notes: 本质是dp，与LC 516相同 class Solution: def longestPalindrome(self, s: str) -&amp;gt; str: if not s: return &amp;quot;&amp;quot; n =</description>
+    </item>
     
     <item>
       <title>937 Reorder Data in Log Files</title>
@@ -119,78 +193,6 @@ Input: [1,3,null,null,2] Output: [3,1,null,null,2]   Solution 2020-09-13 Notes:
       
       <guid>https://foxisawesome.github.io/posts/987-vertical-order-traversal-of-a-binary-tree/</guid>
       <description>LC 987 Vertical Order Traversal of a Binary Tree Given a binary tree, return the vertical order traversal of its nodes values. For each node at position (X, Y), its left and right children respectively will be at positions (X-1, Y-1) and (X+1, Y-1). Running a vertical line from X = -infinity to X = +infinity, whenever the vertical line touches some nodes, we report the values of the nodes</description>
-    </item>
-    
-    <item>
-      <title>501 Find Mode in Binary Search Tree</title>
-      <link>https://foxisawesome.github.io/posts/501-find-mode-in-binary-search-tree/</link>
-      <pubDate>Sat, 12 Sep 2020 21:54:14 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/501-find-mode-in-binary-search-tree/</guid>
-      <description>LC 501 Find Mode in Binary Search Tree Given a binary search tree (BST) with duplicates, find all the mode(s) (the most frequently occurred element) in the given BST. Assume a BST is defined as follows: The left subtree of a node contains only nodes with keys less than or equal to the node&amp;rsquo;s key. The right subtree of a node contains only nodes with keys greater than or equal</description>
-    </item>
-    
-    <item>
-      <title>621 Task Scheduler</title>
-      <link>https://foxisawesome.github.io/posts/621-task-scheduler/</link>
-      <pubDate>Sat, 12 Sep 2020 21:00:42 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/621-task-scheduler/</guid>
-      <description>LC 621 Task Scheduler Given a characters array tasks, representing the tasks a CPU needs to do, where each letter represents a different task. Tasks could be done in any order. Each task is done in one unit of time. For each unit of time, the CPU could complete either one task or just be idle. However, there is a non-negative integer n that represents the cooldown period between two</description>
-    </item>
-    
-    <item>
-      <title>300 Longest Increasing Subsequence</title>
-      <link>https://foxisawesome.github.io/posts/300-longest-increasing-subsequence/</link>
-      <pubDate>Sat, 12 Sep 2020 20:05:08 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/300-longest-increasing-subsequence/</guid>
-      <description>LC 300 Longest Increasing Subsequence Given an unsorted array of integers, find the length of longest increasing subsequence. Example: Input: [10,9,2,5,3,7,101,18] Output: 4 Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4. Solution 2020-09-12 Notes: $\mathcal{O}(N^2)$的解，25%通过了。经典的d</description>
-    </item>
-    
-    <item>
-      <title>767 Reorganize String</title>
-      <link>https://foxisawesome.github.io/posts/767-reorganize-string/</link>
-      <pubDate>Sat, 12 Sep 2020 15:53:16 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/767-reorganize-string/</guid>
-      <description>LC 767 Reorganize String Given a string S, check if the letters can be rearranged so that two characters that are adjacent to each other are not the same. If possible, output any possible result. If not possible, return the empty string. Input: S = &amp;quot;aab&amp;quot; Output: &amp;quot;aba&amp;quot; Solution 2020-09-12 Notes: 这题的思路来自这： 有个dynamic的</description>
-    </item>
-    
-    <item>
-      <title>双指针技巧总结</title>
-      <link>https://foxisawesome.github.io/posts/%E5%8F%8C%E6%8C%87%E9%92%88%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/</link>
-      <pubDate>Fri, 11 Sep 2020 22:01:16 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/%E5%8F%8C%E6%8C%87%E9%92%88%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/</guid>
-      <description>双指针技巧总结 我把双指针技巧再分为两类，一类是「快慢指针」，一类是「左右指针」。前者解决主要解决链表中的问题，比如典型的判定链表中是否包含环</description>
-    </item>
-    
-    <item>
-      <title>团灭LC股票问题</title>
-      <link>https://foxisawesome.github.io/posts/%E5%9B%A2%E7%81%ADlc%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98/</link>
-      <pubDate>Fri, 11 Sep 2020 21:59:37 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/%E5%9B%A2%E7%81%ADlc%E8%82%A1%E7%A5%A8%E9%97%AE%E9%A2%98/</guid>
-      <description>团灭 LeetCode 股票买卖问题 很多读者抱怨 LeetCode 的股票系列问题奇技淫巧太多，如果面试真的遇到这类问题，基本不会想到那些巧妙的办法，怎么办？所以本文拒绝奇技淫</description>
-    </item>
-    
-    <item>
-      <title>142 Linked List Cycle ii</title>
-      <link>https://foxisawesome.github.io/posts/142-linked-list-cycle-ii/</link>
-      <pubDate>Fri, 11 Sep 2020 20:35:06 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/142-linked-list-cycle-ii/</guid>
-      <description>LC 142 Linked List Cycle ii Given a linked list, return the node where the cycle begins. If there is no cycle, return null. To represent a cycle in the given linked list, we use an integer pos which represents the position (0-indexed) in the linked list where tail connects to. If pos is -1, then there is no cycle in the linked list. Solution 2020-09-11 Notes: 这题的</description>
-    </item>
-    
-    <item>
-      <title>4 Median of Two Sorted Arrays</title>
-      <link>https://foxisawesome.github.io/posts/4-median-of-two-sorted-arrays/</link>
-      <pubDate>Fri, 11 Sep 2020 14:40:26 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/4-median-of-two-sorted-arrays/</guid>
-      <description>LC 4 Median of Two Sorted Arrays Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays. Solution 2020-09-11 Notes: 山景城一姐的做法一目了然！第一种用了merge sort，第二种做法是binar</description>
     </item>
     
   </channel>
