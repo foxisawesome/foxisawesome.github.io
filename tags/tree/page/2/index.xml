@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>986 Interval List Intersections</title>
+      <link>https://foxisawesome.github.io/posts/986-interval-list-intersections/</link>
+      <pubDate>Sun, 27 Sep 2020 19:18:17 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/986-interval-list-intersections/</guid>
+      <description>LC 986 Interval List Intersections Given two lists of closed intervals, each list of intervals is pairwise disjoint and in sorted order. Return the intersection of these two interval lists. (Formally, a closed interval [a, b] (with a &amp;lt;= b) denotes the set of real numbers x with a &amp;lt;= x &amp;lt;= b. The intersection of two closed intervals is a set of real numbers that is either empty, or</description>
+    </item>
+    
+    <item>
       <title>925 Long Pressed Name</title>
       <link>https://foxisawesome.github.io/posts/925-long-pressed-name/</link>
       <pubDate>Sun, 27 Sep 2020 16:14:07 -0400</pubDate>
@@ -180,15 +189,6 @@
       
       <guid>https://foxisawesome.github.io/posts/875-koko-eating-bananas/</guid>
       <description>LC 875 Koko Eating Bananas Koko loves to eat bananas. There are N piles of bananas, the i-th pile has piles[i] bananas. The guards have gone and will come back in H hours. Koko can decide her bananas-per-hour eating speed of K. Each hour, she chooses some pile of bananas, and eats K bananas from that pile. If the pile has less than K bananas, she eats all of them</description>
-    </item>
-    
-    <item>
-      <title>774 Minimize Max Distance to Gas Station</title>
-      <link>https://foxisawesome.github.io/posts/774-minimize-max-distance-to-gas-station/</link>
-      <pubDate>Thu, 24 Sep 2020 13:49:22 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/774-minimize-max-distance-to-gas-station/</guid>
-      <description>LC 774 Minimize Max Distance to Gas Station On a horizontal number line, we have gas stations at positions stations[0], stations[1], ..., stations[N-1], where N = stations.length. Now, we add K more gas stations so that D, the maximum distance between adjacent gas stations, is minimized.Return the smallest possible value of D. Input: stations = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], K = 9 Output: 0.500000</description>
     </item>
     
   </channel>

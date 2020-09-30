@@ -3,14 +3,56 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://foxisawesome.github.io/posts/793-preimage-size-of-factorial-zeroes-function/</loc>
-    <lastmod>2020-09-29T21:17:24-04:00</lastmod>
+    <loc>https://foxisawesome.github.io/posts/728-self-dividing-numbers/</loc>
+    <lastmod>2020-09-29T21:32:36-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/categories/algo/</loc>
+    <lastmod>2020-09-29T21:32:36-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/categories/</loc>
+    <lastmod>2020-09-29T21:32:36-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/leetcode/</loc>
+    <lastmod>2020-09-29T21:32:36-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/</loc>
+    <lastmod>2020-09-29T21:32:36-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/</loc>
+    <lastmod>2020-09-29T21:32:36-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/</loc>
+    <lastmod>2020-09-29T21:32:36-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/793-preimage-size-of-factorial-zeroes-function/</loc>
     <lastmod>2020-09-29T21:17:24-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -24,42 +66,7 @@
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/categories/</loc>
-    <lastmod>2020-09-29T21:17:24-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://foxisawesome.github.io/tags/dia/</loc>
-    <lastmod>2020-09-29T21:17:24-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/tags/leetcode/</loc>
-    <lastmod>2020-09-29T21:17:24-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/posts/</loc>
-    <lastmod>2020-09-29T21:17:24-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/</loc>
-    <lastmod>2020-09-29T21:17:24-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/tags/</loc>
     <lastmod>2020-09-29T21:17:24-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

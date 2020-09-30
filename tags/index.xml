@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/tags/</link>
     <description>Recent content in Tags on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 29 Sep 2020 21:17:24 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2020 21:32:36 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>728 Self Dividing Numbers</title>
+      <link>https://foxisawesome.github.io/posts/728-self-dividing-numbers/</link>
+      <pubDate>Tue, 29 Sep 2020 21:32:36 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/728-self-dividing-numbers/</guid>
+      <description>LC 728 Self Dividing Numbers A self-dividing number is a number that is divisible by every digit it contains. For example, 128 is a self-dividing number because 128 % 1 == 0, 128 % 2 == 0, and 128 % 8 == 0. Also, a self-dividing number is not allowed to contain the digit zero. Given a lower and upper number bound, output a list of every possible self dividing</description>
+    </item>
     
     <item>
       <title>793 Preimage Size of Factorial Zeroes Function</title>
@@ -188,15 +197,6 @@ Activity table: +-----------+-----------+------------+--------------+ | player_i
       
       <guid>https://foxisawesome.github.io/posts/881-boats-to-save-people/</guid>
       <description>LC 881 Boats to Save People The i-th person has weight people[i], and each boat can carry a maximum weight of limit. Each boat carries at most 2 people at the same time, provided the sum of the weight of those people is at most limit. Return the minimum number of boats to carry every given person. (It is guaranteed each person can be carried by a boat.) Input: people</description>
-    </item>
-    
-    <item>
-      <title>986 Interval List Intersections</title>
-      <link>https://foxisawesome.github.io/posts/986-interval-list-intersections/</link>
-      <pubDate>Sun, 27 Sep 2020 19:18:17 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/986-interval-list-intersections/</guid>
-      <description>LC 986 Interval List Intersections Given two lists of closed intervals, each list of intervals is pairwise disjoint and in sorted order. Return the intersection of these two interval lists. (Formally, a closed interval [a, b] (with a &amp;lt;= b) denotes the set of real numbers x with a &amp;lt;= x &amp;lt;= b. The intersection of two closed intervals is a set of real numbers that is either empty, or</description>
     </item>
     
   </channel>

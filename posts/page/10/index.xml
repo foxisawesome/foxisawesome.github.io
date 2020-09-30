@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 29 Sep 2020 21:17:24 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 29 Sep 2020 21:32:36 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>42 Trapping Rain Water</title>
+      <link>https://foxisawesome.github.io/posts/42-trapping-rain-water/</link>
+      <pubDate>Wed, 05 Aug 2020 14:01:29 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/42-trapping-rain-water/</guid>
+      <description>LC 42 Trapping Rain Water Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining. Solution 2020-08-05 Notes: 短边原理，左右指针同时走，r_max 大时短边在left，所以计算lef</description>
+    </item>
     
     <item>
       <title>206 Reverse Linked List</title>

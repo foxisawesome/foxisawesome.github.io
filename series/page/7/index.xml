@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>二分查找详解</title>
+      <link>https://foxisawesome.github.io/posts/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E8%AF%A6%E8%A7%A3/</link>
+      <pubDate>Fri, 11 Sep 2020 14:40:26 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E8%AF%A6%E8%A7%A3/</guid>
+      <description>original labuladong post 先给大家讲个笑话乐呵一下： 有一天阿东到图书馆借了 N 本书，出图书馆的时候，警报响了，于是保安把阿东拦下，要检查一下哪本书没有登记出借。阿</description>
+    </item>
+    
+    <item>
       <title>829 Consecutive Numbers Sum</title>
       <link>https://foxisawesome.github.io/posts/829-consecutive-numbers-sum/</link>
       <pubDate>Fri, 11 Sep 2020 13:50:01 -0400</pubDate>
@@ -197,15 +206,6 @@ A subsequence of a string is a new string which is formed from the original stri
       
       <guid>https://foxisawesome.github.io/posts/234-palindrome-linked-list/</guid>
       <description>LC 234 Palindrome Linked List Given a singly linked list, determine if it is a palindrome. Solution 2020-09-08 Notes: Recursion solution参考了 labuladong 以下是一种比较直观但是不是optimal的解法 line 13 is a post-order traverse. # Definition for singly-linked list. # class ListNode: #</description>
-    </item>
-    
-    <item>
-      <title>325 Maximum Size Subarray Sum Equals K</title>
-      <link>https://foxisawesome.github.io/posts/325-maximum-size-subarray-sum-equals-k/</link>
-      <pubDate>Tue, 08 Sep 2020 17:08:48 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/325-maximum-size-subarray-sum-equals-k/</guid>
-      <description>LC 325 Maximum Size Subarray Sum Equals K Given an array nums and a target value k, find the maximum length of a subarray that sums to k. If there isn&amp;rsquo;t one, return 0 instead. Input: nums = [1, -1, 5, -2, 3], k = 3 Output: 4 Explanation: The subarray [1, -1, 5, -2] sums to 3 and is the longest. Solution 2020-09-08 Notes: 此题解法跟</description>
     </item>
     
   </channel>
