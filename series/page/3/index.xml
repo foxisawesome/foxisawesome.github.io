@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>75 Sort Colors</title>
+      <link>https://foxisawesome.github.io/posts/75-sort-colors/</link>
+      <pubDate>Fri, 25 Sep 2020 10:27:10 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/75-sort-colors/</guid>
+      <description>LC 75 Sort Colors Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue. Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively. Follow up: Could you solve this problem without using the library&amp;rsquo;s sort function?</description>
+    </item>
+    
+    <item>
       <title>181 Employees Earning More Than Their Managers</title>
       <link>https://foxisawesome.github.io/sql/181-employees-earning-more-than-their-managers/</link>
       <pubDate>Thu, 24 Sep 2020 21:57:09 -0400</pubDate>
@@ -179,15 +188,6 @@
       
       <guid>https://foxisawesome.github.io/posts/35-search-insert-position/</guid>
       <description>LC 35 Search Insert Position Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order. Solution 2020-09-23 Notes: 标准的left bound 的binary search 写法。 初秋的夜晚很舒服。 class Solution: def</description>
-    </item>
-    
-    <item>
-      <title>134 Gas Station</title>
-      <link>https://foxisawesome.github.io/posts/134-gas-station/</link>
-      <pubDate>Wed, 23 Sep 2020 15:14:28 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/134-gas-station/</guid>
-      <description>LC 134 Gas Station There are N gas stations along a circular route, where the amount of gas at station i is gas[i]. You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from station i to its next station (i+1). You begin the journey with an empty tank at one of the gas stations. Return the starting gas station&amp;rsquo;s index if you</description>
     </item>
     
   </channel>

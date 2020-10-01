@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/categories/sql/</link>
     <description>Recent content in sql on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 30 Sep 2020 21:31:10 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2020 22:20:30 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/sql/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>992 Subarrays With K Different Integers</title>
+      <link>https://foxisawesome.github.io/posts/992-subarrays-with-k-different-integers/</link>
+      <pubDate>Mon, 28 Sep 2020 20:37:09 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/992-subarrays-with-k-different-integers/</guid>
+      <description>LC 992 Subarrays With K Different Integers Given an array A of positive integers, call a (contiguous, not necessarily distinct) subarray of A good if the number of different integers in that subarray is exactly K. Input: A = [1,2,1,2,3], K = 2 Output: 7 Explanation: Subarrays formed with exactly 2 different integers: [1,2], [2,1], [1,2], [2,3], [1,2,1], [2,1,2], [1,2,1,2]. Solution 2020-09-28 Notes: 看了论坛里的最</description>
+    </item>
     
     <item>
       <title>977 Squares of a Sorted Array</title>
@@ -179,15 +188,6 @@
       
       <guid>https://foxisawesome.github.io/posts/167-two-sum-ii-input-array-is-sorted/</guid>
       <description>LC 167 Two Sum II Input Array Is Sorted Given an array of integers that is already *sorted in ascending order*, find two numbers such that they add up to a specific target number. The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2. Input: numbers = [2,7,11,15], target = 9 Output: [1,2] Explanation: The</description>
-    </item>
-    
-    <item>
-      <title>75 Sort Colors</title>
-      <link>https://foxisawesome.github.io/posts/75-sort-colors/</link>
-      <pubDate>Fri, 25 Sep 2020 10:27:10 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/75-sort-colors/</guid>
-      <description>LC 75 Sort Colors Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue. Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively. Follow up: Could you solve this problem without using the library&amp;rsquo;s sort function?</description>
     </item>
     
   </channel>

@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/tags/</link>
     <description>Recent content in Tags on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 30 Sep 2020 21:31:10 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2020 22:20:30 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>921 Minimum Add to Make Parentheses Valid</title>
+      <link>https://foxisawesome.github.io/posts/921-minimum-add-to-make-parentheses-valid/</link>
+      <pubDate>Sun, 20 Sep 2020 21:05:02 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/921-minimum-add-to-make-parentheses-valid/</guid>
+      <description>LC 921 Minimum Add to Make Parentheses Valid Given a string S of &#39;(&#39; and &#39;)&#39; parentheses, we add the minimum number of parentheses ( &#39;(&#39; or &#39;)&#39;, and in any positions ) so that the resulting parentheses string is valid. Solution 2020-09-20 Notes: 一遍就过的题没啥好说的。 class Solution: def minAddToMakeValid(self, S: str) -&amp;gt; int: if not S: return 0 stack</description>
+    </item>
     
     <item>
       <title>22 Generate Parentheses</title>
@@ -180,15 +189,6 @@ Input: 1 0 1 0 0 1 0 1 1 1 1 1 1 1 1 1 0 0 1 0 Output: 4   Solution 2020-09-20 N
       
       <guid>https://foxisawesome.github.io/posts/238-product-of-array-except-self/</guid>
       <description>LC 238 Product of Array Except Self Given an array nums of n integers where n &amp;gt; 1, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i]. Input: [1,2,3,4] Output: [24,12,8,6] Solution 2020-09-15 Notes: 3-pass, space O(N) solution. L[i] = cumulative product of nums[:i], R[i] = cumulative product of nums[:i:-1] class Solution: def productExceptSelf(self, nums: List[int]) -&amp;gt; List[int]: n</description>
-    </item>
-    
-    <item>
-      <title>56 Merge Intervals</title>
-      <link>https://foxisawesome.github.io/posts/56-merge-intervals/</link>
-      <pubDate>Tue, 15 Sep 2020 13:14:34 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/56-merge-intervals/</guid>
-      <description>LC 56 Merge Intervals Given a collection of intervals, merge all overlapping intervals. Input: intervals = [[1,3],[2,6],[8,10],[15,18]] Output: [[1,6],[8,10],[15,18]] Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6]. Solution 2020-09-15 Notes: 先sort一遍 by x[0], x[1] 比较 ans[-1][1] 与 x[0]的关系， 很简单。 class Solution: def merge(self, intervals: List[List[int]]) -&amp;gt; List[List[int]]: if not intervals:</description>
     </item>
     
   </channel>

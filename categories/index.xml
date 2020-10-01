@@ -5,10 +5,22 @@
     <link>https://foxisawesome.github.io/categories/</link>
     <description>Recent content in Categories on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 30 Sep 2020 21:31:10 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2020 22:20:30 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1369 Get the Second Most Recent Activity</title>
+      <link>https://foxisawesome.github.io/sql/1369-get-the-second-most-recent-activity/</link>
+      <pubDate>Wed, 30 Sep 2020 22:20:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1369-get-the-second-most-recent-activity/</guid>
+      <description>LC 1369 Get the Second Most Recent Activity   Write an SQL query to show the second most recent activity of each user.
+If the user only has one activity, return that one.
+A user can&amp;rsquo;t perform more than one activity at the same time. Return the result table in any order.
+ Solution 2020-09-30 Notes:  straightforward by problem description.  SELECT username, activity, startDate, endDate FROM ( SELECT username, activity, startDate, endDate, ROW_NUMBER() OVER(PARTITION BY username ORDER BY startdate DESC) AS nr, COUNT(*) OVER(PARTITION BY username) AS ct FROM userActivity ) a WHERE nr=2 OR ct=1  </description>
+    </item>
     
     <item>
       <title>585 Investments in 2016</title>
@@ -188,15 +200,6 @@ Activity table: +-----------+-----------+------------+--------------+ | player_i
       
       <guid>https://foxisawesome.github.io/posts/1358-number-of-substrings-containing-all-three-characters/</guid>
       <description>LC 1358 Number of Substrings Containing All Three Characters Given a string s consisting only of characters a, b and c. Return the number of substrings containing at least one occurrence of all these characters a, b and c. Input: s = &amp;quot;abcabc&amp;quot; Output: 10 Explanation: The substrings containing at least one occurrence of the characters a, b and c are &amp;quot;abc&amp;quot;, &amp;quot;abca&amp;quot;, &amp;quot;abcab&amp;quot;, &amp;quot;abcabc&amp;quot;, &amp;quot;bca&amp;quot;, &amp;quot;bcab&amp;quot;, &amp;quot;bcabc&amp;quot;, &amp;quot;cab&amp;quot;, &amp;quot;cabc&amp;quot;</description>
-    </item>
-    
-    <item>
-      <title>992 Subarrays With K Different Integers</title>
-      <link>https://foxisawesome.github.io/posts/992-subarrays-with-k-different-integers/</link>
-      <pubDate>Mon, 28 Sep 2020 20:37:09 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/992-subarrays-with-k-different-integers/</guid>
-      <description>LC 992 Subarrays With K Different Integers Given an array A of positive integers, call a (contiguous, not necessarily distinct) subarray of A good if the number of different integers in that subarray is exactly K. Input: A = [1,2,1,2,3], K = 2 Output: 7 Explanation: Subarrays formed with exactly 2 different integers: [1,2], [2,1], [1,2], [2,3], [1,2,1], [2,1,2], [1,2,1,2]. Solution 2020-09-28 Notes: 看了论坛里的最</description>
     </item>
     
   </channel>

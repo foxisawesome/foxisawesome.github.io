@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>Sliding Window Note</title>
+      <link>https://foxisawesome.github.io/posts/sliding-window-note/</link>
+      <pubDate>Sun, 30 Aug 2020 17:08:55 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/sliding-window-note/</guid>
+      <description>滑动窗口算法的思路是这样： 1、我们在字符串S中使用双指针中的左右指针技巧，初始化left = right = 0，把索引左闭右开区间[left, right)</description>
+    </item>
+    
+    <item>
       <title>Linked List Note (First Post)</title>
       <link>https://foxisawesome.github.io/posts/linked-list-note/</link>
       <pubDate>Sun, 30 Aug 2020 16:54:06 -0400</pubDate>

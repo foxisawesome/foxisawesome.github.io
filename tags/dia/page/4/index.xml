@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/tags/dia/</link>
     <description>Recent content in dia on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 30 Sep 2020 21:31:10 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2020 22:20:30 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/dia/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>134 Gas Station</title>
+      <link>https://foxisawesome.github.io/posts/134-gas-station/</link>
+      <pubDate>Wed, 23 Sep 2020 15:14:28 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/134-gas-station/</guid>
+      <description>LC 134 Gas Station There are N gas stations along a circular route, where the amount of gas at station i is gas[i]. You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from station i to its next station (i+1). You begin the journey with an empty tank at one of the gas stations. Return the starting gas station&amp;rsquo;s index if you</description>
+    </item>
     
     <item>
       <title>103 Binary Tree Zigzag Level Order Traversal</title>
@@ -180,15 +189,6 @@
       
       <guid>https://foxisawesome.github.io/posts/17-letter-combinations-of-a-phone-number/</guid>
       <description>LC 17 Letter Combinations of a Phone Number Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Solution 2020-09-21 Notes: 很简单的一道backtracking题套模版就可以了。为了避免dups，每次传入r</description>
-    </item>
-    
-    <item>
-      <title>921 Minimum Add to Make Parentheses Valid</title>
-      <link>https://foxisawesome.github.io/posts/921-minimum-add-to-make-parentheses-valid/</link>
-      <pubDate>Sun, 20 Sep 2020 21:05:02 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/921-minimum-add-to-make-parentheses-valid/</guid>
-      <description>LC 921 Minimum Add to Make Parentheses Valid Given a string S of &#39;(&#39; and &#39;)&#39; parentheses, we add the minimum number of parentheses ( &#39;(&#39; or &#39;)&#39;, and in any positions ) so that the resulting parentheses string is valid. Solution 2020-09-20 Notes: 一遍就过的题没啥好说的。 class Solution: def minAddToMakeValid(self, S: str) -&amp;gt; int: if not S: return 0 stack</description>
     </item>
     
   </channel>
