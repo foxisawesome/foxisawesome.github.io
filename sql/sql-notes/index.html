@@ -39,7 +39,7 @@
 <meta itemprop="description" content="SQL Notes Window Functions A window function performs a calculation across a set of table rows that are somehow related to the current row. This is comparable to the type of calculation that can be done with an aggregate function. But ==unlike regular aggregate functions, use of a window function does not cause rows to become grouped into a single output row — the rows retain their separate identities==. Behind the scenes, the window function is able to access more than just the current row of the query result.">
 <meta itemprop="datePublished" content="2020-09-06T18:35:02-04:00" />
 <meta itemprop="dateModified" content="2020-09-06T18:35:02-04:00" />
-<meta itemprop="wordCount" content="3287">
+<meta itemprop="wordCount" content="3345">
 
 
 
@@ -147,9 +147,9 @@
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">162</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">164</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">6</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">21</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">23</span></li>
         </ul>
     </div>
 </div>
@@ -184,7 +184,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia/" class="tag-list-link">dia</a><span
-                    class="tag-list-count">9</span></li>
+                    class="tag-list-count">12</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dp/" class="tag-list-link">dp</a><span
@@ -204,7 +204,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">179</span></li>
+                    class="tag-list-count">183</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -224,7 +224,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/sliding_window/" class="tag-list-link">sliding_window</a><span
-                    class="tag-list-count">9</span></li>
+                    class="tag-list-count">10</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/sort/" class="tag-list-link">sort</a><span
@@ -232,7 +232,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/stack/" class="tag-list-link">stack</a><span
-                    class="tag-list-count">4</span></li>
+                    class="tag-list-count">5</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/string/" class="tag-list-link">string</a><span
@@ -410,7 +410,23 @@ WINDOW w AS (PARTITION BY depname ORDER BY salary DESC);
 </li>
 <li>
 <p><strong>When you add an <code>order by</code> to an aggregate used as a window function that aggregate turns into a &ldquo;running count&rdquo; (or whatever aggregate you use).</strong> <a href="https://stackoverflow.com/questions/50945477/count-rows-in-partition-with-order-by">link</a></p>
+<ul>
+<li>
 <p>The <code>count(*)</code> will return the number of rows up until the &ldquo;current one&rdquo; based on the order specified.</p>
+</li>
+<li>
+<p><code>SUM(case when status='start' then 1 else 0 end) OVER(ORDER BY time)</code>: to add a sessionId to this table.</p>
+<pre><code>    warehouse status units time       sessionID
+    xyz       start  1 01:00:00        1
+    xyz       add    2 02:00:00        1
+    xyz       add    1 03:00:00        1
+    xyz       complete null 04:00:00   1
+    xyz       start  3 05:00:00        2
+    xyz       add    2 06:00:00        2
+    xyz       complete null 07:00:00   2
+</code></pre>
+</li>
+</ul>
 </li>
 <li>
 <p><code>2020-07-16</code> to <code>2020-07</code>  <code>LEFT(trans_date, 7) AS month</code> or <code>DATE_FORMAT(trans_date, '%Y-%m') AS month</code></p>

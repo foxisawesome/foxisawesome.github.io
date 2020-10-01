@@ -5,10 +5,47 @@
     <link>https://foxisawesome.github.io/tags/sliding_window/</link>
     <description>Recent content in sliding_window on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 29 Sep 2020 13:02:26 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 30 Sep 2020 13:00:41 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/sliding_window/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Linked List Note (First Post)</title>
+      <link>https://foxisawesome.github.io/posts/linked-list-note/</link>
+      <pubDate>Sun, 30 Aug 2020 16:54:06 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/linked-list-note/</guid>
+      <description>开始刷Leetcode 好几个月了，今天开始学很多人用blog 记录下自己的notes，也激励自己好好刷题！First post! It takes a while for me to get how exactly Linked List</description>
+    </item>
+    
+    <item>
+      <title>917 Reverse Only Letters</title>
+      <link>https://foxisawesome.github.io/posts/917-reverse-only-letters/</link>
+      <pubDate>Sat, 29 Aug 2020 15:47:12 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/917-reverse-only-letters/</guid>
+      <description>LC 917 Reverse Only Letters   Given a string S, return the &amp;ldquo;reversed&amp;rdquo; string where all characters that are not a letter stay in the same place, and all letters reverse their positions.
+ Solution 2020-08-29 Notes: class Solution: def reverseOnlyLetters(self, S: str) -&amp;gt; str: if not S: return &#39;&#39; out = list(S) n = len(S) l, r = 0, n-1 while l &amp;lt; r: if not S[l].isalpha() and not S[r].</description>
+    </item>
+    
+    <item>
+      <title>50 Powx N</title>
+      <link>https://foxisawesome.github.io/posts/50-powx-n/</link>
+      <pubDate>Fri, 28 Aug 2020 13:47:34 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/50-powx-n/</guid>
+      <description>LC 50 Powx N Implement pow(x, n), which calculates x raised to the power n (i.e. x^n). Solution 2020-09-25 Notes: 一个月水平进化了一点。 class Solution: def myPow(self, x: float, n: int) -&amp;gt; float: if n &amp;lt; 0: return self.myPow(1/x,abs(n)) if n == 0: return 1 if n % 2 ==0: ans = self.myPow(x,n//2) ** 2 else: ans = x * self.myPow(x, n//2)</description>
+    </item>
+    
+    <item>
+      <title>滑动窗口技巧</title>
+      <link>https://foxisawesome.github.io/posts/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Mon, 10 Aug 2020 21:59:37 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%8A%80%E5%B7%A7/</guid>
+      <description>本文详解「滑动窗口」这种高级双指针技巧的算法框架，带你秒杀几道高难度的子字符串匹配问题。 LeetCode 上至少有 9 道题目可以用此方法高效解决。但是有几道是</description>
+    </item>
     
     <item>
       <title>42 Trapping Rain Water</title>
