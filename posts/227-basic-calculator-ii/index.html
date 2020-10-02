@@ -20,7 +20,7 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    <meta name="description" content="LC 227 Basic Calculator II Implement a basic calculator to evaluate a simple expression string. The expression string contains only non-negative integers, &#43;, -, *, / operators and empty spaces ``. The integer division should truncate toward zero. Input: &amp;quot;3&#43;2*2&amp;quot; Output: 7 Solution 2020-09-30 Notes: 要使用运算符号得知道operator 左右两边的数。" />
+    <meta name="description" content="LC 227 Basic Calculator II Implement a basic calculator to evaluate a simple expression string. The expression string contains only non-negative integers, &#43;, -, *, / operators and empty spaces ``. The integer division should truncate toward zero. Input: &amp;quot;3&#43;2*2&amp;quot; Output: 7 Solution 2020-09-30 Notes: Calculator 3 题：LC 224, LC 227, LC 772 都好难。三题的解法大同小异，" />
     <meta name="generator" content="Hugo 0.74.3 with theme pure" />
     <title>227 Basic Calculator II - Q. Weng</title>
     
@@ -30,23 +30,23 @@
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
     <meta property="og:title" content="227 Basic Calculator II" />
-<meta property="og:description" content="LC 227 Basic Calculator II Implement a basic calculator to evaluate a simple expression string. The expression string contains only non-negative integers, &#43;, -, *, / operators and empty spaces ``. The integer division should truncate toward zero. Input: &quot;3&#43;2*2&quot; Output: 7 Solution 2020-09-30 Notes: 要使用运算符号得知道operator 左右两边的数。" />
+<meta property="og:description" content="LC 227 Basic Calculator II Implement a basic calculator to evaluate a simple expression string. The expression string contains only non-negative integers, &#43;, -, *, / operators and empty spaces ``. The integer division should truncate toward zero. Input: &quot;3&#43;2*2&quot; Output: 7 Solution 2020-09-30 Notes: Calculator 3 题：LC 224, LC 227, LC 772 都好难。三题的解法大同小异，" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://foxisawesome.github.io/posts/227-basic-calculator-ii/" />
 <meta property="article:published_time" content="2020-09-30T14:32:48-04:00" />
 <meta property="article:modified_time" content="2020-09-30T14:32:48-04:00" />
 <meta itemprop="name" content="227 Basic Calculator II">
-<meta itemprop="description" content="LC 227 Basic Calculator II Implement a basic calculator to evaluate a simple expression string. The expression string contains only non-negative integers, &#43;, -, *, / operators and empty spaces ``. The integer division should truncate toward zero. Input: &quot;3&#43;2*2&quot; Output: 7 Solution 2020-09-30 Notes: 要使用运算符号得知道operator 左右两边的数。">
+<meta itemprop="description" content="LC 227 Basic Calculator II Implement a basic calculator to evaluate a simple expression string. The expression string contains only non-negative integers, &#43;, -, *, / operators and empty spaces ``. The integer division should truncate toward zero. Input: &quot;3&#43;2*2&quot; Output: 7 Solution 2020-09-30 Notes: Calculator 3 题：LC 224, LC 227, LC 772 都好难。三题的解法大同小异，">
 <meta itemprop="datePublished" content="2020-09-30T14:32:48-04:00" />
 <meta itemprop="dateModified" content="2020-09-30T14:32:48-04:00" />
-<meta itemprop="wordCount" content="268">
+<meta itemprop="wordCount" content="305">
 
 
 
 <meta itemprop="keywords" content="leetcode,stack,dia," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="227 Basic Calculator II"/>
-<meta name="twitter:description" content="LC 227 Basic Calculator II Implement a basic calculator to evaluate a simple expression string. The expression string contains only non-negative integers, &#43;, -, *, / operators and empty spaces ``. The integer division should truncate toward zero. Input: &quot;3&#43;2*2&quot; Output: 7 Solution 2020-09-30 Notes: 要使用运算符号得知道operator 左右两边的数。"/>
+<meta name="twitter:description" content="LC 227 Basic Calculator II Implement a basic calculator to evaluate a simple expression string. The expression string contains only non-negative integers, &#43;, -, *, / operators and empty spaces ``. The integer division should truncate toward zero. Input: &quot;3&#43;2*2&quot; Output: 7 Solution 2020-09-30 Notes: Calculator 3 题：LC 224, LC 227, LC 772 都好难。三题的解法大同小异，"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -147,7 +147,7 @@
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">164</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">171</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">6</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">24</span></li>
         </ul>
@@ -180,11 +180,11 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dfs/" class="tag-list-link">dfs</a><span
-                    class="tag-list-count">14</span></li>
+                    class="tag-list-count">15</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia/" class="tag-list-link">dia</a><span
-                    class="tag-list-count">13</span></li>
+                    class="tag-list-count">15</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dp/" class="tag-list-link">dp</a><span
@@ -204,7 +204,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">184</span></li>
+                    class="tag-list-count">191</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -212,15 +212,15 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/math/" class="tag-list-link">math</a><span
-                    class="tag-list-count">3</span></li>
+                    class="tag-list-count">4</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/matrix/" class="tag-list-link">matrix</a><span
-                    class="tag-list-count">1</span></li>
+                    class="tag-list-count">2</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/recursion/" class="tag-list-link">recursion</a><span
-                    class="tag-list-count">5</span></li>
+                    class="tag-list-count">7</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/sliding_window/" class="tag-list-link">sliding_window</a><span
@@ -232,7 +232,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/stack/" class="tag-list-link">stack</a><span
-                    class="tag-list-count">5</span></li>
+                    class="tag-list-count">7</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/string/" class="tag-list-link">string</a><span
@@ -315,6 +315,9 @@ Output: 7
 <h2 id="solution">Solution</h2>
 <h4 id="2020-09-30-notes">2020-09-30 Notes:</h4>
 <ul>
+<li>
+<p>Calculator 3 题：<a href="https://foxisawesome.github.io/posts/224-basic-calculator/">LC 224</a>, <a href="https://foxisawesome.github.io/posts/227-basic-calculator-ii/">LC 227</a>, <a href="https://foxisawesome.github.io/posts/772-basic-calculator-iii/">LC 772</a> 都好难。三题的解法大同小异，但是很多细节很容易出错。</p>
+</li>
 <li>
 <p>要使用运算符号得知道operator 左右两边的数。所以这里得用prev_op来进行计算。</p>
 <p>algo里的 variable example： stack.pop()  prev_op  digit</p>

@@ -5,10 +5,84 @@
     <link>https://foxisawesome.github.io/tags/math/</link>
     <description>Recent content in math on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 12 Sep 2020 21:00:42 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 01 Oct 2020 13:21:41 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/math/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>136 Single Number</title>
+      <link>https://foxisawesome.github.io/posts/136-single-number/</link>
+      <pubDate>Sat, 05 Sep 2020 20:58:41 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/136-single-number/</guid>
+      <description>LC 136 Single Number   Given a non-empty array of integers, every element appears twice except for one. Find that single one.
+Note: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
+ Solution 2020-09-05 Notes:  Space O(1) solution is a bit tricky.  class Solution: def singleNumber(self, nums: List[int]) -&amp;gt; int: stack = set() for num in nums: if num not in stack: stack.</description>
+    </item>
+    
+    <item>
+      <title>187 Repeated Dna Sequences</title>
+      <link>https://foxisawesome.github.io/posts/187-repeated-dna-sequences/</link>
+      <pubDate>Sat, 05 Sep 2020 20:17:11 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/187-repeated-dna-sequences/</guid>
+      <description>LC 187 Repeated Dna Sequences All DNA is composed of a series of nucleotides abbreviated as A, C, G, and T, for example: &amp;ldquo;ACGAATTCCG&amp;rdquo;. When studying DNA, it is sometimes useful to identify repeated sequences within the DNA. Write a function to find all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule. Solution 2020-09-05 Notes: 很简单的题，两个小陷</description>
+    </item>
+    
+    <item>
+      <title>1249 Minimum Remove to Make Valid Parentheses</title>
+      <link>https://foxisawesome.github.io/posts/1249-minimum-remove-to-make-valid-parentheses/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1249-minimum-remove-to-make-valid-parentheses/</guid>
+      <description>LC 1249 Minimum Remove to Make Valid Parentheses Given a string s of &#39;(&#39; , &#39;)&#39; and lowercase English characters. Your task is to remove the minimum number of parentheses ( &#39;(&#39; or &#39;)&#39;, in any positions ) so that the resulting parentheses string is valid and return any valid string. Input: s = &amp;quot;lee(t(c)o)de)&amp;quot; Output: &amp;quot;lee(t(c)o)de&amp;quot; Explanation: &amp;quot;lee(t(co)de)&amp;quot; , &amp;quot;lee(t(c)ode)&amp;quot; would also be accepted. Solution 2020-09-05 Notes: 很简</description>
+    </item>
+    
+    <item>
+      <title>316 Remove Dup Letters</title>
+      <link>https://foxisawesome.github.io/posts/316-remove-dup-letters/</link>
+      <pubDate>Fri, 04 Sep 2020 19:56:18 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/316-remove-dup-letters/</guid>
+      <description>LC 316 Remove Dup Letters  Given a string which contains only lowercase letters, remove duplicate letters so that every letter appears once and only once. You must make sure your result is the smallest in lexicographical order among all possible results.
+Input: &amp;quot;cbacdcbc&amp;quot; Output: &amp;quot;acdb&amp;quot;   Solution 2020-09-04 Notes:   Need one-pass of s to get the counter of each letter.
+  a second pass, dial down counter at each iteration.</description>
+    </item>
+    
+    <item>
+      <title>1081 Smallest Subsequence of Distinct Char</title>
+      <link>https://foxisawesome.github.io/posts/1081-smallest-subsequence-of-distinct-char/</link>
+      <pubDate>Fri, 04 Sep 2020 19:55:50 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1081-smallest-subsequence-of-distinct-char/</guid>
+      <description>LC 1081 Smallest Subsequence of Distinct Char   Return the lexicographically smallest subsequence of text that contains all the distinct characters of text exactly once.
+Input: &amp;quot;ecbacba&amp;quot; Output: &amp;quot;eacb&amp;quot;   Solution 2020-09-04 Notes:   Need one-pass of s to get the counter of each letter.
+  a second pass, dial down counter at each iteration. use a stack to record every distinct letter and keep the order of recorded letter same as their orders in the string.</description>
+    </item>
+    
+    <item>
+      <title>80 Remove Dup From Sorted Array II</title>
+      <link>https://foxisawesome.github.io/posts/80-remove-dup-from-sorted-array-ii/</link>
+      <pubDate>Fri, 04 Sep 2020 14:05:24 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/80-remove-dup-from-sorted-array-ii/</guid>
+      <description>LC 80 Remove Dup From Sorted Array II   Given a sorted array nums, remove the duplicates in-place such that duplicates appeared at most twice and return the new length.
+Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
+Given nums = [0,0,1,1,1,1,2,3,3], output [0,0,1,1,2,3,3]   Solution 2020-09-04 Notes:
+ Same thing asLC 26.  class Solution: def removeDuplicates(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 count = dict() count[nums[0]] = 1 slow, fast = 0, 1 while fast &amp;lt; len(nums): count[nums[fast]] = count.</description>
+    </item>
+    
+    <item>
+      <title>26 Remove Dup From Sorted Array</title>
+      <link>https://foxisawesome.github.io/posts/26-remove-dup-from-sorted-array/</link>
+      <pubDate>Fri, 04 Sep 2020 13:45:50 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/26-remove-dup-from-sorted-array/</guid>
+      <description>LC 26 Remove Dup From Sorted Array   Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.
+Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
+Given nums = [0,0,1,1,1,2,2,3,3,4], Your function should return length = 5, with the first five elements of nums being modified to 0, 1, 2, 3, and 4 respectively.</description>
+    </item>
     
     <item>
       <title>18 K Sum</title>
@@ -142,73 +216,6 @@ board = [ [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;E&#39;], [&#39;S&#39;,&#39;F
       
       <guid>https://foxisawesome.github.io/posts/957-prison-cells/</guid>
       <description>LC 957 Prison Cells There are 8 prison cells in a row, and each cell is either occupied or vacant. Each day, whether the cell is occupied or vacant changes according to the following rules: If a cell has two adjacent neighbors that are both occupied or both vacant, then the cell becomes occupied. Otherwise, it becomes vacant. (Note that because the prison is a row, the first and the</description>
-    </item>
-    
-    <item>
-      <title>735 Aseroid Collision</title>
-      <link>https://foxisawesome.github.io/posts/735-aseroid-collision/</link>
-      <pubDate>Mon, 31 Aug 2020 19:05:25 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/735-aseroid-collision/</guid>
-      <description>LC 735 Aseroid Collision We are given an array asteroids of integers representing asteroids in a row. For each asteroid, the absolute value represents its size, and the sign represents its direction (positive meaning right, negative meaning left). Each asteroid moves at the same speed. Find out the state of the asteroids after all collisions. If two asteroids meet, the smaller one will explode. If both are the same size,</description>
-    </item>
-    
-    <item>
-      <title>141 Linked List Cycle</title>
-      <link>https://foxisawesome.github.io/posts/141-linked-list-cycle/</link>
-      <pubDate>Sun, 30 Aug 2020 21:35:50 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/141-linked-list-cycle/</guid>
-      <description>LC 141 Linked List Cycle Given a linked list, determine if it has a cycle in it. To represent a cycle in the given linked list, we use an integer pos which represents the position (0-indexed) in the linked list where tail connects to. If pos is -1, then there is no cycle in the linked list. Example 1: Input: head = [3,2,0,-4], pos = 1 Output: true Explanation: There</description>
-    </item>
-    
-    <item>
-      <title>328 Odd Even Linked List</title>
-      <link>https://foxisawesome.github.io/posts/328-odd-even-linked-list/</link>
-      <pubDate>Sun, 30 Aug 2020 21:27:32 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/328-odd-even-linked-list/</guid>
-      <description>LC 328 Odd Even Linked List Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes. You should try to do it in place. The program should run in O(1) space complexity and O(nodes) time complexity. Example 1: Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL Output: 1-&amp;gt;3-&amp;gt;5-&amp;gt;2-&amp;gt;4-&amp;gt;NULL Solution 2020-08-30 Notes: linked list 终</description>
-    </item>
-    
-    <item>
-      <title>1266 Minimum Time Visiting All Points</title>
-      <link>https://foxisawesome.github.io/posts/1266-minimum-time-visiting-all-points/</link>
-      <pubDate>Sun, 30 Aug 2020 21:24:22 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1266-minimum-time-visiting-all-points/</guid>
-      <description>LC 1266 Minimum Time Visiting All Points On a plane there are n points with integer coordinates points[i] = [xi, yi]. Your task is to find the minimum time in seconds to visit all points. You can move according to the next rules: In one second always you can either move vertically, horizontally by one unit or diagonally (it means to move one unit vertically and one unit horizontally in</description>
-    </item>
-    
-    <item>
-      <title>530 Min Abs Dif BST</title>
-      <link>https://foxisawesome.github.io/posts/530-min-abs-dif-bst/</link>
-      <pubDate>Sun, 30 Aug 2020 20:59:36 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/530-min-abs-dif-bst/</guid>
-      <description>LC 530
-Given a binary search tree with non-negative values, find the minimum absolute difference between values of any two nodes.
- Given a binary search tree with non-negative values, find the minimum absolute difference between values of any two nodes.
-Example:
-Input: 1 \ 3 / 2 Output: 1 Explanation: The minimum absolute difference is 1, which is the difference between 2 and 1 (or between 2 and 3).   8/30/2020 Note:</description>
-    </item>
-    
-    <item>
-      <title>98 Valid BST</title>
-      <link>https://foxisawesome.github.io/posts/98-valid-bst/</link>
-      <pubDate>Sun, 30 Aug 2020 20:59:02 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/98-valid-bst/</guid>
-      <description>LC 98 Valid BST Given a binary tree, determine if it is a valid binary search tree (BST). Assume a BST is defined as follows: The left subtree of a node contains only nodes with keys less than the node&amp;rsquo;s key. The right subtree of a node contains only nodes with keys greater than the node&amp;rsquo;s key. Both the left and right subtrees must also be binary search trees. Example</description>
-    </item>
-    
-    <item>
-      <title>701 Insert Into BST</title>
-      <link>https://foxisawesome.github.io/posts/701-insert-into-bst/</link>
-      <pubDate>Sun, 30 Aug 2020 20:58:29 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/701-insert-into-bst/</guid>
-      <description>LC 701 Given the root node of a binary search tree (BST) and a value to be inserted into the tree, insert the value into the BST. Return the root node of the BST after the insertion. It is guaranteed that the new value does not exist in the original BST. Note that there may exist multiple valid ways for the insertion, as long as the tree remains a BST</description>
     </item>
     
   </channel>
