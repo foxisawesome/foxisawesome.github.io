@@ -39,7 +39,7 @@
 <meta itemprop="description" content="LC 1070 Product Sales Analysis III Write an SQL query that selects the product id, year, quantity, and price for the first year of every product sold. Solution 2020-09-23 Notes: 这题的test case 1有问题，论坛里有类似讨论。 SELECT product_id, year AS first_year, quantity, price FROM ( SELECT product_id, year, quantity, price, ROW_NUMBER() OVER(PARTITION BY product_id">
 <meta itemprop="datePublished" content="2020-09-23T21:32:01-04:00" />
 <meta itemprop="dateModified" content="2020-09-23T21:32:01-04:00" />
-<meta itemprop="wordCount" content="86">
+<meta itemprop="wordCount" content="112">
 
 
 
@@ -147,9 +147,9 @@
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">171</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">179</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">6</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">24</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">27</span></li>
         </ul>
     </div>
 </div>
@@ -184,7 +184,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia/" class="tag-list-link">dia</a><span
-                    class="tag-list-count">15</span></li>
+                    class="tag-list-count">19</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dp/" class="tag-list-link">dp</a><span
@@ -196,7 +196,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/hashtable/" class="tag-list-link">hashtable</a><span
-                    class="tag-list-count">13</span></li>
+                    class="tag-list-count">14</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/heap/" class="tag-list-link">heap</a><span
@@ -204,7 +204,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">191</span></li>
+                    class="tag-list-count">202</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -216,7 +216,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/matrix/" class="tag-list-link">matrix</a><span
-                    class="tag-list-count">2</span></li>
+                    class="tag-list-count">3</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/recursion/" class="tag-list-link">recursion</a><span
@@ -236,7 +236,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/string/" class="tag-list-link">string</a><span
-                    class="tag-list-count">9</span></li>
+                    class="tag-list-count">10</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/template/" class="tag-list-link">template</a><span
@@ -248,7 +248,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/two_pointers/" class="tag-list-link">two_pointers</a><span
-                    class="tag-list-count">16</span></li>
+                    class="tag-list-count">20</span></li>
             
         </ul>
 
@@ -319,6 +319,11 @@ FROM (
 ) a
 WHERE nr = 1
 ORDER BY 1
+</code></pre>
+<p>this works fine</p>
+<pre><code class="language-mysql">SELECT product_id, year AS first_year, quantity, price
+FROM sales
+WHERE (product_id, year) IN (SELECT product_id, MIN(year) AS year FROM sales GROUP BY product_id)
 </code></pre>
 
     </div>
