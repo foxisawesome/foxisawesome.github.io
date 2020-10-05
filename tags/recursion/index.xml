@@ -55,12 +55,12 @@ Please write a SQL query to output movies with an odd numbered ID and a descript
     </item>
     
     <item>
-      <title>137 Single Number Ii</title>
+      <title>137 Single Number II</title>
       <link>https://foxisawesome.github.io/posts/137-single-number-ii/</link>
       <pubDate>Sun, 04 Oct 2020 20:43:36 -0400</pubDate>
       
       <guid>https://foxisawesome.github.io/posts/137-single-number-ii/</guid>
-      <description>LC 137 Single Number Ii Given a non-empty array of integers, every element appears three times except for one, which appears exactly once. Find that single one. Note: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory? Input: [2,2,3,2] Output: 3 Input: [0,1,0,1,0,1,99] Output: 99 Solution 2020-10-04 Notes: 因为确定那个特殊值只出现一次，</description>
+      <description>LC 137 Single Number II Given a non-empty array of integers, every element appears three times except for one, which appears exactly once. Find that single one. Note: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory? Input: [2,2,3,2] Output: 3 Input: [0,1,0,1,0,1,99] Output: 99 Solution 2020-10-04 Notes: 因为确定那个特殊值只出现一次，</description>
     </item>
     
     <item>
@@ -91,12 +91,12 @@ Please write a SQL query to output movies with an odd numbered ID and a descript
     </item>
     
     <item>
-      <title>113 Path Sum Ii</title>
+      <title>113 Path Sum II</title>
       <link>https://foxisawesome.github.io/posts/113-path-sum-ii/</link>
       <pubDate>Sun, 04 Oct 2020 15:04:33 -0400</pubDate>
       
       <guid>https://foxisawesome.github.io/posts/113-path-sum-ii/</guid>
-      <description>LC 113 Path Sum Ii Given a binary tree and a sum, find all root-to-leaf paths where each path&amp;rsquo;s sum equals the given sum. Given the below binary tree and sum = 22, 5 / \ 4 8 / / \ 11 13 4 / \ / \ 7 2 5 1 Return: [ [5,4,11,2], [5,8,4,5] ] Solution 2020-10-04 Notes: 很明显的dfs题。但</description>
+      <description>LC 113 Path Sum II Given a binary tree and a sum, find all root-to-leaf paths where each path&amp;rsquo;s sum equals the given sum. Given the below binary tree and sum = 22, 5 / \ 4 8 / / \ 11 13 4 / \ / \ 7 2 5 1 Return: [ [5,4,11,2], [5,8,4,5] ] Solution 2020-10-04 Notes: 很明显的dfs题。但</description>
     </item>
     
     <item>
