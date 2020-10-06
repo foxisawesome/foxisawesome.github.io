@@ -11,6 +11,42 @@
     
     
     <item>
+      <title>1164 Product Price at a Given Date</title>
+      <link>https://foxisawesome.github.io/sql/1164-product-price-at-a-given-date/</link>
+      <pubDate>Fri, 02 Oct 2020 15:36:49 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1164-product-price-at-a-given-date/</guid>
+      <description>LC 1164 Product Price at a Given Date Write an SQL query to find the prices of all products on 2019-08-16. Assume the price of all products before any change is 10. The query result format is in the following example: Products table: +------------+-----------+-------------+ | product_id | new_price | change_date | +------------+-----------+-------------+ | 1 | 20 | 2019-08-14 | | 2 | 50 | 2019-08-14 | | 1 | 30</description>
+    </item>
+    
+    <item>
+      <title>161 One Edit Distance</title>
+      <link>https://foxisawesome.github.io/posts/161-one-edit-distance/</link>
+      <pubDate>Fri, 02 Oct 2020 14:14:19 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/161-one-edit-distance/</guid>
+      <description>LC 161 One Edit Distance Given two strings s and t, return true if they are both one edit distance apart, otherwise return false. A string s is said to be one distance apart from a string t if you can: Insert exactly one character into s to get t. Delete exactly one character from s to get t. Replace exactly one character of s with a different character to</description>
+    </item>
+    
+    <item>
+      <title>168 Excel Sheet Column Title</title>
+      <link>https://foxisawesome.github.io/posts/168-excel-sheet-column-title/</link>
+      <pubDate>Fri, 02 Oct 2020 13:52:16 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/168-excel-sheet-column-title/</guid>
+      <description>LC 168 Excel Sheet Column Title Given a positive integer, return its corresponding column title as appear in an Excel sheet. For example: 1 -&amp;gt; A 2 -&amp;gt; B 3 -&amp;gt; C ... 26 -&amp;gt; Z 27 -&amp;gt; AA 28 -&amp;gt; AB ... Input: 28 Output: &amp;quot;AB&amp;quot; Solution 2020-10-02 Notes: dict应该 0-indexed，然后di</description>
+    </item>
+    
+    <item>
+      <title>724 Find Pivot Index</title>
+      <link>https://foxisawesome.github.io/posts/724-find-pivot-index/</link>
+      <pubDate>Fri, 02 Oct 2020 13:38:14 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/724-find-pivot-index/</guid>
+      <description>LC 724 Find Pivot Index Given an array of integers nums, write a method that returns the &amp;ldquo;pivot&amp;rdquo; index of this array. We define the pivot index as the index where the sum of all the numbers to the left of the index is equal to the sum of all the numbers to the right of the index. If no such index exists, we should return -1. If there are</description>
+    </item>
+    
+    <item>
       <title>240 Search a 2d Matrix II</title>
       <link>https://foxisawesome.github.io/posts/240-search-a-2d-matrix-ii/</link>
       <pubDate>Fri, 02 Oct 2020 13:14:19 -0400</pubDate>
@@ -155,42 +191,6 @@ A user can&amp;rsquo;t perform more than one activity at the same time. Return t
       
       <guid>https://foxisawesome.github.io/posts/227-basic-calculator-ii/</guid>
       <description>LC 227 Basic Calculator II Implement a basic calculator to evaluate a simple expression string. The expression string contains only non-negative integers, +, -, *, / operators and empty spaces ``. The integer division should truncate toward zero. Input: &amp;quot;3+2*2&amp;quot; Output: 7 Solution 2020-09-30 Notes: Calculator 3 题：LC 224, LC 227, LC 772 都好难。三题的解法大同小异，</description>
-    </item>
-    
-    <item>
-      <title>76 Minimum Window Substring</title>
-      <link>https://foxisawesome.github.io/posts/76-minimum-window-substring/</link>
-      <pubDate>Wed, 30 Sep 2020 13:00:41 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/76-minimum-window-substring/</guid>
-      <description>LC 76 Minimum Window Substring Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n). Input: S = &amp;quot;ADOBECODEBANC&amp;quot;, T = &amp;quot;ABC&amp;quot; Output: &amp;quot;BANC&amp;quot; Solution 2020-09-30 Notes: sliding window 的同时，需要online update minimum length，并用一个d</description>
-    </item>
-    
-    <item>
-      <title>728 Self Dividing Numbers</title>
-      <link>https://foxisawesome.github.io/posts/728-self-dividing-numbers/</link>
-      <pubDate>Tue, 29 Sep 2020 21:32:36 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/728-self-dividing-numbers/</guid>
-      <description>LC 728 Self Dividing Numbers A self-dividing number is a number that is divisible by every digit it contains. For example, 128 is a self-dividing number because 128 % 1 == 0, 128 % 2 == 0, and 128 % 8 == 0. Also, a self-dividing number is not allowed to contain the digit zero. Given a lower and upper number bound, output a list of every possible self dividing</description>
-    </item>
-    
-    <item>
-      <title>793 Preimage Size of Factorial Zeroes Function</title>
-      <link>https://foxisawesome.github.io/posts/793-preimage-size-of-factorial-zeroes-function/</link>
-      <pubDate>Tue, 29 Sep 2020 21:17:24 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/793-preimage-size-of-factorial-zeroes-function/</guid>
-      <description>LC 793 Preimage Size of Factorial Zeroes Function Let f(x) be the number of zeroes at the end of x!. (Recall that x! = 1 * 2 * 3 * ... * x, and by convention, 0! = 1.) For example, f(3) = 0 because 3! = 6 has no zeroes at the end, while f(11) = 2 because 11! = 39916800 has 2 zeroes at the end. Given K,</description>
-    </item>
-    
-    <item>
-      <title>172 Factorial Trailing Zeroes</title>
-      <link>https://foxisawesome.github.io/posts/172-factorial-trailing-zeroes/</link>
-      <pubDate>Tue, 29 Sep 2020 20:24:36 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/172-factorial-trailing-zeroes/</guid>
-      <description>LC 172 Factorial Trailing Zeroes Given an integer n, return the number of trailing zeroes in n!. Follow up: Could you write a solution that works in logarithmic time complexity? Solution 2020-09-29 Notes: count N 中有几个5, 就一定有几个0. 这个写法很高级。相当于 5 分法，所以time</description>
     </item>
     
   </channel>

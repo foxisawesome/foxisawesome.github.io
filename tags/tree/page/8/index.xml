@@ -5,10 +5,46 @@
     <link>https://foxisawesome.github.io/tags/tree/</link>
     <description>Recent content in tree on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 04 Oct 2020 16:08:38 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2020 10:06:12 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/tree/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>5 Longest Palindromic Substring</title>
+      <link>https://foxisawesome.github.io/posts/5-longest-palindromic-substring/</link>
+      <pubDate>Mon, 14 Sep 2020 10:05:40 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/5-longest-palindromic-substring/</guid>
+      <description>LC 5 Longest Palindromic Substring Given a string s, find the longest palindromic substring in s. You may assume that the maximum length of s is 1000. Input: &amp;quot;babad&amp;quot; Output: &amp;quot;bab&amp;quot; Note: &amp;quot;aba&amp;quot; is also a valid answer. Solution 2020-09-14 Notes: 本质是dp，与LC 516相同 class Solution: def longestPalindrome(self, s: str) -&amp;gt; str: if not s: return &amp;quot;&amp;quot; n =</description>
+    </item>
+    
+    <item>
+      <title>937 Reorder Data in Log Files</title>
+      <link>https://foxisawesome.github.io/posts/937-reorder-data-in-log-files/</link>
+      <pubDate>Mon, 14 Sep 2020 09:19:19 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/937-reorder-data-in-log-files/</guid>
+      <description>LC 937 Reorder Data in Log Files You have an array of logs. Each log is a space delimited string of words. For each log, the first word in each log is an alphanumeric identifier. Then, either: Each word after the identifier will consist only of lowercase letters, or; Each word after the identifier will consist only of digits. We will call these two varieties of logs letter-logs and digit-logs.</description>
+    </item>
+    
+    <item>
+      <title>53 Maximum Subarray</title>
+      <link>https://foxisawesome.github.io/posts/53-maximum-subarray/</link>
+      <pubDate>Sun, 13 Sep 2020 22:09:11 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/53-maximum-subarray/</guid>
+      <description>LC 53 Maximum Subarray Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum. Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle. Input: nums = [-2,1,-3,4,-1,2,1,-5,4] Output: 6 Explanation: [4,-1,2,1] has the largest sum = 6. Solution 2020-09-13 Notes: 这是</description>
+    </item>
+    
+    <item>
+      <title>262 Trips and Users</title>
+      <link>https://foxisawesome.github.io/sql/262-trips-and-users/</link>
+      <pubDate>Sun, 13 Sep 2020 21:46:46 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/262-trips-and-users/</guid>
+      <description>LC 262 Trips and Users Write a SQL query to find the cancellation rate of requests made by unbanned users (both client and driver must be unbanned) between Oct 1, 2013 and Oct 3, 2013. The cancellation rate is computed by dividing the number of canceled (by client or driver) requests made by unbanned users by the total number of requests made by unbanned users. For the above tables, your</description>
+    </item>
     
     <item>
       <title>185 Department Top Three Salaries</title>
@@ -155,43 +191,6 @@ Input: [1,3,null,null,2] Output: [3,1,null,null,2]   Solution 2020-09-13 Notes:
       
       <guid>https://foxisawesome.github.io/posts/142-linked-list-cycle-ii/</guid>
       <description>LC 142 Linked List Cycle ii Given a linked list, return the node where the cycle begins. If there is no cycle, return null. To represent a cycle in the given linked list, we use an integer pos which represents the position (0-indexed) in the linked list where tail connects to. If pos is -1, then there is no cycle in the linked list. Solution 2020-09-11 Notes: 这题的</description>
-    </item>
-    
-    <item>
-      <title>4 Median of Two Sorted Arrays</title>
-      <link>https://foxisawesome.github.io/posts/4-median-of-two-sorted-arrays/</link>
-      <pubDate>Fri, 11 Sep 2020 14:40:26 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/4-median-of-two-sorted-arrays/</guid>
-      <description>LC 4 Median of Two Sorted Arrays Given two sorted arrays nums1 and nums2 of size m and n respectively, return the median of the two sorted arrays. Solution 2020-09-11 Notes: 山景城一姐的做法一目了然！第一种用了merge sort，第二种做法是binar</description>
-    </item>
-    
-    <item>
-      <title>二分查找详解</title>
-      <link>https://foxisawesome.github.io/posts/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E8%AF%A6%E8%A7%A3/</link>
-      <pubDate>Fri, 11 Sep 2020 14:40:26 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/%E4%BA%8C%E5%88%86%E6%9F%A5%E6%89%BE%E8%AF%A6%E8%A7%A3/</guid>
-      <description>original labuladong post 先给大家讲个笑话乐呵一下： 有一天阿东到图书馆借了 N 本书，出图书馆的时候，警报响了，于是保安把阿东拦下，要检查一下哪本书没有登记出借。阿</description>
-    </item>
-    
-    <item>
-      <title>829 Consecutive Numbers Sum</title>
-      <link>https://foxisawesome.github.io/posts/829-consecutive-numbers-sum/</link>
-      <pubDate>Fri, 11 Sep 2020 13:50:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/829-consecutive-numbers-sum/</guid>
-      <description>LC 829 Consecutive Numbers Sum Given a positive integer N, how many ways can we write it as a sum of consecutive positive integers? Input: 15 Output: 4 Explanation: 15 = 15 = 8 + 7 = 4 + 5 + 6 = 1 + 2 + 3 + 4 + 5 Solution 2020-09-11 Notes: 以为又是backtrackin</description>
-    </item>
-    
-    <item>
-      <title>197 Rising Temperature</title>
-      <link>https://foxisawesome.github.io/sql/197-rising-temperature/</link>
-      <pubDate>Fri, 11 Sep 2020 10:00:18 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/197-rising-temperature/</guid>
-      <description>LC 197 Rising Temperature   Write an SQL query to find all dates&amp;rsquo; id with higher temperature compared to its previous dates (yesterday).
-Weather +----+------------+-------------+ | id | recordDate | Temperature | +----+------------+-------------+ | 1 | 2015-01-01 | 10 | | 2 | 2015-01-02 | 25 | | 3 | 2015-01-03 | 20 | | 4 | 2015-01-04 | 30 | +----+------------+-------------+ Result table: +----+ | id | +----+ | 2 | | 4 | +----+   Solution 2020-09-11 Notes:</description>
     </item>
     
   </channel>

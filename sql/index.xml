@@ -5,10 +5,46 @@
     <link>https://foxisawesome.github.io/sql/</link>
     <description>Recent content in Sqls on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 04 Oct 2020 21:18:04 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2020 21:07:02 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/sql/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1194 Tournament Winners</title>
+      <link>https://foxisawesome.github.io/sql/1194-tournament-winners/</link>
+      <pubDate>Mon, 05 Oct 2020 21:07:02 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1194-tournament-winners/</guid>
+      <description>LC 1194 Tournament Winners The winner in each group is the player who scored the maximum total points within the group. In the case of a tie, the lowest player_id wins. Write an SQL query to find the winner in each group. The query result format is in the following example: Players table: +-----------+------------+ | player_id | group_id | +-----------+------------+ | 15 | 1 | | 25 | 1 |</description>
+    </item>
+    
+    <item>
+      <title>571 Find Median Given Frequency of Numbers</title>
+      <link>https://foxisawesome.github.io/sql/571-find-median-given-frequency-of-numbers/</link>
+      <pubDate>Mon, 05 Oct 2020 20:46:24 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/571-find-median-given-frequency-of-numbers/</guid>
+      <description>LC 571 Find Median Given Frequency of Numbers The Numbers table keeps the value of number and its frequency. +----------+-------------+ | Number | Frequency | +----------+-------------| | 0 | 7 | | 1 | 1 | | 2 | 3 | | 3 | 1 | +----------+-------------+ In this table, the numbers are 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 3, so the median is (0</description>
+    </item>
+    
+    <item>
+      <title>569 Median Employee Salary</title>
+      <link>https://foxisawesome.github.io/sql/569-median-employee-salary/</link>
+      <pubDate>Mon, 05 Oct 2020 20:26:19 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/569-median-employee-salary/</guid>
+      <description>LC 569 Median Employee Salary The Employee table holds all employees. The employee table has three columns: Employee Id, Company Name, and Salary. +-----+------------+--------+ |Id | Company | Salary | +-----+------------+--------+ |1 | A | 2341 | |2 | A | 341 | |3 | A | 15 | |4 | A | 15314 | |5 | A | 451 | |6 | A | 513 | |7 | B</description>
+    </item>
+    
+    <item>
+      <title>107 Binary Tree Level Order Traversal Ii</title>
+      <link>https://foxisawesome.github.io/posts/107-binary-tree-level-order-traversal-ii/</link>
+      <pubDate>Mon, 05 Oct 2020 10:06:12 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/107-binary-tree-level-order-traversal-ii/</guid>
+      <description>LC 107 Binary Tree Level Order Traversal Ii Given a binary tree, return the bottom-up level order traversal of its nodes&amp;rsquo; values. (ie, from left to right, level by level from leaf to root). For example: Given binary tree [3,9,20,null,null,15,7], 3 / \ 9 20 / \ 15 7 return its bottom-up level order traversal as: [ [15,7], [9,20], [3] ] Solution 2020-10-05 Notes: 学习了 负雪明</description>
+    </item>
     
     <item>
       <title>1454 Active Users</title>
@@ -162,42 +198,6 @@ Warehouse table: +------------+--------------+-------------+ | name | product_id
       
       <guid>https://foxisawesome.github.io/sql/1204-last-person-to-fit-in-the-elevator/</guid>
       <description>LC 1204 Last Person to Fit in the Elevator The maximum weight the elevator can hold is 1000. Write an SQL query to find the person_name of the last person who will fit in the elevator without exceeding the weight limit. It is guaranteed that the person who is first in the queue can fit in the elevator. The query result format is in the following example: Queue table +-----------+-------------------+--------+------+</description>
-    </item>
-    
-    <item>
-      <title>1164 Product Price at a Given Date</title>
-      <link>https://foxisawesome.github.io/sql/1164-product-price-at-a-given-date/</link>
-      <pubDate>Fri, 02 Oct 2020 15:36:49 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1164-product-price-at-a-given-date/</guid>
-      <description>LC 1164 Product Price at a Given Date Write an SQL query to find the prices of all products on 2019-08-16. Assume the price of all products before any change is 10. The query result format is in the following example: Products table: +------------+-----------+-------------+ | product_id | new_price | change_date | +------------+-----------+-------------+ | 1 | 20 | 2019-08-14 | | 2 | 50 | 2019-08-14 | | 1 | 30</description>
-    </item>
-    
-    <item>
-      <title>161 One Edit Distance</title>
-      <link>https://foxisawesome.github.io/posts/161-one-edit-distance/</link>
-      <pubDate>Fri, 02 Oct 2020 14:14:19 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/161-one-edit-distance/</guid>
-      <description>LC 161 One Edit Distance Given two strings s and t, return true if they are both one edit distance apart, otherwise return false. A string s is said to be one distance apart from a string t if you can: Insert exactly one character into s to get t. Delete exactly one character from s to get t. Replace exactly one character of s with a different character to</description>
-    </item>
-    
-    <item>
-      <title>168 Excel Sheet Column Title</title>
-      <link>https://foxisawesome.github.io/posts/168-excel-sheet-column-title/</link>
-      <pubDate>Fri, 02 Oct 2020 13:52:16 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/168-excel-sheet-column-title/</guid>
-      <description>LC 168 Excel Sheet Column Title Given a positive integer, return its corresponding column title as appear in an Excel sheet. For example: 1 -&amp;gt; A 2 -&amp;gt; B 3 -&amp;gt; C ... 26 -&amp;gt; Z 27 -&amp;gt; AA 28 -&amp;gt; AB ... Input: 28 Output: &amp;quot;AB&amp;quot; Solution 2020-10-02 Notes: dict应该 0-indexed，然后di</description>
-    </item>
-    
-    <item>
-      <title>724 Find Pivot Index</title>
-      <link>https://foxisawesome.github.io/posts/724-find-pivot-index/</link>
-      <pubDate>Fri, 02 Oct 2020 13:38:14 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/724-find-pivot-index/</guid>
-      <description>LC 724 Find Pivot Index Given an array of integers nums, write a method that returns the &amp;ldquo;pivot&amp;rdquo; index of this array. We define the pivot index as the index where the sum of all the numbers to the left of the index is equal to the sum of all the numbers to the right of the index. If no such index exists, we should return -1. If there are</description>
     </item>
     
   </channel>

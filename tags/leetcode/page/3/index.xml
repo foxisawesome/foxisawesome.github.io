@@ -5,10 +5,46 @@
     <link>https://foxisawesome.github.io/tags/leetcode/</link>
     <description>Recent content in leetcode on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 04 Oct 2020 21:18:04 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 05 Oct 2020 21:07:02 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>76 Minimum Window Substring</title>
+      <link>https://foxisawesome.github.io/posts/76-minimum-window-substring/</link>
+      <pubDate>Wed, 30 Sep 2020 13:00:41 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/76-minimum-window-substring/</guid>
+      <description>LC 76 Minimum Window Substring Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n). Input: S = &amp;quot;ADOBECODEBANC&amp;quot;, T = &amp;quot;ABC&amp;quot; Output: &amp;quot;BANC&amp;quot; Solution 2020-09-30 Notes: sliding window 的同时，需要online update minimum length，并用一个d</description>
+    </item>
+    
+    <item>
+      <title>728 Self Dividing Numbers</title>
+      <link>https://foxisawesome.github.io/posts/728-self-dividing-numbers/</link>
+      <pubDate>Tue, 29 Sep 2020 21:32:36 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/728-self-dividing-numbers/</guid>
+      <description>LC 728 Self Dividing Numbers A self-dividing number is a number that is divisible by every digit it contains. For example, 128 is a self-dividing number because 128 % 1 == 0, 128 % 2 == 0, and 128 % 8 == 0. Also, a self-dividing number is not allowed to contain the digit zero. Given a lower and upper number bound, output a list of every possible self dividing</description>
+    </item>
+    
+    <item>
+      <title>793 Preimage Size of Factorial Zeroes Function</title>
+      <link>https://foxisawesome.github.io/posts/793-preimage-size-of-factorial-zeroes-function/</link>
+      <pubDate>Tue, 29 Sep 2020 21:17:24 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/793-preimage-size-of-factorial-zeroes-function/</guid>
+      <description>LC 793 Preimage Size of Factorial Zeroes Function Let f(x) be the number of zeroes at the end of x!. (Recall that x! = 1 * 2 * 3 * ... * x, and by convention, 0! = 1.) For example, f(3) = 0 because 3! = 6 has no zeroes at the end, while f(11) = 2 because 11! = 39916800 has 2 zeroes at the end. Given K,</description>
+    </item>
+    
+    <item>
+      <title>172 Factorial Trailing Zeroes</title>
+      <link>https://foxisawesome.github.io/posts/172-factorial-trailing-zeroes/</link>
+      <pubDate>Tue, 29 Sep 2020 20:24:36 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/172-factorial-trailing-zeroes/</guid>
+      <description>LC 172 Factorial Trailing Zeroes Given an integer n, return the number of trailing zeroes in n!. Follow up: Could you write a solution that works in logarithmic time complexity? Solution 2020-09-29 Notes: count N 中有几个5, 就一定有几个0. 这个写法很高级。相当于 5 分法，所以time</description>
+    </item>
     
     <item>
       <title>1288 Remove Covered Intervals</title>
@@ -161,42 +197,6 @@ Activity table: +-----------+-----------+------------+--------------+ | player_i
       
       <guid>https://foxisawesome.github.io/posts/15-3sum/</guid>
       <description>LC 15 3sum Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero. Solution 2020-09-28 Notes: 这题最困难的地方时不能有dups。用这个条件很多次了 if</description>
-    </item>
-    
-    <item>
-      <title>881 Boats to Save People</title>
-      <link>https://foxisawesome.github.io/posts/881-boats-to-save-people/</link>
-      <pubDate>Mon, 28 Sep 2020 11:28:10 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/881-boats-to-save-people/</guid>
-      <description>LC 881 Boats to Save People The i-th person has weight people[i], and each boat can carry a maximum weight of limit. Each boat carries at most 2 people at the same time, provided the sum of the weight of those people is at most limit. Return the minimum number of boats to carry every given person. (It is guaranteed each person can be carried by a boat.) Input: people</description>
-    </item>
-    
-    <item>
-      <title>986 Interval List Intersections</title>
-      <link>https://foxisawesome.github.io/posts/986-interval-list-intersections/</link>
-      <pubDate>Sun, 27 Sep 2020 19:18:17 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/986-interval-list-intersections/</guid>
-      <description>LC 986 Interval List Intersections Given two lists of closed intervals, each list of intervals is pairwise disjoint and in sorted order. Return the intersection of these two interval lists. (Formally, a closed interval [a, b] (with a &amp;lt;= b) denotes the set of real numbers x with a &amp;lt;= x &amp;lt;= b. The intersection of two closed intervals is a set of real numbers that is either empty, or</description>
-    </item>
-    
-    <item>
-      <title>925 Long Pressed Name</title>
-      <link>https://foxisawesome.github.io/posts/925-long-pressed-name/</link>
-      <pubDate>Sun, 27 Sep 2020 16:14:07 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/925-long-pressed-name/</guid>
-      <description>LC 925 Long Pressed Name Your friend is typing his name into a keyboard. Sometimes, when typing a character c, the key might get long pressed, and the character will be typed 1 or more times. You examine the typed characters of the keyboard. Return True if it is possible that it was your friends name, with some characters (possibly none) being long pressed. Solution 2020-09-27 Notes: 这题好</description>
-    </item>
-    
-    <item>
-      <title>455 Assign Cookies</title>
-      <link>https://foxisawesome.github.io/posts/455-assign-cookies/</link>
-      <pubDate>Sun, 27 Sep 2020 15:43:20 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/455-assign-cookies/</guid>
-      <description>LC 455 Assign Cookies Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie. Each child i has a greed factor gi, which is the minimum size of a cookie that the child will be content with; and each cookie j has a size sj. If sj &amp;gt;= gi, we can assign the cookie j to</description>
     </item>
     
   </channel>
