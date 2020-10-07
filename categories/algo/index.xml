@@ -5,10 +5,39 @@
     <link>https://foxisawesome.github.io/categories/algo/</link>
     <description>Recent content in algo on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 05 Oct 2020 10:06:12 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2020 19:25:01 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/algo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1285 Find the Start and End Number of Continuous Ranges</title>
+      <link>https://foxisawesome.github.io/sql/1285-find-the-start-and-end-number-of-continuous-ranges/</link>
+      <pubDate>Tue, 06 Oct 2020 22:18:54 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1285-find-the-start-and-end-number-of-continuous-ranges/</guid>
+      <description>LC 1285 Find the Start and End Number of Continuous Ranges Write an SQL query to find the start and end number of continuous ranges in table Logs. Order the result table by start_id. The query result format is in the following example: Logs table: +------------+ | log_id | +------------+ | 1 | | 2 | | 3 | | 7 | | 8 | | 10 | +------------+ Result</description>
+    </item>
+    
+    <item>
+      <title>626 Exchange Seats</title>
+      <link>https://foxisawesome.github.io/sql/626-exchange-seats/</link>
+      <pubDate>Tue, 06 Oct 2020 21:59:09 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/626-exchange-seats/</guid>
+      <description>LC 626 Exchange Seats   Can you write a SQL query to output the result for Mary?
++---------+---------+ | id | student | +---------+---------+ | 1 | Abbot | | 2 | Doris | | 3 | Emerson | | 4 | Green | | 5 | Jeames | +---------+---------+  For the sample input, the output is:
++---------+---------+ | id | student | +---------+---------+ | 1 | Doris | | 2 | Abbot | | 3 | Green | | 4 | Emerson | | 5 | Jeames | +---------+---------+   Solution 2020-10-06 Notes: SELECT CASE WHEN MOD(id, 2) = 1 AND id !</description>
+    </item>
+    
+    <item>
+      <title>55 Jump Game</title>
+      <link>https://foxisawesome.github.io/posts/55-jump-game/</link>
+      <pubDate>Tue, 06 Oct 2020 19:25:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/55-jump-game/</guid>
+      <description>LC 55 Jump Game Given an array of non-negative integers, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Determine if you are able to reach the last index. Input: nums = [2,3,1,1,4] Output: true Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index. Solution 2020-10-06 Notes: 这</description>
+    </item>
     
     <item>
       <title>1194 Tournament Winners</title>
@@ -171,33 +200,6 @@ Warehouse table: +------------+--------------+-------------+ | name | product_id
       
       <guid>https://foxisawesome.github.io/sql/1241-number-of-comments-per-post/</guid>
       <description>LC 1241 Number of Comments per Post Write an SQL query to find number of comments per each post. Result table should contain post_id and its corresponding number_of_comments, and must be sorted by post_id in ascending order. Submissions may contain duplicate comments. You should count the number of unique comments per post. Submissions may contain duplicate posts. You should treat them as one post. The query result format is in</description>
-    </item>
-    
-    <item>
-      <title>1084 Sales Analysis Iii</title>
-      <link>https://foxisawesome.github.io/sql/1084-sales-analysis-iii/</link>
-      <pubDate>Sat, 03 Oct 2020 18:58:45 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1084-sales-analysis-iii/</guid>
-      <description>LC 1084 Sales Analysis Iii Write an SQL query that reports the products that were only sold in spring 2019. That is, between 2019-01-01 and 2019-03-31 inclusive. The query result format is in the following example: Product table: +------------+--------------+------------+ | product_id | product_name | unit_price | +------------+--------------+------------+ | 1 | S8 | 1000 | | 2 | G4 | 800 | | 3 | iPhone | 1400 | +------------+--------------+------------+ Sales</description>
-    </item>
-    
-    <item>
-      <title>1142 User Activity for the Past 30 Days II</title>
-      <link>https://foxisawesome.github.io/sql/1142-user-activity-for-the-past-30-days-ii/</link>
-      <pubDate>Fri, 02 Oct 2020 15:54:14 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1142-user-activity-for-the-past-30-days-ii/</guid>
-      <description>LC 1142 User Activity for the Past 30 Days II Write an SQL query to find the average number of sessions per user for a period of 30 days ending 2019-07-27 inclusively, rounded to 2 decimal places. The sessions we want to count for a user are those with at least one activity in that time period. The query result format is in the following example: Activity table: +---------+------------+---------------+---------------+ |</description>
-    </item>
-    
-    <item>
-      <title>1204 Last Person to Fit in the Elevator</title>
-      <link>https://foxisawesome.github.io/sql/1204-last-person-to-fit-in-the-elevator/</link>
-      <pubDate>Fri, 02 Oct 2020 15:42:32 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1204-last-person-to-fit-in-the-elevator/</guid>
-      <description>LC 1204 Last Person to Fit in the Elevator The maximum weight the elevator can hold is 1000. Write an SQL query to find the person_name of the last person who will fit in the elevator without exceeding the weight limit. It is guaranteed that the person who is first in the queue can fit in the elevator. The query result format is in the following example: Queue table +-----------+-------------------+--------+------+</description>
     </item>
     
   </channel>

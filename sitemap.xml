@@ -3,56 +3,112 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://foxisawesome.github.io/sql/1194-tournament-winners/</loc>
-    <lastmod>2020-10-05T21:07:02-04:00</lastmod>
+    <loc>https://foxisawesome.github.io/sql/1285-find-the-start-and-end-number-of-continuous-ranges/</loc>
+    <lastmod>2020-10-06T22:18:54-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/categories/</loc>
-    <lastmod>2020-10-05T21:07:02-04:00</lastmod>
+    <lastmod>2020-10-06T22:18:54-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/tags/dia/</loc>
-    <lastmod>2020-10-05T21:07:02-04:00</lastmod>
+    <lastmod>2020-10-06T22:18:54-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/tags/leetcode/</loc>
-    <lastmod>2020-10-05T21:07:02-04:00</lastmod>
+    <lastmod>2020-10-06T22:18:54-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/</loc>
-    <lastmod>2020-10-05T21:07:02-04:00</lastmod>
+    <lastmod>2020-10-06T22:18:54-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/categories/sql/</loc>
-    <lastmod>2020-10-05T21:07:02-04:00</lastmod>
+    <lastmod>2020-10-06T22:18:54-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/sql/</loc>
-    <lastmod>2020-10-05T21:07:02-04:00</lastmod>
+    <lastmod>2020-10-06T22:18:54-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/tags/</loc>
+    <lastmod>2020-10-06T22:18:54-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/sql/626-exchange-seats/</loc>
+    <lastmod>2020-10-06T21:59:09-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/55-jump-game/</loc>
+    <lastmod>2020-10-06T19:25:01-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/categories/algo/</loc>
+    <lastmod>2020-10-06T19:25:01-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/dfs/</loc>
+    <lastmod>2020-10-06T19:25:01-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/dp/</loc>
+    <lastmod>2020-10-06T19:25:01-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/greedy/</loc>
+    <lastmod>2020-10-06T19:25:01-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/</loc>
+    <lastmod>2020-10-06T19:25:01-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/sql/1194-tournament-winners/</loc>
     <lastmod>2020-10-05T21:07:02-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -74,20 +130,6 @@
   
   <url>
     <loc>https://foxisawesome.github.io/posts/107-binary-tree-level-order-traversal-ii/</loc>
-    <lastmod>2020-10-05T10:06:12-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/categories/algo/</loc>
-    <lastmod>2020-10-05T10:06:12-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/posts/</loc>
     <lastmod>2020-10-05T10:06:12-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -340,13 +382,6 @@
   
   <url>
     <loc>https://foxisawesome.github.io/posts/339-nested-list-weight-sum/</loc>
-    <lastmod>2020-10-01T15:49:03-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/tags/dfs/</loc>
     <lastmod>2020-10-01T15:49:03-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -655,13 +690,6 @@
   
   <url>
     <loc>https://foxisawesome.github.io/posts/62-unique-paths/</loc>
-    <lastmod>2020-09-25T15:47:03-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/tags/dp/</loc>
     <lastmod>2020-09-25T15:47:03-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

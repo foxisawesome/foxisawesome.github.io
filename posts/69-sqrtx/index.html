@@ -20,7 +20,7 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    <meta name="description" content="LC 69 Sqrtx Implement int sqrt(int x). Sqrt(8) = 2 Solution 2020-03-07 Notes: 标准的binary search 模版， right 从x//2开始。 class Solution: def mySqrt(self, x: int) -&amp;gt; int: if x &amp;lt; 2: return x left = 1 right = x//2 while left &amp;lt;= right: mid = left &#43; (right - left)//2 if mid**2 == x:" />
+    <meta name="description" content="LC 69 Sqrtx Implement int sqrt(int x). Sqrt(8) = 2 Solution 2020-03-07 Notes: 标准的binary search 模版， right 从x//2开始。 2020-10-06 Notes： 今天又做了一遍，这题虽然看起来像是寻找left bound" />
     <meta name="generator" content="Hugo 0.74.3 with theme pure" />
     <title>69 Sqrtx - Q. Weng</title>
     
@@ -30,23 +30,23 @@
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
     <meta property="og:title" content="69 Sqrtx" />
-<meta property="og:description" content="LC 69 Sqrtx Implement int sqrt(int x). Sqrt(8) = 2 Solution 2020-03-07 Notes: 标准的binary search 模版， right 从x//2开始。 class Solution: def mySqrt(self, x: int) -&gt; int: if x &lt; 2: return x left = 1 right = x//2 while left &lt;= right: mid = left &#43; (right - left)//2 if mid**2 == x:" />
+<meta property="og:description" content="LC 69 Sqrtx Implement int sqrt(int x). Sqrt(8) = 2 Solution 2020-03-07 Notes: 标准的binary search 模版， right 从x//2开始。 2020-10-06 Notes： 今天又做了一遍，这题虽然看起来像是寻找left bound" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://foxisawesome.github.io/posts/69-sqrtx/" />
 <meta property="article:published_time" content="2020-03-07T22:51:59-04:00" />
 <meta property="article:modified_time" content="2020-03-07T22:51:59-04:00" />
 <meta itemprop="name" content="69 Sqrtx">
-<meta itemprop="description" content="LC 69 Sqrtx Implement int sqrt(int x). Sqrt(8) = 2 Solution 2020-03-07 Notes: 标准的binary search 模版， right 从x//2开始。 class Solution: def mySqrt(self, x: int) -&gt; int: if x &lt; 2: return x left = 1 right = x//2 while left &lt;= right: mid = left &#43; (right - left)//2 if mid**2 == x:">
+<meta itemprop="description" content="LC 69 Sqrtx Implement int sqrt(int x). Sqrt(8) = 2 Solution 2020-03-07 Notes: 标准的binary search 模版， right 从x//2开始。 2020-10-06 Notes： 今天又做了一遍，这题虽然看起来像是寻找left bound">
 <meta itemprop="datePublished" content="2020-03-07T22:51:59-04:00" />
 <meta itemprop="dateModified" content="2020-03-07T22:51:59-04:00" />
-<meta itemprop="wordCount" content="105">
+<meta itemprop="wordCount" content="227">
 
 
 
 <meta itemprop="keywords" content="leetcode,binary_Search," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="69 Sqrtx"/>
-<meta name="twitter:description" content="LC 69 Sqrtx Implement int sqrt(int x). Sqrt(8) = 2 Solution 2020-03-07 Notes: 标准的binary search 模版， right 从x//2开始。 class Solution: def mySqrt(self, x: int) -&gt; int: if x &lt; 2: return x left = 1 right = x//2 while left &lt;= right: mid = left &#43; (right - left)//2 if mid**2 == x:"/>
+<meta name="twitter:description" content="LC 69 Sqrtx Implement int sqrt(int x). Sqrt(8) = 2 Solution 2020-03-07 Notes: 标准的binary search 模版， right 从x//2开始。 2020-10-06 Notes： 今天又做了一遍，这题虽然看起来像是寻找left bound"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -147,9 +147,9 @@
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">186</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">187</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">6</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">38</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">40</span></li>
         </ul>
     </div>
 </div>
@@ -180,19 +180,23 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dfs/" class="tag-list-link">dfs</a><span
-                    class="tag-list-count">15</span></li>
+                    class="tag-list-count">16</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia/" class="tag-list-link">dia</a><span
-                    class="tag-list-count">28</span></li>
+                    class="tag-list-count">30</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dp/" class="tag-list-link">dp</a><span
-                    class="tag-list-count">13</span></li>
+                    class="tag-list-count">14</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/graph/" class="tag-list-link">graph</a><span
                     class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/greedy/" class="tag-list-link">greedy</a><span
+                    class="tag-list-count">1</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/hashtable/" class="tag-list-link">hashtable</a><span
@@ -204,7 +208,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">220</span></li>
+                    class="tag-list-count">223</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -309,9 +313,14 @@
 <p>Sqrt(8) = 2</p>
 </blockquote>
 <h2 id="solution">Solution</h2>
-<p>2020-03-07 Notes:</p>
+<h4 id="2020-03-07-notes">2020-03-07 Notes:</h4>
 <ul>
 <li>标准的binary search 模版， right 从<code>x//2</code>开始。</li>
+</ul>
+<h4 id="2020-10-06-notes">2020-10-06 Notes：</h4>
+<ul>
+<li>今天又做了一遍，这题虽然看起来像是寻找left bound，但其实就是return right</li>
+<li>binary search: l, r 一定是搜索的值域范围，然后while loop里的condition 构造一个 f(m) ~ target。有时是left bound， 有时是return m。</li>
 </ul>
 <pre><code class="language-python">class Solution:
     def mySqrt(self, x: int) -&gt; int:

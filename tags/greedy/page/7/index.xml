@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>greedy on Q. Weng</title>
+    <link>https://foxisawesome.github.io/tags/greedy/</link>
+    <description>Recent content in greedy on Q. Weng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Tue, 06 Oct 2020 19:25:01 -0400</lastBuildDate>
+    
+        <atom:link href="https://foxisawesome.github.io/tags/greedy/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>22 Generate Parentheses</title>
+      <link>https://foxisawesome.github.io/posts/22-generate-parentheses/</link>
+      <pubDate>Sun, 20 Sep 2020 20:28:52 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/22-generate-parentheses/</guid>
+      <description>LC 22 Generate Parentheses Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses. For example, given n = 3, a solution set is: [ &amp;quot;((()))&amp;quot;, &amp;quot;(()())&amp;quot;, &amp;quot;(())()&amp;quot;, &amp;quot;()(())&amp;quot;, &amp;quot;()()()&amp;quot; ] Solution 2020-09-20 Notes: 可以直接套用backtracking的模版，主要是l&amp;lt;n</description>
+    </item>
+    
+    <item>
+      <title>618 Students Report by Geography</title>
+      <link>https://foxisawesome.github.io/sql/618-students-report-by-geography/</link>
+      <pubDate>Sun, 20 Sep 2020 19:00:41 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/618-students-report-by-geography/</guid>
+      <description>LC 618 Students Report by Geography input | name | continent | |--------|-----------| | Jack | America | | Pascal | Europe | | Xi | Asia | | Jane | America | output | America | Asia | Europe | |---------|------|--------| | Jack | Xi | Pascal | | Jane | | | Solution 2020-09-20 Notes: 很经典的hard SQL，p</description>
+    </item>
+    
+    <item>
+      <title>1179 Reformat Department Table</title>
+      <link>https://foxisawesome.github.io/sql/1179-reformat-department-table/</link>
+      <pubDate>Sun, 20 Sep 2020 18:55:05 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1179-reformat-department-table/</guid>
+      <description>LC 1179 Reformat Department Table Write an SQL query to reformat the table such that there is a department id column and a revenue column for each month. Solution 2020-09-20 Notes: 这题我想成了LC 618 SELECT id, SUM(if(month = &#39;Jan&#39;, revenue, null)) AS Jan_Revenue, SUM(if(month = &#39;Feb&#39;, revenue, null)) AS Feb_Revenue, SUM(if(month = &#39;Mar&#39;, revenue, null)) AS Mar_Revenue, SUM(if(month = &#39;Apr&#39;, revenue, null)) AS Apr_Revenue,</description>
+    </item>
+    
+    <item>
+      <title>253 Meeting Rooms II</title>
+      <link>https://foxisawesome.github.io/posts/253-meeting-rooms-ii/</link>
+      <pubDate>Sun, 20 Sep 2020 18:20:53 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/253-meeting-rooms-ii/</guid>
+      <description>LC 253 Meeting Rooms II Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si &amp;lt; ei), find the minimum number of conference rooms required. Input: [[0, 30],[5, 10],[15, 20]] Output: 2 Solution 2020-09-20 Notes: 核心是用 存 ending time to a min-heap, 用starting time与heap比较</description>
+    </item>
+    
+    <item>
+      <title>46 Permutations</title>
+      <link>https://foxisawesome.github.io/posts/46-permutations/</link>
+      <pubDate>Sun, 20 Sep 2020 17:33:38 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/46-permutations/</guid>
+      <description>LC 46 Permutations Given a collection of distinct integers, return all possible permutations. Input: [1,2,3] Output: [ [1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]] Solution 2020-09-20 Notes: Permutation 一般是传入nums[:i]+nums[i+1:] ，而combination的题一般是传入nums</description>
+    </item>
+    
+    <item>
+      <title>994 Rotting Oranges</title>
+      <link>https://foxisawesome.github.io/posts/994-rotting-oranges/</link>
+      <pubDate>Sun, 20 Sep 2020 16:31:00 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/994-rotting-oranges/</guid>
+      <description>LC 994 Rotting Oranges In a given grid, each cell can have one of three values: the value 0 representing an empty cell; the value 1 representing a fresh orange; the value 2 representing a rotten orange. Every minute, any fresh orange that is adjacent (4-directionally) to a rotten orange becomes rotten. Return the minimum number of minutes that must elapse until no cell has a fresh orange. If this</description>
+    </item>
+    
+    <item>
+      <title>221 Maximal Square</title>
+      <link>https://foxisawesome.github.io/posts/221-maximal-square/</link>
+      <pubDate>Sun, 20 Sep 2020 15:47:37 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/221-maximal-square/</guid>
+      <description>LC 221 Maximal Square   Given a 2D binary matrix filled with 0&amp;rsquo;s and 1&amp;rsquo;s, find the largest square containing only 1&amp;rsquo;s and return its area.
+Input: 1 0 1 0 0 1 0 1 1 1 1 1 1 1 1 1 0 0 1 0 Output: 4   Solution 2020-09-20 Notes:    dp[i][j]: represents the side length of the maximum square whose bottom right corner is the cell with index (i,j) in the original matrix.</description>
+    </item>
+    
+    <item>
+      <title>7 Reverse Integer</title>
+      <link>https://foxisawesome.github.io/posts/7-reverse-integer/</link>
+      <pubDate>Sun, 20 Sep 2020 15:25:11 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/7-reverse-integer/</guid>
+      <description>LC 7 Reverse Integer Given a 32-bit signed integer, reverse digits of an integer. Input: -120 Output: -21 Solution 2020-09-20 Notes: 很简单的题，要记得overflow的处理。 class Solution: def reverse(self, x: int) -&amp;gt; int: if x == 0: return x sign = -1 if x &amp;lt; 0 else 1 x = abs(x) ans =</description>
+    </item>
+    
+    <item>
+      <title>394 Decode String</title>
+      <link>https://foxisawesome.github.io/posts/394-decode-string/</link>
+      <pubDate>Sun, 20 Sep 2020 15:09:10 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/394-decode-string/</guid>
+      <description>LC 394 Decode String Given an encoded string, return its decoded string. The encoding rule is: k[encoded_string], where the encoded_string inside the square brackets is being repeated exactly k times. Note that k is guaranteed to be a positive integer. Input: s = &amp;quot;3[a2[c]]&amp;quot; Output: &amp;quot;accaccacc&amp;quot; Solution 2020-09-20 Notes: 比较简单的一道stack的题。类似于cal</description>
+    </item>
+    
+    <item>
+      <title>31 Next Permutation</title>
+      <link>https://foxisawesome.github.io/posts/31-next-permutation/</link>
+      <pubDate>Sun, 20 Sep 2020 12:16:32 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/31-next-permutation/</guid>
+      <description>LC 31 Next Permutation Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers. If such arrangement is not possible, it must rearrange it as the lowest possible order (ie, sorted in ascending order). The replacement must be in-place and use only constant extra memory. Here are some examples. Inputs are in the left-hand column and its corresponding outputs are in the right-hand column. 1,2,3` →</description>
+    </item>
+    
+    <item>
+      <title>983 Minimum Cost for Tickets</title>
+      <link>https://foxisawesome.github.io/posts/983-minimum-cost-for-tickets/</link>
+      <pubDate>Sat, 19 Sep 2020 22:24:28 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/983-minimum-cost-for-tickets/</guid>
+      <description>LC 983 Minimum Cost for Tickets    Solution 2020-09-19 Notes:    # Time O() # Space O()  </description>
+    </item>
+    
+    <item>
+      <title>322 Coin Change</title>
+      <link>https://foxisawesome.github.io/posts/322-coin-change/</link>
+      <pubDate>Sat, 19 Sep 2020 21:28:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/322-coin-change/</guid>
+      <description>LC 322 Coin Change You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1. Input: coins = [1, 2, 5], amount = 11 Output: 3 Explanation: 11 = 5 + 5</description>
+    </item>
+    
+    <item>
+      <title>692 Top K Frequent Words</title>
+      <link>https://foxisawesome.github.io/posts/692-top-k-frequent-words/</link>
+      <pubDate>Sat, 19 Sep 2020 21:00:53 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/692-top-k-frequent-words/</guid>
+      <description>LC 692 Top K Frequent Words Given a non-empty list of words, return the k most frequent elements. Your answer should be sorted by frequency from highest to lowest. If two words have the same frequency, then the word with the lower alphabetical order comes first. Solution 2020-09-19 Notes: 重要的来了，一般，我们认为找出k个最大最小</description>
+    </item>
+    
+    <item>
+      <title>973 K Closest Points to Origin</title>
+      <link>https://foxisawesome.github.io/posts/973-k-closest-points-to-origin/</link>
+      <pubDate>Sat, 19 Sep 2020 20:47:04 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/973-k-closest-points-to-origin/</guid>
+      <description>LC 973 K Closest Points to Origin We have a list of points on the plane. Find the K closest points to the origin (0, 0). Input: points = [[1,3],[-2,2]], K = 1 Output: [[-2,2]] Explanation: The distance between (1, 3) and the origin is sqrt(10). The distance between (-2, 2) and the origin is sqrt(8). Since sqrt(8) &amp;lt; sqrt(10), (-2, 2) is closer to the origin. We only want</description>
+    </item>
+    
+    <item>
+      <title>20 Valid Parentheses</title>
+      <link>https://foxisawesome.github.io/posts/20-valid-parentheses/</link>
+      <pubDate>Sat, 19 Sep 2020 20:37:05 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/20-valid-parentheses/</guid>
+      <description>LC 20 Valid Parentheses Given a string s containing just the characters &#39;(&#39;, &#39;)&#39;, &#39;{&#39;, &#39;}&#39;, &#39;[&#39; and &#39;]&#39;, determine if the input string is valid. An input string is valid if: Open brackets must be closed by the same type of brackets. Open brackets must be closed in the correct order. Solution 2020-09-19 Notes: 好经典的题。 思路如解。 class Solution: def isValid(self,</description>
+    </item>
+    
+    <item>
+      <title>953 Verifying an Alien Dictionary</title>
+      <link>https://foxisawesome.github.io/posts/953-verifying-an-alien-dictionary/</link>
+      <pubDate>Sat, 19 Sep 2020 20:17:38 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/953-verifying-an-alien-dictionary/</guid>
+      <description>LC 953 Verifying an Alien Dictionary In an alien language, surprisingly they also use english lowercase letters, but possibly in a different order. The order of the alphabet is some permutation of lowercase letters. Given a sequence of words written in the alien language, and the order of the alphabet, return true if and only if the given words are sorted lexicographicaly in this alien language. Input: words = [&amp;quot;word&amp;quot;,&amp;quot;world&amp;quot;,&amp;quot;row&amp;quot;],</description>
+    </item>
+    
+    <item>
+      <title>70 Climbing Stairs</title>
+      <link>https://foxisawesome.github.io/posts/70-climbing-stairs/</link>
+      <pubDate>Tue, 15 Sep 2020 16:48:27 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/70-climbing-stairs/</guid>
+      <description>LC 70 Climbing Stairs You are climbing a stair case. It takes n steps to reach to the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top? Solution 2020-09-15 Notes: 最经典的dp题了。dp[i] = dp[i-1] + dp[i-2], 主要是dp[i] 和</description>
+    </item>
+    
+    <item>
+      <title>91 Decode Ways</title>
+      <link>https://foxisawesome.github.io/posts/91-decode-ways/</link>
+      <pubDate>Tue, 15 Sep 2020 13:32:28 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/91-decode-ways/</guid>
+      <description>LC 91 Decode Ways A message containing letters from A-Z is being encoded to numbers using the following mapping: &#39;A&#39; -&amp;gt; 1 &#39;B&#39; -&amp;gt; 2 ... &#39;Z&#39; -&amp;gt; 26 Given a non-empty string containing only digits, determine the total number of ways to decode it. Input: &amp;ldquo;226&amp;rdquo; Output: 3 Explanation: It could be decoded as &amp;ldquo;BZ&amp;rdquo; (2 26), &amp;ldquo;VF&amp;rdquo; (22 6), or &amp;ldquo;BBF&amp;rdquo; (2 2 6). Solution 2020-09-15 Notes: 开</description>
+    </item>
+    
+    <item>
+      <title>238 Product of Array Except Self</title>
+      <link>https://foxisawesome.github.io/posts/238-product-of-array-except-self/</link>
+      <pubDate>Tue, 15 Sep 2020 13:22:13 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/238-product-of-array-except-self/</guid>
+      <description>LC 238 Product of Array Except Self Given an array nums of n integers where n &amp;gt; 1, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i]. Input: [1,2,3,4] Output: [24,12,8,6] Solution 2020-09-15 Notes: 3-pass, space O(N) solution. L[i] = cumulative product of nums[:i], R[i] = cumulative product of nums[:i:-1] class Solution: def productExceptSelf(self, nums: List[int]) -&amp;gt; List[int]: n</description>
+    </item>
+    
+    <item>
+      <title>56 Merge Intervals</title>
+      <link>https://foxisawesome.github.io/posts/56-merge-intervals/</link>
+      <pubDate>Tue, 15 Sep 2020 13:14:34 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/56-merge-intervals/</guid>
+      <description>LC 56 Merge Intervals Given a collection of intervals, merge all overlapping intervals. Input: intervals = [[1,3],[2,6],[8,10],[15,18]] Output: [[1,6],[8,10],[15,18]] Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6]. Solution 2020-09-15 Notes: 先sort一遍 by x[0], x[1] 比较 ans[-1][1] 与 x[0]的关系， 很简单。 class Solution: def merge(self, intervals: List[List[int]]) -&amp;gt; List[List[int]]: if not intervals:</description>
+    </item>
+    
+  </channel>
+</rss>

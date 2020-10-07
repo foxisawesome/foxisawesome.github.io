@@ -10,6 +10,33 @@
     
     
     <item>
+      <title>585 Investments in 2016</title>
+      <link>https://foxisawesome.github.io/sql/585-investments-in-2016/</link>
+      <pubDate>Wed, 30 Sep 2020 21:31:10 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/585-investments-in-2016/</guid>
+      <description>LC 585 Investments in 2016 Write a query to print the sum of all total investment values in 2016 (TIV_2016), to a scale of 2 decimal places, for all policy holders who meet the following criteria: Have the same TIV_2015 value as one or more other policyholders. Are not located in the same city as any other policyholder (i.e.: the (latitude, longitude) attribute pairs must be unique). Sample Input |</description>
+    </item>
+    
+    <item>
+      <title>1355 Activity Participants</title>
+      <link>https://foxisawesome.github.io/sql/1355-activity-participants/</link>
+      <pubDate>Wed, 30 Sep 2020 20:59:04 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1355-activity-participants/</guid>
+      <description>LC 1355 Activity Participants Write an SQL query to find the names of all the activities with neither maximum, nor minimum number of participants. Return the result table in any order. Each activity in table Activities is performed by any person in the table Friends. The query result format is in the following example: Friends table: +------+--------------+---------------+ | id | name | activity | +------+--------------+---------------+ | 1 | Jonathan D.</description>
+    </item>
+    
+    <item>
+      <title>227 Basic Calculator II</title>
+      <link>https://foxisawesome.github.io/posts/227-basic-calculator-ii/</link>
+      <pubDate>Wed, 30 Sep 2020 14:32:48 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/227-basic-calculator-ii/</guid>
+      <description>LC 227 Basic Calculator II Implement a basic calculator to evaluate a simple expression string. The expression string contains only non-negative integers, +, -, *, / operators and empty spaces ``. The integer division should truncate toward zero. Input: &amp;quot;3+2*2&amp;quot; Output: 7 Solution 2020-09-30 Notes: Calculator 3 题：LC 224, LC 227, LC 772 都好难。三题的解法大同小异，</description>
+    </item>
+    
+    <item>
       <title>76 Minimum Window Substring</title>
       <link>https://foxisawesome.github.io/posts/76-minimum-window-substring/</link>
       <pubDate>Wed, 30 Sep 2020 13:00:41 -0400</pubDate>
@@ -169,33 +196,6 @@ Activity table: +-----------+-----------+------------+--------------+ | player_i
       
       <guid>https://foxisawesome.github.io/posts/992-subarrays-with-k-different-integers/</guid>
       <description>LC 992 Subarrays With K Different Integers Given an array A of positive integers, call a (contiguous, not necessarily distinct) subarray of A good if the number of different integers in that subarray is exactly K. Input: A = [1,2,1,2,3], K = 2 Output: 7 Explanation: Subarrays formed with exactly 2 different integers: [1,2], [2,1], [1,2], [2,3], [1,2,1], [2,1,2], [1,2,1,2]. Solution 2020-09-28 Notes: 看了论坛里的最</description>
-    </item>
-    
-    <item>
-      <title>977 Squares of a Sorted Array</title>
-      <link>https://foxisawesome.github.io/posts/977-squares-of-a-sorted-array/</link>
-      <pubDate>Mon, 28 Sep 2020 18:38:26 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/977-squares-of-a-sorted-array/</guid>
-      <description>LC 977 Squares of a Sorted Array Given an array of integers A sorted in non-decreasing order, return an array of the squares of each number, also in sorted non-decreasing order. Input: [-4,-1,0,3,10] Output: [0,1,9,16,100] Solution 2020-09-28 Notes: 先找到零的位置再向两边走。 class Solution: def sortedSquares(self, A: List[int]) -&amp;gt; List[int]: p, n = 0, len(A) while p &amp;lt; n and A[p]</description>
-    </item>
-    
-    <item>
-      <title>16 3sum Closest</title>
-      <link>https://foxisawesome.github.io/posts/16-3sum-closest/</link>
-      <pubDate>Mon, 28 Sep 2020 16:36:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/16-3sum-closest/</guid>
-      <description>LC 16 3sum Closest Given an array nums of n integers and an integer target, find three integers in nums such that the sum is closest to target. Return the sum of the three integers. You may assume that each input would have exactly one solution. Solution 2020-09-28 Notes: 这题其实只能穷举，用了sort之后可以pr</description>
-    </item>
-    
-    <item>
-      <title>15 3sum</title>
-      <link>https://foxisawesome.github.io/posts/15-3sum/</link>
-      <pubDate>Mon, 28 Sep 2020 16:16:45 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/15-3sum/</guid>
-      <description>LC 15 3sum Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero. Solution 2020-09-28 Notes: 这题最困难的地方时不能有dups。用这个条件很多次了 if</description>
     </item>
     
   </channel>

@@ -5,10 +5,37 @@
     <link>https://foxisawesome.github.io/tags/dia/</link>
     <description>Recent content in dia on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 05 Oct 2020 21:07:02 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2020 22:18:54 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/dia/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1084 Sales Analysis Iii</title>
+      <link>https://foxisawesome.github.io/sql/1084-sales-analysis-iii/</link>
+      <pubDate>Sat, 03 Oct 2020 18:58:45 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1084-sales-analysis-iii/</guid>
+      <description>LC 1084 Sales Analysis Iii Write an SQL query that reports the products that were only sold in spring 2019. That is, between 2019-01-01 and 2019-03-31 inclusive. The query result format is in the following example: Product table: +------------+--------------+------------+ | product_id | product_name | unit_price | +------------+--------------+------------+ | 1 | S8 | 1000 | | 2 | G4 | 800 | | 3 | iPhone | 1400 | +------------+--------------+------------+ Sales</description>
+    </item>
+    
+    <item>
+      <title>1142 User Activity for the Past 30 Days II</title>
+      <link>https://foxisawesome.github.io/sql/1142-user-activity-for-the-past-30-days-ii/</link>
+      <pubDate>Fri, 02 Oct 2020 15:54:14 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1142-user-activity-for-the-past-30-days-ii/</guid>
+      <description>LC 1142 User Activity for the Past 30 Days II Write an SQL query to find the average number of sessions per user for a period of 30 days ending 2019-07-27 inclusively, rounded to 2 decimal places. The sessions we want to count for a user are those with at least one activity in that time period. The query result format is in the following example: Activity table: +---------+------------+---------------+---------------+ |</description>
+    </item>
+    
+    <item>
+      <title>1204 Last Person to Fit in the Elevator</title>
+      <link>https://foxisawesome.github.io/sql/1204-last-person-to-fit-in-the-elevator/</link>
+      <pubDate>Fri, 02 Oct 2020 15:42:32 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1204-last-person-to-fit-in-the-elevator/</guid>
+      <description>LC 1204 Last Person to Fit in the Elevator The maximum weight the elevator can hold is 1000. Write an SQL query to find the person_name of the last person who will fit in the elevator without exceeding the weight limit. It is guaranteed that the person who is first in the queue can fit in the elevator. The query result format is in the following example: Queue table +-----------+-------------------+--------+------+</description>
+    </item>
     
     <item>
       <title>1164 Product Price at a Given Date</title>
@@ -164,33 +191,6 @@
 If the user only has one activity, return that one.
 A user can&amp;rsquo;t perform more than one activity at the same time. Return the result table in any order.
  Solution 2020-09-30 Notes:  straightforward by problem description.  SELECT username, activity, startDate, endDate FROM ( SELECT username, activity, startDate, endDate, ROW_NUMBER() OVER(PARTITION BY username ORDER BY startdate DESC) AS nr, COUNT(*) OVER(PARTITION BY username) AS ct FROM userActivity ) a WHERE nr=2 OR ct=1  </description>
-    </item>
-    
-    <item>
-      <title>585 Investments in 2016</title>
-      <link>https://foxisawesome.github.io/sql/585-investments-in-2016/</link>
-      <pubDate>Wed, 30 Sep 2020 21:31:10 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/585-investments-in-2016/</guid>
-      <description>LC 585 Investments in 2016 Write a query to print the sum of all total investment values in 2016 (TIV_2016), to a scale of 2 decimal places, for all policy holders who meet the following criteria: Have the same TIV_2015 value as one or more other policyholders. Are not located in the same city as any other policyholder (i.e.: the (latitude, longitude) attribute pairs must be unique). Sample Input |</description>
-    </item>
-    
-    <item>
-      <title>1355 Activity Participants</title>
-      <link>https://foxisawesome.github.io/sql/1355-activity-participants/</link>
-      <pubDate>Wed, 30 Sep 2020 20:59:04 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1355-activity-participants/</guid>
-      <description>LC 1355 Activity Participants Write an SQL query to find the names of all the activities with neither maximum, nor minimum number of participants. Return the result table in any order. Each activity in table Activities is performed by any person in the table Friends. The query result format is in the following example: Friends table: +------+--------------+---------------+ | id | name | activity | +------+--------------+---------------+ | 1 | Jonathan D.</description>
-    </item>
-    
-    <item>
-      <title>227 Basic Calculator II</title>
-      <link>https://foxisawesome.github.io/posts/227-basic-calculator-ii/</link>
-      <pubDate>Wed, 30 Sep 2020 14:32:48 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/227-basic-calculator-ii/</guid>
-      <description>LC 227 Basic Calculator II Implement a basic calculator to evaluate a simple expression string. The expression string contains only non-negative integers, +, -, *, / operators and empty spaces ``. The integer division should truncate toward zero. Input: &amp;quot;3+2*2&amp;quot; Output: 7 Solution 2020-09-30 Notes: Calculator 3 题：LC 224, LC 227, LC 772 都好难。三题的解法大同小异，</description>
     </item>
     
   </channel>

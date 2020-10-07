@@ -5,10 +5,37 @@
     <link>https://foxisawesome.github.io/tags/dfs/</link>
     <description>Recent content in DFS on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 01 Oct 2020 15:49:03 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 06 Oct 2020 19:25:01 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/dfs/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>22 Generate Parentheses</title>
+      <link>https://foxisawesome.github.io/posts/22-generate-parentheses/</link>
+      <pubDate>Sun, 20 Sep 2020 20:28:52 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/22-generate-parentheses/</guid>
+      <description>LC 22 Generate Parentheses Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses. For example, given n = 3, a solution set is: [ &amp;quot;((()))&amp;quot;, &amp;quot;(()())&amp;quot;, &amp;quot;(())()&amp;quot;, &amp;quot;()(())&amp;quot;, &amp;quot;()()()&amp;quot; ] Solution 2020-09-20 Notes: 可以直接套用backtracking的模版，主要是l&amp;lt;n</description>
+    </item>
+    
+    <item>
+      <title>618 Students Report by Geography</title>
+      <link>https://foxisawesome.github.io/sql/618-students-report-by-geography/</link>
+      <pubDate>Sun, 20 Sep 2020 19:00:41 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/618-students-report-by-geography/</guid>
+      <description>LC 618 Students Report by Geography input | name | continent | |--------|-----------| | Jack | America | | Pascal | Europe | | Xi | Asia | | Jane | America | output | America | Asia | Europe | |---------|------|--------| | Jack | Xi | Pascal | | Jane | | | Solution 2020-09-20 Notes: 很经典的hard SQL，p</description>
+    </item>
+    
+    <item>
+      <title>1179 Reformat Department Table</title>
+      <link>https://foxisawesome.github.io/sql/1179-reformat-department-table/</link>
+      <pubDate>Sun, 20 Sep 2020 18:55:05 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1179-reformat-department-table/</guid>
+      <description>LC 1179 Reformat Department Table Write an SQL query to reformat the table such that there is a department id column and a revenue column for each month. Solution 2020-09-20 Notes: 这题我想成了LC 618 SELECT id, SUM(if(month = &#39;Jan&#39;, revenue, null)) AS Jan_Revenue, SUM(if(month = &#39;Feb&#39;, revenue, null)) AS Feb_Revenue, SUM(if(month = &#39;Mar&#39;, revenue, null)) AS Mar_Revenue, SUM(if(month = &#39;Apr&#39;, revenue, null)) AS Apr_Revenue,</description>
+    </item>
     
     <item>
       <title>253 Meeting Rooms II</title>
@@ -162,35 +189,6 @@ Input: 1 0 1 0 0 1 0 1 1 1 1 1 1 1 1 1 0 0 1 0 Output: 4   Solution 2020-09-20 N
       
       <guid>https://foxisawesome.github.io/posts/56-merge-intervals/</guid>
       <description>LC 56 Merge Intervals Given a collection of intervals, merge all overlapping intervals. Input: intervals = [[1,3],[2,6],[8,10],[15,18]] Output: [[1,6],[8,10],[15,18]] Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6]. Solution 2020-09-15 Notes: 先sort一遍 by x[0], x[1] 比较 ans[-1][1] 与 x[0]的关系， 很简单。 class Solution: def merge(self, intervals: List[List[int]]) -&amp;gt; List[List[int]]: if not intervals:</description>
-    </item>
-    
-    <item>
-      <title>23 Merge K Sorted Lists</title>
-      <link>https://foxisawesome.github.io/posts/23-merge-k-sorted-lists/</link>
-      <pubDate>Mon, 14 Sep 2020 21:04:50 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/23-merge-k-sorted-lists/</guid>
-      <description>LC 23 Merge K Sorted Lists You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list and return it. Input: lists = [[1,4,5],[1,3,4],[2,6]] Output: [1,1,2,3,4,4,5,6] Explanation: The linked-lists are: [ 1-&amp;gt;4-&amp;gt;5, 1-&amp;gt;3-&amp;gt;4, 2-&amp;gt;6 ] merging them into one sorted list: 1-&amp;gt;1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;4-&amp;gt;5-&amp;gt;6 Solution 2020-09-14 Notes: 最简单暴力，最挫的方法。</description>
-    </item>
-    
-    <item>
-      <title>3 Longest Substring Without Repeating Characters</title>
-      <link>https://foxisawesome.github.io/posts/3-longest-substring-without-repeating-characters/</link>
-      <pubDate>Mon, 14 Sep 2020 16:25:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/3-longest-substring-without-repeating-characters/</guid>
-      <description>LC 3 Longest Substring Without Repeating Characters Given a string s, find the length of the longest substring without repeating characters. Solution 2020-09-14 Notes: 经典题，要类似 LC5 longest palindrome 那么做，就得O(N^2) ，不能通过。应该用sliding window one pass 完成。 sliding w</description>
-    </item>
-    
-    <item>
-      <title>516 Longest Palindromic Subsequence</title>
-      <link>https://foxisawesome.github.io/posts/516-longest-palindromic-subsequence/</link>
-      <pubDate>Mon, 14 Sep 2020 15:20:17 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/516-longest-palindromic-subsequence/</guid>
-      <description>LC 516 Longest Palindromic Subsequence   Given a string s, find the longest palindromic subsequence&amp;rsquo;s length in s. You may assume that the maximum length of s is 1000.
- Solution 2020-09-14 Notes:
-   class Solution: def longestPalindromeSubseq(self, s: str) -&amp;gt; int: n = len(s) # dp[i][j]: max palindromic length of s[i:j+1] # assume: dp[i+1][j-1] has max length # then: if s[i]==s[j]: dp[i][j] = dp[i+1][j-1]+2 # if s[i] !</description>
     </item>
     
   </channel>
