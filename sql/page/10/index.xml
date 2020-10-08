@@ -5,10 +5,51 @@
     <link>https://foxisawesome.github.io/sql/</link>
     <description>Recent content in Sqls on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 06 Oct 2020 22:18:54 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2020 21:36:59 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/sql/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>104 Maximum Depth of Binary Tree</title>
+      <link>https://foxisawesome.github.io/posts/104-maximum-depth-of-binary-tree/</link>
+      <pubDate>Wed, 09 Sep 2020 21:45:11 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/104-maximum-depth-of-binary-tree/</guid>
+      <description>LC 104 Maximum Depth of Binary Tree Given a binary tree, find its maximum depth. The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node. Given binary tree [3,9,20,null,null,15,7], 3 / \ 9 20 / \ 15 7 Solution 2020-09-09 Notes: 注意patterns. Beat the TREE! # Definition for</description>
+    </item>
+    
+    <item>
+      <title>111 Minimum Depth of Binary Tree</title>
+      <link>https://foxisawesome.github.io/posts/111-minimum-depth-of-binary-tree/</link>
+      <pubDate>Wed, 09 Sep 2020 21:41:11 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/111-minimum-depth-of-binary-tree/</guid>
+      <description>LC 111 Minimum Depth of Binary Tree   Given a binary tree, find its minimum depth.
+The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
+Given binary tree [3,9,20,null,null,15,7],
+ 3 / \ 9 20 / \ 15 7  return 2
+ Solution 2020-09-09 Notes:
+ Beat the TREE!  # Definition for a binary tree node.</description>
+    </item>
+    
+    <item>
+      <title>124 Binary Tree Maximum Path Sum</title>
+      <link>https://foxisawesome.github.io/posts/124-binary-tree-maximum-path-sum/</link>
+      <pubDate>Wed, 09 Sep 2020 14:41:35 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/124-binary-tree-maximum-path-sum/</guid>
+      <description>LC 124 Binary Tree Maximum Path Sum Given a non-empty binary tree, find the maximum path sum. For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The path must contain at least one node and does not need to go through the root. Input: [-10,9,20,null,null,15,7] -10 / \ 9 20 / \ 15</description>
+    </item>
+    
+    <item>
+      <title>236 Lowest Common Ancestor of a Binary Tree</title>
+      <link>https://foxisawesome.github.io/posts/236-lowest-common-ancestor-of-a-binary-tree/</link>
+      <pubDate>Wed, 09 Sep 2020 13:57:55 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/236-lowest-common-ancestor-of-a-binary-tree/</guid>
+      <description>LC 236 Lowest Common Ancestor of a Binary Tree Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be</description>
+    </item>
     
     <item>
       <title>392 Is Subsequence</title>
@@ -167,52 +208,6 @@ Note: Your algorithm should have a linear runtime complexity. Could you implemen
       <description>LC 316 Remove Dup Letters  Given a string which contains only lowercase letters, remove duplicate letters so that every letter appears once and only once. You must make sure your result is the smallest in lexicographical order among all possible results.
 Input: &amp;quot;cbacdcbc&amp;quot; Output: &amp;quot;acdb&amp;quot;   Solution 2020-09-04 Notes:   Need one-pass of s to get the counter of each letter.
   a second pass, dial down counter at each iteration.</description>
-    </item>
-    
-    <item>
-      <title>1081 Smallest Subsequence of Distinct Char</title>
-      <link>https://foxisawesome.github.io/posts/1081-smallest-subsequence-of-distinct-char/</link>
-      <pubDate>Fri, 04 Sep 2020 19:55:50 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1081-smallest-subsequence-of-distinct-char/</guid>
-      <description>LC 1081 Smallest Subsequence of Distinct Char   Return the lexicographically smallest subsequence of text that contains all the distinct characters of text exactly once.
-Input: &amp;quot;ecbacba&amp;quot; Output: &amp;quot;eacb&amp;quot;   Solution 2020-09-04 Notes:   Need one-pass of s to get the counter of each letter.
-  a second pass, dial down counter at each iteration. use a stack to record every distinct letter and keep the order of recorded letter same as their orders in the string.</description>
-    </item>
-    
-    <item>
-      <title>80 Remove Dup From Sorted Array II</title>
-      <link>https://foxisawesome.github.io/posts/80-remove-dup-from-sorted-array-ii/</link>
-      <pubDate>Fri, 04 Sep 2020 14:05:24 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/80-remove-dup-from-sorted-array-ii/</guid>
-      <description>LC 80 Remove Dup From Sorted Array II   Given a sorted array nums, remove the duplicates in-place such that duplicates appeared at most twice and return the new length.
-Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
-Given nums = [0,0,1,1,1,1,2,3,3], output [0,0,1,1,2,3,3]   Solution 2020-09-04 Notes:
- Same thing asLC 26.  class Solution: def removeDuplicates(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 count = dict() count[nums[0]] = 1 slow, fast = 0, 1 while fast &amp;lt; len(nums): count[nums[fast]] = count.</description>
-    </item>
-    
-    <item>
-      <title>26 Remove Dup From Sorted Array</title>
-      <link>https://foxisawesome.github.io/posts/26-remove-dup-from-sorted-array/</link>
-      <pubDate>Fri, 04 Sep 2020 13:45:50 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/26-remove-dup-from-sorted-array/</guid>
-      <description>LC 26 Remove Dup From Sorted Array   Given a sorted array nums, remove the duplicates in-place such that each element appear only once and return the new length.
-Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
-Given nums = [0,0,1,1,1,2,2,3,3,4], Your function should return length = 5, with the first five elements of nums being modified to 0, 1, 2, 3, and 4 respectively.</description>
-    </item>
-    
-    <item>
-      <title>18 K Sum</title>
-      <link>https://foxisawesome.github.io/posts/18-k-sum/</link>
-      <pubDate>Thu, 03 Sep 2020 22:17:11 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/18-k-sum/</guid>
-      <description>LC 18 4Sum   Given an array nums of n integers and an integer target, are there elements a, b, c, and d in nums such that a + b + c + d = target? Find all unique quadruplets in the array which gives the sum of target.
-Note: The solution set must not contain duplicate quadruplets.
- Solution 2020-09-03 Notes: K - sum algo:
- sort nums recursion top down, reduce to a 2-Sum problem two pointers: l, r to find target  Note: to skip duplicates: if not (i &amp;gt; 0 and nums[i]==nums[i-1]):</description>
     </item>
     
   </channel>

@@ -5,10 +5,46 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 06 Oct 2020 22:18:54 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 07 Oct 2020 21:36:59 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>501 Find Mode in Binary Search Tree</title>
+      <link>https://foxisawesome.github.io/posts/501-find-mode-in-binary-search-tree/</link>
+      <pubDate>Sat, 12 Sep 2020 21:54:14 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/501-find-mode-in-binary-search-tree/</guid>
+      <description>LC 501 Find Mode in Binary Search Tree Given a binary search tree (BST) with duplicates, find all the mode(s) (the most frequently occurred element) in the given BST. Assume a BST is defined as follows: The left subtree of a node contains only nodes with keys less than or equal to the node&amp;rsquo;s key. The right subtree of a node contains only nodes with keys greater than or equal</description>
+    </item>
+    
+    <item>
+      <title>621 Task Scheduler</title>
+      <link>https://foxisawesome.github.io/posts/621-task-scheduler/</link>
+      <pubDate>Sat, 12 Sep 2020 21:00:42 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/621-task-scheduler/</guid>
+      <description>LC 621 Task Scheduler Given a characters array tasks, representing the tasks a CPU needs to do, where each letter represents a different task. Tasks could be done in any order. Each task is done in one unit of time. For each unit of time, the CPU could complete either one task or just be idle. However, there is a non-negative integer n that represents the cooldown period between two</description>
+    </item>
+    
+    <item>
+      <title>300 Longest Increasing Subsequence</title>
+      <link>https://foxisawesome.github.io/posts/300-longest-increasing-subsequence/</link>
+      <pubDate>Sat, 12 Sep 2020 20:05:08 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/300-longest-increasing-subsequence/</guid>
+      <description>LC 300 Longest Increasing Subsequence Given an unsorted array of integers, find the length of longest increasing subsequence. Example: Input: [10,9,2,5,3,7,101,18] Output: 4 Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4. Solution 2020-09-12 Notes: $\mathcal{O}(N^2)$的解，25%通过了。经典的d</description>
+    </item>
+    
+    <item>
+      <title>767 Reorganize String</title>
+      <link>https://foxisawesome.github.io/posts/767-reorganize-string/</link>
+      <pubDate>Sat, 12 Sep 2020 15:53:16 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/767-reorganize-string/</guid>
+      <description>LC 767 Reorganize String Given a string S, check if the letters can be rearranged so that two characters that are adjacent to each other are not the same. If possible, output any possible result. If not possible, return the empty string. Input: S = &amp;quot;aab&amp;quot; Output: &amp;quot;aba&amp;quot; Solution 2020-09-12 Notes: 这题的思路来自这： 有个dynamic的</description>
+    </item>
     
     <item>
       <title>双指针技巧总结</title>
@@ -162,47 +198,6 @@ For example, this binary tree [1,2,2,3,4,4,3] is symmetric:
       
       <guid>https://foxisawesome.github.io/posts/112-path-sum/</guid>
       <description>LC 112 Path Sum Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum. Given the below binary tree and sum = 22, 5 / \ 4 8 / / \ 11 13 4 / \ \ 7 2 1 return true, as there exist a root-to-leaf path 5-&amp;gt;4-&amp;gt;11-&amp;gt;2 which sum</description>
-    </item>
-    
-    <item>
-      <title>104 Maximum Depth of Binary Tree</title>
-      <link>https://foxisawesome.github.io/posts/104-maximum-depth-of-binary-tree/</link>
-      <pubDate>Wed, 09 Sep 2020 21:45:11 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/104-maximum-depth-of-binary-tree/</guid>
-      <description>LC 104 Maximum Depth of Binary Tree Given a binary tree, find its maximum depth. The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node. Given binary tree [3,9,20,null,null,15,7], 3 / \ 9 20 / \ 15 7 Solution 2020-09-09 Notes: 注意patterns. Beat the TREE! # Definition for</description>
-    </item>
-    
-    <item>
-      <title>111 Minimum Depth of Binary Tree</title>
-      <link>https://foxisawesome.github.io/posts/111-minimum-depth-of-binary-tree/</link>
-      <pubDate>Wed, 09 Sep 2020 21:41:11 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/111-minimum-depth-of-binary-tree/</guid>
-      <description>LC 111 Minimum Depth of Binary Tree   Given a binary tree, find its minimum depth.
-The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
-Given binary tree [3,9,20,null,null,15,7],
- 3 / \ 9 20 / \ 15 7  return 2
- Solution 2020-09-09 Notes:
- Beat the TREE!  # Definition for a binary tree node.</description>
-    </item>
-    
-    <item>
-      <title>124 Binary Tree Maximum Path Sum</title>
-      <link>https://foxisawesome.github.io/posts/124-binary-tree-maximum-path-sum/</link>
-      <pubDate>Wed, 09 Sep 2020 14:41:35 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/124-binary-tree-maximum-path-sum/</guid>
-      <description>LC 124 Binary Tree Maximum Path Sum Given a non-empty binary tree, find the maximum path sum. For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The path must contain at least one node and does not need to go through the root. Input: [-10,9,20,null,null,15,7] -10 / \ 9 20 / \ 15</description>
-    </item>
-    
-    <item>
-      <title>236 Lowest Common Ancestor of a Binary Tree</title>
-      <link>https://foxisawesome.github.io/posts/236-lowest-common-ancestor-of-a-binary-tree/</link>
-      <pubDate>Wed, 09 Sep 2020 13:57:55 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/236-lowest-common-ancestor-of-a-binary-tree/</guid>
-      <description>LC 236 Lowest Common Ancestor of a Binary Tree Given a binary tree, find the lowest common ancestor (LCA) of two given nodes in the tree. According to the definition of LCA on Wikipedia: “The lowest common ancestor is defined between two nodes p and q as the lowest node in T that has both p and q as descendants (where we allow a node to be</description>
     </item>
     
   </channel>
