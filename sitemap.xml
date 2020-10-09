@@ -3,6 +3,146 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
+    <loc>https://foxisawesome.github.io/posts/1007-minimum-domino-rotations-for-equal-row/</loc>
+    <lastmod>2020-10-09T19:35:36-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/categories/algo/</loc>
+    <lastmod>2020-10-09T19:35:36-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/array/</loc>
+    <lastmod>2020-10-09T19:35:36-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/categories/</loc>
+    <lastmod>2020-10-09T19:35:36-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/leetcode/</loc>
+    <lastmod>2020-10-09T19:35:36-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/</loc>
+    <lastmod>2020-10-09T19:35:36-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/</loc>
+    <lastmod>2020-10-09T19:35:36-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/</loc>
+    <lastmod>2020-10-09T19:35:36-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/sql/1321-restaurant-growth/</loc>
+    <lastmod>2020-10-09T19:16:19-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/dia_sql/</loc>
+    <lastmod>2020-10-09T19:16:19-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/categories/sql/</loc>
+    <lastmod>2020-10-09T19:16:19-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/sql/</loc>
+    <lastmod>2020-10-09T19:16:19-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/sql/1107-new-users-daily-count/</loc>
+    <lastmod>2020-10-09T18:54:37-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/sql/1484-group-sold-products-by-the-date/</loc>
+    <lastmod>2020-10-09T18:43:41-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/443-string-compression/</loc>
+    <lastmod>2020-10-09T18:33:05-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/string/</loc>
+    <lastmod>2020-10-09T18:33:05-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/13-roman-to-integer/</loc>
+    <lastmod>2020-10-09T16:06:38-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/6-zigzag-conversion/</loc>
+    <lastmod>2020-10-09T15:50:57-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/347-top-k-frequent-elements/</loc>
+    <lastmod>2020-10-09T15:32:40-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/sort/</loc>
+    <lastmod>2020-10-09T15:32:40-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://foxisawesome.github.io/posts/127-word-ladder/</loc>
     <lastmod>2020-10-08T21:14:34-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -10,21 +150,7 @@
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/categories/algo/</loc>
-    <lastmod>2020-10-08T21:14:34-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://foxisawesome.github.io/tags/bfs/</loc>
-    <lastmod>2020-10-08T21:14:34-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/categories/</loc>
     <lastmod>2020-10-08T21:14:34-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -45,34 +171,6 @@
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/tags/leetcode/</loc>
-    <lastmod>2020-10-08T21:14:34-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/posts/</loc>
-    <lastmod>2020-10-08T21:14:34-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/</loc>
-    <lastmod>2020-10-08T21:14:34-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/tags/</loc>
-    <lastmod>2020-10-08T21:14:34-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://foxisawesome.github.io/posts/468-validate-ip-address/</loc>
     <lastmod>2020-10-08T20:03:36-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -80,28 +178,7 @@
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/tags/string/</loc>
-    <lastmod>2020-10-08T20:03:36-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://foxisawesome.github.io/sql/595-big-countries/</loc>
-    <lastmod>2020-10-08T17:00:05-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/categories/sql/</loc>
-    <lastmod>2020-10-08T17:00:05-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/sql/</loc>
     <lastmod>2020-10-08T17:00:05-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -577,13 +654,6 @@
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/tags/array/</loc>
-    <lastmod>2020-09-29T20:01:38-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://foxisawesome.github.io/sql/1113-reported-posts/</loc>
     <lastmod>2020-09-29T19:04:24-04:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -809,13 +879,6 @@
   
   <url>
     <loc>https://foxisawesome.github.io/posts/75-sort-colors/</loc>
-    <lastmod>2020-09-25T10:27:10-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/tags/sort/</loc>
     <lastmod>2020-09-25T10:27:10-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

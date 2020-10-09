@@ -39,7 +39,7 @@
 <meta itemprop="description" content="SQL Notes Window Functions A window function performs a calculation across a set of table rows that are somehow related to the current row. This is comparable to the type of calculation that can be done with an aggregate function. But ==unlike regular aggregate functions, use of a window function does not cause rows to become grouped into a single output row — the rows retain their separate identities==. Behind the scenes, the window function is able to access more than just the current row of the query result.">
 <meta itemprop="datePublished" content="2020-09-06T18:35:02-04:00" />
 <meta itemprop="dateModified" content="2020-09-06T18:35:02-04:00" />
-<meta itemprop="wordCount" content="3345">
+<meta itemprop="wordCount" content="3348">
 
 
 
@@ -147,9 +147,9 @@
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">191</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">196</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">6</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">47</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">50</span></li>
         </ul>
     </div>
 </div>
@@ -160,7 +160,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/array/" class="tag-list-link">array</a><span
-                    class="tag-list-count">9</span></li>
+                    class="tag-list-count">10</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/backtracking/" class="tag-list-link">backtracking</a><span
@@ -184,7 +184,11 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia/" class="tag-list-link">dia</a><span
-                    class="tag-list-count">33</span></li>
+                    class="tag-list-count">24</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia_sql/" class="tag-list-link">dia_sql</a><span
+                    class="tag-list-count">12</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dp/" class="tag-list-link">dp</a><span
@@ -208,7 +212,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">234</span></li>
+                    class="tag-list-count">242</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -232,7 +236,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/sort/" class="tag-list-link">sort</a><span
-                    class="tag-list-count">5</span></li>
+                    class="tag-list-count">6</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/stack/" class="tag-list-link">stack</a><span
@@ -240,7 +244,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/string/" class="tag-list-link">string</a><span
-                    class="tag-list-count">12</span></li>
+                    class="tag-list-count">15</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/template/" class="tag-list-link">template</a><span
@@ -439,7 +443,7 @@ WINDOW w AS (PARTITION BY depname ORDER BY salary DESC);
 <p>The only difference between Union and Union All is that ==Union All will not removes duplicate rows or records==, instead, it just selects all the rows from all the tables which meets the conditions of your specifics query and combines them into the result table.</p>
 </li>
 <li>
-<p><code>group_concat()</code></p>
+<p><code>group_concat()</code> : <a href="https://leetcode.com/problems/group-sold-products-by-the-date/">LC 1484</a></p>
 <pre><code class="language-mysql">Activities table:
 +------------+-------------+
 | sell_date  | product     |

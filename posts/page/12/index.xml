@@ -5,10 +5,96 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 08 Oct 2020 21:14:34 -0400</lastBuildDate>
+    <lastBuildDate>Fri, 09 Oct 2020 19:35:36 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>128 Longest Consecutive Sequence</title>
+      <link>https://foxisawesome.github.io/posts/128-longest-consecutive-sequence/</link>
+      <pubDate>Thu, 03 Sep 2020 20:41:05 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/128-longest-consecutive-sequence/</guid>
+      <description>LC 128 Longest Consecutive Sequence Given an unsorted array of integers, find the length of the longest consecutive elements sequence. Your algorithm should run in O(n) complexity. Example: Input: [100, 4, 200, 1, 3, 2] Output: 4 Explanation: The longest consecutive elements sequence is [1, 2, 3, 4]. Therefore its length is 4. Solution 2020-09-03 Notes: 题目 time complexity 要求O(N)，那没其</description>
+    </item>
+    
+    <item>
+      <title>543 Diameter of Binary Tree</title>
+      <link>https://foxisawesome.github.io/posts/543-diameter-of-binary-tree/</link>
+      <pubDate>Wed, 02 Sep 2020 15:49:49 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/543-diameter-of-binary-tree/</guid>
+      <description>LC 543 Diameter of Binary Tree   Given a binary tree, you need to compute the length of the diameter of the tree. The diameter of a binary tree is the length of the longest path between any two nodes in a tree. This path may or may not pass through the root.
+Example: Given a binary tree
+ 1 / \ 2 3 / \ 4 5  Return 3, which is the length of the path [4,2,1,3] or [5,2,1,3].</description>
+    </item>
+    
+    <item>
+      <title>48 Rotate Image</title>
+      <link>https://foxisawesome.github.io/posts/48-rotate-image/</link>
+      <pubDate>Wed, 02 Sep 2020 14:16:29 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/48-rotate-image/</guid>
+      <description>LC 48 Rotate Image   You are given an n x n 2D matrix representing an image, rotate the image by 90 degrees (clockwise).
+You have to rotate the image in-place, which means you have to modify the input 2D matrix directly. DO NOT allocate another 2D matrix and do the rotation.
+ Solution 2020-09-02T14:16:29-04:00 Notes:
+  Algo #1: tranpose the matrix first, then reverse the rows. it requires two passes.</description>
+    </item>
+    
+    <item>
+      <title>528 Random Pick With Weight</title>
+      <link>https://foxisawesome.github.io/posts/528-random-pick-with-weight/</link>
+      <pubDate>Wed, 02 Sep 2020 14:11:21 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/528-random-pick-with-weight/</guid>
+      <description>LC 528 Random Pick With Weight   Given an array of positive integers w. where w[i] describes the weight of i``th index (0-indexed).
+We need to call the function pickIndex() which randomly returns an integer in the range [0, w.length - 1]. pickIndex() should return the integer proportional to its weight in the w array. For example, for w = [1, 3], the probability of picking index 0 is 1 / (1 + 3) = 0.</description>
+    </item>
+    
+    <item>
+      <title>445 Add Two Num II</title>
+      <link>https://foxisawesome.github.io/posts/445-add-two-num-ii/</link>
+      <pubDate>Wed, 02 Sep 2020 09:38:40 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/445-add-two-num-ii/</guid>
+      <description>LC 445 Add Two Num II   You are given two non-empty linked lists representing two non-negative integers. The most significant digit comes first and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
+You may assume the two numbers do not contain any leading zero, except the number 0 itself.
+Follow up: What if you cannot modify the input lists?</description>
+    </item>
+    
+    <item>
+      <title>295 Find Median From Data Stream</title>
+      <link>https://foxisawesome.github.io/posts/295-find-median-from-data-stream/</link>
+      <pubDate>Tue, 01 Sep 2020 21:33:10 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/295-find-median-from-data-stream/</guid>
+      <description>LC 295 Find Median From Data Stream Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value. For example, [2,3,4], the median is 3 [2,3], the median is (2 + 3) / 2 = 2.5 Solution 2020-09-01 Notes: Follow 了花花酱的so</description>
+    </item>
+    
+    <item>
+      <title>148 Sort List</title>
+      <link>https://foxisawesome.github.io/posts/148-sort-list/</link>
+      <pubDate>Tue, 01 Sep 2020 19:26:00 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/148-sort-list/</guid>
+      <description>LC 148 Sort List   Sort a linked list in O(n log n) time using constant space complexity.
+Example 1:
+Input: 4-&amp;gt;2-&amp;gt;1-&amp;gt;3 Output: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4  Example 2:
+Input: -1-&amp;gt;5-&amp;gt;3-&amp;gt;4-&amp;gt;0 Output: -1-&amp;gt;0-&amp;gt;3-&amp;gt;4-&amp;gt;5   Solution 2020-09-01 Notes:  Time Complaxity O(nlogn) indicates merge sort algo. in the sortList, line 8:if not head or not head.next: return head actually returns head not None. slow and fast pointers to divide list into two need a lfet tail pointer: l_tail to cut off left linked list.</description>
+    </item>
+    
+    <item>
+      <title>79 Word Search</title>
+      <link>https://foxisawesome.github.io/posts/79-word-search/</link>
+      <pubDate>Tue, 01 Sep 2020 16:07:12 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/79-word-search/</guid>
+      <description>LC 79 Word Search   Given a 2D board and a word, find if the word exists in the grid.
+The word can be constructed from letters of sequentially adjacent cell, where &amp;ldquo;adjacent&amp;rdquo; cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.
+Example:
+board = [ [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;E&#39;], [&#39;S&#39;,&#39;F&#39;,&#39;C&#39;,&#39;S&#39;], [&#39;A&#39;,&#39;D&#39;,&#39;E&#39;,&#39;E&#39;] ] Given word = &amp;quot;ABCCED&amp;quot;, return true. Given word = &amp;quot;SEE&amp;quot;, return true.</description>
+    </item>
     
     <item>
       <title>981 Time Based Key Value Store</title>
@@ -120,79 +206,6 @@ Input: 1 \ 3 / 2 Output: 1 Explanation: The minimum absolute difference is 1, wh
       
       <guid>https://foxisawesome.github.io/posts/linked-list-note/</guid>
       <description>开始刷Leetcode 好几个月了，今天开始学很多人用blog 记录下自己的notes，也激励自己好好刷题！First post! It takes a while for me to get how exactly Linked List</description>
-    </item>
-    
-    <item>
-      <title>917 Reverse Only Letters</title>
-      <link>https://foxisawesome.github.io/posts/917-reverse-only-letters/</link>
-      <pubDate>Sat, 29 Aug 2020 15:47:12 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/917-reverse-only-letters/</guid>
-      <description>LC 917 Reverse Only Letters   Given a string S, return the &amp;ldquo;reversed&amp;rdquo; string where all characters that are not a letter stay in the same place, and all letters reverse their positions.
- Solution 2020-08-29 Notes: class Solution: def reverseOnlyLetters(self, S: str) -&amp;gt; str: if not S: return &#39;&#39; out = list(S) n = len(S) l, r = 0, n-1 while l &amp;lt; r: if not S[l].isalpha() and not S[r].</description>
-    </item>
-    
-    <item>
-      <title>50 Powx N</title>
-      <link>https://foxisawesome.github.io/posts/50-powx-n/</link>
-      <pubDate>Fri, 28 Aug 2020 13:47:34 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/50-powx-n/</guid>
-      <description>LC 50 Powx N Implement pow(x, n), which calculates x raised to the power n (i.e. x^n). Solution 2020-09-25 Notes: 一个月水平进化了一点。 class Solution: def myPow(self, x: float, n: int) -&amp;gt; float: if n &amp;lt; 0: return self.myPow(1/x,abs(n)) if n == 0: return 1 if n % 2 ==0: ans = self.myPow(x,n//2) ** 2 else: ans = x * self.myPow(x, n//2)</description>
-    </item>
-    
-    <item>
-      <title>滑动窗口技巧</title>
-      <link>https://foxisawesome.github.io/posts/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%8A%80%E5%B7%A7/</link>
-      <pubDate>Mon, 10 Aug 2020 21:59:37 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/%E6%BB%91%E5%8A%A8%E7%AA%97%E5%8F%A3%E6%8A%80%E5%B7%A7/</guid>
-      <description>本文详解「滑动窗口」这种高级双指针技巧的算法框架，带你秒杀几道高难度的子字符串匹配问题。 LeetCode 上至少有 9 道题目可以用此方法高效解决。但是有几道是</description>
-    </item>
-    
-    <item>
-      <title>42 Trapping Rain Water</title>
-      <link>https://foxisawesome.github.io/posts/42-trapping-rain-water/</link>
-      <pubDate>Wed, 05 Aug 2020 14:01:29 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/42-trapping-rain-water/</guid>
-      <description>LC 42 Trapping Rain Water Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining. Solution 2020-08-05 Notes: 短边原理，左右指针同时走，r_max 大时短边在left，所以计算lef</description>
-    </item>
-    
-    <item>
-      <title>206 Reverse Linked List</title>
-      <link>https://foxisawesome.github.io/posts/206-reverse-linked-list/</link>
-      <pubDate>Sat, 01 Aug 2020 20:06:27 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/206-reverse-linked-list/</guid>
-      <description>LC 206 Reverse Linked List Reverse a singly linked list. Example: Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL Output: 5-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;1-&amp;gt;NULL Solution 2020-09-01 Notes: 这题刷了不下10遍了，终于明白iteration这里的四步操作了。 # Definition for singly-linked list. # class ListNode: # def __init__(self, val=0, next=None): # self.val = val # self.next</description>
-    </item>
-    
-    <item>
-      <title>回溯算法详解</title>
-      <link>https://foxisawesome.github.io/posts/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3%E4%BF%AE%E8%AE%A2%E7%89%88/</link>
-      <pubDate>Sat, 11 Jul 2020 21:59:37 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3%E4%BF%AE%E8%AE%A2%E7%89%88/</guid>
-      <description>这篇文章是很久之前的一篇《回溯算法详解》的进阶版，之前那篇不够清楚，就不必看了，看这篇就行。把框架给你讲清楚，你会发现回溯算法问题都是一个套</description>
-    </item>
-    
-    <item>
-      <title>2 Add Two Num</title>
-      <link>https://foxisawesome.github.io/posts/2-add-two-num/</link>
-      <pubDate>Thu, 02 Jul 2020 10:08:20 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/2-add-two-num/</guid>
-      <description>LC 2 Add Two Num You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list. You may assume the two numbers do not contain any leading zero, except the number 0 itself. Example: Input: (2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt;</description>
-    </item>
-    
-    <item>
-      <title>169 Majority Element</title>
-      <link>https://foxisawesome.github.io/posts/169-majority-element/</link>
-      <pubDate>Fri, 24 Apr 2020 13:06:24 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/169-majority-element/</guid>
-      <description>LC 169 Majority Element Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times. You may assume that the array is non-empty and the majority element always exist in the array. Solution 2020-09-24 Notes: 这道题有很多种方法做。 hash table做法。 class Solution:</description>
     </item>
     
   </channel>
