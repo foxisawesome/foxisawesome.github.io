@@ -5,10 +5,73 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 09 Oct 2020 19:35:36 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2020 21:45:21 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>20 Valid Parentheses</title>
+      <link>https://foxisawesome.github.io/posts/20-valid-parentheses/</link>
+      <pubDate>Sat, 19 Sep 2020 20:37:05 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/20-valid-parentheses/</guid>
+      <description>LC 20 Valid Parentheses Given a string s containing just the characters &#39;(&#39;, &#39;)&#39;, &#39;{&#39;, &#39;}&#39;, &#39;[&#39; and &#39;]&#39;, determine if the input string is valid. An input string is valid if: Open brackets must be closed by the same type of brackets. Open brackets must be closed in the correct order. Solution 2020-09-19 Notes: 好经典的题。 思路如解。 class Solution: def isValid(self,</description>
+    </item>
+    
+    <item>
+      <title>953 Verifying an Alien Dictionary</title>
+      <link>https://foxisawesome.github.io/posts/953-verifying-an-alien-dictionary/</link>
+      <pubDate>Sat, 19 Sep 2020 20:17:38 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/953-verifying-an-alien-dictionary/</guid>
+      <description>LC 953 Verifying an Alien Dictionary In an alien language, surprisingly they also use english lowercase letters, but possibly in a different order. The order of the alphabet is some permutation of lowercase letters. Given a sequence of words written in the alien language, and the order of the alphabet, return true if and only if the given words are sorted lexicographicaly in this alien language. Input: words = [&amp;quot;word&amp;quot;,&amp;quot;world&amp;quot;,&amp;quot;row&amp;quot;],</description>
+    </item>
+    
+    <item>
+      <title>70 Climbing Stairs</title>
+      <link>https://foxisawesome.github.io/posts/70-climbing-stairs/</link>
+      <pubDate>Tue, 15 Sep 2020 16:48:27 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/70-climbing-stairs/</guid>
+      <description>LC 70 Climbing Stairs You are climbing a stair case. It takes n steps to reach to the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top? Solution 2020-09-15 Notes: 最经典的dp题了。dp[i] = dp[i-1] + dp[i-2], 主要是dp[i] 和</description>
+    </item>
+    
+    <item>
+      <title>91 Decode Ways</title>
+      <link>https://foxisawesome.github.io/posts/91-decode-ways/</link>
+      <pubDate>Tue, 15 Sep 2020 13:32:28 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/91-decode-ways/</guid>
+      <description>LC 91 Decode Ways A message containing letters from A-Z is being encoded to numbers using the following mapping: &#39;A&#39; -&amp;gt; 1 &#39;B&#39; -&amp;gt; 2 ... &#39;Z&#39; -&amp;gt; 26 Given a non-empty string containing only digits, determine the total number of ways to decode it. Input: &amp;ldquo;226&amp;rdquo; Output: 3 Explanation: It could be decoded as &amp;ldquo;BZ&amp;rdquo; (2 26), &amp;ldquo;VF&amp;rdquo; (22 6), or &amp;ldquo;BBF&amp;rdquo; (2 2 6). Solution 2020-09-15 Notes: 开</description>
+    </item>
+    
+    <item>
+      <title>238 Product of Array Except Self</title>
+      <link>https://foxisawesome.github.io/posts/238-product-of-array-except-self/</link>
+      <pubDate>Tue, 15 Sep 2020 13:22:13 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/238-product-of-array-except-self/</guid>
+      <description>LC 238 Product of Array Except Self Given an array nums of n integers where n &amp;gt; 1, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i]. Input: [1,2,3,4] Output: [24,12,8,6] Solution 2020-09-15 Notes: 3-pass, space O(N) solution. L[i] = cumulative product of nums[:i], R[i] = cumulative product of nums[:i:-1] class Solution: def productExceptSelf(self, nums: List[int]) -&amp;gt; List[int]: n</description>
+    </item>
+    
+    <item>
+      <title>56 Merge Intervals</title>
+      <link>https://foxisawesome.github.io/posts/56-merge-intervals/</link>
+      <pubDate>Tue, 15 Sep 2020 13:14:34 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/56-merge-intervals/</guid>
+      <description>LC 56 Merge Intervals Given a collection of intervals, merge all overlapping intervals. Input: intervals = [[1,3],[2,6],[8,10],[15,18]] Output: [[1,6],[8,10],[15,18]] Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6]. Solution 2020-09-15 Notes: 先sort一遍 by x[0], x[1] 比较 ans[-1][1] 与 x[0]的关系， 很简单。 class Solution: def merge(self, intervals: List[List[int]]) -&amp;gt; List[List[int]]: if not intervals:</description>
+    </item>
+    
+    <item>
+      <title>23 Merge K Sorted Lists</title>
+      <link>https://foxisawesome.github.io/posts/23-merge-k-sorted-lists/</link>
+      <pubDate>Mon, 14 Sep 2020 21:04:50 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/23-merge-k-sorted-lists/</guid>
+      <description>LC 23 Merge K Sorted Lists You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list and return it. Input: lists = [[1,4,5],[1,3,4],[2,6]] Output: [1,1,2,3,4,4,5,6] Explanation: The linked-lists are: [ 1-&amp;gt;4-&amp;gt;5, 1-&amp;gt;3-&amp;gt;4, 2-&amp;gt;6 ] merging them into one sorted list: 1-&amp;gt;1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;4-&amp;gt;5-&amp;gt;6 Solution 2020-09-14 Notes: 最简单暴力，最挫的方法。</description>
+    </item>
     
     <item>
       <title>3 Longest Substring Without Repeating Characters</title>
@@ -130,69 +193,6 @@ Input: [1,3,null,null,2] Output: [3,1,null,null,2]   Solution 2020-09-13 Notes:
       
       <guid>https://foxisawesome.github.io/posts/102-binary-tree-level-order-traversal/</guid>
       <description>LC 102 Binary Tree Level Order Traversal Given a binary tree, return the level order traversal of its nodes&amp;rsquo; values. (ie, from left to right, level by level). Given binary tree [3,9,20,null,null,15,7], 3 / \ 9 20 / \ 15 7 return [[3],[9,20],[15,7]] Solution 2020-09-13 Notes: 与LC 109 一样 Recursion 解法： # Definition for a binary tree node. # class TreeNode: # def __init__(self, val=0,</description>
-    </item>
-    
-    <item>
-      <title>199 Binary Tree Right Side View</title>
-      <link>https://foxisawesome.github.io/posts/199-binary-tree-right-side-view/</link>
-      <pubDate>Sun, 13 Sep 2020 14:39:30 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/199-binary-tree-right-side-view/</guid>
-      <description>LC 199 Binary Tree Right Side View Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom. Example: Input: [1,2,3,null,5,null,4] Output: [1, 3, 4] Explanation: 1 &amp;lt;--- / \ 2 3 &amp;lt;--- \ \ 5 4 &amp;lt;--- Solution 2020-09-13 Notes: 一刷虽然做出来了 但是在输出</description>
-    </item>
-    
-    <item>
-      <title>987 Vertical Order Traversal of a Binary Tree</title>
-      <link>https://foxisawesome.github.io/posts/987-vertical-order-traversal-of-a-binary-tree/</link>
-      <pubDate>Sun, 13 Sep 2020 13:59:40 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/987-vertical-order-traversal-of-a-binary-tree/</guid>
-      <description>LC 987 Vertical Order Traversal of a Binary Tree Given a binary tree, return the vertical order traversal of its nodes values. For each node at position (X, Y), its left and right children respectively will be at positions (X-1, Y-1) and (X+1, Y-1). Running a vertical line from X = -infinity to X = +infinity, whenever the vertical line touches some nodes, we report the values of the nodes</description>
-    </item>
-    
-    <item>
-      <title>501 Find Mode in Binary Search Tree</title>
-      <link>https://foxisawesome.github.io/posts/501-find-mode-in-binary-search-tree/</link>
-      <pubDate>Sat, 12 Sep 2020 21:54:14 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/501-find-mode-in-binary-search-tree/</guid>
-      <description>LC 501 Find Mode in Binary Search Tree Given a binary search tree (BST) with duplicates, find all the mode(s) (the most frequently occurred element) in the given BST. Assume a BST is defined as follows: The left subtree of a node contains only nodes with keys less than or equal to the node&amp;rsquo;s key. The right subtree of a node contains only nodes with keys greater than or equal</description>
-    </item>
-    
-    <item>
-      <title>621 Task Scheduler</title>
-      <link>https://foxisawesome.github.io/posts/621-task-scheduler/</link>
-      <pubDate>Sat, 12 Sep 2020 21:00:42 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/621-task-scheduler/</guid>
-      <description>LC 621 Task Scheduler Given a characters array tasks, representing the tasks a CPU needs to do, where each letter represents a different task. Tasks could be done in any order. Each task is done in one unit of time. For each unit of time, the CPU could complete either one task or just be idle. However, there is a non-negative integer n that represents the cooldown period between two</description>
-    </item>
-    
-    <item>
-      <title>300 Longest Increasing Subsequence</title>
-      <link>https://foxisawesome.github.io/posts/300-longest-increasing-subsequence/</link>
-      <pubDate>Sat, 12 Sep 2020 20:05:08 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/300-longest-increasing-subsequence/</guid>
-      <description>LC 300 Longest Increasing Subsequence Given an unsorted array of integers, find the length of longest increasing subsequence. Example: Input: [10,9,2,5,3,7,101,18] Output: 4 Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4. Solution 2020-09-12 Notes: $\mathcal{O}(N^2)$的解，25%通过了。经典的d</description>
-    </item>
-    
-    <item>
-      <title>767 Reorganize String</title>
-      <link>https://foxisawesome.github.io/posts/767-reorganize-string/</link>
-      <pubDate>Sat, 12 Sep 2020 15:53:16 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/767-reorganize-string/</guid>
-      <description>LC 767 Reorganize String Given a string S, check if the letters can be rearranged so that two characters that are adjacent to each other are not the same. If possible, output any possible result. If not possible, return the empty string. Input: S = &amp;quot;aab&amp;quot; Output: &amp;quot;aba&amp;quot; Solution 2020-10-09 Notes: 又刷了一遍，感觉algo不难想到吗，可</description>
-    </item>
-    
-    <item>
-      <title>双指针技巧总结</title>
-      <link>https://foxisawesome.github.io/posts/%E5%8F%8C%E6%8C%87%E9%92%88%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/</link>
-      <pubDate>Fri, 11 Sep 2020 22:01:16 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/%E5%8F%8C%E6%8C%87%E9%92%88%E6%8A%80%E5%B7%A7%E6%80%BB%E7%BB%93/</guid>
-      <description>双指针技巧总结 我把双指针技巧再分为两类，一类是「快慢指针」，一类是「左右指针」。前者解决主要解决链表中的问题，比如典型的判定链表中是否包含环</description>
     </item>
     
   </channel>

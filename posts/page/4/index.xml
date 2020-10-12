@@ -5,10 +5,76 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 09 Oct 2020 19:35:36 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 11 Oct 2020 21:45:21 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>463 Island Perimeter</title>
+      <link>https://foxisawesome.github.io/posts/463-island-perimeter/</link>
+      <pubDate>Thu, 01 Oct 2020 16:01:57 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/463-island-perimeter/</guid>
+      <description>LC 463 Island Perimeter You are given row x col grid representing a map where grid[i][j] = 1 represents land and grid[i][j] = 0 represents water. Grid cells are connected horizontally/vertically (not diagonally). The grid is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells). The island doesn&amp;rsquo;t have &amp;ldquo;lakes&amp;rdquo;, meaning the water inside isn&amp;rsquo;t connected to the water around the island.</description>
+    </item>
+    
+    <item>
+      <title>339 Nested List Weight Sum</title>
+      <link>https://foxisawesome.github.io/posts/339-nested-list-weight-sum/</link>
+      <pubDate>Thu, 01 Oct 2020 15:49:03 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/339-nested-list-weight-sum/</guid>
+      <description>LC 339 Nested List Weight Sum Given a nested list of integers, return the sum of all integers in the list weighted by their depth. Each element is either an integer, or a list &amp;ndash; whose elements may also be integers or other lists. Example 1: Input: [[1,1],2,[1,1]] Output: 10 Explanation: Four 1&#39;s at depth 2, one 2 at depth 1. Example 2: Input: [1,[4,[6]]] Output: 27 Explanation: One 1</description>
+    </item>
+    
+    <item>
+      <title>224 Basic Calculator</title>
+      <link>https://foxisawesome.github.io/posts/224-basic-calculator/</link>
+      <pubDate>Thu, 01 Oct 2020 14:11:32 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/224-basic-calculator/</guid>
+      <description>LC 224 Basic Calculator mplement a basic calculator to evaluate a simple expression string. The expression string may contain open ( and closing parentheses ), the plus + or minus sign -, non-negative integers and empty spaces ``. Input: &amp;quot;(1+(4+5+2)-3)+(6+8)&amp;quot; Output: 23 Solution 2020-10-01 Notes: Calculator 3 题：LC 224, LC 227, LC 772 都好难。三题的解法大同小异，</description>
+    </item>
+    
+    <item>
+      <title>356 Line Reflection</title>
+      <link>https://foxisawesome.github.io/posts/356-line-reflection/</link>
+      <pubDate>Thu, 01 Oct 2020 13:21:41 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/356-line-reflection/</guid>
+      <description>LC 356 Line Reflection Given n points on a 2D plane, find if there is such a line parallel to y-axis that reflect the given points symmetrically, in other words, answer whether or not if there exists a line that after reflecting all points over the given line the set of the original points is the same that the reflected ones. Note that there can be repeated points. Solution 2020-10-01</description>
+    </item>
+    
+    <item>
+      <title>772 Basic Calculator III</title>
+      <link>https://foxisawesome.github.io/posts/772-basic-calculator-iii/</link>
+      <pubDate>Thu, 01 Oct 2020 11:38:24 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/772-basic-calculator-iii/</guid>
+      <description>LC 772 Basic Calculator III Implement a basic calculator to evaluate a simple expression string. The expression string contains only non-negative integers, +, -, *, / operators , open ( and closing parentheses ) and empty spaces ``. The integer division should truncate toward zero. You may assume that the given expression is always valid. All intermediate results will be in the range of [-2147483648, 2147483647]. Follow up: Could you</description>
+    </item>
+    
+    <item>
+      <title>1369 Get the Second Most Recent Activity</title>
+      <link>https://foxisawesome.github.io/sql/1369-get-the-second-most-recent-activity/</link>
+      <pubDate>Wed, 30 Sep 2020 22:20:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1369-get-the-second-most-recent-activity/</guid>
+      <description>LC 1369 Get the Second Most Recent Activity   Write an SQL query to show the second most recent activity of each user.
+If the user only has one activity, return that one.
+A user can&amp;rsquo;t perform more than one activity at the same time. Return the result table in any order.
+ Solution 2020-09-30 Notes:  straightforward by problem description.  SELECT username, activity, startDate, endDate FROM ( SELECT username, activity, startDate, endDate, ROW_NUMBER() OVER(PARTITION BY username ORDER BY startdate DESC) AS nr, COUNT(*) OVER(PARTITION BY username) AS ct FROM userActivity ) a WHERE nr=2 OR ct=1  </description>
+    </item>
+    
+    <item>
+      <title>585 Investments in 2016</title>
+      <link>https://foxisawesome.github.io/sql/585-investments-in-2016/</link>
+      <pubDate>Wed, 30 Sep 2020 21:31:10 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/585-investments-in-2016/</guid>
+      <description>LC 585 Investments in 2016 Write a query to print the sum of all total investment values in 2016 (TIV_2016), to a scale of 2 decimal places, for all policy holders who meet the following criteria: Have the same TIV_2015 value as one or more other policyholders. Are not located in the same city as any other policyholder (i.e.: the (latitude, longitude) attribute pairs must be unique). Sample Input |</description>
+    </item>
     
     <item>
       <title>1355 Activity Participants</title>
@@ -134,69 +200,6 @@ Table:Employee
       <description>LC 534 Game Play Analysis III   Write an SQL query that reports for each player and date, how many games played so far by the player. That is, the total number of games played by the player until that date. Check the example for clarity.
 The query result format is in the following example:
 Activity table: +-----------+-----------+------------+--------------+ | player_id | device_id | event_date | games_played | +-----------+-----------+------------+--------------+ | 1 | 2 | 2016-03-01 | 5 | | 1 | 2 | 2016-05-02 | 6 | | 1 | 3 | 2017-06-25 | 1 | | 3 | 1 | 2016-03-02 | 0 | | 3 | 4 | 2018-07-03 | 5 | +-----------+-----------+------------+--------------+ Result table: +-----------+------------+---------------------+ | player_id | event_date | games_played_so_far | +-----------+------------+---------------------+ | 1 | 2016-03-01 | 5 | | 1 | 2016-05-02 | 11 | | 1 | 2017-06-25 | 12 | | 3 | 2016-03-02 | 0 | | 3 | 2018-07-03 | 5 | +-----------+------------+---------------------+   Solution 2020-09-29 Notes:  SUM() OVER(ORDER BY) gives cumulative results.</description>
-    </item>
-    
-    <item>
-      <title>567 Permutation in String</title>
-      <link>https://foxisawesome.github.io/posts/567-permutation-in-string/</link>
-      <pubDate>Tue, 29 Sep 2020 13:02:26 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/567-permutation-in-string/</guid>
-      <description>LC 567 Permutation in String Given two strings s1 and s2, write a function to return true if s2 contains the permutation of s1. In other words, one of the first string&amp;rsquo;s permutations is the substring of the second string. Input: s1 = &amp;quot;ab&amp;quot; s2 = &amp;quot;eidbaooo&amp;quot; Output: True Explanation: s2 contains one permutation of s1 (&amp;quot;ba&amp;quot;). Solution 2020-09-29 Notes: 这题用了slidin</description>
-    </item>
-    
-    <item>
-      <title>930 Binary Subarrays With Sum</title>
-      <link>https://foxisawesome.github.io/posts/930-binary-subarrays-with-sum/</link>
-      <pubDate>Tue, 29 Sep 2020 11:36:28 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/930-binary-subarrays-with-sum/</guid>
-      <description>LC 930 Binary Subarrays With Sum In an array A of 0s and 1s, how many non-empty subarrays have sum S? Input: A = [1,0,1,0,1], S = 2 Output: 4 Explanation: The 4 subarrays are bolded below: [1,0,1,0,1] [1,0,1,0,1] [1,0,1,0,1] [1,0,1,0,1] Solution 2020-09-29 Notes: 第一刷时按topic来刷的，这一些列题都几乎一摸一样</description>
-    </item>
-    
-    <item>
-      <title>1004 Max Consecutive Ones III</title>
-      <link>https://foxisawesome.github.io/posts/1004-max-consecutive-ones-iii/</link>
-      <pubDate>Mon, 28 Sep 2020 22:06:14 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1004-max-consecutive-ones-iii/</guid>
-      <description>LC 1004 Max Consecutive Ones III Given an array A of 0s and 1s, we may change up to K values from 0 to 1. Return the length of the longest (contiguous) subarray that contains only 1s. Input: A = [1,1,1,0,0,0,1,1,1,1,0], K = 2 Output: 6 Explanation: [1,1,1,0,0,1,1,1,1,1,1] Bolded numbers were flipped from 0 to 1. The longest subarray is underlined. Solution 2020-09-28 Notes: 这其实是倒挺</description>
-    </item>
-    
-    <item>
-      <title>1248 Count Number of Nice Subarrays</title>
-      <link>https://foxisawesome.github.io/posts/1248-count-number-of-nice-subarrays/</link>
-      <pubDate>Mon, 28 Sep 2020 21:38:49 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1248-count-number-of-nice-subarrays/</guid>
-      <description>LC 1248 Count Number of Nice Subarrays Given an array of integers nums and an integer k. A continuous subarray is called nice if there are k odd numbers on it. Return the number of nice sub-arrays. Input: nums = [1,1,2,1,1], k = 3 Output: 2 Explanation: The only sub-arrays with 3 odd numbers are [1,1,2,1] and [1,2,1,1]. Solution 2020-09-28 Notes: 这是与LC 992 一摸一</description>
-    </item>
-    
-    <item>
-      <title>1358 Number of Substrings Containing All Three Characters</title>
-      <link>https://foxisawesome.github.io/posts/1358-number-of-substrings-containing-all-three-characters/</link>
-      <pubDate>Mon, 28 Sep 2020 21:14:47 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1358-number-of-substrings-containing-all-three-characters/</guid>
-      <description>LC 1358 Number of Substrings Containing All Three Characters Given a string s consisting only of characters a, b and c. Return the number of substrings containing at least one occurrence of all these characters a, b and c. Input: s = &amp;quot;abcabc&amp;quot; Output: 10 Explanation: The substrings containing at least one occurrence of the characters a, b and c are &amp;quot;abc&amp;quot;, &amp;quot;abca&amp;quot;, &amp;quot;abcab&amp;quot;, &amp;quot;abcabc&amp;quot;, &amp;quot;bca&amp;quot;, &amp;quot;bcab&amp;quot;, &amp;quot;bcabc&amp;quot;, &amp;quot;cab&amp;quot;, &amp;quot;cabc&amp;quot;</description>
-    </item>
-    
-    <item>
-      <title>992 Subarrays With K Different Integers</title>
-      <link>https://foxisawesome.github.io/posts/992-subarrays-with-k-different-integers/</link>
-      <pubDate>Mon, 28 Sep 2020 20:37:09 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/992-subarrays-with-k-different-integers/</guid>
-      <description>LC 992 Subarrays With K Different Integers Given an array A of positive integers, call a (contiguous, not necessarily distinct) subarray of A good if the number of different integers in that subarray is exactly K. Input: A = [1,2,1,2,3], K = 2 Output: 7 Explanation: Subarrays formed with exactly 2 different integers: [1,2], [2,1], [1,2], [2,3], [1,2,1], [2,1,2], [1,2,1,2]. Solution 2020-09-28 Notes: 看了论坛里的最</description>
-    </item>
-    
-    <item>
-      <title>977 Squares of a Sorted Array</title>
-      <link>https://foxisawesome.github.io/posts/977-squares-of-a-sorted-array/</link>
-      <pubDate>Mon, 28 Sep 2020 18:38:26 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/977-squares-of-a-sorted-array/</guid>
-      <description>LC 977 Squares of a Sorted Array Given an array of integers A sorted in non-decreasing order, return an array of the squares of each number, also in sorted non-decreasing order. Input: [-4,-1,0,3,10] Output: [0,1,9,16,100] Solution 2020-09-28 Notes: 先找到零的位置再向两边走。 class Solution: def sortedSquares(self, A: List[int]) -&amp;gt; List[int]: p, n = 0, len(A) while p &amp;lt; n and A[p]</description>
     </item>
     
   </channel>

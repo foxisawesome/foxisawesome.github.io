@@ -11,6 +11,73 @@
     
     
     <item>
+      <title>328 Odd Even Linked List</title>
+      <link>https://foxisawesome.github.io/posts/328-odd-even-linked-list/</link>
+      <pubDate>Sun, 30 Aug 2020 21:27:32 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/328-odd-even-linked-list/</guid>
+      <description>LC 328 Odd Even Linked List Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes. You should try to do it in place. The program should run in O(1) space complexity and O(nodes) time complexity. Example 1: Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL Output: 1-&amp;gt;3-&amp;gt;5-&amp;gt;2-&amp;gt;4-&amp;gt;NULL Solution 2020-08-30 Notes: linked list 终</description>
+    </item>
+    
+    <item>
+      <title>1266 Minimum Time Visiting All Points</title>
+      <link>https://foxisawesome.github.io/posts/1266-minimum-time-visiting-all-points/</link>
+      <pubDate>Sun, 30 Aug 2020 21:24:22 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1266-minimum-time-visiting-all-points/</guid>
+      <description>LC 1266 Minimum Time Visiting All Points On a plane there are n points with integer coordinates points[i] = [xi, yi]. Your task is to find the minimum time in seconds to visit all points. You can move according to the next rules: In one second always you can either move vertically, horizontally by one unit or diagonally (it means to move one unit vertically and one unit horizontally in</description>
+    </item>
+    
+    <item>
+      <title>530 Min Abs Dif BST</title>
+      <link>https://foxisawesome.github.io/posts/530-min-abs-dif-bst/</link>
+      <pubDate>Sun, 30 Aug 2020 20:59:36 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/530-min-abs-dif-bst/</guid>
+      <description>LC 530
+Given a binary search tree with non-negative values, find the minimum absolute difference between values of any two nodes.
+ Given a binary search tree with non-negative values, find the minimum absolute difference between values of any two nodes.
+Example:
+Input: 1 \ 3 / 2 Output: 1 Explanation: The minimum absolute difference is 1, which is the difference between 2 and 1 (or between 2 and 3).   8/30/2020 Note:</description>
+    </item>
+    
+    <item>
+      <title>98 Valid BST</title>
+      <link>https://foxisawesome.github.io/posts/98-valid-bst/</link>
+      <pubDate>Sun, 30 Aug 2020 20:59:02 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/98-valid-bst/</guid>
+      <description>LC 98 Valid BST Given a binary tree, determine if it is a valid binary search tree (BST). Assume a BST is defined as follows: The left subtree of a node contains only nodes with keys less than the node&amp;rsquo;s key. The right subtree of a node contains only nodes with keys greater than the node&amp;rsquo;s key. Both the left and right subtrees must also be binary search trees. Example</description>
+    </item>
+    
+    <item>
+      <title>701 Insert Into BST</title>
+      <link>https://foxisawesome.github.io/posts/701-insert-into-bst/</link>
+      <pubDate>Sun, 30 Aug 2020 20:58:29 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/701-insert-into-bst/</guid>
+      <description>LC 701 Given the root node of a binary search tree (BST) and a value to be inserted into the tree, insert the value into the BST. Return the root node of the BST after the insertion. It is guaranteed that the new value does not exist in the original BST. Note that there may exist multiple valid ways for the insertion, as long as the tree remains a BST</description>
+    </item>
+    
+    <item>
+      <title>Sliding Window Note</title>
+      <link>https://foxisawesome.github.io/posts/sliding-window-note/</link>
+      <pubDate>Sun, 30 Aug 2020 17:08:55 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/sliding-window-note/</guid>
+      <description>滑动窗口算法的思路是这样： 1、我们在字符串S中使用双指针中的左右指针技巧，初始化left = right = 0，把索引左闭右开区间[left, right)</description>
+    </item>
+    
+    <item>
+      <title>Linked List Note (First Post)</title>
+      <link>https://foxisawesome.github.io/posts/linked-list-note/</link>
+      <pubDate>Sun, 30 Aug 2020 16:54:06 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/linked-list-note/</guid>
+      <description>开始刷Leetcode 好几个月了，今天开始学很多人用blog 记录下自己的notes，也激励自己好好刷题！First post! It takes a while for me to get how exactly Linked List</description>
+    </item>
+    
+    <item>
       <title>917 Reverse Only Letters</title>
       <link>https://foxisawesome.github.io/posts/917-reverse-only-letters/</link>
       <pubDate>Sat, 29 Aug 2020 15:47:12 -0400</pubDate>
