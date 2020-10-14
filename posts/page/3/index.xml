@@ -5,10 +5,99 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 11 Oct 2020 21:45:21 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 13 Oct 2020 20:37:12 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>569 Median Employee Salary</title>
+      <link>https://foxisawesome.github.io/sql/569-median-employee-salary/</link>
+      <pubDate>Mon, 05 Oct 2020 20:26:19 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/569-median-employee-salary/</guid>
+      <description>LC 569 Median Employee Salary The Employee table holds all employees. The employee table has three columns: Employee Id, Company Name, and Salary. +-----+------------+--------+ |Id | Company | Salary | +-----+------------+--------+ |1 | A | 2341 | |2 | A | 341 | |3 | A | 15 | |4 | A | 15314 | |5 | A | 451 | |6 | A | 513 | |7 | B</description>
+    </item>
+    
+    <item>
+      <title>107 Binary Tree Level Order Traversal II</title>
+      <link>https://foxisawesome.github.io/posts/107-binary-tree-level-order-traversal-ii/</link>
+      <pubDate>Mon, 05 Oct 2020 10:06:12 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/107-binary-tree-level-order-traversal-ii/</guid>
+      <description>LC 107 Binary Tree Level Order Traversal II Given a binary tree, return the bottom-up level order traversal of its nodes&amp;rsquo; values. (ie, from left to right, level by level from leaf to root). For example: Given binary tree [3,9,20,null,null,15,7], 3 / \ 9 20 / \ 15 7 return its bottom-up level order traversal as: [ [15,7], [9,20], [3] ] Solution 2020-10-05 Notes: 学习了 负雪明</description>
+    </item>
+    
+    <item>
+      <title>1454 Active Users</title>
+      <link>https://foxisawesome.github.io/sql/1454-active-users/</link>
+      <pubDate>Sun, 04 Oct 2020 21:18:04 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1454-active-users/</guid>
+      <description>LC 1454 Active Users   Write an SQL query to find the id and the name of active users.
+Active users are those who logged in to their accounts for 5 or more consecutive days.
+Return the result table ordered by the id.
+The query result format is in the following example:
+Accounts table: +----+----------+ | id | name | +----+----------+ | 1 | Winston | | 7 | Jonathan | +----+----------+ Logins table: +----+------------+ | id | login_date | +----+------------+ | 7 | 2020-05-30 | | 1 | 2020-05-30 | | 7 | 2020-05-31 | | 7 | 2020-06-01 | | 7 | 2020-06-02 | | 7 | 2020-06-02 | | 7 | 2020-06-03 | | 1 | 2020-06-07 | | 7 | 2020-06-10 | +----+------------+ Result table: +----+----------+ | id | name | +----+----------+ | 7 | Jonathan | +----+----------+   Solution 2020-10-04 Notes:  consecutive 5 days: DATEDIFF(date, LEAD(date,4)) = 4  SELECT DISTINCT a.</description>
+    </item>
+    
+    <item>
+      <title>579 Find Cumulative Salary of an Employee</title>
+      <link>https://foxisawesome.github.io/sql/579-find-cumulative-salary-of-an-employee/</link>
+      <pubDate>Sun, 04 Oct 2020 21:05:57 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/579-find-cumulative-salary-of-an-employee/</guid>
+      <description>LC 579 Find Cumulative Salary of an Employee The Employee table holds the salary information in a year. Write a SQL to get the cumulative sum of an employee&amp;rsquo;s salary over a period of 3 months but exclude the most recent month. The result should be displayed by &amp;lsquo;Id&amp;rsquo; ascending, and then by &amp;lsquo;Month&amp;rsquo; descending. Example Input | Id | Month | Salary | |----|-------|--------| | 1 | 1 |</description>
+    </item>
+    
+    <item>
+      <title>1075 Project Employees I</title>
+      <link>https://foxisawesome.github.io/sql/1075-project-employees-i/</link>
+      <pubDate>Sun, 04 Oct 2020 20:55:17 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1075-project-employees-i/</guid>
+      <description>LC 1075 Project Employees I   Write an SQL query that reports the average experience years of all the employees for each project, rounded to 2 digits.
+The query result format is in the following example:
+Project table: +-------------+-------------+ | project_id | employee_id | +-------------+-------------+ | 1 | 1 | | 1 | 2 | | 1 | 3 | | 2 | 1 | | 2 | 4 | +-------------+-------------+ Employee table: +-------------+--------+------------------+ | employee_id | name | experience_years | +-------------+--------+------------------+ | 1 | Khaled | 3 | | 2 | Ali | 2 | | 3 | John | 1 | | 4 | Doe | 2 | +-------------+--------+------------------+ Result table: +-------------+---------------+ | project_id | average_years | +-------------+---------------+ | 1 | 2.</description>
+    </item>
+    
+    <item>
+      <title>620 Not Boring Movies</title>
+      <link>https://foxisawesome.github.io/sql/620-not-boring-movies/</link>
+      <pubDate>Sun, 04 Oct 2020 20:51:14 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/620-not-boring-movies/</guid>
+      <description>LC 620 Not Boring Movies   X city opened a new cinema, many people would like to go to this cinema. The cinema also gives out a poster indicating the movies’ ratings and descriptions.
+Please write a SQL query to output movies with an odd numbered ID and a description that is not &amp;lsquo;boring&amp;rsquo;. Order the result by rating.
+ Solution 2020-10-04 Notes: SELECT * FROM cinema WHERE id % 2 = 1 AND description !</description>
+    </item>
+    
+    <item>
+      <title>137 Single Number II</title>
+      <link>https://foxisawesome.github.io/posts/137-single-number-ii/</link>
+      <pubDate>Sun, 04 Oct 2020 20:43:36 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/137-single-number-ii/</guid>
+      <description>LC 137 Single Number II Given a non-empty array of integers, every element appears three times except for one, which appears exactly once. Find that single one. Note: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory? Input: [2,2,3,2] Output: 3 Input: [0,1,0,1,0,1,99] Output: 99 Solution 2020-10-04 Notes: 因为确定那个特殊值只出现一次，</description>
+    </item>
+    
+    <item>
+      <title>130 Surrounded Regions</title>
+      <link>https://foxisawesome.github.io/posts/130-surrounded-regions/</link>
+      <pubDate>Sun, 04 Oct 2020 20:34:29 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/130-surrounded-regions/</guid>
+      <description>LC 130 Surrounded Regions Given a 2D board containing &#39;X&#39; and &#39;O&#39; (the letter O), capture all regions surrounded by &#39;X&#39;. A region is captured by flipping all &#39;O&#39;s into &#39;X&#39;s in that surrounded region. Example: X X X X X O O X X X O X X O X X After running your function, the board should be: X X X X X X X X X X</description>
+    </item>
+    
+    <item>
+      <title>108 Convert Sorted Array to Binary Search Tree</title>
+      <link>https://foxisawesome.github.io/posts/108-convert-sorted-array-to-binary-search-tree/</link>
+      <pubDate>Sun, 04 Oct 2020 16:08:38 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/108-convert-sorted-array-to-binary-search-tree/</guid>
+      <description>LC 108 Convert Sorted Array to Binary Search Tree Given an array where elements are sorted in ascending order, convert it to a height balanced BST. For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1. Given the sorted array: [-10,-3,0,5,9], One possible answer is: [0,-3,9,-10,null,5], which represents the following</description>
+    </item>
     
     <item>
       <title>120 Triangle</title>
@@ -109,87 +198,6 @@ Warehouse table: +------------+--------------+-------------+ | name | product_id
       
       <guid>https://foxisawesome.github.io/posts/161-one-edit-distance/</guid>
       <description>LC 161 One Edit Distance Given two strings s and t, return true if they are both one edit distance apart, otherwise return false. A string s is said to be one distance apart from a string t if you can: Insert exactly one character into s to get t. Delete exactly one character from s to get t. Replace exactly one character of s with a different character to</description>
-    </item>
-    
-    <item>
-      <title>168 Excel Sheet Column Title</title>
-      <link>https://foxisawesome.github.io/posts/168-excel-sheet-column-title/</link>
-      <pubDate>Fri, 02 Oct 2020 13:52:16 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/168-excel-sheet-column-title/</guid>
-      <description>LC 168 Excel Sheet Column Title Given a positive integer, return its corresponding column title as appear in an Excel sheet. For example: 1 -&amp;gt; A 2 -&amp;gt; B 3 -&amp;gt; C ... 26 -&amp;gt; Z 27 -&amp;gt; AA 28 -&amp;gt; AB ... Input: 28 Output: &amp;quot;AB&amp;quot; Solution 2020-10-02 Notes: dict应该 0-indexed，然后di</description>
-    </item>
-    
-    <item>
-      <title>724 Find Pivot Index</title>
-      <link>https://foxisawesome.github.io/posts/724-find-pivot-index/</link>
-      <pubDate>Fri, 02 Oct 2020 13:38:14 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/724-find-pivot-index/</guid>
-      <description>LC 724 Find Pivot Index Given an array of integers nums, write a method that returns the &amp;ldquo;pivot&amp;rdquo; index of this array. We define the pivot index as the index where the sum of all the numbers to the left of the index is equal to the sum of all the numbers to the right of the index. If no such index exists, we should return -1. If there are</description>
-    </item>
-    
-    <item>
-      <title>240 Search a 2d Matrix II</title>
-      <link>https://foxisawesome.github.io/posts/240-search-a-2d-matrix-ii/</link>
-      <pubDate>Fri, 02 Oct 2020 13:14:19 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/240-search-a-2d-matrix-ii/</guid>
-      <description>LC 240 Search a 2d Matrix II Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties: Integers in each row are sorted in ascending from left to right. Integers in each column are sorted in ascending from top to bottom. Consider the following matrix: [ [1, 4, 7, 11, 15], [2, 5, 8, 12, 19], [3, 6, 9,</description>
-    </item>
-    
-    <item>
-      <title>905 Sort Array by Parity</title>
-      <link>https://foxisawesome.github.io/posts/905-sort-array-by-parity/</link>
-      <pubDate>Fri, 02 Oct 2020 12:54:30 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/905-sort-array-by-parity/</guid>
-      <description>LC 905 Sort Array by Parity Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A. You may return any answer array that satisfies this condition. Input: [3,1,2,4] Output: [2,4,3,1] The outputs [4,2,3,1], [2,4,1,3], and [4,2,1,3] would also be accepted. Solution 2020-10-02 Notes: 这题和 remove duplicate from array 一回事。</description>
-    </item>
-    
-    <item>
-      <title>1213 Intersection of Three Sorted Arrays</title>
-      <link>https://foxisawesome.github.io/posts/1213-intersection-of-three-sorted-arrays/</link>
-      <pubDate>Fri, 02 Oct 2020 12:46:42 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1213-intersection-of-three-sorted-arrays/</guid>
-      <description>LC 1213 Intersection of Three Sorted Arrays Given three integer arrays arr1, arr2 and arr3 sorted in strictly increasing order, return a sorted array of only the integers that appeared in all three arrays. Input: arr1 = [1,2,3,4,5], arr2 = [1,2,5,7,9], arr3 = [1,3,4,5,8] Output: [1,5] Explanation: Only 1 and 5 appeared in the three arrays. Solution 2020-10-02 Notes: 建一个 helper function 找两个arr</description>
-    </item>
-    
-    <item>
-      <title>118 Pascals Triangle</title>
-      <link>https://foxisawesome.github.io/posts/118-pascals-triangle/</link>
-      <pubDate>Fri, 02 Oct 2020 11:34:43 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/118-pascals-triangle/</guid>
-      <description>LC 118 Pascals Triangle Given a non-negative integer numRows, generate the first numRows of Pascal&amp;rsquo;s triangle. Solution 2020-10-02 Notes: 没有特别的。 class Solution: def generate(self, numRows: int) -&amp;gt; List[List[int]]: ans = [[1]*i for i in range(1,numRows+1)] if numRows &amp;gt;= 3: for i in range(2,numRows): for j in range(1,i): ans[i][j] = sum(ans[i-1][j-1:j+1]) return ans # Time O(N) # Space O(N)</description>
-    </item>
-    
-    <item>
-      <title>8 String to Integer Atoi</title>
-      <link>https://foxisawesome.github.io/posts/8-string-to-integer-atoi/</link>
-      <pubDate>Fri, 02 Oct 2020 11:08:37 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/8-string-to-integer-atoi/</guid>
-      <description>LC 8 String to Integer Atoi Implement atoi which converts a string to an integer. The function first discards as many whitespace characters as necessary until the first non-whitespace character is found. Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible, and interprets them as a numerical value. The string can contain additional characters after those that form</description>
-    </item>
-    
-    <item>
-      <title>67 Add Binary</title>
-      <link>https://foxisawesome.github.io/posts/67-add-binary/</link>
-      <pubDate>Thu, 01 Oct 2020 19:23:49 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/67-add-binary/</guid>
-      <description>LC 67 Add Binary Given two binary strings, return their sum (also a binary string). The input strings are both non-empty and contains only characters 1 or 0. Input: a = &amp;quot;11&amp;quot;, b = &amp;quot;1&amp;quot; Output: &amp;quot;100&amp;quot; Solution 2020-10-01 Notes: 这题不像linked list的加法，得分两个loop，一个l</description>
-    </item>
-    
-    <item>
-      <title>66 Plus One</title>
-      <link>https://foxisawesome.github.io/posts/66-plus-one/</link>
-      <pubDate>Thu, 01 Oct 2020 16:14:59 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/66-plus-one/</guid>
-      <description>LC 66 Plus One Given a non-empty array of digits representing a non-negative integer, increment one to the integer. The digits are stored such that the most significant digit is at the head of the list, and each element in the array contains a single digit. You may assume the integer does not contain any leading zero, except the number 0 itself. Solution 2020-10-01 Notes: 简单题，走</description>
     </item>
     
   </channel>

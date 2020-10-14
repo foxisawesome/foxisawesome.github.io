@@ -11,6 +11,96 @@
     
     
     <item>
+      <title>560 Subarray Sum Equals K</title>
+      <link>https://foxisawesome.github.io/posts/560-subarray-sum-equals-k/</link>
+      <pubDate>Tue, 08 Sep 2020 15:07:27 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/560-subarray-sum-equals-k/</guid>
+      <description>LC 560 Subarray Sum Equals K Given an array of integers and an integer k, you need to find the total number of continuous subarrays whose sum equals to k. Input:nums = [1,1,1], k = 2 Output: 2 Solution 2020-09-08 Notes: 看了labuladong 的总结 预先算一个cumulativ</description>
+    </item>
+    
+    <item>
+      <title>1109 Corporate Flight Bookings</title>
+      <link>https://foxisawesome.github.io/posts/1109-corporate-flight-bookings/</link>
+      <pubDate>Tue, 08 Sep 2020 13:44:08 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1109-corporate-flight-bookings/</guid>
+      <description>LC 1109 Corporate Flight Bookings There are n flights, and they are labeled from 1 to n. We have a list of flight bookings. The i-th booking bookings[i] = [i, j, k] means that we booked k seats from flights labeled i to j inclusive. Return an array answer of length n, representing the number of seats booked on each flight in order of their label. Input: bookings = [[1,2,10],[2,3,20],[2,5,25]],</description>
+    </item>
+    
+    <item>
+      <title>1539 Kth Missing Positive Number</title>
+      <link>https://foxisawesome.github.io/posts/1539-kth-missing-positive-number/</link>
+      <pubDate>Mon, 07 Sep 2020 22:03:58 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1539-kth-missing-positive-number/</guid>
+      <description>LC 1539 Kth Missing Positive Number Given an array arr of positive integers sorted in a strictly increasing order, and an integer k. Find the kth positive integer that is missing from this array. Input: arr = [2,3,4,7,11], k = 5 Output: 9 Explanation: The missing positive integers are [1,5,6,8,9,10,12,13,...]. The 5th missing positive integer is 9. Solution 2020-09-07 Notes: O(N) solution is pretty easy, but not optimal. the binary</description>
+    </item>
+    
+    <item>
+      <title>1512 Number of Good Pairs</title>
+      <link>https://foxisawesome.github.io/posts/1512-number-of-good-pairs/</link>
+      <pubDate>Sun, 06 Sep 2020 21:03:48 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1512-number-of-good-pairs/</guid>
+      <description>LC 1512 Number of Good Pairs   Given an array of integers nums.
+A pair (i,j) is called good if nums[i] == nums[j] and i &amp;lt; j.
+Return the number of good pairs.
+ Solution 2020-09-06 Notes:  One-pass using hash table. line 7-9, if gets a match, how many pairs it can make to previous ones is d[num].  class Solution: def numIdenticalPairs(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 ans = 0 d = dict() for num in nums: if num in d: ans += d[num] d[num] += 1 else: d[num] = 1 return ans # Time O(N) # Space O(N)   Use double loop:  class Solution: def numIdenticalPairs(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 n = len(nums) ans = 0 for i in range(n): j = i+1 while j &amp;lt; n: if nums[i] == nums[j]: ans += 1 j += 1 return ans # Time O(N^2) # Space O(1)  </description>
+    </item>
+    
+    <item>
+      <title>SQL Notes</title>
+      <link>https://foxisawesome.github.io/sql/sql-notes/</link>
+      <pubDate>Sun, 06 Sep 2020 18:35:02 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/sql-notes/</guid>
+      <description>SQL Notes Window Functions A window function performs a calculation across a set of table rows that are somehow related to the current row. This is comparable to the type of calculation that can be done with an aggregate function. But ==unlike regular aggregate functions, use of a window function does not cause rows to become grouped into a single output row — the rows retain their separate identities==. Behind the scenes, the window function is able to access more than just the current row of the query result.</description>
+    </item>
+    
+    <item>
+      <title>166 Fraction to Recurring Decimal</title>
+      <link>https://foxisawesome.github.io/posts/166-fraction-to-recurring-decimal/</link>
+      <pubDate>Sat, 05 Sep 2020 22:05:28 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/166-fraction-to-recurring-decimal/</guid>
+      <description>LC 166 Fraction to Recurring Decimal   Given two integers representing the numerator and denominator of a fraction, return the fraction in string format.
+If the fractional part is repeating, enclose the repeating part in parentheses.
+If multiple answers are possible, just return any of them.
+Extreme case: numer = -2147483648, denominator = -1999
+ Solution 2020-09-05 Notes:  Details: python built-in divmod() returns floor, which is not friendly in negative case.</description>
+    </item>
+    
+    <item>
+      <title>159 Longest Substring With at Most Two Distinct Characters</title>
+      <link>https://foxisawesome.github.io/posts/159-longest-substring-with-at-most-two-distinct-characters/</link>
+      <pubDate>Sat, 05 Sep 2020 21:08:15 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/159-longest-substring-with-at-most-two-distinct-characters/</guid>
+      <description>LC 159 Longest Substring With at Most Two Distinct Characters Given a string *s* , find the length of the longest substring *t* that contains at most 2 distinct characters. Input: &amp;quot;ccaabbb&amp;quot; Output: 5 Explanation: t is &amp;quot;aabbb&amp;quot; which its length is 5. Solution 2020-09-05 Notes: 今天周末出去走了一圈，回家刷题效率可以啊。 class Solution: def</description>
+    </item>
+    
+    <item>
+      <title>136 Single Number</title>
+      <link>https://foxisawesome.github.io/posts/136-single-number/</link>
+      <pubDate>Sat, 05 Sep 2020 20:58:41 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/136-single-number/</guid>
+      <description>LC 136 Single Number   Given a non-empty array of integers, every element appears twice except for one. Find that single one.
+Note: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
+ Solution 2020-09-05 Notes:  Space O(1) solution is a bit tricky.  class Solution: def singleNumber(self, nums: List[int]) -&amp;gt; int: stack = set() for num in nums: if num not in stack: stack.</description>
+    </item>
+    
+    <item>
+      <title>187 Repeated Dna Sequences</title>
+      <link>https://foxisawesome.github.io/posts/187-repeated-dna-sequences/</link>
+      <pubDate>Sat, 05 Sep 2020 20:17:11 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/187-repeated-dna-sequences/</guid>
+      <description>LC 187 Repeated Dna Sequences All DNA is composed of a series of nucleotides abbreviated as A, C, G, and T, for example: &amp;ldquo;ACGAATTCCG&amp;rdquo;. When studying DNA, it is sometimes useful to identify repeated sequences within the DNA. Write a function to find all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule. Solution 2020-09-05 Notes: 很简单的题，两个小陷</description>
+    </item>
+    
+    <item>
       <title>1249 Minimum Remove to Make Valid Parentheses</title>
       <link>https://foxisawesome.github.io/posts/1249-minimum-remove-to-make-valid-parentheses/</link>
       <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
@@ -125,95 +215,6 @@ You have to rotate the image in-place, which means you have to modify the input 
       <guid>https://foxisawesome.github.io/posts/528-random-pick-with-weight/</guid>
       <description>LC 528 Random Pick With Weight   Given an array of positive integers w. where w[i] describes the weight of i``th index (0-indexed).
 We need to call the function pickIndex() which randomly returns an integer in the range [0, w.length - 1]. pickIndex() should return the integer proportional to its weight in the w array. For example, for w = [1, 3], the probability of picking index 0 is 1 / (1 + 3) = 0.</description>
-    </item>
-    
-    <item>
-      <title>445 Add Two Num II</title>
-      <link>https://foxisawesome.github.io/posts/445-add-two-num-ii/</link>
-      <pubDate>Wed, 02 Sep 2020 09:38:40 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/445-add-two-num-ii/</guid>
-      <description>LC 445 Add Two Num II   You are given two non-empty linked lists representing two non-negative integers. The most significant digit comes first and each of their nodes contain a single digit. Add the two numbers and return it as a linked list.
-You may assume the two numbers do not contain any leading zero, except the number 0 itself.
-Follow up: What if you cannot modify the input lists?</description>
-    </item>
-    
-    <item>
-      <title>295 Find Median From Data Stream</title>
-      <link>https://foxisawesome.github.io/posts/295-find-median-from-data-stream/</link>
-      <pubDate>Tue, 01 Sep 2020 21:33:10 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/295-find-median-from-data-stream/</guid>
-      <description>LC 295 Find Median From Data Stream Median is the middle value in an ordered integer list. If the size of the list is even, there is no middle value. So the median is the mean of the two middle value. For example, [2,3,4], the median is 3 [2,3], the median is (2 + 3) / 2 = 2.5 Solution 2020-09-01 Notes: Follow 了花花酱的so</description>
-    </item>
-    
-    <item>
-      <title>148 Sort List</title>
-      <link>https://foxisawesome.github.io/posts/148-sort-list/</link>
-      <pubDate>Tue, 01 Sep 2020 19:26:00 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/148-sort-list/</guid>
-      <description>LC 148 Sort List   Sort a linked list in O(n log n) time using constant space complexity.
-Example 1:
-Input: 4-&amp;gt;2-&amp;gt;1-&amp;gt;3 Output: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4  Example 2:
-Input: -1-&amp;gt;5-&amp;gt;3-&amp;gt;4-&amp;gt;0 Output: -1-&amp;gt;0-&amp;gt;3-&amp;gt;4-&amp;gt;5   Solution 2020-09-01 Notes:  Time Complaxity O(nlogn) indicates merge sort algo. in the sortList, line 8:if not head or not head.next: return head actually returns head not None. slow and fast pointers to divide list into two need a lfet tail pointer: l_tail to cut off left linked list.</description>
-    </item>
-    
-    <item>
-      <title>79 Word Search</title>
-      <link>https://foxisawesome.github.io/posts/79-word-search/</link>
-      <pubDate>Tue, 01 Sep 2020 16:07:12 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/79-word-search/</guid>
-      <description>LC 79 Word Search   Given a 2D board and a word, find if the word exists in the grid.
-The word can be constructed from letters of sequentially adjacent cell, where &amp;ldquo;adjacent&amp;rdquo; cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.
-Example:
-board = [ [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;E&#39;], [&#39;S&#39;,&#39;F&#39;,&#39;C&#39;,&#39;S&#39;], [&#39;A&#39;,&#39;D&#39;,&#39;E&#39;,&#39;E&#39;] ] Given word = &amp;quot;ABCCED&amp;quot;, return true. Given word = &amp;quot;SEE&amp;quot;, return true.</description>
-    </item>
-    
-    <item>
-      <title>981 Time Based Key Value Store</title>
-      <link>https://foxisawesome.github.io/posts/981-time-based-key-value-store/</link>
-      <pubDate>Tue, 01 Sep 2020 14:15:51 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/981-time-based-key-value-store/</guid>
-      <description>LC 981 Time Based Key Value Store Create a timebased key-value store class TimeMap, that supports two operations. set(string key, string value, int timestamp) Stores the key and value, along with the given timestamp. get(string key, int timestamp) Returns a value such that set(key, value, timestamp_prev) was called previously, with timestamp_prev &amp;lt;= timestamp. If there are multiple such values, it returns the one with the largest timestamp_prev. If there are</description>
-    </item>
-    
-    <item>
-      <title>1041 Robot Bounded in Circle</title>
-      <link>https://foxisawesome.github.io/posts/1041-robot-bounded-in-circle/</link>
-      <pubDate>Mon, 31 Aug 2020 22:14:45 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1041-robot-bounded-in-circle/</guid>
-      <description>LC 1041 Robot Bounded in Circle On an infinite plane, a robot initially stands at (0, 0) and faces north. The robot can receive one of three instructions: &amp;quot;G&amp;quot;: go straight 1 unit; &amp;quot;L&amp;quot;: turn 90 degrees to the left; &amp;quot;R&amp;quot;: turn 90 degress to the right. The robot performs the instructions given in order, and repeats them forever. Return true if and only if there exists a circle in</description>
-    </item>
-    
-    <item>
-      <title>957 Prison Cells</title>
-      <link>https://foxisawesome.github.io/posts/957-prison-cells/</link>
-      <pubDate>Mon, 31 Aug 2020 19:26:18 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/957-prison-cells/</guid>
-      <description>LC 957 Prison Cells There are 8 prison cells in a row, and each cell is either occupied or vacant. Each day, whether the cell is occupied or vacant changes according to the following rules: If a cell has two adjacent neighbors that are both occupied or both vacant, then the cell becomes occupied. Otherwise, it becomes vacant. (Note that because the prison is a row, the first and the</description>
-    </item>
-    
-    <item>
-      <title>735 Aseroid Collision</title>
-      <link>https://foxisawesome.github.io/posts/735-aseroid-collision/</link>
-      <pubDate>Mon, 31 Aug 2020 19:05:25 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/735-aseroid-collision/</guid>
-      <description>LC 735 Aseroid Collision We are given an array asteroids of integers representing asteroids in a row. For each asteroid, the absolute value represents its size, and the sign represents its direction (positive meaning right, negative meaning left). Each asteroid moves at the same speed. Find out the state of the asteroids after all collisions. If two asteroids meet, the smaller one will explode. If both are the same size,</description>
-    </item>
-    
-    <item>
-      <title>141 Linked List Cycle</title>
-      <link>https://foxisawesome.github.io/posts/141-linked-list-cycle/</link>
-      <pubDate>Sun, 30 Aug 2020 21:35:50 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/141-linked-list-cycle/</guid>
-      <description>LC 141 Linked List Cycle Given a linked list, determine if it has a cycle in it. To represent a cycle in the given linked list, we use an integer pos which represents the position (0-indexed) in the linked list where tail connects to. If pos is -1, then there is no cycle in the linked list. Example 1: Input: head = [3,2,0,-4], pos = 1 Output: true Explanation: There</description>
     </item>
     
   </channel>
