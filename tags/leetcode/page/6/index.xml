@@ -5,10 +5,62 @@
     <link>https://foxisawesome.github.io/tags/leetcode/</link>
     <description>Recent content in leetcode on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 16 Oct 2020 09:29:59 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 17 Oct 2020 21:13:03 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>627 Swap Salary</title>
+      <link>https://foxisawesome.github.io/sql/627-swap-salary/</link>
+      <pubDate>Tue, 29 Sep 2020 13:54:07 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/627-swap-salary/</guid>
+      <description>LC 627 Swap Salary   SQL Schema
+Given a table salary, such as the one below, that has m=male and f=female values. Swap all f and m values (i.e., change all f values to m and vice versa) with a single update statement and no intermediate temp table.
+Note that you must write a single update statement, DO NOT write any select statement for this problem.
+ Solution 2020-09-29 Notes:  UPDATE statement.</description>
+    </item>
+    
+    <item>
+      <title>577 Employee Bonus</title>
+      <link>https://foxisawesome.github.io/sql/577-employee-bonus/</link>
+      <pubDate>Tue, 29 Sep 2020 13:49:21 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/577-employee-bonus/</guid>
+      <description>LC 577 Employee Bonus   Select all employee&amp;rsquo;s name and bonus whose bonus is &amp;lt; 1000.
+Table:Employee
++-------+--------+-----------+--------+ | empId | name | supervisor| salary | +-------+--------+-----------+--------+ | 1 | John | 3 | 1000 | | 2 | Dan | 3 | 2000 | | 3 | Brad | null | 4000 | | 4 | Thomas | 3 | 4000 | +-------+--------+-----------+--------+ empId is the primary key column for this table.</description>
+    </item>
+    
+    <item>
+      <title>574 Winning Candidate</title>
+      <link>https://foxisawesome.github.io/sql/574-winning-candidate/</link>
+      <pubDate>Tue, 29 Sep 2020 13:40:03 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/574-winning-candidate/</guid>
+      <description>LC 574 Winning Candidate Write a sql to find the name of the winning candidate, the above example will return the winner B. Solution 2020-09-29 Notes: 先 group by, 在 order by 里放 aggregation function SELECT name FROM candidate WHERE id = ( SELECT candidateid FROM vote GROUP BY candidateid ORDER BY COUNT(*) DESC LIMIT 1 ) 2020-10-14 Notes: Window function + aggregation function SELECT name FROM candidate a</description>
+    </item>
+    
+    <item>
+      <title>534 Game Play Analysis III</title>
+      <link>https://foxisawesome.github.io/sql/534-game-play-analysis-iii/</link>
+      <pubDate>Tue, 29 Sep 2020 13:30:11 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/534-game-play-analysis-iii/</guid>
+      <description>LC 534 Game Play Analysis III   Write an SQL query that reports for each player and date, how many games played so far by the player. That is, the total number of games played by the player until that date. Check the example for clarity.
+The query result format is in the following example:
+Activity table: +-----------+-----------+------------+--------------+ | player_id | device_id | event_date | games_played | +-----------+-----------+------------+--------------+ | 1 | 2 | 2016-03-01 | 5 | | 1 | 2 | 2016-05-02 | 6 | | 1 | 3 | 2017-06-25 | 1 | | 3 | 1 | 2016-03-02 | 0 | | 3 | 4 | 2018-07-03 | 5 | +-----------+-----------+------------+--------------+ Result table: +-----------+------------+---------------------+ | player_id | event_date | games_played_so_far | +-----------+------------+---------------------+ | 1 | 2016-03-01 | 5 | | 1 | 2016-05-02 | 11 | | 1 | 2017-06-25 | 12 | | 3 | 2016-03-02 | 0 | | 3 | 2018-07-03 | 5 | +-----------+------------+---------------------+   Solution 2020-09-29 Notes:  SUM() OVER(ORDER BY) gives cumulative results.</description>
+    </item>
+    
+    <item>
+      <title>567 Permutation in String</title>
+      <link>https://foxisawesome.github.io/posts/567-permutation-in-string/</link>
+      <pubDate>Tue, 29 Sep 2020 13:02:26 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/567-permutation-in-string/</guid>
+      <description>LC 567 Permutation in String Given two strings s1 and s2, write a function to return true if s2 contains the permutation of s1. In other words, one of the first string&amp;rsquo;s permutations is the substring of the second string. Input: s1 = &amp;quot;ab&amp;quot; s2 = &amp;quot;eidbaooo&amp;quot; Output: True Explanation: s2 contains one permutation of s1 (&amp;quot;ba&amp;quot;). Solution 2020-09-29 Notes: 这题用了slidin</description>
+    </item>
     
     <item>
       <title>930 Binary Subarrays With Sum</title>
@@ -143,51 +195,6 @@
       
       <guid>https://foxisawesome.github.io/posts/74-search-a-2d-matrix/</guid>
       <description>LC 74 Search a 2d Matrix Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties: Integers in each row are sorted from left to right. The first integer of each row is greater than the last integer of the previous row. Solution 2020-09-25 Notes: Right bound binary search returns the closest left bound, e.g. binarySearch([1,3,5,7], 4). 两次</description>
-    </item>
-    
-    <item>
-      <title>Cheatsheet</title>
-      <link>https://foxisawesome.github.io/posts/cheatsheet/</link>
-      <pubDate>Fri, 25 Sep 2020 19:13:47 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/cheatsheet/</guid>
-      <description> [[x,y] for x in [0,3] for y in [6,9]]: generate pairs [[0, 6], [0, 9], [3, 6], [3, 9]] [[x,y] for x, y in zip([&#39;a&#39;,&#39;b&#39;],[&#39;c&#39;,&#39;d&#39;])]: [[&amp;lsquo;a&amp;rsquo;, &amp;lsquo;c&amp;rsquo;], [&amp;lsquo;b&amp;rsquo;, &amp;rsquo;d&amp;rsquo;]] one liner to create dictionary:lookup = {val: i for i, val in enumerate(order)} this reverse check dict and return max val count in dict  max_val = max(dict.values()) max_freq = max(dict, key=dict.get) for key, val in dict.items(): if val == max_val: return key sorted_dict = sorted(dict, key = lambda x: (-dict[x]) ) sorted_dict[0]   sort a by b: [x for _,x in sorted(zip(b,a))]  </description>
-    </item>
-    
-    <item>
-      <title>36 Valid Sudoku</title>
-      <link>https://foxisawesome.github.io/posts/36-valid-sudoku/</link>
-      <pubDate>Fri, 25 Sep 2020 19:13:25 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/36-valid-sudoku/</guid>
-      <description>LC 36 Valid Sudoku Determine if a 9x9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules: Each row must contain the digits 1-9 without repetition. Each column must contain the digits 1-9 without repetition. Each of the 9 3x3 sub-boxes of the grid must contain the digits 1-9 without repetition. A partially filled sudoku which is valid. Solution 2020-09-25 Notes: 按</description>
-    </item>
-    
-    <item>
-      <title>771 Jewels and Stones</title>
-      <link>https://foxisawesome.github.io/posts/771-jewels-and-stones/</link>
-      <pubDate>Fri, 25 Sep 2020 15:54:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/771-jewels-and-stones/</guid>
-      <description>LC 771 Jewels and Stones You&amp;rsquo;re given strings J representing the types of stones that are jewels, and S representing the stones you have. Each character in S is a type of stone you have. You want to know how many of the stones you have are also jewels. The letters in J are guaranteed distinct, and all characters in J and S are letters. Letters are case sensitive, so</description>
-    </item>
-    
-    <item>
-      <title>62 Unique Paths</title>
-      <link>https://foxisawesome.github.io/posts/62-unique-paths/</link>
-      <pubDate>Fri, 25 Sep 2020 15:47:03 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/62-unique-paths/</guid>
-      <description>LC 62 Unique Paths A robot is located at the top-left corner of a m x n grid (marked &amp;lsquo;Start&amp;rsquo; in the diagram below). The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked &amp;lsquo;Finish&amp;rsquo; in the diagram below). How many possible unique paths are there? Solution 2020-09-25 Notes: 像cli</description>
-    </item>
-    
-    <item>
-      <title>819 Most Common Word</title>
-      <link>https://foxisawesome.github.io/posts/819-most-common-word/</link>
-      <pubDate>Fri, 25 Sep 2020 14:39:42 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/819-most-common-word/</guid>
-      <description>LC 819 Most Common Word Given a paragraph and a list of banned words, return the most frequent word that is not in the list of banned words. It is guaranteed there is at least one word that isn&amp;rsquo;t banned, and that the answer is unique. Words in the list of banned words are given in lowercase, and free of punctuation. Words in the paragraph are not case sensitive. The</description>
     </item>
     
   </channel>
