@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>template on Q. Weng</title>
+    <link>https://foxisawesome.github.io/tags/template/</link>
+    <description>Recent content in template on Q. Weng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Sun, 06 Sep 2020 18:35:02 -0400</lastBuildDate>
+    
+        <atom:link href="https://foxisawesome.github.io/tags/template/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>2 Add Two Num</title>
+      <link>https://foxisawesome.github.io/posts/2-add-two-num/</link>
+      <pubDate>Thu, 02 Jul 2020 10:08:20 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/2-add-two-num/</guid>
+      <description>LC 2 Add Two Num You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list. You may assume the two numbers do not contain any leading zero, except the number 0 itself. Example: Input: (2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>169 Majority Element</title>
+      <link>https://foxisawesome.github.io/posts/169-majority-element/</link>
+      <pubDate>Fri, 24 Apr 2020 13:06:24 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/169-majority-element/</guid>
+      <description>LC 169 Majority Element Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times. You may assume that the array is non-empty and the majority element always exist in the array. Solution 2020-09-24 Notes: 这道题有很多种方法做。 hash table做法。 class Solution:</description>
+    </item>
+    
+    <item>
+      <title>204 Count Primes</title>
+      <link>https://foxisawesome.github.io/posts/204-count-primes/</link>
+      <pubDate>Sun, 12 Apr 2020 21:33:18 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/204-count-primes/</guid>
+      <description>LC 204 Count Primes   Count the number of prime numbers less than a non-negative number, **n**.
+ Solution 2020-09-12 Notes:   In mathematics, the sieve of Eratosthenes is an ancient algorithm for finding all prime numbers up to any given limit.
+  class Solution: def countPrimes(self, n: int) -&amp;gt; int: if n &amp;lt; 2: return 0 grid = [1] * n grid[0] = 0 grid[1] = 0 for i in range(2,int(n**0.</description>
+    </item>
+    
+    <item>
+      <title>69 Sqrtx</title>
+      <link>https://foxisawesome.github.io/posts/69-sqrtx/</link>
+      <pubDate>Sat, 07 Mar 2020 22:51:59 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/69-sqrtx/</guid>
+      <description>LC 69 Sqrtx Implement int sqrt(int x). Sqrt(8) = 2 Solution 2020-03-07 Notes: 标准的binary search 模版， right 从x//2开始。 2020-10-06 Notes： 今天又做了一遍，这题虽然看起来像是寻找left bound</description>
+    </item>
+    
+    <item>
+      <title>1 Two Sum</title>
+      <link>https://foxisawesome.github.io/posts/1-two-sum/</link>
+      <pubDate>Sat, 01 Feb 2020 14:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1-two-sum/</guid>
+      <description>LC 1 Two Sum   Given an array of integers nums and an integer target, return indices of the two numbers such that they add up to target.
+You may assume that each input would have *exactly* one solution, and you may not use the same element twice.
+ Solution 2020-02-01 Notes:
+ use hash table, one-pass.  class Solution: def twoSum(self, nums: List[int], target: int) -&amp;gt; List[int]: if not nums or target is None: return [] d = dict() for i, val in enumerate(nums): if target - val not in d: d[val] = i else: return [d[target - val], i] # Time O(N) # Space O(N)  </description>
+    </item>
+    
+    <item>
+      <title>About</title>
+      <link>https://foxisawesome.github.io/about/</link>
+      <pubDate>Tue, 14 Jan 2020 00:00:00 +0000</pubDate>
+      
+      <guid>https://foxisawesome.github.io/about/</guid>
+      <description>Dr. Q. Weng   Linkedin
+  Github
+  fox.weng@me.com
+  Research and Interests Data Analysis Probability and Statistics • Bayesian Analysis • Machine Learning • Time Series Analysis • Natural Language Processing • Visualization.
+Others Knowledge Sharing • Data Science • Clean Code
+Hobbies Photography • Sports</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://foxisawesome.github.io/posts/%E5%89%8D%E7%BC%80%E5%92%8C%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/%E5%89%8D%E7%BC%80%E5%92%8C%E6%8A%80%E5%B7%A7/</guid>
+      <description>前缀和技巧 今天来聊一道简单却十分巧妙的算法问题：算出一共有几个和为 k 的子数组。 那我把所有子数组都穷举出来，算它们的和，看看谁的和等于 k 不就行</description>
+    </item>
+    
+  </channel>
+</rss>

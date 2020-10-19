@@ -5,10 +5,125 @@
     <link>https://foxisawesome.github.io/tags/leetcode/</link>
     <description>Recent content in leetcode on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 18 Oct 2020 20:43:41 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2020 15:04:59 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1480 Running Sum of 1d Array</title>
+      <link>https://foxisawesome.github.io/posts/1480-running-sum-of-1d-array/</link>
+      <pubDate>Sun, 18 Oct 2020 15:05:05 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1480-running-sum-of-1d-array/</guid>
+      <description>LC 1480 Running Sum of 1d Array Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]). Return the running sum of nums. Solution 2020-10-18 Notes: Pre-sum. 秒了 class Solution: def runningSum(self, nums: List[int]) -&amp;gt; List[int]: if not nums: return [] n =</description>
+    </item>
+    
+    <item>
+      <title>1119 Remove Vowels From a String</title>
+      <link>https://foxisawesome.github.io/posts/1119-remove-vowels-from-a-string/</link>
+      <pubDate>Sun, 18 Oct 2020 15:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1119-remove-vowels-from-a-string/</guid>
+      <description>LC 1119 Remove Vowels From a String Given a string S, remove the vowels &#39;a&#39;, &#39;e&#39;, &#39;i&#39;, &#39;o&#39;, and &#39;u&#39; from it, and return the new string. Solution 2020-10-18 Notes: 秒了 class Solution: def removeVowels(self, S: str) -&amp;gt; str: v = set([&#39;a&#39;,&#39;e&#39;,&#39;i&#39;,&#39;o&#39;,&#39;u&#39;]) ans = [] for s in S: if s not in v: ans.append(s) return &#39;&#39;.join(ans) # Time O(N) # Space O(N)</description>
+    </item>
+    
+    <item>
+      <title>1342 Number of Steps to Reduce a Number to Zero</title>
+      <link>https://foxisawesome.github.io/posts/1342-number-of-steps-to-reduce-a-number-to-zero/</link>
+      <pubDate>Sun, 18 Oct 2020 14:58:02 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1342-number-of-steps-to-reduce-a-number-to-zero/</guid>
+      <description>LC 1342 Number of Steps to Reduce a Number to Zero Given a non-negative integer num, return the number of steps to reduce it to zero. If the current number is even, you have to divide it by 2, otherwise, you have to subtract 1 from it. Input: num = 14 Output: 6 Explanation: Step 1) 14 is even; divide by 2 and obtain 7. Step 2) 7 is odd;</description>
+    </item>
+    
+    <item>
+      <title>1141 User Activity for the Past 30 Days I</title>
+      <link>https://foxisawesome.github.io/sql/1141-user-activity-for-the-past-30-days-i/</link>
+      <pubDate>Sat, 17 Oct 2020 21:13:03 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1141-user-activity-for-the-past-30-days-i/</guid>
+      <description>LC 1141 User Activity for the Past 30 Days I Write an SQL query to find the daily active user count for a period of 30 days ending 2019-07-27 inclusively. A user was active on some day if he/she made at least one activity on that day. The query result format is in the following example: Activity table: +---------+------------+---------------+---------------+ | user_id | session_id | activity_date | activity_type | +---------+------------+---------------+---------------+ |</description>
+    </item>
+    
+    <item>
+      <title>1623 All Valid Triplets That Can Represent a Country</title>
+      <link>https://foxisawesome.github.io/sql/1623-all-valid-triplets-that-can-represent-a-country/</link>
+      <pubDate>Sat, 17 Oct 2020 21:10:35 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1623-all-valid-triplets-that-can-represent-a-country/</guid>
+      <description>LC 1623 All Valid Triplets That Can Represent a Country   Write an SQL query to find all the possible triplets representing the country under the given constraints.
+Return the result table in any order.
+The query result format is in the following example.
+SchoolA table: +------------+--------------+ | student_id | student_name | +------------+--------------+ | 1 | Alice | | 2 | Bob | +------------+--------------+ SchoolB table: +------------+--------------+ | student_id | student_name | +------------+--------------+ | 3 | Tom | +------------+--------------+ SchoolC table: +------------+--------------+ | student_id | student_name | +------------+--------------+ | 3 | Tom | | 2 | Jerry | | 10 | Alice | +------------+--------------+ Result table: +----------+----------+----------+ | member_A | member_B | member_C | +----------+----------+----------+ | Alice | Tom | Jerry | | Bob | Tom | Alice | +----------+----------+----------+ Let us see all the possible triplets.</description>
+    </item>
+    
+    <item>
+      <title>1159 Market Analysis II</title>
+      <link>https://foxisawesome.github.io/sql/1159-market-analysis-ii/</link>
+      <pubDate>Sat, 17 Oct 2020 20:54:12 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1159-market-analysis-ii/</guid>
+      <description>LC 1159 Market Analysis II Write an SQL query to find for each user, whether the brand of the second item (by date) they sold is their favorite brand. If a user sold less than two items, report the answer for that user as no. It is guaranteed that no seller sold more than one item on a day. The query result format is in the following example: Users table:</description>
+    </item>
+    
+    <item>
+      <title>1517 Find Users With Valid E-Mails</title>
+      <link>https://foxisawesome.github.io/sql/1517-find-users-with-valid-e-mails/</link>
+      <pubDate>Sat, 17 Oct 2020 20:29:16 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1517-find-users-with-valid-e-mails/</guid>
+      <description>LC 1517 Find Users With Valid E-Mails   Write an SQL query to find the users who have valid emails.
+A valid e-mail has a prefix name and a domain where:
+ The prefix name is a string that may contain letters (upper or lower case), digits, underscore &#39;_&#39;, period &#39;.&#39; and/or dash &#39;-&#39;. The prefix name must start with a letter. The domain is &#39;@leetcode.com&#39;.  Return the result table in any order.</description>
+    </item>
+    
+    <item>
+      <title>1511 Customer Order Frequency</title>
+      <link>https://foxisawesome.github.io/sql/1511-customer-order-frequency/</link>
+      <pubDate>Sat, 17 Oct 2020 20:18:00 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1511-customer-order-frequency/</guid>
+      <description>LC 1511 Customer Order Frequency Write an SQL query to report the customer_id and customer_name of customers who have spent at least $100 in each month of June and July 2020. Return the result table in any order. The query result format is in the following example. Customers +--------------+-----------+-------------+ | customer_id | name | country | +--------------+-----------+-------------+ | 1 | Winston | USA | | 2 | Jonathan | Peru</description>
+    </item>
+    
+    <item>
+      <title>1479 Sales by Day of the Week</title>
+      <link>https://foxisawesome.github.io/sql/1479-sales-by-day-of-the-week/</link>
+      <pubDate>Fri, 16 Oct 2020 09:29:59 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1479-sales-by-day-of-the-week/</guid>
+      <description>LC 1479 Sales by Day of the Week   Write an SQL query to report how many units in each category have been ordered on each day of the week.
+Return the result table ordered by category.
+ Solution 2020-10-16 Notes:  DAYOFWEEK() : ‘2’ is Mon. MYSQL does not have pivot function, use below template  WITH combo AS ( SELECT b.*, DAYOFWEEK(order_date) AS week, item_category FROM items a LEFT JOIN orders b ON a.</description>
+    </item>
+    
+    <item>
+      <title>615 Average Salary Departments vs Company</title>
+      <link>https://foxisawesome.github.io/sql/615-average-salary-departments-vs-company/</link>
+      <pubDate>Fri, 16 Oct 2020 09:08:36 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/615-average-salary-departments-vs-company/</guid>
+      <description>LC 615 Average Salary Departments vs Company Given two tables as below, write a query to display the comparison result (higher/lower/same) of the average salary of employees in a department to the company&amp;rsquo;s average salary. Table: salary | id | employee_id | amount | pay_date | |----|-------------|--------|------------| | 1 | 1 | 9000 | 2017-03-31 | | 2 | 2 | 6000 | 2017-03-31 | | 3 | 3 |</description>
+    </item>
+    
+    <item>
+      <title>1024 Video Stitching</title>
+      <link>https://foxisawesome.github.io/posts/1024-video-stitching/</link>
+      <pubDate>Thu, 15 Oct 2020 12:03:45 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1024-video-stitching/</guid>
+      <description>LC 1024 Video Stitching You are given a series of video clips from a sporting event that lasted T seconds. These video clips can be overlapping with each other and have varied lengths. Each video clip clips[i] is an interval: it starts at time clips[i][0] and ends at time clips[i][1]. We can cut these clips into segments freely: for example, a clip [0, 7] can be cut into segments [0,</description>
+    </item>
+    
+    <item>
+      <title>452 Minimum Number of Arrows to Burst Balloons</title>
+      <link>https://foxisawesome.github.io/posts/452-minimum-number-of-arrows-to-burst-balloons/</link>
+      <pubDate>Thu, 15 Oct 2020 10:20:23 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/452-minimum-number-of-arrows-to-burst-balloons/</guid>
+      <description>LC 452 Minimum Number of Arrows to Burst Balloons There are some spherical balloons spread in two-dimensional space. For each balloon, provided input is the start and end coordinates of the horizontal diameter. Since it&amp;rsquo;s horizontal, y-coordinates don&amp;rsquo;t matter, and hence the x-coordinates of start and end of the diameter suffice. The start is always smaller than the end. An arrow can be shot up exactly vertically from different points</description>
+    </item>
     
     <item>
       <title>435 Non Overlapping Intervals</title>
@@ -84,123 +199,6 @@ Input: A = [4,5,0,-2,-3,1], K = 5 Output: 7 Explanation: There are 7 subarrays w
       
       <guid>https://foxisawesome.github.io/sql/1581-customer-who-visited-but-did-not-make-any-transactions/</guid>
       <description>LC 1581 Customer Who Visited but Did Not Make Any Transactions Write an SQL query to find the IDs of the users who visited without making any transactions and the number of times they made these types of visits. Return the result table sorted in any order. The query result format is in the following example: Visits +----------+-------------+ | visit_id | customer_id | +----------+-------------+ | 1 | 23 | |</description>
-    </item>
-    
-    <item>
-      <title>1613 Find the Missing Ids</title>
-      <link>https://foxisawesome.github.io/sql/1613-find-the-missing-ids/</link>
-      <pubDate>Tue, 13 Oct 2020 20:03:17 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1613-find-the-missing-ids/</guid>
-      <description>LC 1613 Find the Missing Ids Write an SQL query to find the missing customer IDs. The missing IDs are ones that are not in the Customers table but are in the range between 1 and the maximum customer_id present in the table. Notice that the maximum customer_id will not exceed 100. Return the result table ordered by ids in ascending order. The query result format is in the following</description>
-    </item>
-    
-    <item>
-      <title>1587 Bank Account Summary II</title>
-      <link>https://foxisawesome.github.io/sql/1587-bank-account-summary-ii/</link>
-      <pubDate>Tue, 13 Oct 2020 19:51:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1587-bank-account-summary-ii/</guid>
-      <description>LC 1587 Bank Account Summary II Write an SQL query to report the name and balance of users with a balance higher than 10000. The balance of an account is equal to the sum of the amounts of all transactions involving that account. Return the result table in any order. The query result format is in the following example. Users table: +------------+--------------+ | account | name | +------------+--------------+ | 900001</description>
-    </item>
-    
-    <item>
-      <title>654 Maximum Binary Tree</title>
-      <link>https://foxisawesome.github.io/posts/654-maximum-binary-tree/</link>
-      <pubDate>Tue, 13 Oct 2020 16:05:34 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/654-maximum-binary-tree/</guid>
-      <description>LC 654 Maximum Binary Tree Given an integer array with no duplicates. A maximum tree building on this array is defined as follow: The root is the maximum number in the array. The left subtree is the maximum tree constructed from left part subarray divided by the maximum number. The right subtree is the maximum tree constructed from right part subarray divided by the maximum number. Construct the maximum tree</description>
-    </item>
-    
-    <item>
-      <title>106 Construct Binary Tree From Inorder and Postorder Traversal</title>
-      <link>https://foxisawesome.github.io/posts/106-construct-binary-tree-from-inorder-and-postorder-traversal/</link>
-      <pubDate>Tue, 13 Oct 2020 15:28:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/106-construct-binary-tree-from-inorder-and-postorder-traversal/</guid>
-      <description>LC 106 Construct Binary Tree From Inorder and Postorder Traversal Given inorder and postorder traversal of a tree, construct the binary tree. Note: You may assume that duplicates do not exist in the tree. For example, given inorder = [9,3,15,20,7] postorder = [9,15,7,20,3] Return the following binary tree: 3 / \ 9 20 / \ 15 7 Solution 2020-10-13 Notes: 和 LC 105 一个道理。 # Definition</description>
-    </item>
-    
-    <item>
-      <title>105 Construct Binary Tree From Preorder and Inorder Traversal</title>
-      <link>https://foxisawesome.github.io/posts/105-construct-binary-tree-from-preorder-and-inorder-traversal/</link>
-      <pubDate>Tue, 13 Oct 2020 15:21:19 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/105-construct-binary-tree-from-preorder-and-inorder-traversal/</guid>
-      <description>LC 105 Construct Binary Tree From Preorder and Inorder Traversal Given preorder and inorder traversal of a tree, construct the binary tree. Note: You may assume that duplicates do not exist in the tree. For example, given preorder = [3,9,20,15,7] inorder = [9,3,15,20,7] Return the following binary tree: 3 / \ 9 20 / \ 15 7 Solution 2020-10-13 Notes: 这题关键是 root 在 ino</description>
-    </item>
-    
-    <item>
-      <title>116 Populating Next Right Pointers in Each Node</title>
-      <link>https://foxisawesome.github.io/posts/116-populating-next-right-pointers-in-each-node/</link>
-      <pubDate>Tue, 13 Oct 2020 14:59:30 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/116-populating-next-right-pointers-in-each-node/</guid>
-      <description>LC 116 Populating Next Right Pointers in Each Node You are given a perfect binary tree where all leaves are on the same level, and every parent has two children. The binary tree has the following definition: struct Node { int val; Node *left; Node *right; Node *next; } Populate each next pointer to point to its next right node. If there is no next right node, the next pointer</description>
-    </item>
-    
-    <item>
-      <title>226 Invert Binary Tree</title>
-      <link>https://foxisawesome.github.io/posts/226-invert-binary-tree/</link>
-      <pubDate>Tue, 13 Oct 2020 09:16:18 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/226-invert-binary-tree/</guid>
-      <description>LC 226 Invert Binary Tree   nvert a binary tree.
-Input:
- 4 / \ 2 7 / \ / \ 1 3 6 9  Output:
- 4 / \ 7 2 / \ / \ 9 6 3 1   Solution 2020-10-13 Notes:    # Definition for a binary tree node. # class TreeNode: # def __init__(self, val=0, left=None, right=None): # self.val = val # self.</description>
-    </item>
-    
-    <item>
-      <title>453 Minimum Moves to Equal Array Elements</title>
-      <link>https://foxisawesome.github.io/posts/453-minimum-moves-to-equal-array-elements/</link>
-      <pubDate>Sun, 11 Oct 2020 21:45:21 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/453-minimum-moves-to-equal-array-elements/</guid>
-      <description>LC 453 Minimum Moves to Equal Array Elements Given a non-empty integer array of size n, find the minimum number of moves required to make all array elements equal, where a move is incrementing n - 1 elements by 1. Input: [1,2,3] Output: 3 Explanation: Only three moves are needed (remember each move increments two elements): [1,2,3] =&amp;gt; [2,3,3] =&amp;gt; [3,4,3] =&amp;gt; [4,4,4] Solution 2020-10-11 Notes: 很巧的一</description>
-    </item>
-    
-    <item>
-      <title>547 Friend Circles</title>
-      <link>https://foxisawesome.github.io/posts/547-friend-circles/</link>
-      <pubDate>Sun, 11 Oct 2020 21:26:03 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/547-friend-circles/</guid>
-      <description>LC 547 Friend Circles There are N students in a class. Some of them are friends, while some are not. Their friendship is transitive in nature. For example, if A is a direct friend of B, and B is a direct friend of C, then A is an indirect friend of C. And we defined a friend circle is a group of students who are direct or indirect friends. Given</description>
-    </item>
-    
-    <item>
-      <title>1280 Students and Examinations</title>
-      <link>https://foxisawesome.github.io/sql/1280-students-and-examinations/</link>
-      <pubDate>Sun, 11 Oct 2020 15:57:59 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1280-students-and-examinations/</guid>
-      <description>LC 1280 Students and Examinations   Write an SQL query to find the number of times each student attended each exam.
-Order the result table by student_id and subject_name.
-The query result format is in the following example:
-Students table: +------------+--------------+ | student_id | student_name | +------------+--------------+ | 1 | Alice | | 2 | Bob | | 13 | John | | 6 | Alex | +------------+--------------+ Subjects table: +--------------+ | subject_name | +--------------+ | Math | | Physics | | Programming | +--------------+ Examinations table: +------------+--------------+ | student_id | subject_name | +------------+--------------+ | 1 | Math | | 1 | Physics | | 1 | Programming | | 2 | Programming | | 1 | Physics | | 1 | Math | | 13 | Math | | 13 | Programming | | 13 | Physics | | 2 | Math | | 1 | Math | +------------+--------------+ Result table: +------------+--------------+--------------+----------------+ | student_id | student_name | subject_name | attended_exams | +------------+--------------+--------------+----------------+ | 1 | Alice | Math | 3 | | 1 | Alice | Physics | 2 | | 1 | Alice | Programming | 1 | | 2 | Bob | Math | 1 | | 2 | Bob | Physics | 0 | | 2 | Bob | Programming | 1 | | 6 | Alex | Math | 0 | | 6 | Alex | Physics | 0 | | 6 | Alex | Programming | 0 | | 13 | John | Math | 1 | | 13 | John | Physics | 1 | | 13 | John | Programming | 1 | +------------+--------------+--------------+----------------+   Solution 2020-10-11 Notes: SELECT a.</description>
-    </item>
-    
-    <item>
-      <title>1205 Monthly Transactions II</title>
-      <link>https://foxisawesome.github.io/sql/1205-monthly-transactions-ii/</link>
-      <pubDate>Sun, 11 Oct 2020 15:45:17 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1205-monthly-transactions-ii/</guid>
-      <description>LC 1205 Monthly Transactions II   Write an SQL query to find for each month and country, the number of approved transactions and their total amount, the number of chargebacks and their total amount.
-Note: In your query, given the month and country, ignore rows with all zeros.
-The query result format is in the following example:
-Transactions table: +------+---------+----------+--------+------------+ | id | country | state | amount | trans_date | +------+---------+----------+--------+------------+ | 101 | US | approved | 1000 | 2019-05-18 | | 102 | US | declined | 2000 | 2019-05-19 | | 103 | US | approved | 3000 | 2019-06-10 | | 104 | US | approved | 4000 | 2019-06-13 | | 105 | US | approved | 5000 | 2019-06-15 | +------+---------+----------+--------+------------+ Chargebacks table: +------------+------------+ | trans_id | trans_date | +------------+------------+ | 102 | 2019-05-29 | | 101 | 2019-06-30 | | 105 | 2019-09-18 | +------------+------------+ Result table: +----------+---------+----------------+-----------------+-------------------+--------------------+ | month | country | approved_count | approved_amount | chargeback_count | chargeback_amount | +----------+---------+----------------+-----------------+-------------------+--------------------+ | 2019-05 | US | 1 | 1000 | 1 | 2000 | | 2019-06 | US | 3 | 12000 | 1 | 1000 | | 2019-09 | US | 0 | 0 | 1 | 5000 | +----------+---------+----------------+-----------------+-------------------+--------------------+   Solution 2020-10-11 Notes: SELECT month, country, SUM(CASE WHEN state = &amp;quot;approved&amp;quot; THEN 1 ELSE 0 END) AS approved_count, SUM(CASE WHEN state = &amp;quot;approved&amp;quot; THEN amount ELSE 0 END) AS approved_amount, SUM(CASE WHEN state = &amp;quot;back&amp;quot; THEN 1 ELSE 0 END) AS chargeback_count, SUM(CASE WHEN state = &amp;quot;back&amp;quot; THEN amount ELSE 0 END) AS chargeback_amount FROM( SELECT LEFT(chargebacks.</description>
-    </item>
-    
-    <item>
-      <title>695 Max Area of Island</title>
-      <link>https://foxisawesome.github.io/posts/695-max-area-of-island/</link>
-      <pubDate>Sun, 11 Oct 2020 11:03:17 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/695-max-area-of-island/</guid>
-      <description>LC 695 Max Area of Island Given a non-empty 2D array grid of 0&amp;rsquo;s and 1&amp;rsquo;s, an island is a group of 1&#39;s (representing land) connected 4-directionally (horizontal or vertical.) You may assume all four edges of the grid are surrounded by water. Find the maximum area of an island in the given 2D array. (If there is no island, the maximum area is 0.) [[0,0,1,0,0,0,0,1,0,0,0,0,0], [0,0,0,0,0,0,0,1,1,1,0,0,0], [0,1,1,0,1,0,0,0,0,0,0,0,0], [0,1,0,0,1,1,0,0,1,0,1,0,0], [0,1,0,0,1,1,0,0,1,1,1,0,0],</description>
     </item>
     
   </channel>

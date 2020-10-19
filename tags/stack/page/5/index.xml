@@ -5,10 +5,128 @@
     <link>https://foxisawesome.github.io/tags/stack/</link>
     <description>Recent content in stack on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 01 Oct 2020 14:11:32 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2020 13:17:36 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/stack/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1454 Active Users</title>
+      <link>https://foxisawesome.github.io/sql/1454-active-users/</link>
+      <pubDate>Sun, 04 Oct 2020 21:18:04 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1454-active-users/</guid>
+      <description>LC 1454 Active Users   Write an SQL query to find the id and the name of active users.
+Active users are those who logged in to their accounts for 5 or more consecutive days.
+Return the result table ordered by the id.
+The query result format is in the following example:
+Accounts table: +----+----------+ | id | name | +----+----------+ | 1 | Winston | | 7 | Jonathan | +----+----------+ Logins table: +----+------------+ | id | login_date | +----+------------+ | 7 | 2020-05-30 | | 1 | 2020-05-30 | | 7 | 2020-05-31 | | 7 | 2020-06-01 | | 7 | 2020-06-02 | | 7 | 2020-06-02 | | 7 | 2020-06-03 | | 1 | 2020-06-07 | | 7 | 2020-06-10 | +----+------------+ Result table: +----+----------+ | id | name | +----+----------+ | 7 | Jonathan | +----+----------+   Solution 2020-10-04 Notes:  consecutive 5 days: DATEDIFF(date, LEAD(date,4)) = 4  SELECT DISTINCT a.</description>
+    </item>
+    
+    <item>
+      <title>579 Find Cumulative Salary of an Employee</title>
+      <link>https://foxisawesome.github.io/sql/579-find-cumulative-salary-of-an-employee/</link>
+      <pubDate>Sun, 04 Oct 2020 21:05:57 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/579-find-cumulative-salary-of-an-employee/</guid>
+      <description>LC 579 Find Cumulative Salary of an Employee The Employee table holds the salary information in a year. Write a SQL to get the cumulative sum of an employee&amp;rsquo;s salary over a period of 3 months but exclude the most recent month. The result should be displayed by &amp;lsquo;Id&amp;rsquo; ascending, and then by &amp;lsquo;Month&amp;rsquo; descending. Example Input | Id | Month | Salary | |----|-------|--------| | 1 | 1 |</description>
+    </item>
+    
+    <item>
+      <title>1075 Project Employees I</title>
+      <link>https://foxisawesome.github.io/sql/1075-project-employees-i/</link>
+      <pubDate>Sun, 04 Oct 2020 20:55:17 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1075-project-employees-i/</guid>
+      <description>LC 1075 Project Employees I   Write an SQL query that reports the average experience years of all the employees for each project, rounded to 2 digits.
+The query result format is in the following example:
+Project table: +-------------+-------------+ | project_id | employee_id | +-------------+-------------+ | 1 | 1 | | 1 | 2 | | 1 | 3 | | 2 | 1 | | 2 | 4 | +-------------+-------------+ Employee table: +-------------+--------+------------------+ | employee_id | name | experience_years | +-------------+--------+------------------+ | 1 | Khaled | 3 | | 2 | Ali | 2 | | 3 | John | 1 | | 4 | Doe | 2 | +-------------+--------+------------------+ Result table: +-------------+---------------+ | project_id | average_years | +-------------+---------------+ | 1 | 2.</description>
+    </item>
+    
+    <item>
+      <title>620 Not Boring Movies</title>
+      <link>https://foxisawesome.github.io/sql/620-not-boring-movies/</link>
+      <pubDate>Sun, 04 Oct 2020 20:51:14 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/620-not-boring-movies/</guid>
+      <description>LC 620 Not Boring Movies   X city opened a new cinema, many people would like to go to this cinema. The cinema also gives out a poster indicating the movies’ ratings and descriptions.
+Please write a SQL query to output movies with an odd numbered ID and a description that is not &amp;lsquo;boring&amp;rsquo;. Order the result by rating.
+ Solution 2020-10-04 Notes: SELECT * FROM cinema WHERE id % 2 = 1 AND description !</description>
+    </item>
+    
+    <item>
+      <title>137 Single Number II</title>
+      <link>https://foxisawesome.github.io/posts/137-single-number-ii/</link>
+      <pubDate>Sun, 04 Oct 2020 20:43:36 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/137-single-number-ii/</guid>
+      <description>LC 137 Single Number II Given a non-empty array of integers, every element appears three times except for one, which appears exactly once. Find that single one. Note: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory? Input: [2,2,3,2] Output: 3 Input: [0,1,0,1,0,1,99] Output: 99 Solution 2020-10-04 Notes: 因为确定那个特殊值只出现一次，</description>
+    </item>
+    
+    <item>
+      <title>130 Surrounded Regions</title>
+      <link>https://foxisawesome.github.io/posts/130-surrounded-regions/</link>
+      <pubDate>Sun, 04 Oct 2020 20:34:29 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/130-surrounded-regions/</guid>
+      <description>LC 130 Surrounded Regions Given a 2D board containing &#39;X&#39; and &#39;O&#39; (the letter O), capture all regions surrounded by &#39;X&#39;. A region is captured by flipping all &#39;O&#39;s into &#39;X&#39;s in that surrounded region. Example: X X X X X O O X X X O X X O X X After running your function, the board should be: X X X X X X X X X X</description>
+    </item>
+    
+    <item>
+      <title>108 Convert Sorted Array to Binary Search Tree</title>
+      <link>https://foxisawesome.github.io/posts/108-convert-sorted-array-to-binary-search-tree/</link>
+      <pubDate>Sun, 04 Oct 2020 16:08:38 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/108-convert-sorted-array-to-binary-search-tree/</guid>
+      <description>LC 108 Convert Sorted Array to Binary Search Tree Given an array where elements are sorted in ascending order, convert it to a height balanced BST. For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1. Given the sorted array: [-10,-3,0,5,9], One possible answer is: [0,-3,9,-10,null,5], which represents the following</description>
+    </item>
+    
+    <item>
+      <title>120 Triangle</title>
+      <link>https://foxisawesome.github.io/posts/120-triangle/</link>
+      <pubDate>Sun, 04 Oct 2020 16:00:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/120-triangle/</guid>
+      <description>LC 120 Triangle Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below. For example, given the following triangle [ [2], [3,4], [6,5,7], [4,1,8,3] ] The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11). Note: Bonus point if you are able to do this using</description>
+    </item>
+    
+    <item>
+      <title>113 Path Sum II</title>
+      <link>https://foxisawesome.github.io/posts/113-path-sum-ii/</link>
+      <pubDate>Sun, 04 Oct 2020 15:04:33 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/113-path-sum-ii/</guid>
+      <description>LC 113 Path Sum II Given a binary tree and a sum, find all root-to-leaf paths where each path&amp;rsquo;s sum equals the given sum. Given the below binary tree and sum = 22, 5 / \ 4 8 / / \ 11 13 4 / \ / \ 7 2 5 1 Return: [ [5,4,11,2], [5,8,4,5] ] Solution 2020-10-04 Notes: 很明显的dfs题。但</description>
+    </item>
+    
+    <item>
+      <title>114 Flatten Binary Tree to Linked List</title>
+      <link>https://foxisawesome.github.io/posts/114-flatten-binary-tree-to-linked-list/</link>
+      <pubDate>Sun, 04 Oct 2020 10:58:04 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/114-flatten-binary-tree-to-linked-list/</guid>
+      <description>LC 114 Flatten Binary Tree to Linked List Given a binary tree, flatten it to a linked list in-place. For example, given the following tree: 1 / \ 2 5 / \ \ 3 4 6 The flattened tree should look like: 1 \ 2 \ 3 \ 4 \ 5 \ 6 Solution 2020-10-04 Notes: 感觉这题是 tree 真正体会recu</description>
+    </item>
+    
+    <item>
+      <title>1596 the Most Frequently Ordered Products for Each Customer</title>
+      <link>https://foxisawesome.github.io/sql/1596-the-most-frequently-ordered-products-for-each-customer/</link>
+      <pubDate>Sat, 03 Oct 2020 19:53:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1596-the-most-frequently-ordered-products-for-each-customer/</guid>
+      <description>LC 1596 the Most Frequently Ordered Products for Each Customer Write an SQL query to find the most frequently ordered product(s) for each customer. The result table should have the product_id and product_name for each customer_id who ordered at least one order. Return the result table in any order. The query result format is in the following example: Orders +----------+------------+-------------+------------+ | order_id | order_date | customer_id | product_id | +----------+------------+-------------+------------+</description>
+    </item>
+    
+    <item>
+      <title>1571 Warehouse Manager</title>
+      <link>https://foxisawesome.github.io/sql/1571-warehouse-manager/</link>
+      <pubDate>Sat, 03 Oct 2020 19:39:07 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1571-warehouse-manager/</guid>
+      <description>LC 1571 Warehouse Manager   Write an SQL query to report, How much cubic feet of volume does the inventory occupy in each warehouse.
+ warehouse_name volume  Return the result table in any order.
+Warehouse table: +------------+--------------+-------------+ | name | product_id | units | +------------+--------------+-------------+ | LCHouse1 | 1 | 1 | | LCHouse1 | 2 | 10 | | LCHouse1 | 3 | 5 | | LCHouse2 | 1 | 2 | | LCHouse2 | 2 | 2 | | LCHouse3 | 4 | 1 | +------------+--------------+-------------+ Products table: +------------+--------------+------------+----------+-----------+ | product_id | product_name | Width | Length | Height | +------------+--------------+------------+----------+-----------+ | 1 | LC-TV | 5 | 50 | 40 | | 2 | LC-KeyChain | 5 | 5 | 5 | | 3 | LC-Phone | 2 | 10 | 10 | | 4 | LC-T-Shirt | 4 | 10 | 20 | +------------+--------------+------------+----------+-----------+ Result table: +----------------+------------+ | warehouse_name | volume | +----------------+------------+ | LCHouse1 | 12250 | | LCHouse2 | 20250 | | LCHouse3 | 800 | +----------------+------------+ Volume of product_id = 1 (LC-TV), 5x50x40 = 10000 Volume of product_id = 2 (LC-KeyChain), 5x5x5 = 125 Volume of product_id = 3 (LC-Phone), 2x10x10 = 200 Volume of product_id = 4 (LC-T-Shirt), 4x10x20 = 800 LCHouse1: 1 unit of LC-TV + 10 units of LC-KeyChain + 5 units of LC-Phone.</description>
+    </item>
     
     <item>
       <title>1241 Number of Comments per Post</title>
@@ -20,12 +138,12 @@
     </item>
     
     <item>
-      <title>1084 Sales Analysis Iii</title>
+      <title>1084 Sales Analysis III</title>
       <link>https://foxisawesome.github.io/sql/1084-sales-analysis-iii/</link>
       <pubDate>Sat, 03 Oct 2020 18:58:45 -0400</pubDate>
       
       <guid>https://foxisawesome.github.io/sql/1084-sales-analysis-iii/</guid>
-      <description>LC 1084 Sales Analysis Iii Write an SQL query that reports the products that were only sold in spring 2019. That is, between 2019-01-01 and 2019-03-31 inclusive. The query result format is in the following example: Product table: +------------+--------------+------------+ | product_id | product_name | unit_price | +------------+--------------+------------+ | 1 | S8 | 1000 | | 2 | G4 | 800 | | 3 | iPhone | 1400 | +------------+--------------+------------+ Sales</description>
+      <description>LC 1084 Sales Analysis III Write an SQL query that reports the products that were only sold in spring 2019. That is, between 2019-01-01 and 2019-03-31 inclusive. The query result format is in the following example: Product table: +------------+--------------+------------+ | product_id | product_name | unit_price | +------------+--------------+------------+ | 1 | S8 | 1000 | | 2 | G4 | 800 | | 3 | iPhone | 1400 | +------------+--------------+------------+ Sales</description>
     </item>
     
     <item>
@@ -80,114 +198,6 @@
       
       <guid>https://foxisawesome.github.io/posts/724-find-pivot-index/</guid>
       <description>LC 724 Find Pivot Index Given an array of integers nums, write a method that returns the &amp;ldquo;pivot&amp;rdquo; index of this array. We define the pivot index as the index where the sum of all the numbers to the left of the index is equal to the sum of all the numbers to the right of the index. If no such index exists, we should return -1. If there are</description>
-    </item>
-    
-    <item>
-      <title>240 Search a 2d Matrix II</title>
-      <link>https://foxisawesome.github.io/posts/240-search-a-2d-matrix-ii/</link>
-      <pubDate>Fri, 02 Oct 2020 13:14:19 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/240-search-a-2d-matrix-ii/</guid>
-      <description>LC 240 Search a 2d Matrix II Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties: Integers in each row are sorted in ascending from left to right. Integers in each column are sorted in ascending from top to bottom. Consider the following matrix: [ [1, 4, 7, 11, 15], [2, 5, 8, 12, 19], [3, 6, 9,</description>
-    </item>
-    
-    <item>
-      <title>905 Sort Array by Parity</title>
-      <link>https://foxisawesome.github.io/posts/905-sort-array-by-parity/</link>
-      <pubDate>Fri, 02 Oct 2020 12:54:30 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/905-sort-array-by-parity/</guid>
-      <description>LC 905 Sort Array by Parity Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A. You may return any answer array that satisfies this condition. Input: [3,1,2,4] Output: [2,4,3,1] The outputs [4,2,3,1], [2,4,1,3], and [4,2,1,3] would also be accepted. Solution 2020-10-02 Notes: 这题和 remove duplicate from array 一回事。</description>
-    </item>
-    
-    <item>
-      <title>1213 Intersection of Three Sorted Arrays</title>
-      <link>https://foxisawesome.github.io/posts/1213-intersection-of-three-sorted-arrays/</link>
-      <pubDate>Fri, 02 Oct 2020 12:46:42 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1213-intersection-of-three-sorted-arrays/</guid>
-      <description>LC 1213 Intersection of Three Sorted Arrays Given three integer arrays arr1, arr2 and arr3 sorted in strictly increasing order, return a sorted array of only the integers that appeared in all three arrays. Input: arr1 = [1,2,3,4,5], arr2 = [1,2,5,7,9], arr3 = [1,3,4,5,8] Output: [1,5] Explanation: Only 1 and 5 appeared in the three arrays. Solution 2020-10-02 Notes: 建一个 helper function 找两个arr</description>
-    </item>
-    
-    <item>
-      <title>118 Pascals Triangle</title>
-      <link>https://foxisawesome.github.io/posts/118-pascals-triangle/</link>
-      <pubDate>Fri, 02 Oct 2020 11:34:43 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/118-pascals-triangle/</guid>
-      <description>LC 118 Pascals Triangle Given a non-negative integer numRows, generate the first numRows of Pascal&amp;rsquo;s triangle. Solution 2020-10-02 Notes: 没有特别的。 class Solution: def generate(self, numRows: int) -&amp;gt; List[List[int]]: ans = [[1]*i for i in range(1,numRows+1)] if numRows &amp;gt;= 3: for i in range(2,numRows): for j in range(1,i): ans[i][j] = sum(ans[i-1][j-1:j+1]) return ans # Time O(N) # Space O(N)</description>
-    </item>
-    
-    <item>
-      <title>8 String to Integer Atoi</title>
-      <link>https://foxisawesome.github.io/posts/8-string-to-integer-atoi/</link>
-      <pubDate>Fri, 02 Oct 2020 11:08:37 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/8-string-to-integer-atoi/</guid>
-      <description>LC 8 String to Integer Atoi Implement atoi which converts a string to an integer. The function first discards as many whitespace characters as necessary until the first non-whitespace character is found. Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible, and interprets them as a numerical value. The string can contain additional characters after those that form</description>
-    </item>
-    
-    <item>
-      <title>67 Add Binary</title>
-      <link>https://foxisawesome.github.io/posts/67-add-binary/</link>
-      <pubDate>Thu, 01 Oct 2020 19:23:49 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/67-add-binary/</guid>
-      <description>LC 67 Add Binary Given two binary strings, return their sum (also a binary string). The input strings are both non-empty and contains only characters 1 or 0. Input: a = &amp;quot;11&amp;quot;, b = &amp;quot;1&amp;quot; Output: &amp;quot;100&amp;quot; Solution 2020-10-01 Notes: 这题不像linked list的加法，得分两个loop，一个l</description>
-    </item>
-    
-    <item>
-      <title>66 Plus One</title>
-      <link>https://foxisawesome.github.io/posts/66-plus-one/</link>
-      <pubDate>Thu, 01 Oct 2020 16:14:59 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/66-plus-one/</guid>
-      <description>LC 66 Plus One Given a non-empty array of digits representing a non-negative integer, increment one to the integer. The digits are stored such that the most significant digit is at the head of the list, and each element in the array contains a single digit. You may assume the integer does not contain any leading zero, except the number 0 itself. Solution 2020-10-01 Notes: 简单题，走</description>
-    </item>
-    
-    <item>
-      <title>463 Island Perimeter</title>
-      <link>https://foxisawesome.github.io/posts/463-island-perimeter/</link>
-      <pubDate>Thu, 01 Oct 2020 16:01:57 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/463-island-perimeter/</guid>
-      <description>LC 463 Island Perimeter You are given row x col grid representing a map where grid[i][j] = 1 represents land and grid[i][j] = 0 represents water. Grid cells are connected horizontally/vertically (not diagonally). The grid is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells). The island doesn&amp;rsquo;t have &amp;ldquo;lakes&amp;rdquo;, meaning the water inside isn&amp;rsquo;t connected to the water around the island.</description>
-    </item>
-    
-    <item>
-      <title>339 Nested List Weight Sum</title>
-      <link>https://foxisawesome.github.io/posts/339-nested-list-weight-sum/</link>
-      <pubDate>Thu, 01 Oct 2020 15:49:03 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/339-nested-list-weight-sum/</guid>
-      <description>LC 339 Nested List Weight Sum Given a nested list of integers, return the sum of all integers in the list weighted by their depth. Each element is either an integer, or a list &amp;ndash; whose elements may also be integers or other lists. Example 1: Input: [[1,1],2,[1,1]] Output: 10 Explanation: Four 1&#39;s at depth 2, one 2 at depth 1. Example 2: Input: [1,[4,[6]]] Output: 27 Explanation: One 1</description>
-    </item>
-    
-    <item>
-      <title>224 Basic Calculator</title>
-      <link>https://foxisawesome.github.io/posts/224-basic-calculator/</link>
-      <pubDate>Thu, 01 Oct 2020 14:11:32 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/224-basic-calculator/</guid>
-      <description>LC 224 Basic Calculator mplement a basic calculator to evaluate a simple expression string. The expression string may contain open ( and closing parentheses ), the plus + or minus sign -, non-negative integers and empty spaces ``. Input: &amp;quot;(1+(4+5+2)-3)+(6+8)&amp;quot; Output: 23 Solution 2020-10-01 Notes: Calculator 3 题：LC 224, LC 227, LC 772 都好难。三题的解法大同小异，</description>
-    </item>
-    
-    <item>
-      <title>356 Line Reflection</title>
-      <link>https://foxisawesome.github.io/posts/356-line-reflection/</link>
-      <pubDate>Thu, 01 Oct 2020 13:21:41 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/356-line-reflection/</guid>
-      <description>LC 356 Line Reflection Given n points on a 2D plane, find if there is such a line parallel to y-axis that reflect the given points symmetrically, in other words, answer whether or not if there exists a line that after reflecting all points over the given line the set of the original points is the same that the reflected ones. Note that there can be repeated points. Solution 2020-10-01</description>
-    </item>
-    
-    <item>
-      <title>772 Basic Calculator III</title>
-      <link>https://foxisawesome.github.io/posts/772-basic-calculator-iii/</link>
-      <pubDate>Thu, 01 Oct 2020 11:38:24 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/772-basic-calculator-iii/</guid>
-      <description>LC 772 Basic Calculator III Implement a basic calculator to evaluate a simple expression string. The expression string contains only non-negative integers, +, -, *, / operators , open ( and closing parentheses ) and empty spaces ``. The integer division should truncate toward zero. You may assume that the given expression is always valid. All intermediate results will be in the range of [-2147483648, 2147483647]. Follow up: Could you</description>
     </item>
     
   </channel>

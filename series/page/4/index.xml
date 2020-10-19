@@ -10,6 +10,128 @@
     
     
     <item>
+      <title>6 Zigzag Conversion</title>
+      <link>https://foxisawesome.github.io/posts/6-zigzag-conversion/</link>
+      <pubDate>Fri, 09 Oct 2020 15:50:57 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/6-zigzag-conversion/</guid>
+      <description>LC 6 Zigzag Conversion The string &amp;quot;PAYPALISHIRING&amp;quot; is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility) P A H N A P L S I I G Y I R And then read line by line: &amp;quot;PAHNAPLSIIGYIR&amp;quot; Write the code that will take a string and make this conversion given a</description>
+    </item>
+    
+    <item>
+      <title>347 Top K Frequent Elements</title>
+      <link>https://foxisawesome.github.io/posts/347-top-k-frequent-elements/</link>
+      <pubDate>Fri, 09 Oct 2020 15:32:40 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/347-top-k-frequent-elements/</guid>
+      <description>LC 347 Top K Frequent Elements Given a non-empty array of integers, return the *k* most frequent elements. Input: nums = [1,1,1,2,2,3], k = 2 Output: [1,2] Solution 2020-10-09 Notes: 这题要求 O(NlogN)就能过，那么把counter排下序就好了。 class Solution: def topKFrequent(self, nums: List[int], k:</description>
+    </item>
+    
+    <item>
+      <title>127 Word Ladder</title>
+      <link>https://foxisawesome.github.io/posts/127-word-ladder/</link>
+      <pubDate>Thu, 08 Oct 2020 21:14:34 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/127-word-ladder/</guid>
+      <description>LC 127 Word Ladder Given two words (beginWord and endWord), and a dictionary&amp;rsquo;s word list, find the length of shortest transformation sequence from beginWord to endWord, such that: Only one letter can be changed at a time. Each transformed word must exist in the word list. Input: beginWord = &amp;quot;hit&amp;quot;, endWord = &amp;quot;cog&amp;quot;, wordList = [&amp;quot;hot&amp;quot;,&amp;quot;dot&amp;quot;,&amp;quot;dog&amp;quot;,&amp;quot;lot&amp;quot;,&amp;quot;log&amp;quot;,&amp;quot;cog&amp;quot;] Output: 5 Explanation: As one shortest transformation is &amp;quot;hit&amp;quot; -&amp;gt; &amp;quot;hot&amp;quot; -&amp;gt; &amp;quot;dot&amp;quot; -&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>468 Validate Ip Address</title>
+      <link>https://foxisawesome.github.io/posts/468-validate-ip-address/</link>
+      <pubDate>Thu, 08 Oct 2020 20:03:36 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/468-validate-ip-address/</guid>
+      <description>LC 468 Validate Ip Address Given a string IP, return &amp;quot;IPv4&amp;quot; if IP is a valid IPv4 address, &amp;quot;IPv6&amp;quot; if IP is a valid IPv6 address or &amp;quot;Neither&amp;quot; if IP is not a correct IP of any type. A valid IPv4 address is an IP in the form &amp;quot;x1.x2.x3.x4&amp;quot; where 0 &amp;lt;= xi &amp;lt;= 255 and xi cannot contain leading zeros. For example, &amp;quot;192.168.1.1&amp;quot; and &amp;quot;192.168.1.0&amp;quot; are valid IPv4 addresses</description>
+    </item>
+    
+    <item>
+      <title>595 Big Countries</title>
+      <link>https://foxisawesome.github.io/sql/595-big-countries/</link>
+      <pubDate>Thu, 08 Oct 2020 17:00:05 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/595-big-countries/</guid>
+      <description>LC 595 Big Countries   A country is big if it has an area of bigger than 3 million square km or a population of more than 25 million.
+Write a SQL solution to output big countries&amp;rsquo; name, population and area.
+ Solution 2020-10-08 Notes:   #Union solution is actually faster than using #or.
+  Why Union is faster than OR?
+Strictly speaking, Using UNION is faster when it comes to cases like scan two different column like this</description>
+    </item>
+    
+    <item>
+      <title>596 Classes More Than 5 Students</title>
+      <link>https://foxisawesome.github.io/sql/596-classes-more-than-5-students/</link>
+      <pubDate>Thu, 08 Oct 2020 16:53:20 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/596-classes-more-than-5-students/</guid>
+      <description>LC 596 Classes More Than 5 Students   There is a table courses with columns: student and class
+Please list out all classes which have more than or equal to 5 students.
+ Solution 2020-10-08 Notes: SELECT DISTINCT class FROM ( SELECT *, COUNT(student) OVER(PARTITION BY class) AS ct FROM (SELECT DISTINCT student, class FROM courses) b ) a WHERE ct &amp;gt;= 5  </description>
+    </item>
+    
+    <item>
+      <title>1532 the Most Recent Three Orders</title>
+      <link>https://foxisawesome.github.io/sql/1532-the-most-recent-three-orders/</link>
+      <pubDate>Thu, 08 Oct 2020 16:44:43 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1532-the-most-recent-three-orders/</guid>
+      <description>LC 1532 the Most Recent Three Orders   Write an SQL query to find the most recent 3 orders of each user. If a user ordered less than 3 orders return all of their orders.
+Return the result table sorted by customer_name in ascending order and in case of a tie by the customer_id in ascending order. If there still a tie, order them by the order_date in descending order.</description>
+    </item>
+    
+    <item>
+      <title>1607 Sellers With No Sales</title>
+      <link>https://foxisawesome.github.io/sql/1607-sellers-with-no-sales/</link>
+      <pubDate>Thu, 08 Oct 2020 16:39:02 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1607-sellers-with-no-sales/</guid>
+      <description>LC 1607 Sellers With No Sales   Write an SQL query to report the names of all sellers who did not make any sales in 2020.
+Return the result table ordered by seller_name in ascending order.
+ Solution 2020-10-08 Notes: SELECT DISTINCT seller_name FROM seller WHERE seller_id NOT IN (SELECT seller_id FROM orders WHERE LEFT(sale_date,4)=2020) ORDER BY 1  </description>
+    </item>
+    
+    <item>
+      <title>1152 Analyze User Website Visit Pattern</title>
+      <link>https://foxisawesome.github.io/posts/1152-analyze-user-website-visit-pattern/</link>
+      <pubDate>Thu, 08 Oct 2020 10:33:48 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1152-analyze-user-website-visit-pattern/</guid>
+      <description>LC 1152 Analyze User Website Visit Pattern We are given some website visits: the user with name username[i] visited the website website[i] at time timestamp[i]. A 3-sequence is a list of websites of length 3 sorted in ascending order by the time of their visits. (The websites in a 3-sequence are not necessarily distinct.) Find the 3-sequence visited by the largest number of users. If there is more than one</description>
+    </item>
+    
+    <item>
+      <title>1350 Students With Invalid Departments</title>
+      <link>https://foxisawesome.github.io/sql/1350-students-with-invalid-departments/</link>
+      <pubDate>Wed, 07 Oct 2020 21:36:59 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1350-students-with-invalid-departments/</guid>
+      <description>LC 1350 Students With Invalid Departments   Write an SQL query to find the id and the name of all students who are enrolled in departments that no longer exists.
+Return the result table in any order.
+The query result format is in the following example:
+Departments table: +------+--------------------------+ | id | name | +------+--------------------------+ | 1 | Electrical Engineering | | 7 | Computer Engineering | | 13 | Bussiness Administration | +------+--------------------------+ Students table: +------+----------+---------------+ | id | name | department_id | +------+----------+---------------+ | 23 | Alice | 1 | | 1 | Bob | 7 | | 5 | Jennifer | 13 | | 2 | John | 14 | | 4 | Jasmine | 77 | | 3 | Steve | 74 | | 6 | Luis | 1 | | 8 | Jonathan | 7 | | 7 | Daiana | 33 | | 11 | Madelynn | 1 | +------+----------+---------------+ Result table: +------+----------+ | id | name | +------+----------+ | 2 | John | | 7 | Daiana | | 4 | Jasmine | | 3 | Steve | +------+----------+ John, Daiana, Steve and Jasmine are enrolled in departments 14, 33, 74 and 77 respectively.</description>
+    </item>
+    
+    <item>
+      <title>1174 Immediate Food Delivery II</title>
+      <link>https://foxisawesome.github.io/sql/1174-immediate-food-delivery-ii/</link>
+      <pubDate>Wed, 07 Oct 2020 21:29:20 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1174-immediate-food-delivery-ii/</guid>
+      <description>LC 1174 Immediate Food Delivery II Write an SQL query to find the percentage of immediate orders in the first orders of all customers, rounded to 2 decimal places. The query result format is in the following example: Delivery table: +-------------+-------------+------------+-----------------------------+ | delivery_id | customer_id | order_date | customer_pref_delivery_date | +-------------+-------------+------------+-----------------------------+ | 1 | 1 | 2019-08-01 | 2019-08-02 | | 2 | 2 | 2019-08-02 | 2019-08-02 | |</description>
+    </item>
+    
+    <item>
+      <title>1173 Immediate Food Delivery I</title>
+      <link>https://foxisawesome.github.io/sql/1173-immediate-food-delivery-i/</link>
+      <pubDate>Wed, 07 Oct 2020 21:23:23 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1173-immediate-food-delivery-i/</guid>
+      <description>LC 1173 Immediate Food Delivery I   Write an SQL query to find the percentage of immediate orders in the table, rounded to 2 decimal places.
+The query result format is in the following example:
+Delivery table: +-------------+-------------+------------+-----------------------------+ | delivery_id | customer_id | order_date | customer_pref_delivery_date | +-------------+-------------+------------+-----------------------------+ | 1 | 1 | 2019-08-01 | 2019-08-02 | | 2 | 5 | 2019-08-02 | 2019-08-02 | | 3 | 1 | 2019-08-11 | 2019-08-11 | | 4 | 3 | 2019-08-24 | 2019-08-26 | | 5 | 4 | 2019-08-21 | 2019-08-22 | | 6 | 2 | 2019-08-11 | 2019-08-13 | +-------------+-------------+------------+-----------------------------+ Result table: +----------------------+ | immediate_percentage | +----------------------+ | 33.</description>
+    </item>
+    
+    <item>
       <title>763 Partition Labels</title>
       <link>https://foxisawesome.github.io/posts/763-partition-labels/</link>
       <pubDate>Wed, 07 Oct 2020 21:12:44 -0400</pubDate>
@@ -81,124 +203,6 @@
       
       <guid>https://foxisawesome.github.io/posts/107-binary-tree-level-order-traversal-ii/</guid>
       <description>LC 107 Binary Tree Level Order Traversal II Given a binary tree, return the bottom-up level order traversal of its nodes&amp;rsquo; values. (ie, from left to right, level by level from leaf to root). For example: Given binary tree [3,9,20,null,null,15,7], 3 / \ 9 20 / \ 15 7 return its bottom-up level order traversal as: [ [15,7], [9,20], [3] ] Solution 2020-10-05 Notes: 学习了 负雪明</description>
-    </item>
-    
-    <item>
-      <title>1454 Active Users</title>
-      <link>https://foxisawesome.github.io/sql/1454-active-users/</link>
-      <pubDate>Sun, 04 Oct 2020 21:18:04 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1454-active-users/</guid>
-      <description>LC 1454 Active Users   Write an SQL query to find the id and the name of active users.
-Active users are those who logged in to their accounts for 5 or more consecutive days.
-Return the result table ordered by the id.
-The query result format is in the following example:
-Accounts table: +----+----------+ | id | name | +----+----------+ | 1 | Winston | | 7 | Jonathan | +----+----------+ Logins table: +----+------------+ | id | login_date | +----+------------+ | 7 | 2020-05-30 | | 1 | 2020-05-30 | | 7 | 2020-05-31 | | 7 | 2020-06-01 | | 7 | 2020-06-02 | | 7 | 2020-06-02 | | 7 | 2020-06-03 | | 1 | 2020-06-07 | | 7 | 2020-06-10 | +----+------------+ Result table: +----+----------+ | id | name | +----+----------+ | 7 | Jonathan | +----+----------+   Solution 2020-10-04 Notes:  consecutive 5 days: DATEDIFF(date, LEAD(date,4)) = 4  SELECT DISTINCT a.</description>
-    </item>
-    
-    <item>
-      <title>579 Find Cumulative Salary of an Employee</title>
-      <link>https://foxisawesome.github.io/sql/579-find-cumulative-salary-of-an-employee/</link>
-      <pubDate>Sun, 04 Oct 2020 21:05:57 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/579-find-cumulative-salary-of-an-employee/</guid>
-      <description>LC 579 Find Cumulative Salary of an Employee The Employee table holds the salary information in a year. Write a SQL to get the cumulative sum of an employee&amp;rsquo;s salary over a period of 3 months but exclude the most recent month. The result should be displayed by &amp;lsquo;Id&amp;rsquo; ascending, and then by &amp;lsquo;Month&amp;rsquo; descending. Example Input | Id | Month | Salary | |----|-------|--------| | 1 | 1 |</description>
-    </item>
-    
-    <item>
-      <title>1075 Project Employees I</title>
-      <link>https://foxisawesome.github.io/sql/1075-project-employees-i/</link>
-      <pubDate>Sun, 04 Oct 2020 20:55:17 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1075-project-employees-i/</guid>
-      <description>LC 1075 Project Employees I   Write an SQL query that reports the average experience years of all the employees for each project, rounded to 2 digits.
-The query result format is in the following example:
-Project table: +-------------+-------------+ | project_id | employee_id | +-------------+-------------+ | 1 | 1 | | 1 | 2 | | 1 | 3 | | 2 | 1 | | 2 | 4 | +-------------+-------------+ Employee table: +-------------+--------+------------------+ | employee_id | name | experience_years | +-------------+--------+------------------+ | 1 | Khaled | 3 | | 2 | Ali | 2 | | 3 | John | 1 | | 4 | Doe | 2 | +-------------+--------+------------------+ Result table: +-------------+---------------+ | project_id | average_years | +-------------+---------------+ | 1 | 2.</description>
-    </item>
-    
-    <item>
-      <title>620 Not Boring Movies</title>
-      <link>https://foxisawesome.github.io/sql/620-not-boring-movies/</link>
-      <pubDate>Sun, 04 Oct 2020 20:51:14 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/620-not-boring-movies/</guid>
-      <description>LC 620 Not Boring Movies   X city opened a new cinema, many people would like to go to this cinema. The cinema also gives out a poster indicating the movies’ ratings and descriptions.
-Please write a SQL query to output movies with an odd numbered ID and a description that is not &amp;lsquo;boring&amp;rsquo;. Order the result by rating.
- Solution 2020-10-04 Notes: SELECT * FROM cinema WHERE id % 2 = 1 AND description !</description>
-    </item>
-    
-    <item>
-      <title>137 Single Number II</title>
-      <link>https://foxisawesome.github.io/posts/137-single-number-ii/</link>
-      <pubDate>Sun, 04 Oct 2020 20:43:36 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/137-single-number-ii/</guid>
-      <description>LC 137 Single Number II Given a non-empty array of integers, every element appears three times except for one, which appears exactly once. Find that single one. Note: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory? Input: [2,2,3,2] Output: 3 Input: [0,1,0,1,0,1,99] Output: 99 Solution 2020-10-04 Notes: 因为确定那个特殊值只出现一次，</description>
-    </item>
-    
-    <item>
-      <title>130 Surrounded Regions</title>
-      <link>https://foxisawesome.github.io/posts/130-surrounded-regions/</link>
-      <pubDate>Sun, 04 Oct 2020 20:34:29 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/130-surrounded-regions/</guid>
-      <description>LC 130 Surrounded Regions Given a 2D board containing &#39;X&#39; and &#39;O&#39; (the letter O), capture all regions surrounded by &#39;X&#39;. A region is captured by flipping all &#39;O&#39;s into &#39;X&#39;s in that surrounded region. Example: X X X X X O O X X X O X X O X X After running your function, the board should be: X X X X X X X X X X</description>
-    </item>
-    
-    <item>
-      <title>108 Convert Sorted Array to Binary Search Tree</title>
-      <link>https://foxisawesome.github.io/posts/108-convert-sorted-array-to-binary-search-tree/</link>
-      <pubDate>Sun, 04 Oct 2020 16:08:38 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/108-convert-sorted-array-to-binary-search-tree/</guid>
-      <description>LC 108 Convert Sorted Array to Binary Search Tree Given an array where elements are sorted in ascending order, convert it to a height balanced BST. For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1. Given the sorted array: [-10,-3,0,5,9], One possible answer is: [0,-3,9,-10,null,5], which represents the following</description>
-    </item>
-    
-    <item>
-      <title>120 Triangle</title>
-      <link>https://foxisawesome.github.io/posts/120-triangle/</link>
-      <pubDate>Sun, 04 Oct 2020 16:00:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/120-triangle/</guid>
-      <description>LC 120 Triangle Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below. For example, given the following triangle [ [2], [3,4], [6,5,7], [4,1,8,3] ] The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11). Note: Bonus point if you are able to do this using</description>
-    </item>
-    
-    <item>
-      <title>113 Path Sum II</title>
-      <link>https://foxisawesome.github.io/posts/113-path-sum-ii/</link>
-      <pubDate>Sun, 04 Oct 2020 15:04:33 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/113-path-sum-ii/</guid>
-      <description>LC 113 Path Sum II Given a binary tree and a sum, find all root-to-leaf paths where each path&amp;rsquo;s sum equals the given sum. Given the below binary tree and sum = 22, 5 / \ 4 8 / / \ 11 13 4 / \ / \ 7 2 5 1 Return: [ [5,4,11,2], [5,8,4,5] ] Solution 2020-10-04 Notes: 很明显的dfs题。但</description>
-    </item>
-    
-    <item>
-      <title>114 Flatten Binary Tree to Linked List</title>
-      <link>https://foxisawesome.github.io/posts/114-flatten-binary-tree-to-linked-list/</link>
-      <pubDate>Sun, 04 Oct 2020 10:58:04 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/114-flatten-binary-tree-to-linked-list/</guid>
-      <description>LC 114 Flatten Binary Tree to Linked List Given a binary tree, flatten it to a linked list in-place. For example, given the following tree: 1 / \ 2 5 / \ \ 3 4 6 The flattened tree should look like: 1 \ 2 \ 3 \ 4 \ 5 \ 6 Solution 2020-10-04 Notes: 感觉这题是 tree 真正体会recu</description>
-    </item>
-    
-    <item>
-      <title>1596 the Most Frequently Ordered Products for Each Customer</title>
-      <link>https://foxisawesome.github.io/sql/1596-the-most-frequently-ordered-products-for-each-customer/</link>
-      <pubDate>Sat, 03 Oct 2020 19:53:30 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1596-the-most-frequently-ordered-products-for-each-customer/</guid>
-      <description>LC 1596 the Most Frequently Ordered Products for Each Customer Write an SQL query to find the most frequently ordered product(s) for each customer. The result table should have the product_id and product_name for each customer_id who ordered at least one order. Return the result table in any order. The query result format is in the following example: Orders +----------+------------+-------------+------------+ | order_id | order_date | customer_id | product_id | +----------+------------+-------------+------------+</description>
-    </item>
-    
-    <item>
-      <title>1571 Warehouse Manager</title>
-      <link>https://foxisawesome.github.io/sql/1571-warehouse-manager/</link>
-      <pubDate>Sat, 03 Oct 2020 19:39:07 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1571-warehouse-manager/</guid>
-      <description>LC 1571 Warehouse Manager   Write an SQL query to report, How much cubic feet of volume does the inventory occupy in each warehouse.
- warehouse_name volume  Return the result table in any order.
-Warehouse table: +------------+--------------+-------------+ | name | product_id | units | +------------+--------------+-------------+ | LCHouse1 | 1 | 1 | | LCHouse1 | 2 | 10 | | LCHouse1 | 3 | 5 | | LCHouse2 | 1 | 2 | | LCHouse2 | 2 | 2 | | LCHouse3 | 4 | 1 | +------------+--------------+-------------+ Products table: +------------+--------------+------------+----------+-----------+ | product_id | product_name | Width | Length | Height | +------------+--------------+------------+----------+-----------+ | 1 | LC-TV | 5 | 50 | 40 | | 2 | LC-KeyChain | 5 | 5 | 5 | | 3 | LC-Phone | 2 | 10 | 10 | | 4 | LC-T-Shirt | 4 | 10 | 20 | +------------+--------------+------------+----------+-----------+ Result table: +----------------+------------+ | warehouse_name | volume | +----------------+------------+ | LCHouse1 | 12250 | | LCHouse2 | 20250 | | LCHouse3 | 800 | +----------------+------------+ Volume of product_id = 1 (LC-TV), 5x50x40 = 10000 Volume of product_id = 2 (LC-KeyChain), 5x5x5 = 125 Volume of product_id = 3 (LC-Phone), 2x10x10 = 200 Volume of product_id = 4 (LC-T-Shirt), 4x10x20 = 800 LCHouse1: 1 unit of LC-TV + 10 units of LC-KeyChain + 5 units of LC-Phone.</description>
     </item>
     
   </channel>

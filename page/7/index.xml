@@ -5,10 +5,127 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 18 Oct 2020 20:43:41 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2020 15:04:59 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1288 Remove Covered Intervals</title>
+      <link>https://foxisawesome.github.io/posts/1288-remove-covered-intervals/</link>
+      <pubDate>Tue, 29 Sep 2020 20:01:38 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1288-remove-covered-intervals/</guid>
+      <description>LC 1288 Remove Covered Intervals Given a list of intervals, remove all intervals that are covered by another interval in the list. Interval [a,b) is covered by interval [c,d) if and only if c &amp;lt;= a and b &amp;lt;= d. After doing so, return the number of remaining intervals. Input: intervals = [[1,4],[3,6],[2,8]] Output: 2 Explanation: Interval [3,6] is covered by [2,8], therefore it is removed. Solution 2020-09-29 Notes: 排</description>
+    </item>
+    
+    <item>
+      <title>1113 Reported Posts</title>
+      <link>https://foxisawesome.github.io/sql/1113-reported-posts/</link>
+      <pubDate>Tue, 29 Sep 2020 19:04:24 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1113-reported-posts/</guid>
+      <description>LC 1113 Reported Posts   Write an SQL query that reports the number of posts reported yesterday for each report reason. Assume today is 2019-07-05.
+ Solution 2020-09-29 Notes: SELECT report_reason, report_count FROM ( SELECT extra as report_reason, COUNT(*) as report_count FROM ( SELECT DISTINCT post_id, extra FROM actions WHERE DATEDIFF(&#39;2019-07-05&#39;,action_date)=1 AND action = &#39;report&#39; ) a GROUP BY 1 ) b WHERE report_reason IS NOT NULL ;  </description>
+    </item>
+    
+    <item>
+      <title>1045 Customers Who Bought All Products</title>
+      <link>https://foxisawesome.github.io/sql/1045-customers-who-bought-all-products/</link>
+      <pubDate>Tue, 29 Sep 2020 14:12:22 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1045-customers-who-bought-all-products/</guid>
+      <description>LC 1045 Customers Who Bought All Products   Write an SQL query for a report that provides the customer ids from the Customer table that bought all the products in the Product table.
+ Solution 2020-09-29 Notes: SELECT customer_id FROM ( SELECT customer_id, COUNT(DISTINCT product_key) AS ct FROM customer GROUP BY customer_id ORDER BY 1 ) a WHERE ct = (SELECT COUNT(*) from product) ORDER BY 1 ;  </description>
+    </item>
+    
+    <item>
+      <title>627 Swap Salary</title>
+      <link>https://foxisawesome.github.io/sql/627-swap-salary/</link>
+      <pubDate>Tue, 29 Sep 2020 13:54:07 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/627-swap-salary/</guid>
+      <description>LC 627 Swap Salary   SQL Schema
+Given a table salary, such as the one below, that has m=male and f=female values. Swap all f and m values (i.e., change all f values to m and vice versa) with a single update statement and no intermediate temp table.
+Note that you must write a single update statement, DO NOT write any select statement for this problem.
+ Solution 2020-09-29 Notes:  UPDATE statement.</description>
+    </item>
+    
+    <item>
+      <title>577 Employee Bonus</title>
+      <link>https://foxisawesome.github.io/sql/577-employee-bonus/</link>
+      <pubDate>Tue, 29 Sep 2020 13:49:21 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/577-employee-bonus/</guid>
+      <description>LC 577 Employee Bonus   Select all employee&amp;rsquo;s name and bonus whose bonus is &amp;lt; 1000.
+Table:Employee
++-------+--------+-----------+--------+ | empId | name | supervisor| salary | +-------+--------+-----------+--------+ | 1 | John | 3 | 1000 | | 2 | Dan | 3 | 2000 | | 3 | Brad | null | 4000 | | 4 | Thomas | 3 | 4000 | +-------+--------+-----------+--------+ empId is the primary key column for this table.</description>
+    </item>
+    
+    <item>
+      <title>574 Winning Candidate</title>
+      <link>https://foxisawesome.github.io/sql/574-winning-candidate/</link>
+      <pubDate>Tue, 29 Sep 2020 13:40:03 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/574-winning-candidate/</guid>
+      <description>LC 574 Winning Candidate Write a sql to find the name of the winning candidate, the above example will return the winner B. Solution 2020-09-29 Notes: 先 group by, 在 order by 里放 aggregation function SELECT name FROM candidate WHERE id = ( SELECT candidateid FROM vote GROUP BY candidateid ORDER BY COUNT(*) DESC LIMIT 1 ) 2020-10-14 Notes: Window function + aggregation function SELECT name FROM candidate a</description>
+    </item>
+    
+    <item>
+      <title>534 Game Play Analysis III</title>
+      <link>https://foxisawesome.github.io/sql/534-game-play-analysis-iii/</link>
+      <pubDate>Tue, 29 Sep 2020 13:30:11 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/534-game-play-analysis-iii/</guid>
+      <description>LC 534 Game Play Analysis III   Write an SQL query that reports for each player and date, how many games played so far by the player. That is, the total number of games played by the player until that date. Check the example for clarity.
+The query result format is in the following example:
+Activity table: +-----------+-----------+------------+--------------+ | player_id | device_id | event_date | games_played | +-----------+-----------+------------+--------------+ | 1 | 2 | 2016-03-01 | 5 | | 1 | 2 | 2016-05-02 | 6 | | 1 | 3 | 2017-06-25 | 1 | | 3 | 1 | 2016-03-02 | 0 | | 3 | 4 | 2018-07-03 | 5 | +-----------+-----------+------------+--------------+ Result table: +-----------+------------+---------------------+ | player_id | event_date | games_played_so_far | +-----------+------------+---------------------+ | 1 | 2016-03-01 | 5 | | 1 | 2016-05-02 | 11 | | 1 | 2017-06-25 | 12 | | 3 | 2016-03-02 | 0 | | 3 | 2018-07-03 | 5 | +-----------+------------+---------------------+   Solution 2020-09-29 Notes:  SUM() OVER(ORDER BY) gives cumulative results.</description>
+    </item>
+    
+    <item>
+      <title>567 Permutation in String</title>
+      <link>https://foxisawesome.github.io/posts/567-permutation-in-string/</link>
+      <pubDate>Tue, 29 Sep 2020 13:02:26 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/567-permutation-in-string/</guid>
+      <description>LC 567 Permutation in String Given two strings s1 and s2, write a function to return true if s2 contains the permutation of s1. In other words, one of the first string&amp;rsquo;s permutations is the substring of the second string. Input: s1 = &amp;quot;ab&amp;quot; s2 = &amp;quot;eidbaooo&amp;quot; Output: True Explanation: s2 contains one permutation of s1 (&amp;quot;ba&amp;quot;). Solution 2020-09-29 Notes: 这题用了slidin</description>
+    </item>
+    
+    <item>
+      <title>930 Binary Subarrays With Sum</title>
+      <link>https://foxisawesome.github.io/posts/930-binary-subarrays-with-sum/</link>
+      <pubDate>Tue, 29 Sep 2020 11:36:28 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/930-binary-subarrays-with-sum/</guid>
+      <description>LC 930 Binary Subarrays With Sum In an array A of 0s and 1s, how many non-empty subarrays have sum S? Input: A = [1,0,1,0,1], S = 2 Output: 4 Explanation: The 4 subarrays are bolded below: [1,0,1,0,1] [1,0,1,0,1] [1,0,1,0,1] [1,0,1,0,1] Solution 2020-09-29 Notes: 第一刷时按topic来刷的，这一些列题都几乎一摸一样</description>
+    </item>
+    
+    <item>
+      <title>1004 Max Consecutive Ones III</title>
+      <link>https://foxisawesome.github.io/posts/1004-max-consecutive-ones-iii/</link>
+      <pubDate>Mon, 28 Sep 2020 22:06:14 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1004-max-consecutive-ones-iii/</guid>
+      <description>LC 1004 Max Consecutive Ones III Given an array A of 0s and 1s, we may change up to K values from 0 to 1. Return the length of the longest (contiguous) subarray that contains only 1s. Input: A = [1,1,1,0,0,0,1,1,1,1,0], K = 2 Output: 6 Explanation: [1,1,1,0,0,1,1,1,1,1,1] Bolded numbers were flipped from 0 to 1. The longest subarray is underlined. Solution 2020-09-28 Notes: 这其实是倒挺</description>
+    </item>
+    
+    <item>
+      <title>1248 Count Number of Nice Subarrays</title>
+      <link>https://foxisawesome.github.io/posts/1248-count-number-of-nice-subarrays/</link>
+      <pubDate>Mon, 28 Sep 2020 21:38:49 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1248-count-number-of-nice-subarrays/</guid>
+      <description>LC 1248 Count Number of Nice Subarrays Given an array of integers nums and an integer k. A continuous subarray is called nice if there are k odd numbers on it. Return the number of nice sub-arrays. Input: nums = [1,1,2,1,1], k = 3 Output: 2 Explanation: The only sub-arrays with 3 odd numbers are [1,1,2,1] and [1,2,1,1]. Solution 2020-09-28 Notes: 这是与LC 992 一摸一</description>
+    </item>
+    
+    <item>
+      <title>1358 Number of Substrings Containing All Three Characters</title>
+      <link>https://foxisawesome.github.io/posts/1358-number-of-substrings-containing-all-three-characters/</link>
+      <pubDate>Mon, 28 Sep 2020 21:14:47 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1358-number-of-substrings-containing-all-three-characters/</guid>
+      <description>LC 1358 Number of Substrings Containing All Three Characters Given a string s consisting only of characters a, b and c. Return the number of substrings containing at least one occurrence of all these characters a, b and c. Input: s = &amp;quot;abcabc&amp;quot; Output: 10 Explanation: The substrings containing at least one occurrence of the characters a, b and c are &amp;quot;abc&amp;quot;, &amp;quot;abca&amp;quot;, &amp;quot;abcab&amp;quot;, &amp;quot;abcabc&amp;quot;, &amp;quot;bca&amp;quot;, &amp;quot;bcab&amp;quot;, &amp;quot;bcabc&amp;quot;, &amp;quot;cab&amp;quot;, &amp;quot;cabc&amp;quot;</description>
+    </item>
     
     <item>
       <title>992 Subarrays With K Different Integers</title>
@@ -80,114 +197,6 @@
       
       <guid>https://foxisawesome.github.io/posts/455-assign-cookies/</guid>
       <description>LC 455 Assign Cookies Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie. Each child i has a greed factor gi, which is the minimum size of a cookie that the child will be content with; and each cookie j has a size sj. If sj &amp;gt;= gi, we can assign the cookie j to</description>
-    </item>
-    
-    <item>
-      <title>152 Valid Palindrome</title>
-      <link>https://foxisawesome.github.io/posts/152-valid-palindrome/</link>
-      <pubDate>Sun, 27 Sep 2020 15:20:22 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/152-valid-palindrome/</guid>
-      <description>LC 152 Valid Palindrome Given a string, determine if it is a palindrome, considering only alphanumeric characters and ignoring cases. Note: For the purpose of this problem, we define empty string as valid palindrome. e.g. “0P”, “.,” Solution 2020-09-27 Notes: 题目本身很简单，但是two notes：1. wh</description>
-    </item>
-    
-    <item>
-      <title>11 Container With Most Water</title>
-      <link>https://foxisawesome.github.io/posts/11-container-with-most-water/</link>
-      <pubDate>Sun, 27 Sep 2020 15:10:08 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/11-container-with-most-water/</guid>
-      <description>LC 11 Container With Most Water Given n non-negative integers a1, a2, &amp;hellip;, an , where each represents a point at coordinate (i, ai). n vertical lines are drawn such that the two endpoints of line i is at (i, ai) and (i, 0). Find two lines, which together with x-axis forms a container, such that the container contains the most water. Solution 2020-09-27 Notes: 左右poi</description>
-    </item>
-    
-    <item>
-      <title>74 Search a 2d Matrix</title>
-      <link>https://foxisawesome.github.io/posts/74-search-a-2d-matrix/</link>
-      <pubDate>Fri, 25 Sep 2020 19:49:42 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/74-search-a-2d-matrix/</guid>
-      <description>LC 74 Search a 2d Matrix Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties: Integers in each row are sorted from left to right. The first integer of each row is greater than the last integer of the previous row. Solution 2020-09-25 Notes: Right bound binary search returns the closest left bound, e.g. binarySearch([1,3,5,7], 4). 两次</description>
-    </item>
-    
-    <item>
-      <title>Cheatsheet</title>
-      <link>https://foxisawesome.github.io/posts/cheatsheet/</link>
-      <pubDate>Fri, 25 Sep 2020 19:13:47 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/cheatsheet/</guid>
-      <description> [[x,y] for x in [0,3] for y in [6,9]]: generate pairs [[0, 6], [0, 9], [3, 6], [3, 9]] [[x,y] for x, y in zip([&#39;a&#39;,&#39;b&#39;],[&#39;c&#39;,&#39;d&#39;])]: [[&amp;lsquo;a&amp;rsquo;, &amp;lsquo;c&amp;rsquo;], [&amp;lsquo;b&amp;rsquo;, &amp;rsquo;d&amp;rsquo;]] one liner to create dictionary:lookup = {val: i for i, val in enumerate(order)} this reverse check dict and return max val count in dict  max_val = max(dict.values()) max_freq = max(dict, key=dict.get) for key, val in dict.items(): if val == max_val: return key sorted_dict = sorted(dict, key = lambda x: (-dict[x]) ) sorted_dict[0]   sort a by b: [x for _,x in sorted(zip(b,a))]  </description>
-    </item>
-    
-    <item>
-      <title>36 Valid Sudoku</title>
-      <link>https://foxisawesome.github.io/posts/36-valid-sudoku/</link>
-      <pubDate>Fri, 25 Sep 2020 19:13:25 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/36-valid-sudoku/</guid>
-      <description>LC 36 Valid Sudoku Determine if a 9x9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules: Each row must contain the digits 1-9 without repetition. Each column must contain the digits 1-9 without repetition. Each of the 9 3x3 sub-boxes of the grid must contain the digits 1-9 without repetition. A partially filled sudoku which is valid. Solution 2020-09-25 Notes: 按</description>
-    </item>
-    
-    <item>
-      <title>771 Jewels and Stones</title>
-      <link>https://foxisawesome.github.io/posts/771-jewels-and-stones/</link>
-      <pubDate>Fri, 25 Sep 2020 15:54:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/771-jewels-and-stones/</guid>
-      <description>LC 771 Jewels and Stones You&amp;rsquo;re given strings J representing the types of stones that are jewels, and S representing the stones you have. Each character in S is a type of stone you have. You want to know how many of the stones you have are also jewels. The letters in J are guaranteed distinct, and all characters in J and S are letters. Letters are case sensitive, so</description>
-    </item>
-    
-    <item>
-      <title>62 Unique Paths</title>
-      <link>https://foxisawesome.github.io/posts/62-unique-paths/</link>
-      <pubDate>Fri, 25 Sep 2020 15:47:03 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/62-unique-paths/</guid>
-      <description>LC 62 Unique Paths A robot is located at the top-left corner of a m x n grid (marked &amp;lsquo;Start&amp;rsquo; in the diagram below). The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked &amp;lsquo;Finish&amp;rsquo; in the diagram below). How many possible unique paths are there? Solution 2020-09-25 Notes: 像cli</description>
-    </item>
-    
-    <item>
-      <title>819 Most Common Word</title>
-      <link>https://foxisawesome.github.io/posts/819-most-common-word/</link>
-      <pubDate>Fri, 25 Sep 2020 14:39:42 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/819-most-common-word/</guid>
-      <description>LC 819 Most Common Word Given a paragraph and a list of banned words, return the most frequent word that is not in the list of banned words. It is guaranteed there is at least one word that isn&amp;rsquo;t banned, and that the answer is unique. Words in the list of banned words are given in lowercase, and free of punctuation. Words in the paragraph are not case sensitive. The</description>
-    </item>
-    
-    <item>
-      <title>1137 N Th Tribonacci Number</title>
-      <link>https://foxisawesome.github.io/posts/1137-n-th-tribonacci-number/</link>
-      <pubDate>Fri, 25 Sep 2020 14:13:22 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1137-n-th-tribonacci-number/</guid>
-      <description>LC 1137 N Th Tribonacci Number The Tribonacci sequence Tn is defined as follows: T0 = 0, T1 = 1, T2 = 1, and Tn+3 = Tn + Tn+1 + Tn+2 for n &amp;gt;= 0. Given n, return the value of Tn. Solution 2020-09-25 Notes: 加个memo在 def __init__(self): 能把整个recursion写在一</description>
-    </item>
-    
-    <item>
-      <title>303 Range Sum Query Immutable</title>
-      <link>https://foxisawesome.github.io/posts/303-range-sum-query-immutable/</link>
-      <pubDate>Fri, 25 Sep 2020 14:03:09 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/303-range-sum-query-immutable/</guid>
-      <description>LC 303 Range Sum Query Immutable Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive. Given nums = [-2, 0, 3, -5, 2, -1] sumRange(0, 2) -&amp;gt; 1 sumRange(2, 5) -&amp;gt; -1 sumRange(0, 5) -&amp;gt; -3 Solution 2020-09-25 Notes: 这题要说的就是用 pre sum (cumulative sum) 来避免重复计算求</description>
-    </item>
-    
-    <item>
-      <title>209 Minimum Size Subarray Sum</title>
-      <link>https://foxisawesome.github.io/posts/209-minimum-size-subarray-sum/</link>
-      <pubDate>Fri, 25 Sep 2020 11:08:36 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/209-minimum-size-subarray-sum/</guid>
-      <description>LC 209 Minimum Size Subarray Sum Given an array of n positive integers and a positive integer s, find the minimal length of a contiguous subarray of which the sum ≥ s. If there isn&amp;rsquo;t one, return 0 instead. Input: s = 7, nums = [2,3,1,2,4,3] Output: 2 Explanation: the subarray [4,3] has the minimal length under the problem constraint Solution 2020-09-25 Notes: 这题 O(N)的</description>
-    </item>
-    
-    <item>
-      <title>167 Two Sum II Input Array Is Sorted</title>
-      <link>https://foxisawesome.github.io/posts/167-two-sum-ii-input-array-is-sorted/</link>
-      <pubDate>Fri, 25 Sep 2020 10:36:56 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/167-two-sum-ii-input-array-is-sorted/</guid>
-      <description>LC 167 Two Sum II Input Array Is Sorted Given an array of integers that is already *sorted in ascending order*, find two numbers such that they add up to a specific target number. The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2. Input: numbers = [2,7,11,15], target = 9 Output: [1,2] Explanation: The</description>
     </item>
     
   </channel>
