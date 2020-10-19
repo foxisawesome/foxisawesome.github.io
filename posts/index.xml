@@ -5,10 +5,109 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 15 Oct 2020 12:03:45 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2020 20:16:29 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1322 Ads Performance</title>
+      <link>https://foxisawesome.github.io/sql/1322-ads-performance/</link>
+      <pubDate>Sun, 18 Oct 2020 20:43:41 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1322-ads-performance/</guid>
+      <description>LC 1322 Ads Performance Write an SQL query to find the ctr of each Ad. Round ctr to 2 decimal points. Order the result table by ctr in descending order and by ad_id in ascending order in case of a tie. The query result format is in the following example: Ads table: +-------+---------+---------+ | ad_id | user_id | action | +-------+---------+---------+ | 1 | 1 | Clicked | | 2</description>
+    </item>
+    
+    <item>
+      <title>1543 Fix Product Name Format</title>
+      <link>https://foxisawesome.github.io/sql/1543-fix-product-name-format/</link>
+      <pubDate>Sun, 18 Oct 2020 20:34:36 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1543-fix-product-name-format/</guid>
+      <description>LC 1543 Fix Product Name Format Write an SQL query to report product_name in lowercase without leading or trailing white spaces. sale_date in the format (&#39;YYYY-MM&#39;) total the number of times the product was sold in this month. Return the result table ordered by product_name in ascending order, in case of a tie order it by sale_date in ascending order. The query result format is in the following example. Sales</description>
+    </item>
+    
+    <item>
+      <title>607 Sales Person</title>
+      <link>https://foxisawesome.github.io/sql/607-sales-person/</link>
+      <pubDate>Sun, 18 Oct 2020 20:33:03 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/607-sales-person/</guid>
+      <description>LC 607 Sales Person Given three tables: salesperson, company, orders. Output all the names in the table salesperson, who didn’t have sales to company &amp;lsquo;RED&amp;rsquo;. Solution 2020-10-18 Notes: 秒了 SELECT DISTINCT name FROM salesperson WHERE sales_id NOT IN (SELECT sales_id FROM orders WHERE com_id IN (SELECT com_id FROM company WHERE name=&#39;RED&#39;))</description>
+    </item>
+    
+    <item>
+      <title>1294 Weather Type in Each Country</title>
+      <link>https://foxisawesome.github.io/sql/1294-weather-type-in-each-country/</link>
+      <pubDate>Sun, 18 Oct 2020 20:27:37 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1294-weather-type-in-each-country/</guid>
+      <description>LC 1294 Weather Type in Each Country Write an SQL query to find the type of weather in each country for November 2019. The type of weather is Cold if the average weather_state is less than or equal 15, Hot if the average weather_state is greater than or equal 25 and Warm otherwise. Return result table in any order. Solution 2020-10-18 Notes: 秒了 SELECT country_name, (CASE WHEN AVG(weather_state)&amp;lt;=15 THEN</description>
+    </item>
+    
+    <item>
+      <title>361 Bomb Enemy</title>
+      <link>https://foxisawesome.github.io/posts/361-bomb-enemy/</link>
+      <pubDate>Sun, 18 Oct 2020 20:16:29 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/361-bomb-enemy/</guid>
+      <description>LC 361 Bomb Enemy   Given a 2D grid, each cell is either a wall &#39;W&#39;, an enemy &#39;E&#39; or empty &#39;0&#39; (the number zero), return the maximum enemies you can kill using one bomb. The bomb kills all the enemies in the same row and column from the planted point until it hits the wall since the wall is too strong to be destroyed. Note: You can only put the bomb at an empty cell.</description>
+    </item>
+    
+    <item>
+      <title>723 Candy Crush</title>
+      <link>https://foxisawesome.github.io/posts/723-candy-crush/</link>
+      <pubDate>Sun, 18 Oct 2020 19:33:47 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/723-candy-crush/</guid>
+      <description>LC 723 Candy Crush This question is about implementing a basic elimination algorithm for Candy Crush. Given a 2D integer array board representing the grid of candy, different positive integers board[i][j] represent different types of candies. A value of board[i][j] = 0 represents that the cell at position (i, j) is empty. The given board represents the state of the game following the player&amp;rsquo;s move. Now, you need to restore</description>
+    </item>
+    
+    <item>
+      <title>1470 Shuffle the Array</title>
+      <link>https://foxisawesome.github.io/posts/1470-shuffle-the-array/</link>
+      <pubDate>Sun, 18 Oct 2020 15:22:00 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1470-shuffle-the-array/</guid>
+      <description>LC 1470 Shuffle the Array Given the array nums consisting of 2n elements in the form [x1,x2,...,xn,y1,y2,...,yn]. Return the array in the form [x1,y1,x2,y2,...,xn,yn]. Solution 2020-10-18 Notes: 不能这么写 [i,j for i, j in zip(nums[:n],nums[n:])] class Solution: def shuffle(self, nums: List[int], n: int) -&amp;gt; List[int]: ans = [] for i, j in zip(nums[:n], nums[n:]): ans += [i] + [j] return ans # Time O(N) # Space O(N)</description>
+    </item>
+    
+    <item>
+      <title>1431 Kids With the Greatest Number of Candies</title>
+      <link>https://foxisawesome.github.io/posts/1431-kids-with-the-greatest-number-of-candies/</link>
+      <pubDate>Sun, 18 Oct 2020 15:12:18 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1431-kids-with-the-greatest-number-of-candies/</guid>
+      <description>LC 1431 Kids With the Greatest Number of Candies Given the array candies and the integer extraCandies, where candies[i] represents the number of candies that the *ith* kid has. For each kid check if there is a way to distribute extraCandies among the kids such that he or she can have the greatest number of candies among them. Notice that multiple kids can have the greatest number of candies. Input:</description>
+    </item>
+    
+    <item>
+      <title>1480 Running Sum of 1d Array</title>
+      <link>https://foxisawesome.github.io/posts/1480-running-sum-of-1d-array/</link>
+      <pubDate>Sun, 18 Oct 2020 15:05:05 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1480-running-sum-of-1d-array/</guid>
+      <description>LC 1480 Running Sum of 1d Array Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]). Return the running sum of nums. Solution 2020-10-18 Notes: Pre-sum. 秒了 class Solution: def runningSum(self, nums: List[int]) -&amp;gt; List[int]: if not nums: return [] n =</description>
+    </item>
+    
+    <item>
+      <title>1119 Remove Vowels From a String</title>
+      <link>https://foxisawesome.github.io/posts/1119-remove-vowels-from-a-string/</link>
+      <pubDate>Sun, 18 Oct 2020 15:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1119-remove-vowels-from-a-string/</guid>
+      <description>LC 1119 Remove Vowels From a String Given a string S, remove the vowels &#39;a&#39;, &#39;e&#39;, &#39;i&#39;, &#39;o&#39;, and &#39;u&#39; from it, and return the new string. Solution 2020-10-18 Notes: 秒了 class Solution: def removeVowels(self, S: str) -&amp;gt; str: v = set([&#39;a&#39;,&#39;e&#39;,&#39;i&#39;,&#39;o&#39;,&#39;u&#39;]) ans = [] for s in S: if s not in v: ans.append(s) return &#39;&#39;.join(ans) # Time O(N) # Space O(N)</description>
+    </item>
+    
+    <item>
+      <title>1342 Number of Steps to Reduce a Number to Zero</title>
+      <link>https://foxisawesome.github.io/posts/1342-number-of-steps-to-reduce-a-number-to-zero/</link>
+      <pubDate>Sun, 18 Oct 2020 14:58:02 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1342-number-of-steps-to-reduce-a-number-to-zero/</guid>
+      <description>LC 1342 Number of Steps to Reduce a Number to Zero Given a non-negative integer num, return the number of steps to reduce it to zero. If the current number is even, you have to divide it by 2, otherwise, you have to subtract 1 from it. Input: num = 14 Output: 6 Explanation: Step 1) 14 is even; divide by 2 and obtain 7. Step 2) 7 is odd;</description>
+    </item>
     
     <item>
       <title>1141 User Activity for the Past 30 Days I</title>
@@ -96,109 +195,6 @@ Return the result table ordered by category.
       
       <guid>https://foxisawesome.github.io/posts/452-minimum-number-of-arrows-to-burst-balloons/</guid>
       <description>LC 452 Minimum Number of Arrows to Burst Balloons There are some spherical balloons spread in two-dimensional space. For each balloon, provided input is the start and end coordinates of the horizontal diameter. Since it&amp;rsquo;s horizontal, y-coordinates don&amp;rsquo;t matter, and hence the x-coordinates of start and end of the diameter suffice. The start is always smaller than the end. An arrow can be shot up exactly vertically from different points</description>
-    </item>
-    
-    <item>
-      <title>435 Non Overlapping Intervals</title>
-      <link>https://foxisawesome.github.io/posts/435-non-overlapping-intervals/</link>
-      <pubDate>Thu, 15 Oct 2020 10:04:00 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/435-non-overlapping-intervals/</guid>
-      <description>LC 435 Non Overlapping Intervals Given a collection of intervals, find the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping. Input: [[1,2],[2,3],[3,4],[1,3]] Output: 1 Explanation: [1,3] can be removed and the rest of intervals are non-overlapping. Solution 2020-10-15 Notes: Greedy 算法解决的一类 区间问题。 这题的思路是，先把每</description>
-    </item>
-    
-    <item>
-      <title>613 Shortest Distance in a Line</title>
-      <link>https://foxisawesome.github.io/sql/613-shortest-distance-in-a-line/</link>
-      <pubDate>Wed, 14 Oct 2020 19:50:34 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/613-shortest-distance-in-a-line/</guid>
-      <description>LC 613 Shortest Distance in a Line   Table point holds the x coordinate of some points on x-axis in a plane, which are all integers.
-Write a query to find the shortest distance between two points in these points.
-| x | |-----| | -1 | | 0 | | 2 |  The shortest distance is &amp;lsquo;1&amp;rsquo; obviously, which is from point &amp;lsquo;-1&amp;rsquo; to &amp;lsquo;0&amp;rsquo;. So the output is as below:</description>
-    </item>
-    
-    <item>
-      <title>603 Consecutive Available Seats</title>
-      <link>https://foxisawesome.github.io/sql/603-consecutive-available-seats/</link>
-      <pubDate>Wed, 14 Oct 2020 19:47:16 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/603-consecutive-available-seats/</guid>
-      <description>LC 603 Consecutive Available Seats   Several friends at a cinema ticket office would like to reserve consecutive available seats. Can you help to query all the consecutive available seats order by the seat_id using the following cinema table?
-| seat_id | free | |---------|------| | 1 | 1 | | 2 | 0 | | 3 | 1 | | 4 | 1 | | 5 | 1 |  Your query should return the following result for the sample case above.</description>
-    </item>
-    
-    <item>
-      <title>602 Friend Requests Ii Who Has the Most Friends</title>
-      <link>https://foxisawesome.github.io/sql/602-friend-requests-ii-who-has-the-most-friends/</link>
-      <pubDate>Wed, 14 Oct 2020 19:41:14 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/602-friend-requests-ii-who-has-the-most-friends/</guid>
-      <description>LC 602 Friend Requests Ii Who Has the Most Friends Write a query to find the the people who has most friends and the most friends number under the following rules: It is guaranteed there is only 1 people having the most friends. The friend request could only been accepted once, which mean there is no multiple records with the same requester_id and accepter_id value. For the sample data above,</description>
-    </item>
-    
-    <item>
-      <title>974 Subarray Sums Divisible by K</title>
-      <link>https://foxisawesome.github.io/posts/974-subarray-sums-divisible-by-k/</link>
-      <pubDate>Wed, 14 Oct 2020 17:17:02 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/974-subarray-sums-divisible-by-k/</guid>
-      <description>LC 974 Subarray Sums Divisible by K   Given an array A of integers, return the number of (contiguous, non-empty) subarrays that have a sum divisible by K.
-Input: A = [4,5,0,-2,-3,1], K = 5 Output: 7 Explanation: There are 7 subarrays with a sum divisible by K = 5: [4, 5, 0, -2, -3, 1], [5], [5, 0], [5, 0, -2, -3], [0], [0, -2, -3], [-2, -3]   Solution 2020-10-14 Notes:  About the problems - sum of contiguous subarray , prefix sum is a common technique.</description>
-    </item>
-    
-    <item>
-      <title>909 Snakes and Ladders</title>
-      <link>https://foxisawesome.github.io/posts/909-snakes-and-ladders/</link>
-      <pubDate>Wed, 14 Oct 2020 15:51:48 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/909-snakes-and-ladders/</guid>
-      <description>LC 909 Snakes and Ladders On an N x N board, the numbers from 1 to N*N are written boustrophedonically starting from the bottom left of the board, and alternating direction each row. For example, for a 6 x 6 board, the numbers are written as follows: Input: [ [-1,-1,-1,-1,-1,-1], [-1,-1,-1,-1,-1,-1], [-1,-1,-1,-1,-1,-1], [-1,35,-1,-1,13,-1], [-1,-1,-1,-1,-1,-1], [-1,15,-1,-1,-1,-1]] Output: 4 Explanation: At the beginning, you start at square 1 [at row 5, column</description>
-    </item>
-    
-    <item>
-      <title>1428 Leftmost Column With at Least a One</title>
-      <link>https://foxisawesome.github.io/posts/1428-leftmost-column-with-at-least-a-one/</link>
-      <pubDate>Tue, 13 Oct 2020 20:37:12 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1428-leftmost-column-with-at-least-a-one/</guid>
-      <description>LC 1428 Leftmost Column With at Least a One (This problem is an interactive problem.) A binary matrix means that all elements are 0 or 1. For each individual row of the matrix, this row is sorted in non-decreasing order. Given a row-sorted binary matrix binaryMatrix, return leftmost column index(0-indexed) with at least a 1 in it. If such index doesn&amp;rsquo;t exist, return -1. You can&amp;rsquo;t access the Binary Matrix</description>
-    </item>
-    
-    <item>
-      <title>1581 Customer Who Visited but Did Not Make Any Transactions</title>
-      <link>https://foxisawesome.github.io/sql/1581-customer-who-visited-but-did-not-make-any-transactions/</link>
-      <pubDate>Tue, 13 Oct 2020 20:09:03 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1581-customer-who-visited-but-did-not-make-any-transactions/</guid>
-      <description>LC 1581 Customer Who Visited but Did Not Make Any Transactions Write an SQL query to find the IDs of the users who visited without making any transactions and the number of times they made these types of visits. Return the result table sorted in any order. The query result format is in the following example: Visits +----------+-------------+ | visit_id | customer_id | +----------+-------------+ | 1 | 23 | |</description>
-    </item>
-    
-    <item>
-      <title>1613 Find the Missing Ids</title>
-      <link>https://foxisawesome.github.io/sql/1613-find-the-missing-ids/</link>
-      <pubDate>Tue, 13 Oct 2020 20:03:17 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1613-find-the-missing-ids/</guid>
-      <description>LC 1613 Find the Missing Ids Write an SQL query to find the missing customer IDs. The missing IDs are ones that are not in the Customers table but are in the range between 1 and the maximum customer_id present in the table. Notice that the maximum customer_id will not exceed 100. Return the result table ordered by ids in ascending order. The query result format is in the following</description>
-    </item>
-    
-    <item>
-      <title>1587 Bank Account Summary II</title>
-      <link>https://foxisawesome.github.io/sql/1587-bank-account-summary-ii/</link>
-      <pubDate>Tue, 13 Oct 2020 19:51:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1587-bank-account-summary-ii/</guid>
-      <description>LC 1587 Bank Account Summary II Write an SQL query to report the name and balance of users with a balance higher than 10000. The balance of an account is equal to the sum of the amounts of all transactions involving that account. Return the result table in any order. The query result format is in the following example. Users table: +------------+--------------+ | account | name | +------------+--------------+ | 900001</description>
-    </item>
-    
-    <item>
-      <title>654 Maximum Binary Tree</title>
-      <link>https://foxisawesome.github.io/posts/654-maximum-binary-tree/</link>
-      <pubDate>Tue, 13 Oct 2020 16:05:34 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/654-maximum-binary-tree/</guid>
-      <description>LC 654 Maximum Binary Tree Given an integer array with no duplicates. A maximum tree building on this array is defined as follow: The root is the maximum number in the array. The left subtree is the maximum tree constructed from left part subarray divided by the maximum number. The right subtree is the maximum tree constructed from right part subarray divided by the maximum number. Construct the maximum tree</description>
     </item>
     
   </channel>

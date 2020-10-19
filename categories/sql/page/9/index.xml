@@ -5,10 +5,110 @@
     <link>https://foxisawesome.github.io/categories/sql/</link>
     <description>Recent content in sql on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 17 Oct 2020 21:13:03 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 18 Oct 2020 20:43:41 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/sql/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>134 Gas Station</title>
+      <link>https://foxisawesome.github.io/posts/134-gas-station/</link>
+      <pubDate>Wed, 23 Sep 2020 15:14:28 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/134-gas-station/</guid>
+      <description>LC 134 Gas Station There are N gas stations along a circular route, where the amount of gas at station i is gas[i]. You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from station i to its next station (i+1). You begin the journey with an empty tank at one of the gas stations. Return the starting gas station&amp;rsquo;s index if you</description>
+    </item>
+    
+    <item>
+      <title>103 Binary Tree Zigzag Level Order Traversal</title>
+      <link>https://foxisawesome.github.io/posts/103-binary-tree-zigzag-level-order-traversal/</link>
+      <pubDate>Wed, 23 Sep 2020 14:58:07 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/103-binary-tree-zigzag-level-order-traversal/</guid>
+      <description>LC 103 Binary Tree Zigzag Level Order Traversal Given a binary tree, return the zigzag level order traversal of its nodes&amp;rsquo; values. (ie, from left to right, then right to left for the next level and alternate between). For example: Given binary tree [3,9,20,null,null,15,7], 3 / \ 9 20 / \ 15 7 return its zigzag level order traversal as: [ [3], [20,9], [15,7] ] Solution 2020-09-23 Notes: 一个</description>
+    </item>
+    
+    <item>
+      <title>1283 Find the Smallest Divisor Given a Threshold</title>
+      <link>https://foxisawesome.github.io/posts/1283-find-the-smallest-divisor-given-a-threshold/</link>
+      <pubDate>Wed, 23 Sep 2020 14:22:33 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1283-find-the-smallest-divisor-given-a-threshold/</guid>
+      <description>LC 1283 Find the Smallest Divisor Given a Threshold a positive integer divisor and divide all the array by it and sum the result of the division. Find the smallest divisor such that the result mentioned above is less than or equal to threshold. Input: nums = [1,2,5,9], threshold = 6 Output: 5 Explanation: We can get a sum to 17 (1+2+5+9) if the divisor is 1. If the divisor</description>
+    </item>
+    
+    <item>
+      <title>179 Largest Number</title>
+      <link>https://foxisawesome.github.io/posts/179-largest-number/</link>
+      <pubDate>Wed, 23 Sep 2020 11:12:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/179-largest-number/</guid>
+      <description>LC 179 Largest Number Given a list of non negative integers, arrange them such that they form the largest number. Input: [3,30,34,5,9] Output: &amp;quot;9534330&amp;quot; Solution 2020-09-23 Notes: 开始的时候想复杂了，想着先比较第一位，要是第一位相同，再比较第二位，e.g. 5 &amp;amp; 54, 下一</description>
+    </item>
+    
+    <item>
+      <title>518 Coin Change 2</title>
+      <link>https://foxisawesome.github.io/posts/518-coin-change-2/</link>
+      <pubDate>Wed, 23 Sep 2020 10:32:12 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/518-coin-change-2/</guid>
+      <description>LC 518 Coin Change 2 You are given coins of different denominations and a total amount of money. Write a function to compute the number of combinations that make up that amount. You may assume that you have infinite number of each kind of coin. Input: amount = 5, coins = [1, 2, 5] Output: 4 Explanation: there are four ways to make up the amount: 5=5 5=2+2+1 5=2+1+1+1 5=1+1+1+1+1</description>
+    </item>
+    
+    <item>
+      <title>64 Minimum Path Sum</title>
+      <link>https://foxisawesome.github.io/posts/64-minimum-path-sum/</link>
+      <pubDate>Wed, 23 Sep 2020 09:56:55 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/64-minimum-path-sum/</guid>
+      <description>LC 64 Minimum Path Sum Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right which minimizes the sum of all numbers along its path. Input:[[1,3,9],[1,5,2],[4,2,1]] Output: 7 Explanation: Because the path 1→3→1→1→1 minimizes the sum. Solution 2020-09-23 Notes: 做这题时发现了好几个pyth</description>
+    </item>
+    
+    <item>
+      <title>802 Find Eventual Safe States</title>
+      <link>https://foxisawesome.github.io/posts/802-find-eventual-safe-states/</link>
+      <pubDate>Tue, 22 Sep 2020 13:01:55 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/802-find-eventual-safe-states/</guid>
+      <description>LC 802 Find Eventual Safe States In a directed graph, we start at some node and every turn, walk along a directed edge of the graph. If we reach a node that is terminal (that is, it has no outgoing directed edges), we stop. Now, say our starting node is eventually safe if and only if we must eventually walk to a terminal node. More specifically, there exists a natural</description>
+    </item>
+    
+    <item>
+      <title>1118 Number of Days in a Month</title>
+      <link>https://foxisawesome.github.io/posts/1118-number-of-days-in-a-month/</link>
+      <pubDate>Tue, 22 Sep 2020 12:12:50 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1118-number-of-days-in-a-month/</guid>
+      <description>LC 1118 Number of Days in a Month   Given a year Y and a month M, return how many days there are in that month.
+ Solution 2020-09-22 Notes: class Solution: def numberOfDays(self, Y: int, M: int) -&amp;gt; int: up = [1,3,5,7,8,10,12] if M == 2: if Y % 100 == 0: if Y % 400 == 0: return 29 else: return 28 else: if Y % 4 == 0: return 29 else: return 28 return 31 if M in up else 30 # Time O(1) # Space O(1)  </description>
+    </item>
+    
+    <item>
+      <title>210 Course Schedule II</title>
+      <link>https://foxisawesome.github.io/posts/210-course-schedule-ii/</link>
+      <pubDate>Tue, 22 Sep 2020 10:31:47 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/210-course-schedule-ii/</guid>
+      <description>LC 210 Course Schedule II There are a total of n courses you have to take labelled from 0 to n - 1. Some courses may have prerequisites, for example, if prerequisites[i] = [ai, bi] this means you must take the course bi before the course ai. Given the total number of courses numCourses and a list of the prerequisite pairs, return the ordering of courses you should take to</description>
+    </item>
+    
+    <item>
+      <title>207 Course Schedule</title>
+      <link>https://foxisawesome.github.io/posts/207-course-schedule/</link>
+      <pubDate>Mon, 21 Sep 2020 22:16:02 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/207-course-schedule/</guid>
+      <description>LC 207 Course Schedule There are a total of numCourses courses you have to take, labeled from 0 to numCourses-1. Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1] Given the total number of courses and a list of prerequisite pairs, is it possible for you to finish all courses? Input: numCourses = 2,</description>
+    </item>
+    
+    <item>
+      <title>542 01 Matrix</title>
+      <link>https://foxisawesome.github.io/posts/542-01-matrix/</link>
+      <pubDate>Mon, 21 Sep 2020 21:01:17 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/542-01-matrix/</guid>
+      <description>LC 542 01 Matrix Given a matrix consists of 0 and 1, find the distance of the nearest 0 for each cell. Input: [[0,0,0],[0,1,0],[1,1,1]] Output:[[0,0,0],[0,1,0],[1,2,1]] Solution 2020-09-21 Notes: 很经典的BFS题。这题的关键是BFS每一个step中所有的点都向四周找0，如果找到水</description>
+    </item>
     
     <item>
       <title>200 Number of Islands</title>
@@ -89,106 +189,6 @@
       
       <guid>https://foxisawesome.github.io/posts/17-letter-combinations-of-a-phone-number/</guid>
       <description>LC 17 Letter Combinations of a Phone Number Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Solution 2020-09-21 Notes: 很简单的一道backtracking题套模版就可以了。为了避免dups，每次传入r</description>
-    </item>
-    
-    <item>
-      <title>921 Minimum Add to Make Parentheses Valid</title>
-      <link>https://foxisawesome.github.io/posts/921-minimum-add-to-make-parentheses-valid/</link>
-      <pubDate>Sun, 20 Sep 2020 21:05:02 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/921-minimum-add-to-make-parentheses-valid/</guid>
-      <description>LC 921 Minimum Add to Make Parentheses Valid Given a string S of &#39;(&#39; and &#39;)&#39; parentheses, we add the minimum number of parentheses ( &#39;(&#39; or &#39;)&#39;, and in any positions ) so that the resulting parentheses string is valid. Solution 2020-09-20 Notes: 一遍就过的题没啥好说的。 class Solution: def minAddToMakeValid(self, S: str) -&amp;gt; int: if not S: return 0 stack</description>
-    </item>
-    
-    <item>
-      <title>22 Generate Parentheses</title>
-      <link>https://foxisawesome.github.io/posts/22-generate-parentheses/</link>
-      <pubDate>Sun, 20 Sep 2020 20:28:52 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/22-generate-parentheses/</guid>
-      <description>LC 22 Generate Parentheses Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses. For example, given n = 3, a solution set is: [ &amp;quot;((()))&amp;quot;, &amp;quot;(()())&amp;quot;, &amp;quot;(())()&amp;quot;, &amp;quot;()(())&amp;quot;, &amp;quot;()()()&amp;quot; ] Solution 2020-09-20 Notes: 可以直接套用backtracking的模版，主要是l&amp;lt;n</description>
-    </item>
-    
-    <item>
-      <title>618 Students Report by Geography</title>
-      <link>https://foxisawesome.github.io/sql/618-students-report-by-geography/</link>
-      <pubDate>Sun, 20 Sep 2020 19:00:41 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/618-students-report-by-geography/</guid>
-      <description>LC 618 Students Report by Geography input | name | continent | |--------|-----------| | Jack | America | | Pascal | Europe | | Xi | Asia | | Jane | America | output | America | Asia | Europe | |---------|------|--------| | Jack | Xi | Pascal | | Jane | | | Solution 2020-09-20 Notes: 很经典的hard SQL，p</description>
-    </item>
-    
-    <item>
-      <title>1179 Reformat Department Table</title>
-      <link>https://foxisawesome.github.io/sql/1179-reformat-department-table/</link>
-      <pubDate>Sun, 20 Sep 2020 18:55:05 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1179-reformat-department-table/</guid>
-      <description>LC 1179 Reformat Department Table Write an SQL query to reformat the table such that there is a department id column and a revenue column for each month. Solution 2020-09-20 Notes: 这题和LC 618类似。 SELECT id, SUM(CASE WHEN month = &#39;Jan&#39; THEN revenue ELSE NULL END) AS jan_revenue, SUM(CASE WHEN month = &#39;Feb&#39; THEN revenue ELSE NULL END) AS feb_revenue, SUM(CASE WHEN</description>
-    </item>
-    
-    <item>
-      <title>253 Meeting Rooms II</title>
-      <link>https://foxisawesome.github.io/posts/253-meeting-rooms-ii/</link>
-      <pubDate>Sun, 20 Sep 2020 18:20:53 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/253-meeting-rooms-ii/</guid>
-      <description>LC 253 Meeting Rooms II Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si &amp;lt; ei), find the minimum number of conference rooms required. Input: [[0, 30],[5, 10],[15, 20]] Output: 2 Solution 2020-09-20 Notes: 核心是用 存 ending time to a min-heap, 用starting time与heap比较</description>
-    </item>
-    
-    <item>
-      <title>46 Permutations</title>
-      <link>https://foxisawesome.github.io/posts/46-permutations/</link>
-      <pubDate>Sun, 20 Sep 2020 17:33:38 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/46-permutations/</guid>
-      <description>LC 46 Permutations Given a collection of distinct integers, return all possible permutations. Input: [1,2,3] Output: [ [1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]] Solution 2020-09-20 Notes: Permutation 一般是传入nums[:i]+nums[i+1:] ，而combination的题一般是传入nums</description>
-    </item>
-    
-    <item>
-      <title>994 Rotting Oranges</title>
-      <link>https://foxisawesome.github.io/posts/994-rotting-oranges/</link>
-      <pubDate>Sun, 20 Sep 2020 16:31:00 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/994-rotting-oranges/</guid>
-      <description>LC 994 Rotting Oranges In a given grid, each cell can have one of three values: the value 0 representing an empty cell; the value 1 representing a fresh orange; the value 2 representing a rotten orange. Every minute, any fresh orange that is adjacent (4-directionally) to a rotten orange becomes rotten. Return the minimum number of minutes that must elapse until no cell has a fresh orange. If this</description>
-    </item>
-    
-    <item>
-      <title>221 Maximal Square</title>
-      <link>https://foxisawesome.github.io/posts/221-maximal-square/</link>
-      <pubDate>Sun, 20 Sep 2020 15:47:37 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/221-maximal-square/</guid>
-      <description>LC 221 Maximal Square   Given a 2D binary matrix filled with 0&amp;rsquo;s and 1&amp;rsquo;s, find the largest square containing only 1&amp;rsquo;s and return its area.
-Input: 1 0 1 0 0 1 0 1 1 1 1 1 1 1 1 1 0 0 1 0 Output: 4   Solution 2020-09-20 Notes:    dp[i][j]: represents the side length of the maximum square whose bottom right corner is the cell with index (i,j) in the original matrix.</description>
-    </item>
-    
-    <item>
-      <title>7 Reverse Integer</title>
-      <link>https://foxisawesome.github.io/posts/7-reverse-integer/</link>
-      <pubDate>Sun, 20 Sep 2020 15:25:11 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/7-reverse-integer/</guid>
-      <description>LC 7 Reverse Integer Given a 32-bit signed integer, reverse digits of an integer. Input: -120 Output: -21 Solution 2020-09-20 Notes: 很简单的题，要记得overflow的处理。 class Solution: def reverse(self, x: int) -&amp;gt; int: if x == 0: return x sign = -1 if x &amp;lt; 0 else 1 x = abs(x) ans =</description>
-    </item>
-    
-    <item>
-      <title>394 Decode String</title>
-      <link>https://foxisawesome.github.io/posts/394-decode-string/</link>
-      <pubDate>Sun, 20 Sep 2020 15:09:10 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/394-decode-string/</guid>
-      <description>LC 394 Decode String Given an encoded string, return its decoded string. The encoding rule is: k[encoded_string], where the encoded_string inside the square brackets is being repeated exactly k times. Note that k is guaranteed to be a positive integer. Input: s = &amp;quot;3[a2[c]]&amp;quot; Output: &amp;quot;accaccacc&amp;quot; Solution 2020-09-20 Notes: 比较简单的一道stack的题。类似于cal</description>
-    </item>
-    
-    <item>
-      <title>31 Next Permutation</title>
-      <link>https://foxisawesome.github.io/posts/31-next-permutation/</link>
-      <pubDate>Sun, 20 Sep 2020 12:16:32 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/31-next-permutation/</guid>
-      <description>LC 31 Next Permutation Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers. If such arrangement is not possible, it must rearrange it as the lowest possible order (ie, sorted in ascending order). The replacement must be in-place and use only constant extra memory. Here are some examples. Inputs are in the left-hand column and its corresponding outputs are in the right-hand column. 1,2,3` →</description>
     </item>
     
   </channel>
