@@ -5,10 +5,64 @@
     <link>https://foxisawesome.github.io/tags/heap/</link>
     <description>Recent content in heap on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 20 Sep 2020 18:20:53 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2020 16:16:26 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/heap/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>16 3sum Closest</title>
+      <link>https://foxisawesome.github.io/posts/16-3sum-closest/</link>
+      <pubDate>Mon, 28 Sep 2020 16:36:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/16-3sum-closest/</guid>
+      <description>LC 16 3sum Closest Given an array nums of n integers and an integer target, find three integers in nums such that the sum is closest to target. Return the sum of the three integers. You may assume that each input would have exactly one solution. Solution 2020-09-28 Notes: 这题其实只能穷举，用了sort之后可以pr</description>
+    </item>
+    
+    <item>
+      <title>15 3sum</title>
+      <link>https://foxisawesome.github.io/posts/15-3sum/</link>
+      <pubDate>Mon, 28 Sep 2020 16:16:45 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/15-3sum/</guid>
+      <description>LC 15 3sum Given an array nums of n integers, are there elements a, b, c in nums such that a + b + c = 0? Find all unique triplets in the array which gives the sum of zero. Solution 2020-09-28 Notes: 这题最困难的地方时不能有dups。用这个条件很多次了 if</description>
+    </item>
+    
+    <item>
+      <title>881 Boats to Save People</title>
+      <link>https://foxisawesome.github.io/posts/881-boats-to-save-people/</link>
+      <pubDate>Mon, 28 Sep 2020 11:28:10 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/881-boats-to-save-people/</guid>
+      <description>LC 881 Boats to Save People The i-th person has weight people[i], and each boat can carry a maximum weight of limit. Each boat carries at most 2 people at the same time, provided the sum of the weight of those people is at most limit. Return the minimum number of boats to carry every given person. (It is guaranteed each person can be carried by a boat.) Input: people</description>
+    </item>
+    
+    <item>
+      <title>986 Interval List Intersections</title>
+      <link>https://foxisawesome.github.io/posts/986-interval-list-intersections/</link>
+      <pubDate>Sun, 27 Sep 2020 19:18:17 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/986-interval-list-intersections/</guid>
+      <description>LC 986 Interval List Intersections Given two lists of closed intervals, each list of intervals is pairwise disjoint and in sorted order. Return the intersection of these two interval lists. (Formally, a closed interval [a, b] (with a &amp;lt;= b) denotes the set of real numbers x with a &amp;lt;= x &amp;lt;= b. The intersection of two closed intervals is a set of real numbers that is either empty, or</description>
+    </item>
+    
+    <item>
+      <title>925 Long Pressed Name</title>
+      <link>https://foxisawesome.github.io/posts/925-long-pressed-name/</link>
+      <pubDate>Sun, 27 Sep 2020 16:14:07 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/925-long-pressed-name/</guid>
+      <description>LC 925 Long Pressed Name Your friend is typing his name into a keyboard. Sometimes, when typing a character c, the key might get long pressed, and the character will be typed 1 or more times. You examine the typed characters of the keyboard. Return True if it is possible that it was your friends name, with some characters (possibly none) being long pressed. Solution 2020-09-27 Notes: 这题好</description>
+    </item>
+    
+    <item>
+      <title>455 Assign Cookies</title>
+      <link>https://foxisawesome.github.io/posts/455-assign-cookies/</link>
+      <pubDate>Sun, 27 Sep 2020 15:43:20 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/455-assign-cookies/</guid>
+      <description>LC 455 Assign Cookies Assume you are an awesome parent and want to give your children some cookies. But, you should give each child at most one cookie. Each child i has a greed factor gi, which is the minimum size of a cookie that the child will be content with; and each cookie j has a size sj. If sj &amp;gt;= gi, we can assign the cookie j to</description>
+    </item>
     
     <item>
       <title>152 Valid Palindrome</title>
@@ -135,60 +189,6 @@
       <guid>https://foxisawesome.github.io/sql/181-employees-earning-more-than-their-managers/</guid>
       <description>LC 181 Employees Earning More Than Their Managers   Given the Employee table, write a SQL query that finds out employees who earn more than their managers. For the above table, Joe is the only employee who earns more than his manager.
  Solution 2020-09-24 Notes: SELECT name AS employee FROM ( SELECT a.name, a.salary, a.managerId, b.salary AS mg_sal FROM employee a JOIN employee b ON a.managerID = b.ID ) c WHERE salary &amp;gt; mg_sal  </description>
-    </item>
-    
-    <item>
-      <title>180 Consecutive Numbers</title>
-      <link>https://foxisawesome.github.io/sql/180-consecutive-numbers/</link>
-      <pubDate>Thu, 24 Sep 2020 21:41:16 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/180-consecutive-numbers/</guid>
-      <description>LC 180 Consecutive Numbers Write a SQL query to find all numbers that appear at least three times consecutively. Solution 2020-09-24 Notes: self join 的写法 SELECT DISTINCT a.num AS ConsecutiveNums FROM logs a JOIN logs b ON a.id+1 = b.id AND a.num=b.num JOIN logs c ON a.id+2 = c.id AND a.num=c.num LEAD() function 的写法： SELECT DISTINCT num AS consecutiveNums FROM ( SELECT id, num, LEAD(num,1)</description>
-    </item>
-    
-    <item>
-      <title>177 Nth Highest Salary</title>
-      <link>https://foxisawesome.github.io/sql/177-nth-highest-salary/</link>
-      <pubDate>Thu, 24 Sep 2020 21:16:18 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/177-nth-highest-salary/</guid>
-      <description>LC 177 Nth Highest Salary Write a SQL query to get the nth highest salary from the Employee table. Solution 2020-09-24 Notes: 这个sql function 的写法得背下来。不过也没什么难的。 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT BEGIN DECLARE m int; SET m = n-1; RETURN ( SELECT salary FROM employee GROUP BY 1 ORDER by</description>
-    </item>
-    
-    <item>
-      <title>875 Koko Eating Bananas</title>
-      <link>https://foxisawesome.github.io/posts/875-koko-eating-bananas/</link>
-      <pubDate>Thu, 24 Sep 2020 13:51:49 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/875-koko-eating-bananas/</guid>
-      <description>LC 875 Koko Eating Bananas Koko loves to eat bananas. There are N piles of bananas, the i-th pile has piles[i] bananas. The guards have gone and will come back in H hours. Koko can decide her bananas-per-hour eating speed of K. Each hour, she chooses some pile of bananas, and eats K bananas from that pile. If the pile has less than K bananas, she eats all of them</description>
-    </item>
-    
-    <item>
-      <title>774 Minimize Max Distance to Gas Station</title>
-      <link>https://foxisawesome.github.io/posts/774-minimize-max-distance-to-gas-station/</link>
-      <pubDate>Thu, 24 Sep 2020 13:49:22 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/774-minimize-max-distance-to-gas-station/</guid>
-      <description>LC 774 Minimize Max Distance to Gas Station On a horizontal number line, we have gas stations at positions stations[0], stations[1], ..., stations[N-1], where N = stations.length. Now, we add K more gas stations so that D, the maximum distance between adjacent gas stations, is minimized.Return the smallest possible value of D. Input: stations = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], K = 9 Output: 0.500000</description>
-    </item>
-    
-    <item>
-      <title>410 Split Array Largest Sum</title>
-      <link>https://foxisawesome.github.io/posts/410-split-array-largest-sum/</link>
-      <pubDate>Thu, 24 Sep 2020 13:48:35 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/410-split-array-largest-sum/</guid>
-      <description>LC 410 Split Array Largest Sum Given an array nums which consists of non-negative integers and an integer m, you can split the array into m non-empty continuous subarrays. Write an algorithm to minimize the largest sum among these m subarrays. Input: nums = [7,2,5,10,8], m = 2 Output: 18 Explanation: There are four ways to split nums into two subarrays. The best way is to split it into [7,2,5]</description>
-    </item>
-    
-    <item>
-      <title>1011 Capacity to Ship Packages Within D Days</title>
-      <link>https://foxisawesome.github.io/posts/1011-capacity-to-ship-packages-within-d-days/</link>
-      <pubDate>Thu, 24 Sep 2020 13:46:26 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1011-capacity-to-ship-packages-within-d-days/</guid>
-      <description>LC 1011 Capacity to Ship Packages Within D Days conveyor belt has packages that must be shipped from one port to another within D days. The i-th package on the conveyor belt has a weight of weights[i]. Each day, we load the ship with packages on the conveyor belt (in the order given by weights). We may not load more weight than the maximum weight capacity of the ship. Return</description>
     </item>
     
   </channel>

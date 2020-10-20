@@ -5,10 +5,65 @@
     <link>https://foxisawesome.github.io/categories/sql/</link>
     <description>Recent content in sql on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 19 Oct 2020 15:04:59 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 19 Oct 2020 15:30:49 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/sql/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1283 Find the Smallest Divisor Given a Threshold</title>
+      <link>https://foxisawesome.github.io/posts/1283-find-the-smallest-divisor-given-a-threshold/</link>
+      <pubDate>Wed, 23 Sep 2020 14:22:33 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1283-find-the-smallest-divisor-given-a-threshold/</guid>
+      <description>LC 1283 Find the Smallest Divisor Given a Threshold a positive integer divisor and divide all the array by it and sum the result of the division. Find the smallest divisor such that the result mentioned above is less than or equal to threshold. Input: nums = [1,2,5,9], threshold = 6 Output: 5 Explanation: We can get a sum to 17 (1+2+5+9) if the divisor is 1. If the divisor</description>
+    </item>
+    
+    <item>
+      <title>179 Largest Number</title>
+      <link>https://foxisawesome.github.io/posts/179-largest-number/</link>
+      <pubDate>Wed, 23 Sep 2020 11:12:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/179-largest-number/</guid>
+      <description>LC 179 Largest Number Given a list of non negative integers, arrange them such that they form the largest number. Input: [3,30,34,5,9] Output: &amp;quot;9534330&amp;quot; Solution 2020-09-23 Notes: 开始的时候想复杂了，想着先比较第一位，要是第一位相同，再比较第二位，e.g. 5 &amp;amp; 54, 下一</description>
+    </item>
+    
+    <item>
+      <title>518 Coin Change 2</title>
+      <link>https://foxisawesome.github.io/posts/518-coin-change-2/</link>
+      <pubDate>Wed, 23 Sep 2020 10:32:12 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/518-coin-change-2/</guid>
+      <description>LC 518 Coin Change 2 You are given coins of different denominations and a total amount of money. Write a function to compute the number of combinations that make up that amount. You may assume that you have infinite number of each kind of coin. Input: amount = 5, coins = [1, 2, 5] Output: 4 Explanation: there are four ways to make up the amount: 5=5 5=2+2+1 5=2+1+1+1 5=1+1+1+1+1</description>
+    </item>
+    
+    <item>
+      <title>64 Minimum Path Sum</title>
+      <link>https://foxisawesome.github.io/posts/64-minimum-path-sum/</link>
+      <pubDate>Wed, 23 Sep 2020 09:56:55 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/64-minimum-path-sum/</guid>
+      <description>LC 64 Minimum Path Sum Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right which minimizes the sum of all numbers along its path. Input:[[1,3,9],[1,5,2],[4,2,1]] Output: 7 Explanation: Because the path 1→3→1→1→1 minimizes the sum. Solution 2020-09-23 Notes: 做这题时发现了好几个pyth</description>
+    </item>
+    
+    <item>
+      <title>802 Find Eventual Safe States</title>
+      <link>https://foxisawesome.github.io/posts/802-find-eventual-safe-states/</link>
+      <pubDate>Tue, 22 Sep 2020 13:01:55 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/802-find-eventual-safe-states/</guid>
+      <description>LC 802 Find Eventual Safe States In a directed graph, we start at some node and every turn, walk along a directed edge of the graph. If we reach a node that is terminal (that is, it has no outgoing directed edges), we stop. Now, say our starting node is eventually safe if and only if we must eventually walk to a terminal node. More specifically, there exists a natural</description>
+    </item>
+    
+    <item>
+      <title>1118 Number of Days in a Month</title>
+      <link>https://foxisawesome.github.io/posts/1118-number-of-days-in-a-month/</link>
+      <pubDate>Tue, 22 Sep 2020 12:12:50 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1118-number-of-days-in-a-month/</guid>
+      <description>LC 1118 Number of Days in a Month   Given a year Y and a month M, return how many days there are in that month.
+ Solution 2020-09-22 Notes: class Solution: def numberOfDays(self, Y: int, M: int) -&amp;gt; int: up = [1,3,5,7,8,10,12] if M == 2: if Y % 100 == 0: if Y % 400 == 0: return 29 else: return 28 else: if Y % 4 == 0: return 29 else: return 28 return 31 if M in up else 30 # Time O(1) # Space O(1)  </description>
+    </item>
     
     <item>
       <title>210 Course Schedule II</title>
@@ -134,61 +189,6 @@
       
       <guid>https://foxisawesome.github.io/posts/22-generate-parentheses/</guid>
       <description>LC 22 Generate Parentheses Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses. For example, given n = 3, a solution set is: [ &amp;quot;((()))&amp;quot;, &amp;quot;(()())&amp;quot;, &amp;quot;(())()&amp;quot;, &amp;quot;()(())&amp;quot;, &amp;quot;()()()&amp;quot; ] Solution 2020-09-20 Notes: 可以直接套用backtracking的模版，主要是l&amp;lt;n</description>
-    </item>
-    
-    <item>
-      <title>618 Students Report by Geography</title>
-      <link>https://foxisawesome.github.io/sql/618-students-report-by-geography/</link>
-      <pubDate>Sun, 20 Sep 2020 19:00:41 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/618-students-report-by-geography/</guid>
-      <description>LC 618 Students Report by Geography input | name | continent | |--------|-----------| | Jack | America | | Pascal | Europe | | Xi | Asia | | Jane | America | output | America | Asia | Europe | |---------|------|--------| | Jack | Xi | Pascal | | Jane | | | Solution 2020-09-20 Notes: 很经典的hard SQL，p</description>
-    </item>
-    
-    <item>
-      <title>1179 Reformat Department Table</title>
-      <link>https://foxisawesome.github.io/sql/1179-reformat-department-table/</link>
-      <pubDate>Sun, 20 Sep 2020 18:55:05 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1179-reformat-department-table/</guid>
-      <description>LC 1179 Reformat Department Table Write an SQL query to reformat the table such that there is a department id column and a revenue column for each month. Solution 2020-09-20 Notes: 这题和LC 618类似。 SELECT id, SUM(CASE WHEN month = &#39;Jan&#39; THEN revenue ELSE NULL END) AS jan_revenue, SUM(CASE WHEN month = &#39;Feb&#39; THEN revenue ELSE NULL END) AS feb_revenue, SUM(CASE WHEN</description>
-    </item>
-    
-    <item>
-      <title>253 Meeting Rooms II</title>
-      <link>https://foxisawesome.github.io/posts/253-meeting-rooms-ii/</link>
-      <pubDate>Sun, 20 Sep 2020 18:20:53 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/253-meeting-rooms-ii/</guid>
-      <description>LC 253 Meeting Rooms II Given an array of meeting time intervals consisting of start and end times [[s1,e1],[s2,e2],...] (si &amp;lt; ei), find the minimum number of conference rooms required. Input: [[0, 30],[5, 10],[15, 20]] Output: 2 Solution 2020-09-20 Notes: 核心是用 存 ending time to a min-heap, 用starting time与heap比较</description>
-    </item>
-    
-    <item>
-      <title>46 Permutations</title>
-      <link>https://foxisawesome.github.io/posts/46-permutations/</link>
-      <pubDate>Sun, 20 Sep 2020 17:33:38 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/46-permutations/</guid>
-      <description>LC 46 Permutations Given a collection of distinct integers, return all possible permutations. Input: [1,2,3] Output: [ [1,2,3],[1,3,2],[2,1,3],[2,3,1],[3,1,2],[3,2,1]] Solution 2020-09-20 Notes: Permutation 一般是传入nums[:i]+nums[i+1:] ，而combination的题一般是传入nums</description>
-    </item>
-    
-    <item>
-      <title>994 Rotting Oranges</title>
-      <link>https://foxisawesome.github.io/posts/994-rotting-oranges/</link>
-      <pubDate>Sun, 20 Sep 2020 16:31:00 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/994-rotting-oranges/</guid>
-      <description>LC 994 Rotting Oranges In a given grid, each cell can have one of three values: the value 0 representing an empty cell; the value 1 representing a fresh orange; the value 2 representing a rotten orange. Every minute, any fresh orange that is adjacent (4-directionally) to a rotten orange becomes rotten. Return the minimum number of minutes that must elapse until no cell has a fresh orange. If this</description>
-    </item>
-    
-    <item>
-      <title>221 Maximal Square</title>
-      <link>https://foxisawesome.github.io/posts/221-maximal-square/</link>
-      <pubDate>Sun, 20 Sep 2020 15:47:37 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/221-maximal-square/</guid>
-      <description>LC 221 Maximal Square   Given a 2D binary matrix filled with 0&amp;rsquo;s and 1&amp;rsquo;s, find the largest square containing only 1&amp;rsquo;s and return its area.
-Input: 1 0 1 0 0 1 0 1 1 1 1 1 1 1 1 1 0 0 1 0 Output: 4   Solution 2020-09-20 Notes:    dp[i][j]: represents the side length of the maximum square whose bottom right corner is the cell with index (i,j) in the original matrix.</description>
     </item>
     
   </channel>
