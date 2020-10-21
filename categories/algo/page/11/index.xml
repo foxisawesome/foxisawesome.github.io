@@ -5,10 +5,91 @@
     <link>https://foxisawesome.github.io/categories/algo/</link>
     <description>Recent content in algo on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 19 Oct 2020 19:35:54 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2020 14:39:41 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/algo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1323 Maximum 69 Number</title>
+      <link>https://foxisawesome.github.io/posts/1323-maximum-69-number/</link>
+      <pubDate>Mon, 21 Sep 2020 15:51:59 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1323-maximum-69-number/</guid>
+      <description>LC 1323 Maximum 69 Number Given a positive integer num consisting only of digits 6 and 9. Return the maximum number you can get by changing at most one digit (6 becomes 9, and 9 becomes 6). Solution 2020-09-21 Notes: 开始时我想着转成str()后，用binary search出最</description>
+    </item>
+    
+    <item>
+      <title>47 Permutations II</title>
+      <link>https://foxisawesome.github.io/posts/47-permutations-ii/</link>
+      <pubDate>Mon, 21 Sep 2020 15:33:45 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/47-permutations-ii/</guid>
+      <description>LC 47 Permutations II Given a collection of numbers that might contain duplicates, return all possible unique permutations. Solution 2020-09-21 Notes: LC 46 的升级版。这题添加了nums里有duplicates的case。 为了保证输出时 distinct out 的条件，可以</description>
+    </item>
+    
+    <item>
+      <title>78 Subsets</title>
+      <link>https://foxisawesome.github.io/posts/78-subsets/</link>
+      <pubDate>Mon, 21 Sep 2020 14:49:34 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/78-subsets/</guid>
+      <description>LC 78 Subsets Given a set of distinct integers, nums, return all possible subsets (the power set). Input: nums = [1,2,3] Output:[[],[1],[2],[3],[1,2],[1,3],[2,3],[1,2,3]] Solution 2020-09-21 Notes: 简单的dfs题，有个新奇的点就是在dfs外面有个控制length的loop。刚开始我以为要</description>
+    </item>
+    
+    <item>
+      <title>77 Combinations</title>
+      <link>https://foxisawesome.github.io/posts/77-combinations/</link>
+      <pubDate>Mon, 21 Sep 2020 14:31:35 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/77-combinations/</guid>
+      <description>LC 77 Combinations Given two integers n and k, return all possible combinations of k numbers out of 1 &amp;hellip; n. Solution 2020-09-21 Notes: Dfs 模版搞一下。没啥特别的。 class Solution: def combine(self, n: int, k: int) -&amp;gt; List[List[int]]: out = [] nums = [i for i in range(1,n+1)] self.dfs(n,k,nums,[],out) return out def dfs(self, n, k, nums, path, out): if len(path)==k: out.append(path[:])</description>
+    </item>
+    
+    <item>
+      <title>40 Combination Sum Ii</title>
+      <link>https://foxisawesome.github.io/posts/40-combination-sum-ii/</link>
+      <pubDate>Mon, 21 Sep 2020 14:17:59 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/40-combination-sum-ii/</guid>
+      <description>LC 40 Combination Sum Ii Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target. Each number in candidates may only be used once in the combination. Input: candidates = [10,1,2,7,6,1,5], target = 8, A solution set is:[[1, 7], [1, 2, 5], [2, 6],[1, 1, 6]] Solution 2020-09-21 Notes: 这题与39题</description>
+    </item>
+    
+    <item>
+      <title>39 Combination Sum</title>
+      <link>https://foxisawesome.github.io/posts/39-combination-sum/</link>
+      <pubDate>Mon, 21 Sep 2020 14:11:52 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/39-combination-sum/</guid>
+      <description>LC 39 Combination Sum Given a set of candidate numbers (candidates) (without duplicates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target. Input: candidates = [2,3,6,7], target = 7, A solution set is: [[7],[2,2,3]] Solution 2020-09-21 Notes: 简单的DFS题，注意：path要是list(),</description>
+    </item>
+    
+    <item>
+      <title>17 Letter Combinations of a Phone Number</title>
+      <link>https://foxisawesome.github.io/posts/17-letter-combinations-of-a-phone-number/</link>
+      <pubDate>Mon, 21 Sep 2020 14:04:33 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/17-letter-combinations-of-a-phone-number/</guid>
+      <description>LC 17 Letter Combinations of a Phone Number Given a string containing digits from 2-9 inclusive, return all possible letter combinations that the number could represent. Solution 2020-09-21 Notes: 很简单的一道backtracking题套模版就可以了。为了避免dups，每次传入r</description>
+    </item>
+    
+    <item>
+      <title>921 Minimum Add to Make Parentheses Valid</title>
+      <link>https://foxisawesome.github.io/posts/921-minimum-add-to-make-parentheses-valid/</link>
+      <pubDate>Sun, 20 Sep 2020 21:05:02 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/921-minimum-add-to-make-parentheses-valid/</guid>
+      <description>LC 921 Minimum Add to Make Parentheses Valid Given a string S of &#39;(&#39; and &#39;)&#39; parentheses, we add the minimum number of parentheses ( &#39;(&#39; or &#39;)&#39;, and in any positions ) so that the resulting parentheses string is valid. Solution 2020-09-20 Notes: 一遍就过的题没啥好说的。 class Solution: def minAddToMakeValid(self, S: str) -&amp;gt; int: if not S: return 0 stack</description>
+    </item>
+    
+    <item>
+      <title>22 Generate Parentheses</title>
+      <link>https://foxisawesome.github.io/posts/22-generate-parentheses/</link>
+      <pubDate>Sun, 20 Sep 2020 20:28:52 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/22-generate-parentheses/</guid>
+      <description>LC 22 Generate Parentheses Given n pairs of parentheses, write a function to generate all combinations of well-formed parentheses. For example, given n = 3, a solution set is: [ &amp;quot;((()))&amp;quot;, &amp;quot;(()())&amp;quot;, &amp;quot;(())()&amp;quot;, &amp;quot;()(())&amp;quot;, &amp;quot;()()()&amp;quot; ] Solution 2020-09-20 Notes: 可以直接套用backtracking的模版，主要是l&amp;lt;n</description>
+    </item>
     
     <item>
       <title>618 Students Report by Geography</title>
@@ -108,87 +189,6 @@ Input: 1 0 1 0 0 1 0 1 1 1 1 1 1 1 1 1 0 0 1 0 Output: 4   Solution 2020-09-20 N
       
       <guid>https://foxisawesome.github.io/posts/322-coin-change/</guid>
       <description>LC 322 Coin Change You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1. Input: coins = [1, 2, 5], amount = 11 Output: 3 Explanation: 11 = 5 + 5</description>
-    </item>
-    
-    <item>
-      <title>692 Top K Frequent Words</title>
-      <link>https://foxisawesome.github.io/posts/692-top-k-frequent-words/</link>
-      <pubDate>Sat, 19 Sep 2020 21:00:53 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/692-top-k-frequent-words/</guid>
-      <description>LC 692 Top K Frequent Words Given a non-empty list of words, return the k most frequent elements. Your answer should be sorted by frequency from highest to lowest. If two words have the same frequency, then the word with the lower alphabetical order comes first. Solution 2020-09-19 Notes: 重要的来了，一般，我们认为找出k个最大最小</description>
-    </item>
-    
-    <item>
-      <title>973 K Closest Points to Origin</title>
-      <link>https://foxisawesome.github.io/posts/973-k-closest-points-to-origin/</link>
-      <pubDate>Sat, 19 Sep 2020 20:47:04 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/973-k-closest-points-to-origin/</guid>
-      <description>LC 973 K Closest Points to Origin We have a list of points on the plane. Find the K closest points to the origin (0, 0). Input: points = [[1,3],[-2,2]], K = 1 Output: [[-2,2]] Explanation: The distance between (1, 3) and the origin is sqrt(10). The distance between (-2, 2) and the origin is sqrt(8). Since sqrt(8) &amp;lt; sqrt(10), (-2, 2) is closer to the origin. We only want</description>
-    </item>
-    
-    <item>
-      <title>20 Valid Parentheses</title>
-      <link>https://foxisawesome.github.io/posts/20-valid-parentheses/</link>
-      <pubDate>Sat, 19 Sep 2020 20:37:05 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/20-valid-parentheses/</guid>
-      <description>LC 20 Valid Parentheses Given a string s containing just the characters &#39;(&#39;, &#39;)&#39;, &#39;{&#39;, &#39;}&#39;, &#39;[&#39; and &#39;]&#39;, determine if the input string is valid. An input string is valid if: Open brackets must be closed by the same type of brackets. Open brackets must be closed in the correct order. Solution 2020-09-19 Notes: 好经典的题。 思路如解。 class Solution: def isValid(self,</description>
-    </item>
-    
-    <item>
-      <title>953 Verifying an Alien Dictionary</title>
-      <link>https://foxisawesome.github.io/posts/953-verifying-an-alien-dictionary/</link>
-      <pubDate>Sat, 19 Sep 2020 20:17:38 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/953-verifying-an-alien-dictionary/</guid>
-      <description>LC 953 Verifying an Alien Dictionary In an alien language, surprisingly they also use english lowercase letters, but possibly in a different order. The order of the alphabet is some permutation of lowercase letters. Given a sequence of words written in the alien language, and the order of the alphabet, return true if and only if the given words are sorted lexicographicaly in this alien language. Input: words = [&amp;quot;word&amp;quot;,&amp;quot;world&amp;quot;,&amp;quot;row&amp;quot;],</description>
-    </item>
-    
-    <item>
-      <title>70 Climbing Stairs</title>
-      <link>https://foxisawesome.github.io/posts/70-climbing-stairs/</link>
-      <pubDate>Tue, 15 Sep 2020 16:48:27 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/70-climbing-stairs/</guid>
-      <description>LC 70 Climbing Stairs You are climbing a stair case. It takes n steps to reach to the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top? Solution 2020-09-15 Notes: 最经典的dp题了。dp[i] = dp[i-1] + dp[i-2], 主要是dp[i] 和</description>
-    </item>
-    
-    <item>
-      <title>91 Decode Ways</title>
-      <link>https://foxisawesome.github.io/posts/91-decode-ways/</link>
-      <pubDate>Tue, 15 Sep 2020 13:32:28 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/91-decode-ways/</guid>
-      <description>LC 91 Decode Ways A message containing letters from A-Z is being encoded to numbers using the following mapping: &#39;A&#39; -&amp;gt; 1 &#39;B&#39; -&amp;gt; 2 ... &#39;Z&#39; -&amp;gt; 26 Given a non-empty string containing only digits, determine the total number of ways to decode it. Input: &amp;ldquo;226&amp;rdquo; Output: 3 Explanation: It could be decoded as &amp;ldquo;BZ&amp;rdquo; (2 26), &amp;ldquo;VF&amp;rdquo; (22 6), or &amp;ldquo;BBF&amp;rdquo; (2 2 6). Solution 2020-09-15 Notes: 开</description>
-    </item>
-    
-    <item>
-      <title>238 Product of Array Except Self</title>
-      <link>https://foxisawesome.github.io/posts/238-product-of-array-except-self/</link>
-      <pubDate>Tue, 15 Sep 2020 13:22:13 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/238-product-of-array-except-self/</guid>
-      <description>LC 238 Product of Array Except Self Given an array nums of n integers where n &amp;gt; 1, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i]. Input: [1,2,3,4] Output: [24,12,8,6] Solution 2020-09-15 Notes: 3-pass, space O(N) solution. L[i] = cumulative product of nums[:i], R[i] = cumulative product of nums[:i:-1] class Solution: def productExceptSelf(self, nums: List[int]) -&amp;gt; List[int]: n</description>
-    </item>
-    
-    <item>
-      <title>56 Merge Intervals</title>
-      <link>https://foxisawesome.github.io/posts/56-merge-intervals/</link>
-      <pubDate>Tue, 15 Sep 2020 13:14:34 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/56-merge-intervals/</guid>
-      <description>LC 56 Merge Intervals Given a collection of intervals, merge all overlapping intervals. Input: intervals = [[1,3],[2,6],[8,10],[15,18]] Output: [[1,6],[8,10],[15,18]] Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6]. Solution 2020-09-15 Notes: 先sort一遍 by x[0], x[1] 比较 ans[-1][1] 与 x[0]的关系， 很简单。 class Solution: def merge(self, intervals: List[List[int]]) -&amp;gt; List[List[int]]: if not intervals:</description>
-    </item>
-    
-    <item>
-      <title>23 Merge K Sorted Lists</title>
-      <link>https://foxisawesome.github.io/posts/23-merge-k-sorted-lists/</link>
-      <pubDate>Mon, 14 Sep 2020 21:04:50 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/23-merge-k-sorted-lists/</guid>
-      <description>LC 23 Merge K Sorted Lists You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list and return it. Input: lists = [[1,4,5],[1,3,4],[2,6]] Output: [1,1,2,3,4,4,5,6] Explanation: The linked-lists are: [ 1-&amp;gt;4-&amp;gt;5, 1-&amp;gt;3-&amp;gt;4, 2-&amp;gt;6 ] merging them into one sorted list: 1-&amp;gt;1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;4-&amp;gt;5-&amp;gt;6 Solution 2020-09-14 Notes: 最简单暴力，最挫的方法。</description>
     </item>
     
   </channel>

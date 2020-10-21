@@ -5,10 +5,93 @@
     <link>https://foxisawesome.github.io/tags/</link>
     <description>Recent content in Tags on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 19 Oct 2020 19:35:54 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 21 Oct 2020 14:39:41 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>647 Palindromic Substrings</title>
+      <link>https://foxisawesome.github.io/posts/647-palindromic-substrings/</link>
+      <pubDate>Wed, 21 Oct 2020 14:39:41 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/647-palindromic-substrings/</guid>
+      <description>LC 647 Palindromic Substrings   Given a string, your task is to count how many palindromic substrings in this string.
+The substrings with different start indexes or end indexes are counted as different substrings even they consist of same characters.
+Input: &amp;quot;abc&amp;quot; Output: 3 Explanation: Three palindromic strings: &amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;.  Input: &amp;quot;aaa&amp;quot; Output: 6 Explanation: Six palindromic strings: &amp;quot;a&amp;quot;, &amp;quot;a&amp;quot;, &amp;quot;a&amp;quot;, &amp;quot;aa&amp;quot;, &amp;quot;aa&amp;quot;, &amp;quot;aaa&amp;quot;.   Solution 2020-10-21 Notes:  dp[i][j]: if s[i:j+1] is palindromic.</description>
+    </item>
+    
+    <item>
+      <title>1353 Maximum Number of Events That Can Be Attended</title>
+      <link>https://foxisawesome.github.io/posts/1353-maximum-number-of-events-that-can-be-attended/</link>
+      <pubDate>Wed, 21 Oct 2020 14:05:38 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1353-maximum-number-of-events-that-can-be-attended/</guid>
+      <description>LC 1353 Maximum Number of Events That Can Be Attended Given an array of events where events[i] = [startDayi, endDayi]. Every event i starts at startDayi and ends at endDayi. You can attend an event i at any day d where startTimei &amp;lt;= d &amp;lt;= endTimei. Notice that you can only attend one event at any time d. Return the maximum number of events you can attend. Input: events =</description>
+    </item>
+    
+    <item>
+      <title>901 Online Stock Span</title>
+      <link>https://foxisawesome.github.io/posts/901-online-stock-span/</link>
+      <pubDate>Wed, 21 Oct 2020 14:02:39 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/901-online-stock-span/</guid>
+      <description>LC 901 Online Stock Span Write a class StockSpanner which collects daily price quotes for some stock, and returns the span of that stock&amp;rsquo;s price for the current day. The span of the stock&amp;rsquo;s price today is defined as the maximum number of consecutive days (starting from today and going backwards) for which the price of the stock was less than or equal to today&amp;rsquo;s price. For example, if the</description>
+    </item>
+    
+    <item>
+      <title>152 Maximum Product Subarray</title>
+      <link>https://foxisawesome.github.io/posts/152-maximum-product-subarray/</link>
+      <pubDate>Wed, 21 Oct 2020 13:33:35 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/152-maximum-product-subarray/</guid>
+      <description>LC 152 Maximum Product Subarray Given an integer array nums, find the contiguous subarray within an array (containing at least one number) which has the largest product. Input: [2,3,-2,4] Output: 6 Explanation: [2,3] has the largest product 6. Solution 2020-10-21 Notes: 最大值可能来自三种来源：nums[i], prev_max X nums[i], prev_min X numi[i] 优化了</description>
+    </item>
+    
+    <item>
+      <title>1398 Customers Who Bought Products a and B but Not C</title>
+      <link>https://foxisawesome.github.io/sql/1398-customers-who-bought-products-a-and-b-but-not-c/</link>
+      <pubDate>Wed, 21 Oct 2020 11:20:02 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1398-customers-who-bought-products-a-and-b-but-not-c/</guid>
+      <description>LC 1398 Customers Who Bought Products a and B but Not C Write an SQL query to report the customer_id and customer_name of customers who bought products &amp;ldquo;A&amp;rdquo;, &amp;ldquo;B&amp;rdquo; but did not buy the product &amp;ldquo;C&amp;rdquo; since we want to recommend them buy this product. Return the result table ordered by customer_id. Solution 2020-10-21 Notes: 秒了 SELECT a.* FROM customers a JOIN ( SELECT * FROM orders GROUP BY</description>
+    </item>
+    
+    <item>
+      <title>1308 Running Total for Different Genders</title>
+      <link>https://foxisawesome.github.io/sql/1308-running-total-for-different-genders/</link>
+      <pubDate>Wed, 21 Oct 2020 11:14:44 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1308-running-total-for-different-genders/</guid>
+      <description>LC 1308 Running Total for Different Genders Write an SQL query to find the total score for each gender at each day. Order the result table by gender and day The query result format is in the following example: Scores table: +-------------+--------+------------+--------------+ | player_name | gender | day | score_points | +-------------+--------+------------+--------------+ | Aron | F | 2020-01-01 | 17 | | Alice | F | 2020-01-07 | 23 |</description>
+    </item>
+    
+    <item>
+      <title>1393 Capital Gainloss</title>
+      <link>https://foxisawesome.github.io/sql/1393-capital-gainloss/</link>
+      <pubDate>Wed, 21 Oct 2020 11:10:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1393-capital-gainloss/</guid>
+      <description>LC 1393 Capital Gainloss Write an SQL query to report the Capital gain/loss for each stock. The capital gain/loss of a stock is total gain or loss after buying and selling the stock one or many times. Return the result table in any order. The query result format is in the following example: Stocks table: +---------------+-----------+---------------+--------+ | stock_name | operation | operation_day | price | +---------------+-----------+---------------+--------+ | Leetcode | Buy</description>
+    </item>
+    
+    <item>
+      <title>1445 Apples Oranges</title>
+      <link>https://foxisawesome.github.io/sql/1445-apples-oranges/</link>
+      <pubDate>Wed, 21 Oct 2020 10:09:59 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1445-apples-oranges/</guid>
+      <description>LC 1445 Apples Oranges Write an SQL query to report the difference between number of apples and oranges sold each day. Return the result table ordered by sale_date in format (&amp;lsquo;YYYY-MM-DD&amp;rsquo;). The query result format is in the following example: Sales table: +------------+------------+-------------+ | sale_date | fruit | sold_num | +------------+------------+-------------+ | 2020-05-01 | apples | 10 | | 2020-05-01 | oranges | 8 | | 2020-05-02 | apples |</description>
+    </item>
+    
+    <item>
+      <title>1270 All People Report to the Given Manager</title>
+      <link>https://foxisawesome.github.io/sql/1270-all-people-report-to-the-given-manager/</link>
+      <pubDate>Wed, 21 Oct 2020 10:02:05 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1270-all-people-report-to-the-given-manager/</guid>
+      <description>LC 1270 All People Report to the Given Manager Write an SQL query to find employee_id of all employees that directly or indirectly report their work to the head of the company. The indirect relation between managers will not exceed 3 managers as the company is small. Return result table in any order without duplicates. The query result format is in the following example: Employees table: +-------------+---------------+------------+ | employee_id |</description>
+    </item>
     
     <item>
       <title>383 Ransom Note</title>
@@ -40,12 +123,12 @@ Input: ransomNote = &amp;quot;a&amp;quot;, magazine = &amp;quot;b&amp;quot; Outp
     </item>
     
     <item>
-      <title>1083 Sales Analysis Ii</title>
+      <title>1083 Sales Analysis II</title>
       <link>https://foxisawesome.github.io/sql/1083-sales-analysis-ii/</link>
       <pubDate>Mon, 19 Oct 2020 15:30:49 -0400</pubDate>
       
       <guid>https://foxisawesome.github.io/sql/1083-sales-analysis-ii/</guid>
-      <description>LC 1083 Sales Analysis Ii Write an SQL query that reports the buyers who have bought S8 but not iPhone. Note that S8 and iPhone are products present in the Product table. The query result format is in the following example: Product table: +------------+--------------+------------+ | product_id | product_name | unit_price | +------------+--------------+------------+ | 1 | S8 | 1000 | | 2 | G4 | 800 | | 3 | iPhone</description>
+      <description>LC 1083 Sales Analysis II Write an SQL query that reports the buyers who have bought S8 but not iPhone. Note that S8 and iPhone are products present in the Product table. The query result format is in the following example: Product table: +------------+--------------+------------+ | product_id | product_name | unit_price | +------------+--------------+------------+ | 1 | S8 | 1000 | | 2 | G4 | 800 | | 3 | iPhone</description>
     </item>
     
     <item>
@@ -115,87 +198,6 @@ Return the result table in any order.
       
       <guid>https://foxisawesome.github.io/sql/1148-article-views-i/</guid>
       <description>LC 1148 Article Views I Write an SQL query to find all the authors that viewed at least one of their own articles, sorted in ascending order by their id. The query result format is in the following example: Views table: +------------+-----------+-----------+------------+ | article_id | author_id | viewer_id | view_date | +------------+-----------+-----------+------------+ | 1 | 3 | 5 | 2019-08-01 | | 1 | 3 | 6 | 2019-08-02 |</description>
-    </item>
-    
-    <item>
-      <title>1050 Actors and Directors Who Cooperated at Least Three Times</title>
-      <link>https://foxisawesome.github.io/sql/1050-actors-and-directors-who-cooperated-at-least-three-times/</link>
-      <pubDate>Mon, 19 Oct 2020 14:39:31 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1050-actors-and-directors-who-cooperated-at-least-three-times/</guid>
-      <description>LC 1050 Actors and Directors Who Cooperated at Least Three Times Write a SQL query for a report that provides the pairs (actor_id, director_id) where the actor have cooperated with the director at least 3 times. ActorDirector table: +-------------+-------------+-------------+ | actor_id | director_id | timestamp | +-------------+-------------+-------------+ | 1 | 1 | 0 | | 1 | 1 | 1 | | 1 | 1 | 2 | | 1</description>
-    </item>
-    
-    <item>
-      <title>183 Customers Who Never Order</title>
-      <link>https://foxisawesome.github.io/sql/183-customers-who-never-order/</link>
-      <pubDate>Mon, 19 Oct 2020 14:34:11 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/183-customers-who-never-order/</guid>
-      <description>LC 183 Customers Who Never Order Suppose that a website contains two tables, the Customers table and the Orders table. Write a SQL query to find all customers who never order anything. Solution 2020-10-19 Notes: 秒了 SELECT name AS customers FROM customers WHERE id NOT IN (SELECT customerID FROM orders)</description>
-    </item>
-    
-    <item>
-      <title>512 Game Play Analysis II</title>
-      <link>https://foxisawesome.github.io/sql/512-game-play-analysis-ii/</link>
-      <pubDate>Mon, 19 Oct 2020 14:31:42 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/512-game-play-analysis-ii/</guid>
-      <description>LC 512 Game Play Analysis II Write a SQL query that reports the device that is first logged in for each player. The query result format is in the following example: Activity table: +-----------+-----------+------------+--------------+ | player_id | device_id | event_date | games_played | +-----------+-----------+------------+--------------+ | 1 | 2 | 2016-03-01 | 5 | | 1 | 2 | 2016-05-02 | 6 | | 2 | 3 | 2017-06-25 | 1</description>
-    </item>
-    
-    <item>
-      <title>1290 Convert Binary Number in a Linked List to Integer</title>
-      <link>https://foxisawesome.github.io/posts/1290-convert-binary-number-in-a-linked-list-to-integer/</link>
-      <pubDate>Mon, 19 Oct 2020 13:55:44 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1290-convert-binary-number-in-a-linked-list-to-integer/</guid>
-      <description>LC 1290 Convert Binary Number in a Linked List to Integer Given head which is a reference node to a singly-linked list. The value of each node in the linked list is either 0 or 1. The linked list holds the binary representation of a number. Return the decimal value of the number in the linked list. Input: head = [1,0,1] Output: 5 Explanation: (101) in base 2 = (5)</description>
-    </item>
-    
-    <item>
-      <title>1086 High Five</title>
-      <link>https://foxisawesome.github.io/posts/1086-high-five/</link>
-      <pubDate>Mon, 19 Oct 2020 13:49:24 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1086-high-five/</guid>
-      <description>LC 1086 High Five Given a list of scores of different students, return the average score of each student&amp;rsquo;s top five scores in the order of each student&amp;rsquo;s id. Each entry items[i] has items[i][0] the student&amp;rsquo;s id, and items[i][1] the student&amp;rsquo;s score. The average score is calculated using integer division. Solution 2020-10-19 Notes: 秒了 class Solution: def highFive(self, items: List[List[int]]) -&amp;gt; List[List[int]]: d = collections.defaultdict(list) for i in items:</description>
-    </item>
-    
-    <item>
-      <title>1252 Cells With Odd Values in a Matrix</title>
-      <link>https://foxisawesome.github.io/posts/1252-cells-with-odd-values-in-a-matrix/</link>
-      <pubDate>Mon, 19 Oct 2020 13:36:39 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1252-cells-with-odd-values-in-a-matrix/</guid>
-      <description>LC 1252 Cells With Odd Values in a Matrix Given n and m which are the dimensions of a matrix initialized by zeros and given an array indices where indices[i] = [ri, ci]. For each pair of [ri, ci] you have to increment all cells in row ri and column ci by 1. Return the number of cells with odd values in the matrix after applying the increment to all</description>
-    </item>
-    
-    <item>
-      <title>1021 Remove Outermost Parentheses</title>
-      <link>https://foxisawesome.github.io/posts/1021-remove-outermost-parentheses/</link>
-      <pubDate>Mon, 19 Oct 2020 13:17:36 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1021-remove-outermost-parentheses/</guid>
-      <description>LC 1021 Remove Outermost Parentheses A valid parentheses string is either empty (&amp;quot;&amp;quot;), &amp;quot;(&amp;quot; + A + &amp;quot;)&amp;quot;, or A + B, where A and B are valid parentheses strings, and + represents string concatenation. For example, &amp;quot;&amp;quot;, &amp;quot;()&amp;quot;, &amp;quot;(())()&amp;quot;, and &amp;quot;(()(()))&amp;quot; are all valid parentheses strings. A valid parentheses string S is primitive if it is nonempty, and there does not exist a way to split it into S</description>
-    </item>
-    
-    <item>
-      <title>1322 Ads Performance</title>
-      <link>https://foxisawesome.github.io/sql/1322-ads-performance/</link>
-      <pubDate>Sun, 18 Oct 2020 20:43:41 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1322-ads-performance/</guid>
-      <description>LC 1322 Ads Performance Write an SQL query to find the ctr of each Ad. Round ctr to 2 decimal points. Order the result table by ctr in descending order and by ad_id in ascending order in case of a tie. The query result format is in the following example: Ads table: +-------+---------+---------+ | ad_id | user_id | action | +-------+---------+---------+ | 1 | 1 | Clicked | | 2</description>
-    </item>
-    
-    <item>
-      <title>1543 Fix Product Name Format</title>
-      <link>https://foxisawesome.github.io/sql/1543-fix-product-name-format/</link>
-      <pubDate>Sun, 18 Oct 2020 20:34:36 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1543-fix-product-name-format/</guid>
-      <description>LC 1543 Fix Product Name Format Write an SQL query to report product_name in lowercase without leading or trailing white spaces. sale_date in the format (&#39;YYYY-MM&#39;) total the number of times the product was sold in this month. Return the result table ordered by product_name in ascending order, in case of a tie order it by sale_date in ascending order. The query result format is in the following example. Sales</description>
     </item>
     
   </channel>
