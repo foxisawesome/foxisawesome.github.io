@@ -5,10 +5,28 @@
     <link>https://foxisawesome.github.io/sql/</link>
     <description>Recent content in Sqls on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 21 Oct 2020 11:20:02 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2020 10:50:21 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/sql/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>312 Burst Balloons</title>
+      <link>https://foxisawesome.github.io/posts/312-burst-balloons/</link>
+      <pubDate>Thu, 10 Sep 2020 20:58:53 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/312-burst-balloons/</guid>
+      <description>LC 312 Burst Balloons Given n balloons, indexed from 0 to n-1. Each balloon is painted with a number on it represented by array nums. You are asked to burst all the balloons. If the you burst balloon i you will get nums[left] * nums[i] * nums[right] coins. Here left and right are adjacent indices of i. After the burst, the left and right then becomes adjacent. Find the maximum</description>
+    </item>
+    
+    <item>
+      <title>110 Balanced Binary Tree</title>
+      <link>https://foxisawesome.github.io/posts/110-balanced-binary-tree/</link>
+      <pubDate>Thu, 10 Sep 2020 16:09:25 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/110-balanced-binary-tree/</guid>
+      <description>LC 110 Balanced Binary Tree Given a binary tree, determine if it is height-balanced. For this problem, a height-balanced binary tree is defined as: a binary tree in which the left and right subtrees of every node differ in height by no more than 1. Given the following tree [3,9,20,null,null,15,7]:Return true. 3 / \ 9 20 / \ 15 7 Given the following tree [1,2,2,3,3,null,null,4,4]:Return false. 1 / \ 2</description>
+    </item>
     
     <item>
       <title>951 Flip Equivalent Binary Trees</title>
@@ -188,28 +206,6 @@ Return the number of good pairs.
       
       <guid>https://foxisawesome.github.io/sql/sql-notes/</guid>
       <description>SQL Notes Window Functions A window function performs a calculation across a set of table rows that are somehow related to the current row. This is comparable to the type of calculation that can be done with an aggregate function. But ==unlike regular aggregate functions, use of a window function does not cause rows to become grouped into a single output row — the rows retain their separate identities==. Behind the scenes, the window function is able to access more than just the current row of the query result.</description>
-    </item>
-    
-    <item>
-      <title>166 Fraction to Recurring Decimal</title>
-      <link>https://foxisawesome.github.io/posts/166-fraction-to-recurring-decimal/</link>
-      <pubDate>Sat, 05 Sep 2020 22:05:28 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/166-fraction-to-recurring-decimal/</guid>
-      <description>LC 166 Fraction to Recurring Decimal   Given two integers representing the numerator and denominator of a fraction, return the fraction in string format.
-If the fractional part is repeating, enclose the repeating part in parentheses.
-If multiple answers are possible, just return any of them.
-Extreme case: numer = -2147483648, denominator = -1999
- Solution 2020-09-05 Notes:  Details: python built-in divmod() returns floor, which is not friendly in negative case.</description>
-    </item>
-    
-    <item>
-      <title>159 Longest Substring With at Most Two Distinct Characters</title>
-      <link>https://foxisawesome.github.io/posts/159-longest-substring-with-at-most-two-distinct-characters/</link>
-      <pubDate>Sat, 05 Sep 2020 21:08:15 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/159-longest-substring-with-at-most-two-distinct-characters/</guid>
-      <description>LC 159 Longest Substring With at Most Two Distinct Characters Given a string *s* , find the length of the longest substring *t* that contains at most 2 distinct characters. Input: &amp;quot;ccaabbb&amp;quot; Output: 5 Explanation: t is &amp;quot;aabbb&amp;quot; which its length is 5. Solution 2020-09-05 Notes: 今天周末出去走了一圈，回家刷题效率可以啊。 class Solution: def</description>
     </item>
     
   </channel>

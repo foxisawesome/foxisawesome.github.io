@@ -5,10 +5,28 @@
     <link>https://foxisawesome.github.io/sql/</link>
     <description>Recent content in Sqls on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 21 Oct 2020 11:20:02 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2020 10:50:21 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/sql/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1501 Countries You Can Safely Invest In</title>
+      <link>https://foxisawesome.github.io/sql/1501-countries-you-can-safely-invest-in/</link>
+      <pubDate>Thu, 22 Oct 2020 10:50:21 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1501-countries-you-can-safely-invest-in/</guid>
+      <description>LC 1501 Countries You Can Safely Invest In Write an SQL query to find the countries where this company can invest. Return the result table in any order. The query result format is in the following example. Person table: +----+----------+--------------+ | id | name | phone_number | +----+----------+--------------+ | 3 | Jonathan | 051-1234567 | | 12 | Elvis | 051-7654321 | | 1 | Moncef | 212-1234567 | |</description>
+    </item>
+    
+    <item>
+      <title>1097 Game Play Analysis V</title>
+      <link>https://foxisawesome.github.io/sql/1097-game-play-analysis-v/</link>
+      <pubDate>Thu, 22 Oct 2020 10:35:41 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1097-game-play-analysis-v/</guid>
+      <description>LC 1097 Game Play Analysis V We define the install date of a player to be the first login day of that player. We also define day 1 retention of some date X to be the number of players whose install date is X and they logged back in on the day right after X, divided by the number of players whose install date is X, rounded to 2 decimal</description>
+    </item>
     
     <item>
       <title>647 Palindromic Substrings</title>
@@ -110,7 +128,7 @@ Input: ransomNote = &amp;quot;a&amp;quot;, magazine = &amp;quot;b&amp;quot; Outp
       <pubDate>Mon, 19 Oct 2020 16:34:58 -0400</pubDate>
       
       <guid>https://foxisawesome.github.io/posts/682-baseball-game/</guid>
-      <description>LC 682 Baseball Game You are keeping score for a baseball game with strange rules. The game consists of several rounds, where the scores of past rounds may affect future rounds&amp;rsquo; scores. At the beginning of the game, you start with an empty record. You are given a list of strings ops, where ops[i] is the ith operation you must apply to the record and is one of the following:</description>
+      <description>LC 682 Baseball Game You are keeping score for a baseball game with strange rules. The game consists of several rounds, where the scores of past rounds may affect future rounds&#39; scores. At the beginning of the game, you start with an empty record. You are given a list of strings ops, where ops[i] is the ith operation you must apply to the record and is one of the following:</description>
     </item>
     
     <item>
@@ -179,25 +197,6 @@ Return the result table in any order.
       <guid>https://foxisawesome.github.io/sql/597-friend-requests-i-overall-acceptance-rate/</guid>
       <description>LC 597 Friend Requests I Overall Acceptance Rate   Write a query to find the overall acceptance rate of requests rounded to 2 decimals, which is the number of acceptance divide the number of requests.
  Solution 2020-10-19 Notes: SELECT round(ifnull( (select count(*) from (select distinct requester_id, accepter_id from request_accepted) a) / (select count(*) from (select distinct sender_id, send_to_id from friend_request) b) ,0),2) as accept_rate  </description>
-    </item>
-    
-    <item>
-      <title>584 Find Customer Referee</title>
-      <link>https://foxisawesome.github.io/sql/584-find-customer-referee/</link>
-      <pubDate>Mon, 19 Oct 2020 14:44:34 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/584-find-customer-referee/</guid>
-      <description>LC 584 Find Customer Referee   Write a query to return the list of customers NOT referred by the person with id &amp;lsquo;2&amp;rsquo;.
- Solution 2020-10-19 Notes: SELECT name FROM customer WHERE referee_id != &#39;2&#39; OR referee_id IS NULL  </description>
-    </item>
-    
-    <item>
-      <title>1148 Article Views I</title>
-      <link>https://foxisawesome.github.io/sql/1148-article-views-i/</link>
-      <pubDate>Mon, 19 Oct 2020 14:41:54 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1148-article-views-i/</guid>
-      <description>LC 1148 Article Views I Write an SQL query to find all the authors that viewed at least one of their own articles, sorted in ascending order by their id. The query result format is in the following example: Views table: +------------+-----------+-----------+------------+ | article_id | author_id | viewer_id | view_date | +------------+-----------+-----------+------------+ | 1 | 3 | 5 | 2019-08-01 | | 1 | 3 | 6 | 2019-08-02 |</description>
     </item>
     
   </channel>

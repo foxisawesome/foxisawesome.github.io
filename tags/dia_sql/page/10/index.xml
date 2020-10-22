@@ -5,10 +5,28 @@
     <link>https://foxisawesome.github.io/tags/dia_sql/</link>
     <description>Recent content in dia_sql on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 19 Oct 2020 15:30:49 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2020 10:50:21 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/dia_sql/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1070 Product Sales Analysis III</title>
+      <link>https://foxisawesome.github.io/sql/1070-product-sales-analysis-iii/</link>
+      <pubDate>Wed, 23 Sep 2020 21:32:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1070-product-sales-analysis-iii/</guid>
+      <description>LC 1070 Product Sales Analysis III Write an SQL query that selects the product id, year, quantity, and price for the first year of every product sold. Solution 2020-09-23 Notes: 这题的test case 1有问题，论坛里有类似讨论。 SELECT product_id, year AS first_year, quantity, price FROM ( SELECT product_id, year, quantity, price, ROW_NUMBER() OVER(PARTITION BY product_id</description>
+    </item>
+    
+    <item>
+      <title>1231 Divide Chocolate</title>
+      <link>https://foxisawesome.github.io/posts/1231-divide-chocolate/</link>
+      <pubDate>Wed, 23 Sep 2020 21:15:59 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1231-divide-chocolate/</guid>
+      <description>LC 1231 Divide Chocolate You have one chocolate bar that consists of some chunks. Each chunk has its own sweetness given by the array sweetness. You want to share the chocolate with your K friends so you start cutting the chocolate bar into K+1 pieces using K cuts, each piece consists of some consecutive chunks. Being generous, you will eat the piece with the minimum total sweetness and give the</description>
+    </item>
     
     <item>
       <title>27 Remove Element</title>
@@ -88,7 +106,7 @@
       <pubDate>Wed, 23 Sep 2020 14:58:07 -0400</pubDate>
       
       <guid>https://foxisawesome.github.io/posts/103-binary-tree-zigzag-level-order-traversal/</guid>
-      <description>LC 103 Binary Tree Zigzag Level Order Traversal Given a binary tree, return the zigzag level order traversal of its nodes&amp;rsquo; values. (ie, from left to right, then right to left for the next level and alternate between). For example: Given binary tree [3,9,20,null,null,15,7], 3 / \ 9 20 / \ 15 7 return its zigzag level order traversal as: [ [3], [20,9], [15,7] ] Solution 2020-09-23 Notes: 一个</description>
+      <description>LC 103 Binary Tree Zigzag Level Order Traversal Given a binary tree, return the zigzag level order traversal of its nodes&#39; values. (ie, from left to right, then right to left for the next level and alternate between). For example: Given binary tree [3,9,20,null,null,15,7], 3 / \ 9 20 / \ 15 7 return its zigzag level order traversal as: [ [3], [20,9], [15,7] ] Solution 2020-09-23 Notes: 一个</description>
     </item>
     
     <item>
@@ -171,24 +189,6 @@
       
       <guid>https://foxisawesome.github.io/posts/542-01-matrix/</guid>
       <description>LC 542 01 Matrix Given a matrix consists of 0 and 1, find the distance of the nearest 0 for each cell. Input: [[0,0,0],[0,1,0],[1,1,1]] Output:[[0,0,0],[0,1,0],[1,2,1]] Solution 2020-09-21 Notes: 很经典的BFS题。这题的关键是BFS每一个step中所有的点都向四周找0，如果找到水</description>
-    </item>
-    
-    <item>
-      <title>200 Number of Islands</title>
-      <link>https://foxisawesome.github.io/posts/200-number-of-islands/</link>
-      <pubDate>Mon, 21 Sep 2020 20:29:23 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/200-number-of-islands/</guid>
-      <description>LC 200 Number of Islands Given a 2d grid map of &#39;1&#39;s (land) and &#39;0&#39;s (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water. Input: grid = [ [&amp;quot;1&amp;quot;,&amp;quot;1&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;], [&amp;quot;1&amp;quot;,&amp;quot;1&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;], [&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;1&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;], [&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;1&amp;quot;,&amp;quot;1&amp;quot;] ] Output: 3 Solution 2020-09-21 Notes: 很经典的B</description>
-    </item>
-    
-    <item>
-      <title>133 Clone Graph</title>
-      <link>https://foxisawesome.github.io/posts/133-clone-graph/</link>
-      <pubDate>Mon, 21 Sep 2020 16:18:49 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/133-clone-graph/</guid>
-      <description>LC 133 Clone Graph Given a reference of a node in a connected undirected graph. Return a deep copy (clone) of the graph. Solution 2020-09-21 Notes: 刷graph第一题，对这种数据结构还不是很懂，抄了一遍 负雪明烛 的还得体会下。一般的遍历只</description>
     </item>
     
   </channel>

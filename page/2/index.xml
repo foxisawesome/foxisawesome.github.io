@@ -5,10 +5,29 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 21 Oct 2020 14:39:41 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2020 10:50:21 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>584 Find Customer Referee</title>
+      <link>https://foxisawesome.github.io/sql/584-find-customer-referee/</link>
+      <pubDate>Mon, 19 Oct 2020 14:44:34 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/584-find-customer-referee/</guid>
+      <description>LC 584 Find Customer Referee   Write a query to return the list of customers NOT referred by the person with id &amp;lsquo;2&amp;rsquo;.
+ Solution 2020-10-19 Notes: SELECT name FROM customer WHERE referee_id != &#39;2&#39; OR referee_id IS NULL  </description>
+    </item>
+    
+    <item>
+      <title>1148 Article Views I</title>
+      <link>https://foxisawesome.github.io/sql/1148-article-views-i/</link>
+      <pubDate>Mon, 19 Oct 2020 14:41:54 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1148-article-views-i/</guid>
+      <description>LC 1148 Article Views I Write an SQL query to find all the authors that viewed at least one of their own articles, sorted in ascending order by their id. The query result format is in the following example: Views table: +------------+-----------+-----------+------------+ | article_id | author_id | viewer_id | view_date | +------------+-----------+-----------+------------+ | 1 | 3 | 5 | 2019-08-01 | | 1 | 3 | 6 | 2019-08-02 |</description>
+    </item>
     
     <item>
       <title>1050 Actors and Directors Who Cooperated at Least Three Times</title>
@@ -170,27 +189,6 @@
       
       <guid>https://foxisawesome.github.io/posts/1342-number-of-steps-to-reduce-a-number-to-zero/</guid>
       <description>LC 1342 Number of Steps to Reduce a Number to Zero Given a non-negative integer num, return the number of steps to reduce it to zero. If the current number is even, you have to divide it by 2, otherwise, you have to subtract 1 from it. Input: num = 14 Output: 6 Explanation: Step 1) 14 is even; divide by 2 and obtain 7. Step 2) 7 is odd;</description>
-    </item>
-    
-    <item>
-      <title>1141 User Activity for the Past 30 Days I</title>
-      <link>https://foxisawesome.github.io/sql/1141-user-activity-for-the-past-30-days-i/</link>
-      <pubDate>Sat, 17 Oct 2020 21:13:03 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1141-user-activity-for-the-past-30-days-i/</guid>
-      <description>LC 1141 User Activity for the Past 30 Days I Write an SQL query to find the daily active user count for a period of 30 days ending 2019-07-27 inclusively. A user was active on some day if he/she made at least one activity on that day. The query result format is in the following example: Activity table: +---------+------------+---------------+---------------+ | user_id | session_id | activity_date | activity_type | +---------+------------+---------------+---------------+ |</description>
-    </item>
-    
-    <item>
-      <title>1623 All Valid Triplets That Can Represent a Country</title>
-      <link>https://foxisawesome.github.io/sql/1623-all-valid-triplets-that-can-represent-a-country/</link>
-      <pubDate>Sat, 17 Oct 2020 21:10:35 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1623-all-valid-triplets-that-can-represent-a-country/</guid>
-      <description>LC 1623 All Valid Triplets That Can Represent a Country   Write an SQL query to find all the possible triplets representing the country under the given constraints.
-Return the result table in any order.
-The query result format is in the following example.
-SchoolA table: +------------+--------------+ | student_id | student_name | +------------+--------------+ | 1 | Alice | | 2 | Bob | +------------+--------------+ SchoolB table: +------------+--------------+ | student_id | student_name | +------------+--------------+ | 3 | Tom | +------------+--------------+ SchoolC table: +------------+--------------+ | student_id | student_name | +------------+--------------+ | 3 | Tom | | 2 | Jerry | | 10 | Alice | +------------+--------------+ Result table: +----------+----------+----------+ | member_A | member_B | member_C | +----------+----------+----------+ | Alice | Tom | Jerry | | Bob | Tom | Alice | +----------+----------+----------+ Let us see all the possible triplets.</description>
     </item>
     
   </channel>

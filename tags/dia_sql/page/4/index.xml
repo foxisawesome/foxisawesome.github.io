@@ -5,10 +5,28 @@
     <link>https://foxisawesome.github.io/tags/dia_sql/</link>
     <description>Recent content in dia_sql on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 19 Oct 2020 15:30:49 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2020 10:50:21 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/dia_sql/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>106 Construct Binary Tree From Inorder and Postorder Traversal</title>
+      <link>https://foxisawesome.github.io/posts/106-construct-binary-tree-from-inorder-and-postorder-traversal/</link>
+      <pubDate>Tue, 13 Oct 2020 15:28:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/106-construct-binary-tree-from-inorder-and-postorder-traversal/</guid>
+      <description>LC 106 Construct Binary Tree From Inorder and Postorder Traversal Given inorder and postorder traversal of a tree, construct the binary tree. Note: You may assume that duplicates do not exist in the tree. For example, given inorder = [9,3,15,20,7] postorder = [9,15,7,20,3] Return the following binary tree: 3 / \ 9 20 / \ 15 7 Solution 2020-10-13 Notes: 和 LC 105 一个道理。 # Definition</description>
+    </item>
+    
+    <item>
+      <title>105 Construct Binary Tree From Preorder and Inorder Traversal</title>
+      <link>https://foxisawesome.github.io/posts/105-construct-binary-tree-from-preorder-and-inorder-traversal/</link>
+      <pubDate>Tue, 13 Oct 2020 15:21:19 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/105-construct-binary-tree-from-preorder-and-inorder-traversal/</guid>
+      <description>LC 105 Construct Binary Tree From Preorder and Inorder Traversal Given preorder and inorder traversal of a tree, construct the binary tree. Note: You may assume that duplicates do not exist in the tree. For example, given preorder = [3,9,20,15,7] inorder = [9,3,15,20,7] Return the following binary tree: 3 / \ 9 20 / \ 15 7 Solution 2020-10-13 Notes: 这题关键是 root 在 ino</description>
+    </item>
     
     <item>
       <title>116 Populating Next Right Pointers in Each Node</title>
@@ -79,7 +97,7 @@ Transactions table: +------+---------+----------+--------+------------+ | id | c
       <pubDate>Sun, 11 Oct 2020 11:03:17 -0400</pubDate>
       
       <guid>https://foxisawesome.github.io/posts/695-max-area-of-island/</guid>
-      <description>LC 695 Max Area of Island Given a non-empty 2D array grid of 0&amp;rsquo;s and 1&amp;rsquo;s, an island is a group of 1&#39;s (representing land) connected 4-directionally (horizontal or vertical.) You may assume all four edges of the grid are surrounded by water. Find the maximum area of an island in the given 2D array. (If there is no island, the maximum area is 0.) [[0,0,1,0,0,0,0,1,0,0,0,0,0], [0,0,0,0,0,0,0,1,1,1,0,0,0], [0,1,1,0,1,0,0,0,0,0,0,0,0], [0,1,0,0,1,1,0,0,1,0,1,0,0], [0,1,0,0,1,1,0,0,1,1,1,0,0],</description>
+      <description>LC 695 Max Area of Island Given a non-empty 2D array grid of 0&amp;rsquo;s and 1&amp;rsquo;s, an island is a group of 1&amp;rsquo;s (representing land) connected 4-directionally (horizontal or vertical.) You may assume all four edges of the grid are surrounded by water. Find the maximum area of an island in the given 2D array. (If there is no island, the maximum area is 0.) [[0,0,1,0,0,0,0,1,0,0,0,0,0], [0,0,0,0,0,0,0,1,1,1,0,0,0], [0,1,1,0,1,0,0,0,0,0,0,0,0], [0,1,0,0,1,1,0,0,1,0,1,0,0], [0,1,0,0,1,1,0,0,1,1,1,0,0],</description>
     </item>
     
     <item>
@@ -181,28 +199,6 @@ Traffic table: +---------+----------+---------------+ | user_id | activity | act
       
       <guid>https://foxisawesome.github.io/posts/127-word-ladder/</guid>
       <description>LC 127 Word Ladder Given two words (beginWord and endWord), and a dictionary&amp;rsquo;s word list, find the length of shortest transformation sequence from beginWord to endWord, such that: Only one letter can be changed at a time. Each transformed word must exist in the word list. Input: beginWord = &amp;quot;hit&amp;quot;, endWord = &amp;quot;cog&amp;quot;, wordList = [&amp;quot;hot&amp;quot;,&amp;quot;dot&amp;quot;,&amp;quot;dog&amp;quot;,&amp;quot;lot&amp;quot;,&amp;quot;log&amp;quot;,&amp;quot;cog&amp;quot;] Output: 5 Explanation: As one shortest transformation is &amp;quot;hit&amp;quot; -&amp;gt; &amp;quot;hot&amp;quot; -&amp;gt; &amp;quot;dot&amp;quot; -&amp;gt;</description>
-    </item>
-    
-    <item>
-      <title>468 Validate Ip Address</title>
-      <link>https://foxisawesome.github.io/posts/468-validate-ip-address/</link>
-      <pubDate>Thu, 08 Oct 2020 20:03:36 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/468-validate-ip-address/</guid>
-      <description>LC 468 Validate Ip Address Given a string IP, return &amp;quot;IPv4&amp;quot; if IP is a valid IPv4 address, &amp;quot;IPv6&amp;quot; if IP is a valid IPv6 address or &amp;quot;Neither&amp;quot; if IP is not a correct IP of any type. A valid IPv4 address is an IP in the form &amp;quot;x1.x2.x3.x4&amp;quot; where 0 &amp;lt;= xi &amp;lt;= 255 and xi cannot contain leading zeros. For example, &amp;quot;192.168.1.1&amp;quot; and &amp;quot;192.168.1.0&amp;quot; are valid IPv4 addresses</description>
-    </item>
-    
-    <item>
-      <title>595 Big Countries</title>
-      <link>https://foxisawesome.github.io/sql/595-big-countries/</link>
-      <pubDate>Thu, 08 Oct 2020 17:00:05 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/595-big-countries/</guid>
-      <description>LC 595 Big Countries   A country is big if it has an area of bigger than 3 million square km or a population of more than 25 million.
-Write a SQL solution to output big countries&amp;rsquo; name, population and area.
- Solution 2020-10-08 Notes:   #Union solution is actually faster than using #or.
-  Why Union is faster than OR?
-Strictly speaking, Using UNION is faster when it comes to cases like scan two different column like this</description>
     </item>
     
   </channel>

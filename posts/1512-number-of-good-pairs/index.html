@@ -24,7 +24,7 @@
 A pair (i,j) is called good if nums[i] == nums[j] and i &amp;lt; j.
 Return the number of good pairs.
  Solution 2020-09-06 Notes:  One-pass using hash table. line 7-9, if gets a match, how many pairs it can make to previous ones is d[num].  class Solution: def numIdenticalPairs(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 ans = 0 d = dict() for num in nums: if num in d: ans &#43;= d[num] d[num] &#43;= 1 else: d[num] = 1 return ans # Time O(N) # Space O(N)   Use double loop:  class Solution: def numIdenticalPairs(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 n = len(nums) ans = 0 for i in range(n): j = i&#43;1 while j &amp;lt; n: if nums[i] == nums[j]: ans &#43;= 1 j &#43;= 1 return ans # Time O(N^2) # Space O(1)  " />
-    <meta name="generator" content="Hugo 0.74.3 with theme pure" />
+    <meta name="generator" content="Hugo 0.76.5 with theme pure" />
     <title>1512 Number of Good Pairs - Q. Weng</title>
     
     
@@ -161,7 +161,7 @@ Return the number of good pairs.
         <ul class="category-list">
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">230</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">6</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">85</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">87</span></li>
         </ul>
     </div>
 </div>
@@ -200,7 +200,7 @@ Return the number of good pairs.
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia_sql/" class="tag-list-link">dia_sql</a><span
-                    class="tag-list-count">15</span></li>
+                    class="tag-list-count">16</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dp/" class="tag-list-link">dp</a><span
@@ -224,7 +224,7 @@ Return the number of good pairs.
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">311</span></li>
+                    class="tag-list-count">313</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span

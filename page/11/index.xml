@@ -5,10 +5,28 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 21 Oct 2020 14:39:41 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 22 Oct 2020 10:50:21 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>200 Number of Islands</title>
+      <link>https://foxisawesome.github.io/posts/200-number-of-islands/</link>
+      <pubDate>Mon, 21 Sep 2020 20:29:23 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/200-number-of-islands/</guid>
+      <description>LC 200 Number of Islands Given a 2d grid map of &#39;1&#39;s (land) and &#39;0&#39;s (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water. Input: grid = [ [&amp;quot;1&amp;quot;,&amp;quot;1&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;], [&amp;quot;1&amp;quot;,&amp;quot;1&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;], [&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;1&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;], [&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;1&amp;quot;,&amp;quot;1&amp;quot;] ] Output: 3 Solution 2020-09-21 Notes: 很经典的B</description>
+    </item>
+    
+    <item>
+      <title>133 Clone Graph</title>
+      <link>https://foxisawesome.github.io/posts/133-clone-graph/</link>
+      <pubDate>Mon, 21 Sep 2020 16:18:49 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/133-clone-graph/</guid>
+      <description>LC 133 Clone Graph Given a reference of a node in a connected undirected graph. Return a deep copy (clone) of the graph. Solution 2020-09-21 Notes: 刷graph第一题，对这种数据结构还不是很懂，抄了一遍 负雪明烛 的还得体会下。一般的遍历只</description>
+    </item>
     
     <item>
       <title>1323 Maximum 69 Number</title>
@@ -171,24 +189,6 @@ Input: 1 0 1 0 0 1 0 1 1 1 1 1 1 1 1 1 0 0 1 0 Output: 4   Solution 2020-09-20 N
       
       <guid>https://foxisawesome.github.io/posts/31-next-permutation/</guid>
       <description>LC 31 Next Permutation Implement next permutation, which rearranges numbers into the lexicographically next greater permutation of numbers. If such arrangement is not possible, it must rearrange it as the lowest possible order (ie, sorted in ascending order). The replacement must be in-place and use only constant extra memory. Here are some examples. Inputs are in the left-hand column and its corresponding outputs are in the right-hand column. 1,2,3` →</description>
-    </item>
-    
-    <item>
-      <title>983 Minimum Cost for Tickets</title>
-      <link>https://foxisawesome.github.io/posts/983-minimum-cost-for-tickets/</link>
-      <pubDate>Sat, 19 Sep 2020 22:24:28 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/983-minimum-cost-for-tickets/</guid>
-      <description>LC 983 Minimum Cost for Tickets    Solution 2020-09-19 Notes:    # Time O() # Space O()  </description>
-    </item>
-    
-    <item>
-      <title>322 Coin Change</title>
-      <link>https://foxisawesome.github.io/posts/322-coin-change/</link>
-      <pubDate>Sat, 19 Sep 2020 21:28:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/322-coin-change/</guid>
-      <description>LC 322 Coin Change You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1. Input: coins = [1, 2, 5], amount = 11 Output: 3 Explanation: 11 = 5 + 5</description>
     </item>
     
   </channel>
