@@ -351,7 +351,8 @@ The first project has 3 employees while the second one has 2.
 <pre><code class="language-mysql">SELECT project_id
 FROM project
 GROUP BY project_id
-HAVING COUNT(employee_id) = (SELECT COUNT(employee_id) FROM project GROUP BY project_id ORDER BY 1 DESC LIMIT 1)
+HAVING COUNT(employee_id) 
+= (SELECT COUNT(employee_id) FROM project GROUP BY project_id ORDER BY 1 DESC LIMIT 1)
 </code></pre>
 <ul>
 <li>sol. 2</li>
@@ -372,34 +373,7 @@ WHERE rk = 1
 <section id="comments">
 </section>
 
-</div><nav class="bar bar-footer clearfix" data-stick-bottom>
-    <div class="bar-inner">
-        <ul class="pager pull-left">
-            <li class="prev">
-                <a href="https://foxisawesome.github.io/sql/619-biggest-single-number/" title="619 Biggest Single Number"><i
-                        class="icon icon-angle-left"
-                        aria-hidden="true"></i><span>&nbsp;&nbsp;Older</span></a>
-            </li>
-            <li class="next">
-                <a href="https://foxisawesome.github.io/sql/1495-friendly-movies-streamed-last-month/"
-                    title="1495 Friendly Movies Streamed Last Month"><span>Newer&nbsp;&nbsp;</span><i
-                        class="icon icon-angle-right" aria-hidden="true"></i></a>
-            </li>
-            
-            <li class="toggle-toc">
-                <a class="toggle-btn collapsed" data-toggle="collapse" href="#collapseToc" aria-expanded="false"
-                    title="Catalogue" role="button">
-                    <span>[&nbsp;</span><span>Catalogue</span>
-                    <i class="text-collapsed icon icon-anchor"></i>
-                    <i class="text-in icon icon-close"></i>
-                    <span>]</span>
-                </a>
-            </li>
-        </ul>
-        <div class="bar-right">
-        </div>
-    </div>
-</nav>
+</div>
 
 </main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
 <ul class="social-links">
