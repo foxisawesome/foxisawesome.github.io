@@ -357,9 +357,12 @@
 <li><strong>rolling window 3-month 用 <code>SUM()OVER(ROWS 2 PRECEDING)</code></strong></li>
 </ul>
 <pre><code class="language-mysql">SELECT id, month, salary
-FROM
-    (SELECT id, month, SUM(salary) OVER(PARTITION BY id ORDER BY month ROWS 2 PRECEDING) AS salary, ROW_NUMBER() OVER(PARTITION BY id ORDER BY month DESC) AS nr
-FROM employee ) a
+FROM(
+     SELECT id, month, 
+     SUM(salary) OVER(PARTITION BY id ORDER BY month ROWS 2 PRECEDING) AS salary, 		 
+     ROW_NUMBER() OVER(PARTITION BY id ORDER BY month DESC) AS nr
+     FROM employee
+    ) a
 WHERE nr &gt; 1
 </code></pre>
 
@@ -411,9 +414,7 @@ WHERE nr &gt; 1
   <div class="copyright">
     &copy;2019  -
     2020
-    <div class="publishby">
-        Theme by <a href="https://github.com/xiaoheiAh" target="_blank"> xiaoheiAh </a>base on<a href="https://github.com/xiaoheiAh/hugo-theme-pure" target="_blank"> pure</a>.
-    </div>
+
   </div>
 </footer>
 
