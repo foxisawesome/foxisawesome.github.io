@@ -5,10 +5,64 @@
     <link>https://foxisawesome.github.io/sql/</link>
     <description>Recent content in Sqls on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 22 Oct 2020 10:50:21 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2020 20:14:32 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/sql/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>161 One Edit Distance</title>
+      <link>https://foxisawesome.github.io/posts/161-one-edit-distance/</link>
+      <pubDate>Fri, 02 Oct 2020 14:14:19 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/161-one-edit-distance/</guid>
+      <description>LC 161 One Edit Distance Given two strings s and t, return true if they are both one edit distance apart, otherwise return false. A string s is said to be one distance apart from a string t if you can: Insert exactly one character into s to get t. Delete exactly one character from s to get t. Replace exactly one character of s with a different character to</description>
+    </item>
+    
+    <item>
+      <title>168 Excel Sheet Column Title</title>
+      <link>https://foxisawesome.github.io/posts/168-excel-sheet-column-title/</link>
+      <pubDate>Fri, 02 Oct 2020 13:52:16 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/168-excel-sheet-column-title/</guid>
+      <description>LC 168 Excel Sheet Column Title Given a positive integer, return its corresponding column title as appear in an Excel sheet. For example: 1 -&amp;gt; A 2 -&amp;gt; B 3 -&amp;gt; C ... 26 -&amp;gt; Z 27 -&amp;gt; AA 28 -&amp;gt; AB ... Input: 28 Output: &amp;quot;AB&amp;quot; Solution 2020-10-02 Notes: dict应该 0-indexed，然后di</description>
+    </item>
+    
+    <item>
+      <title>724 Find Pivot Index</title>
+      <link>https://foxisawesome.github.io/posts/724-find-pivot-index/</link>
+      <pubDate>Fri, 02 Oct 2020 13:38:14 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/724-find-pivot-index/</guid>
+      <description>LC 724 Find Pivot Index Given an array of integers nums, write a method that returns the &amp;ldquo;pivot&amp;rdquo; index of this array. We define the pivot index as the index where the sum of all the numbers to the left of the index is equal to the sum of all the numbers to the right of the index. If no such index exists, we should return -1. If there are</description>
+    </item>
+    
+    <item>
+      <title>240 Search a 2d Matrix II</title>
+      <link>https://foxisawesome.github.io/posts/240-search-a-2d-matrix-ii/</link>
+      <pubDate>Fri, 02 Oct 2020 13:14:19 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/240-search-a-2d-matrix-ii/</guid>
+      <description>LC 240 Search a 2d Matrix II Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties: Integers in each row are sorted in ascending from left to right. Integers in each column are sorted in ascending from top to bottom. Consider the following matrix: [ [1, 4, 7, 11, 15], [2, 5, 8, 12, 19], [3, 6, 9,</description>
+    </item>
+    
+    <item>
+      <title>905 Sort Array by Parity</title>
+      <link>https://foxisawesome.github.io/posts/905-sort-array-by-parity/</link>
+      <pubDate>Fri, 02 Oct 2020 12:54:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/905-sort-array-by-parity/</guid>
+      <description>LC 905 Sort Array by Parity Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A. You may return any answer array that satisfies this condition. Input: [3,1,2,4] Output: [2,4,3,1] The outputs [4,2,3,1], [2,4,1,3], and [4,2,1,3] would also be accepted. Solution 2020-10-02 Notes: 这题和 remove duplicate from array 一回事。</description>
+    </item>
+    
+    <item>
+      <title>1213 Intersection of Three Sorted Arrays</title>
+      <link>https://foxisawesome.github.io/posts/1213-intersection-of-three-sorted-arrays/</link>
+      <pubDate>Fri, 02 Oct 2020 12:46:42 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1213-intersection-of-three-sorted-arrays/</guid>
+      <description>LC 1213 Intersection of Three Sorted Arrays Given three integer arrays arr1, arr2 and arr3 sorted in strictly increasing order, return a sorted array of only the integers that appeared in all three arrays. Input: arr1 = [1,2,3,4,5], arr2 = [1,2,5,7,9], arr3 = [1,3,4,5,8] Output: [1,5] Explanation: Only 1 and 5 appeared in the three arrays. Solution 2020-10-02 Notes: 建一个 helper function 找两个arr</description>
+    </item>
     
     <item>
       <title>118 Pascals Triangle</title>
@@ -137,62 +191,6 @@ A user can&amp;rsquo;t perform more than one activity at the same time. Return t
       
       <guid>https://foxisawesome.github.io/posts/76-minimum-window-substring/</guid>
       <description>LC 76 Minimum Window Substring Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n). Input: S = &amp;quot;ADOBECODEBANC&amp;quot;, T = &amp;quot;ABC&amp;quot; Output: &amp;quot;BANC&amp;quot; Solution 2020-09-30 Notes: sliding window 的同时，需要online update minimum length，并用一个d</description>
-    </item>
-    
-    <item>
-      <title>728 Self Dividing Numbers</title>
-      <link>https://foxisawesome.github.io/posts/728-self-dividing-numbers/</link>
-      <pubDate>Tue, 29 Sep 2020 21:32:36 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/728-self-dividing-numbers/</guid>
-      <description>LC 728 Self Dividing Numbers A self-dividing number is a number that is divisible by every digit it contains. For example, 128 is a self-dividing number because 128 % 1 == 0, 128 % 2 == 0, and 128 % 8 == 0. Also, a self-dividing number is not allowed to contain the digit zero. Given a lower and upper number bound, output a list of every possible self dividing</description>
-    </item>
-    
-    <item>
-      <title>793 Preimage Size of Factorial Zeroes Function</title>
-      <link>https://foxisawesome.github.io/posts/793-preimage-size-of-factorial-zeroes-function/</link>
-      <pubDate>Tue, 29 Sep 2020 21:17:24 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/793-preimage-size-of-factorial-zeroes-function/</guid>
-      <description>LC 793 Preimage Size of Factorial Zeroes Function Let f(x) be the number of zeroes at the end of x!. (Recall that x! = 1 * 2 * 3 * ... * x, and by convention, 0! = 1.) For example, f(3) = 0 because 3! = 6 has no zeroes at the end, while f(11) = 2 because 11! = 39916800 has 2 zeroes at the end. Given K,</description>
-    </item>
-    
-    <item>
-      <title>172 Factorial Trailing Zeroes</title>
-      <link>https://foxisawesome.github.io/posts/172-factorial-trailing-zeroes/</link>
-      <pubDate>Tue, 29 Sep 2020 20:24:36 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/172-factorial-trailing-zeroes/</guid>
-      <description>LC 172 Factorial Trailing Zeroes Given an integer n, return the number of trailing zeroes in n!. Follow up: Could you write a solution that works in logarithmic time complexity? Solution 2020-09-29 Notes: count N 中有几个5, 就一定有几个0. 这个写法很高级。相当于 5 分法，所以time</description>
-    </item>
-    
-    <item>
-      <title>1288 Remove Covered Intervals</title>
-      <link>https://foxisawesome.github.io/posts/1288-remove-covered-intervals/</link>
-      <pubDate>Tue, 29 Sep 2020 20:01:38 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1288-remove-covered-intervals/</guid>
-      <description>LC 1288 Remove Covered Intervals Given a list of intervals, remove all intervals that are covered by another interval in the list. Interval [a,b) is covered by interval [c,d) if and only if c &amp;lt;= a and b &amp;lt;= d. After doing so, return the number of remaining intervals. Input: intervals = [[1,4],[3,6],[2,8]] Output: 2 Explanation: Interval [3,6] is covered by [2,8], therefore it is removed. Solution 2020-09-29 Notes: 排</description>
-    </item>
-    
-    <item>
-      <title>1113 Reported Posts</title>
-      <link>https://foxisawesome.github.io/sql/1113-reported-posts/</link>
-      <pubDate>Tue, 29 Sep 2020 19:04:24 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1113-reported-posts/</guid>
-      <description>LC 1113 Reported Posts   Write an SQL query that reports the number of posts reported yesterday for each report reason. Assume today is 2019-07-05.
- Solution 2020-09-29 Notes: SELECT report_reason, report_count FROM ( SELECT extra as report_reason, COUNT(*) as report_count FROM ( SELECT DISTINCT post_id, extra FROM actions WHERE DATEDIFF(&#39;2019-07-05&#39;,action_date)=1 AND action = &#39;report&#39; ) a GROUP BY 1 ) b WHERE report_reason IS NOT NULL ;  </description>
-    </item>
-    
-    <item>
-      <title>1045 Customers Who Bought All Products</title>
-      <link>https://foxisawesome.github.io/sql/1045-customers-who-bought-all-products/</link>
-      <pubDate>Tue, 29 Sep 2020 14:12:22 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1045-customers-who-bought-all-products/</guid>
-      <description>LC 1045 Customers Who Bought All Products   Write an SQL query for a report that provides the customer ids from the Customer table that bought all the products in the Product table.
- Solution 2020-09-29 Notes: SELECT customer_id FROM ( SELECT customer_id, COUNT(DISTINCT product_key) AS ct FROM customer GROUP BY customer_id ORDER BY 1 ) a WHERE ct = (SELECT COUNT(*) from product) ORDER BY 1 ;  </description>
     </item>
     
   </channel>

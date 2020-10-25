@@ -5,10 +5,66 @@
     <link>https://foxisawesome.github.io/categories/sql/</link>
     <description>Recent content in sql on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 22 Oct 2020 10:50:21 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2020 20:14:32 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/sql/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>42 Trapping Rain Water</title>
+      <link>https://foxisawesome.github.io/posts/42-trapping-rain-water/</link>
+      <pubDate>Wed, 05 Aug 2020 14:01:29 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/42-trapping-rain-water/</guid>
+      <description>LC 42 Trapping Rain Water Given n non-negative integers representing an elevation map where the width of each bar is 1, compute how much water it is able to trap after raining. Solution 2020-08-05 Notes: 短边原理，左右指针同时走，r_max 大时短边在left，所以计算lef</description>
+    </item>
+    
+    <item>
+      <title>206 Reverse Linked List</title>
+      <link>https://foxisawesome.github.io/posts/206-reverse-linked-list/</link>
+      <pubDate>Sat, 01 Aug 2020 20:06:27 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/206-reverse-linked-list/</guid>
+      <description>LC 206 Reverse Linked List Reverse a singly linked list. Example: Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL Output: 5-&amp;gt;4-&amp;gt;3-&amp;gt;2-&amp;gt;1-&amp;gt;NULL Solution 2020-09-01 Notes: 这题刷了不下10遍了，终于明白iteration这里的四步操作了。 # Definition for singly-linked list. # class ListNode: # def __init__(self, val=0, next=None): # self.val = val # self.next</description>
+    </item>
+    
+    <item>
+      <title>回溯算法详解</title>
+      <link>https://foxisawesome.github.io/posts/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3%E4%BF%AE%E8%AE%A2%E7%89%88/</link>
+      <pubDate>Sat, 11 Jul 2020 21:59:37 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/%E5%9B%9E%E6%BA%AF%E7%AE%97%E6%B3%95%E8%AF%A6%E8%A7%A3%E4%BF%AE%E8%AE%A2%E7%89%88/</guid>
+      <description>这篇文章是很久之前的一篇《回溯算法详解》的进阶版，之前那篇不够清楚，就不必看了，看这篇就行。把框架给你讲清楚，你会发现回溯算法问题都是一个套</description>
+    </item>
+    
+    <item>
+      <title>2 Add Two Num</title>
+      <link>https://foxisawesome.github.io/posts/2-add-two-num/</link>
+      <pubDate>Thu, 02 Jul 2020 10:08:20 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/2-add-two-num/</guid>
+      <description>LC 2 Add Two Num You are given two non-empty linked lists representing two non-negative integers. The digits are stored in reverse order and each of their nodes contain a single digit. Add the two numbers and return it as a linked list. You may assume the two numbers do not contain any leading zero, except the number 0 itself. Example: Input: (2 -&amp;gt; 4 -&amp;gt; 3) + (5 -&amp;gt;</description>
+    </item>
+    
+    <item>
+      <title>169 Majority Element</title>
+      <link>https://foxisawesome.github.io/posts/169-majority-element/</link>
+      <pubDate>Fri, 24 Apr 2020 13:06:24 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/169-majority-element/</guid>
+      <description>LC 169 Majority Element Given an array of size n, find the majority element. The majority element is the element that appears more than ⌊ n/2 ⌋ times. You may assume that the array is non-empty and the majority element always exist in the array. Solution 2020-09-24 Notes: 这道题有很多种方法做。 hash table做法。 class Solution:</description>
+    </item>
+    
+    <item>
+      <title>204 Count Primes</title>
+      <link>https://foxisawesome.github.io/posts/204-count-primes/</link>
+      <pubDate>Sun, 12 Apr 2020 21:33:18 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/204-count-primes/</guid>
+      <description>LC 204 Count Primes   Count the number of prime numbers less than a non-negative number, **n**.
+ Solution 2020-09-12 Notes:   In mathematics, the sieve of Eratosthenes is an ancient algorithm for finding all prime numbers up to any given limit.
+  class Solution: def countPrimes(self, n: int) -&amp;gt; int: if n &amp;lt; 2: return 0 grid = [1] * n grid[0] = 0 grid[1] = 0 for i in range(2,int(n**0.</description>
+    </item>
     
     <item>
       <title>69 Sqrtx</title>

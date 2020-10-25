@@ -5,10 +5,66 @@
     <link>https://foxisawesome.github.io/categories/</link>
     <description>Recent content in Categories on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 22 Oct 2020 10:50:21 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2020 20:14:32 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>586 Customer Placing the Largest Number of Orders</title>
+      <link>https://foxisawesome.github.io/sql/586-customer-placing-the-largest-number-of-orders/</link>
+      <pubDate>Sat, 24 Oct 2020 20:14:32 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/586-customer-placing-the-largest-number-of-orders/</guid>
+      <description>LC 586 Customer Placing the Largest Number of Orders Query the customer_number from the *orders* table for the customer who has placed the largest number of orders. It is guaranteed that exactly one customer will have placed more orders than any other customer. Solution 2020-10-24 Notes: 秒了 select customer_number from (select customer_number, count(order_number) as ct from orders group by 1 order by ct desc) a limit 1</description>
+    </item>
+    
+    <item>
+      <title>580 Count Student Number in Departments</title>
+      <link>https://foxisawesome.github.io/sql/580-count-student-number-in-departments/</link>
+      <pubDate>Sat, 24 Oct 2020 20:11:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/580-count-student-number-in-departments/</guid>
+      <description>LC 580 Count Student Number in Departments Write a query to print the respective department name and number of students majoring in each department for all departments in the department table (even ones with no current students). Sort your results by descending number of students; if two or more departments have the same number of students, then sort those departments alphabetically by department name. *student* table: | student_id | student_name</description>
+    </item>
+    
+    <item>
+      <title>578 Get Highest Answer Rate Question</title>
+      <link>https://foxisawesome.github.io/sql/578-get-highest-answer-rate-question/</link>
+      <pubDate>Sat, 24 Oct 2020 20:07:05 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/578-get-highest-answer-rate-question/</guid>
+      <description>LC 578 Get Highest Answer Rate Question   Get the highest answer rate question from a table survey_log with these columns: id, action, question_id, answer_id, q_num, timestamp.
+id means user id; action has these kind of values: &amp;ldquo;show&amp;rdquo;, &amp;ldquo;answer&amp;rdquo;, &amp;ldquo;skip&amp;rdquo;; answer_id is not null when action column is &amp;ldquo;answer&amp;rdquo;, while is null for &amp;ldquo;show&amp;rdquo; and &amp;ldquo;skip&amp;rdquo;; q_num is the numeral order of the question in current session.
+Write a sql query to identify the question which has the highest answer rate.</description>
+    </item>
+    
+    <item>
+      <title>570 Managers With at Least 5 Direct Reports</title>
+      <link>https://foxisawesome.github.io/sql/570-managers-with-at-least-5-direct-reports/</link>
+      <pubDate>Sat, 24 Oct 2020 19:50:25 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/570-managers-with-at-least-5-direct-reports/</guid>
+      <description>LC 570 Managers With at Least 5 Direct Reports The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id. +------+----------+-----------+----------+ |Id |Name |Department |ManagerId | +------+----------+-----------+----------+ |101 |John |A |null | |102 |Dan |A |101 | |103 |James |A |101 | |104 |Amy |A |101 | |105 |Anne |A |101 | |106 |Ron |B |101 |</description>
+    </item>
+    
+    <item>
+      <title>550 Game Play Analysis Iv</title>
+      <link>https://foxisawesome.github.io/sql/550-game-play-analysis-iv/</link>
+      <pubDate>Sat, 24 Oct 2020 19:46:40 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/550-game-play-analysis-iv/</guid>
+      <description>LC 550 Game Play Analysis Iv Write an SQL query that reports the fraction of players that logged in again on the day after the day they first logged in, rounded to 2 decimal places. In other words, you need to count the number of players that logged in for at least two consecutive days starting from their first login date, then divide that number by the total number of</description>
+    </item>
+    
+    <item>
+      <title>511 Game Play Analysis I</title>
+      <link>https://foxisawesome.github.io/sql/511-game-play-analysis-i/</link>
+      <pubDate>Sat, 24 Oct 2020 19:38:18 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/511-game-play-analysis-i/</guid>
+      <description>LC 511 Game Play Analysis I Write an SQL query that reports the first login date for each player. The query result format is in the following example: Activity table: +-----------+-----------+------------+--------------+ | player_id | device_id | event_date | games_played | +-----------+-----------+------------+--------------+ | 1 | 2 | 2016-03-01 | 5 | | 1 | 2 | 2016-05-02 | 6 | | 2 | 3 | 2017-06-25 | 1 | | 3</description>
+    </item>
     
     <item>
       <title>1501 Countries You Can Safely Invest In</title>
@@ -138,65 +194,6 @@ Input: ransomNote = &amp;quot;a&amp;quot;, magazine = &amp;quot;b&amp;quot; Outp
       
       <guid>https://foxisawesome.github.io/posts/1167-minimum-cost-to-connect-sticks/</guid>
       <description>LC 1167 Minimum Cost to Connect Sticks You have some number of sticks with positive integer lengths. These lengths are given as an array sticks, where sticks[i] is the length of the ith stick. You can connect any two sticks of lengths x and y into one stick by paying a cost of x + y. You must connect all the sticks until there is only one stick remaining. Return</description>
-    </item>
-    
-    <item>
-      <title>1083 Sales Analysis II</title>
-      <link>https://foxisawesome.github.io/sql/1083-sales-analysis-ii/</link>
-      <pubDate>Mon, 19 Oct 2020 15:30:49 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1083-sales-analysis-ii/</guid>
-      <description>LC 1083 Sales Analysis II Write an SQL query that reports the buyers who have bought S8 but not iPhone. Note that S8 and iPhone are products present in the Product table. The query result format is in the following example: Product table: +------------+--------------+------------+ | product_id | product_name | unit_price | +------------+--------------+------------+ | 1 | S8 | 1000 | | 2 | G4 | 800 | | 3 | iPhone</description>
-    </item>
-    
-    <item>
-      <title>1495 Friendly Movies Streamed Last Month</title>
-      <link>https://foxisawesome.github.io/sql/1495-friendly-movies-streamed-last-month/</link>
-      <pubDate>Mon, 19 Oct 2020 15:22:26 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1495-friendly-movies-streamed-last-month/</guid>
-      <description>LC 1495 Friendly Movies Streamed Last Month   Write an SQL query to report the distinct titles of the kid-friendly movies streamed in June 2020.
-Return the result table in any order.
- Solution 2020-10-19 Notes: select distinct title from content a join TVProgram b on a.content_id = b.content_id where a.kids_content = &#39;Y&#39; and a.content_type = &#39;Movies&#39; and month(b.program_date) = 6  </description>
-    </item>
-    
-    <item>
-      <title>1076 Project Employees II</title>
-      <link>https://foxisawesome.github.io/sql/1076-project-employees-ii/</link>
-      <pubDate>Mon, 19 Oct 2020 15:19:45 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1076-project-employees-ii/</guid>
-      <description>LC 1076 Project Employees II Write an SQL query that reports all the projects that have the most employees. The query result format is in the following example: Project table: +-------------+-------------+ | project_id | employee_id | +-------------+-------------+ | 1 | 1 | | 1 | 2 | | 1 | 3 | | 2 | 1 | | 2 | 4 | +-------------+-------------+ Result table: +-------------+ | project_id | +-------------+</description>
-    </item>
-    
-    <item>
-      <title>619 Biggest Single Number</title>
-      <link>https://foxisawesome.github.io/sql/619-biggest-single-number/</link>
-      <pubDate>Mon, 19 Oct 2020 15:04:59 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/619-biggest-single-number/</guid>
-      <description>LC 619 Biggest Single Number   Table my_numbers contains many numbers in column num including duplicated ones. Can you write a SQL query to find the biggest number, which only appears once
- Solution 2020-10-19 Notes: # 1 SELECT MAX(a.num) AS num FROM ( SELECT num FROM my_numbers GROUP BY num HAVING COUNT(num) = 1 ) a #2 SELECT MAX(num) AS num FROM ( SELECT *, COUNT(*) OVER(PARTITION BY num) AS ct FROM my_numbers ) a WHERE ct = 1  </description>
-    </item>
-    
-    <item>
-      <title>196 Delete Duplicate Emails</title>
-      <link>https://foxisawesome.github.io/sql/196-delete-duplicate-emails/</link>
-      <pubDate>Mon, 19 Oct 2020 14:53:47 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/196-delete-duplicate-emails/</guid>
-      <description>LC 196 Delete Duplicate Emails   Write a SQL query to delete all duplicate email entries in a table named Person, keeping only unique emails based on its smallest Id.
-+----+------------------+ | Id | Email | +----+------------------+ | 1 | john@example.com | | 2 | bob@example.com | | 3 | john@example.com | +----+------------------+ Id is the primary key column for this table.  For example, after running your query, the above Person table should have the following rows:</description>
-    </item>
-    
-    <item>
-      <title>597 Friend Requests I Overall Acceptance Rate</title>
-      <link>https://foxisawesome.github.io/sql/597-friend-requests-i-overall-acceptance-rate/</link>
-      <pubDate>Mon, 19 Oct 2020 14:49:05 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/597-friend-requests-i-overall-acceptance-rate/</guid>
-      <description>LC 597 Friend Requests I Overall Acceptance Rate   Write a query to find the overall acceptance rate of requests rounded to 2 decimals, which is the number of acceptance divide the number of requests.
- Solution 2020-10-19 Notes: SELECT round(ifnull( (select count(*) from (select distinct requester_id, accepter_id from request_accepted) a) / (select count(*) from (select distinct sender_id, send_to_id from friend_request) b) ,0),2) as accept_rate  </description>
     </item>
     
   </channel>

@@ -5,10 +5,64 @@
     <link>https://foxisawesome.github.io/tags/</link>
     <description>Recent content in Tags on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 22 Oct 2020 10:50:21 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2020 20:14:32 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>723 Candy Crush</title>
+      <link>https://foxisawesome.github.io/posts/723-candy-crush/</link>
+      <pubDate>Sun, 18 Oct 2020 19:33:47 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/723-candy-crush/</guid>
+      <description>LC 723 Candy Crush This question is about implementing a basic elimination algorithm for Candy Crush. Given a 2D integer array board representing the grid of candy, different positive integers board[i][j] represent different types of candies. A value of board[i][j] = 0 represents that the cell at position (i, j) is empty. The given board represents the state of the game following the player&amp;rsquo;s move. Now, you need to restore</description>
+    </item>
+    
+    <item>
+      <title>1470 Shuffle the Array</title>
+      <link>https://foxisawesome.github.io/posts/1470-shuffle-the-array/</link>
+      <pubDate>Sun, 18 Oct 2020 15:22:00 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1470-shuffle-the-array/</guid>
+      <description>LC 1470 Shuffle the Array Given the array nums consisting of 2n elements in the form [x1,x2,...,xn,y1,y2,...,yn]. Return the array in the form [x1,y1,x2,y2,...,xn,yn]. Solution 2020-10-18 Notes: 不能这么写 [i,j for i, j in zip(nums[:n],nums[n:])] class Solution: def shuffle(self, nums: List[int], n: int) -&amp;gt; List[int]: ans = [] for i, j in zip(nums[:n], nums[n:]): ans += [i] + [j] return ans # Time O(N) # Space O(N)</description>
+    </item>
+    
+    <item>
+      <title>1431 Kids With the Greatest Number of Candies</title>
+      <link>https://foxisawesome.github.io/posts/1431-kids-with-the-greatest-number-of-candies/</link>
+      <pubDate>Sun, 18 Oct 2020 15:12:18 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1431-kids-with-the-greatest-number-of-candies/</guid>
+      <description>LC 1431 Kids With the Greatest Number of Candies Given the array candies and the integer extraCandies, where candies[i] represents the number of candies that the *ith* kid has. For each kid check if there is a way to distribute extraCandies among the kids such that he or she can have the greatest number of candies among them. Notice that multiple kids can have the greatest number of candies. Input:</description>
+    </item>
+    
+    <item>
+      <title>1480 Running Sum of 1d Array</title>
+      <link>https://foxisawesome.github.io/posts/1480-running-sum-of-1d-array/</link>
+      <pubDate>Sun, 18 Oct 2020 15:05:05 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1480-running-sum-of-1d-array/</guid>
+      <description>LC 1480 Running Sum of 1d Array Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]). Return the running sum of nums. Solution 2020-10-18 Notes: Pre-sum. 秒了 class Solution: def runningSum(self, nums: List[int]) -&amp;gt; List[int]: if not nums: return [] n =</description>
+    </item>
+    
+    <item>
+      <title>1119 Remove Vowels From a String</title>
+      <link>https://foxisawesome.github.io/posts/1119-remove-vowels-from-a-string/</link>
+      <pubDate>Sun, 18 Oct 2020 15:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1119-remove-vowels-from-a-string/</guid>
+      <description>LC 1119 Remove Vowels From a String Given a string S, remove the vowels &#39;a&#39;, &#39;e&#39;, &#39;i&#39;, &#39;o&#39;, and &#39;u&#39; from it, and return the new string. Solution 2020-10-18 Notes: 秒了 class Solution: def removeVowels(self, S: str) -&amp;gt; str: v = set([&#39;a&#39;,&#39;e&#39;,&#39;i&#39;,&#39;o&#39;,&#39;u&#39;]) ans = [] for s in S: if s not in v: ans.append(s) return &#39;&#39;.join(ans) # Time O(N) # Space O(N)</description>
+    </item>
+    
+    <item>
+      <title>1342 Number of Steps to Reduce a Number to Zero</title>
+      <link>https://foxisawesome.github.io/posts/1342-number-of-steps-to-reduce-a-number-to-zero/</link>
+      <pubDate>Sun, 18 Oct 2020 14:58:02 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1342-number-of-steps-to-reduce-a-number-to-zero/</guid>
+      <description>LC 1342 Number of Steps to Reduce a Number to Zero Given a non-negative integer num, return the number of steps to reduce it to zero. If the current number is even, you have to divide it by 2, otherwise, you have to subtract 1 from it. Input: num = 14 Output: 6 Explanation: Step 1) 14 is even; divide by 2 and obtain 7. Step 2) 7 is odd;</description>
+    </item>
     
     <item>
       <title>1141 User Activity for the Past 30 Days I</title>
@@ -145,60 +199,6 @@ Write a query to find the shortest distance between two points in these points.
       <guid>https://foxisawesome.github.io/posts/974-subarray-sums-divisible-by-k/</guid>
       <description>LC 974 Subarray Sums Divisible by K   Given an array A of integers, return the number of (contiguous, non-empty) subarrays that have a sum divisible by K.
 Input: A = [4,5,0,-2,-3,1], K = 5 Output: 7 Explanation: There are 7 subarrays with a sum divisible by K = 5: [4, 5, 0, -2, -3, 1], [5], [5, 0], [5, 0, -2, -3], [0], [0, -2, -3], [-2, -3]   Solution 2020-10-14 Notes:  About the problems - sum of contiguous subarray , prefix sum is a common technique.</description>
-    </item>
-    
-    <item>
-      <title>909 Snakes and Ladders</title>
-      <link>https://foxisawesome.github.io/posts/909-snakes-and-ladders/</link>
-      <pubDate>Wed, 14 Oct 2020 15:51:48 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/909-snakes-and-ladders/</guid>
-      <description>LC 909 Snakes and Ladders On an N x N board, the numbers from 1 to N*N are written boustrophedonically starting from the bottom left of the board, and alternating direction each row. For example, for a 6 x 6 board, the numbers are written as follows: Input: [ [-1,-1,-1,-1,-1,-1], [-1,-1,-1,-1,-1,-1], [-1,-1,-1,-1,-1,-1], [-1,35,-1,-1,13,-1], [-1,-1,-1,-1,-1,-1], [-1,15,-1,-1,-1,-1]] Output: 4 Explanation: At the beginning, you start at square 1 [at row 5, column</description>
-    </item>
-    
-    <item>
-      <title>1428 Leftmost Column With at Least a One</title>
-      <link>https://foxisawesome.github.io/posts/1428-leftmost-column-with-at-least-a-one/</link>
-      <pubDate>Tue, 13 Oct 2020 20:37:12 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1428-leftmost-column-with-at-least-a-one/</guid>
-      <description>LC 1428 Leftmost Column With at Least a One (This problem is an interactive problem.) A binary matrix means that all elements are 0 or 1. For each individual row of the matrix, this row is sorted in non-decreasing order. Given a row-sorted binary matrix binaryMatrix, return leftmost column index(0-indexed) with at least a 1 in it. If such index doesn&amp;rsquo;t exist, return -1. You can&amp;rsquo;t access the Binary Matrix</description>
-    </item>
-    
-    <item>
-      <title>1581 Customer Who Visited but Did Not Make Any Transactions</title>
-      <link>https://foxisawesome.github.io/sql/1581-customer-who-visited-but-did-not-make-any-transactions/</link>
-      <pubDate>Tue, 13 Oct 2020 20:09:03 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1581-customer-who-visited-but-did-not-make-any-transactions/</guid>
-      <description>LC 1581 Customer Who Visited but Did Not Make Any Transactions Write an SQL query to find the IDs of the users who visited without making any transactions and the number of times they made these types of visits. Return the result table sorted in any order. The query result format is in the following example: Visits +----------+-------------+ | visit_id | customer_id | +----------+-------------+ | 1 | 23 | |</description>
-    </item>
-    
-    <item>
-      <title>1613 Find the Missing Ids</title>
-      <link>https://foxisawesome.github.io/sql/1613-find-the-missing-ids/</link>
-      <pubDate>Tue, 13 Oct 2020 20:03:17 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1613-find-the-missing-ids/</guid>
-      <description>LC 1613 Find the Missing Ids Write an SQL query to find the missing customer IDs. The missing IDs are ones that are not in the Customers table but are in the range between 1 and the maximum customer_id present in the table. Notice that the maximum customer_id will not exceed 100. Return the result table ordered by ids in ascending order. The query result format is in the following</description>
-    </item>
-    
-    <item>
-      <title>1587 Bank Account Summary II</title>
-      <link>https://foxisawesome.github.io/sql/1587-bank-account-summary-ii/</link>
-      <pubDate>Tue, 13 Oct 2020 19:51:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1587-bank-account-summary-ii/</guid>
-      <description>LC 1587 Bank Account Summary II Write an SQL query to report the name and balance of users with a balance higher than 10000. The balance of an account is equal to the sum of the amounts of all transactions involving that account. Return the result table in any order. The query result format is in the following example. Users table: +------------+--------------+ | account | name | +------------+--------------+ | 900001</description>
-    </item>
-    
-    <item>
-      <title>654 Maximum Binary Tree</title>
-      <link>https://foxisawesome.github.io/posts/654-maximum-binary-tree/</link>
-      <pubDate>Tue, 13 Oct 2020 16:05:34 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/654-maximum-binary-tree/</guid>
-      <description>LC 654 Maximum Binary Tree Given an integer array with no duplicates. A maximum tree building on this array is defined as follow: The root is the maximum number in the array. The left subtree is the maximum tree constructed from left part subarray divided by the maximum number. The right subtree is the maximum tree constructed from right part subarray divided by the maximum number. Construct the maximum tree</description>
     </item>
     
   </channel>

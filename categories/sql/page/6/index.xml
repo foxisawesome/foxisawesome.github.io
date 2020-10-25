@@ -5,10 +5,70 @@
     <link>https://foxisawesome.github.io/categories/sql/</link>
     <description>Recent content in sql on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 22 Oct 2020 10:50:21 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2020 20:14:32 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/sql/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>571 Find Median Given Frequency of Numbers</title>
+      <link>https://foxisawesome.github.io/sql/571-find-median-given-frequency-of-numbers/</link>
+      <pubDate>Mon, 05 Oct 2020 20:46:24 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/571-find-median-given-frequency-of-numbers/</guid>
+      <description>LC 571 Find Median Given Frequency of Numbers The Numbers table keeps the value of number and its frequency. +----------+-------------+ | Number | Frequency | +----------+-------------| | 0 | 7 | | 1 | 1 | | 2 | 3 | | 3 | 1 | +----------+-------------+ In this table, the numbers are 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 3, so the median is (0</description>
+    </item>
+    
+    <item>
+      <title>569 Median Employee Salary</title>
+      <link>https://foxisawesome.github.io/sql/569-median-employee-salary/</link>
+      <pubDate>Mon, 05 Oct 2020 20:26:19 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/569-median-employee-salary/</guid>
+      <description>LC 569 Median Employee Salary The Employee table holds all employees. The employee table has three columns: Employee Id, Company Name, and Salary. +-----+------------+--------+ |Id | Company | Salary | +-----+------------+--------+ |1 | A | 2341 | |2 | A | 341 | |3 | A | 15 | |4 | A | 15314 | |5 | A | 451 | |6 | A | 513 | |7 | B</description>
+    </item>
+    
+    <item>
+      <title>107 Binary Tree Level Order Traversal II</title>
+      <link>https://foxisawesome.github.io/posts/107-binary-tree-level-order-traversal-ii/</link>
+      <pubDate>Mon, 05 Oct 2020 10:06:12 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/107-binary-tree-level-order-traversal-ii/</guid>
+      <description>LC 107 Binary Tree Level Order Traversal II Given a binary tree, return the bottom-up level order traversal of its nodes&#39; values. (ie, from left to right, level by level from leaf to root). For example: Given binary tree [3,9,20,null,null,15,7], 3 / \ 9 20 / \ 15 7 return its bottom-up level order traversal as: [ [15,7], [9,20], [3] ] Solution 2020-10-05 Notes: 学习了 负雪明</description>
+    </item>
+    
+    <item>
+      <title>1454 Active Users</title>
+      <link>https://foxisawesome.github.io/sql/1454-active-users/</link>
+      <pubDate>Sun, 04 Oct 2020 21:18:04 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1454-active-users/</guid>
+      <description>LC 1454 Active Users   Write an SQL query to find the id and the name of active users.
+Active users are those who logged in to their accounts for 5 or more consecutive days.
+Return the result table ordered by the id.
+The query result format is in the following example:
+Accounts table: +----+----------+ | id | name | +----+----------+ | 1 | Winston | | 7 | Jonathan | +----+----------+ Logins table: +----+------------+ | id | login_date | +----+------------+ | 7 | 2020-05-30 | | 1 | 2020-05-30 | | 7 | 2020-05-31 | | 7 | 2020-06-01 | | 7 | 2020-06-02 | | 7 | 2020-06-02 | | 7 | 2020-06-03 | | 1 | 2020-06-07 | | 7 | 2020-06-10 | +----+------------+ Result table: +----+----------+ | id | name | +----+----------+ | 7 | Jonathan | +----+----------+   Solution 2020-10-04 Notes:  consecutive 5 days: DATEDIFF(date, LEAD(date,4)) = 4  SELECT DISTINCT a.</description>
+    </item>
+    
+    <item>
+      <title>579 Find Cumulative Salary of an Employee</title>
+      <link>https://foxisawesome.github.io/sql/579-find-cumulative-salary-of-an-employee/</link>
+      <pubDate>Sun, 04 Oct 2020 21:05:57 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/579-find-cumulative-salary-of-an-employee/</guid>
+      <description>LC 579 Find Cumulative Salary of an Employee The Employee table holds the salary information in a year. Write a SQL to get the cumulative sum of an employee&amp;rsquo;s salary over a period of 3 months but exclude the most recent month. The result should be displayed by &amp;lsquo;Id&amp;rsquo; ascending, and then by &amp;lsquo;Month&amp;rsquo; descending. Example Input | Id | Month | Salary | |----|-------|--------| | 1 | 1 |</description>
+    </item>
+    
+    <item>
+      <title>1075 Project Employees I</title>
+      <link>https://foxisawesome.github.io/sql/1075-project-employees-i/</link>
+      <pubDate>Sun, 04 Oct 2020 20:55:17 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1075-project-employees-i/</guid>
+      <description>LC 1075 Project Employees I   Write an SQL query that reports the average experience years of all the employees for each project, rounded to 2 digits.
+The query result format is in the following example:
+Project table: +-------------+-------------+ | project_id | employee_id | +-------------+-------------+ | 1 | 1 | | 1 | 2 | | 1 | 3 | | 2 | 1 | | 2 | 4 | +-------------+-------------+ Employee table: +-------------+--------+------------------+ | employee_id | name | experience_years | +-------------+--------+------------------+ | 1 | Khaled | 3 | | 2 | Ali | 2 | | 3 | John | 1 | | 4 | Doe | 2 | +-------------+--------+------------------+ Result table: +-------------+---------------+ | project_id | average_years | +-------------+---------------+ | 1 | 2.</description>
+    </item>
     
     <item>
       <title>620 Not Boring Movies</title>
@@ -138,60 +198,6 @@ Warehouse table: +------------+--------------+-------------+ | name | product_id
       
       <guid>https://foxisawesome.github.io/sql/1164-product-price-at-a-given-date/</guid>
       <description>LC 1164 Product Price at a Given Date Write an SQL query to find the prices of all products on 2019-08-16. Assume the price of all products before any change is 10. The query result format is in the following example: Products table: +------------+-----------+-------------+ | product_id | new_price | change_date | +------------+-----------+-------------+ | 1 | 20 | 2019-08-14 | | 2 | 50 | 2019-08-14 | | 1 | 30</description>
-    </item>
-    
-    <item>
-      <title>161 One Edit Distance</title>
-      <link>https://foxisawesome.github.io/posts/161-one-edit-distance/</link>
-      <pubDate>Fri, 02 Oct 2020 14:14:19 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/161-one-edit-distance/</guid>
-      <description>LC 161 One Edit Distance Given two strings s and t, return true if they are both one edit distance apart, otherwise return false. A string s is said to be one distance apart from a string t if you can: Insert exactly one character into s to get t. Delete exactly one character from s to get t. Replace exactly one character of s with a different character to</description>
-    </item>
-    
-    <item>
-      <title>168 Excel Sheet Column Title</title>
-      <link>https://foxisawesome.github.io/posts/168-excel-sheet-column-title/</link>
-      <pubDate>Fri, 02 Oct 2020 13:52:16 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/168-excel-sheet-column-title/</guid>
-      <description>LC 168 Excel Sheet Column Title Given a positive integer, return its corresponding column title as appear in an Excel sheet. For example: 1 -&amp;gt; A 2 -&amp;gt; B 3 -&amp;gt; C ... 26 -&amp;gt; Z 27 -&amp;gt; AA 28 -&amp;gt; AB ... Input: 28 Output: &amp;quot;AB&amp;quot; Solution 2020-10-02 Notes: dict应该 0-indexed，然后di</description>
-    </item>
-    
-    <item>
-      <title>724 Find Pivot Index</title>
-      <link>https://foxisawesome.github.io/posts/724-find-pivot-index/</link>
-      <pubDate>Fri, 02 Oct 2020 13:38:14 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/724-find-pivot-index/</guid>
-      <description>LC 724 Find Pivot Index Given an array of integers nums, write a method that returns the &amp;ldquo;pivot&amp;rdquo; index of this array. We define the pivot index as the index where the sum of all the numbers to the left of the index is equal to the sum of all the numbers to the right of the index. If no such index exists, we should return -1. If there are</description>
-    </item>
-    
-    <item>
-      <title>240 Search a 2d Matrix II</title>
-      <link>https://foxisawesome.github.io/posts/240-search-a-2d-matrix-ii/</link>
-      <pubDate>Fri, 02 Oct 2020 13:14:19 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/240-search-a-2d-matrix-ii/</guid>
-      <description>LC 240 Search a 2d Matrix II Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties: Integers in each row are sorted in ascending from left to right. Integers in each column are sorted in ascending from top to bottom. Consider the following matrix: [ [1, 4, 7, 11, 15], [2, 5, 8, 12, 19], [3, 6, 9,</description>
-    </item>
-    
-    <item>
-      <title>905 Sort Array by Parity</title>
-      <link>https://foxisawesome.github.io/posts/905-sort-array-by-parity/</link>
-      <pubDate>Fri, 02 Oct 2020 12:54:30 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/905-sort-array-by-parity/</guid>
-      <description>LC 905 Sort Array by Parity Given an array A of non-negative integers, return an array consisting of all the even elements of A, followed by all the odd elements of A. You may return any answer array that satisfies this condition. Input: [3,1,2,4] Output: [2,4,3,1] The outputs [4,2,3,1], [2,4,1,3], and [4,2,1,3] would also be accepted. Solution 2020-10-02 Notes: 这题和 remove duplicate from array 一回事。</description>
-    </item>
-    
-    <item>
-      <title>1213 Intersection of Three Sorted Arrays</title>
-      <link>https://foxisawesome.github.io/posts/1213-intersection-of-three-sorted-arrays/</link>
-      <pubDate>Fri, 02 Oct 2020 12:46:42 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1213-intersection-of-three-sorted-arrays/</guid>
-      <description>LC 1213 Intersection of Three Sorted Arrays Given three integer arrays arr1, arr2 and arr3 sorted in strictly increasing order, return a sorted array of only the integers that appeared in all three arrays. Input: arr1 = [1,2,3,4,5], arr2 = [1,2,5,7,9], arr3 = [1,3,4,5,8] Output: [1,5] Explanation: Only 1 and 5 appeared in the three arrays. Solution 2020-10-02 Notes: 建一个 helper function 找两个arr</description>
     </item>
     
   </channel>

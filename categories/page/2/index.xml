@@ -5,10 +5,69 @@
     <link>https://foxisawesome.github.io/categories/</link>
     <description>Recent content in Categories on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 22 Oct 2020 10:50:21 -0400</lastBuildDate>
+    <lastBuildDate>Sat, 24 Oct 2020 20:14:32 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1083 Sales Analysis II</title>
+      <link>https://foxisawesome.github.io/sql/1083-sales-analysis-ii/</link>
+      <pubDate>Mon, 19 Oct 2020 15:30:49 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1083-sales-analysis-ii/</guid>
+      <description>LC 1083 Sales Analysis II Write an SQL query that reports the buyers who have bought S8 but not iPhone. Note that S8 and iPhone are products present in the Product table. The query result format is in the following example: Product table: +------------+--------------+------------+ | product_id | product_name | unit_price | +------------+--------------+------------+ | 1 | S8 | 1000 | | 2 | G4 | 800 | | 3 | iPhone</description>
+    </item>
+    
+    <item>
+      <title>1495 Friendly Movies Streamed Last Month</title>
+      <link>https://foxisawesome.github.io/sql/1495-friendly-movies-streamed-last-month/</link>
+      <pubDate>Mon, 19 Oct 2020 15:22:26 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1495-friendly-movies-streamed-last-month/</guid>
+      <description>LC 1495 Friendly Movies Streamed Last Month   Write an SQL query to report the distinct titles of the kid-friendly movies streamed in June 2020.
+Return the result table in any order.
+ Solution 2020-10-19 Notes: select distinct title from content a join TVProgram b on a.content_id = b.content_id where a.kids_content = &#39;Y&#39; and a.content_type = &#39;Movies&#39; and month(b.program_date) = 6  </description>
+    </item>
+    
+    <item>
+      <title>1076 Project Employees II</title>
+      <link>https://foxisawesome.github.io/sql/1076-project-employees-ii/</link>
+      <pubDate>Mon, 19 Oct 2020 15:19:45 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1076-project-employees-ii/</guid>
+      <description>LC 1076 Project Employees II Write an SQL query that reports all the projects that have the most employees. The query result format is in the following example: Project table: +-------------+-------------+ | project_id | employee_id | +-------------+-------------+ | 1 | 1 | | 1 | 2 | | 1 | 3 | | 2 | 1 | | 2 | 4 | +-------------+-------------+ Result table: +-------------+ | project_id | +-------------+</description>
+    </item>
+    
+    <item>
+      <title>619 Biggest Single Number</title>
+      <link>https://foxisawesome.github.io/sql/619-biggest-single-number/</link>
+      <pubDate>Mon, 19 Oct 2020 15:04:59 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/619-biggest-single-number/</guid>
+      <description>LC 619 Biggest Single Number   Table my_numbers contains many numbers in column num including duplicated ones. Can you write a SQL query to find the biggest number, which only appears once
+ Solution 2020-10-19 Notes: # 1 SELECT MAX(a.num) AS num FROM ( SELECT num FROM my_numbers GROUP BY num HAVING COUNT(num) = 1 ) a #2 SELECT MAX(num) AS num FROM ( SELECT *, COUNT(*) OVER(PARTITION BY num) AS ct FROM my_numbers ) a WHERE ct = 1  </description>
+    </item>
+    
+    <item>
+      <title>196 Delete Duplicate Emails</title>
+      <link>https://foxisawesome.github.io/sql/196-delete-duplicate-emails/</link>
+      <pubDate>Mon, 19 Oct 2020 14:53:47 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/196-delete-duplicate-emails/</guid>
+      <description>LC 196 Delete Duplicate Emails   Write a SQL query to delete all duplicate email entries in a table named Person, keeping only unique emails based on its smallest Id.
++----+------------------+ | Id | Email | +----+------------------+ | 1 | john@example.com | | 2 | bob@example.com | | 3 | john@example.com | +----+------------------+ Id is the primary key column for this table.  For example, after running your query, the above Person table should have the following rows:</description>
+    </item>
+    
+    <item>
+      <title>597 Friend Requests I Overall Acceptance Rate</title>
+      <link>https://foxisawesome.github.io/sql/597-friend-requests-i-overall-acceptance-rate/</link>
+      <pubDate>Mon, 19 Oct 2020 14:49:05 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/597-friend-requests-i-overall-acceptance-rate/</guid>
+      <description>LC 597 Friend Requests I Overall Acceptance Rate   Write a query to find the overall acceptance rate of requests rounded to 2 decimals, which is the number of acceptance divide the number of requests.
+ Solution 2020-10-19 Notes: SELECT round(ifnull( (select count(*) from (select distinct requester_id, accepter_id from request_accepted) a) / (select count(*) from (select distinct sender_id, send_to_id from friend_request) b) ,0),2) as accept_rate  </description>
+    </item>
     
     <item>
       <title>584 Find Customer Referee</title>
@@ -135,60 +194,6 @@
       
       <guid>https://foxisawesome.github.io/posts/361-bomb-enemy/</guid>
       <description>LC 361 Bomb Enemy   Given a 2D grid, each cell is either a wall &#39;W&#39;, an enemy &#39;E&#39; or empty &#39;0&#39; (the number zero), return the maximum enemies you can kill using one bomb. The bomb kills all the enemies in the same row and column from the planted point until it hits the wall since the wall is too strong to be destroyed. Note: You can only put the bomb at an empty cell.</description>
-    </item>
-    
-    <item>
-      <title>723 Candy Crush</title>
-      <link>https://foxisawesome.github.io/posts/723-candy-crush/</link>
-      <pubDate>Sun, 18 Oct 2020 19:33:47 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/723-candy-crush/</guid>
-      <description>LC 723 Candy Crush This question is about implementing a basic elimination algorithm for Candy Crush. Given a 2D integer array board representing the grid of candy, different positive integers board[i][j] represent different types of candies. A value of board[i][j] = 0 represents that the cell at position (i, j) is empty. The given board represents the state of the game following the player&amp;rsquo;s move. Now, you need to restore</description>
-    </item>
-    
-    <item>
-      <title>1470 Shuffle the Array</title>
-      <link>https://foxisawesome.github.io/posts/1470-shuffle-the-array/</link>
-      <pubDate>Sun, 18 Oct 2020 15:22:00 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1470-shuffle-the-array/</guid>
-      <description>LC 1470 Shuffle the Array Given the array nums consisting of 2n elements in the form [x1,x2,...,xn,y1,y2,...,yn]. Return the array in the form [x1,y1,x2,y2,...,xn,yn]. Solution 2020-10-18 Notes: 不能这么写 [i,j for i, j in zip(nums[:n],nums[n:])] class Solution: def shuffle(self, nums: List[int], n: int) -&amp;gt; List[int]: ans = [] for i, j in zip(nums[:n], nums[n:]): ans += [i] + [j] return ans # Time O(N) # Space O(N)</description>
-    </item>
-    
-    <item>
-      <title>1431 Kids With the Greatest Number of Candies</title>
-      <link>https://foxisawesome.github.io/posts/1431-kids-with-the-greatest-number-of-candies/</link>
-      <pubDate>Sun, 18 Oct 2020 15:12:18 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1431-kids-with-the-greatest-number-of-candies/</guid>
-      <description>LC 1431 Kids With the Greatest Number of Candies Given the array candies and the integer extraCandies, where candies[i] represents the number of candies that the *ith* kid has. For each kid check if there is a way to distribute extraCandies among the kids such that he or she can have the greatest number of candies among them. Notice that multiple kids can have the greatest number of candies. Input:</description>
-    </item>
-    
-    <item>
-      <title>1480 Running Sum of 1d Array</title>
-      <link>https://foxisawesome.github.io/posts/1480-running-sum-of-1d-array/</link>
-      <pubDate>Sun, 18 Oct 2020 15:05:05 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1480-running-sum-of-1d-array/</guid>
-      <description>LC 1480 Running Sum of 1d Array Given an array nums. We define a running sum of an array as runningSum[i] = sum(nums[0]…nums[i]). Return the running sum of nums. Solution 2020-10-18 Notes: Pre-sum. 秒了 class Solution: def runningSum(self, nums: List[int]) -&amp;gt; List[int]: if not nums: return [] n =</description>
-    </item>
-    
-    <item>
-      <title>1119 Remove Vowels From a String</title>
-      <link>https://foxisawesome.github.io/posts/1119-remove-vowels-from-a-string/</link>
-      <pubDate>Sun, 18 Oct 2020 15:01:30 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1119-remove-vowels-from-a-string/</guid>
-      <description>LC 1119 Remove Vowels From a String Given a string S, remove the vowels &#39;a&#39;, &#39;e&#39;, &#39;i&#39;, &#39;o&#39;, and &#39;u&#39; from it, and return the new string. Solution 2020-10-18 Notes: 秒了 class Solution: def removeVowels(self, S: str) -&amp;gt; str: v = set([&#39;a&#39;,&#39;e&#39;,&#39;i&#39;,&#39;o&#39;,&#39;u&#39;]) ans = [] for s in S: if s not in v: ans.append(s) return &#39;&#39;.join(ans) # Time O(N) # Space O(N)</description>
-    </item>
-    
-    <item>
-      <title>1342 Number of Steps to Reduce a Number to Zero</title>
-      <link>https://foxisawesome.github.io/posts/1342-number-of-steps-to-reduce-a-number-to-zero/</link>
-      <pubDate>Sun, 18 Oct 2020 14:58:02 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1342-number-of-steps-to-reduce-a-number-to-zero/</guid>
-      <description>LC 1342 Number of Steps to Reduce a Number to Zero Given a non-negative integer num, return the number of steps to reduce it to zero. If the current number is even, you have to divide it by 2, otherwise, you have to subtract 1 from it. Input: num = 14 Output: 6 Explanation: Step 1) 14 is even; divide by 2 and obtain 7. Step 2) 7 is odd;</description>
     </item>
     
   </channel>
