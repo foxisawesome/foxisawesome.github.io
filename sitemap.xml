@@ -3,49 +3,91 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://foxisawesome.github.io/sql/586-customer-placing-the-largest-number-of-orders/</loc>
-    <lastmod>2020-10-24T20:14:32-04:00</lastmod>
+    <loc>https://foxisawesome.github.io/sql/601-human-traffic-of-stadium/</loc>
+    <lastmod>2020-10-27T15:47:32-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/categories/</loc>
-    <lastmod>2020-10-24T20:14:32-04:00</lastmod>
+    <lastmod>2020-10-27T15:47:32-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/tags/leetcode/</loc>
-    <lastmod>2020-10-24T20:14:32-04:00</lastmod>
+    <lastmod>2020-10-27T15:47:32-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/</loc>
-    <lastmod>2020-10-24T20:14:32-04:00</lastmod>
+    <lastmod>2020-10-27T15:47:32-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/categories/sql/</loc>
-    <lastmod>2020-10-24T20:14:32-04:00</lastmod>
+    <lastmod>2020-10-27T15:47:32-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/sql/</loc>
-    <lastmod>2020-10-24T20:14:32-04:00</lastmod>
+    <lastmod>2020-10-27T15:47:32-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
     <loc>https://foxisawesome.github.io/tags/</loc>
+    <lastmod>2020-10-27T15:47:32-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/sql/614-second-degree-follower/</loc>
+    <lastmod>2020-10-25T14:53:46-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/sql/608-tree-node/</loc>
+    <lastmod>2020-10-25T14:50:31-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/tags/dia_sql/</loc>
+    <lastmod>2020-10-25T14:50:31-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/sql/610-triangle-judgement/</loc>
+    <lastmod>2020-10-25T10:02:33-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/sql/612-shortest-distance-in-a-plane/</loc>
+    <lastmod>2020-10-25T10:00:41-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/sql/586-customer-placing-the-largest-number-of-orders/</loc>
     <lastmod>2020-10-24T20:14:32-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -88,13 +130,6 @@
   
   <url>
     <loc>https://foxisawesome.github.io/sql/1501-countries-you-can-safely-invest-in/</loc>
-    <lastmod>2020-10-22T10:50:21-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/tags/dia_sql/</loc>
     <lastmod>2020-10-22T10:50:21-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

@@ -5,10 +5,56 @@
     <link>https://foxisawesome.github.io/sql/</link>
     <description>Recent content in Sqls on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sat, 24 Oct 2020 20:14:32 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 27 Oct 2020 15:47:32 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/sql/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>75 Sort Colors</title>
+      <link>https://foxisawesome.github.io/posts/75-sort-colors/</link>
+      <pubDate>Fri, 25 Sep 2020 10:27:10 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/75-sort-colors/</guid>
+      <description>LC 75 Sort Colors Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue. Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively. Follow up: Could you solve this problem without using the library&amp;rsquo;s sort function?</description>
+    </item>
+    
+    <item>
+      <title>181 Employees Earning More Than Their Managers</title>
+      <link>https://foxisawesome.github.io/sql/181-employees-earning-more-than-their-managers/</link>
+      <pubDate>Thu, 24 Sep 2020 21:57:09 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/181-employees-earning-more-than-their-managers/</guid>
+      <description>LC 181 Employees Earning More Than Their Managers   Given the Employee table, write a SQL query that finds out employees who earn more than their managers. For the above table, Joe is the only employee who earns more than his manager.
+ Solution 2020-09-24 Notes: SELECT name AS employee FROM ( SELECT a.name, a.salary, a.managerId, b.salary AS mg_sal FROM employee a JOIN employee b ON a.managerID = b.ID ) c WHERE salary &amp;gt; mg_sal  </description>
+    </item>
+    
+    <item>
+      <title>180 Consecutive Numbers</title>
+      <link>https://foxisawesome.github.io/sql/180-consecutive-numbers/</link>
+      <pubDate>Thu, 24 Sep 2020 21:41:16 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/180-consecutive-numbers/</guid>
+      <description>LC 180 Consecutive Numbers Write a SQL query to find all numbers that appear at least three times consecutively. Solution 2020-09-24 Notes: self join 的写法 SELECT DISTINCT a.num AS ConsecutiveNums FROM logs a JOIN logs b ON a.id+1 = b.id AND a.num=b.num JOIN logs c ON a.id+2 = c.id AND a.num=c.num LEAD() function 的写法： SELECT DISTINCT num AS consecutiveNums FROM ( SELECT id, num, LEAD(num,1)</description>
+    </item>
+    
+    <item>
+      <title>177 Nth Highest Salary</title>
+      <link>https://foxisawesome.github.io/sql/177-nth-highest-salary/</link>
+      <pubDate>Thu, 24 Sep 2020 21:16:18 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/177-nth-highest-salary/</guid>
+      <description>LC 177 Nth Highest Salary Write a SQL query to get the nth highest salary from the Employee table. Solution 2020-09-24 Notes: 这个sql function 的写法得背下来。不过也没什么难的。 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT BEGIN DECLARE m int; SET m = n-1; RETURN ( SELECT salary FROM employee GROUP BY 1 ORDER by</description>
+    </item>
+    
+    <item>
+      <title>875 Koko Eating Bananas</title>
+      <link>https://foxisawesome.github.io/posts/875-koko-eating-bananas/</link>
+      <pubDate>Thu, 24 Sep 2020 13:51:49 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/875-koko-eating-bananas/</guid>
+      <description>LC 875 Koko Eating Bananas Koko loves to eat bananas. There are N piles of bananas, the i-th pile has piles[i] bananas. The guards have gone and will come back in H hours. Koko can decide her bananas-per-hour eating speed of K. Each hour, she chooses some pile of bananas, and eats K bananas from that pile. If the pile has less than K bananas, she eats all of them</description>
+    </item>
     
     <item>
       <title>774 Minimize Max Distance to Gas Station</title>
@@ -143,51 +189,6 @@
       
       <guid>https://foxisawesome.github.io/posts/35-search-insert-position/</guid>
       <description>LC 35 Search Insert Position Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order. Solution 2020-09-23 Notes: 标准的left bound 的binary search 写法。 初秋的夜晚很舒服。 class Solution: def</description>
-    </item>
-    
-    <item>
-      <title>134 Gas Station</title>
-      <link>https://foxisawesome.github.io/posts/134-gas-station/</link>
-      <pubDate>Wed, 23 Sep 2020 15:14:28 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/134-gas-station/</guid>
-      <description>LC 134 Gas Station There are N gas stations along a circular route, where the amount of gas at station i is gas[i]. You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from station i to its next station (i+1). You begin the journey with an empty tank at one of the gas stations. Return the starting gas station&amp;rsquo;s index if you</description>
-    </item>
-    
-    <item>
-      <title>103 Binary Tree Zigzag Level Order Traversal</title>
-      <link>https://foxisawesome.github.io/posts/103-binary-tree-zigzag-level-order-traversal/</link>
-      <pubDate>Wed, 23 Sep 2020 14:58:07 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/103-binary-tree-zigzag-level-order-traversal/</guid>
-      <description>LC 103 Binary Tree Zigzag Level Order Traversal Given a binary tree, return the zigzag level order traversal of its nodes&#39; values. (ie, from left to right, then right to left for the next level and alternate between). For example: Given binary tree [3,9,20,null,null,15,7], 3 / \ 9 20 / \ 15 7 return its zigzag level order traversal as: [ [3], [20,9], [15,7] ] Solution 2020-09-23 Notes: 一个</description>
-    </item>
-    
-    <item>
-      <title>1283 Find the Smallest Divisor Given a Threshold</title>
-      <link>https://foxisawesome.github.io/posts/1283-find-the-smallest-divisor-given-a-threshold/</link>
-      <pubDate>Wed, 23 Sep 2020 14:22:33 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1283-find-the-smallest-divisor-given-a-threshold/</guid>
-      <description>LC 1283 Find the Smallest Divisor Given a Threshold a positive integer divisor and divide all the array by it and sum the result of the division. Find the smallest divisor such that the result mentioned above is less than or equal to threshold. Input: nums = [1,2,5,9], threshold = 6 Output: 5 Explanation: We can get a sum to 17 (1+2+5+9) if the divisor is 1. If the divisor</description>
-    </item>
-    
-    <item>
-      <title>179 Largest Number</title>
-      <link>https://foxisawesome.github.io/posts/179-largest-number/</link>
-      <pubDate>Wed, 23 Sep 2020 11:12:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/179-largest-number/</guid>
-      <description>LC 179 Largest Number Given a list of non negative integers, arrange them such that they form the largest number. Input: [3,30,34,5,9] Output: &amp;quot;9534330&amp;quot; Solution 2020-09-23 Notes: 开始的时候想复杂了，想着先比较第一位，要是第一位相同，再比较第二位，e.g. 5 &amp;amp; 54, 下一</description>
-    </item>
-    
-    <item>
-      <title>518 Coin Change 2</title>
-      <link>https://foxisawesome.github.io/posts/518-coin-change-2/</link>
-      <pubDate>Wed, 23 Sep 2020 10:32:12 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/518-coin-change-2/</guid>
-      <description>LC 518 Coin Change 2 You are given coins of different denominations and a total amount of money. Write a function to compute the number of combinations that make up that amount. You may assume that you have infinite number of each kind of coin. Input: amount = 5, coins = [1, 2, 5] Output: 4 Explanation: there are four ways to make up the amount: 5=5 5=2+2+1 5=2+1+1+1 5=1+1+1+1+1</description>
     </item>
     
   </channel>
