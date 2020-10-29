@@ -33,7 +33,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://foxisawesome.github.io/" />
-<meta property="og:updated_time" content="2020-10-27T15:47:32-04:00" />
+<meta property="og:updated_time" content="2020-10-29T10:21:21-04:00" />
 <meta itemprop="name" content="Q. Weng">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -141,7 +141,7 @@
         <ul class="category-list">
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">230</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">6</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">98</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">103</span></li>
         </ul>
     </div>
 </div>
@@ -180,7 +180,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia_sql/" class="tag-list-link">dia_sql</a><span
-                    class="tag-list-count">17</span></li>
+                    class="tag-list-count">18</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dp/" class="tag-list-link">dp</a><span
@@ -204,7 +204,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">324</span></li>
+                    class="tag-list-count">329</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -283,23 +283,20 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/148-sort-list/"
-    >148 Sort List</a
+    href="/posts/64-minimum-path-sum/"
+    >64 Minimum Path Sum</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 148 Sort List   Sort a linked list in O(n log n) time using constant space complexity.
-Example 1:
-Input: 4-&gt;2-&gt;1-&gt;3 Output: 1-&gt;2-&gt;3-&gt;4  Example 2:
-Input: -1-&gt;5-&gt;3-&gt;4-&gt;0 Output: -1-&gt;0-&gt;3-&gt;4-&gt;5   Solution 2020-09-01 Notes:  Time Complaxity O(nlogn) indicates merge sort algo. in the sortList, line 8:if not head or not head.next: return head actually returns head not None. slow and fast pointers to divide list into two need a lfet tail pointer: l_tail to cut off left linked list.
+        LC 64 Minimum Path Sum Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right which minimizes the sum of all numbers along its path. Input:[[1,3,9],[1,5,2],[4,2,1]] Output: 7 Explanation: Because the path 1→3→1→1→1 minimizes the sum. Solution 2020-09-23 Notes: 做这题时发现了好几个pyth
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/148-sort-list/" class="">
-  <time datetime="2020-09-01 19:26:00 -0400 EDT" itemprop="datePublished">2020-09-01</time>
+<a href="https://foxisawesome.github.io/posts/64-minimum-path-sum/" class="">
+  <time datetime="2020-09-23 09:56:55 -0400 EDT" itemprop="datePublished">2020-09-23</time>
 </a>
 </span>
 <span class="article-category">
@@ -309,10 +306,10 @@ Input: -1-&gt;5-&gt;3-&gt;4-&gt;0 Output: -1-&gt;0-&gt;3-&gt;4-&gt;5   Solution 
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/linkedlist/"> linkedList </a>
+    <a class="article-tag-link" href="/tags/dp/"> dp </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/148-sort-list/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/64-minimum-path-sum/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -324,23 +321,20 @@ Input: -1-&gt;5-&gt;3-&gt;4-&gt;0 Output: -1-&gt;0-&gt;3-&gt;4-&gt;5   Solution 
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/79-word-search/"
-    >79 Word Search</a
+    href="/posts/802-find-eventual-safe-states/"
+    >802 Find Eventual Safe States</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 79 Word Search   Given a 2D board and a word, find if the word exists in the grid.
-The word can be constructed from letters of sequentially adjacent cell, where &ldquo;adjacent&rdquo; cells are those horizontally or vertically neighboring. The same letter cell may not be used more than once.
-Example:
-board = [ ['A','B','C','E'], ['S','F','C','S'], ['A','D','E','E'] ] Given word = &quot;ABCCED&quot;, return true. Given word = &quot;SEE&quot;, return true.
+        LC 802 Find Eventual Safe States In a directed graph, we start at some node and every turn, walk along a directed edge of the graph. If we reach a node that is terminal (that is, it has no outgoing directed edges), we stop. Now, say our starting node is eventually safe if and only if we must eventually walk to a terminal node. More specifically, there exists a natural
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/79-word-search/" class="">
-  <time datetime="2020-09-01 16:07:12 -0400 EDT" itemprop="datePublished">2020-09-01</time>
+<a href="https://foxisawesome.github.io/posts/802-find-eventual-safe-states/" class="">
+  <time datetime="2020-09-22 13:01:55 -0400 EDT" itemprop="datePublished">2020-09-22</time>
 </a>
 </span>
 <span class="article-category">
@@ -350,11 +344,11 @@ board = [ ['A','B','C','E'], ['S','F','C','S'], ['A','D','E','E'] ] Given word =
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/backtracking/"> backtracking </a>
+    <a class="article-tag-link" href="/tags/graph/"> GRAPH </a>
     <a class="article-tag-link" href="/tags/dfs/"> DFS </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/79-word-search/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/802-find-eventual-safe-states/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -366,20 +360,21 @@ board = [ ['A','B','C','E'], ['S','F','C','S'], ['A','D','E','E'] ] Given word =
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/981-time-based-key-value-store/"
-    >981 Time Based Key Value Store</a
+    href="/posts/1118-number-of-days-in-a-month/"
+    >1118 Number of Days in a Month</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 981 Time Based Key Value Store Create a timebased key-value store class TimeMap, that supports two operations. set(string key, string value, int timestamp) Stores the key and value, along with the given timestamp. get(string key, int timestamp) Returns a value such that set(key, value, timestamp_prev) was called previously, with timestamp_prev &lt;= timestamp. If there are multiple such values, it returns the one with the largest timestamp_prev. If there are
+        LC 1118 Number of Days in a Month   Given a year Y and a month M, return how many days there are in that month.
+ Solution 2020-09-22 Notes: class Solution: def numberOfDays(self, Y: int, M: int) -&gt; int: up = [1,3,5,7,8,10,12] if M == 2: if Y % 100 == 0: if Y % 400 == 0: return 29 else: return 28 else: if Y % 4 == 0: return 29 else: return 28 return 31 if M in up else 30 # Time O(1) # Space O(1)  
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/981-time-based-key-value-store/" class="">
-  <time datetime="2020-09-01 14:15:51 -0400 EDT" itemprop="datePublished">2020-09-01</time>
+<a href="https://foxisawesome.github.io/posts/1118-number-of-days-in-a-month/" class="">
+  <time datetime="2020-09-22 12:12:50 -0400 EDT" itemprop="datePublished">2020-09-22</time>
 </a>
 </span>
 <span class="article-category">
@@ -391,7 +386,7 @@ board = [ ['A','B','C','E'], ['S','F','C','S'], ['A','D','E','E'] ] Given word =
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/981-time-based-key-value-store/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1118-number-of-days-in-a-month/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -403,20 +398,20 @@ board = [ ['A','B','C','E'], ['S','F','C','S'], ['A','D','E','E'] ] Given word =
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/1041-robot-bounded-in-circle/"
-    >1041 Robot Bounded in Circle</a
+    href="/posts/210-course-schedule-ii/"
+    >210 Course Schedule II</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 1041 Robot Bounded in Circle On an infinite plane, a robot initially stands at (0, 0) and faces north. The robot can receive one of three instructions: &quot;G&quot;: go straight 1 unit; &quot;L&quot;: turn 90 degrees to the left; &quot;R&quot;: turn 90 degress to the right. The robot performs the instructions given in order, and repeats them forever. Return true if and only if there exists a circle in
+        LC 210 Course Schedule II There are a total of n courses you have to take labelled from 0 to n - 1. Some courses may have prerequisites, for example, if prerequisites[i] = [ai, bi] this means you must take the course bi before the course ai. Given the total number of courses numCourses and a list of the prerequisite pairs, return the ordering of courses you should take to
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1041-robot-bounded-in-circle/" class="">
-  <time datetime="2020-08-31 22:14:45 -0400 EDT" itemprop="datePublished">2020-08-31</time>
+<a href="https://foxisawesome.github.io/posts/210-course-schedule-ii/" class="">
+  <time datetime="2020-09-22 10:31:47 -0400 EDT" itemprop="datePublished">2020-09-22</time>
 </a>
 </span>
 <span class="article-category">
@@ -426,9 +421,12 @@ board = [ ['A','B','C','E'], ['S','F','C','S'], ['A','D','E','E'] ] Given word =
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+    <a class="article-tag-link" href="/tags/graph/"> Graph </a>
+    <a class="article-tag-link" href="/tags/dfs/"> DFS </a>
+    <a class="article-tag-link" href="/tags/bfs/"> BFS </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1041-robot-bounded-in-circle/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/210-course-schedule-ii/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -440,20 +438,20 @@ board = [ ['A','B','C','E'], ['S','F','C','S'], ['A','D','E','E'] ] Given word =
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/957-prison-cells/"
-    >957 Prison Cells</a
+    href="/posts/207-course-schedule/"
+    >207 Course Schedule</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 957 Prison Cells There are 8 prison cells in a row, and each cell is either occupied or vacant. Each day, whether the cell is occupied or vacant changes according to the following rules: If a cell has two adjacent neighbors that are both occupied or both vacant, then the cell becomes occupied. Otherwise, it becomes vacant. (Note that because the prison is a row, the first and the
+        LC 207 Course Schedule There are a total of numCourses courses you have to take, labeled from 0 to numCourses-1. Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1] Given the total number of courses and a list of prerequisite pairs, is it possible for you to finish all courses? Input: numCourses = 2,
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/957-prison-cells/" class="">
-  <time datetime="2020-08-31 19:26:18 -0400 EDT" itemprop="datePublished">2020-08-31</time>
+<a href="https://foxisawesome.github.io/posts/207-course-schedule/" class="">
+  <time datetime="2020-09-21 22:16:02 -0400 EDT" itemprop="datePublished">2020-09-21</time>
 </a>
 </span>
 <span class="article-category">
@@ -463,9 +461,11 @@ board = [ ['A','B','C','E'], ['S','F','C','S'], ['A','D','E','E'] ] Given word =
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+    <a class="article-tag-link" href="/tags/graph/"> Graph </a>
+    <a class="article-tag-link" href="/tags/dfs/"> DFS </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/957-prison-cells/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/207-course-schedule/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -477,20 +477,20 @@ board = [ ['A','B','C','E'], ['S','F','C','S'], ['A','D','E','E'] ] Given word =
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/735-aseroid-collision/"
-    >735 Aseroid Collision</a
+    href="/posts/542-01-matrix/"
+    >542 01 Matrix</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 735 Aseroid Collision We are given an array asteroids of integers representing asteroids in a row. For each asteroid, the absolute value represents its size, and the sign represents its direction (positive meaning right, negative meaning left). Each asteroid moves at the same speed. Find out the state of the asteroids after all collisions. If two asteroids meet, the smaller one will explode. If both are the same size,
+        LC 542 01 Matrix Given a matrix consists of 0 and 1, find the distance of the nearest 0 for each cell. Input: [[0,0,0],[0,1,0],[1,1,1]] Output:[[0,0,0],[0,1,0],[1,2,1]] Solution 2020-09-21 Notes: 很经典的BFS题。这题的关键是BFS每一个step中所有的点都向四周找0，如果找到水
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/735-aseroid-collision/" class="">
-  <time datetime="2020-08-31 19:05:25 -0400 EDT" itemprop="datePublished">2020-08-31</time>
+<a href="https://foxisawesome.github.io/posts/542-01-matrix/" class="">
+  <time datetime="2020-09-21 21:01:17 -0400 EDT" itemprop="datePublished">2020-09-21</time>
 </a>
 </span>
 <span class="article-category">
@@ -500,11 +500,10 @@ board = [ ['A','B','C','E'], ['S','F','C','S'], ['A','D','E','E'] ] Given word =
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/recursion/"> recursion </a>
-    <a class="article-tag-link" href="/tags/stack/"> stack </a>
+    <a class="article-tag-link" href="/tags/bfs/"> BFS </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/735-aseroid-collision/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/542-01-matrix/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article></div>
   
@@ -523,7 +522,7 @@ board = [ ['A','B','C','E'], ['S','F','C','S'], ['A','D','E','E'] ] Given word =
       </li>
     </ul>
     <div class="total-article bar-right">
-      Page:36/40
+      Page:36/57
     </div>
   </div>
 </nav>

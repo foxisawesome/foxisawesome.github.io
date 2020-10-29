@@ -33,7 +33,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://foxisawesome.github.io/" />
-<meta property="og:updated_time" content="2020-10-27T15:47:32-04:00" />
+<meta property="og:updated_time" content="2020-10-29T10:21:21-04:00" />
 <meta itemprop="name" content="Q. Weng">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -141,7 +141,7 @@
         <ul class="category-list">
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">230</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">6</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">98</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">103</span></li>
         </ul>
     </div>
 </div>
@@ -180,7 +180,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia_sql/" class="tag-list-link">dia_sql</a><span
-                    class="tag-list-count">17</span></li>
+                    class="tag-list-count">18</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dp/" class="tag-list-link">dp</a><span
@@ -204,7 +204,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">324</span></li>
+                    class="tag-list-count">329</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -283,20 +283,20 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/692-top-k-frequent-words/"
-    >692 Top K Frequent Words</a
+    href="/posts/772-basic-calculator-iii/"
+    >772 Basic Calculator III</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 692 Top K Frequent Words Given a non-empty list of words, return the k most frequent elements. Your answer should be sorted by frequency from highest to lowest. If two words have the same frequency, then the word with the lower alphabetical order comes first. Solution 2020-09-19 Notes: 重要的来了，一般，我们认为找出k个最大最小
+        LC 772 Basic Calculator III Implement a basic calculator to evaluate a simple expression string. The expression string contains only non-negative integers, +, -, *, / operators , open ( and closing parentheses ) and empty spaces ``. The integer division should truncate toward zero. You may assume that the given expression is always valid. All intermediate results will be in the range of [-2147483648, 2147483647]. Follow up: Could you
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/692-top-k-frequent-words/" class="">
-  <time datetime="2020-09-19 21:00:53 -0400 EDT" itemprop="datePublished">2020-09-19</time>
+<a href="https://foxisawesome.github.io/posts/772-basic-calculator-iii/" class="">
+  <time datetime="2020-10-01 11:38:24 -0400 EDT" itemprop="datePublished">2020-10-01</time>
 </a>
 </span>
 <span class="article-category">
@@ -306,12 +306,12 @@
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/sort/"> sort </a>
-    <a class="article-tag-link" href="/tags/hashtable/"> hashtable </a>
-    <a class="article-tag-link" href="/tags/heap/"> heap </a>
+    <a class="article-tag-link" href="/tags/stack/"> stack </a>
+    <a class="article-tag-link" href="/tags/recursion/"> recursion </a>
+    <a class="article-tag-link" href="/tags/dia/"> dia </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/692-top-k-frequent-words/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/772-basic-calculator-iii/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -323,33 +323,36 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/973-k-closest-points-to-origin/"
-    >973 K Closest Points to Origin</a
+    href="/posts/1369-get-the-second-most-recent-activity/"
+    >1369 Get the Second Most Recent Activity</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 973 K Closest Points to Origin We have a list of points on the plane. Find the K closest points to the origin (0, 0). Input: points = [[1,3],[-2,2]], K = 1 Output: [[-2,2]] Explanation: The distance between (1, 3) and the origin is sqrt(10). The distance between (-2, 2) and the origin is sqrt(8). Since sqrt(8) &lt; sqrt(10), (-2, 2) is closer to the origin. We only want
+        LC 1369 Get the Second Most Recent Activity   Write an SQL query to show the second most recent activity of each user.
+If the user only has one activity, return that one.
+A user can&rsquo;t perform more than one activity at the same time. Return the result table in any order.
+ Solution 2020-09-30 Notes:  straightforward by problem description.  SELECT username, activity, startDate, endDate FROM ( SELECT username, activity, startDate, endDate, ROW_NUMBER() OVER(PARTITION BY username ORDER BY startdate DESC) AS nr, COUNT(*) OVER(PARTITION BY username) AS ct FROM userActivity ) a WHERE nr=2 OR ct=1  
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/973-k-closest-points-to-origin/" class="">
-  <time datetime="2020-09-19 20:47:04 -0400 EDT" itemprop="datePublished">2020-09-19</time>
+<a href="https://foxisawesome.github.io/posts/1369-get-the-second-most-recent-activity/" class="">
+  <time datetime="2020-09-30 22:20:30 -0400 EDT" itemprop="datePublished">2020-09-30</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
 </span>  
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/sort/"> sort </a>
+    <a class="article-tag-link" href="/tags/dia_sql/"> dia_sql </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/973-k-closest-points-to-origin/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1369-get-the-second-most-recent-activity/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -361,33 +364,33 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/20-valid-parentheses/"
-    >20 Valid Parentheses</a
+    href="/posts/585-investments-in-2016/"
+    >585 Investments in 2016</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 20 Valid Parentheses Given a string s containing just the characters '(', ')', '{', '}', '[' and ']', determine if the input string is valid. An input string is valid if: Open brackets must be closed by the same type of brackets. Open brackets must be closed in the correct order. Solution 2020-09-19 Notes: 好经典的题。 思路如解。 class Solution: def isValid(self,
+        LC 585 Investments in 2016 Write a query to print the sum of all total investment values in 2016 (TIV_2016), to a scale of 2 decimal places, for all policy holders who meet the following criteria: Have the same TIV_2015 value as one or more other policyholders. Are not located in the same city as any other policyholder (i.e.: the (latitude, longitude) attribute pairs must be unique). Sample Input |
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/20-valid-parentheses/" class="">
-  <time datetime="2020-09-19 20:37:05 -0400 EDT" itemprop="datePublished">2020-09-19</time>
+<a href="https://foxisawesome.github.io/posts/585-investments-in-2016/" class="">
+  <time datetime="2020-09-30 21:31:10 -0400 EDT" itemprop="datePublished">2020-09-30</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
 </span>  
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/hashtable/"> hashtable </a>
+    <a class="article-tag-link" href="/tags/dia_sql/"> dia_sql </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/20-valid-parentheses/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/585-investments-in-2016/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -399,34 +402,33 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/953-verifying-an-alien-dictionary/"
-    >953 Verifying an Alien Dictionary</a
+    href="/posts/1355-activity-participants/"
+    >1355 Activity Participants</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 953 Verifying an Alien Dictionary In an alien language, surprisingly they also use english lowercase letters, but possibly in a different order. The order of the alphabet is some permutation of lowercase letters. Given a sequence of words written in the alien language, and the order of the alphabet, return true if and only if the given words are sorted lexicographicaly in this alien language. Input: words = [&quot;word&quot;,&quot;world&quot;,&quot;row&quot;],
+        LC 1355 Activity Participants Write an SQL query to find the names of all the activities with neither maximum, nor minimum number of participants. Return the result table in any order. Each activity in table Activities is performed by any person in the table Friends. The query result format is in the following example: Friends table: +------+--------------+---------------+ | id | name | activity | +------+--------------+---------------+ | 1 | Jonathan D.
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/953-verifying-an-alien-dictionary/" class="">
-  <time datetime="2020-09-19 20:17:38 -0400 EDT" itemprop="datePublished">2020-09-19</time>
+<a href="https://foxisawesome.github.io/posts/1355-activity-participants/" class="">
+  <time datetime="2020-09-30 20:59:04 -0400 EDT" itemprop="datePublished">2020-09-30</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
 </span>  
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/array/"> array </a>
-    <a class="article-tag-link" href="/tags/hashtable/"> hashtable </a>
+    <a class="article-tag-link" href="/tags/dia_sql/"> dia_sql </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/953-verifying-an-alien-dictionary/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1355-activity-participants/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -438,20 +440,20 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/70-climbing-stairs/"
-    >70 Climbing Stairs</a
+    href="/posts/227-basic-calculator-ii/"
+    >227 Basic Calculator II</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 70 Climbing Stairs You are climbing a stair case. It takes n steps to reach to the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top? Solution 2020-09-15 Notes: 最经典的dp题了。dp[i] = dp[i-1] + dp[i-2], 主要是dp[i] 和
+        LC 227 Basic Calculator II Implement a basic calculator to evaluate a simple expression string. The expression string contains only non-negative integers, +, -, *, / operators and empty spaces ``. The integer division should truncate toward zero. Input: &quot;3+2*2&quot; Output: 7 Solution 2020-09-30 Notes: Calculator 3 题：LC 224, LC 227, LC 772 都好难。三题的解法大同小异，
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/70-climbing-stairs/" class="">
-  <time datetime="2020-09-15 16:48:27 -0400 EDT" itemprop="datePublished">2020-09-15</time>
+<a href="https://foxisawesome.github.io/posts/227-basic-calculator-ii/" class="">
+  <time datetime="2020-09-30 14:32:48 -0400 EDT" itemprop="datePublished">2020-09-30</time>
 </a>
 </span>
 <span class="article-category">
@@ -461,10 +463,11 @@
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/dp/"> dp </a>
+    <a class="article-tag-link" href="/tags/stack/"> stack </a>
+    <a class="article-tag-link" href="/tags/dia/"> dia </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/70-climbing-stairs/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/227-basic-calculator-ii/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -476,20 +479,20 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/91-decode-ways/"
-    >91 Decode Ways</a
+    href="/posts/76-minimum-window-substring/"
+    >76 Minimum Window Substring</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 91 Decode Ways A message containing letters from A-Z is being encoded to numbers using the following mapping: 'A' -&gt; 1 'B' -&gt; 2 ... 'Z' -&gt; 26 Given a non-empty string containing only digits, determine the total number of ways to decode it. Input: &ldquo;226&rdquo; Output: 3 Explanation: It could be decoded as &ldquo;BZ&rdquo; (2 26), &ldquo;VF&rdquo; (22 6), or &ldquo;BBF&rdquo; (2 2 6). Solution 2020-09-15 Notes: 开
+        LC 76 Minimum Window Substring Given a string S and a string T, find the minimum window in S which will contain all the characters in T in complexity O(n). Input: S = &quot;ADOBECODEBANC&quot;, T = &quot;ABC&quot; Output: &quot;BANC&quot; Solution 2020-09-30 Notes: sliding window 的同时，需要online update minimum length，并用一个d
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/91-decode-ways/" class="">
-  <time datetime="2020-09-15 13:32:28 -0400 EDT" itemprop="datePublished">2020-09-15</time>
+<a href="https://foxisawesome.github.io/posts/76-minimum-window-substring/" class="">
+  <time datetime="2020-09-30 13:00:41 -0400 EDT" itemprop="datePublished">2020-09-30</time>
 </a>
 </span>
 <span class="article-category">
@@ -499,10 +502,10 @@
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/dp/"> dp </a>
+    <a class="article-tag-link" href="/tags/sliding_window/"> sliding_window </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/91-decode-ways/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/76-minimum-window-substring/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article></div>
   
@@ -521,7 +524,7 @@
       </li>
     </ul>
     <div class="total-article bar-right">
-      Page:25/40
+      Page:25/57
     </div>
   </div>
 </nav>

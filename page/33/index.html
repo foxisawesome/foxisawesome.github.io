@@ -33,7 +33,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://foxisawesome.github.io/" />
-<meta property="og:updated_time" content="2020-10-27T15:47:32-04:00" />
+<meta property="og:updated_time" content="2020-10-29T10:21:21-04:00" />
 <meta itemprop="name" content="Q. Weng">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -141,7 +141,7 @@
         <ul class="category-list">
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">230</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">6</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">98</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">103</span></li>
         </ul>
     </div>
 </div>
@@ -180,7 +180,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia_sql/" class="tag-list-link">dia_sql</a><span
-                    class="tag-list-count">17</span></li>
+                    class="tag-list-count">18</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dp/" class="tag-list-link">dp</a><span
@@ -204,7 +204,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">324</span></li>
+                    class="tag-list-count">329</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -283,23 +283,20 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/1512-number-of-good-pairs/"
-    >1512 Number of Good Pairs</a
+    href="/posts/1011-capacity-to-ship-packages-within-d-days/"
+    >1011 Capacity to Ship Packages Within D Days</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 1512 Number of Good Pairs   Given an array of integers nums.
-A pair (i,j) is called good if nums[i] == nums[j] and i &lt; j.
-Return the number of good pairs.
- Solution 2020-09-06 Notes:  One-pass using hash table. line 7-9, if gets a match, how many pairs it can make to previous ones is d[num].  class Solution: def numIdenticalPairs(self, nums: List[int]) -&gt; int: if not nums: return 0 ans = 0 d = dict() for num in nums: if num in d: ans += d[num] d[num] += 1 else: d[num] = 1 return ans # Time O(N) # Space O(N)   Use double loop:  class Solution: def numIdenticalPairs(self, nums: List[int]) -&gt; int: if not nums: return 0 n = len(nums) ans = 0 for i in range(n): j = i+1 while j &lt; n: if nums[i] == nums[j]: ans += 1 j += 1 return ans # Time O(N^2) # Space O(1)  
+        LC 1011 Capacity to Ship Packages Within D Days conveyor belt has packages that must be shipped from one port to another within D days. The i-th package on the conveyor belt has a weight of weights[i]. Each day, we load the ship with packages on the conveyor belt (in the order given by weights). We may not load more weight than the maximum weight capacity of the ship. Return
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1512-number-of-good-pairs/" class="">
-  <time datetime="2020-09-06 21:03:48 -0400 EDT" itemprop="datePublished">2020-09-06</time>
+<a href="https://foxisawesome.github.io/posts/1011-capacity-to-ship-packages-within-d-days/" class="">
+  <time datetime="2020-09-24 13:46:26 -0400 EDT" itemprop="datePublished">2020-09-24</time>
 </a>
 </span>
 <span class="article-category">
@@ -309,10 +306,10 @@ Return the number of good pairs.
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/hashtable/"> hashtable </a>
+    <a class="article-tag-link" href="/tags/binary_search/"> binary_search </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1512-number-of-good-pairs/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1011-capacity-to-ship-packages-within-d-days/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -324,24 +321,20 @@ Return the number of good pairs.
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/166-fraction-to-recurring-decimal/"
-    >166 Fraction to Recurring Decimal</a
+    href="/posts/21-merge-two-sorted-lists/"
+    >21 Merge Two Sorted Lists</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 166 Fraction to Recurring Decimal   Given two integers representing the numerator and denominator of a fraction, return the fraction in string format.
-If the fractional part is repeating, enclose the repeating part in parentheses.
-If multiple answers are possible, just return any of them.
-Extreme case: numer = -2147483648, denominator = -1999
- Solution 2020-09-05 Notes:  Details: python built-in divmod() returns floor, which is not friendly in negative case.
+        LC 21 Merge Two Sorted Lists Merge two sorted linked lists and return it as a new sorted list. The new list should be made by splicing together the nodes of the first two lists. Input: 1-&gt;2-&gt;4, 1-&gt;3-&gt;4 Output: 1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4 Solution 2020-09-24 Notes: 不要create 新的 ListNode along the way, making algo much faster. # Definition for singly-linked list. # class ListNode: #
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/166-fraction-to-recurring-decimal/" class="">
-  <time datetime="2020-09-05 22:05:28 -0400 EDT" itemprop="datePublished">2020-09-05</time>
+<a href="https://foxisawesome.github.io/posts/21-merge-two-sorted-lists/" class="">
+  <time datetime="2020-09-24 13:18:43 -0400 EDT" itemprop="datePublished">2020-09-24</time>
 </a>
 </span>
 <span class="article-category">
@@ -351,9 +344,10 @@ Extreme case: numer = -2147483648, denominator = -1999
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+    <a class="article-tag-link" href="/tags/linkedlist/"> linkedlist </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/166-fraction-to-recurring-decimal/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/21-merge-two-sorted-lists/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -365,20 +359,20 @@ Extreme case: numer = -2147483648, denominator = -1999
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/159-longest-substring-with-at-most-two-distinct-characters/"
-    >159 Longest Substring With at Most Two Distinct Characters</a
+    href="/posts/14-longest-common-prefix/"
+    >14 Longest Common Prefix</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 159 Longest Substring With at Most Two Distinct Characters Given a string *s* , find the length of the longest substring *t* that contains at most 2 distinct characters. Input: &quot;ccaabbb&quot; Output: 5 Explanation: t is &quot;aabbb&quot; which its length is 5. Solution 2020-09-05 Notes: 今天周末出去走了一圈，回家刷题效率可以啊。 class Solution: def
+        LC 14 Longest Common Prefix Write a function to find the longest common prefix string amongst an array of strings. If there is no common prefix, return an empty string &quot;&quot;. Input: [&quot;flower&quot;,&quot;flow&quot;,&quot;flight&quot;] Output: &quot;fl&quot; Solution 2020-09-24 Notes: 第三刷了，当年做的很痛苦的一道题。其实很简单。 class Solution: def longestCommonPrefix(self, strs: List[str]) -&gt; str: if
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/159-longest-substring-with-at-most-two-distinct-characters/" class="">
-  <time datetime="2020-09-05 21:08:15 -0400 EDT" itemprop="datePublished">2020-09-05</time>
+<a href="https://foxisawesome.github.io/posts/14-longest-common-prefix/" class="">
+  <time datetime="2020-09-24 13:13:11 -0400 EDT" itemprop="datePublished">2020-09-24</time>
 </a>
 </span>
 <span class="article-category">
@@ -388,9 +382,10 @@ Extreme case: numer = -2147483648, denominator = -1999
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+    <a class="article-tag-link" href="/tags/string/"> string </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/159-longest-substring-with-at-most-two-distinct-characters/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/14-longest-common-prefix/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -402,22 +397,20 @@ Extreme case: numer = -2147483648, denominator = -1999
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/136-single-number/"
-    >136 Single Number</a
+    href="/posts/38-count-and-say/"
+    >38 Count and Say</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 136 Single Number   Given a non-empty array of integers, every element appears twice except for one. Find that single one.
-Note: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
- Solution 2020-09-05 Notes:  Space O(1) solution is a bit tricky.  class Solution: def singleNumber(self, nums: List[int]) -&gt; int: stack = set() for num in nums: if num not in stack: stack.
+        LC 38 Count and Say The count-and-say sequence is the sequence of integers with the first five terms as following: 1. 1 2. 11 3. 21 4. 1211 5. 111221 Solution 2020-09-24 Notes: algo就顺着读法写出来就好了。锻炼loop写法的好题。 主要是time complexity 有
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/136-single-number/" class="">
-  <time datetime="2020-09-05 20:58:41 -0400 EDT" itemprop="datePublished">2020-09-05</time>
+<a href="https://foxisawesome.github.io/posts/38-count-and-say/" class="">
+  <time datetime="2020-09-24 12:56:27 -0400 EDT" itemprop="datePublished">2020-09-24</time>
 </a>
 </span>
 <span class="article-category">
@@ -427,9 +420,10 @@ Note: Your algorithm should have a linear runtime complexity. Could you implemen
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+    <a class="article-tag-link" href="/tags/string/"> string </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/136-single-number/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/38-count-and-say/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -441,32 +435,32 @@ Note: Your algorithm should have a linear runtime complexity. Could you implemen
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/187-repeated-dna-sequences/"
-    >187 Repeated Dna Sequences</a
+    href="/posts/1070-product-sales-analysis-iii/"
+    >1070 Product Sales Analysis III</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 187 Repeated Dna Sequences All DNA is composed of a series of nucleotides abbreviated as A, C, G, and T, for example: &ldquo;ACGAATTCCG&rdquo;. When studying DNA, it is sometimes useful to identify repeated sequences within the DNA. Write a function to find all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule. Solution 2020-09-05 Notes: 很简单的题，两个小陷
+        LC 1070 Product Sales Analysis III Write an SQL query that selects the product id, year, quantity, and price for the first year of every product sold. Solution 2020-09-23 Notes: 这题的test case 1有问题，论坛里有类似讨论。 SELECT product_id, year AS first_year, quantity, price FROM ( SELECT product_id, year, quantity, price, ROW_NUMBER() OVER(PARTITION BY product_id
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/187-repeated-dna-sequences/" class="">
-  <time datetime="2020-09-05 20:17:11 -0400 EDT" itemprop="datePublished">2020-09-05</time>
+<a href="https://foxisawesome.github.io/posts/1070-product-sales-analysis-iii/" class="">
+  <time datetime="2020-09-23 21:32:01 -0400 EDT" itemprop="datePublished">2020-09-23</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
 </span>  
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/187-repeated-dna-sequences/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1070-product-sales-analysis-iii/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -478,20 +472,20 @@ Note: Your algorithm should have a linear runtime complexity. Could you implemen
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/1249-minimum-remove-to-make-valid-parentheses/"
-    >1249 Minimum Remove to Make Valid Parentheses</a
+    href="/posts/1231-divide-chocolate/"
+    >1231 Divide Chocolate</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 1249 Minimum Remove to Make Valid Parentheses Given a string s of '(' , ')' and lowercase English characters. Your task is to remove the minimum number of parentheses ( '(' or ')', in any positions ) so that the resulting parentheses string is valid and return any valid string. Input: s = &quot;lee(t(c)o)de)&quot; Output: &quot;lee(t(c)o)de&quot; Explanation: &quot;lee(t(co)de)&quot; , &quot;lee(t(c)ode)&quot; would also be accepted. Solution 2020-09-05 Notes: 很简
+        LC 1231 Divide Chocolate You have one chocolate bar that consists of some chunks. Each chunk has its own sweetness given by the array sweetness. You want to share the chocolate with your K friends so you start cutting the chocolate bar into K+1 pieces using K cuts, each piece consists of some consecutive chunks. Being generous, you will eat the piece with the minimum total sweetness and give the
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1249-minimum-remove-to-make-valid-parentheses/" class="">
-  <time datetime="2020-09-05 14:01:30 -0400 EDT" itemprop="datePublished">2020-09-05</time>
+<a href="https://foxisawesome.github.io/posts/1231-divide-chocolate/" class="">
+  <time datetime="2020-09-23 21:15:59 -0400 EDT" itemprop="datePublished">2020-09-23</time>
 </a>
 </span>
 <span class="article-category">
@@ -501,10 +495,10 @@ Note: Your algorithm should have a linear runtime complexity. Could you implemen
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/stack/"> stack </a>
+    <a class="article-tag-link" href="/tags/binary_search/"> binary_search </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1249-minimum-remove-to-make-valid-parentheses/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1231-divide-chocolate/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article></div>
   
@@ -523,7 +517,7 @@ Note: Your algorithm should have a linear runtime complexity. Could you implemen
       </li>
     </ul>
     <div class="total-article bar-right">
-      Page:33/40
+      Page:33/57
     </div>
   </div>
 </nav>

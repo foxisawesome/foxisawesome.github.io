@@ -5,10 +5,55 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 27 Oct 2020 15:47:32 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2020 10:21:21 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>199 Binary Tree Right Side View</title>
+      <link>https://foxisawesome.github.io/posts/199-binary-tree-right-side-view/</link>
+      <pubDate>Sun, 13 Sep 2020 14:39:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/199-binary-tree-right-side-view/</guid>
+      <description>LC 199 Binary Tree Right Side View Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom. Example: Input: [1,2,3,null,5,null,4] Output: [1, 3, 4] Explanation: 1 &amp;lt;--- / \ 2 3 &amp;lt;--- \ \ 5 4 &amp;lt;--- Solution 2020-09-13 Notes: 一刷虽然做出来了 但是在输出</description>
+    </item>
+    
+    <item>
+      <title>987 Vertical Order Traversal of a Binary Tree</title>
+      <link>https://foxisawesome.github.io/posts/987-vertical-order-traversal-of-a-binary-tree/</link>
+      <pubDate>Sun, 13 Sep 2020 13:59:40 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/987-vertical-order-traversal-of-a-binary-tree/</guid>
+      <description>LC 987 Vertical Order Traversal of a Binary Tree Given a binary tree, return the vertical order traversal of its nodes values. For each node at position (X, Y), its left and right children respectively will be at positions (X-1, Y-1) and (X+1, Y-1). Running a vertical line from X = -infinity to X = +infinity, whenever the vertical line touches some nodes, we report the values of the nodes</description>
+    </item>
+    
+    <item>
+      <title>501 Find Mode in Binary Search Tree</title>
+      <link>https://foxisawesome.github.io/posts/501-find-mode-in-binary-search-tree/</link>
+      <pubDate>Sat, 12 Sep 2020 21:54:14 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/501-find-mode-in-binary-search-tree/</guid>
+      <description>LC 501 Find Mode in Binary Search Tree Given a binary search tree (BST) with duplicates, find all the mode(s) (the most frequently occurred element) in the given BST. Assume a BST is defined as follows: The left subtree of a node contains only nodes with keys less than or equal to the node&amp;rsquo;s key. The right subtree of a node contains only nodes with keys greater than or equal</description>
+    </item>
+    
+    <item>
+      <title>621 Task Scheduler</title>
+      <link>https://foxisawesome.github.io/posts/621-task-scheduler/</link>
+      <pubDate>Sat, 12 Sep 2020 21:00:42 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/621-task-scheduler/</guid>
+      <description>LC 621 Task Scheduler Given a characters array tasks, representing the tasks a CPU needs to do, where each letter represents a different task. Tasks could be done in any order. Each task is done in one unit of time. For each unit of time, the CPU could complete either one task or just be idle. However, there is a non-negative integer n that represents the cooldown period between two</description>
+    </item>
+    
+    <item>
+      <title>300 Longest Increasing Subsequence</title>
+      <link>https://foxisawesome.github.io/posts/300-longest-increasing-subsequence/</link>
+      <pubDate>Sat, 12 Sep 2020 20:05:08 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/300-longest-increasing-subsequence/</guid>
+      <description>LC 300 Longest Increasing Subsequence Given an unsorted array of integers, find the length of longest increasing subsequence. Example: Input: [10,9,2,5,3,7,101,18] Output: 4 Explanation: The longest increasing subsequence is [2,3,7,101], therefore the length is 4. Solution 2020-09-12 Notes: $\mathcal{O}(N^2)$的解，25%通过了。经典的d</description>
+    </item>
     
     <item>
       <title>767 Reorganize String</title>
@@ -75,30 +120,30 @@
     
     <item>
       <title>197 Rising Temperature</title>
-      <link>https://foxisawesome.github.io/sql/197-rising-temperature/</link>
+      <link>https://foxisawesome.github.io/posts/197-rising-temperature/</link>
       <pubDate>Fri, 11 Sep 2020 10:00:18 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/197-rising-temperature/</guid>
+      <guid>https://foxisawesome.github.io/posts/197-rising-temperature/</guid>
       <description>LC 197 Rising Temperature   Write an SQL query to find all dates&#39; id with higher temperature compared to its previous dates (yesterday).
 Weather +----+------------+-------------+ | id | recordDate | Temperature | +----+------------+-------------+ | 1 | 2015-01-01 | 10 | | 2 | 2015-01-02 | 25 | | 3 | 2015-01-03 | 20 | | 4 | 2015-01-04 | 30 | +----+------------+-------------+ Result table: +----+ | id | +----+ | 2 | | 4 | +----+   Solution 2020-09-11 Notes:</description>
     </item>
     
     <item>
       <title>184 Department Highest Salary</title>
-      <link>https://foxisawesome.github.io/sql/184-department-highest-salary/</link>
+      <link>https://foxisawesome.github.io/posts/184-department-highest-salary/</link>
       <pubDate>Fri, 11 Sep 2020 09:35:52 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/184-department-highest-salary/</guid>
+      <guid>https://foxisawesome.github.io/posts/184-department-highest-salary/</guid>
       <description>LC 184 Department Highest Salary   The Employee table holds all employees. Every employee has an Id, a salary, and there is also a column for the department Id.
 +----+-------+--------+--------------+ | Id | Name | Salary | DepartmentId | +----+-------+--------+--------------+ | 1 | Joe | 70000 | 1 | | 2 | Jim | 90000 | 1 | | 3 | Henry | 80000 | 2 | | 4 | Sam | 60000 | 2 | | 5 | Max | 90000 | 1 | +----+-------+--------+--------------+  The Department table holds all departments of the company.</description>
     </item>
     
     <item>
       <title>182 Duplicate Emails</title>
-      <link>https://foxisawesome.github.io/sql/182-duplicate-emails/</link>
+      <link>https://foxisawesome.github.io/posts/182-duplicate-emails/</link>
       <pubDate>Thu, 10 Sep 2020 22:14:17 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/182-duplicate-emails/</guid>
+      <guid>https://foxisawesome.github.io/posts/182-duplicate-emails/</guid>
       <description>LC 182 Duplicate Emails   Write a SQL query to find all duplicate emails in a table named Person.
 +----+---------+ | Id | Email | +----+---------+ | 1 | a@b.com | | 2 | c@d.com | | 3 | a@b.com | +----+---------+  For example, your query should return the following for the above table:
 +---------+ | Email | +---------+ | a@b.com | +---------+   Solution 2020-09-10 Notes:</description>
@@ -106,10 +151,10 @@ Weather +----+------------+-------------+ | id | recordDate | Temperature | +---
     
     <item>
       <title>178 Rank Scores</title>
-      <link>https://foxisawesome.github.io/sql/178-rank-scores/</link>
+      <link>https://foxisawesome.github.io/posts/178-rank-scores/</link>
       <pubDate>Thu, 10 Sep 2020 21:57:47 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/178-rank-scores/</guid>
+      <guid>https://foxisawesome.github.io/posts/178-rank-scores/</guid>
       <description>LC 178 Rank Scores Write a SQL query to rank scores. If there is a tie between two scores, both should have the same ranking. Note that after a tie, the next ranking number should be the next consecutive integer value. In other words, there should be no &amp;ldquo;holes&amp;rdquo; between ranks. +----+-------+ | Id | Score | +----+-------+ | 1 | 3.50 | | 2 | 3.65 | | 3</description>
     </item>
     
@@ -153,56 +198,6 @@ For example, this binary tree [1,2,2,3,4,4,3] is symmetric:
  1 / \ 2 2 / \ / \ 3 4 4 3  But the following [1,2,2,null,3,null,3] is not:
  1 / \ 2 2 \ \ 3 3   Solution 2020-09-10 Notes:
  recursion is pretty standard in this case.</description>
-    </item>
-    
-    <item>
-      <title>100 Same Tree</title>
-      <link>https://foxisawesome.github.io/posts/100-same-tree/</link>
-      <pubDate>Wed, 09 Sep 2020 22:18:03 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/100-same-tree/</guid>
-      <description>LC 100 Same Tree Given two binary trees, write a function to check if they are the same or not. Two binary trees are considered the same if they are structurally identical and the nodes have the same value. Solution 2020-09-09 Notes: Two roots 的pattern 和 single root一样。Tree 刷的略有感</description>
-    </item>
-    
-    <item>
-      <title>112 Path Sum</title>
-      <link>https://foxisawesome.github.io/posts/112-path-sum/</link>
-      <pubDate>Wed, 09 Sep 2020 21:47:10 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/112-path-sum/</guid>
-      <description>LC 112 Path Sum Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum. Given the below binary tree and sum = 22, 5 / \ 4 8 / / \ 11 13 4 / \ \ 7 2 1 return true, as there exist a root-to-leaf path 5-&amp;gt;4-&amp;gt;11-&amp;gt;2 which sum</description>
-    </item>
-    
-    <item>
-      <title>104 Maximum Depth of Binary Tree</title>
-      <link>https://foxisawesome.github.io/posts/104-maximum-depth-of-binary-tree/</link>
-      <pubDate>Wed, 09 Sep 2020 21:45:11 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/104-maximum-depth-of-binary-tree/</guid>
-      <description>LC 104 Maximum Depth of Binary Tree Given a binary tree, find its maximum depth. The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node. Given binary tree [3,9,20,null,null,15,7], 3 / \ 9 20 / \ 15 7 Solution 2020-09-09 Notes: 注意patterns. Beat the TREE! # Definition for</description>
-    </item>
-    
-    <item>
-      <title>111 Minimum Depth of Binary Tree</title>
-      <link>https://foxisawesome.github.io/posts/111-minimum-depth-of-binary-tree/</link>
-      <pubDate>Wed, 09 Sep 2020 21:41:11 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/111-minimum-depth-of-binary-tree/</guid>
-      <description>LC 111 Minimum Depth of Binary Tree   Given a binary tree, find its minimum depth.
-The minimum depth is the number of nodes along the shortest path from the root node down to the nearest leaf node.
-Given binary tree [3,9,20,null,null,15,7],
- 3 / \ 9 20 / \ 15 7  return 2
- Solution 2020-09-09 Notes:
- Beat the TREE!  # Definition for a binary tree node.</description>
-    </item>
-    
-    <item>
-      <title>124 Binary Tree Maximum Path Sum</title>
-      <link>https://foxisawesome.github.io/posts/124-binary-tree-maximum-path-sum/</link>
-      <pubDate>Wed, 09 Sep 2020 14:41:35 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/124-binary-tree-maximum-path-sum/</guid>
-      <description>LC 124 Binary Tree Maximum Path Sum Given a non-empty binary tree, find the maximum path sum. For this problem, a path is defined as any sequence of nodes from some starting node to any node in the tree along the parent-child connections. The path must contain at least one node and does not need to go through the root. Input: [-10,9,20,null,null,15,7] -10 / \ 9 20 / \ 15</description>
     </item>
     
   </channel>

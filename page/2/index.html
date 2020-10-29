@@ -33,7 +33,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://foxisawesome.github.io/" />
-<meta property="og:updated_time" content="2020-10-27T15:47:32-04:00" />
+<meta property="og:updated_time" content="2020-10-29T10:21:21-04:00" />
 <meta itemprop="name" content="Q. Weng">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -141,7 +141,7 @@
         <ul class="category-list">
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">230</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">6</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">98</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">103</span></li>
         </ul>
     </div>
 </div>
@@ -180,7 +180,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia_sql/" class="tag-list-link">dia_sql</a><span
-                    class="tag-list-count">17</span></li>
+                    class="tag-list-count">18</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dp/" class="tag-list-link">dp</a><span
@@ -204,7 +204,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">324</span></li>
+                    class="tag-list-count">329</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -283,33 +283,36 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/1167-minimum-cost-to-connect-sticks/"
-    >1167 Minimum Cost to Connect Sticks</a
+    href="/posts/614-second-degree-follower/"
+    >614 Second Degree Follower</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 1167 Minimum Cost to Connect Sticks You have some number of sticks with positive integer lengths. These lengths are given as an array sticks, where sticks[i] is the length of the ith stick. You can connect any two sticks of lengths x and y into one stick by paying a cost of x + y. You must connect all the sticks until there is only one stick remaining. Return
+        LC 614 Second Degree Follower   In facebook, there is a follow table with two columns: followee, follower.
+Please write a sql query to get the amount of each follower’s follower if he/she has one.
+For example:
++-------------+------------+ | followee | follower | +-------------+------------+ | A | B | | B | C | | B | D | | D | E | +-------------+------------+  should output:
++-------------+------------+ | follower | num | +-------------+------------+ | B | 2 | | D | 1 | +-------------+------------+  Explaination: Both B and D exist in the follower list, when as a followee, B&rsquo;s follower is C and D, and D&rsquo;s follower is E.
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1167-minimum-cost-to-connect-sticks/" class="">
-  <time datetime="2020-10-19 16:16:26 -0400 EDT" itemprop="datePublished">2020-10-19</time>
+<a href="https://foxisawesome.github.io/posts/614-second-degree-follower/" class="">
+  <time datetime="2020-10-25 14:53:46 -0400 EDT" itemprop="datePublished">2020-10-25</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
 </span>  
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/heap/"> heap </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1167-minimum-cost-to-connect-sticks/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/614-second-degree-follower/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -321,33 +324,33 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/1290-convert-binary-number-in-a-linked-list-to-integer/"
-    >1290 Convert Binary Number in a Linked List to Integer</a
+    href="/posts/608-tree-node/"
+    >608 Tree Node</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 1290 Convert Binary Number in a Linked List to Integer Given head which is a reference node to a singly-linked list. The value of each node in the linked list is either 0 or 1. The linked list holds the binary representation of a number. Return the decimal value of the number in the linked list. Input: head = [1,0,1] Output: 5 Explanation: (101) in base 2 = (5)
+        LC 608 Tree Node Given a table tree, id is identifier of the tree node and p_id is its parent node&rsquo;s id. +----+------+ | id | p_id | +----+------+ | 1 | null | | 2 | 1 | | 3 | 1 | | 4 | 2 | | 5 | 2 | +----+------+ Each node in the tree can be one of three types: Leaf: if the node
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1290-convert-binary-number-in-a-linked-list-to-integer/" class="">
-  <time datetime="2020-10-19 13:55:44 -0400 EDT" itemprop="datePublished">2020-10-19</time>
+<a href="https://foxisawesome.github.io/posts/608-tree-node/" class="">
+  <time datetime="2020-10-25 14:50:31 -0400 EDT" itemprop="datePublished">2020-10-25</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
 </span>  
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/linkedlist/"> linkedlist </a>
+    <a class="article-tag-link" href="/tags/dia_sql/"> dia_sql </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1290-convert-binary-number-in-a-linked-list-to-integer/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/608-tree-node/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -359,33 +362,32 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/1086-high-five/"
-    >1086 High Five</a
+    href="/posts/610-triangle-judgement/"
+    >610 Triangle Judgement</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 1086 High Five Given a list of scores of different students, return the average score of each student&rsquo;s top five scores in the order of each student&rsquo;s id. Each entry items[i] has items[i][0] the student&rsquo;s id, and items[i][1] the student&rsquo;s score. The average score is calculated using integer division. Solution 2020-10-19 Notes: 秒了 class Solution: def highFive(self, items: List[List[int]]) -&gt; List[List[int]]: d = collections.defaultdict(list) for i in items:
+        LC 610 Triangle Judgement Could you help Tim by writing a query to judge whether these three sides can form a triangle, assuming table triangle holds the length of the three sides x, y and z. | x | y | z | |----|----|----| | 13 | 15 | 30 | | 10 | 20 | 15 | For the sample data above, your query should return the follow result:
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1086-high-five/" class="">
-  <time datetime="2020-10-19 13:49:24 -0400 EDT" itemprop="datePublished">2020-10-19</time>
+<a href="https://foxisawesome.github.io/posts/610-triangle-judgement/" class="">
+  <time datetime="2020-10-25 10:02:33 -0400 EDT" itemprop="datePublished">2020-10-25</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
 </span>  
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/array/"> array </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1086-high-five/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/610-triangle-judgement/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -397,34 +399,32 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/1252-cells-with-odd-values-in-a-matrix/"
-    >1252 Cells With Odd Values in a Matrix</a
+    href="/posts/612-shortest-distance-in-a-plane/"
+    >612 Shortest Distance in a Plane</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 1252 Cells With Odd Values in a Matrix Given n and m which are the dimensions of a matrix initialized by zeros and given an array indices where indices[i] = [ri, ci]. For each pair of [ri, ci] you have to increment all cells in row ri and column ci by 1. Return the number of cells with odd values in the matrix after applying the increment to all
+        LC 612 Shortest Distance in a Plane Table point_2d holds the coordinates (x,y) of some unique points (more than two) in a plane. Write a query to find the shortest distance between these points rounded to 2 decimals. | x | y | |----|----| | -1 | -1 | | 0 | 0 | | -1 | -2 | The shortest distance is 1.00 from point (-1,-1) to (-1,2). So
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1252-cells-with-odd-values-in-a-matrix/" class="">
-  <time datetime="2020-10-19 13:36:39 -0400 EDT" itemprop="datePublished">2020-10-19</time>
+<a href="https://foxisawesome.github.io/posts/612-shortest-distance-in-a-plane/" class="">
+  <time datetime="2020-10-25 10:00:41 -0400 EDT" itemprop="datePublished">2020-10-25</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
 </span>  
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/matrix/"> matrix </a>
-    <a class="article-tag-link" href="/tags/dia/"> dia </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1252-cells-with-odd-values-in-a-matrix/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/612-shortest-distance-in-a-plane/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -436,33 +436,32 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/1021-remove-outermost-parentheses/"
-    >1021 Remove Outermost Parentheses</a
+    href="/posts/586-customer-placing-the-largest-number-of-orders/"
+    >586 Customer Placing the Largest Number of Orders</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 1021 Remove Outermost Parentheses A valid parentheses string is either empty (&quot;&quot;), &quot;(&quot; + A + &quot;)&quot;, or A + B, where A and B are valid parentheses strings, and + represents string concatenation. For example, &quot;&quot;, &quot;()&quot;, &quot;(())()&quot;, and &quot;(()(()))&quot; are all valid parentheses strings. A valid parentheses string S is primitive if it is nonempty, and there does not exist a way to split it into S
+        LC 586 Customer Placing the Largest Number of Orders Query the customer_number from the *orders* table for the customer who has placed the largest number of orders. It is guaranteed that exactly one customer will have placed more orders than any other customer. Solution 2020-10-24 Notes: 秒了 select customer_number from (select customer_number, count(order_number) as ct from orders group by 1 order by ct desc) a limit 1
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1021-remove-outermost-parentheses/" class="">
-  <time datetime="2020-10-19 13:17:36 -0400 EDT" itemprop="datePublished">2020-10-19</time>
+<a href="https://foxisawesome.github.io/posts/586-customer-placing-the-largest-number-of-orders/" class="">
+  <time datetime="2020-10-24 20:14:32 -0400 EDT" itemprop="datePublished">2020-10-24</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
 </span>  
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/stack/"> stack </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1021-remove-outermost-parentheses/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/586-customer-placing-the-largest-number-of-orders/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -474,33 +473,32 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/361-bomb-enemy/"
-    >361 Bomb Enemy</a
+    href="/posts/580-count-student-number-in-departments/"
+    >580 Count Student Number in Departments</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 361 Bomb Enemy   Given a 2D grid, each cell is either a wall 'W', an enemy 'E' or empty '0' (the number zero), return the maximum enemies you can kill using one bomb. The bomb kills all the enemies in the same row and column from the planted point until it hits the wall since the wall is too strong to be destroyed. Note: You can only put the bomb at an empty cell.
+        LC 580 Count Student Number in Departments Write a query to print the respective department name and number of students majoring in each department for all departments in the department table (even ones with no current students). Sort your results by descending number of students; if two or more departments have the same number of students, then sort those departments alphabetically by department name. *student* table: | student_id | student_name
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/361-bomb-enemy/" class="">
-  <time datetime="2020-10-18 20:16:29 -0400 EDT" itemprop="datePublished">2020-10-18</time>
+<a href="https://foxisawesome.github.io/posts/580-count-student-number-in-departments/" class="">
+  <time datetime="2020-10-24 20:11:01 -0400 EDT" itemprop="datePublished">2020-10-24</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
 </span>  
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/array/"> array </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/361-bomb-enemy/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/580-count-student-number-in-departments/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article></div>
   
@@ -519,7 +517,7 @@
       </li>
     </ul>
     <div class="total-article bar-right">
-      Page:2/40
+      Page:2/57
     </div>
   </div>
 </nav>

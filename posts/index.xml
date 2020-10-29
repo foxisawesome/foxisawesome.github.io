@@ -5,17 +5,65 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 21 Oct 2020 14:39:41 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2020 10:21:21 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>1098 Unpopular Books</title>
+      <link>https://foxisawesome.github.io/posts/1098-unpopular-books/</link>
+      <pubDate>Thu, 29 Oct 2020 10:21:21 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1098-unpopular-books/</guid>
+      <description>LC 1098 Unpopular Books Write an SQL query that reports the books that have sold less than 10 copies in the last year, excluding books that have been available for less than 1 month from today. Assume today is 2019-06-23. The query result format is in the following example: Books table: +---------+--------------------+----------------+ | book_id | name | available_from | +---------+--------------------+----------------+ | 1 | &amp;quot;Kalila And Demna&amp;quot; | 2010-01-01 | |</description>
+    </item>
+    
+    <item>
+      <title>1082 Sales Analysis I</title>
+      <link>https://foxisawesome.github.io/posts/1082-sales-analysis-i/</link>
+      <pubDate>Thu, 29 Oct 2020 09:53:47 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1082-sales-analysis-i/</guid>
+      <description>LC 1082 Sales Analysis I   Write an SQL query that reports the best seller by total sales price, If there is a tie, report them all.
+ Solution 2020-10-29 Notes:  Window function solution, which is faster  SELECT seller_id FROM ( SELECT *, RANK() OVER(ORDER BY SUM(price) DESC) AS rk FROM sales GROUP BY seller_id ) a WHERE rk = 1   aggregation func solution  SELECT seller_id FROM sales GROUP BY 1 HAVING SUM(price) = (SELECT SUM(price) FROM sales GROUP BY seller_id ORDER BY 1 DESC LIMIT 1)  </description>
+    </item>
+    
+    <item>
+      <title>1077 Project Employees III</title>
+      <link>https://foxisawesome.github.io/posts/1077-project-employees-iii/</link>
+      <pubDate>Thu, 29 Oct 2020 09:24:05 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1077-project-employees-iii/</guid>
+      <description>LC 1077 Project Employees III Write an SQL query that reports the most experienced employees in each project. In case of a tie, report all employees with the maximum number of experience years. Solution 2020-10-29 Notes: 秒了 SELECT project_id, employee_id FROM ( SELECT a.*, RANK() OVER(PARTITION BY project_id ORDER BY experience_years DESC) AS rk FROM project a JOIN employee b ON a.employee_id = b.employee_id ) c WHERE rk =</description>
+    </item>
+    
+    <item>
+      <title>1069 Product Sales Analysis II</title>
+      <link>https://foxisawesome.github.io/posts/1069-product-sales-analysis-ii/</link>
+      <pubDate>Thu, 29 Oct 2020 09:15:54 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1069-product-sales-analysis-ii/</guid>
+      <description>LC 1069 Product Sales Analysis II   Write an SQL query that reports the total quantity sold for every product id.
+ Solution 2020-10-29 Notes: SELECT product_id, SUM(quantity) AS total_quantity FROM sales GROUP BY 1 ORDER BY 1  </description>
+    </item>
+    
+    <item>
+      <title>1068 Product Sales Analysis I</title>
+      <link>https://foxisawesome.github.io/posts/1068-product-sales-analysis-i/</link>
+      <pubDate>Thu, 29 Oct 2020 09:11:53 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1068-product-sales-analysis-i/</guid>
+      <description>LC 1068 Product Sales Analysis I   Write an SQL query that reports all product names of the products in the Sales table along with their selling year and price.
+ Solution 2020-10-29 Notes: select a.product_name, b.year, b.price from product a join sales b on a.product_id = b.product_id order by year, price ;  </description>
+    </item>
+    
+    <item>
       <title>601 Human Traffic of Stadium</title>
-      <link>https://foxisawesome.github.io/sql/601-human-traffic-of-stadium/</link>
+      <link>https://foxisawesome.github.io/posts/601-human-traffic-of-stadium/</link>
       <pubDate>Tue, 27 Oct 2020 15:47:32 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/601-human-traffic-of-stadium/</guid>
+      <guid>https://foxisawesome.github.io/posts/601-human-traffic-of-stadium/</guid>
       <description>LC 601 Human Traffic of Stadium   Write an SQL query to display the records with three or more rows with consecutive id&amp;rsquo;s, and the number of people is greater than or equal to 100 for each.
 Return the result table ordered by visit_date in ascending order.
 The query result format is in the following example.
@@ -24,10 +72,10 @@ Stadium table: +------+------------+-----------+ | id | visit_date | people | +-
     
     <item>
       <title>614 Second Degree Follower</title>
-      <link>https://foxisawesome.github.io/sql/614-second-degree-follower/</link>
+      <link>https://foxisawesome.github.io/posts/614-second-degree-follower/</link>
       <pubDate>Sun, 25 Oct 2020 14:53:46 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/614-second-degree-follower/</guid>
+      <guid>https://foxisawesome.github.io/posts/614-second-degree-follower/</guid>
       <description>LC 614 Second Degree Follower   In facebook, there is a follow table with two columns: followee, follower.
 Please write a sql query to get the amount of each follower’s follower if he/she has one.
 For example:
@@ -37,55 +85,55 @@ For example:
     
     <item>
       <title>608 Tree Node</title>
-      <link>https://foxisawesome.github.io/sql/608-tree-node/</link>
+      <link>https://foxisawesome.github.io/posts/608-tree-node/</link>
       <pubDate>Sun, 25 Oct 2020 14:50:31 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/608-tree-node/</guid>
+      <guid>https://foxisawesome.github.io/posts/608-tree-node/</guid>
       <description>LC 608 Tree Node Given a table tree, id is identifier of the tree node and p_id is its parent node&amp;rsquo;s id. +----+------+ | id | p_id | +----+------+ | 1 | null | | 2 | 1 | | 3 | 1 | | 4 | 2 | | 5 | 2 | +----+------+ Each node in the tree can be one of three types: Leaf: if the node</description>
     </item>
     
     <item>
       <title>610 Triangle Judgement</title>
-      <link>https://foxisawesome.github.io/sql/610-triangle-judgement/</link>
+      <link>https://foxisawesome.github.io/posts/610-triangle-judgement/</link>
       <pubDate>Sun, 25 Oct 2020 10:02:33 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/610-triangle-judgement/</guid>
+      <guid>https://foxisawesome.github.io/posts/610-triangle-judgement/</guid>
       <description>LC 610 Triangle Judgement Could you help Tim by writing a query to judge whether these three sides can form a triangle, assuming table triangle holds the length of the three sides x, y and z. | x | y | z | |----|----|----| | 13 | 15 | 30 | | 10 | 20 | 15 | For the sample data above, your query should return the follow result:</description>
     </item>
     
     <item>
       <title>612 Shortest Distance in a Plane</title>
-      <link>https://foxisawesome.github.io/sql/612-shortest-distance-in-a-plane/</link>
+      <link>https://foxisawesome.github.io/posts/612-shortest-distance-in-a-plane/</link>
       <pubDate>Sun, 25 Oct 2020 10:00:41 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/612-shortest-distance-in-a-plane/</guid>
+      <guid>https://foxisawesome.github.io/posts/612-shortest-distance-in-a-plane/</guid>
       <description>LC 612 Shortest Distance in a Plane Table point_2d holds the coordinates (x,y) of some unique points (more than two) in a plane. Write a query to find the shortest distance between these points rounded to 2 decimals. | x | y | |----|----| | -1 | -1 | | 0 | 0 | | -1 | -2 | The shortest distance is 1.00 from point (-1,-1) to (-1,2). So</description>
     </item>
     
     <item>
       <title>586 Customer Placing the Largest Number of Orders</title>
-      <link>https://foxisawesome.github.io/sql/586-customer-placing-the-largest-number-of-orders/</link>
+      <link>https://foxisawesome.github.io/posts/586-customer-placing-the-largest-number-of-orders/</link>
       <pubDate>Sat, 24 Oct 2020 20:14:32 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/586-customer-placing-the-largest-number-of-orders/</guid>
+      <guid>https://foxisawesome.github.io/posts/586-customer-placing-the-largest-number-of-orders/</guid>
       <description>LC 586 Customer Placing the Largest Number of Orders Query the customer_number from the *orders* table for the customer who has placed the largest number of orders. It is guaranteed that exactly one customer will have placed more orders than any other customer. Solution 2020-10-24 Notes: 秒了 select customer_number from (select customer_number, count(order_number) as ct from orders group by 1 order by ct desc) a limit 1</description>
     </item>
     
     <item>
       <title>580 Count Student Number in Departments</title>
-      <link>https://foxisawesome.github.io/sql/580-count-student-number-in-departments/</link>
+      <link>https://foxisawesome.github.io/posts/580-count-student-number-in-departments/</link>
       <pubDate>Sat, 24 Oct 2020 20:11:01 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/580-count-student-number-in-departments/</guid>
+      <guid>https://foxisawesome.github.io/posts/580-count-student-number-in-departments/</guid>
       <description>LC 580 Count Student Number in Departments Write a query to print the respective department name and number of students majoring in each department for all departments in the department table (even ones with no current students). Sort your results by descending number of students; if two or more departments have the same number of students, then sort those departments alphabetically by department name. *student* table: | student_id | student_name</description>
     </item>
     
     <item>
       <title>578 Get Highest Answer Rate Question</title>
-      <link>https://foxisawesome.github.io/sql/578-get-highest-answer-rate-question/</link>
+      <link>https://foxisawesome.github.io/posts/578-get-highest-answer-rate-question/</link>
       <pubDate>Sat, 24 Oct 2020 20:07:05 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/578-get-highest-answer-rate-question/</guid>
+      <guid>https://foxisawesome.github.io/posts/578-get-highest-answer-rate-question/</guid>
       <description>LC 578 Get Highest Answer Rate Question   Get the highest answer rate question from a table survey_log with these columns: id, action, question_id, answer_id, q_num, timestamp.
 id means user id; action has these kind of values: &amp;ldquo;show&amp;rdquo;, &amp;ldquo;answer&amp;rdquo;, &amp;ldquo;skip&amp;rdquo;; answer_id is not null when action column is &amp;ldquo;answer&amp;rdquo;, while is null for &amp;ldquo;show&amp;rdquo; and &amp;ldquo;skip&amp;rdquo;; q_num is the numeral order of the question in current session.
 Write a sql query to identify the question which has the highest answer rate.</description>
@@ -93,46 +141,46 @@ Write a sql query to identify the question which has the highest answer rate.</d
     
     <item>
       <title>570 Managers With at Least 5 Direct Reports</title>
-      <link>https://foxisawesome.github.io/sql/570-managers-with-at-least-5-direct-reports/</link>
+      <link>https://foxisawesome.github.io/posts/570-managers-with-at-least-5-direct-reports/</link>
       <pubDate>Sat, 24 Oct 2020 19:50:25 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/570-managers-with-at-least-5-direct-reports/</guid>
+      <guid>https://foxisawesome.github.io/posts/570-managers-with-at-least-5-direct-reports/</guid>
       <description>LC 570 Managers With at Least 5 Direct Reports The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id. +------+----------+-----------+----------+ |Id |Name |Department |ManagerId | +------+----------+-----------+----------+ |101 |John |A |null | |102 |Dan |A |101 | |103 |James |A |101 | |104 |Amy |A |101 | |105 |Anne |A |101 | |106 |Ron |B |101 |</description>
     </item>
     
     <item>
       <title>550 Game Play Analysis Iv</title>
-      <link>https://foxisawesome.github.io/sql/550-game-play-analysis-iv/</link>
+      <link>https://foxisawesome.github.io/posts/550-game-play-analysis-iv/</link>
       <pubDate>Sat, 24 Oct 2020 19:46:40 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/550-game-play-analysis-iv/</guid>
+      <guid>https://foxisawesome.github.io/posts/550-game-play-analysis-iv/</guid>
       <description>LC 550 Game Play Analysis Iv Write an SQL query that reports the fraction of players that logged in again on the day after the day they first logged in, rounded to 2 decimal places. In other words, you need to count the number of players that logged in for at least two consecutive days starting from their first login date, then divide that number by the total number of</description>
     </item>
     
     <item>
       <title>511 Game Play Analysis I</title>
-      <link>https://foxisawesome.github.io/sql/511-game-play-analysis-i/</link>
+      <link>https://foxisawesome.github.io/posts/511-game-play-analysis-i/</link>
       <pubDate>Sat, 24 Oct 2020 19:38:18 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/511-game-play-analysis-i/</guid>
+      <guid>https://foxisawesome.github.io/posts/511-game-play-analysis-i/</guid>
       <description>LC 511 Game Play Analysis I Write an SQL query that reports the first login date for each player. The query result format is in the following example: Activity table: +-----------+-----------+------------+--------------+ | player_id | device_id | event_date | games_played | +-----------+-----------+------------+--------------+ | 1 | 2 | 2016-03-01 | 5 | | 1 | 2 | 2016-05-02 | 6 | | 2 | 3 | 2017-06-25 | 1 | | 3</description>
     </item>
     
     <item>
       <title>1501 Countries You Can Safely Invest In</title>
-      <link>https://foxisawesome.github.io/sql/1501-countries-you-can-safely-invest-in/</link>
+      <link>https://foxisawesome.github.io/posts/1501-countries-you-can-safely-invest-in/</link>
       <pubDate>Thu, 22 Oct 2020 10:50:21 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/1501-countries-you-can-safely-invest-in/</guid>
+      <guid>https://foxisawesome.github.io/posts/1501-countries-you-can-safely-invest-in/</guid>
       <description>LC 1501 Countries You Can Safely Invest In Write an SQL query to find the countries where this company can invest. Return the result table in any order. The query result format is in the following example. Person table: +----+----------+--------------+ | id | name | phone_number | +----+----------+--------------+ | 3 | Jonathan | 051-1234567 | | 12 | Elvis | 051-7654321 | | 1 | Moncef | 212-1234567 | |</description>
     </item>
     
     <item>
       <title>1097 Game Play Analysis V</title>
-      <link>https://foxisawesome.github.io/sql/1097-game-play-analysis-v/</link>
+      <link>https://foxisawesome.github.io/posts/1097-game-play-analysis-v/</link>
       <pubDate>Thu, 22 Oct 2020 10:35:41 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/1097-game-play-analysis-v/</guid>
+      <guid>https://foxisawesome.github.io/posts/1097-game-play-analysis-v/</guid>
       <description>LC 1097 Game Play Analysis V We define the install date of a player to be the first login day of that player. We also define day 1 retention of some date X to be the number of players whose install date is X and they logged back in on the day right after X, divided by the number of players whose install date is X, rounded to 2 decimal</description>
     </item>
     
@@ -154,51 +202,6 @@ Input: &amp;quot;abc&amp;quot; Output: 3 Explanation: Three palindromic strings:
       
       <guid>https://foxisawesome.github.io/posts/1353-maximum-number-of-events-that-can-be-attended/</guid>
       <description>LC 1353 Maximum Number of Events That Can Be Attended Given an array of events where events[i] = [startDayi, endDayi]. Every event i starts at startDayi and ends at endDayi. You can attend an event i at any day d where startTimei &amp;lt;= d &amp;lt;= endTimei. Notice that you can only attend one event at any time d. Return the maximum number of events you can attend. Input: events =</description>
-    </item>
-    
-    <item>
-      <title>901 Online Stock Span</title>
-      <link>https://foxisawesome.github.io/posts/901-online-stock-span/</link>
-      <pubDate>Wed, 21 Oct 2020 14:02:39 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/901-online-stock-span/</guid>
-      <description>LC 901 Online Stock Span Write a class StockSpanner which collects daily price quotes for some stock, and returns the span of that stock&amp;rsquo;s price for the current day. The span of the stock&amp;rsquo;s price today is defined as the maximum number of consecutive days (starting from today and going backwards) for which the price of the stock was less than or equal to today&amp;rsquo;s price. For example, if the</description>
-    </item>
-    
-    <item>
-      <title>152 Maximum Product Subarray</title>
-      <link>https://foxisawesome.github.io/posts/152-maximum-product-subarray/</link>
-      <pubDate>Wed, 21 Oct 2020 13:33:35 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/152-maximum-product-subarray/</guid>
-      <description>LC 152 Maximum Product Subarray Given an integer array nums, find the contiguous subarray within an array (containing at least one number) which has the largest product. Input: [2,3,-2,4] Output: 6 Explanation: [2,3] has the largest product 6. Solution 2020-10-21 Notes: 最大值可能来自三种来源：nums[i], prev_max X nums[i], prev_min X numi[i] 优化了</description>
-    </item>
-    
-    <item>
-      <title>1398 Customers Who Bought Products a and B but Not C</title>
-      <link>https://foxisawesome.github.io/sql/1398-customers-who-bought-products-a-and-b-but-not-c/</link>
-      <pubDate>Wed, 21 Oct 2020 11:20:02 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1398-customers-who-bought-products-a-and-b-but-not-c/</guid>
-      <description>LC 1398 Customers Who Bought Products a and B but Not C Write an SQL query to report the customer_id and customer_name of customers who bought products &amp;ldquo;A&amp;rdquo;, &amp;ldquo;B&amp;rdquo; but did not buy the product &amp;ldquo;C&amp;rdquo; since we want to recommend them buy this product. Return the result table ordered by customer_id. Solution 2020-10-21 Notes: 秒了 SELECT a.* FROM customers a JOIN ( SELECT * FROM orders GROUP BY</description>
-    </item>
-    
-    <item>
-      <title>1308 Running Total for Different Genders</title>
-      <link>https://foxisawesome.github.io/sql/1308-running-total-for-different-genders/</link>
-      <pubDate>Wed, 21 Oct 2020 11:14:44 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1308-running-total-for-different-genders/</guid>
-      <description>LC 1308 Running Total for Different Genders Write an SQL query to find the total score for each gender at each day. Order the result table by gender and day The query result format is in the following example: Scores table: +-------------+--------+------------+--------------+ | player_name | gender | day | score_points | +-------------+--------+------------+--------------+ | Aron | F | 2020-01-01 | 17 | | Alice | F | 2020-01-07 | 23 |</description>
-    </item>
-    
-    <item>
-      <title>1393 Capital Gainloss</title>
-      <link>https://foxisawesome.github.io/sql/1393-capital-gainloss/</link>
-      <pubDate>Wed, 21 Oct 2020 11:10:30 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1393-capital-gainloss/</guid>
-      <description>LC 1393 Capital Gainloss Write an SQL query to report the Capital gain/loss for each stock. The capital gain/loss of a stock is total gain or loss after buying and selling the stock one or many times. Return the result table in any order. The query result format is in the following example: Stocks table: +---------------+-----------+---------------+--------+ | stock_name | operation | operation_day | price | +---------------+-----------+---------------+--------+ | Leetcode | Buy</description>
     </item>
     
   </channel>

@@ -5,44 +5,89 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 21 Oct 2020 14:39:41 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2020 10:21:21 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
+      <title>512 Game Play Analysis II</title>
+      <link>https://foxisawesome.github.io/posts/512-game-play-analysis-ii/</link>
+      <pubDate>Mon, 19 Oct 2020 14:31:42 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/512-game-play-analysis-ii/</guid>
+      <description>LC 512 Game Play Analysis II Write a SQL query that reports the device that is first logged in for each player. The query result format is in the following example: Activity table: +-----------+-----------+------------+--------------+ | player_id | device_id | event_date | games_played | +-----------+-----------+------------+--------------+ | 1 | 2 | 2016-03-01 | 5 | | 1 | 2 | 2016-05-02 | 6 | | 2 | 3 | 2017-06-25 | 1</description>
+    </item>
+    
+    <item>
+      <title>1290 Convert Binary Number in a Linked List to Integer</title>
+      <link>https://foxisawesome.github.io/posts/1290-convert-binary-number-in-a-linked-list-to-integer/</link>
+      <pubDate>Mon, 19 Oct 2020 13:55:44 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1290-convert-binary-number-in-a-linked-list-to-integer/</guid>
+      <description>LC 1290 Convert Binary Number in a Linked List to Integer Given head which is a reference node to a singly-linked list. The value of each node in the linked list is either 0 or 1. The linked list holds the binary representation of a number. Return the decimal value of the number in the linked list. Input: head = [1,0,1] Output: 5 Explanation: (101) in base 2 = (5)</description>
+    </item>
+    
+    <item>
+      <title>1086 High Five</title>
+      <link>https://foxisawesome.github.io/posts/1086-high-five/</link>
+      <pubDate>Mon, 19 Oct 2020 13:49:24 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1086-high-five/</guid>
+      <description>LC 1086 High Five Given a list of scores of different students, return the average score of each student&amp;rsquo;s top five scores in the order of each student&amp;rsquo;s id. Each entry items[i] has items[i][0] the student&amp;rsquo;s id, and items[i][1] the student&amp;rsquo;s score. The average score is calculated using integer division. Solution 2020-10-19 Notes: 秒了 class Solution: def highFive(self, items: List[List[int]]) -&amp;gt; List[List[int]]: d = collections.defaultdict(list) for i in items:</description>
+    </item>
+    
+    <item>
+      <title>1252 Cells With Odd Values in a Matrix</title>
+      <link>https://foxisawesome.github.io/posts/1252-cells-with-odd-values-in-a-matrix/</link>
+      <pubDate>Mon, 19 Oct 2020 13:36:39 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1252-cells-with-odd-values-in-a-matrix/</guid>
+      <description>LC 1252 Cells With Odd Values in a Matrix Given n and m which are the dimensions of a matrix initialized by zeros and given an array indices where indices[i] = [ri, ci]. For each pair of [ri, ci] you have to increment all cells in row ri and column ci by 1. Return the number of cells with odd values in the matrix after applying the increment to all</description>
+    </item>
+    
+    <item>
+      <title>1021 Remove Outermost Parentheses</title>
+      <link>https://foxisawesome.github.io/posts/1021-remove-outermost-parentheses/</link>
+      <pubDate>Mon, 19 Oct 2020 13:17:36 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1021-remove-outermost-parentheses/</guid>
+      <description>LC 1021 Remove Outermost Parentheses A valid parentheses string is either empty (&amp;quot;&amp;quot;), &amp;quot;(&amp;quot; + A + &amp;quot;)&amp;quot;, or A + B, where A and B are valid parentheses strings, and + represents string concatenation. For example, &amp;quot;&amp;quot;, &amp;quot;()&amp;quot;, &amp;quot;(())()&amp;quot;, and &amp;quot;(()(()))&amp;quot; are all valid parentheses strings. A valid parentheses string S is primitive if it is nonempty, and there does not exist a way to split it into S</description>
+    </item>
+    
+    <item>
       <title>1322 Ads Performance</title>
-      <link>https://foxisawesome.github.io/sql/1322-ads-performance/</link>
+      <link>https://foxisawesome.github.io/posts/1322-ads-performance/</link>
       <pubDate>Sun, 18 Oct 2020 20:43:41 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/1322-ads-performance/</guid>
+      <guid>https://foxisawesome.github.io/posts/1322-ads-performance/</guid>
       <description>LC 1322 Ads Performance Write an SQL query to find the ctr of each Ad. Round ctr to 2 decimal points. Order the result table by ctr in descending order and by ad_id in ascending order in case of a tie. The query result format is in the following example: Ads table: +-------+---------+---------+ | ad_id | user_id | action | +-------+---------+---------+ | 1 | 1 | Clicked | | 2</description>
     </item>
     
     <item>
       <title>1543 Fix Product Name Format</title>
-      <link>https://foxisawesome.github.io/sql/1543-fix-product-name-format/</link>
+      <link>https://foxisawesome.github.io/posts/1543-fix-product-name-format/</link>
       <pubDate>Sun, 18 Oct 2020 20:34:36 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/1543-fix-product-name-format/</guid>
+      <guid>https://foxisawesome.github.io/posts/1543-fix-product-name-format/</guid>
       <description>LC 1543 Fix Product Name Format Write an SQL query to report product_name in lowercase without leading or trailing white spaces. sale_date in the format (&#39;YYYY-MM&#39;) total the number of times the product was sold in this month. Return the result table ordered by product_name in ascending order, in case of a tie order it by sale_date in ascending order. The query result format is in the following example. Sales</description>
     </item>
     
     <item>
       <title>607 Sales Person</title>
-      <link>https://foxisawesome.github.io/sql/607-sales-person/</link>
+      <link>https://foxisawesome.github.io/posts/607-sales-person/</link>
       <pubDate>Sun, 18 Oct 2020 20:33:03 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/607-sales-person/</guid>
+      <guid>https://foxisawesome.github.io/posts/607-sales-person/</guid>
       <description>LC 607 Sales Person Given three tables: salesperson, company, orders. Output all the names in the table salesperson, who didn’t have sales to company &amp;lsquo;RED&amp;rsquo;. Solution 2020-10-18 Notes: 秒了 SELECT DISTINCT name FROM salesperson WHERE sales_id NOT IN (SELECT sales_id FROM orders WHERE com_id IN (SELECT com_id FROM company WHERE name=&#39;RED&#39;))</description>
     </item>
     
     <item>
       <title>1294 Weather Type in Each Country</title>
-      <link>https://foxisawesome.github.io/sql/1294-weather-type-in-each-country/</link>
+      <link>https://foxisawesome.github.io/posts/1294-weather-type-in-each-country/</link>
       <pubDate>Sun, 18 Oct 2020 20:27:37 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/1294-weather-type-in-each-country/</guid>
+      <guid>https://foxisawesome.github.io/posts/1294-weather-type-in-each-country/</guid>
       <description>LC 1294 Weather Type in Each Country Write an SQL query to find the type of weather in each country for November 2019. The type of weather is Cold if the average weather_state is less than or equal 15, Hot if the average weather_state is greater than or equal 25 and Warm otherwise. Return result table in any order. Solution 2020-10-18 Notes: 秒了 SELECT country_name, (CASE WHEN AVG(weather_state)&amp;lt;=15 THEN</description>
     </item>
     
@@ -111,19 +156,19 @@
     
     <item>
       <title>1141 User Activity for the Past 30 Days I</title>
-      <link>https://foxisawesome.github.io/sql/1141-user-activity-for-the-past-30-days-i/</link>
+      <link>https://foxisawesome.github.io/posts/1141-user-activity-for-the-past-30-days-i/</link>
       <pubDate>Sat, 17 Oct 2020 21:13:03 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/1141-user-activity-for-the-past-30-days-i/</guid>
+      <guid>https://foxisawesome.github.io/posts/1141-user-activity-for-the-past-30-days-i/</guid>
       <description>LC 1141 User Activity for the Past 30 Days I Write an SQL query to find the daily active user count for a period of 30 days ending 2019-07-27 inclusively. A user was active on some day if he/she made at least one activity on that day. The query result format is in the following example: Activity table: +---------+------------+---------------+---------------+ | user_id | session_id | activity_date | activity_type | +---------+------------+---------------+---------------+ |</description>
     </item>
     
     <item>
       <title>1623 All Valid Triplets That Can Represent a Country</title>
-      <link>https://foxisawesome.github.io/sql/1623-all-valid-triplets-that-can-represent-a-country/</link>
+      <link>https://foxisawesome.github.io/posts/1623-all-valid-triplets-that-can-represent-a-country/</link>
       <pubDate>Sat, 17 Oct 2020 21:10:35 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/1623-all-valid-triplets-that-can-represent-a-country/</guid>
+      <guid>https://foxisawesome.github.io/posts/1623-all-valid-triplets-that-can-represent-a-country/</guid>
       <description>LC 1623 All Valid Triplets That Can Represent a Country   Write an SQL query to find all the possible triplets representing the country under the given constraints.
 Return the result table in any order.
 The query result format is in the following example.
@@ -132,69 +177,22 @@ SchoolA table: +------------+--------------+ | student_id | student_name | +----
     
     <item>
       <title>1159 Market Analysis II</title>
-      <link>https://foxisawesome.github.io/sql/1159-market-analysis-ii/</link>
+      <link>https://foxisawesome.github.io/posts/1159-market-analysis-ii/</link>
       <pubDate>Sat, 17 Oct 2020 20:54:12 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/1159-market-analysis-ii/</guid>
+      <guid>https://foxisawesome.github.io/posts/1159-market-analysis-ii/</guid>
       <description>LC 1159 Market Analysis II Write an SQL query to find for each user, whether the brand of the second item (by date) they sold is their favorite brand. If a user sold less than two items, report the answer for that user as no. It is guaranteed that no seller sold more than one item on a day. The query result format is in the following example: Users table:</description>
     </item>
     
     <item>
       <title>1517 Find Users With Valid E-Mails</title>
-      <link>https://foxisawesome.github.io/sql/1517-find-users-with-valid-e-mails/</link>
+      <link>https://foxisawesome.github.io/posts/1517-find-users-with-valid-e-mails/</link>
       <pubDate>Sat, 17 Oct 2020 20:29:16 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/1517-find-users-with-valid-e-mails/</guid>
+      <guid>https://foxisawesome.github.io/posts/1517-find-users-with-valid-e-mails/</guid>
       <description>LC 1517 Find Users With Valid E-Mails   Write an SQL query to find the users who have valid emails.
 A valid e-mail has a prefix name and a domain where:
  The prefix name is a string that may contain letters (upper or lower case), digits, underscore &#39;_&#39;, period &#39;.&#39; and/or dash &#39;-&#39;. The prefix name must start with a letter. The domain is &#39;@leetcode.com&#39;.  Return the result table in any order.</description>
-    </item>
-    
-    <item>
-      <title>1511 Customer Order Frequency</title>
-      <link>https://foxisawesome.github.io/sql/1511-customer-order-frequency/</link>
-      <pubDate>Sat, 17 Oct 2020 20:18:00 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1511-customer-order-frequency/</guid>
-      <description>LC 1511 Customer Order Frequency Write an SQL query to report the customer_id and customer_name of customers who have spent at least $100 in each month of June and July 2020. Return the result table in any order. The query result format is in the following example. Customers +--------------+-----------+-------------+ | customer_id | name | country | +--------------+-----------+-------------+ | 1 | Winston | USA | | 2 | Jonathan | Peru</description>
-    </item>
-    
-    <item>
-      <title>1479 Sales by Day of the Week</title>
-      <link>https://foxisawesome.github.io/sql/1479-sales-by-day-of-the-week/</link>
-      <pubDate>Fri, 16 Oct 2020 09:29:59 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1479-sales-by-day-of-the-week/</guid>
-      <description>LC 1479 Sales by Day of the Week   Write an SQL query to report how many units in each category have been ordered on each day of the week.
-Return the result table ordered by category.
- Solution 2020-10-16 Notes:  DAYOFWEEK() : ‘2’ is Mon. MYSQL does not have pivot function, use below template  WITH combo AS ( SELECT b.*, DAYOFWEEK(order_date) AS week, item_category FROM items a LEFT JOIN orders b ON a.</description>
-    </item>
-    
-    <item>
-      <title>615 Average Salary Departments vs Company</title>
-      <link>https://foxisawesome.github.io/sql/615-average-salary-departments-vs-company/</link>
-      <pubDate>Fri, 16 Oct 2020 09:08:36 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/615-average-salary-departments-vs-company/</guid>
-      <description>LC 615 Average Salary Departments vs Company Given two tables as below, write a query to display the comparison result (higher/lower/same) of the average salary of employees in a department to the company&amp;rsquo;s average salary. Table: salary | id | employee_id | amount | pay_date | |----|-------------|--------|------------| | 1 | 1 | 9000 | 2017-03-31 | | 2 | 2 | 6000 | 2017-03-31 | | 3 | 3 |</description>
-    </item>
-    
-    <item>
-      <title>1024 Video Stitching</title>
-      <link>https://foxisawesome.github.io/posts/1024-video-stitching/</link>
-      <pubDate>Thu, 15 Oct 2020 12:03:45 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1024-video-stitching/</guid>
-      <description>LC 1024 Video Stitching You are given a series of video clips from a sporting event that lasted T seconds. These video clips can be overlapping with each other and have varied lengths. Each video clip clips[i] is an interval: it starts at time clips[i][0] and ends at time clips[i][1]. We can cut these clips into segments freely: for example, a clip [0, 7] can be cut into segments [0,</description>
-    </item>
-    
-    <item>
-      <title>452 Minimum Number of Arrows to Burst Balloons</title>
-      <link>https://foxisawesome.github.io/posts/452-minimum-number-of-arrows-to-burst-balloons/</link>
-      <pubDate>Thu, 15 Oct 2020 10:20:23 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/452-minimum-number-of-arrows-to-burst-balloons/</guid>
-      <description>LC 452 Minimum Number of Arrows to Burst Balloons There are some spherical balloons spread in two-dimensional space. For each balloon, provided input is the start and end coordinates of the horizontal diameter. Since it&amp;rsquo;s horizontal, y-coordinates don&amp;rsquo;t matter, and hence the x-coordinates of start and end of the diameter suffice. The start is always smaller than the end. An arrow can be shot up exactly vertically from different points</description>
     </item>
     
   </channel>

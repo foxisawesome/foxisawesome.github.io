@@ -33,7 +33,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://foxisawesome.github.io/" />
-<meta property="og:updated_time" content="2020-10-27T15:47:32-04:00" />
+<meta property="og:updated_time" content="2020-10-29T10:21:21-04:00" />
 <meta itemprop="name" content="Q. Weng">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -141,7 +141,7 @@
         <ul class="category-list">
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">230</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">6</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">98</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">103</span></li>
         </ul>
     </div>
 </div>
@@ -180,7 +180,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia_sql/" class="tag-list-link">dia_sql</a><span
-                    class="tag-list-count">17</span></li>
+                    class="tag-list-count">18</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dp/" class="tag-list-link">dp</a><span
@@ -204,7 +204,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">324</span></li>
+                    class="tag-list-count">329</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -283,33 +283,33 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/645-set-mismatch/"
-    >645 Set Mismatch</a
+    href="/posts/181-employees-earning-more-than-their-managers/"
+    >181 Employees Earning More Than Their Managers</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 645 Set Mismatch The set S originally contains numbers from 1 to n. But unfortunately, due to the data error, one of the numbers in the set got duplicated to another number in the set, which results in repetition of one number and loss of another number. Given an array nums representing the data status of this set after the error. Your task is to firstly find the number
+        LC 181 Employees Earning More Than Their Managers   Given the Employee table, write a SQL query that finds out employees who earn more than their managers. For the above table, Joe is the only employee who earns more than his manager.
+ Solution 2020-09-24 Notes: SELECT name AS employee FROM ( SELECT a.name, a.salary, a.managerId, b.salary AS mg_sal FROM employee a JOIN employee b ON a.managerID = b.ID ) c WHERE salary &gt; mg_sal  
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/645-set-mismatch/" class="">
-  <time datetime="2020-09-08 21:25:19 -0400 EDT" itemprop="datePublished">2020-09-08</time>
+<a href="https://foxisawesome.github.io/posts/181-employees-earning-more-than-their-managers/" class="">
+  <time datetime="2020-09-24 21:57:09 -0400 EDT" itemprop="datePublished">2020-09-24</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
 </span>  
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/hashtable/"> hashtable </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/645-set-mismatch/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/181-employees-earning-more-than-their-managers/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -321,33 +321,32 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/234-palindrome-linked-list/"
-    >234 Palindrome Linked List</a
+    href="/posts/180-consecutive-numbers/"
+    >180 Consecutive Numbers</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 234 Palindrome Linked List Given a singly linked list, determine if it is a palindrome. Solution 2020-09-08 Notes: Recursion solution参考了 labuladong 以下是一种比较直观但是不是optimal的解法 line 13 is a post-order traverse. # Definition for singly-linked list. # class ListNode: #
+        LC 180 Consecutive Numbers Write a SQL query to find all numbers that appear at least three times consecutively. Solution 2020-09-24 Notes: self join 的写法 SELECT DISTINCT a.num AS ConsecutiveNums FROM logs a JOIN logs b ON a.id+1 = b.id AND a.num=b.num JOIN logs c ON a.id+2 = c.id AND a.num=c.num LEAD() function 的写法： SELECT DISTINCT num AS consecutiveNums FROM ( SELECT id, num, LEAD(num,1)
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/234-palindrome-linked-list/" class="">
-  <time datetime="2020-09-08 20:54:03 -0400 EDT" itemprop="datePublished">2020-09-08</time>
+<a href="https://foxisawesome.github.io/posts/180-consecutive-numbers/" class="">
+  <time datetime="2020-09-24 21:41:16 -0400 EDT" itemprop="datePublished">2020-09-24</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
 </span>  
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/linkedlist/"> linkedlist </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/234-palindrome-linked-list/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/180-consecutive-numbers/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -359,34 +358,32 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/325-maximum-size-subarray-sum-equals-k/"
-    >325 Maximum Size Subarray Sum Equals K</a
+    href="/posts/177-nth-highest-salary/"
+    >177 Nth Highest Salary</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 325 Maximum Size Subarray Sum Equals K Given an array nums and a target value k, find the maximum length of a subarray that sums to k. If there isn&rsquo;t one, return 0 instead. Input: nums = [1, -1, 5, -2, 3], k = 3 Output: 4 Explanation: The subarray [1, -1, 5, -2] sums to 3 and is the longest. Solution 2020-09-08 Notes: 此题解法跟
+        LC 177 Nth Highest Salary Write a SQL query to get the nth highest salary from the Employee table. Solution 2020-09-24 Notes: 这个sql function 的写法得背下来。不过也没什么难的。 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT BEGIN DECLARE m int; SET m = n-1; RETURN ( SELECT salary FROM employee GROUP BY 1 ORDER by
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/325-maximum-size-subarray-sum-equals-k/" class="">
-  <time datetime="2020-09-08 17:08:48 -0400 EDT" itemprop="datePublished">2020-09-08</time>
+<a href="https://foxisawesome.github.io/posts/177-nth-highest-salary/" class="">
+  <time datetime="2020-09-24 21:16:18 -0400 EDT" itemprop="datePublished">2020-09-24</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
 </span>  
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/array/"> array </a>
-    <a class="article-tag-link" href="/tags/hashtable/"> hashtable </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/325-maximum-size-subarray-sum-equals-k/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/177-nth-highest-salary/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -398,20 +395,20 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/560-subarray-sum-equals-k/"
-    >560 Subarray Sum Equals K</a
+    href="/posts/875-koko-eating-bananas/"
+    >875 Koko Eating Bananas</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 560 Subarray Sum Equals K Given an array of integers and an integer k, you need to find the total number of continuous subarrays whose sum equals to k. Input:nums = [1,1,1], k = 2 Output: 2 Solution 2020-09-08 Notes: 看了labuladong 的总结 预先算一个cumulativ
+        LC 875 Koko Eating Bananas Koko loves to eat bananas. There are N piles of bananas, the i-th pile has piles[i] bananas. The guards have gone and will come back in H hours. Koko can decide her bananas-per-hour eating speed of K. Each hour, she chooses some pile of bananas, and eats K bananas from that pile. If the pile has less than K bananas, she eats all of them
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/560-subarray-sum-equals-k/" class="">
-  <time datetime="2020-09-08 15:07:27 -0400 EDT" itemprop="datePublished">2020-09-08</time>
+<a href="https://foxisawesome.github.io/posts/875-koko-eating-bananas/" class="">
+  <time datetime="2020-09-24 13:51:49 -0400 EDT" itemprop="datePublished">2020-09-24</time>
 </a>
 </span>
 <span class="article-category">
@@ -421,11 +418,10 @@
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/array/"> array </a>
-    <a class="article-tag-link" href="/tags/hashtable/"> hashtable </a>
+    <a class="article-tag-link" href="/tags/binary_search/"> binary_search </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/560-subarray-sum-equals-k/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/875-koko-eating-bananas/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -437,20 +433,20 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/1109-corporate-flight-bookings/"
-    >1109 Corporate Flight Bookings</a
+    href="/posts/774-minimize-max-distance-to-gas-station/"
+    >774 Minimize Max Distance to Gas Station</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 1109 Corporate Flight Bookings There are n flights, and they are labeled from 1 to n. We have a list of flight bookings. The i-th booking bookings[i] = [i, j, k] means that we booked k seats from flights labeled i to j inclusive. Return an array answer of length n, representing the number of seats booked on each flight in order of their label. Input: bookings = [[1,2,10],[2,3,20],[2,5,25]],
+        LC 774 Minimize Max Distance to Gas Station On a horizontal number line, we have gas stations at positions stations[0], stations[1], ..., stations[N-1], where N = stations.length. Now, we add K more gas stations so that D, the maximum distance between adjacent gas stations, is minimized.Return the smallest possible value of D. Input: stations = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], K = 9 Output: 0.500000
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1109-corporate-flight-bookings/" class="">
-  <time datetime="2020-09-08 13:44:08 -0400 EDT" itemprop="datePublished">2020-09-08</time>
+<a href="https://foxisawesome.github.io/posts/774-minimize-max-distance-to-gas-station/" class="">
+  <time datetime="2020-09-24 13:49:22 -0400 EDT" itemprop="datePublished">2020-09-24</time>
 </a>
 </span>
 <span class="article-category">
@@ -460,10 +456,10 @@
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/array/"> array </a>
+    <a class="article-tag-link" href="/tags/binary_search/"> binary_search </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1109-corporate-flight-bookings/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/774-minimize-max-distance-to-gas-station/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -475,20 +471,20 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/1539-kth-missing-positive-number/"
-    >1539 Kth Missing Positive Number</a
+    href="/posts/410-split-array-largest-sum/"
+    >410 Split Array Largest Sum</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 1539 Kth Missing Positive Number Given an array arr of positive integers sorted in a strictly increasing order, and an integer k. Find the kth positive integer that is missing from this array. Input: arr = [2,3,4,7,11], k = 5 Output: 9 Explanation: The missing positive integers are [1,5,6,8,9,10,12,13,...]. The 5th missing positive integer is 9. Solution 2020-09-07 Notes: O(N) solution is pretty easy, but not optimal. the binary
+        LC 410 Split Array Largest Sum Given an array nums which consists of non-negative integers and an integer m, you can split the array into m non-empty continuous subarrays. Write an algorithm to minimize the largest sum among these m subarrays. Input: nums = [7,2,5,10,8], m = 2 Output: 18 Explanation: There are four ways to split nums into two subarrays. The best way is to split it into [7,2,5]
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1539-kth-missing-positive-number/" class="">
-  <time datetime="2020-09-07 22:03:58 -0400 EDT" itemprop="datePublished">2020-09-07</time>
+<a href="https://foxisawesome.github.io/posts/410-split-array-largest-sum/" class="">
+  <time datetime="2020-09-24 13:48:35 -0400 EDT" itemprop="datePublished">2020-09-24</time>
 </a>
 </span>
 <span class="article-category">
@@ -498,10 +494,10 @@
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/binary_search/"> binary_Search </a>
+    <a class="article-tag-link" href="/tags/binary_search/"> binary_search </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1539-kth-missing-positive-number/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/410-split-array-largest-sum/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article></div>
   
@@ -520,7 +516,7 @@
       </li>
     </ul>
     <div class="total-article bar-right">
-      Page:32/40
+      Page:32/57
     </div>
   </div>
 </nav>
