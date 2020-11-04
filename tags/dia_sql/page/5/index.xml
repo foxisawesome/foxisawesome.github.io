@@ -5,10 +5,190 @@
     <link>https://foxisawesome.github.io/tags/dia_sql/</link>
     <description>Recent content in dia_sql on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 29 Oct 2020 10:21:21 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2020 11:14:06 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/dia_sql/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1479 Sales by Day of the Week</title>
+      <link>https://foxisawesome.github.io/posts/1479-sales-by-day-of-the-week/</link>
+      <pubDate>Fri, 16 Oct 2020 09:29:59 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1479-sales-by-day-of-the-week/</guid>
+      <description>LC 1479 Sales by Day of the Week   Write an SQL query to report how many units in each category have been ordered on each day of the week.
+Return the result table ordered by category.
+ Solution 2020-10-16 Notes:  DAYOFWEEK() : ‘2’ is Mon. MYSQL does not have pivot function, use below template  WITH combo AS ( SELECT b.*, DAYOFWEEK(order_date) AS week, item_category FROM items a LEFT JOIN orders b ON a.</description>
+    </item>
+    
+    <item>
+      <title>615 Average Salary Departments vs Company</title>
+      <link>https://foxisawesome.github.io/posts/615-average-salary-departments-vs-company/</link>
+      <pubDate>Fri, 16 Oct 2020 09:08:36 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/615-average-salary-departments-vs-company/</guid>
+      <description>LC 615 Average Salary Departments vs Company Given two tables as below, write a query to display the comparison result (higher/lower/same) of the average salary of employees in a department to the company&amp;rsquo;s average salary. Table: salary | id | employee_id | amount | pay_date | |----|-------------|--------|------------| | 1 | 1 | 9000 | 2017-03-31 | | 2 | 2 | 6000 | 2017-03-31 | | 3 | 3 |</description>
+    </item>
+    
+    <item>
+      <title>1024 Video Stitching</title>
+      <link>https://foxisawesome.github.io/posts/1024-video-stitching/</link>
+      <pubDate>Thu, 15 Oct 2020 12:03:45 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1024-video-stitching/</guid>
+      <description>LC 1024 Video Stitching You are given a series of video clips from a sporting event that lasted T seconds. These video clips can be overlapping with each other and have varied lengths. Each video clip clips[i] is an interval: it starts at time clips[i][0] and ends at time clips[i][1]. We can cut these clips into segments freely: for example, a clip [0, 7] can be cut into segments [0,</description>
+    </item>
+    
+    <item>
+      <title>452 Minimum Number of Arrows to Burst Balloons</title>
+      <link>https://foxisawesome.github.io/posts/452-minimum-number-of-arrows-to-burst-balloons/</link>
+      <pubDate>Thu, 15 Oct 2020 10:20:23 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/452-minimum-number-of-arrows-to-burst-balloons/</guid>
+      <description>LC 452 Minimum Number of Arrows to Burst Balloons There are some spherical balloons spread in two-dimensional space. For each balloon, provided input is the start and end coordinates of the horizontal diameter. Since it&amp;rsquo;s horizontal, y-coordinates don&amp;rsquo;t matter, and hence the x-coordinates of start and end of the diameter suffice. The start is always smaller than the end. An arrow can be shot up exactly vertically from different points</description>
+    </item>
+    
+    <item>
+      <title>435 Non Overlapping Intervals</title>
+      <link>https://foxisawesome.github.io/posts/435-non-overlapping-intervals/</link>
+      <pubDate>Thu, 15 Oct 2020 10:04:00 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/435-non-overlapping-intervals/</guid>
+      <description>LC 435 Non Overlapping Intervals Given a collection of intervals, find the minimum number of intervals you need to remove to make the rest of the intervals non-overlapping. Input: [[1,2],[2,3],[3,4],[1,3]] Output: 1 Explanation: [1,3] can be removed and the rest of intervals are non-overlapping. Solution 2020-10-15 Notes: Greedy 算法解决的一类 区间问题。 这题的思路是，先把每</description>
+    </item>
+    
+    <item>
+      <title>613 Shortest Distance in a Line</title>
+      <link>https://foxisawesome.github.io/posts/613-shortest-distance-in-a-line/</link>
+      <pubDate>Wed, 14 Oct 2020 19:50:34 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/613-shortest-distance-in-a-line/</guid>
+      <description>LC 613 Shortest Distance in a Line   Table point holds the x coordinate of some points on x-axis in a plane, which are all integers.
+Write a query to find the shortest distance between two points in these points.
+| x | |-----| | -1 | | 0 | | 2 |  The shortest distance is &amp;lsquo;1&amp;rsquo; obviously, which is from point &amp;lsquo;-1&amp;rsquo; to &amp;lsquo;0&amp;rsquo;. So the output is as below:</description>
+    </item>
+    
+    <item>
+      <title>603 Consecutive Available Seats</title>
+      <link>https://foxisawesome.github.io/posts/603-consecutive-available-seats/</link>
+      <pubDate>Wed, 14 Oct 2020 19:47:16 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/603-consecutive-available-seats/</guid>
+      <description>LC 603 Consecutive Available Seats   Several friends at a cinema ticket office would like to reserve consecutive available seats. Can you help to query all the consecutive available seats order by the seat_id using the following cinema table?
+| seat_id | free | |---------|------| | 1 | 1 | | 2 | 0 | | 3 | 1 | | 4 | 1 | | 5 | 1 |  Your query should return the following result for the sample case above.</description>
+    </item>
+    
+    <item>
+      <title>602 Friend Requests Ii Who Has the Most Friends</title>
+      <link>https://foxisawesome.github.io/posts/602-friend-requests-ii-who-has-the-most-friends/</link>
+      <pubDate>Wed, 14 Oct 2020 19:41:14 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/602-friend-requests-ii-who-has-the-most-friends/</guid>
+      <description>LC 602 Friend Requests Ii Who Has the Most Friends Write a query to find the the people who has most friends and the most friends number under the following rules: It is guaranteed there is only 1 people having the most friends. The friend request could only been accepted once, which mean there is no multiple records with the same requester_id and accepter_id value. For the sample data above,</description>
+    </item>
+    
+    <item>
+      <title>974 Subarray Sums Divisible by K</title>
+      <link>https://foxisawesome.github.io/posts/974-subarray-sums-divisible-by-k/</link>
+      <pubDate>Wed, 14 Oct 2020 17:17:02 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/974-subarray-sums-divisible-by-k/</guid>
+      <description>LC 974 Subarray Sums Divisible by K   Given an array A of integers, return the number of (contiguous, non-empty) subarrays that have a sum divisible by K.
+Input: A = [4,5,0,-2,-3,1], K = 5 Output: 7 Explanation: There are 7 subarrays with a sum divisible by K = 5: [4, 5, 0, -2, -3, 1], [5], [5, 0], [5, 0, -2, -3], [0], [0, -2, -3], [-2, -3]   Solution 2020-10-14 Notes:  About the problems - sum of contiguous subarray , prefix sum is a common technique.</description>
+    </item>
+    
+    <item>
+      <title>909 Snakes and Ladders</title>
+      <link>https://foxisawesome.github.io/posts/909-snakes-and-ladders/</link>
+      <pubDate>Wed, 14 Oct 2020 15:51:48 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/909-snakes-and-ladders/</guid>
+      <description>LC 909 Snakes and Ladders On an N x N board, the numbers from 1 to N*N are written boustrophedonically starting from the bottom left of the board, and alternating direction each row. For example, for a 6 x 6 board, the numbers are written as follows: Input: [ [-1,-1,-1,-1,-1,-1], [-1,-1,-1,-1,-1,-1], [-1,-1,-1,-1,-1,-1], [-1,35,-1,-1,13,-1], [-1,-1,-1,-1,-1,-1], [-1,15,-1,-1,-1,-1]] Output: 4 Explanation: At the beginning, you start at square 1 [at row 5, column</description>
+    </item>
+    
+    <item>
+      <title>1428 Leftmost Column With at Least a One</title>
+      <link>https://foxisawesome.github.io/posts/1428-leftmost-column-with-at-least-a-one/</link>
+      <pubDate>Tue, 13 Oct 2020 20:37:12 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1428-leftmost-column-with-at-least-a-one/</guid>
+      <description>LC 1428 Leftmost Column With at Least a One (This problem is an interactive problem.) A binary matrix means that all elements are 0 or 1. For each individual row of the matrix, this row is sorted in non-decreasing order. Given a row-sorted binary matrix binaryMatrix, return leftmost column index(0-indexed) with at least a 1 in it. If such index doesn&amp;rsquo;t exist, return -1. You can&amp;rsquo;t access the Binary Matrix</description>
+    </item>
+    
+    <item>
+      <title>1581 Customer Who Visited but Did Not Make Any Transactions</title>
+      <link>https://foxisawesome.github.io/posts/1581-customer-who-visited-but-did-not-make-any-transactions/</link>
+      <pubDate>Tue, 13 Oct 2020 20:09:03 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1581-customer-who-visited-but-did-not-make-any-transactions/</guid>
+      <description>LC 1581 Customer Who Visited but Did Not Make Any Transactions Write an SQL query to find the IDs of the users who visited without making any transactions and the number of times they made these types of visits. Return the result table sorted in any order. The query result format is in the following example: Visits +----------+-------------+ | visit_id | customer_id | +----------+-------------+ | 1 | 23 | |</description>
+    </item>
+    
+    <item>
+      <title>1613 Find the Missing Ids</title>
+      <link>https://foxisawesome.github.io/posts/1613-find-the-missing-ids/</link>
+      <pubDate>Tue, 13 Oct 2020 20:03:17 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1613-find-the-missing-ids/</guid>
+      <description>LC 1613 Find the Missing Ids Write an SQL query to find the missing customer IDs. The missing IDs are ones that are not in the Customers table but are in the range between 1 and the maximum customer_id present in the table. Notice that the maximum customer_id will not exceed 100. Return the result table ordered by ids in ascending order. The query result format is in the following</description>
+    </item>
+    
+    <item>
+      <title>1587 Bank Account Summary II</title>
+      <link>https://foxisawesome.github.io/posts/1587-bank-account-summary-ii/</link>
+      <pubDate>Tue, 13 Oct 2020 19:51:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1587-bank-account-summary-ii/</guid>
+      <description>LC 1587 Bank Account Summary II Write an SQL query to report the name and balance of users with a balance higher than 10000. The balance of an account is equal to the sum of the amounts of all transactions involving that account. Return the result table in any order. The query result format is in the following example. Users table: +------------+--------------+ | account | name | +------------+--------------+ | 900001</description>
+    </item>
+    
+    <item>
+      <title>654 Maximum Binary Tree</title>
+      <link>https://foxisawesome.github.io/posts/654-maximum-binary-tree/</link>
+      <pubDate>Tue, 13 Oct 2020 16:05:34 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/654-maximum-binary-tree/</guid>
+      <description>LC 654 Maximum Binary Tree Given an integer array with no duplicates. A maximum tree building on this array is defined as follow: The root is the maximum number in the array. The left subtree is the maximum tree constructed from left part subarray divided by the maximum number. The right subtree is the maximum tree constructed from right part subarray divided by the maximum number. Construct the maximum tree</description>
+    </item>
+    
+    <item>
+      <title>106 Construct Binary Tree From Inorder and Postorder Traversal</title>
+      <link>https://foxisawesome.github.io/posts/106-construct-binary-tree-from-inorder-and-postorder-traversal/</link>
+      <pubDate>Tue, 13 Oct 2020 15:28:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/106-construct-binary-tree-from-inorder-and-postorder-traversal/</guid>
+      <description>LC 106 Construct Binary Tree From Inorder and Postorder Traversal Given inorder and postorder traversal of a tree, construct the binary tree. Note: You may assume that duplicates do not exist in the tree. For example, given inorder = [9,3,15,20,7] postorder = [9,15,7,20,3] Return the following binary tree: 3 / \ 9 20 / \ 15 7 Solution 2020-10-13 Notes: 和 LC 105 一个道理。 # Definition</description>
+    </item>
+    
+    <item>
+      <title>105 Construct Binary Tree From Preorder and Inorder Traversal</title>
+      <link>https://foxisawesome.github.io/posts/105-construct-binary-tree-from-preorder-and-inorder-traversal/</link>
+      <pubDate>Tue, 13 Oct 2020 15:21:19 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/105-construct-binary-tree-from-preorder-and-inorder-traversal/</guid>
+      <description>LC 105 Construct Binary Tree From Preorder and Inorder Traversal Given preorder and inorder traversal of a tree, construct the binary tree. Note: You may assume that duplicates do not exist in the tree. For example, given preorder = [3,9,20,15,7] inorder = [9,3,15,20,7] Return the following binary tree: 3 / \ 9 20 / \ 15 7 Solution 2020-10-13 Notes: 这题关键是 root 在 ino</description>
+    </item>
+    
+    <item>
+      <title>116 Populating Next Right Pointers in Each Node</title>
+      <link>https://foxisawesome.github.io/posts/116-populating-next-right-pointers-in-each-node/</link>
+      <pubDate>Tue, 13 Oct 2020 14:59:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/116-populating-next-right-pointers-in-each-node/</guid>
+      <description>LC 116 Populating Next Right Pointers in Each Node You are given a perfect binary tree where all leaves are on the same level, and every parent has two children. The binary tree has the following definition: struct Node { int val; Node *left; Node *right; Node *next; } Populate each next pointer to point to its next right node. If there is no next right node, the next pointer</description>
+    </item>
+    
+    <item>
+      <title>226 Invert Binary Tree</title>
+      <link>https://foxisawesome.github.io/posts/226-invert-binary-tree/</link>
+      <pubDate>Tue, 13 Oct 2020 09:16:18 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/226-invert-binary-tree/</guid>
+      <description>LC 226 Invert Binary Tree   nvert a binary tree.
+Input:
+ 4 / \ 2 7 / \ / \ 1 3 6 9  Output:
+ 4 / \ 7 2 / \ / \ 9 6 3 1   Solution 2020-10-13 Notes:    # Definition for a binary tree node. # class TreeNode: # def __init__(self, val=0, left=None, right=None): # self.val = val # self.</description>
+    </item>
     
     <item>
       <title>453 Minimum Moves to Equal Array Elements</title>
@@ -17,192 +197,6 @@
       
       <guid>https://foxisawesome.github.io/posts/453-minimum-moves-to-equal-array-elements/</guid>
       <description>LC 453 Minimum Moves to Equal Array Elements Given a non-empty integer array of size n, find the minimum number of moves required to make all array elements equal, where a move is incrementing n - 1 elements by 1. Input: [1,2,3] Output: 3 Explanation: Only three moves are needed (remember each move increments two elements): [1,2,3] =&amp;gt; [2,3,3] =&amp;gt; [3,4,3] =&amp;gt; [4,4,4] Solution 2020-10-11 Notes: 很巧的一</description>
-    </item>
-    
-    <item>
-      <title>547 Friend Circles</title>
-      <link>https://foxisawesome.github.io/posts/547-friend-circles/</link>
-      <pubDate>Sun, 11 Oct 2020 21:26:03 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/547-friend-circles/</guid>
-      <description>LC 547 Friend Circles There are N students in a class. Some of them are friends, while some are not. Their friendship is transitive in nature. For example, if A is a direct friend of B, and B is a direct friend of C, then A is an indirect friend of C. And we defined a friend circle is a group of students who are direct or indirect friends. Given</description>
-    </item>
-    
-    <item>
-      <title>1280 Students and Examinations</title>
-      <link>https://foxisawesome.github.io/posts/1280-students-and-examinations/</link>
-      <pubDate>Sun, 11 Oct 2020 15:57:59 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1280-students-and-examinations/</guid>
-      <description>LC 1280 Students and Examinations   Write an SQL query to find the number of times each student attended each exam.
-Order the result table by student_id and subject_name.
-The query result format is in the following example:
-Students table: +------------+--------------+ | student_id | student_name | +------------+--------------+ | 1 | Alice | | 2 | Bob | | 13 | John | | 6 | Alex | +------------+--------------+ Subjects table: +--------------+ | subject_name | +--------------+ | Math | | Physics | | Programming | +--------------+ Examinations table: +------------+--------------+ | student_id | subject_name | +------------+--------------+ | 1 | Math | | 1 | Physics | | 1 | Programming | | 2 | Programming | | 1 | Physics | | 1 | Math | | 13 | Math | | 13 | Programming | | 13 | Physics | | 2 | Math | | 1 | Math | +------------+--------------+ Result table: +------------+--------------+--------------+----------------+ | student_id | student_name | subject_name | attended_exams | +------------+--------------+--------------+----------------+ | 1 | Alice | Math | 3 | | 1 | Alice | Physics | 2 | | 1 | Alice | Programming | 1 | | 2 | Bob | Math | 1 | | 2 | Bob | Physics | 0 | | 2 | Bob | Programming | 1 | | 6 | Alex | Math | 0 | | 6 | Alex | Physics | 0 | | 6 | Alex | Programming | 0 | | 13 | John | Math | 1 | | 13 | John | Physics | 1 | | 13 | John | Programming | 1 | +------------+--------------+--------------+----------------+   Solution 2020-10-11 Notes: SELECT a.</description>
-    </item>
-    
-    <item>
-      <title>1205 Monthly Transactions II</title>
-      <link>https://foxisawesome.github.io/posts/1205-monthly-transactions-ii/</link>
-      <pubDate>Sun, 11 Oct 2020 15:45:17 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1205-monthly-transactions-ii/</guid>
-      <description>LC 1205 Monthly Transactions II   Write an SQL query to find for each month and country, the number of approved transactions and their total amount, the number of chargebacks and their total amount.
-Note: In your query, given the month and country, ignore rows with all zeros.
-The query result format is in the following example:
-Transactions table: +------+---------+----------+--------+------------+ | id | country | state | amount | trans_date | +------+---------+----------+--------+------------+ | 101 | US | approved | 1000 | 2019-05-18 | | 102 | US | declined | 2000 | 2019-05-19 | | 103 | US | approved | 3000 | 2019-06-10 | | 104 | US | approved | 4000 | 2019-06-13 | | 105 | US | approved | 5000 | 2019-06-15 | +------+---------+----------+--------+------------+ Chargebacks table: +------------+------------+ | trans_id | trans_date | +------------+------------+ | 102 | 2019-05-29 | | 101 | 2019-06-30 | | 105 | 2019-09-18 | +------------+------------+ Result table: +----------+---------+----------------+-----------------+-------------------+--------------------+ | month | country | approved_count | approved_amount | chargeback_count | chargeback_amount | +----------+---------+----------------+-----------------+-------------------+--------------------+ | 2019-05 | US | 1 | 1000 | 1 | 2000 | | 2019-06 | US | 3 | 12000 | 1 | 1000 | | 2019-09 | US | 0 | 0 | 1 | 5000 | +----------+---------+----------------+-----------------+-------------------+--------------------+   Solution 2020-10-11 Notes: SELECT month, country, SUM(CASE WHEN state = &amp;quot;approved&amp;quot; THEN 1 ELSE 0 END) AS approved_count, SUM(CASE WHEN state = &amp;quot;approved&amp;quot; THEN amount ELSE 0 END) AS approved_amount, SUM(CASE WHEN state = &amp;quot;back&amp;quot; THEN 1 ELSE 0 END) AS chargeback_count, SUM(CASE WHEN state = &amp;quot;back&amp;quot; THEN amount ELSE 0 END) AS chargeback_amount FROM( SELECT LEFT(chargebacks.</description>
-    </item>
-    
-    <item>
-      <title>695 Max Area of Island</title>
-      <link>https://foxisawesome.github.io/posts/695-max-area-of-island/</link>
-      <pubDate>Sun, 11 Oct 2020 11:03:17 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/695-max-area-of-island/</guid>
-      <description>LC 695 Max Area of Island Given a non-empty 2D array grid of 0&amp;rsquo;s and 1&amp;rsquo;s, an island is a group of 1&amp;rsquo;s (representing land) connected 4-directionally (horizontal or vertical.) You may assume all four edges of the grid are surrounded by water. Find the maximum area of an island in the given 2D array. (If there is no island, the maximum area is 0.) [[0,0,1,0,0,0,0,1,0,0,0,0,0], [0,0,0,0,0,0,0,1,1,1,0,0,0], [0,1,1,0,1,0,0,0,0,0,0,0,0], [0,1,0,0,1,1,0,0,1,0,1,0,0], [0,1,0,0,1,1,0,0,1,1,1,0,0],</description>
-    </item>
-    
-    <item>
-      <title>1197 Minimum Knight Moves</title>
-      <link>https://foxisawesome.github.io/posts/1197-minimum-knight-moves/</link>
-      <pubDate>Sun, 11 Oct 2020 10:38:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1197-minimum-knight-moves/</guid>
-      <description>LC 1197 Minimum Knight Moves In an infinite chess board with coordinates from -infinity to +infinity, you have a knight at square [0, 0]. A knight has 8 possible moves it can make, as illustrated below. Each move is two squares in a cardinal direction, then one square in an orthogonal direction. Solution 2020-10-11 Notes: 这题最优解是dp 但使用naiv</description>
-    </item>
-    
-    <item>
-      <title>835 Image Overlap</title>
-      <link>https://foxisawesome.github.io/posts/835-image-overlap/</link>
-      <pubDate>Sun, 11 Oct 2020 10:12:32 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/835-image-overlap/</guid>
-      <description>LC 835 Image Overlap You are given two images img1 and img2 both of size n x n, represented as binary, square matrices of the same size. (A binary matrix has only 0s and 1s as values.) We translate one image however we choose (sliding it left, right, up, or down any number of units), and place it on top of the other image. After, the overlap of this translation</description>
-    </item>
-    
-    <item>
-      <title>1007 Minimum Domino Rotations for Equal Row</title>
-      <link>https://foxisawesome.github.io/posts/1007-minimum-domino-rotations-for-equal-row/</link>
-      <pubDate>Fri, 09 Oct 2020 19:35:36 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1007-minimum-domino-rotations-for-equal-row/</guid>
-      <description>LC 1007 Minimum Domino Rotations for Equal Row In a row of dominoes, A[i] and B[i] represent the top and bottom halves of the i-th domino. (A domino is a tile with two numbers from 1 to 6 - one on each half of the tile.) We may rotate the i-th domino, so that A[i] and B[i] swap values. Return the minimum number of rotations so that all the values</description>
-    </item>
-    
-    <item>
-      <title>1321 Restaurant Growth</title>
-      <link>https://foxisawesome.github.io/posts/1321-restaurant-growth/</link>
-      <pubDate>Fri, 09 Oct 2020 19:16:19 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1321-restaurant-growth/</guid>
-      <description>LC 1321 Restaurant Growth Write an SQL query to compute moving average of how much customer paid in a 7 days window (current day + 6 days before) . The query result format is in the following example: Return result table ordered by visited_on. average_amount should be rounded to 2 decimal places, all dates are in the format (&amp;lsquo;YYYY-MM-DD&amp;rsquo;). Customer table: +-------------+--------------+--------------+-------------+ | customer_id | name | visited_on | amount</description>
-    </item>
-    
-    <item>
-      <title>1107 New Users Daily Count</title>
-      <link>https://foxisawesome.github.io/posts/1107-new-users-daily-count/</link>
-      <pubDate>Fri, 09 Oct 2020 18:54:37 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1107-new-users-daily-count/</guid>
-      <description>LC 1107 New Users Daily Count   Write an SQL query that reports for every date within at most 90 days from today, the number of users that logged in for the first time on that date. Assume today is 2019-06-30.
-The query result format is in the following example:
-Traffic table: +---------+----------+---------------+ | user_id | activity | activity_date | +---------+----------+---------------+ | 1 | login | 2019-05-01 | | 1 | homepage | 2019-05-01 | | 1 | logout | 2019-05-01 | | 2 | login | 2019-06-21 | | 2 | logout | 2019-06-21 | | 3 | login | 2019-01-01 | | 3 | jobs | 2019-01-01 | | 3 | logout | 2019-01-01 | | 4 | login | 2019-06-21 | | 4 | groups | 2019-06-21 | | 4 | logout | 2019-06-21 | | 5 | login | 2019-03-01 | | 5 | logout | 2019-03-01 | | 5 | login | 2019-06-21 | | 5 | logout | 2019-06-21 | +---------+----------+---------------+ Result table: +------------+-------------+ | login_date | user_count | +------------+-------------+ | 2019-05-01 | 1 | | 2019-06-21 | 2 | +------------+-------------+   Solution 2020-10-09 Notes: SELECT activity_date AS login_date, COUNT(user_id) AS user_count FROM( SELECT *, ROW_NUMBER() OVER(PARTITION BY user_id ORDER BY activity_date) AS nr FROM traffic WHERE activity = &#39;login&#39; ) a WHERE nr = 1 and DATEDIFF(&#39;2019-06-30&#39;, activity_date) &amp;lt;= 90 GROUP BY 1  </description>
-    </item>
-    
-    <item>
-      <title>1484 Group Sold Products by the Date</title>
-      <link>https://foxisawesome.github.io/posts/1484-group-sold-products-by-the-date/</link>
-      <pubDate>Fri, 09 Oct 2020 18:43:41 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1484-group-sold-products-by-the-date/</guid>
-      <description>LC 1484 Group Sold Products by the Date Write an SQL query to find for each date, the number of distinct products sold and their names. The sold-products names for each date should be sorted lexicographically. Return the result table ordered by sell_date. The query result format is in the following example. Activities table: +------------+-------------+ | sell_date | product | +------------+-------------+ | 2020-05-30 | Headphone | | 2020-06-01 | Pencil</description>
-    </item>
-    
-    <item>
-      <title>443 String Compression</title>
-      <link>https://foxisawesome.github.io/posts/443-string-compression/</link>
-      <pubDate>Fri, 09 Oct 2020 18:33:05 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/443-string-compression/</guid>
-      <description>LC 443 String Compression Given an array of characters chars, compress it using the following algorithm: Begin with an empty string s. For each group of consecutive repeating characters in chars: If the group&amp;rsquo;s length is 1, append the character to s. Otherwise, append the character followed by the group&amp;rsquo;s length. The compressed string s should not be returned separately, but instead be stored in the input character array chars.</description>
-    </item>
-    
-    <item>
-      <title>13 Roman to Integer</title>
-      <link>https://foxisawesome.github.io/posts/13-roman-to-integer/</link>
-      <pubDate>Fri, 09 Oct 2020 16:06:38 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/13-roman-to-integer/</guid>
-      <description>LC 13 Roman to Integer Roman numerals are represented by seven different symbols: I, V, X, L, C, D and M. Symbol Value I 1 V 5 X 10 L 50 C 100 D 500 M 1000 For example, 2 is written as II in Roman numeral, just two one&amp;rsquo;s added together. 12 is written as XII, which is simply X + II. The number 27 is written as XXVII,</description>
-    </item>
-    
-    <item>
-      <title>6 Zigzag Conversion</title>
-      <link>https://foxisawesome.github.io/posts/6-zigzag-conversion/</link>
-      <pubDate>Fri, 09 Oct 2020 15:50:57 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/6-zigzag-conversion/</guid>
-      <description>LC 6 Zigzag Conversion The string &amp;quot;PAYPALISHIRING&amp;quot; is written in a zigzag pattern on a given number of rows like this: (you may want to display this pattern in a fixed font for better legibility) P A H N A P L S I I G Y I R And then read line by line: &amp;quot;PAHNAPLSIIGYIR&amp;quot; Write the code that will take a string and make this conversion given a</description>
-    </item>
-    
-    <item>
-      <title>347 Top K Frequent Elements</title>
-      <link>https://foxisawesome.github.io/posts/347-top-k-frequent-elements/</link>
-      <pubDate>Fri, 09 Oct 2020 15:32:40 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/347-top-k-frequent-elements/</guid>
-      <description>LC 347 Top K Frequent Elements Given a non-empty array of integers, return the *k* most frequent elements. Input: nums = [1,1,1,2,2,3], k = 2 Output: [1,2] Solution 2020-10-09 Notes: 这题要求 O(NlogN)就能过，那么把counter排下序就好了。 class Solution: def topKFrequent(self, nums: List[int], k:</description>
-    </item>
-    
-    <item>
-      <title>127 Word Ladder</title>
-      <link>https://foxisawesome.github.io/posts/127-word-ladder/</link>
-      <pubDate>Thu, 08 Oct 2020 21:14:34 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/127-word-ladder/</guid>
-      <description>LC 127 Word Ladder Given two words (beginWord and endWord), and a dictionary&amp;rsquo;s word list, find the length of shortest transformation sequence from beginWord to endWord, such that: Only one letter can be changed at a time. Each transformed word must exist in the word list. Input: beginWord = &amp;quot;hit&amp;quot;, endWord = &amp;quot;cog&amp;quot;, wordList = [&amp;quot;hot&amp;quot;,&amp;quot;dot&amp;quot;,&amp;quot;dog&amp;quot;,&amp;quot;lot&amp;quot;,&amp;quot;log&amp;quot;,&amp;quot;cog&amp;quot;] Output: 5 Explanation: As one shortest transformation is &amp;quot;hit&amp;quot; -&amp;gt; &amp;quot;hot&amp;quot; -&amp;gt; &amp;quot;dot&amp;quot; -&amp;gt;</description>
-    </item>
-    
-    <item>
-      <title>468 Validate Ip Address</title>
-      <link>https://foxisawesome.github.io/posts/468-validate-ip-address/</link>
-      <pubDate>Thu, 08 Oct 2020 20:03:36 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/468-validate-ip-address/</guid>
-      <description>LC 468 Validate Ip Address Given a string IP, return &amp;quot;IPv4&amp;quot; if IP is a valid IPv4 address, &amp;quot;IPv6&amp;quot; if IP is a valid IPv6 address or &amp;quot;Neither&amp;quot; if IP is not a correct IP of any type. A valid IPv4 address is an IP in the form &amp;quot;x1.x2.x3.x4&amp;quot; where 0 &amp;lt;= xi &amp;lt;= 255 and xi cannot contain leading zeros. For example, &amp;quot;192.168.1.1&amp;quot; and &amp;quot;192.168.1.0&amp;quot; are valid IPv4 addresses</description>
-    </item>
-    
-    <item>
-      <title>595 Big Countries</title>
-      <link>https://foxisawesome.github.io/posts/595-big-countries/</link>
-      <pubDate>Thu, 08 Oct 2020 17:00:05 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/595-big-countries/</guid>
-      <description>LC 595 Big Countries   A country is big if it has an area of bigger than 3 million square km or a population of more than 25 million.
-Write a SQL solution to output big countries&#39; name, population and area.
- Solution 2020-10-08 Notes:   #Union solution is actually faster than using #or.
-  Why Union is faster than OR?
-Strictly speaking, Using UNION is faster when it comes to cases like scan two different column like this</description>
-    </item>
-    
-    <item>
-      <title>596 Classes More Than 5 Students</title>
-      <link>https://foxisawesome.github.io/posts/596-classes-more-than-5-students/</link>
-      <pubDate>Thu, 08 Oct 2020 16:53:20 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/596-classes-more-than-5-students/</guid>
-      <description>LC 596 Classes More Than 5 Students   There is a table courses with columns: student and class
-Please list out all classes which have more than or equal to 5 students.
- Solution 2020-10-08 Notes: SELECT DISTINCT class FROM ( SELECT *, COUNT(student) OVER(PARTITION BY class) AS ct FROM (SELECT DISTINCT student, class FROM courses) b ) a WHERE ct &amp;gt;= 5  </description>
-    </item>
-    
-    <item>
-      <title>1532 the Most Recent Three Orders</title>
-      <link>https://foxisawesome.github.io/posts/1532-the-most-recent-three-orders/</link>
-      <pubDate>Thu, 08 Oct 2020 16:44:43 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1532-the-most-recent-three-orders/</guid>
-      <description>LC 1532 the Most Recent Three Orders   Write an SQL query to find the most recent 3 orders of each user. If a user ordered less than 3 orders return all of their orders.
-Return the result table sorted by customer_name in ascending order and in case of a tie by the customer_id in ascending order. If there still a tie, order them by the order_date in descending order.</description>
     </item>
     
   </channel>

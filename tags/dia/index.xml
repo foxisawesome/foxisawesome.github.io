@@ -5,10 +5,185 @@
     <link>https://foxisawesome.github.io/tags/dia/</link>
     <description>Recent content in dia on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 21 Oct 2020 14:39:41 -0400</lastBuildDate>
+    <lastBuildDate>Mon, 02 Nov 2020 13:42:31 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/dia/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>942 Di String Match</title>
+      <link>https://foxisawesome.github.io/posts/942-di-string-match/</link>
+      <pubDate>Tue, 03 Nov 2020 10:43:04 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/942-di-string-match/</guid>
+      <description>LC 942 Di String Match Given a string S that only contains &amp;ldquo;I&amp;rdquo; (increase) or &amp;ldquo;D&amp;rdquo; (decrease), let N = S.length. Return any permutation A of [0, 1, ..., N] such that for all i = 0, ..., N-1: If S[i] == &amp;quot;I&amp;quot;, then A[i] &amp;lt; A[i+1] If S[i] == &amp;quot;D&amp;quot;, then A[i] &amp;gt; A[i+1] Input: &amp;quot;IDID&amp;quot; Output: [0,4,1,3,2] Solution 2020-11-03 Notes: 这题的examp</description>
+    </item>
+    
+    <item>
+      <title>1051 Height Checker</title>
+      <link>https://foxisawesome.github.io/posts/1051-height-checker/</link>
+      <pubDate>Tue, 03 Nov 2020 10:15:17 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1051-height-checker/</guid>
+      <description>LC 1051 Height Checker Students are asked to stand in non-decreasing order of heights for an annual photo. Return the minimum number of students that must move in order for all students to be standing in non-decreasing order of height. Notice that when a group of students is selected they can reorder in any possible way between themselves and the non selected students remain on their seats. Input: heights =</description>
+    </item>
+    
+    <item>
+      <title>346 Moving Average From Data Stream</title>
+      <link>https://foxisawesome.github.io/posts/346-moving-average-from-data-stream/</link>
+      <pubDate>Tue, 03 Nov 2020 09:17:13 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/346-moving-average-from-data-stream/</guid>
+      <description>LC 346 Moving Average From Data Stream Given a stream of integers and a window size, calculate the moving average of all integers in the sliding window. MovingAverage m = new MovingAverage(3); m.next(1) = 1 m.next(10) = (1 + 10) / 2 m.next(3) = (1 + 10 + 3) / 3 m.next(5) = (10 + 3 + 5) / 3 Solution 2020-11-03 Notes: follow-ups: how about calc variance of streaming</description>
+    </item>
+    
+    <item>
+      <title>57 Insert Interval</title>
+      <link>https://foxisawesome.github.io/posts/57-insert-interval/</link>
+      <pubDate>Mon, 02 Nov 2020 13:42:31 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/57-insert-interval/</guid>
+      <description>LC 57 Insert Interval   Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary).
+You may assume that the intervals were initially sorted according to their start times.
+Input: intervals = [[1,3],[6,9]], newInterval = [2,5] Output: [[1,5],[6,9]]  Input: intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8] Output: [[1,2],[3,10],[12,16]] Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].   Solution 2020-11-02 Notes:  greedy algo.</description>
+    </item>
+    
+    <item>
+      <title>1364 Number of Trusted Contacts of a Customer</title>
+      <link>https://foxisawesome.github.io/sql/1364-number-of-trusted-contacts-of-a-customer/</link>
+      <pubDate>Thu, 29 Oct 2020 11:19:50 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1364-number-of-trusted-contacts-of-a-customer/</guid>
+      <description>LC 1364 Number of Trusted Contacts of a Customer    Solution 2020-10-29 Notes:     </description>
+    </item>
+    
+    <item>
+      <title>1341 Movie Rating</title>
+      <link>https://foxisawesome.github.io/sql/1341-movie-rating/</link>
+      <pubDate>Thu, 29 Oct 2020 11:19:39 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1341-movie-rating/</guid>
+      <description>LC 1341 Movie Rating    Solution 2020-10-29 Notes:     </description>
+    </item>
+    
+    <item>
+      <title>1336 Number of Transactions per Visit</title>
+      <link>https://foxisawesome.github.io/sql/1336-number-of-transactions-per-visit/</link>
+      <pubDate>Thu, 29 Oct 2020 11:19:23 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1336-number-of-transactions-per-visit/</guid>
+      <description>LC 1336 Number of Transactions per Visit    Solution 2020-10-29 Notes:     </description>
+    </item>
+    
+    <item>
+      <title>1327 List the Products Ordered in a Period</title>
+      <link>https://foxisawesome.github.io/sql/1327-list-the-products-ordered-in-a-period/</link>
+      <pubDate>Thu, 29 Oct 2020 11:19:13 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1327-list-the-products-ordered-in-a-period/</guid>
+      <description>LC 1327 List the Products Ordered in a Period    Solution 2020-10-29 Notes:     </description>
+    </item>
+    
+    <item>
+      <title>1303 Find the Team Size</title>
+      <link>https://foxisawesome.github.io/sql/1303-find-the-team-size/</link>
+      <pubDate>Thu, 29 Oct 2020 11:19:04 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1303-find-the-team-size/</guid>
+      <description>LC 1303 Find the Team Size    Solution 2020-10-29 Notes:     </description>
+    </item>
+    
+    <item>
+      <title>1264 Page Recommendations</title>
+      <link>https://foxisawesome.github.io/sql/1264-page-recommendations/</link>
+      <pubDate>Thu, 29 Oct 2020 11:18:52 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1264-page-recommendations/</guid>
+      <description>LC 1264 Page Recommendations    Solution 2020-10-29 Notes:     </description>
+    </item>
+    
+    <item>
+      <title>1251 Average Selling Price</title>
+      <link>https://foxisawesome.github.io/sql/1251-average-selling-price/</link>
+      <pubDate>Thu, 29 Oct 2020 11:18:40 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1251-average-selling-price/</guid>
+      <description>LC 1251 Average Selling Price    Solution 2020-10-29 Notes:     </description>
+    </item>
+    
+    <item>
+      <title>1225 Report Contiguous Dates</title>
+      <link>https://foxisawesome.github.io/sql/1225-report-contiguous-dates/</link>
+      <pubDate>Thu, 29 Oct 2020 11:18:31 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1225-report-contiguous-dates/</guid>
+      <description>LC 1225 Report Contiguous Dates    Solution 2020-10-29 Notes:     </description>
+    </item>
+    
+    <item>
+      <title>1211 Queries Quality and Percentage</title>
+      <link>https://foxisawesome.github.io/sql/1211-queries-quality-and-percentage/</link>
+      <pubDate>Thu, 29 Oct 2020 11:18:19 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1211-queries-quality-and-percentage/</guid>
+      <description>LC 1211 Queries Quality and Percentage    Solution 2020-10-29 Notes:     </description>
+    </item>
+    
+    <item>
+      <title>1193 Monthly Transactions I</title>
+      <link>https://foxisawesome.github.io/posts/1193-monthly-transactions-i/</link>
+      <pubDate>Thu, 29 Oct 2020 11:18:07 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1193-monthly-transactions-i/</guid>
+      <description>LC 1193 Monthly Transactions I Write an SQL query to find for each month and country, the number of transactions and their total amount, the number of approved transactions and their total amount. The query result format is in the following example: Transactions table: +------+---------+----------+--------+------------+ | id | country | state | amount | trans_date | +------+---------+----------+--------+------------+ | 121 | US | approved | 1000 | 2018-12-18 | | 122</description>
+    </item>
+    
+    <item>
+      <title>1158 Market Analysis I</title>
+      <link>https://foxisawesome.github.io/posts/1158-market-analysis-i/</link>
+      <pubDate>Thu, 29 Oct 2020 11:17:54 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1158-market-analysis-i/</guid>
+      <description>LC 1158 Market Analysis I Write an SQL query to find for each user, the join date and the number of orders they made as a buyer in 2019. The query result format is in the following example: Users table: +---------+------------+----------------+ | user_id | join_date | favorite_brand | +---------+------------+----------------+ | 1 | 2018-01-01 | Lenovo | | 2 | 2018-02-09 | Samsung | | 3 | 2018-01-19 | LG |</description>
+    </item>
+    
+    <item>
+      <title>1149 Article Views II</title>
+      <link>https://foxisawesome.github.io/posts/1149-article-views-ii/</link>
+      <pubDate>Thu, 29 Oct 2020 11:17:39 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1149-article-views-ii/</guid>
+      <description>LC 1149 Article Views II Write an SQL query to find all the people who viewed more than one article on the same date, sorted in ascending order by their id. The query result format is in the following example: Views table: +------------+-----------+-----------+------------+ | article_id | author_id | viewer_id | view_date | +------------+-----------+-----------+------------+ | 1 | 3 | 5 | 2019-08-01 | | 3 | 4 | 5 | 2019-08-01</description>
+    </item>
+    
+    <item>
+      <title>1132 Reported Posts II</title>
+      <link>https://foxisawesome.github.io/posts/1132-reported-posts-ii/</link>
+      <pubDate>Thu, 29 Oct 2020 11:14:32 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1132-reported-posts-ii/</guid>
+      <description>LC 1132 Reported Posts II Write an SQL query to find the average for daily percentage of posts that got removed after being reported as spam, rounded to 2 decimal places. The query result format is in the following example: Actions table: +---------+---------+-------------+--------+--------+ | user_id | post_id | action_date | action | extra | +---------+---------+-------------+--------+--------+ | 1 | 1 | 2019-07-01 | view | null | | 1 | 1</description>
+    </item>
+    
+    <item>
+      <title>1127 User Purchase Platform</title>
+      <link>https://foxisawesome.github.io/posts/1127-user-purchase-platform/</link>
+      <pubDate>Thu, 29 Oct 2020 11:14:19 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1127-user-purchase-platform/</guid>
+      <description>LC 1127 User Purchase Platform   Write an SQL query to find the total number of users and the total amount spent using mobile only, desktop only and both mobile and desktop together for each date.
+The query result format is in the following example:
+Spending table: +---------+------------+----------+--------+ | user_id | spend_date | platform | amount | +---------+------------+----------+--------+ | 1 | 2019-07-01 | mobile | 100 | | 1 | 2019-07-01 | desktop | 100 | | 2 | 2019-07-01 | mobile | 100 | | 2 | 2019-07-02 | mobile | 100 | | 3 | 2019-07-01 | desktop | 100 | | 3 | 2019-07-02 | desktop | 100 | +---------+------------+----------+--------+ Result table: +------------+----------+--------------+-------------+ | spend_date | platform | total_amount | total_users | +------------+----------+--------------+-------------+ | 2019-07-01 | desktop | 100 | 1 | | 2019-07-01 | mobile | 100 | 1 | | 2019-07-01 | both | 200 | 1 | | 2019-07-02 | desktop | 100 | 1 | | 2019-07-02 | mobile | 100 | 1 | | 2019-07-02 | both | 0 | 0 | +------------+----------+--------------+-------------+ On 2019-07-01, user 1 purchased using both desktop and mobile, user 2 purchased using mobile only and user 3 purchased using desktop only.</description>
+    </item>
+    
+    <item>
+      <title>1126 Active Businesses</title>
+      <link>https://foxisawesome.github.io/posts/1126-active-businesses/</link>
+      <pubDate>Thu, 29 Oct 2020 11:14:06 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1126-active-businesses/</guid>
+      <description>LC 1126 Active Businesses Write an SQL query to find all active businesses. An active business is a business that has more than one event type with occurences greater than the average occurences of that event type among all businesses. The query result format is in the following example: Events table: +-------------+------------+------------+ | business_id | event_type | occurences | +-------------+------------+------------+ | 1 | reviews | 7 | | 3 |</description>
+    </item>
     
     <item>
       <title>1098 Unpopular Books</title>
@@ -17,191 +192,6 @@
       
       <guid>https://foxisawesome.github.io/posts/1098-unpopular-books/</guid>
       <description>LC 1098 Unpopular Books Write an SQL query that reports the books that have sold less than 10 copies in the last year, excluding books that have been available for less than 1 month from today. Assume today is 2019-06-23. The query result format is in the following example: Books table: +---------+--------------------+----------------+ | book_id | name | available_from | +---------+--------------------+----------------+ | 1 | &amp;quot;Kalila And Demna&amp;quot; | 2010-01-01 | |</description>
-    </item>
-    
-    <item>
-      <title>1082 Sales Analysis I</title>
-      <link>https://foxisawesome.github.io/posts/1082-sales-analysis-i/</link>
-      <pubDate>Thu, 29 Oct 2020 09:53:47 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1082-sales-analysis-i/</guid>
-      <description>LC 1082 Sales Analysis I   Write an SQL query that reports the best seller by total sales price, If there is a tie, report them all.
- Solution 2020-10-29 Notes:  Window function solution, which is faster  SELECT seller_id FROM ( SELECT *, RANK() OVER(ORDER BY SUM(price) DESC) AS rk FROM sales GROUP BY seller_id ) a WHERE rk = 1   aggregation func solution  SELECT seller_id FROM sales GROUP BY 1 HAVING SUM(price) = (SELECT SUM(price) FROM sales GROUP BY seller_id ORDER BY 1 DESC LIMIT 1)  </description>
-    </item>
-    
-    <item>
-      <title>1077 Project Employees III</title>
-      <link>https://foxisawesome.github.io/posts/1077-project-employees-iii/</link>
-      <pubDate>Thu, 29 Oct 2020 09:24:05 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1077-project-employees-iii/</guid>
-      <description>LC 1077 Project Employees III Write an SQL query that reports the most experienced employees in each project. In case of a tie, report all employees with the maximum number of experience years. Solution 2020-10-29 Notes: 秒了 SELECT project_id, employee_id FROM ( SELECT a.*, RANK() OVER(PARTITION BY project_id ORDER BY experience_years DESC) AS rk FROM project a JOIN employee b ON a.employee_id = b.employee_id ) c WHERE rk =</description>
-    </item>
-    
-    <item>
-      <title>1069 Product Sales Analysis II</title>
-      <link>https://foxisawesome.github.io/posts/1069-product-sales-analysis-ii/</link>
-      <pubDate>Thu, 29 Oct 2020 09:15:54 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1069-product-sales-analysis-ii/</guid>
-      <description>LC 1069 Product Sales Analysis II   Write an SQL query that reports the total quantity sold for every product id.
- Solution 2020-10-29 Notes: SELECT product_id, SUM(quantity) AS total_quantity FROM sales GROUP BY 1 ORDER BY 1  </description>
-    </item>
-    
-    <item>
-      <title>1068 Product Sales Analysis I</title>
-      <link>https://foxisawesome.github.io/posts/1068-product-sales-analysis-i/</link>
-      <pubDate>Thu, 29 Oct 2020 09:11:53 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1068-product-sales-analysis-i/</guid>
-      <description>LC 1068 Product Sales Analysis I   Write an SQL query that reports all product names of the products in the Sales table along with their selling year and price.
- Solution 2020-10-29 Notes: select a.product_name, b.year, b.price from product a join sales b on a.product_id = b.product_id order by year, price ;  </description>
-    </item>
-    
-    <item>
-      <title>601 Human Traffic of Stadium</title>
-      <link>https://foxisawesome.github.io/posts/601-human-traffic-of-stadium/</link>
-      <pubDate>Tue, 27 Oct 2020 15:47:32 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/601-human-traffic-of-stadium/</guid>
-      <description>LC 601 Human Traffic of Stadium   Write an SQL query to display the records with three or more rows with consecutive id&amp;rsquo;s, and the number of people is greater than or equal to 100 for each.
-Return the result table ordered by visit_date in ascending order.
-The query result format is in the following example.
-Stadium table: +------+------------+-----------+ | id | visit_date | people | +------+------------+-----------+ | 1 | 2017-01-01 | 10 | | 2 | 2017-01-02 | 109 | | 3 | 2017-01-03 | 150 | | 4 | 2017-01-04 | 99 | | 5 | 2017-01-05 | 145 | | 6 | 2017-01-06 | 1455 | | 7 | 2017-01-07 | 199 | | 8 | 2017-01-09 | 188 | +------+------------+-----------+ Result table: +------+------------+-----------+ | id | visit_date | people | +------+------------+-----------+ | 5 | 2017-01-05 | 145 | | 6 | 2017-01-06 | 1455 | | 7 | 2017-01-07 | 199 | | 8 | 2017-01-09 | 188 | +------+------------+-----------+   Solution 2020-10-27 Notes:  it is slower than version #2.</description>
-    </item>
-    
-    <item>
-      <title>614 Second Degree Follower</title>
-      <link>https://foxisawesome.github.io/posts/614-second-degree-follower/</link>
-      <pubDate>Sun, 25 Oct 2020 14:53:46 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/614-second-degree-follower/</guid>
-      <description>LC 614 Second Degree Follower   In facebook, there is a follow table with two columns: followee, follower.
-Please write a sql query to get the amount of each follower’s follower if he/she has one.
-For example:
-+-------------+------------+ | followee | follower | +-------------+------------+ | A | B | | B | C | | B | D | | D | E | +-------------+------------+  should output:
-+-------------+------------+ | follower | num | +-------------+------------+ | B | 2 | | D | 1 | +-------------+------------+  Explaination: Both B and D exist in the follower list, when as a followee, B&amp;rsquo;s follower is C and D, and D&amp;rsquo;s follower is E.</description>
-    </item>
-    
-    <item>
-      <title>608 Tree Node</title>
-      <link>https://foxisawesome.github.io/posts/608-tree-node/</link>
-      <pubDate>Sun, 25 Oct 2020 14:50:31 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/608-tree-node/</guid>
-      <description>LC 608 Tree Node Given a table tree, id is identifier of the tree node and p_id is its parent node&amp;rsquo;s id. +----+------+ | id | p_id | +----+------+ | 1 | null | | 2 | 1 | | 3 | 1 | | 4 | 2 | | 5 | 2 | +----+------+ Each node in the tree can be one of three types: Leaf: if the node</description>
-    </item>
-    
-    <item>
-      <title>610 Triangle Judgement</title>
-      <link>https://foxisawesome.github.io/posts/610-triangle-judgement/</link>
-      <pubDate>Sun, 25 Oct 2020 10:02:33 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/610-triangle-judgement/</guid>
-      <description>LC 610 Triangle Judgement Could you help Tim by writing a query to judge whether these three sides can form a triangle, assuming table triangle holds the length of the three sides x, y and z. | x | y | z | |----|----|----| | 13 | 15 | 30 | | 10 | 20 | 15 | For the sample data above, your query should return the follow result:</description>
-    </item>
-    
-    <item>
-      <title>612 Shortest Distance in a Plane</title>
-      <link>https://foxisawesome.github.io/posts/612-shortest-distance-in-a-plane/</link>
-      <pubDate>Sun, 25 Oct 2020 10:00:41 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/612-shortest-distance-in-a-plane/</guid>
-      <description>LC 612 Shortest Distance in a Plane Table point_2d holds the coordinates (x,y) of some unique points (more than two) in a plane. Write a query to find the shortest distance between these points rounded to 2 decimals. | x | y | |----|----| | -1 | -1 | | 0 | 0 | | -1 | -2 | The shortest distance is 1.00 from point (-1,-1) to (-1,2). So</description>
-    </item>
-    
-    <item>
-      <title>586 Customer Placing the Largest Number of Orders</title>
-      <link>https://foxisawesome.github.io/posts/586-customer-placing-the-largest-number-of-orders/</link>
-      <pubDate>Sat, 24 Oct 2020 20:14:32 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/586-customer-placing-the-largest-number-of-orders/</guid>
-      <description>LC 586 Customer Placing the Largest Number of Orders Query the customer_number from the *orders* table for the customer who has placed the largest number of orders. It is guaranteed that exactly one customer will have placed more orders than any other customer. Solution 2020-10-24 Notes: 秒了 select customer_number from (select customer_number, count(order_number) as ct from orders group by 1 order by ct desc) a limit 1</description>
-    </item>
-    
-    <item>
-      <title>580 Count Student Number in Departments</title>
-      <link>https://foxisawesome.github.io/posts/580-count-student-number-in-departments/</link>
-      <pubDate>Sat, 24 Oct 2020 20:11:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/580-count-student-number-in-departments/</guid>
-      <description>LC 580 Count Student Number in Departments Write a query to print the respective department name and number of students majoring in each department for all departments in the department table (even ones with no current students). Sort your results by descending number of students; if two or more departments have the same number of students, then sort those departments alphabetically by department name. *student* table: | student_id | student_name</description>
-    </item>
-    
-    <item>
-      <title>578 Get Highest Answer Rate Question</title>
-      <link>https://foxisawesome.github.io/posts/578-get-highest-answer-rate-question/</link>
-      <pubDate>Sat, 24 Oct 2020 20:07:05 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/578-get-highest-answer-rate-question/</guid>
-      <description>LC 578 Get Highest Answer Rate Question   Get the highest answer rate question from a table survey_log with these columns: id, action, question_id, answer_id, q_num, timestamp.
-id means user id; action has these kind of values: &amp;ldquo;show&amp;rdquo;, &amp;ldquo;answer&amp;rdquo;, &amp;ldquo;skip&amp;rdquo;; answer_id is not null when action column is &amp;ldquo;answer&amp;rdquo;, while is null for &amp;ldquo;show&amp;rdquo; and &amp;ldquo;skip&amp;rdquo;; q_num is the numeral order of the question in current session.
-Write a sql query to identify the question which has the highest answer rate.</description>
-    </item>
-    
-    <item>
-      <title>570 Managers With at Least 5 Direct Reports</title>
-      <link>https://foxisawesome.github.io/posts/570-managers-with-at-least-5-direct-reports/</link>
-      <pubDate>Sat, 24 Oct 2020 19:50:25 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/570-managers-with-at-least-5-direct-reports/</guid>
-      <description>LC 570 Managers With at Least 5 Direct Reports The Employee table holds all employees including their managers. Every employee has an Id, and there is also a column for the manager Id. +------+----------+-----------+----------+ |Id |Name |Department |ManagerId | +------+----------+-----------+----------+ |101 |John |A |null | |102 |Dan |A |101 | |103 |James |A |101 | |104 |Amy |A |101 | |105 |Anne |A |101 | |106 |Ron |B |101 |</description>
-    </item>
-    
-    <item>
-      <title>550 Game Play Analysis Iv</title>
-      <link>https://foxisawesome.github.io/posts/550-game-play-analysis-iv/</link>
-      <pubDate>Sat, 24 Oct 2020 19:46:40 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/550-game-play-analysis-iv/</guid>
-      <description>LC 550 Game Play Analysis Iv Write an SQL query that reports the fraction of players that logged in again on the day after the day they first logged in, rounded to 2 decimal places. In other words, you need to count the number of players that logged in for at least two consecutive days starting from their first login date, then divide that number by the total number of</description>
-    </item>
-    
-    <item>
-      <title>511 Game Play Analysis I</title>
-      <link>https://foxisawesome.github.io/posts/511-game-play-analysis-i/</link>
-      <pubDate>Sat, 24 Oct 2020 19:38:18 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/511-game-play-analysis-i/</guid>
-      <description>LC 511 Game Play Analysis I Write an SQL query that reports the first login date for each player. The query result format is in the following example: Activity table: +-----------+-----------+------------+--------------+ | player_id | device_id | event_date | games_played | +-----------+-----------+------------+--------------+ | 1 | 2 | 2016-03-01 | 5 | | 1 | 2 | 2016-05-02 | 6 | | 2 | 3 | 2017-06-25 | 1 | | 3</description>
-    </item>
-    
-    <item>
-      <title>1501 Countries You Can Safely Invest In</title>
-      <link>https://foxisawesome.github.io/posts/1501-countries-you-can-safely-invest-in/</link>
-      <pubDate>Thu, 22 Oct 2020 10:50:21 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1501-countries-you-can-safely-invest-in/</guid>
-      <description>LC 1501 Countries You Can Safely Invest In Write an SQL query to find the countries where this company can invest. Return the result table in any order. The query result format is in the following example. Person table: +----+----------+--------------+ | id | name | phone_number | +----+----------+--------------+ | 3 | Jonathan | 051-1234567 | | 12 | Elvis | 051-7654321 | | 1 | Moncef | 212-1234567 | |</description>
-    </item>
-    
-    <item>
-      <title>1097 Game Play Analysis V</title>
-      <link>https://foxisawesome.github.io/posts/1097-game-play-analysis-v/</link>
-      <pubDate>Thu, 22 Oct 2020 10:35:41 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1097-game-play-analysis-v/</guid>
-      <description>LC 1097 Game Play Analysis V We define the install date of a player to be the first login day of that player. We also define day 1 retention of some date X to be the number of players whose install date is X and they logged back in on the day right after X, divided by the number of players whose install date is X, rounded to 2 decimal</description>
-    </item>
-    
-    <item>
-      <title>647 Palindromic Substrings</title>
-      <link>https://foxisawesome.github.io/posts/647-palindromic-substrings/</link>
-      <pubDate>Wed, 21 Oct 2020 14:39:41 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/647-palindromic-substrings/</guid>
-      <description>LC 647 Palindromic Substrings   Given a string, your task is to count how many palindromic substrings in this string.
-The substrings with different start indexes or end indexes are counted as different substrings even they consist of same characters.
-Input: &amp;quot;abc&amp;quot; Output: 3 Explanation: Three palindromic strings: &amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;.  Input: &amp;quot;aaa&amp;quot; Output: 6 Explanation: Six palindromic strings: &amp;quot;a&amp;quot;, &amp;quot;a&amp;quot;, &amp;quot;a&amp;quot;, &amp;quot;aa&amp;quot;, &amp;quot;aa&amp;quot;, &amp;quot;aaa&amp;quot;.   Solution 2020-10-21 Notes:  dp[i][j]: if s[i:j+1] is palindromic.</description>
-    </item>
-    
-    <item>
-      <title>1353 Maximum Number of Events That Can Be Attended</title>
-      <link>https://foxisawesome.github.io/posts/1353-maximum-number-of-events-that-can-be-attended/</link>
-      <pubDate>Wed, 21 Oct 2020 14:05:38 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1353-maximum-number-of-events-that-can-be-attended/</guid>
-      <description>LC 1353 Maximum Number of Events That Can Be Attended Given an array of events where events[i] = [startDayi, endDayi]. Every event i starts at startDayi and ends at endDayi. You can attend an event i at any day d where startTimei &amp;lt;= d &amp;lt;= endTimei. Notice that you can only attend one event at any time d. Return the maximum number of events you can attend. Input: events =</description>
     </item>
     
   </channel>
