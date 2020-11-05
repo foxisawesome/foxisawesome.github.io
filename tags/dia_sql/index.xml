@@ -5,7 +5,7 @@
     <link>https://foxisawesome.github.io/tags/dia_sql/</link>
     <description>Recent content in dia_sql on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 29 Oct 2020 11:18:31 -0400</lastBuildDate>
+    <lastBuildDate>Thu, 29 Oct 2020 11:19:23 -0400</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/dia_sql/index.xml" rel="self" type="application/rss+xml" />
     
@@ -70,47 +70,47 @@ Input: intervals = [[1,3],[6,9]], newInterval = [2,5] Output: [[1,5],[6,9]]  Inp
     
     <item>
       <title>1364 Number of Trusted Contacts of a Customer</title>
-      <link>https://foxisawesome.github.io/sql/1364-number-of-trusted-contacts-of-a-customer/</link>
+      <link>https://foxisawesome.github.io/posts/1364-number-of-trusted-contacts-of-a-customer/</link>
       <pubDate>Thu, 29 Oct 2020 11:19:50 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/1364-number-of-trusted-contacts-of-a-customer/</guid>
-      <description>LC 1364 Number of Trusted Contacts of a Customer    Solution 2020-10-29 Notes:     </description>
+      <guid>https://foxisawesome.github.io/posts/1364-number-of-trusted-contacts-of-a-customer/</guid>
+      <description>LC 1364 Number of Trusted Contacts of a Customer Write an SQL query to find the following for each invoice_id: customer_name: The name of the customer the invoice is related to. price: The price of the invoice. contacts_cnt: The number of contacts related to the customer. trusted_contacts_cnt: The number of contacts related to the customer and at the same time they are customers to the shop. (i.e His/Her email exists</description>
     </item>
     
     <item>
       <title>1341 Movie Rating</title>
-      <link>https://foxisawesome.github.io/sql/1341-movie-rating/</link>
+      <link>https://foxisawesome.github.io/posts/1341-movie-rating/</link>
       <pubDate>Thu, 29 Oct 2020 11:19:39 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/1341-movie-rating/</guid>
-      <description>LC 1341 Movie Rating    Solution 2020-10-29 Notes:     </description>
+      <guid>https://foxisawesome.github.io/posts/1341-movie-rating/</guid>
+      <description>LC 1341 Movie Rating Write the following SQL query: Find the name of the user who has rated the greatest number of movies. In case of a tie, return lexicographically smaller user name. Find the movie name with thehighest averagerating inFebruary 2020 In case of a tie, return lexicographically smaller movie name. The query is returned in 2 rows, the query result format is in the following example: Movies table:</description>
     </item>
     
     <item>
       <title>1336 Number of Transactions per Visit</title>
-      <link>https://foxisawesome.github.io/sql/1336-number-of-transactions-per-visit/</link>
+      <link>https://foxisawesome.github.io/posts/1336-number-of-transactions-per-visit/</link>
       <pubDate>Thu, 29 Oct 2020 11:19:23 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/1336-number-of-transactions-per-visit/</guid>
-      <description>LC 1336 Number of Transactions per Visit    Solution 2020-10-29 Notes:     </description>
+      <guid>https://foxisawesome.github.io/posts/1336-number-of-transactions-per-visit/</guid>
+      <description>LC 1336 Number of Transactions per Visit Write an SQL query to find how many users visited the bank and didn&amp;rsquo;t do any transactions, how many visited the bank and did one transaction and so on. The result table will contain two columns: transactions_count which is the number of transactions done in one visit. visits_count which is the corresponding number of users who did transactions_count in one visit to the</description>
     </item>
     
     <item>
       <title>1327 List the Products Ordered in a Period</title>
-      <link>https://foxisawesome.github.io/sql/1327-list-the-products-ordered-in-a-period/</link>
+      <link>https://foxisawesome.github.io/posts/1327-list-the-products-ordered-in-a-period/</link>
       <pubDate>Thu, 29 Oct 2020 11:19:13 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/1327-list-the-products-ordered-in-a-period/</guid>
-      <description>LC 1327 List the Products Ordered in a Period    Solution 2020-10-29 Notes:     </description>
+      <guid>https://foxisawesome.github.io/posts/1327-list-the-products-ordered-in-a-period/</guid>
+      <description>LC 1327 List the Products Ordered in a Period Write an SQL query to get the names of products with greater than or equal to 100 units ordered in February 2020 and their amount. Return result table in any order. The query result format is in the following example: Products table: +-------------+-----------------------+------------------+ | product_id | product_name | product_category | +-------------+-----------------------+------------------+ | 1 | Leetcode Solutions | Book | | 2</description>
     </item>
     
     <item>
       <title>1303 Find the Team Size</title>
-      <link>https://foxisawesome.github.io/sql/1303-find-the-team-size/</link>
+      <link>https://foxisawesome.github.io/posts/1303-find-the-team-size/</link>
       <pubDate>Thu, 29 Oct 2020 11:19:04 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/1303-find-the-team-size/</guid>
-      <description>LC 1303 Find the Team Size    Solution 2020-10-29 Notes:     </description>
+      <guid>https://foxisawesome.github.io/posts/1303-find-the-team-size/</guid>
+      <description>LC 1303 Find the Team Size Write an SQL query to find the team size of each of the employees. Return result table in any order. The query result format is in the following example: Employee Table: +-------------+------------+ | employee_id | team_id | +-------------+------------+ | 1 | 8 | | 2 | 8 | | 3 | 8 | | 4 | 7 | | 5 | 9 | |</description>
     </item>
     
     <item>

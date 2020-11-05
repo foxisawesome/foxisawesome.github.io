@@ -136,7 +136,7 @@
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/sql/1364-number-of-trusted-contacts-of-a-customer/</loc>
+    <loc>https://foxisawesome.github.io/posts/1364-number-of-trusted-contacts-of-a-customer/</loc>
     <lastmod>2020-10-29T11:19:50-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -150,35 +150,35 @@
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/sql/</loc>
-    <lastmod>2020-10-29T11:19:50-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/sql/1341-movie-rating/</loc>
+    <loc>https://foxisawesome.github.io/posts/1341-movie-rating/</loc>
     <lastmod>2020-10-29T11:19:39-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/sql/1336-number-of-transactions-per-visit/</loc>
+    <loc>https://foxisawesome.github.io/posts/1336-number-of-transactions-per-visit/</loc>
     <lastmod>2020-10-29T11:19:23-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/sql/1327-list-the-products-ordered-in-a-period/</loc>
+    <loc>https://foxisawesome.github.io/tags/dia_sql/</loc>
+    <lastmod>2020-10-29T11:19:23-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/1327-list-the-products-ordered-in-a-period/</loc>
     <lastmod>2020-10-29T11:19:13-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/sql/1303-find-the-team-size/</loc>
+    <loc>https://foxisawesome.github.io/posts/1303-find-the-team-size/</loc>
     <lastmod>2020-10-29T11:19:04-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -200,13 +200,6 @@
   
   <url>
     <loc>https://foxisawesome.github.io/posts/1225-report-contiguous-dates/</loc>
-    <lastmod>2020-10-29T11:18:31-04:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/tags/dia_sql/</loc>
     <lastmod>2020-10-29T11:18:31-04:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
