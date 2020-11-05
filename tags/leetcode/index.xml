@@ -5,10 +5,30 @@
     <link>https://foxisawesome.github.io/tags/leetcode/</link>
     <description>Recent content in leetcode on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 03 Nov 2020 10:43:04 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2020 14:40:15 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1238 Circular Permutation in Binary Representation</title>
+      <link>https://foxisawesome.github.io/posts/1238-circular-permutation-in-binary-representation/</link>
+      <pubDate>Wed, 04 Nov 2020 14:40:15 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1238-circular-permutation-in-binary-representation/</guid>
+      <description>LC 1238 Circular Permutation in Binary Representation    Solution 2020-11-04 Notes:  gray code 1 &amp;laquo; n = 2**n   class Solution: def circularPermutation(self, n: int, start: int) -&amp;gt; List[int]: return [start ^ i ^ i &amp;gt;&amp;gt; 1 for i in range(1 &amp;lt;&amp;lt; n)] # Time O(2^N) # Space O(2^N)  bit manipulation:</description>
+    </item>
+    
+    <item>
+      <title>1351 Count Negative Numbers in a Sorted Matrix</title>
+      <link>https://foxisawesome.github.io/posts/1351-count-negative-numbers-in-a-sorted-matrix/</link>
+      <pubDate>Wed, 04 Nov 2020 13:35:18 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1351-count-negative-numbers-in-a-sorted-matrix/</guid>
+      <description>LC 1351 Count Negative Numbers in a Sorted Matrix   Given a m * n matrix grid which is sorted in non-increasing order both row-wise and column-wise.
+Return the number of negative numbers in grid.
+Input: grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]] Output: 8 Explanation: There are 8 negatives number in the matrix.   Solution 2020-11-04 Notes: class Solution: def countNegatives(self, grid: List[List[int]]) -&amp;gt; int: nr, nc = len(grid), len(grid[0]) ans, i = 0, 0 while i &amp;lt; nr: j = 0 while j &amp;lt; nc: if grid[i][j] &amp;lt; 0: ans += nc-j break else: j += 1 i += 1 return ans # Time O(MN) # Space O(1)  </description>
+    </item>
     
     <item>
       <title>942 Di String Match</title>
@@ -95,38 +115,38 @@ Input: intervals = [[1,3],[6,9]], newInterval = [2,5] Output: [[1,5],[6,9]]  Inp
     
     <item>
       <title>1264 Page Recommendations</title>
-      <link>https://foxisawesome.github.io/sql/1264-page-recommendations/</link>
+      <link>https://foxisawesome.github.io/posts/1264-page-recommendations/</link>
       <pubDate>Thu, 29 Oct 2020 11:18:52 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/1264-page-recommendations/</guid>
-      <description>LC 1264 Page Recommendations    Solution 2020-10-29 Notes:     </description>
+      <guid>https://foxisawesome.github.io/posts/1264-page-recommendations/</guid>
+      <description>LC 1264 Page Recommendations Write an SQL query to recommend pages to the user with user_id = 1 using the pages that your friends liked. It should not recommend pages you already liked. Return result table in any order without duplicates. The query result format is in the following example: Friendship table: +----------+----------+ | user1_id | user2_id | +----------+----------+ | 1 | 2 | | 1 | 3 | |</description>
     </item>
     
     <item>
       <title>1251 Average Selling Price</title>
-      <link>https://foxisawesome.github.io/sql/1251-average-selling-price/</link>
+      <link>https://foxisawesome.github.io/posts/1251-average-selling-price/</link>
       <pubDate>Thu, 29 Oct 2020 11:18:40 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/1251-average-selling-price/</guid>
-      <description>LC 1251 Average Selling Price    Solution 2020-10-29 Notes:     </description>
+      <guid>https://foxisawesome.github.io/posts/1251-average-selling-price/</guid>
+      <description>LC 1251 Average Selling Price Write an SQL query to find the average selling price for each product. average_price should be rounded to 2 decimal places. The query result format is in the following example: Prices table: +------------+------------+------------+--------+ | product_id | start_date | end_date | price | +------------+------------+------------+--------+ | 1 | 2019-02-17 | 2019-02-28 | 5 | | 1 | 2019-03-01 | 2019-03-22 | 20 | | 2 | 2019-02-01</description>
     </item>
     
     <item>
       <title>1225 Report Contiguous Dates</title>
-      <link>https://foxisawesome.github.io/sql/1225-report-contiguous-dates/</link>
+      <link>https://foxisawesome.github.io/posts/1225-report-contiguous-dates/</link>
       <pubDate>Thu, 29 Oct 2020 11:18:31 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/1225-report-contiguous-dates/</guid>
-      <description>LC 1225 Report Contiguous Dates    Solution 2020-10-29 Notes:     </description>
+      <guid>https://foxisawesome.github.io/posts/1225-report-contiguous-dates/</guid>
+      <description>LC 1225 Report Contiguous Dates 01-01 to 2019-12-31. period_state` is *&#39;failed&#39;* if tasks in this interval failed or *&#39;succeeded&#39;* if tasks in this interval succeeded. Interval of days are retrieved as `start_date` and `end_date. Order result by start_date. The query result format is in the following example: Failed table: +-------------------+ | fail_date | +-------------------+ | 2018-12-28 | | 2018-12-29 | | 2019-01-04 | | 2019-01-05 | +-------------------+ Succeeded table: +-------------------+</description>
     </item>
     
     <item>
       <title>1211 Queries Quality and Percentage</title>
-      <link>https://foxisawesome.github.io/sql/1211-queries-quality-and-percentage/</link>
+      <link>https://foxisawesome.github.io/posts/1211-queries-quality-and-percentage/</link>
       <pubDate>Thu, 29 Oct 2020 11:18:19 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/1211-queries-quality-and-percentage/</guid>
-      <description>LC 1211 Queries Quality and Percentage    Solution 2020-10-29 Notes:     </description>
+      <guid>https://foxisawesome.github.io/posts/1211-queries-quality-and-percentage/</guid>
+      <description>LC 1211 Queries Quality and Percentage Write an SQL query to find each query_name, the quality and poor_query_percentage. Both quality and poor_query_percentage should be rounded to 2 decimal places. The query result format is in the following example: Queries table: +------------+-------------------+----------+--------+ | query_name | result | position | rating | +------------+-------------------+----------+--------+ | Dog | Golden Retriever | 1 | 5 | | Dog | German Shepherd | 2 | 5</description>
     </item>
     
     <item>
@@ -174,24 +194,6 @@ Input: intervals = [[1,3],[6,9]], newInterval = [2,5] Output: [[1,5],[6,9]]  Inp
       <description>LC 1127 User Purchase Platform   Write an SQL query to find the total number of users and the total amount spent using mobile only, desktop only and both mobile and desktop together for each date.
 The query result format is in the following example:
 Spending table: +---------+------------+----------+--------+ | user_id | spend_date | platform | amount | +---------+------------+----------+--------+ | 1 | 2019-07-01 | mobile | 100 | | 1 | 2019-07-01 | desktop | 100 | | 2 | 2019-07-01 | mobile | 100 | | 2 | 2019-07-02 | mobile | 100 | | 3 | 2019-07-01 | desktop | 100 | | 3 | 2019-07-02 | desktop | 100 | +---------+------------+----------+--------+ Result table: +------------+----------+--------------+-------------+ | spend_date | platform | total_amount | total_users | +------------+----------+--------------+-------------+ | 2019-07-01 | desktop | 100 | 1 | | 2019-07-01 | mobile | 100 | 1 | | 2019-07-01 | both | 200 | 1 | | 2019-07-02 | desktop | 100 | 1 | | 2019-07-02 | mobile | 100 | 1 | | 2019-07-02 | both | 0 | 0 | +------------+----------+--------------+-------------+ On 2019-07-01, user 1 purchased using both desktop and mobile, user 2 purchased using mobile only and user 3 purchased using desktop only.</description>
-    </item>
-    
-    <item>
-      <title>1126 Active Businesses</title>
-      <link>https://foxisawesome.github.io/posts/1126-active-businesses/</link>
-      <pubDate>Thu, 29 Oct 2020 11:14:06 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1126-active-businesses/</guid>
-      <description>LC 1126 Active Businesses Write an SQL query to find all active businesses. An active business is a business that has more than one event type with occurences greater than the average occurences of that event type among all businesses. The query result format is in the following example: Events table: +-------------+------------+------------+ | business_id | event_type | occurences | +-------------+------------+------------+ | 1 | reviews | 7 | | 3 |</description>
-    </item>
-    
-    <item>
-      <title>1098 Unpopular Books</title>
-      <link>https://foxisawesome.github.io/posts/1098-unpopular-books/</link>
-      <pubDate>Thu, 29 Oct 2020 10:21:21 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1098-unpopular-books/</guid>
-      <description>LC 1098 Unpopular Books Write an SQL query that reports the books that have sold less than 10 copies in the last year, excluding books that have been available for less than 1 month from today. Assume today is 2019-06-23. The query result format is in the following example: Books table: +---------+--------------------+----------------+ | book_id | name | available_from | +---------+--------------------+----------------+ | 1 | &amp;quot;Kalila And Demna&amp;quot; | 2010-01-01 | |</description>
     </item>
     
   </channel>

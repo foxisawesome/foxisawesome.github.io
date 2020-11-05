@@ -5,10 +5,28 @@
     <link>https://foxisawesome.github.io/tags/leetcode/</link>
     <description>Recent content in leetcode on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 03 Nov 2020 10:43:04 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2020 14:40:15 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>102 Binary Tree Level Order Traversal</title>
+      <link>https://foxisawesome.github.io/posts/102-binary-tree-level-order-traversal/</link>
+      <pubDate>Sun, 13 Sep 2020 14:55:14 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/102-binary-tree-level-order-traversal/</guid>
+      <description>LC 102 Binary Tree Level Order Traversal Given a binary tree, return the level order traversal of its nodes&#39; values. (ie, from left to right, level by level). Given binary tree [3,9,20,null,null,15,7], 3 / \ 9 20 / \ 15 7 return [[3],[9,20],[15,7]] Solution 2020-09-13 Notes: 与LC 109 一样 Recursion 解法： # Definition for a binary tree node. # class TreeNode: # def __init__(self, val=0,</description>
+    </item>
+    
+    <item>
+      <title>199 Binary Tree Right Side View</title>
+      <link>https://foxisawesome.github.io/posts/199-binary-tree-right-side-view/</link>
+      <pubDate>Sun, 13 Sep 2020 14:39:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/199-binary-tree-right-side-view/</guid>
+      <description>LC 199 Binary Tree Right Side View Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom. Example: Input: [1,2,3,null,5,null,4] Output: [1, 3, 4] Explanation: 1 &amp;lt;--- / \ 2 3 &amp;lt;--- \ \ 5 4 &amp;lt;--- Solution 2020-09-13 Notes: 一刷虽然做出来了 但是在输出</description>
+    </item>
     
     <item>
       <title>987 Vertical Order Traversal of a Binary Tree</title>
@@ -176,28 +194,6 @@ Weather +----+------------+-------------+ | id | recordDate | Temperature | +---
       <description>LC 951 Flip Equivalent Binary Trees   For a binary tree T, we can define a flip operation as follows: choose any node, and swap the left and right child subtrees.
 A binary tree X is flip equivalent to a binary tree Y if and only if we can make X equal to Y after some number of flip operations.
 Given the roots of two binary trees root1 and root2, return true if the two trees are flip equivelent or false otherwise.</description>
-    </item>
-    
-    <item>
-      <title>101 Symmetric Tree</title>
-      <link>https://foxisawesome.github.io/posts/101-symmetric-tree/</link>
-      <pubDate>Thu, 10 Sep 2020 09:26:44 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/101-symmetric-tree/</guid>
-      <description>LC 101 Symmetric Tree   Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
-For example, this binary tree [1,2,2,3,4,4,3] is symmetric:
- 1 / \ 2 2 / \ / \ 3 4 4 3  But the following [1,2,2,null,3,null,3] is not:
- 1 / \ 2 2 \ \ 3 3   Solution 2020-09-10 Notes:
- recursion is pretty standard in this case.</description>
-    </item>
-    
-    <item>
-      <title>100 Same Tree</title>
-      <link>https://foxisawesome.github.io/posts/100-same-tree/</link>
-      <pubDate>Wed, 09 Sep 2020 22:18:03 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/100-same-tree/</guid>
-      <description>LC 100 Same Tree Given two binary trees, write a function to check if they are the same or not. Two binary trees are considered the same if they are structurally identical and the nodes have the same value. Solution 2020-09-09 Notes: Two roots 的pattern 和 single root一样。Tree 刷的略有感</description>
     </item>
     
   </channel>

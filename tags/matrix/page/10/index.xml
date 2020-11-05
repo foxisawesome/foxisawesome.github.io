@@ -5,10 +5,30 @@
     <link>https://foxisawesome.github.io/tags/matrix/</link>
     <description>Recent content in matrix on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 19 Oct 2020 13:36:39 -0400</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2020 13:35:18 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/matrix/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>534 Game Play Analysis III</title>
+      <link>https://foxisawesome.github.io/posts/534-game-play-analysis-iii/</link>
+      <pubDate>Tue, 29 Sep 2020 13:30:11 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/534-game-play-analysis-iii/</guid>
+      <description>LC 534 Game Play Analysis III   Write an SQL query that reports for each player and date, how many games played so far by the player. That is, the total number of games played by the player until that date. Check the example for clarity.
+The query result format is in the following example:
+Activity table: +-----------+-----------+------------+--------------+ | player_id | device_id | event_date | games_played | +-----------+-----------+------------+--------------+ | 1 | 2 | 2016-03-01 | 5 | | 1 | 2 | 2016-05-02 | 6 | | 1 | 3 | 2017-06-25 | 1 | | 3 | 1 | 2016-03-02 | 0 | | 3 | 4 | 2018-07-03 | 5 | +-----------+-----------+------------+--------------+ Result table: +-----------+------------+---------------------+ | player_id | event_date | games_played_so_far | +-----------+------------+---------------------+ | 1 | 2016-03-01 | 5 | | 1 | 2016-05-02 | 11 | | 1 | 2017-06-25 | 12 | | 3 | 2016-03-02 | 0 | | 3 | 2018-07-03 | 5 | +-----------+------------+---------------------+   Solution 2020-09-29 Notes:  SUM() OVER(ORDER BY) gives cumulative results.</description>
+    </item>
+    
+    <item>
+      <title>567 Permutation in String</title>
+      <link>https://foxisawesome.github.io/posts/567-permutation-in-string/</link>
+      <pubDate>Tue, 29 Sep 2020 13:02:26 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/567-permutation-in-string/</guid>
+      <description>LC 567 Permutation in String Given two strings s1 and s2, write a function to return true if s2 contains the permutation of s1. In other words, one of the first string&amp;rsquo;s permutations is the substring of the second string. Input: s1 = &amp;quot;ab&amp;quot; s2 = &amp;quot;eidbaooo&amp;quot; Output: True Explanation: s2 contains one permutation of s1 (&amp;quot;ba&amp;quot;). Solution 2020-09-29 Notes: 这题用了slidin</description>
+    </item>
     
     <item>
       <title>930 Binary Subarrays With Sum</title>
@@ -170,24 +190,6 @@
       
       <guid>https://foxisawesome.github.io/posts/771-jewels-and-stones/</guid>
       <description>LC 771 Jewels and Stones You&amp;rsquo;re given strings J representing the types of stones that are jewels, and S representing the stones you have. Each character in S is a type of stone you have. You want to know how many of the stones you have are also jewels. The letters in J are guaranteed distinct, and all characters in J and S are letters. Letters are case sensitive, so</description>
-    </item>
-    
-    <item>
-      <title>62 Unique Paths</title>
-      <link>https://foxisawesome.github.io/posts/62-unique-paths/</link>
-      <pubDate>Fri, 25 Sep 2020 15:47:03 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/62-unique-paths/</guid>
-      <description>LC 62 Unique Paths A robot is located at the top-left corner of a m x n grid (marked &amp;lsquo;Start&amp;rsquo; in the diagram below). The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked &amp;lsquo;Finish&amp;rsquo; in the diagram below). How many possible unique paths are there? Solution 2020-09-25 Notes: 像cli</description>
-    </item>
-    
-    <item>
-      <title>819 Most Common Word</title>
-      <link>https://foxisawesome.github.io/posts/819-most-common-word/</link>
-      <pubDate>Fri, 25 Sep 2020 14:39:42 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/819-most-common-word/</guid>
-      <description>LC 819 Most Common Word Given a paragraph and a list of banned words, return the most frequent word that is not in the list of banned words. It is guaranteed there is at least one word that isn&amp;rsquo;t banned, and that the answer is unique. Words in the list of banned words are given in lowercase, and free of punctuation. Words in the paragraph are not case sensitive. The</description>
     </item>
     
   </channel>

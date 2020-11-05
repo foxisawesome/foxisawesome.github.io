@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>bit on Q. Weng</title>
+    <link>https://foxisawesome.github.io/tags/bit/</link>
+    <description>Recent content in bit on Q. Weng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Wed, 04 Nov 2020 14:40:15 -0500</lastBuildDate>
+    
+        <atom:link href="https://foxisawesome.github.io/tags/bit/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>1238 Circular Permutation in Binary Representation</title>
+      <link>https://foxisawesome.github.io/posts/1238-circular-permutation-in-binary-representation/</link>
+      <pubDate>Wed, 04 Nov 2020 14:40:15 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1238-circular-permutation-in-binary-representation/</guid>
+      <description>LC 1238 Circular Permutation in Binary Representation    Solution 2020-11-04 Notes:  gray code 1 &amp;laquo; n = 2**n   class Solution: def circularPermutation(self, n: int, start: int) -&amp;gt; List[int]: return [start ^ i ^ i &amp;gt;&amp;gt; 1 for i in range(1 &amp;lt;&amp;lt; n)] # Time O(2^N) # Space O(2^N)  bit manipulation:</description>
+    </item>
+    
+    <item>
+      <title>1351 Count Negative Numbers in a Sorted Matrix</title>
+      <link>https://foxisawesome.github.io/posts/1351-count-negative-numbers-in-a-sorted-matrix/</link>
+      <pubDate>Wed, 04 Nov 2020 13:35:18 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1351-count-negative-numbers-in-a-sorted-matrix/</guid>
+      <description>LC 1351 Count Negative Numbers in a Sorted Matrix   Given a m * n matrix grid which is sorted in non-increasing order both row-wise and column-wise.
+Return the number of negative numbers in grid.
+Input: grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]] Output: 8 Explanation: There are 8 negatives number in the matrix.   Solution 2020-11-04 Notes: class Solution: def countNegatives(self, grid: List[List[int]]) -&amp;gt; int: nr, nc = len(grid), len(grid[0]) ans, i = 0, 0 while i &amp;lt; nr: j = 0 while j &amp;lt; nc: if grid[i][j] &amp;lt; 0: ans += nc-j break else: j += 1 i += 1 return ans # Time O(MN) # Space O(1)  </description>
+    </item>
+    
+    <item>
+      <title>942 Di String Match</title>
+      <link>https://foxisawesome.github.io/posts/942-di-string-match/</link>
+      <pubDate>Tue, 03 Nov 2020 10:43:04 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/942-di-string-match/</guid>
+      <description>LC 942 Di String Match Given a string S that only contains &amp;ldquo;I&amp;rdquo; (increase) or &amp;ldquo;D&amp;rdquo; (decrease), let N = S.length. Return any permutation A of [0, 1, ..., N] such that for all i = 0, ..., N-1: If S[i] == &amp;quot;I&amp;quot;, then A[i] &amp;lt; A[i+1] If S[i] == &amp;quot;D&amp;quot;, then A[i] &amp;gt; A[i+1] Input: &amp;quot;IDID&amp;quot; Output: [0,4,1,3,2] Solution 2020-11-03 Notes: 这题的examp</description>
+    </item>
+    
+    <item>
+      <title>1051 Height Checker</title>
+      <link>https://foxisawesome.github.io/posts/1051-height-checker/</link>
+      <pubDate>Tue, 03 Nov 2020 10:15:17 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1051-height-checker/</guid>
+      <description>LC 1051 Height Checker Students are asked to stand in non-decreasing order of heights for an annual photo. Return the minimum number of students that must move in order for all students to be standing in non-decreasing order of height. Notice that when a group of students is selected they can reorder in any possible way between themselves and the non selected students remain on their seats. Input: heights =</description>
+    </item>
+    
+    <item>
+      <title>346 Moving Average From Data Stream</title>
+      <link>https://foxisawesome.github.io/posts/346-moving-average-from-data-stream/</link>
+      <pubDate>Tue, 03 Nov 2020 09:17:13 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/346-moving-average-from-data-stream/</guid>
+      <description>LC 346 Moving Average From Data Stream Given a stream of integers and a window size, calculate the moving average of all integers in the sliding window. MovingAverage m = new MovingAverage(3); m.next(1) = 1 m.next(10) = (1 + 10) / 2 m.next(3) = (1 + 10 + 3) / 3 m.next(5) = (10 + 3 + 5) / 3 Solution 2020-11-03 Notes: follow-ups: how about calc variance of streaming</description>
+    </item>
+    
+    <item>
+      <title>57 Insert Interval</title>
+      <link>https://foxisawesome.github.io/posts/57-insert-interval/</link>
+      <pubDate>Mon, 02 Nov 2020 13:42:31 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/57-insert-interval/</guid>
+      <description>LC 57 Insert Interval   Given a set of non-overlapping intervals, insert a new interval into the intervals (merge if necessary).
+You may assume that the intervals were initially sorted according to their start times.
+Input: intervals = [[1,3],[6,9]], newInterval = [2,5] Output: [[1,5],[6,9]]  Input: intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8] Output: [[1,2],[3,10],[12,16]] Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].   Solution 2020-11-02 Notes:  greedy algo.</description>
+    </item>
+    
+    <item>
+      <title>1364 Number of Trusted Contacts of a Customer</title>
+      <link>https://foxisawesome.github.io/sql/1364-number-of-trusted-contacts-of-a-customer/</link>
+      <pubDate>Thu, 29 Oct 2020 11:19:50 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1364-number-of-trusted-contacts-of-a-customer/</guid>
+      <description>LC 1364 Number of Trusted Contacts of a Customer    Solution 2020-10-29 Notes:     </description>
+    </item>
+    
+    <item>
+      <title>1341 Movie Rating</title>
+      <link>https://foxisawesome.github.io/sql/1341-movie-rating/</link>
+      <pubDate>Thu, 29 Oct 2020 11:19:39 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1341-movie-rating/</guid>
+      <description>LC 1341 Movie Rating    Solution 2020-10-29 Notes:     </description>
+    </item>
+    
+    <item>
+      <title>1336 Number of Transactions per Visit</title>
+      <link>https://foxisawesome.github.io/sql/1336-number-of-transactions-per-visit/</link>
+      <pubDate>Thu, 29 Oct 2020 11:19:23 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1336-number-of-transactions-per-visit/</guid>
+      <description>LC 1336 Number of Transactions per Visit    Solution 2020-10-29 Notes:     </description>
+    </item>
+    
+    <item>
+      <title>1327 List the Products Ordered in a Period</title>
+      <link>https://foxisawesome.github.io/sql/1327-list-the-products-ordered-in-a-period/</link>
+      <pubDate>Thu, 29 Oct 2020 11:19:13 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1327-list-the-products-ordered-in-a-period/</guid>
+      <description>LC 1327 List the Products Ordered in a Period    Solution 2020-10-29 Notes:     </description>
+    </item>
+    
+    <item>
+      <title>1303 Find the Team Size</title>
+      <link>https://foxisawesome.github.io/sql/1303-find-the-team-size/</link>
+      <pubDate>Thu, 29 Oct 2020 11:19:04 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/sql/1303-find-the-team-size/</guid>
+      <description>LC 1303 Find the Team Size    Solution 2020-10-29 Notes:     </description>
+    </item>
+    
+    <item>
+      <title>1264 Page Recommendations</title>
+      <link>https://foxisawesome.github.io/posts/1264-page-recommendations/</link>
+      <pubDate>Thu, 29 Oct 2020 11:18:52 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1264-page-recommendations/</guid>
+      <description>LC 1264 Page Recommendations Write an SQL query to recommend pages to the user with user_id = 1 using the pages that your friends liked. It should not recommend pages you already liked. Return result table in any order without duplicates. The query result format is in the following example: Friendship table: +----------+----------+ | user1_id | user2_id | +----------+----------+ | 1 | 2 | | 1 | 3 | |</description>
+    </item>
+    
+    <item>
+      <title>1251 Average Selling Price</title>
+      <link>https://foxisawesome.github.io/posts/1251-average-selling-price/</link>
+      <pubDate>Thu, 29 Oct 2020 11:18:40 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1251-average-selling-price/</guid>
+      <description>LC 1251 Average Selling Price Write an SQL query to find the average selling price for each product. average_price should be rounded to 2 decimal places. The query result format is in the following example: Prices table: +------------+------------+------------+--------+ | product_id | start_date | end_date | price | +------------+------------+------------+--------+ | 1 | 2019-02-17 | 2019-02-28 | 5 | | 1 | 2019-03-01 | 2019-03-22 | 20 | | 2 | 2019-02-01</description>
+    </item>
+    
+    <item>
+      <title>1225 Report Contiguous Dates</title>
+      <link>https://foxisawesome.github.io/posts/1225-report-contiguous-dates/</link>
+      <pubDate>Thu, 29 Oct 2020 11:18:31 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1225-report-contiguous-dates/</guid>
+      <description>LC 1225 Report Contiguous Dates 01-01 to 2019-12-31. period_state` is *&#39;failed&#39;* if tasks in this interval failed or *&#39;succeeded&#39;* if tasks in this interval succeeded. Interval of days are retrieved as `start_date` and `end_date. Order result by start_date. The query result format is in the following example: Failed table: +-------------------+ | fail_date | +-------------------+ | 2018-12-28 | | 2018-12-29 | | 2019-01-04 | | 2019-01-05 | +-------------------+ Succeeded table: +-------------------+</description>
+    </item>
+    
+    <item>
+      <title>1211 Queries Quality and Percentage</title>
+      <link>https://foxisawesome.github.io/posts/1211-queries-quality-and-percentage/</link>
+      <pubDate>Thu, 29 Oct 2020 11:18:19 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1211-queries-quality-and-percentage/</guid>
+      <description>LC 1211 Queries Quality and Percentage Write an SQL query to find each query_name, the quality and poor_query_percentage. Both quality and poor_query_percentage should be rounded to 2 decimal places. The query result format is in the following example: Queries table: +------------+-------------------+----------+--------+ | query_name | result | position | rating | +------------+-------------------+----------+--------+ | Dog | Golden Retriever | 1 | 5 | | Dog | German Shepherd | 2 | 5</description>
+    </item>
+    
+    <item>
+      <title>1193 Monthly Transactions I</title>
+      <link>https://foxisawesome.github.io/posts/1193-monthly-transactions-i/</link>
+      <pubDate>Thu, 29 Oct 2020 11:18:07 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1193-monthly-transactions-i/</guid>
+      <description>LC 1193 Monthly Transactions I Write an SQL query to find for each month and country, the number of transactions and their total amount, the number of approved transactions and their total amount. The query result format is in the following example: Transactions table: +------+---------+----------+--------+------------+ | id | country | state | amount | trans_date | +------+---------+----------+--------+------------+ | 121 | US | approved | 1000 | 2018-12-18 | | 122</description>
+    </item>
+    
+    <item>
+      <title>1158 Market Analysis I</title>
+      <link>https://foxisawesome.github.io/posts/1158-market-analysis-i/</link>
+      <pubDate>Thu, 29 Oct 2020 11:17:54 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1158-market-analysis-i/</guid>
+      <description>LC 1158 Market Analysis I Write an SQL query to find for each user, the join date and the number of orders they made as a buyer in 2019. The query result format is in the following example: Users table: +---------+------------+----------------+ | user_id | join_date | favorite_brand | +---------+------------+----------------+ | 1 | 2018-01-01 | Lenovo | | 2 | 2018-02-09 | Samsung | | 3 | 2018-01-19 | LG |</description>
+    </item>
+    
+    <item>
+      <title>1149 Article Views II</title>
+      <link>https://foxisawesome.github.io/posts/1149-article-views-ii/</link>
+      <pubDate>Thu, 29 Oct 2020 11:17:39 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1149-article-views-ii/</guid>
+      <description>LC 1149 Article Views II Write an SQL query to find all the people who viewed more than one article on the same date, sorted in ascending order by their id. The query result format is in the following example: Views table: +------------+-----------+-----------+------------+ | article_id | author_id | viewer_id | view_date | +------------+-----------+-----------+------------+ | 1 | 3 | 5 | 2019-08-01 | | 3 | 4 | 5 | 2019-08-01</description>
+    </item>
+    
+    <item>
+      <title>1132 Reported Posts II</title>
+      <link>https://foxisawesome.github.io/posts/1132-reported-posts-ii/</link>
+      <pubDate>Thu, 29 Oct 2020 11:14:32 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1132-reported-posts-ii/</guid>
+      <description>LC 1132 Reported Posts II Write an SQL query to find the average for daily percentage of posts that got removed after being reported as spam, rounded to 2 decimal places. The query result format is in the following example: Actions table: +---------+---------+-------------+--------+--------+ | user_id | post_id | action_date | action | extra | +---------+---------+-------------+--------+--------+ | 1 | 1 | 2019-07-01 | view | null | | 1 | 1</description>
+    </item>
+    
+    <item>
+      <title>1127 User Purchase Platform</title>
+      <link>https://foxisawesome.github.io/posts/1127-user-purchase-platform/</link>
+      <pubDate>Thu, 29 Oct 2020 11:14:19 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1127-user-purchase-platform/</guid>
+      <description>LC 1127 User Purchase Platform   Write an SQL query to find the total number of users and the total amount spent using mobile only, desktop only and both mobile and desktop together for each date.
+The query result format is in the following example:
+Spending table: +---------+------------+----------+--------+ | user_id | spend_date | platform | amount | +---------+------------+----------+--------+ | 1 | 2019-07-01 | mobile | 100 | | 1 | 2019-07-01 | desktop | 100 | | 2 | 2019-07-01 | mobile | 100 | | 2 | 2019-07-02 | mobile | 100 | | 3 | 2019-07-01 | desktop | 100 | | 3 | 2019-07-02 | desktop | 100 | +---------+------------+----------+--------+ Result table: +------------+----------+--------------+-------------+ | spend_date | platform | total_amount | total_users | +------------+----------+--------------+-------------+ | 2019-07-01 | desktop | 100 | 1 | | 2019-07-01 | mobile | 100 | 1 | | 2019-07-01 | both | 200 | 1 | | 2019-07-02 | desktop | 100 | 1 | | 2019-07-02 | mobile | 100 | 1 | | 2019-07-02 | both | 0 | 0 | +------------+----------+--------------+-------------+ On 2019-07-01, user 1 purchased using both desktop and mobile, user 2 purchased using mobile only and user 3 purchased using desktop only.</description>
+    </item>
+    
+  </channel>
+</rss>

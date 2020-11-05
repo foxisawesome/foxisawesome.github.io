@@ -45,7 +45,7 @@ You may assume that the intervals were initially sorted according to their start
 Input: intervals = [[1,3],[6,9]], newInterval = [2,5] Output: [[1,5],[6,9]]  Input: intervals = [[1,2],[3,5],[6,7],[8,10],[12,16]], newInterval = [4,8] Output: [[1,2],[3,10],[12,16]] Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].   Solution 2020-11-02 Notes:  greedy algo.">
 <meta itemprop="datePublished" content="2020-11-02T13:42:31-05:00" />
 <meta itemprop="dateModified" content="2020-11-02T13:42:31-05:00" />
-<meta itemprop="wordCount" content="165">
+<meta itemprop="wordCount" content="159">
 
 
 
@@ -155,7 +155,7 @@ Input: intervals = [[1,3],[6,9]], newInterval = [2,5] Output: [[1,5],[6,9]]  Inp
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">234</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">236</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">6</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">119</span></li>
         </ul>
@@ -183,6 +183,10 @@ Input: intervals = [[1,3],[6,9]], newInterval = [2,5] Output: [[1,5],[6,9]]  Inp
                     class="tag-list-count">17</span></li>
             
             
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/bit/" class="tag-list-link">bit</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/bst/" class="tag-list-link">bst</a><span
                     class="tag-list-count">3</span></li>
             
@@ -192,11 +196,11 @@ Input: intervals = [[1,3],[6,9]], newInterval = [2,5] Output: [[1,5],[6,9]]  Inp
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia/" class="tag-list-link">dia</a><span
-                    class="tag-list-count">36</span></li>
+                    class="tag-list-count">37</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia_sql/" class="tag-list-link">dia_sql</a><span
-                    class="tag-list-count">19</span></li>
+                    class="tag-list-count">20</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dp/" class="tag-list-link">dp</a><span
@@ -220,7 +224,7 @@ Input: intervals = [[1,3],[6,9]], newInterval = [2,5] Output: [[1,5],[6,9]]  Inp
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">349</span></li>
+                    class="tag-list-count">351</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -236,7 +240,7 @@ Input: intervals = [[1,3],[6,9]], newInterval = [2,5] Output: [[1,5],[6,9]]  Inp
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/matrix/" class="tag-list-link">matrix</a><span
-                    class="tag-list-count">6</span></li>
+                    class="tag-list-count">7</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/monotonic/" class="tag-list-link">monotonic</a><span
@@ -357,24 +361,21 @@ Explanation: Because the new interval [4,8] overlaps with [3,5],[6,7],[8,10].
         new_h, new_t = newInterval[0], newInterval[1] 
         ans = []
         i = 0
-        while i&lt;n and new_h &gt; intervals[i][0]:
+        while i &lt; n and intervals[i][0] &lt; new_h:
             ans.append(intervals[i])
             i += 1
-            
-        if not ans or new_h &gt; ans[-1][1]:
+        
+        if not ans or ans[-1][1] &lt; new_h:
             ans.append(newInterval)
         else:
             ans[-1][1] = max(ans[-1][1], new_t)
-
+        
         while i &lt; n:
-            interval = intervals[i]
-            h, t = interval
-            i += 1
-            if ans[-1][1] &lt; h:
-                ans.append(interval)
+            if ans[-1][1] &gt;= intervals[i][0]:
+                ans[-1][1] = max(ans[-1][1],intervals[i][1])
             else:
-                ans[-1][1] = max(ans[-1][1], t)
-                    
+                ans.append(intervals[i])
+            i += 1
         return ans
 
 # Time O(N)

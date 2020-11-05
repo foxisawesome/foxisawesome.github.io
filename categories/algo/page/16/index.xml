@@ -5,10 +5,32 @@
     <link>https://foxisawesome.github.io/categories/algo/</link>
     <description>Recent content in algo on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 03 Nov 2020 10:43:04 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2020 14:40:15 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/algo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>101 Symmetric Tree</title>
+      <link>https://foxisawesome.github.io/posts/101-symmetric-tree/</link>
+      <pubDate>Thu, 10 Sep 2020 09:26:44 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/101-symmetric-tree/</guid>
+      <description>LC 101 Symmetric Tree   Given a binary tree, check whether it is a mirror of itself (ie, symmetric around its center).
+For example, this binary tree [1,2,2,3,4,4,3] is symmetric:
+ 1 / \ 2 2 / \ / \ 3 4 4 3  But the following [1,2,2,null,3,null,3] is not:
+ 1 / \ 2 2 \ \ 3 3   Solution 2020-09-10 Notes:
+ recursion is pretty standard in this case.</description>
+    </item>
+    
+    <item>
+      <title>100 Same Tree</title>
+      <link>https://foxisawesome.github.io/posts/100-same-tree/</link>
+      <pubDate>Wed, 09 Sep 2020 22:18:03 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/100-same-tree/</guid>
+      <description>LC 100 Same Tree Given two binary trees, write a function to check if they are the same or not. Two binary trees are considered the same if they are structurally identical and the nodes have the same value. Solution 2020-09-09 Notes: Two roots 的pattern 和 single root一样。Tree 刷的略有感</description>
+    </item>
     
     <item>
       <title>112 Path Sum</title>
@@ -188,24 +210,6 @@ Extreme case: numer = -2147483648, denominator = -1999
       <description>LC 136 Single Number   Given a non-empty array of integers, every element appears twice except for one. Find that single one.
 Note: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory?
  Solution 2020-09-05 Notes:  Space O(1) solution is a bit tricky.  class Solution: def singleNumber(self, nums: List[int]) -&amp;gt; int: stack = set() for num in nums: if num not in stack: stack.</description>
-    </item>
-    
-    <item>
-      <title>187 Repeated Dna Sequences</title>
-      <link>https://foxisawesome.github.io/posts/187-repeated-dna-sequences/</link>
-      <pubDate>Sat, 05 Sep 2020 20:17:11 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/187-repeated-dna-sequences/</guid>
-      <description>LC 187 Repeated Dna Sequences All DNA is composed of a series of nucleotides abbreviated as A, C, G, and T, for example: &amp;ldquo;ACGAATTCCG&amp;rdquo;. When studying DNA, it is sometimes useful to identify repeated sequences within the DNA. Write a function to find all the 10-letter-long sequences (substrings) that occur more than once in a DNA molecule. Solution 2020-09-05 Notes: 很简单的题，两个小陷</description>
-    </item>
-    
-    <item>
-      <title>1249 Minimum Remove to Make Valid Parentheses</title>
-      <link>https://foxisawesome.github.io/posts/1249-minimum-remove-to-make-valid-parentheses/</link>
-      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1249-minimum-remove-to-make-valid-parentheses/</guid>
-      <description>LC 1249 Minimum Remove to Make Valid Parentheses Given a string s of &#39;(&#39; , &#39;)&#39; and lowercase English characters. Your task is to remove the minimum number of parentheses ( &#39;(&#39; or &#39;)&#39;, in any positions ) so that the resulting parentheses string is valid and return any valid string. Input: s = &amp;quot;lee(t(c)o)de)&amp;quot; Output: &amp;quot;lee(t(c)o)de&amp;quot; Explanation: &amp;quot;lee(t(co)de)&amp;quot; , &amp;quot;lee(t(c)ode)&amp;quot; would also be accepted. Solution 2020-09-05 Notes: 很简</description>
     </item>
     
   </channel>

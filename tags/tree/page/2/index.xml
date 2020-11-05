@@ -11,6 +11,24 @@
     
     
     <item>
+      <title>1126 Active Businesses</title>
+      <link>https://foxisawesome.github.io/posts/1126-active-businesses/</link>
+      <pubDate>Thu, 29 Oct 2020 11:14:06 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1126-active-businesses/</guid>
+      <description>LC 1126 Active Businesses Write an SQL query to find all active businesses. An active business is a business that has more than one event type with occurences greater than the average occurences of that event type among all businesses. The query result format is in the following example: Events table: +-------------+------------+------------+ | business_id | event_type | occurences | +-------------+------------+------------+ | 1 | reviews | 7 | | 3 |</description>
+    </item>
+    
+    <item>
+      <title>1098 Unpopular Books</title>
+      <link>https://foxisawesome.github.io/posts/1098-unpopular-books/</link>
+      <pubDate>Thu, 29 Oct 2020 10:21:21 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1098-unpopular-books/</guid>
+      <description>LC 1098 Unpopular Books Write an SQL query that reports the books that have sold less than 10 copies in the last year, excluding books that have been available for less than 1 month from today. Assume today is 2019-06-23. The query result format is in the following example: Books table: +---------+--------------------+----------------+ | book_id | name | available_from | +---------+--------------------+----------------+ | 1 | &amp;quot;Kalila And Demna&amp;quot; | 2010-01-01 | |</description>
+    </item>
+    
+    <item>
       <title>1082 Sales Analysis I</title>
       <link>https://foxisawesome.github.io/posts/1082-sales-analysis-i/</link>
       <pubDate>Thu, 29 Oct 2020 09:53:47 -0400</pubDate>
@@ -184,24 +202,6 @@ Write a sql query to identify the question which has the highest answer rate.</d
       <description>LC 647 Palindromic Substrings   Given a string, your task is to count how many palindromic substrings in this string.
 The substrings with different start indexes or end indexes are counted as different substrings even they consist of same characters.
 Input: &amp;quot;abc&amp;quot; Output: 3 Explanation: Three palindromic strings: &amp;quot;a&amp;quot;, &amp;quot;b&amp;quot;, &amp;quot;c&amp;quot;.  Input: &amp;quot;aaa&amp;quot; Output: 6 Explanation: Six palindromic strings: &amp;quot;a&amp;quot;, &amp;quot;a&amp;quot;, &amp;quot;a&amp;quot;, &amp;quot;aa&amp;quot;, &amp;quot;aa&amp;quot;, &amp;quot;aaa&amp;quot;.   Solution 2020-10-21 Notes:  dp[i][j]: if s[i:j+1] is palindromic.</description>
-    </item>
-    
-    <item>
-      <title>1353 Maximum Number of Events That Can Be Attended</title>
-      <link>https://foxisawesome.github.io/posts/1353-maximum-number-of-events-that-can-be-attended/</link>
-      <pubDate>Wed, 21 Oct 2020 14:05:38 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1353-maximum-number-of-events-that-can-be-attended/</guid>
-      <description>LC 1353 Maximum Number of Events That Can Be Attended Given an array of events where events[i] = [startDayi, endDayi]. Every event i starts at startDayi and ends at endDayi. You can attend an event i at any day d where startTimei &amp;lt;= d &amp;lt;= endTimei. Notice that you can only attend one event at any time d. Return the maximum number of events you can attend. Input: events =</description>
-    </item>
-    
-    <item>
-      <title>901 Online Stock Span</title>
-      <link>https://foxisawesome.github.io/posts/901-online-stock-span/</link>
-      <pubDate>Wed, 21 Oct 2020 14:02:39 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/901-online-stock-span/</guid>
-      <description>LC 901 Online Stock Span Write a class StockSpanner which collects daily price quotes for some stock, and returns the span of that stock&amp;rsquo;s price for the current day. The span of the stock&amp;rsquo;s price today is defined as the maximum number of consecutive days (starting from today and going backwards) for which the price of the stock was less than or equal to today&amp;rsquo;s price. For example, if the</description>
     </item>
     
   </channel>

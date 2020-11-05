@@ -5,10 +5,30 @@
     <link>https://foxisawesome.github.io/categories/algo/</link>
     <description>Recent content in algo on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 03 Nov 2020 10:43:04 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2020 14:40:15 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/algo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1517 Find Users With Valid E-Mails</title>
+      <link>https://foxisawesome.github.io/posts/1517-find-users-with-valid-e-mails/</link>
+      <pubDate>Sat, 17 Oct 2020 20:29:16 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1517-find-users-with-valid-e-mails/</guid>
+      <description>LC 1517 Find Users With Valid E-Mails   Write an SQL query to find the users who have valid emails.
+A valid e-mail has a prefix name and a domain where:
+ The prefix name is a string that may contain letters (upper or lower case), digits, underscore &#39;_&#39;, period &#39;.&#39; and/or dash &#39;-&#39;. The prefix name must start with a letter. The domain is &#39;@leetcode.com&#39;.  Return the result table in any order.</description>
+    </item>
+    
+    <item>
+      <title>1511 Customer Order Frequency</title>
+      <link>https://foxisawesome.github.io/posts/1511-customer-order-frequency/</link>
+      <pubDate>Sat, 17 Oct 2020 20:18:00 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1511-customer-order-frequency/</guid>
+      <description>LC 1511 Customer Order Frequency Write an SQL query to report the customer_id and customer_name of customers who have spent at least $100 in each month of June and July 2020. Return the result table in any order. The query result format is in the following example. Customers +--------------+-----------+-------------+ | customer_id | name | country | +--------------+-----------+-------------+ | 1 | Winston | USA | | 2 | Jonathan | Peru</description>
+    </item>
     
     <item>
       <title>1479 Sales by Day of the Week</title>
@@ -176,27 +196,6 @@ Input: A = [4,5,0,-2,-3,1], K = 5 Output: 7 Explanation: There are 7 subarrays w
       
       <guid>https://foxisawesome.github.io/posts/116-populating-next-right-pointers-in-each-node/</guid>
       <description>LC 116 Populating Next Right Pointers in Each Node You are given a perfect binary tree where all leaves are on the same level, and every parent has two children. The binary tree has the following definition: struct Node { int val; Node *left; Node *right; Node *next; } Populate each next pointer to point to its next right node. If there is no next right node, the next pointer</description>
-    </item>
-    
-    <item>
-      <title>226 Invert Binary Tree</title>
-      <link>https://foxisawesome.github.io/posts/226-invert-binary-tree/</link>
-      <pubDate>Tue, 13 Oct 2020 09:16:18 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/226-invert-binary-tree/</guid>
-      <description>LC 226 Invert Binary Tree   nvert a binary tree.
-Input:
- 4 / \ 2 7 / \ / \ 1 3 6 9  Output:
- 4 / \ 7 2 / \ / \ 9 6 3 1   Solution 2020-10-13 Notes:    # Definition for a binary tree node. # class TreeNode: # def __init__(self, val=0, left=None, right=None): # self.val = val # self.</description>
-    </item>
-    
-    <item>
-      <title>453 Minimum Moves to Equal Array Elements</title>
-      <link>https://foxisawesome.github.io/posts/453-minimum-moves-to-equal-array-elements/</link>
-      <pubDate>Sun, 11 Oct 2020 21:45:21 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/453-minimum-moves-to-equal-array-elements/</guid>
-      <description>LC 453 Minimum Moves to Equal Array Elements Given a non-empty integer array of size n, find the minimum number of moves required to make all array elements equal, where a move is incrementing n - 1 elements by 1. Input: [1,2,3] Output: 3 Explanation: Only three moves are needed (remember each move increments two elements): [1,2,3] =&amp;gt; [2,3,3] =&amp;gt; [3,4,3] =&amp;gt; [4,4,4] Solution 2020-10-11 Notes: 很巧的一</description>
     </item>
     
   </channel>

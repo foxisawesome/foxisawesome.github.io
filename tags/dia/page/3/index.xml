@@ -5,10 +5,28 @@
     <link>https://foxisawesome.github.io/tags/dia/</link>
     <description>Recent content in dia on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 02 Nov 2020 13:42:31 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2020 14:40:15 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/dia/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1353 Maximum Number of Events That Can Be Attended</title>
+      <link>https://foxisawesome.github.io/posts/1353-maximum-number-of-events-that-can-be-attended/</link>
+      <pubDate>Wed, 21 Oct 2020 14:05:38 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1353-maximum-number-of-events-that-can-be-attended/</guid>
+      <description>LC 1353 Maximum Number of Events That Can Be Attended Given an array of events where events[i] = [startDayi, endDayi]. Every event i starts at startDayi and ends at endDayi. You can attend an event i at any day d where startTimei &amp;lt;= d &amp;lt;= endTimei. Notice that you can only attend one event at any time d. Return the maximum number of events you can attend. Input: events =</description>
+    </item>
+    
+    <item>
+      <title>901 Online Stock Span</title>
+      <link>https://foxisawesome.github.io/posts/901-online-stock-span/</link>
+      <pubDate>Wed, 21 Oct 2020 14:02:39 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/901-online-stock-span/</guid>
+      <description>LC 901 Online Stock Span Write a class StockSpanner which collects daily price quotes for some stock, and returns the span of that stock&amp;rsquo;s price for the current day. The span of the stock&amp;rsquo;s price today is defined as the maximum number of consecutive days (starting from today and going backwards) for which the price of the stock was less than or equal to today&amp;rsquo;s price. For example, if the</description>
+    </item>
     
     <item>
       <title>152 Maximum Product Subarray</title>
@@ -178,24 +196,6 @@ Return the result table in any order.
       
       <guid>https://foxisawesome.github.io/posts/1050-actors-and-directors-who-cooperated-at-least-three-times/</guid>
       <description>LC 1050 Actors and Directors Who Cooperated at Least Three Times Write a SQL query for a report that provides the pairs (actor_id, director_id) where the actor have cooperated with the director at least 3 times. ActorDirector table: +-------------+-------------+-------------+ | actor_id | director_id | timestamp | +-------------+-------------+-------------+ | 1 | 1 | 0 | | 1 | 1 | 1 | | 1 | 1 | 2 | | 1</description>
-    </item>
-    
-    <item>
-      <title>183 Customers Who Never Order</title>
-      <link>https://foxisawesome.github.io/posts/183-customers-who-never-order/</link>
-      <pubDate>Mon, 19 Oct 2020 14:34:11 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/183-customers-who-never-order/</guid>
-      <description>LC 183 Customers Who Never Order Suppose that a website contains two tables, the Customers table and the Orders table. Write a SQL query to find all customers who never order anything. Solution 2020-10-19 Notes: 秒了 SELECT name AS customers FROM customers WHERE id NOT IN (SELECT customerID FROM orders)</description>
-    </item>
-    
-    <item>
-      <title>512 Game Play Analysis II</title>
-      <link>https://foxisawesome.github.io/posts/512-game-play-analysis-ii/</link>
-      <pubDate>Mon, 19 Oct 2020 14:31:42 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/512-game-play-analysis-ii/</guid>
-      <description>LC 512 Game Play Analysis II Write a SQL query that reports the device that is first logged in for each player. The query result format is in the following example: Activity table: +-----------+-----------+------------+--------------+ | player_id | device_id | event_date | games_played | +-----------+-----------+------------+--------------+ | 1 | 2 | 2016-03-01 | 5 | | 1 | 2 | 2016-05-02 | 6 | | 2 | 3 | 2017-06-25 | 1</description>
     </item>
     
   </channel>
