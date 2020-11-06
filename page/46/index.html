@@ -33,7 +33,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://foxisawesome.github.io/" />
-<meta property="og:updated_time" content="2020-11-04T14:40:15-05:00" />
+<meta property="og:updated_time" content="2020-11-06T13:34:35-05:00" />
 <meta itemprop="name" content="Q. Weng">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -141,7 +141,7 @@
         <ul class="category-list">
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">236</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">6</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">119</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">136</span></li>
         </ul>
     </div>
 </div>
@@ -208,7 +208,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">351</span></li>
+                    class="tag-list-count">368</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -287,6 +287,197 @@
         <h1 itemprop="name">
   <a
     class="article-title"
+    href="/posts/238-product-of-array-except-self/"
+    >238 Product of Array Except Self</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 238 Product of Array Except Self Given an array nums of n integers where n &gt; 1, return an array output such that output[i] is equal to the product of all the elements of nums except nums[i]. Input: [1,2,3,4] Output: [24,12,8,6] Solution 2020-09-15 Notes: 3-pass, space O(N) solution. L[i] = cumulative product of nums[:i], R[i] = cumulative product of nums[:i:-1] class Solution: def productExceptSelf(self, nums: List[int]) -&gt; List[int]: n
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/238-product-of-array-except-self/" class="">
+  <time datetime="2020-09-15 13:22:13 -0400 EDT" itemprop="datePublished">2020-09-15</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/algo/"> algo </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+    <a class="article-tag-link" href="/tags/array/"> array </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/238-product-of-array-except-self/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/56-merge-intervals/"
+    >56 Merge Intervals</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 56 Merge Intervals Given a collection of intervals, merge all overlapping intervals. Input: intervals = [[1,3],[2,6],[8,10],[15,18]] Output: [[1,6],[8,10],[15,18]] Explanation: Since intervals [1,3] and [2,6] overlaps, merge them into [1,6]. Solution 2020-09-15 Notes: 先sort一遍 by x[0], x[1] 比较 ans[-1][1] 与 x[0]的关系， 很简单。 class Solution: def merge(self, intervals: List[List[int]]) -&gt; List[List[int]]: if not intervals:
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/56-merge-intervals/" class="">
+  <time datetime="2020-09-15 13:14:34 -0400 EDT" itemprop="datePublished">2020-09-15</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/algo/"> algo </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+    <a class="article-tag-link" href="/tags/sort/"> sort </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/56-merge-intervals/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/23-merge-k-sorted-lists/"
+    >23 Merge K Sorted Lists</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 23 Merge K Sorted Lists You are given an array of k linked-lists lists, each linked-list is sorted in ascending order. Merge all the linked-lists into one sorted linked-list and return it. Input: lists = [[1,4,5],[1,3,4],[2,6]] Output: [1,1,2,3,4,4,5,6] Explanation: The linked-lists are: [ 1-&gt;4-&gt;5, 1-&gt;3-&gt;4, 2-&gt;6 ] merging them into one sorted list: 1-&gt;1-&gt;2-&gt;3-&gt;4-&gt;4-&gt;5-&gt;6 Solution 2020-09-14 Notes: 最简单暴力，最挫的方法。
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/23-merge-k-sorted-lists/" class="">
+  <time datetime="2020-09-14 21:04:50 -0400 EDT" itemprop="datePublished">2020-09-14</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/algo/"> algo </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+    <a class="article-tag-link" href="/tags/linkedlist/"> linkedlist </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/23-merge-k-sorted-lists/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/3-longest-substring-without-repeating-characters/"
+    >3 Longest Substring Without Repeating Characters</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 3 Longest Substring Without Repeating Characters Given a string s, find the length of the longest substring without repeating characters. Solution 2020-09-14 Notes: 经典题，要类似 LC5 longest palindrome 那么做，就得O(N^2) ，不能通过。应该用sliding window one pass 完成。 sliding w
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/3-longest-substring-without-repeating-characters/" class="">
+  <time datetime="2020-09-14 16:25:01 -0400 EDT" itemprop="datePublished">2020-09-14</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/algo/"> algo </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+    <a class="article-tag-link" href="/tags/sliding_window/"> sliding_window </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/3-longest-substring-without-repeating-characters/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/516-longest-palindromic-subsequence/"
+    >516 Longest Palindromic Subsequence</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 516 Longest Palindromic Subsequence   Given a string s, find the longest palindromic subsequence&rsquo;s length in s. You may assume that the maximum length of s is 1000.
+ Solution 2020-09-14 Notes:
+   class Solution: def longestPalindromeSubseq(self, s: str) -&gt; int: n = len(s) # dp[i][j]: max palindromic length of s[i:j+1] # assume: dp[i+1][j-1] has max length # then: if s[i]==s[j]: dp[i][j] = dp[i+1][j-1]+2 # if s[i] !
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/516-longest-palindromic-subsequence/" class="">
+  <time datetime="2020-09-14 15:20:17 -0400 EDT" itemprop="datePublished">2020-09-14</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/algo/"> algo </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/516-longest-palindromic-subsequence/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
     href="/posts/5-longest-palindromic-substring/"
     >5 Longest Palindromic Substring</a
   >
@@ -313,193 +504,6 @@
   </span>
 
         <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/5-longest-palindromic-substring/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/937-reorder-data-in-log-files/"
-    >937 Reorder Data in Log Files</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 937 Reorder Data in Log Files You have an array of logs. Each log is a space delimited string of words. For each log, the first word in each log is an alphanumeric identifier. Then, either: Each word after the identifier will consist only of lowercase letters, or; Each word after the identifier will consist only of digits. We will call these two varieties of logs letter-logs and digit-logs.
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/937-reorder-data-in-log-files/" class="">
-  <time datetime="2020-09-14 09:19:19 -0400 EDT" itemprop="datePublished">2020-09-14</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/string/"> string </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/937-reorder-data-in-log-files/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/53-maximum-subarray/"
-    >53 Maximum Subarray</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 53 Maximum Subarray Given an integer array nums, find the contiguous subarray (containing at least one number) which has the largest sum and return its sum. Follow up: If you have figured out the O(n) solution, try coding another solution using the divide and conquer approach, which is more subtle. Input: nums = [-2,1,-3,4,-1,2,1,-5,4] Output: 6 Explanation: [4,-1,2,1] has the largest sum = 6. Solution 2020-11-03 Not
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/53-maximum-subarray/" class="">
-  <time datetime="2020-09-13 22:09:11 -0400 EDT" itemprop="datePublished">2020-09-13</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/dp/"> dp </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/53-maximum-subarray/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/262-trips-and-users/"
-    >262 Trips and Users</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 262 Trips and Users Write a SQL query to find the cancellation rate of requests made by unbanned users (both client and driver must be unbanned) between Oct 1, 2013 and Oct 3, 2013. The cancellation rate is computed by dividing the number of canceled (by client or driver) requests made by unbanned users by the total number of requests made by unbanned users. For the above tables, your
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/262-trips-and-users/" class="">
-  <time datetime="2020-09-13 21:46:46 -0400 EDT" itemprop="datePublished">2020-09-13</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/262-trips-and-users/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/185-department-top-three-salaries/"
-    >185 Department Top Three Salaries</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 185 Department Top Three Salaries Write a SQL query to find employees who earn the top three salaries in each of the department. For the above tables, your SQL query should return the following rows (order of rows does not matter). +------------+----------+--------+ | Department | Employee | Salary | +------------+----------+--------+ | IT | Max | 90000 | | IT | Randy | 85000 | | IT | Joe |
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/185-department-top-three-salaries/" class="">
-  <time datetime="2020-09-13 21:43:06 -0400 EDT" itemprop="datePublished">2020-09-13</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/185-department-top-three-salaries/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/175-combine-two-tables/"
-    >175 Combine Two Tables</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 175 Combine Two Tables Write a SQL query for a report that provides the following information for each person in the Person table, regardless if there is an address for each of those people: FirstName, LastName, City, State Solution 2020-09-13 Notes: Easy 小题考查left join SELECT firstname, lastname, city, state FROM person a LEFT JOIN address b ON a.personid = b.personid
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/175-combine-two-tables/" class="">
-  <time datetime="2020-09-13 21:28:29 -0400 EDT" itemprop="datePublished">2020-09-13</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/175-combine-two-tables/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article></div>
   

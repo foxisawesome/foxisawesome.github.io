@@ -5,10 +5,164 @@
     <link>https://foxisawesome.github.io/categories/</link>
     <description>Recent content in Categories on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Nov 2020 14:40:15 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2020 13:34:35 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>303 Range Sum Query Immutable</title>
+      <link>https://foxisawesome.github.io/posts/303-range-sum-query-immutable/</link>
+      <pubDate>Fri, 25 Sep 2020 14:03:09 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/303-range-sum-query-immutable/</guid>
+      <description>LC 303 Range Sum Query Immutable Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive. Given nums = [-2, 0, 3, -5, 2, -1] sumRange(0, 2) -&amp;gt; 1 sumRange(2, 5) -&amp;gt; -1 sumRange(0, 5) -&amp;gt; -3 Solution 2020-09-25 Notes: 这题要说的就是用 pre sum (cumulative sum) 来避免重复计算求</description>
+    </item>
+    
+    <item>
+      <title>209 Minimum Size Subarray Sum</title>
+      <link>https://foxisawesome.github.io/posts/209-minimum-size-subarray-sum/</link>
+      <pubDate>Fri, 25 Sep 2020 11:08:36 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/209-minimum-size-subarray-sum/</guid>
+      <description>LC 209 Minimum Size Subarray Sum Given an array of n positive integers and a positive integer s, find the minimal length of a contiguous subarray of which the sum ≥ s. If there isn&amp;rsquo;t one, return 0 instead. Input: s = 7, nums = [2,3,1,2,4,3] Output: 2 Explanation: the subarray [4,3] has the minimal length under the problem constraint Solution 2020-09-25 Notes: 这题 O(N)的</description>
+    </item>
+    
+    <item>
+      <title>167 Two Sum II Input Array Is Sorted</title>
+      <link>https://foxisawesome.github.io/posts/167-two-sum-ii-input-array-is-sorted/</link>
+      <pubDate>Fri, 25 Sep 2020 10:36:56 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/167-two-sum-ii-input-array-is-sorted/</guid>
+      <description>LC 167 Two Sum II Input Array Is Sorted Given an array of integers that is already *sorted in ascending order*, find two numbers such that they add up to a specific target number. The function twoSum should return indices of the two numbers such that they add up to the target, where index1 must be less than index2. Input: numbers = [2,7,11,15], target = 9 Output: [1,2] Explanation: The</description>
+    </item>
+    
+    <item>
+      <title>75 Sort Colors</title>
+      <link>https://foxisawesome.github.io/posts/75-sort-colors/</link>
+      <pubDate>Fri, 25 Sep 2020 10:27:10 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/75-sort-colors/</guid>
+      <description>LC 75 Sort Colors Given an array nums with n objects colored red, white, or blue, sort them in-place so that objects of the same color are adjacent, with the colors in the order red, white, and blue. Here, we will use the integers 0, 1, and 2 to represent the color red, white, and blue respectively. Follow up: Could you solve this problem without using the library&amp;rsquo;s sort function?</description>
+    </item>
+    
+    <item>
+      <title>181 Employees Earning More Than Their Managers</title>
+      <link>https://foxisawesome.github.io/posts/181-employees-earning-more-than-their-managers/</link>
+      <pubDate>Thu, 24 Sep 2020 21:57:09 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/181-employees-earning-more-than-their-managers/</guid>
+      <description>LC 181 Employees Earning More Than Their Managers   Given the Employee table, write a SQL query that finds out employees who earn more than their managers. For the above table, Joe is the only employee who earns more than his manager.
+ Solution 2020-09-24 Notes: SELECT name AS employee FROM ( SELECT a.name, a.salary, a.managerId, b.salary AS mg_sal FROM employee a JOIN employee b ON a.managerID = b.ID ) c WHERE salary &amp;gt; mg_sal  </description>
+    </item>
+    
+    <item>
+      <title>180 Consecutive Numbers</title>
+      <link>https://foxisawesome.github.io/posts/180-consecutive-numbers/</link>
+      <pubDate>Thu, 24 Sep 2020 21:41:16 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/180-consecutive-numbers/</guid>
+      <description>LC 180 Consecutive Numbers Write a SQL query to find all numbers that appear at least three times consecutively. Solution 2020-09-24 Notes: self join 的写法 SELECT DISTINCT a.num AS ConsecutiveNums FROM logs a JOIN logs b ON a.id+1 = b.id AND a.num=b.num JOIN logs c ON a.id+2 = c.id AND a.num=c.num LEAD() function 的写法： SELECT DISTINCT num AS consecutiveNums FROM ( SELECT id, num, LEAD(num,1)</description>
+    </item>
+    
+    <item>
+      <title>177 Nth Highest Salary</title>
+      <link>https://foxisawesome.github.io/posts/177-nth-highest-salary/</link>
+      <pubDate>Thu, 24 Sep 2020 21:16:18 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/177-nth-highest-salary/</guid>
+      <description>LC 177 Nth Highest Salary Write a SQL query to get the nth highest salary from the Employee table. Solution 2020-09-24 Notes: 这个sql function 的写法得背下来。不过也没什么难的。 CREATE FUNCTION getNthHighestSalary(N INT) RETURNS INT BEGIN DECLARE m int; SET m = n-1; RETURN ( SELECT salary FROM employee GROUP BY 1 ORDER by</description>
+    </item>
+    
+    <item>
+      <title>875 Koko Eating Bananas</title>
+      <link>https://foxisawesome.github.io/posts/875-koko-eating-bananas/</link>
+      <pubDate>Thu, 24 Sep 2020 13:51:49 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/875-koko-eating-bananas/</guid>
+      <description>LC 875 Koko Eating Bananas Koko loves to eat bananas. There are N piles of bananas, the i-th pile has piles[i] bananas. The guards have gone and will come back in H hours. Koko can decide her bananas-per-hour eating speed of K. Each hour, she chooses some pile of bananas, and eats K bananas from that pile. If the pile has less than K bananas, she eats all of them</description>
+    </item>
+    
+    <item>
+      <title>774 Minimize Max Distance to Gas Station</title>
+      <link>https://foxisawesome.github.io/posts/774-minimize-max-distance-to-gas-station/</link>
+      <pubDate>Thu, 24 Sep 2020 13:49:22 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/774-minimize-max-distance-to-gas-station/</guid>
+      <description>LC 774 Minimize Max Distance to Gas Station On a horizontal number line, we have gas stations at positions stations[0], stations[1], ..., stations[N-1], where N = stations.length. Now, we add K more gas stations so that D, the maximum distance between adjacent gas stations, is minimized.Return the smallest possible value of D. Input: stations = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10], K = 9 Output: 0.500000</description>
+    </item>
+    
+    <item>
+      <title>410 Split Array Largest Sum</title>
+      <link>https://foxisawesome.github.io/posts/410-split-array-largest-sum/</link>
+      <pubDate>Thu, 24 Sep 2020 13:48:35 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/410-split-array-largest-sum/</guid>
+      <description>LC 410 Split Array Largest Sum Given an array nums which consists of non-negative integers and an integer m, you can split the array into m non-empty continuous subarrays. Write an algorithm to minimize the largest sum among these m subarrays. Input: nums = [7,2,5,10,8], m = 2 Output: 18 Explanation: There are four ways to split nums into two subarrays. The best way is to split it into [7,2,5]</description>
+    </item>
+    
+    <item>
+      <title>1011 Capacity to Ship Packages Within D Days</title>
+      <link>https://foxisawesome.github.io/posts/1011-capacity-to-ship-packages-within-d-days/</link>
+      <pubDate>Thu, 24 Sep 2020 13:46:26 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1011-capacity-to-ship-packages-within-d-days/</guid>
+      <description>LC 1011 Capacity to Ship Packages Within D Days conveyor belt has packages that must be shipped from one port to another within D days. The i-th package on the conveyor belt has a weight of weights[i]. Each day, we load the ship with packages on the conveyor belt (in the order given by weights). We may not load more weight than the maximum weight capacity of the ship. Return</description>
+    </item>
+    
+    <item>
+      <title>21 Merge Two Sorted Lists</title>
+      <link>https://foxisawesome.github.io/posts/21-merge-two-sorted-lists/</link>
+      <pubDate>Thu, 24 Sep 2020 13:18:43 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/21-merge-two-sorted-lists/</guid>
+      <description>LC 21 Merge Two Sorted Lists Merge two sorted linked lists and return it as a new sorted list. The new list should be made by splicing together the nodes of the first two lists. Input: 1-&amp;gt;2-&amp;gt;4, 1-&amp;gt;3-&amp;gt;4 Output: 1-&amp;gt;1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;4 Solution 2020-09-24 Notes: 不要create 新的 ListNode along the way, making algo much faster. # Definition for singly-linked list. # class ListNode: #</description>
+    </item>
+    
+    <item>
+      <title>14 Longest Common Prefix</title>
+      <link>https://foxisawesome.github.io/posts/14-longest-common-prefix/</link>
+      <pubDate>Thu, 24 Sep 2020 13:13:11 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/14-longest-common-prefix/</guid>
+      <description>LC 14 Longest Common Prefix Write a function to find the longest common prefix string amongst an array of strings. If there is no common prefix, return an empty string &amp;quot;&amp;quot;. Input: [&amp;quot;flower&amp;quot;,&amp;quot;flow&amp;quot;,&amp;quot;flight&amp;quot;] Output: &amp;quot;fl&amp;quot; Solution 2020-09-24 Notes: 第三刷了，当年做的很痛苦的一道题。其实很简单。 class Solution: def longestCommonPrefix(self, strs: List[str]) -&amp;gt; str: if</description>
+    </item>
+    
+    <item>
+      <title>38 Count and Say</title>
+      <link>https://foxisawesome.github.io/posts/38-count-and-say/</link>
+      <pubDate>Thu, 24 Sep 2020 12:56:27 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/38-count-and-say/</guid>
+      <description>LC 38 Count and Say The count-and-say sequence is the sequence of integers with the first five terms as following: 1. 1 2. 11 3. 21 4. 1211 5. 111221 Solution 2020-09-24 Notes: algo就顺着读法写出来就好了。锻炼loop写法的好题。 主要是time complexity 有</description>
+    </item>
+    
+    <item>
+      <title>1070 Product Sales Analysis III</title>
+      <link>https://foxisawesome.github.io/posts/1070-product-sales-analysis-iii/</link>
+      <pubDate>Wed, 23 Sep 2020 21:32:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1070-product-sales-analysis-iii/</guid>
+      <description>LC 1070 Product Sales Analysis III Write an SQL query that selects the product id, year, quantity, and price for the first year of every product sold. Solution 2020-09-23 Notes: 这题的test case 1有问题，论坛里有类似讨论。 SELECT product_id, year AS first_year, quantity, price FROM ( SELECT product_id, year, quantity, price, ROW_NUMBER() OVER(PARTITION BY product_id</description>
+    </item>
+    
+    <item>
+      <title>1231 Divide Chocolate</title>
+      <link>https://foxisawesome.github.io/posts/1231-divide-chocolate/</link>
+      <pubDate>Wed, 23 Sep 2020 21:15:59 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1231-divide-chocolate/</guid>
+      <description>LC 1231 Divide Chocolate You have one chocolate bar that consists of some chunks. Each chunk has its own sweetness given by the array sweetness. You want to share the chocolate with your K friends so you start cutting the chocolate bar into K+1 pieces using K cuts, each piece consists of some consecutive chunks. Being generous, you will eat the piece with the minimum total sweetness and give the</description>
+    </item>
+    
+    <item>
+      <title>27 Remove Element</title>
+      <link>https://foxisawesome.github.io/posts/27-remove-element/</link>
+      <pubDate>Wed, 23 Sep 2020 20:30:03 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/27-remove-element/</guid>
+      <description>LC 27 Remove Element Given an array nums and a value val, remove all instances of that value in-place and return the new length. Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory. The order of elements can be changed. It doesn&amp;rsquo;t matter what you leave beyond the new length. Solution 2020-10-08 Notes: 三刷，用</description>
+    </item>
     
     <item>
       <title>28 Implement Strstr</title>
@@ -35,160 +189,6 @@
       
       <guid>https://foxisawesome.github.io/posts/350-intersection-of-two-arrays-ii/</guid>
       <description>LC 350 Intersection of Two Arrays II Given two arrays, write a function to compute their intersection. Input: nums1 = [1,2,2,1], nums2 = [2,2] Output: [2,2] Solution 2020-09-23 Notes: 简单题两种高效做法。 hashtable class Solution: def intersect(self, nums1: List[int], nums2: List[int]) -&amp;gt; List[int]: if not nums1 or not nums2: return [] n1, n2 = len(nums1), len(nums2) if n2 &amp;gt; n1: return self.intersect(nums2, nums1)</description>
-    </item>
-    
-    <item>
-      <title>202 Happy Number</title>
-      <link>https://foxisawesome.github.io/posts/202-happy-number/</link>
-      <pubDate>Wed, 23 Sep 2020 19:33:27 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/202-happy-number/</guid>
-      <description>LC 202 Happy Number Write an algorithm to determine if a number n is &amp;ldquo;happy&amp;rdquo;. A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers</description>
-    </item>
-    
-    <item>
-      <title>278 First Bad Version</title>
-      <link>https://foxisawesome.github.io/posts/278-first-bad-version/</link>
-      <pubDate>Wed, 23 Sep 2020 19:18:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/278-first-bad-version/</guid>
-      <description>LC 278 First Bad Version You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad. Suppose you have n versions [1, 2, ..., n] and you want to find out the first bad one,</description>
-    </item>
-    
-    <item>
-      <title>35 Search Insert Position</title>
-      <link>https://foxisawesome.github.io/posts/35-search-insert-position/</link>
-      <pubDate>Wed, 23 Sep 2020 19:09:26 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/35-search-insert-position/</guid>
-      <description>LC 35 Search Insert Position Given a sorted array and a target value, return the index if the target is found. If not, return the index where it would be if it were inserted in order. Solution 2020-09-23 Notes: 标准的left bound 的binary search 写法。 初秋的夜晚很舒服。 class Solution: def</description>
-    </item>
-    
-    <item>
-      <title>134 Gas Station</title>
-      <link>https://foxisawesome.github.io/posts/134-gas-station/</link>
-      <pubDate>Wed, 23 Sep 2020 15:14:28 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/134-gas-station/</guid>
-      <description>LC 134 Gas Station There are N gas stations along a circular route, where the amount of gas at station i is gas[i]. You have a car with an unlimited gas tank and it costs cost[i] of gas to travel from station i to its next station (i+1). You begin the journey with an empty tank at one of the gas stations. Return the starting gas station&amp;rsquo;s index if you</description>
-    </item>
-    
-    <item>
-      <title>103 Binary Tree Zigzag Level Order Traversal</title>
-      <link>https://foxisawesome.github.io/posts/103-binary-tree-zigzag-level-order-traversal/</link>
-      <pubDate>Wed, 23 Sep 2020 14:58:07 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/103-binary-tree-zigzag-level-order-traversal/</guid>
-      <description>LC 103 Binary Tree Zigzag Level Order Traversal Given a binary tree, return the zigzag level order traversal of its nodes&#39; values. (ie, from left to right, then right to left for the next level and alternate between). For example: Given binary tree [3,9,20,null,null,15,7], 3 / \ 9 20 / \ 15 7 return its zigzag level order traversal as: [ [3], [20,9], [15,7] ] Solution 2020-09-23 Notes: 一个</description>
-    </item>
-    
-    <item>
-      <title>1283 Find the Smallest Divisor Given a Threshold</title>
-      <link>https://foxisawesome.github.io/posts/1283-find-the-smallest-divisor-given-a-threshold/</link>
-      <pubDate>Wed, 23 Sep 2020 14:22:33 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1283-find-the-smallest-divisor-given-a-threshold/</guid>
-      <description>LC 1283 Find the Smallest Divisor Given a Threshold a positive integer divisor and divide all the array by it and sum the result of the division. Find the smallest divisor such that the result mentioned above is less than or equal to threshold. Input: nums = [1,2,5,9], threshold = 6 Output: 5 Explanation: We can get a sum to 17 (1+2+5+9) if the divisor is 1. If the divisor</description>
-    </item>
-    
-    <item>
-      <title>179 Largest Number</title>
-      <link>https://foxisawesome.github.io/posts/179-largest-number/</link>
-      <pubDate>Wed, 23 Sep 2020 11:12:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/179-largest-number/</guid>
-      <description>LC 179 Largest Number Given a list of non negative integers, arrange them such that they form the largest number. Input: [3,30,34,5,9] Output: &amp;quot;9534330&amp;quot; Solution 2020-09-23 Notes: 开始的时候想复杂了，想着先比较第一位，要是第一位相同，再比较第二位，e.g. 5 &amp;amp; 54, 下一</description>
-    </item>
-    
-    <item>
-      <title>518 Coin Change 2</title>
-      <link>https://foxisawesome.github.io/posts/518-coin-change-2/</link>
-      <pubDate>Wed, 23 Sep 2020 10:32:12 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/518-coin-change-2/</guid>
-      <description>LC 518 Coin Change 2 You are given coins of different denominations and a total amount of money. Write a function to compute the number of combinations that make up that amount. You may assume that you have infinite number of each kind of coin. Input: amount = 5, coins = [1, 2, 5] Output: 4 Explanation: there are four ways to make up the amount: 5=5 5=2+2+1 5=2+1+1+1 5=1+1+1+1+1</description>
-    </item>
-    
-    <item>
-      <title>64 Minimum Path Sum</title>
-      <link>https://foxisawesome.github.io/posts/64-minimum-path-sum/</link>
-      <pubDate>Wed, 23 Sep 2020 09:56:55 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/64-minimum-path-sum/</guid>
-      <description>LC 64 Minimum Path Sum Given a m x n grid filled with non-negative numbers, find a path from top left to bottom right which minimizes the sum of all numbers along its path. Input:[[1,3,9],[1,5,2],[4,2,1]] Output: 7 Explanation: Because the path 1→3→1→1→1 minimizes the sum. Solution 2020-09-23 Notes: 做这题时发现了好几个pyth</description>
-    </item>
-    
-    <item>
-      <title>802 Find Eventual Safe States</title>
-      <link>https://foxisawesome.github.io/posts/802-find-eventual-safe-states/</link>
-      <pubDate>Tue, 22 Sep 2020 13:01:55 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/802-find-eventual-safe-states/</guid>
-      <description>LC 802 Find Eventual Safe States In a directed graph, we start at some node and every turn, walk along a directed edge of the graph. If we reach a node that is terminal (that is, it has no outgoing directed edges), we stop. Now, say our starting node is eventually safe if and only if we must eventually walk to a terminal node. More specifically, there exists a natural</description>
-    </item>
-    
-    <item>
-      <title>1118 Number of Days in a Month</title>
-      <link>https://foxisawesome.github.io/posts/1118-number-of-days-in-a-month/</link>
-      <pubDate>Tue, 22 Sep 2020 12:12:50 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1118-number-of-days-in-a-month/</guid>
-      <description>LC 1118 Number of Days in a Month   Given a year Y and a month M, return how many days there are in that month.
- Solution 2020-09-22 Notes: class Solution: def numberOfDays(self, Y: int, M: int) -&amp;gt; int: up = [1,3,5,7,8,10,12] if M == 2: if Y % 100 == 0: if Y % 400 == 0: return 29 else: return 28 else: if Y % 4 == 0: return 29 else: return 28 return 31 if M in up else 30 # Time O(1) # Space O(1)  </description>
-    </item>
-    
-    <item>
-      <title>210 Course Schedule II</title>
-      <link>https://foxisawesome.github.io/posts/210-course-schedule-ii/</link>
-      <pubDate>Tue, 22 Sep 2020 10:31:47 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/210-course-schedule-ii/</guid>
-      <description>LC 210 Course Schedule II There are a total of n courses you have to take labelled from 0 to n - 1. Some courses may have prerequisites, for example, if prerequisites[i] = [ai, bi] this means you must take the course bi before the course ai. Given the total number of courses numCourses and a list of the prerequisite pairs, return the ordering of courses you should take to</description>
-    </item>
-    
-    <item>
-      <title>207 Course Schedule</title>
-      <link>https://foxisawesome.github.io/posts/207-course-schedule/</link>
-      <pubDate>Mon, 21 Sep 2020 22:16:02 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/207-course-schedule/</guid>
-      <description>LC 207 Course Schedule There are a total of numCourses courses you have to take, labeled from 0 to numCourses-1. Some courses may have prerequisites, for example to take course 0 you have to first take course 1, which is expressed as a pair: [0,1] Given the total number of courses and a list of prerequisite pairs, is it possible for you to finish all courses? Input: numCourses = 2,</description>
-    </item>
-    
-    <item>
-      <title>542 01 Matrix</title>
-      <link>https://foxisawesome.github.io/posts/542-01-matrix/</link>
-      <pubDate>Mon, 21 Sep 2020 21:01:17 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/542-01-matrix/</guid>
-      <description>LC 542 01 Matrix Given a matrix consists of 0 and 1, find the distance of the nearest 0 for each cell. Input: [[0,0,0],[0,1,0],[1,1,1]] Output:[[0,0,0],[0,1,0],[1,2,1]] Solution 2020-09-21 Notes: 很经典的BFS题。这题的关键是BFS每一个step中所有的点都向四周找0，如果找到水</description>
-    </item>
-    
-    <item>
-      <title>200 Number of Islands</title>
-      <link>https://foxisawesome.github.io/posts/200-number-of-islands/</link>
-      <pubDate>Mon, 21 Sep 2020 20:29:23 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/200-number-of-islands/</guid>
-      <description>LC 200 Number of Islands Given a 2d grid map of &#39;1&#39;s (land) and &#39;0&#39;s (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water. Input: grid = [ [&amp;quot;1&amp;quot;,&amp;quot;1&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;], [&amp;quot;1&amp;quot;,&amp;quot;1&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;], [&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;1&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;], [&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;1&amp;quot;,&amp;quot;1&amp;quot;] ] Output: 3 Solution 2020-09-21 Notes: 很经典的B</description>
-    </item>
-    
-    <item>
-      <title>133 Clone Graph</title>
-      <link>https://foxisawesome.github.io/posts/133-clone-graph/</link>
-      <pubDate>Mon, 21 Sep 2020 16:18:49 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/133-clone-graph/</guid>
-      <description>LC 133 Clone Graph Given a reference of a node in a connected undirected graph. Return a deep copy (clone) of the graph. Solution 2020-09-21 Notes: 刷graph第一题，对这种数据结构还不是很懂，抄了一遍 负雪明烛 的还得体会下。一般的遍历只</description>
-    </item>
-    
-    <item>
-      <title>1323 Maximum 69 Number</title>
-      <link>https://foxisawesome.github.io/posts/1323-maximum-69-number/</link>
-      <pubDate>Mon, 21 Sep 2020 15:51:59 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1323-maximum-69-number/</guid>
-      <description>LC 1323 Maximum 69 Number Given a positive integer num consisting only of digits 6 and 9. Return the maximum number you can get by changing at most one digit (6 becomes 9, and 9 becomes 6). Solution 2020-09-21 Notes: 开始时我想着转成str()后，用binary search出最</description>
     </item>
     
   </channel>

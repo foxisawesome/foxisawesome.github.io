@@ -33,7 +33,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://foxisawesome.github.io/" />
-<meta property="og:updated_time" content="2020-11-04T14:40:15-05:00" />
+<meta property="og:updated_time" content="2020-11-06T13:34:35-05:00" />
 <meta itemprop="name" content="Q. Weng">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -141,7 +141,7 @@
         <ul class="category-list">
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">236</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">6</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">119</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">136</span></li>
         </ul>
     </div>
 </div>
@@ -208,7 +208,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">351</span></li>
+                    class="tag-list-count">368</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -287,6 +287,200 @@
         <h1 itemprop="name">
   <a
     class="article-title"
+    href="/posts/1285-find-the-start-and-end-number-of-continuous-ranges/"
+    >1285 Find the Start and End Number of Continuous Ranges</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 1285 Find the Start and End Number of Continuous Ranges Write an SQL query to find the start and end number of continuous ranges in table Logs. Order the result table by start_id. The query result format is in the following example: Logs table: +------------+ | log_id | +------------+ | 1 | | 2 | | 3 | | 7 | | 8 | | 10 | +------------+ Result
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/1285-find-the-start-and-end-number-of-continuous-ranges/" class="">
+  <time datetime="2020-10-06 22:18:54 -0400 EDT" itemprop="datePublished">2020-10-06</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+    <a class="article-tag-link" href="/tags/dia_sql/"> dia_sql </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1285-find-the-start-and-end-number-of-continuous-ranges/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/626-exchange-seats/"
+    >626 Exchange Seats</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 626 Exchange Seats   Can you write a SQL query to output the result for Mary?
++---------+---------+ | id | student | +---------+---------+ | 1 | Abbot | | 2 | Doris | | 3 | Emerson | | 4 | Green | | 5 | Jeames | +---------+---------+  For the sample input, the output is:
++---------+---------+ | id | student | +---------+---------+ | 1 | Doris | | 2 | Abbot | | 3 | Green | | 4 | Emerson | | 5 | Jeames | +---------+---------+   Solution 2020-10-06 Notes: SELECT CASE WHEN MOD(id, 2) = 1 AND id !
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/626-exchange-seats/" class="">
+  <time datetime="2020-10-06 21:59:09 -0400 EDT" itemprop="datePublished">2020-10-06</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+    <a class="article-tag-link" href="/tags/dia/"> dia </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/626-exchange-seats/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/55-jump-game/"
+    >55 Jump Game</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 55 Jump Game Given an array of non-negative integers, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Determine if you are able to reach the last index. Input: nums = [2,3,1,1,4] Output: true Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index. Solution 2020-10-06 Notes: 这
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/55-jump-game/" class="">
+  <time datetime="2020-10-06 19:25:01 -0400 EDT" itemprop="datePublished">2020-10-06</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/algo/"> algo </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+    <a class="article-tag-link" href="/tags/greedy/"> greedy </a>
+    <a class="article-tag-link" href="/tags/dp/"> dp </a>
+    <a class="article-tag-link" href="/tags/dfs/"> dfs </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/55-jump-game/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/1194-tournament-winners/"
+    >1194 Tournament Winners</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 1194 Tournament Winners The winner in each group is the player who scored the maximum total points within the group. In the case of a tie, the lowest player_id wins. Write an SQL query to find the winner in each group. The query result format is in the following example: Players table: +-----------+------------+ | player_id | group_id | +-----------+------------+ | 15 | 1 | | 25 | 1 |
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/1194-tournament-winners/" class="">
+  <time datetime="2020-10-05 21:07:02 -0400 EDT" itemprop="datePublished">2020-10-05</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+    <a class="article-tag-link" href="/tags/dia_sql/"> dia_sql </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1194-tournament-winners/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/571-find-median-given-frequency-of-numbers/"
+    >571 Find Median Given Frequency of Numbers</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 571 Find Median Given Frequency of Numbers The Numbers table keeps the value of number and its frequency. +----------+-------------+ | Number | Frequency | +----------+-------------| | 0 | 7 | | 1 | 1 | | 2 | 3 | | 3 | 1 | +----------+-------------+ In this table, the numbers are 0, 0, 0, 0, 0, 0, 0, 1, 2, 2, 2, 3, so the median is (0
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/571-find-median-given-frequency-of-numbers/" class="">
+  <time datetime="2020-10-05 20:46:24 -0400 EDT" itemprop="datePublished">2020-10-05</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+    <a class="article-tag-link" href="/tags/dia_sql/"> dia_sql </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/571-find-median-given-frequency-of-numbers/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
     href="/posts/569-median-employee-salary/"
     >569 Median Employee Salary</a
   >
@@ -314,201 +508,6 @@
   </span>
 
         <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/569-median-employee-salary/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/107-binary-tree-level-order-traversal-ii/"
-    >107 Binary Tree Level Order Traversal II</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 107 Binary Tree Level Order Traversal II Given a binary tree, return the bottom-up level order traversal of its nodes' values. (ie, from left to right, level by level from leaf to root). For example: Given binary tree [3,9,20,null,null,15,7], 3 / \ 9 20 / \ 15 7 return its bottom-up level order traversal as: [ [15,7], [9,20], [3] ] Solution 2020-10-05 Notes: 学习了 负雪明
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/107-binary-tree-level-order-traversal-ii/" class="">
-  <time datetime="2020-10-05 10:06:12 -0400 EDT" itemprop="datePublished">2020-10-05</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/tree/"> tree </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/107-binary-tree-level-order-traversal-ii/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/1454-active-users/"
-    >1454 Active Users</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 1454 Active Users   Write an SQL query to find the id and the name of active users.
-Active users are those who logged in to their accounts for 5 or more consecutive days.
-Return the result table ordered by the id.
-The query result format is in the following example:
-Accounts table: +----+----------+ | id | name | +----+----------+ | 1 | Winston | | 7 | Jonathan | +----+----------+ Logins table: +----+------------+ | id | login_date | +----+------------+ | 7 | 2020-05-30 | | 1 | 2020-05-30 | | 7 | 2020-05-31 | | 7 | 2020-06-01 | | 7 | 2020-06-02 | | 7 | 2020-06-02 | | 7 | 2020-06-03 | | 1 | 2020-06-07 | | 7 | 2020-06-10 | +----+------------+ Result table: +----+----------+ | id | name | +----+----------+ | 7 | Jonathan | +----+----------+   Solution 2020-10-04 Notes:  consecutive 5 days: DATEDIFF(date, LEAD(date,4)) = 4  SELECT DISTINCT a.
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1454-active-users/" class="">
-  <time datetime="2020-10-04 21:18:04 -0400 EDT" itemprop="datePublished">2020-10-04</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1454-active-users/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/579-find-cumulative-salary-of-an-employee/"
-    >579 Find Cumulative Salary of an Employee</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 579 Find Cumulative Salary of an Employee The Employee table holds the salary information in a year. Write a SQL to get the cumulative sum of an employee&rsquo;s salary over a period of 3 months but exclude the most recent month. The result should be displayed by &lsquo;Id&rsquo; ascending, and then by &lsquo;Month&rsquo; descending. Example Input | Id | Month | Salary | |----|-------|--------| | 1 | 1 |
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/579-find-cumulative-salary-of-an-employee/" class="">
-  <time datetime="2020-10-04 21:05:57 -0400 EDT" itemprop="datePublished">2020-10-04</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/dia_sql/"> dia_sql </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/579-find-cumulative-salary-of-an-employee/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/1075-project-employees-i/"
-    >1075 Project Employees I</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 1075 Project Employees I   Write an SQL query that reports the average experience years of all the employees for each project, rounded to 2 digits.
-The query result format is in the following example:
-Project table: +-------------+-------------+ | project_id | employee_id | +-------------+-------------+ | 1 | 1 | | 1 | 2 | | 1 | 3 | | 2 | 1 | | 2 | 4 | +-------------+-------------+ Employee table: +-------------+--------+------------------+ | employee_id | name | experience_years | +-------------+--------+------------------+ | 1 | Khaled | 3 | | 2 | Ali | 2 | | 3 | John | 1 | | 4 | Doe | 2 | +-------------+--------+------------------+ Result table: +-------------+---------------+ | project_id | average_years | +-------------+---------------+ | 1 | 2.
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1075-project-employees-i/" class="">
-  <time datetime="2020-10-04 20:55:17 -0400 EDT" itemprop="datePublished">2020-10-04</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1075-project-employees-i/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/620-not-boring-movies/"
-    >620 Not Boring Movies</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 620 Not Boring Movies   X city opened a new cinema, many people would like to go to this cinema. The cinema also gives out a poster indicating the movies’ ratings and descriptions.
-Please write a SQL query to output movies with an odd numbered ID and a description that is not &lsquo;boring&rsquo;. Order the result by rating.
- Solution 2020-10-04 Notes: SELECT * FROM cinema WHERE id % 2 = 1 AND description !
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/620-not-boring-movies/" class="">
-  <time datetime="2020-10-04 20:51:14 -0400 EDT" itemprop="datePublished">2020-10-04</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/620-not-boring-movies/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article></div>
   
