@@ -23,7 +23,7 @@
     <meta name="description" content="LC 1107 New Users Daily Count   Write an SQL query that reports for every date within at most 90 days from today, the number of users that logged in for the first time on that date. Assume today is 2019-06-30.
 The query result format is in the following example:
 Traffic table: &#43;---------&#43;----------&#43;---------------&#43; | user_id | activity | activity_date | &#43;---------&#43;----------&#43;---------------&#43; | 1 | login | 2019-05-01 | | 1 | homepage | 2019-05-01 | | 1 | logout | 2019-05-01 | | 2 | login | 2019-06-21 | | 2 | logout | 2019-06-21 | | 3 | login | 2019-01-01 | | 3 | jobs | 2019-01-01 | | 3 | logout | 2019-01-01 | | 4 | login | 2019-06-21 | | 4 | groups | 2019-06-21 | | 4 | logout | 2019-06-21 | | 5 | login | 2019-03-01 | | 5 | logout | 2019-03-01 | | 5 | login | 2019-06-21 | | 5 | logout | 2019-06-21 | &#43;---------&#43;----------&#43;---------------&#43; Result table: &#43;------------&#43;-------------&#43; | login_date | user_count | &#43;------------&#43;-------------&#43; | 2019-05-01 | 1 | | 2019-06-21 | 2 | &#43;------------&#43;-------------&#43;   Solution 2020-10-09 Notes: SELECT activity_date AS login_date, COUNT(user_id) AS user_count FROM( SELECT *, ROW_NUMBER() OVER(PARTITION BY user_id ORDER BY activity_date) AS nr FROM traffic WHERE activity = &#39;login&#39; ) a WHERE nr = 1 and DATEDIFF(&#39;2019-06-30&#39;, activity_date) &amp;lt;= 90 GROUP BY 1  " />
-    <meta name="generator" content="Hugo 0.76.5 with theme pure" />
+    <meta name="generator" content="Hugo 0.78.1 with theme pure" />
     <title>1107 New Users Daily Count - Q. Weng</title>
     
     
@@ -156,6 +156,7 @@ Traffic table: &#43;---------&#43;----------&#43;---------------&#43; | user_id 
     <div class="widget-body">
         <ul class="category-list">
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">236</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">6</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">136</span></li>
         </ul>

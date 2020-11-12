@@ -20,7 +20,7 @@
     
     
     
-    <meta name="generator" content="Hugo 0.76.5 with theme pure" />
+    <meta name="generator" content="Hugo 0.78.1 with theme pure" />
     <title>Q. Weng</title>
     
     <link rel="alternate" type="application/rss+xml" href="https://foxisawesome.github.io/index.xml" title="Q. Weng" />
@@ -140,6 +140,7 @@
     <div class="widget-body">
         <ul class="category-list">
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">236</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">6</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">136</span></li>
         </ul>
@@ -484,18 +485,31 @@ You may assume that each input would have *exactly* one solution, and you may no
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/%E5%89%8D%E7%BC%80%E5%92%8C%E6%8A%80%E5%B7%A7/"
-    ></a
+    href="/posts/imbalance_data_handling_notes/"
+    >Imbalance Data Handling Notes</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        前缀和技巧 今天来聊一道简单却十分巧妙的算法问题：算出一共有几个和为 k 的子数组。 那我把所有子数组都穷举出来，算它们的和，看看谁的和等于 k 不就行
+        reference: The 5 Most Useful Techniques to Handle Imbalanced Datasets
+1. Random Undersampling and Oversampling A widely adopted and perhaps the most straightforward method for dealing with highly imbalanced datasets is called resampling. It consists of removing samples from the majority class (under-sampling) and/or adding more examples from the minority class (over-sampling).
+Let us first create some example imbalanced data.
+from sklearn.datasets import make_classificationX, y = make_classification( n_classes=2, class_sep=1.5, weights=[0.9, 0.
       </div>
       <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/imbalance_data_handling_notes/" class="">
+  <time datetime="2019-11-11 21:43:28 -0500 EST" itemprop="datePublished">2019-11-11</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/ml/"> ML </a>
+</span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/%E5%89%8D%E7%BC%80%E5%92%8C%E6%8A%80%E5%B7%A7/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/imbalance_data_handling_notes/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article></div>
   
@@ -506,10 +520,15 @@ You may assume that each input would have *exactly* one solution, and you may no
           <i class="icon icon-angle-left"></i>
           
         </a>
+      </li><li class="next">
+        <a href="/page/62/">
+          <i class="icon icon-angle-right"></i>
+          
+        </a>
       </li>
     </ul>
     <div class="total-article bar-right">
-      Page:61/61
+      Page:61/62
     </div>
   </div>
 </nav>

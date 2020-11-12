@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>ML on Q. Weng</title>
+    <link>https://foxisawesome.github.io/categories/ml/</link>
+    <description>Recent content in ML on Q. Weng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Mon, 11 Nov 2019 21:43:28 -0500</lastBuildDate>
+    
+        <atom:link href="https://foxisawesome.github.io/categories/ml/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>1435 Create a Session Bar Chart</title>
+      <link>https://foxisawesome.github.io/posts/1435-create-a-session-bar-chart/</link>
+      <pubDate>Sun, 01 Nov 2020 13:21:24 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1435-create-a-session-bar-chart/</guid>
+      <description>LC 1435 Create a Session Bar Chart   Write an SQL query to report the (bin, total) in any order.
+The query result format is in the following example.
+Sessions table: +-------------+---------------+ | session_id | duration | +-------------+---------------+ | 1 | 30 | | 2 | 199 | | 3 | 299 | | 4 | 580 | | 5 | 1000 | +-------------+---------------+ Result table: +--------------+--------------+ | bin | total | +--------------+--------------+ | [0-5&amp;gt; | 3 | | [5-10&amp;gt; | 1 | | [10-15&amp;gt; | 0 | | 15 or more | 1 | +--------------+--------------+ For session_id 1, 2 and 3 have a duration greater or equal than 0 minutes and less than 5 minutes.</description>
+    </item>
+    
+    <item>
+      <title>1421 Npv Queries</title>
+      <link>https://foxisawesome.github.io/posts/1421-npv-queries/</link>
+      <pubDate>Sun, 01 Nov 2020 13:19:46 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1421-npv-queries/</guid>
+      <description>LC 1421 Npv Queries   Write an SQL query to find the npv of all each query of queries table.
+Return the result table in any order. The query result format is in the following example:
+NPV table: +------+--------+--------+ | id | year | npv | +------+--------+--------+ | 1 | 2018 | 100 | | 7 | 2020 | 30 | | 13 | 2019 | 40 | | 1 | 2019 | 113 | | 2 | 2008 | 121 | | 3 | 2009 | 12 | | 11 | 2020 | 99 | | 7 | 2019 | 0 | +------+--------+--------+ Queries table: +------+--------+ | id | year | +------+--------+ | 1 | 2019 | | 2 | 2008 | | 3 | 2009 | | 7 | 2018 | | 7 | 2019 | | 7 | 2020 | | 13 | 2019 | +------+--------+ Result table: +------+--------+--------+ | id | year | npv | +------+--------+--------+ | 1 | 2019 | 113 | | 2 | 2008 | 121 | | 3 | 2009 | 12 | | 7 | 2018 | 0 | | 7 | 2019 | 0 | | 7 | 2020 | 30 | | 13 | 2019 | 40 | +------+--------+--------+ The npv value of (7, 2018) is not present in the NPV table, we consider it 0.</description>
+    </item>
+    
+    <item>
+      <title>1378 Replace Employee Id With the Unique Identifier</title>
+      <link>https://foxisawesome.github.io/posts/1378-replace-employee-id-with-the-unique-identifier/</link>
+      <pubDate>Sun, 01 Nov 2020 13:17:11 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1378-replace-employee-id-with-the-unique-identifier/</guid>
+      <description>LC 1378 Replace Employee Id With the Unique Identifier Write an SQL query to show the unique ID of each user, If a user doesn&amp;rsquo;t have a unique ID replace just show null. Return the result table in any order. The query result format is in the following example: Employees table: +----+----------+ | id | name | +----+----------+ | 1 | Alice | | 7 | Bob | | 11</description>
+    </item>
+    
+    <item>
+      <title>1364 Number of Trusted Contacts of a Customer</title>
+      <link>https://foxisawesome.github.io/posts/1364-number-of-trusted-contacts-of-a-customer/</link>
+      <pubDate>Thu, 29 Oct 2020 11:19:50 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1364-number-of-trusted-contacts-of-a-customer/</guid>
+      <description>LC 1364 Number of Trusted Contacts of a Customer Write an SQL query to find the following for each invoice_id: customer_name: The name of the customer the invoice is related to. price: The price of the invoice. contacts_cnt: The number of contacts related to the customer. trusted_contacts_cnt: The number of contacts related to the customer and at the same time they are customers to the shop. (i.e His/Her email exists</description>
+    </item>
+    
+    <item>
+      <title>1341 Movie Rating</title>
+      <link>https://foxisawesome.github.io/posts/1341-movie-rating/</link>
+      <pubDate>Thu, 29 Oct 2020 11:19:39 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1341-movie-rating/</guid>
+      <description>LC 1341 Movie Rating Write the following SQL query: Find the name of the user who has rated the greatest number of movies. In case of a tie, return lexicographically smaller user name. Find the movie name with thehighest averagerating inFebruary 2020 In case of a tie, return lexicographically smaller movie name. The query is returned in 2 rows, the query result format is in the following example: Movies table:</description>
+    </item>
+    
+    <item>
+      <title>1336 Number of Transactions per Visit</title>
+      <link>https://foxisawesome.github.io/posts/1336-number-of-transactions-per-visit/</link>
+      <pubDate>Thu, 29 Oct 2020 11:19:23 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1336-number-of-transactions-per-visit/</guid>
+      <description>LC 1336 Number of Transactions per Visit Write an SQL query to find how many users visited the bank and didn&amp;rsquo;t do any transactions, how many visited the bank and did one transaction and so on. The result table will contain two columns: transactions_count which is the number of transactions done in one visit. visits_count which is the corresponding number of users who did transactions_count in one visit to the</description>
+    </item>
+    
+    <item>
+      <title>1327 List the Products Ordered in a Period</title>
+      <link>https://foxisawesome.github.io/posts/1327-list-the-products-ordered-in-a-period/</link>
+      <pubDate>Thu, 29 Oct 2020 11:19:13 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1327-list-the-products-ordered-in-a-period/</guid>
+      <description>LC 1327 List the Products Ordered in a Period Write an SQL query to get the names of products with greater than or equal to 100 units ordered in February 2020 and their amount. Return result table in any order. The query result format is in the following example: Products table: +-------------+-----------------------+------------------+ | product_id | product_name | product_category | +-------------+-----------------------+------------------+ | 1 | Leetcode Solutions | Book | | 2</description>
+    </item>
+    
+    <item>
+      <title>1303 Find the Team Size</title>
+      <link>https://foxisawesome.github.io/posts/1303-find-the-team-size/</link>
+      <pubDate>Thu, 29 Oct 2020 11:19:04 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1303-find-the-team-size/</guid>
+      <description>LC 1303 Find the Team Size Write an SQL query to find the team size of each of the employees. Return result table in any order. The query result format is in the following example: Employee Table: +-------------+------------+ | employee_id | team_id | +-------------+------------+ | 1 | 8 | | 2 | 8 | | 3 | 8 | | 4 | 7 | | 5 | 9 | |</description>
+    </item>
+    
+    <item>
+      <title>1264 Page Recommendations</title>
+      <link>https://foxisawesome.github.io/posts/1264-page-recommendations/</link>
+      <pubDate>Thu, 29 Oct 2020 11:18:52 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1264-page-recommendations/</guid>
+      <description>LC 1264 Page Recommendations Write an SQL query to recommend pages to the user with user_id = 1 using the pages that your friends liked. It should not recommend pages you already liked. Return result table in any order without duplicates. The query result format is in the following example: Friendship table: +----------+----------+ | user1_id | user2_id | +----------+----------+ | 1 | 2 | | 1 | 3 | |</description>
+    </item>
+    
+    <item>
+      <title>1251 Average Selling Price</title>
+      <link>https://foxisawesome.github.io/posts/1251-average-selling-price/</link>
+      <pubDate>Thu, 29 Oct 2020 11:18:40 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1251-average-selling-price/</guid>
+      <description>LC 1251 Average Selling Price Write an SQL query to find the average selling price for each product. average_price should be rounded to 2 decimal places. The query result format is in the following example: Prices table: +------------+------------+------------+--------+ | product_id | start_date | end_date | price | +------------+------------+------------+--------+ | 1 | 2019-02-17 | 2019-02-28 | 5 | | 1 | 2019-03-01 | 2019-03-22 | 20 | | 2 | 2019-02-01</description>
+    </item>
+    
+    <item>
+      <title>1225 Report Contiguous Dates</title>
+      <link>https://foxisawesome.github.io/posts/1225-report-contiguous-dates/</link>
+      <pubDate>Thu, 29 Oct 2020 11:18:31 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1225-report-contiguous-dates/</guid>
+      <description>LC 1225 Report Contiguous Dates 01-01 to 2019-12-31. period_state` is *&#39;failed&#39;* if tasks in this interval failed or *&#39;succeeded&#39;* if tasks in this interval succeeded. Interval of days are retrieved as `start_date` and `end_date. Order result by start_date. The query result format is in the following example: Failed table: +-------------------+ | fail_date | +-------------------+ | 2018-12-28 | | 2018-12-29 | | 2019-01-04 | | 2019-01-05 | +-------------------+ Succeeded table: +-------------------+</description>
+    </item>
+    
+    <item>
+      <title>1211 Queries Quality and Percentage</title>
+      <link>https://foxisawesome.github.io/posts/1211-queries-quality-and-percentage/</link>
+      <pubDate>Thu, 29 Oct 2020 11:18:19 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1211-queries-quality-and-percentage/</guid>
+      <description>LC 1211 Queries Quality and Percentage Write an SQL query to find each query_name, the quality and poor_query_percentage. Both quality and poor_query_percentage should be rounded to 2 decimal places. The query result format is in the following example: Queries table: +------------+-------------------+----------+--------+ | query_name | result | position | rating | +------------+-------------------+----------+--------+ | Dog | Golden Retriever | 1 | 5 | | Dog | German Shepherd | 2 | 5</description>
+    </item>
+    
+    <item>
+      <title>1193 Monthly Transactions I</title>
+      <link>https://foxisawesome.github.io/posts/1193-monthly-transactions-i/</link>
+      <pubDate>Thu, 29 Oct 2020 11:18:07 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1193-monthly-transactions-i/</guid>
+      <description>LC 1193 Monthly Transactions I Write an SQL query to find for each month and country, the number of transactions and their total amount, the number of approved transactions and their total amount. The query result format is in the following example: Transactions table: +------+---------+----------+--------+------------+ | id | country | state | amount | trans_date | +------+---------+----------+--------+------------+ | 121 | US | approved | 1000 | 2018-12-18 | | 122</description>
+    </item>
+    
+    <item>
+      <title>1158 Market Analysis I</title>
+      <link>https://foxisawesome.github.io/posts/1158-market-analysis-i/</link>
+      <pubDate>Thu, 29 Oct 2020 11:17:54 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1158-market-analysis-i/</guid>
+      <description>LC 1158 Market Analysis I Write an SQL query to find for each user, the join date and the number of orders they made as a buyer in 2019. The query result format is in the following example: Users table: +---------+------------+----------------+ | user_id | join_date | favorite_brand | +---------+------------+----------------+ | 1 | 2018-01-01 | Lenovo | | 2 | 2018-02-09 | Samsung | | 3 | 2018-01-19 | LG |</description>
+    </item>
+    
+    <item>
+      <title>1149 Article Views II</title>
+      <link>https://foxisawesome.github.io/posts/1149-article-views-ii/</link>
+      <pubDate>Thu, 29 Oct 2020 11:17:39 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1149-article-views-ii/</guid>
+      <description>LC 1149 Article Views II Write an SQL query to find all the people who viewed more than one article on the same date, sorted in ascending order by their id. The query result format is in the following example: Views table: +------------+-----------+-----------+------------+ | article_id | author_id | viewer_id | view_date | +------------+-----------+-----------+------------+ | 1 | 3 | 5 | 2019-08-01 | | 3 | 4 | 5 | 2019-08-01</description>
+    </item>
+    
+    <item>
+      <title>1132 Reported Posts II</title>
+      <link>https://foxisawesome.github.io/posts/1132-reported-posts-ii/</link>
+      <pubDate>Thu, 29 Oct 2020 11:14:32 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1132-reported-posts-ii/</guid>
+      <description>LC 1132 Reported Posts II Write an SQL query to find the average for daily percentage of posts that got removed after being reported as spam, rounded to 2 decimal places. The query result format is in the following example: Actions table: +---------+---------+-------------+--------+--------+ | user_id | post_id | action_date | action | extra | +---------+---------+-------------+--------+--------+ | 1 | 1 | 2019-07-01 | view | null | | 1 | 1</description>
+    </item>
+    
+    <item>
+      <title>1127 User Purchase Platform</title>
+      <link>https://foxisawesome.github.io/posts/1127-user-purchase-platform/</link>
+      <pubDate>Thu, 29 Oct 2020 11:14:19 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1127-user-purchase-platform/</guid>
+      <description>LC 1127 User Purchase Platform   Write an SQL query to find the total number of users and the total amount spent using mobile only, desktop only and both mobile and desktop together for each date.
+The query result format is in the following example:
+Spending table: +---------+------------+----------+--------+ | user_id | spend_date | platform | amount | +---------+------------+----------+--------+ | 1 | 2019-07-01 | mobile | 100 | | 1 | 2019-07-01 | desktop | 100 | | 2 | 2019-07-01 | mobile | 100 | | 2 | 2019-07-02 | mobile | 100 | | 3 | 2019-07-01 | desktop | 100 | | 3 | 2019-07-02 | desktop | 100 | +---------+------------+----------+--------+ Result table: +------------+----------+--------------+-------------+ | spend_date | platform | total_amount | total_users | +------------+----------+--------------+-------------+ | 2019-07-01 | desktop | 100 | 1 | | 2019-07-01 | mobile | 100 | 1 | | 2019-07-01 | both | 200 | 1 | | 2019-07-02 | desktop | 100 | 1 | | 2019-07-02 | mobile | 100 | 1 | | 2019-07-02 | both | 0 | 0 | +------------+----------+--------------+-------------+ On 2019-07-01, user 1 purchased using both desktop and mobile, user 2 purchased using mobile only and user 3 purchased using desktop only.</description>
+    </item>
+    
+    <item>
+      <title>1126 Active Businesses</title>
+      <link>https://foxisawesome.github.io/posts/1126-active-businesses/</link>
+      <pubDate>Thu, 29 Oct 2020 11:14:06 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1126-active-businesses/</guid>
+      <description>LC 1126 Active Businesses Write an SQL query to find all active businesses. An active business is a business that has more than one event type with occurences greater than the average occurences of that event type among all businesses. The query result format is in the following example: Events table: +-------------+------------+------------+ | business_id | event_type | occurences | +-------------+------------+------------+ | 1 | reviews | 7 | | 3 |</description>
+    </item>
+    
+    <item>
+      <title>1098 Unpopular Books</title>
+      <link>https://foxisawesome.github.io/posts/1098-unpopular-books/</link>
+      <pubDate>Thu, 29 Oct 2020 10:21:21 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1098-unpopular-books/</guid>
+      <description>LC 1098 Unpopular Books Write an SQL query that reports the books that have sold less than 10 copies in the last year, excluding books that have been available for less than 1 month from today. Assume today is 2019-06-23. The query result format is in the following example: Books table: +---------+--------------------+----------------+ | book_id | name | available_from | +---------+--------------------+----------------+ | 1 | &amp;quot;Kalila And Demna&amp;quot; | 2010-01-01 | |</description>
+    </item>
+    
+    <item>
+      <title>1082 Sales Analysis I</title>
+      <link>https://foxisawesome.github.io/posts/1082-sales-analysis-i/</link>
+      <pubDate>Thu, 29 Oct 2020 09:53:47 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1082-sales-analysis-i/</guid>
+      <description>LC 1082 Sales Analysis I   Write an SQL query that reports the best seller by total sales price, If there is a tie, report them all.
+ Solution 2020-10-29 Notes:  Window function solution, which is faster  SELECT seller_id FROM ( SELECT *, RANK() OVER(ORDER BY SUM(price) DESC) AS rk FROM sales GROUP BY seller_id ) a WHERE rk = 1   aggregation func solution  SELECT seller_id FROM sales GROUP BY 1 HAVING SUM(price) = (SELECT SUM(price) FROM sales GROUP BY seller_id ORDER BY 1 DESC LIMIT 1)  </description>
+    </item>
+    
+  </channel>
+</rss>

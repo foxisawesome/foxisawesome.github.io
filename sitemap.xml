@@ -2901,6 +2901,20 @@
   </url>
   
   <url>
+    <loc>https://foxisawesome.github.io/posts/imbalance_data_handling_notes/</loc>
+    <lastmod>2019-11-11T21:43:28-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/categories/ml/</loc>
+    <lastmod>2019-11-11T21:43:28-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://foxisawesome.github.io/posts/%E5%89%8D%E7%BC%80%E5%92%8C%E6%8A%80%E5%B7%A7/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

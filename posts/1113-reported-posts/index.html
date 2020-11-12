@@ -22,7 +22,7 @@
     
     <meta name="description" content="LC 1113 Reported Posts   Write an SQL query that reports the number of posts reported yesterday for each report reason. Assume today is 2019-07-05.
  Solution 2020-09-29 Notes: SELECT report_reason, report_count FROM ( SELECT extra as report_reason, COUNT(*) as report_count FROM ( SELECT DISTINCT post_id, extra FROM actions WHERE DATEDIFF(&#39;2019-07-05&#39;,action_date)=1 AND action = &#39;report&#39; ) a GROUP BY 1 ) b WHERE report_reason IS NOT NULL ;  " />
-    <meta name="generator" content="Hugo 0.76.5 with theme pure" />
+    <meta name="generator" content="Hugo 0.78.1 with theme pure" />
     <title>1113 Reported Posts - Q. Weng</title>
     
     
@@ -152,6 +152,7 @@
     <div class="widget-body">
         <ul class="category-list">
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">236</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">6</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">136</span></li>
         </ul>

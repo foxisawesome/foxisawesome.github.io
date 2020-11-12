@@ -23,7 +23,7 @@
     <meta name="description" content="LC 534 Game Play Analysis III   Write an SQL query that reports for each player and date, how many games played so far by the player. That is, the total number of games played by the player until that date. Check the example for clarity.
 The query result format is in the following example:
 Activity table: &#43;-----------&#43;-----------&#43;------------&#43;--------------&#43; | player_id | device_id | event_date | games_played | &#43;-----------&#43;-----------&#43;------------&#43;--------------&#43; | 1 | 2 | 2016-03-01 | 5 | | 1 | 2 | 2016-05-02 | 6 | | 1 | 3 | 2017-06-25 | 1 | | 3 | 1 | 2016-03-02 | 0 | | 3 | 4 | 2018-07-03 | 5 | &#43;-----------&#43;-----------&#43;------------&#43;--------------&#43; Result table: &#43;-----------&#43;------------&#43;---------------------&#43; | player_id | event_date | games_played_so_far | &#43;-----------&#43;------------&#43;---------------------&#43; | 1 | 2016-03-01 | 5 | | 1 | 2016-05-02 | 11 | | 1 | 2017-06-25 | 12 | | 3 | 2016-03-02 | 0 | | 3 | 2018-07-03 | 5 | &#43;-----------&#43;------------&#43;---------------------&#43;   Solution 2020-09-29 Notes:  SUM() OVER(ORDER BY) gives cumulative results." />
-    <meta name="generator" content="Hugo 0.76.5 with theme pure" />
+    <meta name="generator" content="Hugo 0.78.1 with theme pure" />
     <title>534 Game Play Analysis III - Q. Weng</title>
     
     
@@ -156,6 +156,7 @@ Activity table: &#43;-----------&#43;-----------&#43;------------&#43;----------
     <div class="widget-body">
         <ul class="category-list">
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">236</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">6</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">136</span></li>
         </ul>

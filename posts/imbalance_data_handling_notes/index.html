@@ -1,0 +1,537 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+        Imbalance Data Handling Notes - Q. Weng
+      </title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    
+    <meta name="theme-color" content="#000000" />
+    
+    <meta http-equiv="window-target" content="_top" />
+    
+    
+    <meta name="description" content="reference: The 5 Most Useful Techniques to Handle Imbalanced Datasets
+1. Random Undersampling and Oversampling A widely adopted and perhaps the most straightforward method for dealing with highly imbalanced datasets is called resampling. It consists of removing samples from the majority class (under-sampling) and/or adding more examples from the minority class (over-sampling).
+Let us first create some example imbalanced data.
+from sklearn.datasets import make_classificationX, y = make_classification( n_classes=2, class_sep=1.5, weights=[0.9, 0." />
+    <meta name="generator" content="Hugo 0.78.1 with theme pure" />
+    <title>Imbalance Data Handling Notes - Q. Weng</title>
+    
+    
+    <link rel="stylesheet" href="https://foxisawesome.github.io/css/style.min.f9a354d3e7069c2b675555c86f6672f0a152ef9a764068aa27f468cd308a84a0.css">
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+    <meta property="og:title" content="Imbalance Data Handling Notes" />
+<meta property="og:description" content="reference: The 5 Most Useful Techniques to Handle Imbalanced Datasets
+1. Random Undersampling and Oversampling A widely adopted and perhaps the most straightforward method for dealing with highly imbalanced datasets is called resampling. It consists of removing samples from the majority class (under-sampling) and/or adding more examples from the minority class (over-sampling).
+Let us first create some example imbalanced data.
+from sklearn.datasets import make_classificationX, y = make_classification( n_classes=2, class_sep=1.5, weights=[0.9, 0." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://foxisawesome.github.io/posts/imbalance_data_handling_notes/" />
+<meta property="article:published_time" content="2019-11-11T21:43:28-05:00" />
+<meta property="article:modified_time" content="2019-11-11T21:43:28-05:00" />
+<meta itemprop="name" content="Imbalance Data Handling Notes">
+<meta itemprop="description" content="reference: The 5 Most Useful Techniques to Handle Imbalanced Datasets
+1. Random Undersampling and Oversampling A widely adopted and perhaps the most straightforward method for dealing with highly imbalanced datasets is called resampling. It consists of removing samples from the majority class (under-sampling) and/or adding more examples from the minority class (over-sampling).
+Let us first create some example imbalanced data.
+from sklearn.datasets import make_classificationX, y = make_classification( n_classes=2, class_sep=1.5, weights=[0.9, 0.">
+<meta itemprop="datePublished" content="2019-11-11T21:43:28-05:00" />
+<meta itemprop="dateModified" content="2019-11-11T21:43:28-05:00" />
+<meta itemprop="wordCount" content="888">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Imbalance Data Handling Notes"/>
+<meta name="twitter:description" content="reference: The 5 Most Useful Techniques to Handle Imbalanced Datasets
+1. Random Undersampling and Oversampling A widely adopted and perhaps the most straightforward method for dealing with highly imbalanced datasets is called resampling. It consists of removing samples from the majority class (under-sampling) and/or adding more examples from the minority class (over-sampling).
+Let us first create some example imbalanced data.
+from sklearn.datasets import make_classificationX, y = make_classification( n_classes=2, class_sep=1.5, weights=[0.9, 0."/>
+
+    <!--[if lte IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+      <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  
+  
+
+  <body class="main-center theme-white" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/foxisawesome" target="_blank">
+            <img class="img-circle img-rotate" src="https://foxisawesome.github.io/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Q. Weng</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md"></h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>United States</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title"> Categories</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">236</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">1</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">6</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">136</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> Tags</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/array/" class="tag-list-link">array</a><span
+                    class="tag-list-count">19</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/backtracking/" class="tag-list-link">backtracking</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/bfs/" class="tag-list-link">bfs</a><span
+                    class="tag-list-count">9</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/binary_search/" class="tag-list-link">binary_search</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/bit/" class="tag-list-link">bit</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/bst/" class="tag-list-link">bst</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dfs/" class="tag-list-link">dfs</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia/" class="tag-list-link">dia</a><span
+                    class="tag-list-count">37</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia_sql/" class="tag-list-link">dia_sql</a><span
+                    class="tag-list-count">21</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dp/" class="tag-list-link">dp</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/graph/" class="tag-list-link">graph</a><span
+                    class="tag-list-count">5</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/greedy/" class="tag-list-link">greedy</a><span
+                    class="tag-list-count">6</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/hashtable/" class="tag-list-link">hashtable</a><span
+                    class="tag-list-count">16</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/heap/" class="tag-list-link">heap</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
+                    class="tag-list-count">368</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
+                    class="tag-list-count">14</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/martix/" class="tag-list-link">martix</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/math/" class="tag-list-link">math</a><span
+                    class="tag-list-count">6</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/matrix/" class="tag-list-link">matrix</a><span
+                    class="tag-list-count">7</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/monotonic/" class="tag-list-link">monotonic</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/recursion/" class="tag-list-link">recursion</a><span
+                    class="tag-list-count">7</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/sliding_window/" class="tag-list-link">sliding_window</a><span
+                    class="tag-list-count">10</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/sort/" class="tag-list-link">sort</a><span
+                    class="tag-list-count">7</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/stack/" class="tag-list-link">stack</a><span
+                    class="tag-list-count">8</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/string/" class="tag-list-link">string</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/template/" class="tag-list-link">template</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/tree/" class="tag-list-link">tree</a><span
+                    class="tag-list-count">28</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/two_pointers/" class="tag-list-link">two_pointers</a><span
+                    class="tag-list-count">21</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/imbalance_data_handling_notes/"
+    >Imbalance Data Handling Notes</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/imbalance_data_handling_notes/" class="article-date">
+  <time datetime="2019-11-11 21:43:28 -0500 EST" itemprop="datePublished">2019-11-11</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/ml/"> ML </a>
+</span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/posts/imbalance_data_handling_notes/#comments"
+            class="article-comment-link">Comments</a></span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <p>reference: <a href="https://towardsdatascience.com/the-5-most-useful-techniques-to-handle-imbalanced-datasets-6cdba096d55a">The 5 Most Useful Techniques to Handle Imbalanced Datasets</a></p>
+<h2 id="1-random-undersampling-and-oversampling">1. Random Undersampling and Oversampling</h2>
+<p><img src="/img/0*FeIp1t4uEcW5LmSM-20201111213657874.png" alt="Image for post"></p>
+<p>A widely adopted and perhaps the most straightforward method for dealing with highly imbalanced datasets is called resampling. It consists of removing samples from the majority class (under-sampling) and/or adding more examples from the minority class (over-sampling).</p>
+<p>Let us first create some example imbalanced data.</p>
+<pre><code class="language-python">from sklearn.datasets import make_classificationX, y = make_classification(
+    n_classes=2, class_sep=1.5, weights=[0.9, 0.1],
+    n_informative=3, n_redundant=1, flip_y=0,
+    n_features=20, n_clusters_per_class=1,
+    n_samples=100, random_state=10
+)X = pd.DataFrame(X)
+X['target'] = y
+</code></pre>
+<p>We can now do random oversampling and undersampling using:</p>
+<pre><code class="language-python">num_0 = len(X[X['target']==0])
+num_1 = len(X[X['target']==1])
+print(num_0,num_1)# random undersampleundersampled_data = pd.concat([ X[X['target']==0].sample(num_1) , X[X['target']==1] ])
+print(len(undersampled_data))# random oversampleoversampled_data = pd.concat([ X[X['target']==0] , X[X['target']==1].sample(num_0, replace=True) ])
+print(len(oversampled_data))-----------------------------
+OUTPUT:
+90 10
+20
+180
+</code></pre>
+<h2 id="2-undersampling-and-oversampling-using-imbalanced-learn">2. Undersampling and Oversampling using imbalanced-learn</h2>
+<p>imbalanced-learn(<code>imblearn</code>) is a Python Package to tackle the curse of imbalanced datasets.</p>
+<p>It provides a variety of methods to undersample and oversample.</p>
+<h3 id="a-undersampling-using-tomek-links">a. Undersampling using Tomek Links:</h3>
+<p>One of such methods it provides is called Tomek Links. Tomek links are pairs of examples of opposite classes in close vicinity.</p>
+<p>In this algorithm, we end up removing the majority element from the Tomek link, which provides a better decision boundary for a classifier.</p>
+<p><img src="/img/0*YWVxE7SbWKnTnbZi.png" alt="Image for post"></p>
+<pre><code class="language-python">from imblearn.under_sampling import TomekLinks
+tl = TomekLinks(return_indices=True, ratio='majority')
+X_tl, y_tl, id_tl = tl.fit_sample(X, y)
+</code></pre>
+<h3 id="b-oversampling-using-smote">b. Oversampling using SMOTE:</h3>
+<p>In SMOTE (Synthetic Minority Oversampling Technique) we synthesize elements for the minority class, in the vicinity of already existing elements.</p>
+<p><img src="/img/0*_XpwY9GznmejI4WN.png" alt="Image for post"></p>
+<pre><code class="language-python">from imblearn.over_sampling import SMOTE
+smote = SMOTE(ratio='minority')
+X_sm, y_sm = smote.fit_sample(X, y)
+</code></pre>
+<p>There are a variety of other methods in the <code>imblearn</code> package for both undersampling(Cluster Centroids, NearMiss, etc.) and oversampling(ADASYN and bSMOTE) that you can check out.</p>
+<h2 id="3-class-weights-in-the-models">3. Class weights in the models</h2>
+<p>Most of the machine learning models provide a parameter called <code>class_weights</code>. For example, in a random forest classifier using, <code>class_weights</code> we can specify a higher weight for the minority class using a dictionary.</p>
+<pre><code class="language-python">from sklearn.linear_model import LogisticRegression
+clf = LogisticRegression(class_weight={0:1,1:10})
+</code></pre>
+<p>But what happens exactly in the background?</p>
+<p>In logistic Regression, we calculate loss per example using binary cross-entropy:</p>
+<pre><code class="language-python">Loss = −ylog(p) − (1−y)log(1−p)
+</code></pre>
+<p>In this particular form, we give equal weight to both the positive and the negative classes. When we set class_weight as <code>class_weight = {0:1,1:20}</code>, the classifier in the background tries to minimize:</p>
+<pre><code class="language-python">NewLoss = −20*ylog(p) − 1*(1−y)log(1−p)
+</code></pre>
+<p><strong>So what happens exactly here?</strong></p>
+<ul>
+<li>If our model gives a probability of 0.3 and we misclassify a positive example, the NewLoss acquires a value of $-20\log(0.3) = 10.45$</li>
+<li>If our model gives a probability of 0.7 and we misclassify a negative example, the NewLoss acquires a value of $-\log(0.3) = 0.52$</li>
+</ul>
+<p>That means we penalize our model around twenty times more when it misclassifies a positive minority example in this case.</p>
+<p><strong>How can we compute class_weights?</strong></p>
+<p><em>There is no one method to do this, and this should be constructed as a hyperparameter search problem for your particular problem.</em></p>
+<p>But if you want to get class_weights using the distribution of the y variable, you can use the following nifty utility from <code>sklearn</code>.</p>
+<pre><code class="language-python">from sklearn.utils.class_weight import compute_class_weight
+class_weights = compute_class_weight('balanced', np.unique(y), y)
+</code></pre>
+<h2 id="4-change-your-evaluation-metric">4. Change your Evaluation Metric</h2>
+<p>Choosing the right evaluation metric is pretty essential whenever we work with imbalanced datasets. Generally, in such cases, the F1 Score is what I want as my <a href="https://towardsdatascience.com/the-5-classification-evaluation-metrics-you-must-know-aa97784ff226"><strong>evaluation metric</strong></a>.</p>
+<p>The F1 score is a number between 0 and 1 and is the harmonic mean of precision and recall.</p>
+<p><img src="/img/0*HZ1eOpKgyjnxMBQV.png" alt="Image for post"></p>
+<p><strong>So how does it help?</strong></p>
+<p>Let us start with a binary prediction problem. <strong>We are predicting if an asteroid will hit the earth or not.</strong></p>
+<p>So we create a model that predicts “No” for the whole training set.</p>
+<p><strong>What is the accuracy(Normally the most used evaluation metric)?</strong></p>
+<p>It is more than 99%, and so according to accuracy, this model is pretty good, but it is worthless.</p>
+<p><strong>Now, what is the F1 score?</strong></p>
+<p>Our precision here is 0. What is the recall of our positive class? It is zero. And hence the F1 score is also 0.</p>
+<p>And thus we get to know that the classifier that has an accuracy of 99% is worthless for our case. And hence it solves our problem.</p>
+<p><img src="/img/0*LujSG8K7j-rOotdf-20201111213657949.png" alt="Image for post"></p>
+<p>Precision-Recall Tradeoff</p>
+<p>Simply stated the <strong>F1 score sort of maintains a balance between the precision and recall for your classifier</strong>. If your precision is low, the F1 is low, and if the recall is low again, your F1 score is low.</p>
+<blockquote>
+<p>If you are a police inspector and you want to catch criminals, you want to be sure that the person you catch is a criminal (Precision) and you also want to capture as many criminals (Recall) as possible. The F1 score manages this tradeoff.</p>
+</blockquote>
+<h3 id="how-to-use">How to Use?</h3>
+<p>You can calculate the F1 score for binary prediction problems using:</p>
+<pre><code class="language-python">from sklearn.metrics import f1_score
+y_true = [0, 1, 1, 0, 1, 1]
+y_pred = [0, 0, 1, 0, 0, 1]
+f1_score(y_true, y_pred)
+</code></pre>
+<p>This is one of my functions which I use to get the best threshold for maximizing F1 score for binary predictions. The below function iterates through possible threshold values to find the one that gives the best F1 score.</p>
+<pre><code class="language-python"># y_pred is an array of predictions
+def bestThresshold(y_true,y_pred):
+    best_thresh = None
+    best_score = 0
+    for thresh in np.arange(0.1, 0.501, 0.01):
+        score = f1_score(y_true, np.array(y_pred)&gt;thresh)
+        if score &gt; best_score:
+            best_thresh = thresh
+            best_score = score
+    return best_score , best_thresh
+</code></pre>
+
+    </div>
+    <div class="article-footer">
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/foxisawesome" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/qweng/" target="_blank" title="linkedin" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-linkedin"></i></a></li>
+    <li><a href="https://foxisawesome.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2019  -
+    2020
+
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.2/MathJax.js?config=TeX-MML-AM_SVG"></script>
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: false, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/sql.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://foxisawesome.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://foxisawesome.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'https:\/\/foxisawesome.github.io',
+            CONTENT_URL: 'https:\/\/foxisawesome.github.io\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://foxisawesome.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-176995936-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>
