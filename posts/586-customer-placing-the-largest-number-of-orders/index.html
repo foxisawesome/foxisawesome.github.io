@@ -21,7 +21,7 @@
     
     
     <meta name="description" content="LC 586 Customer Placing the Largest Number of Orders Query the customer_number from the *orders* table for the customer who has placed the largest number of orders. It is guaranteed that exactly one customer will have placed more orders than any other customer. Solution 2020-10-24 Notes: 秒了 select customer_number from (select customer_number, count(order_number) as ct from orders group by 1 order by ct desc) a limit 1" />
-    <meta name="generator" content="Hugo 0.78.1 with theme pure" />
+    <meta name="generator" content="Hugo 0.78.2 with theme pure" />
     <title>586 Customer Placing the Largest Number of Orders - Q. Weng</title>
     
     

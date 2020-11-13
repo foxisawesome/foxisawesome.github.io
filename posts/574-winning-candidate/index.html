@@ -21,7 +21,7 @@
     
     
     <meta name="description" content="LC 574 Winning Candidate Write a sql to find the name of the winning candidate, the above example will return the winner B. Solution 2020-09-29 Notes: 先 group by, 在 order by 里放 aggregation function SELECT name FROM candidate WHERE id = ( SELECT candidateid FROM vote GROUP BY candidateid ORDER BY COUNT(*) DESC LIMIT 1 ) 2020-10-14 Notes: Window function &#43; aggregation function SELECT name FROM candidate a" />
-    <meta name="generator" content="Hugo 0.78.1 with theme pure" />
+    <meta name="generator" content="Hugo 0.78.2 with theme pure" />
     <title>574 Winning Candidate - Q. Weng</title>
     
     

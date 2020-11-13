@@ -22,7 +22,7 @@
     
     <meta name="description" content="LC 1045 Customers Who Bought All Products   Write an SQL query for a report that provides the customer ids from the Customer table that bought all the products in the Product table.
  Solution 2020-09-29 Notes: SELECT customer_id FROM ( SELECT customer_id, COUNT(DISTINCT product_key) AS ct FROM customer GROUP BY customer_id ORDER BY 1 ) a WHERE ct = (SELECT COUNT(*) from product) ORDER BY 1 ;  " />
-    <meta name="generator" content="Hugo 0.78.1 with theme pure" />
+    <meta name="generator" content="Hugo 0.78.2 with theme pure" />
     <title>1045 Customers Who Bought All Products - Q. Weng</title>
     
     

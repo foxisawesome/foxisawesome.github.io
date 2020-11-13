@@ -25,7 +25,7 @@ Active users are those who logged in to their accounts for 5 or more consecutive
 Return the result table ordered by the id.
 The query result format is in the following example:
 Accounts table: &#43;----&#43;----------&#43; | id | name | &#43;----&#43;----------&#43; | 1 | Winston | | 7 | Jonathan | &#43;----&#43;----------&#43; Logins table: &#43;----&#43;------------&#43; | id | login_date | &#43;----&#43;------------&#43; | 7 | 2020-05-30 | | 1 | 2020-05-30 | | 7 | 2020-05-31 | | 7 | 2020-06-01 | | 7 | 2020-06-02 | | 7 | 2020-06-02 | | 7 | 2020-06-03 | | 1 | 2020-06-07 | | 7 | 2020-06-10 | &#43;----&#43;------------&#43; Result table: &#43;----&#43;----------&#43; | id | name | &#43;----&#43;----------&#43; | 7 | Jonathan | &#43;----&#43;----------&#43;   Solution 2020-10-04 Notes:  consecutive 5 days: DATEDIFF(date, LEAD(date,4)) = 4  SELECT DISTINCT a." />
-    <meta name="generator" content="Hugo 0.78.1 with theme pure" />
+    <meta name="generator" content="Hugo 0.78.2 with theme pure" />
     <title>1454 Active Users - Q. Weng</title>
     
     

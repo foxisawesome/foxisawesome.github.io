@@ -23,7 +23,7 @@
     <meta name="description" content="LC 596 Classes More Than 5 Students   There is a table courses with columns: student and class
 Please list out all classes which have more than or equal to 5 students.
  Solution 2020-10-08 Notes: SELECT DISTINCT class FROM ( SELECT *, COUNT(student) OVER(PARTITION BY class) AS ct FROM (SELECT DISTINCT student, class FROM courses) b ) a WHERE ct &amp;gt;= 5  " />
-    <meta name="generator" content="Hugo 0.78.1 with theme pure" />
+    <meta name="generator" content="Hugo 0.78.2 with theme pure" />
     <title>596 Classes More Than 5 Students - Q. Weng</title>
     
     

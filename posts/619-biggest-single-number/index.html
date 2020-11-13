@@ -22,7 +22,7 @@
     
     <meta name="description" content="LC 619 Biggest Single Number   Table my_numbers contains many numbers in column num including duplicated ones. Can you write a SQL query to find the biggest number, which only appears once
  Solution 2020-10-19 Notes: # 1 SELECT MAX(a.num) AS num FROM ( SELECT num FROM my_numbers GROUP BY num HAVING COUNT(num) = 1 ) a #2 SELECT MAX(num) AS num FROM ( SELECT *, COUNT(*) OVER(PARTITION BY num) AS ct FROM my_numbers ) a WHERE ct = 1  " />
-    <meta name="generator" content="Hugo 0.78.1 with theme pure" />
+    <meta name="generator" content="Hugo 0.78.2 with theme pure" />
     <title>619 Biggest Single Number - Q. Weng</title>
     
     
