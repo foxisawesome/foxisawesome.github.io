@@ -195,7 +195,7 @@ Hobbies Photography • Sports</description>
       <description>reference: The 5 Most Useful Techniques to Handle Imbalanced Datasets
 1. Random Undersampling and Oversampling A widely adopted and perhaps the most straightforward method for dealing with highly imbalanced datasets is called resampling. It consists of removing samples from the majority class (under-sampling) and/or adding more examples from the minority class (over-sampling).
 Let us first create some example imbalanced data.
-from sklearn.datasets import make_classificationX, y = make_classification( n_classes=2, class_sep=1.5, weights=[0.9, 0.</description>
+from sklearn.datasets import make_classification X, y = make_classification( n_classes=2, class_sep=1.5, weights=[0.</description>
     </item>
     
     <item>
