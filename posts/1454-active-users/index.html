@@ -20,11 +20,7 @@
     <meta http-equiv="window-target" content="_top" />
     
     
-    <meta name="description" content="LC 1454 Active Users   Write an SQL query to find the id and the name of active users.
-Active users are those who logged in to their accounts for 5 or more consecutive days.
-Return the result table ordered by the id.
-The query result format is in the following example:
-Accounts table: &#43;----&#43;----------&#43; | id | name | &#43;----&#43;----------&#43; | 1 | Winston | | 7 | Jonathan | &#43;----&#43;----------&#43; Logins table: &#43;----&#43;------------&#43; | id | login_date | &#43;----&#43;------------&#43; | 7 | 2020-05-30 | | 1 | 2020-05-30 | | 7 | 2020-05-31 | | 7 | 2020-06-01 | | 7 | 2020-06-02 | | 7 | 2020-06-02 | | 7 | 2020-06-03 | | 1 | 2020-06-07 | | 7 | 2020-06-10 | &#43;----&#43;------------&#43; Result table: &#43;----&#43;----------&#43; | id | name | &#43;----&#43;----------&#43; | 7 | Jonathan | &#43;----&#43;----------&#43;   Solution 2020-10-04 Notes:  consecutive 5 days: DATEDIFF(date, LEAD(date,4)) = 4  SELECT DISTINCT a." />
+    <meta name="description" content="LC 1454 Active Users Write an SQL query to find the id and the name of active users. Active users are those who logged in to their accounts for 5 or more consecutive days. Return the result table ordered by the id. The query result format is in the following example: Accounts table: &#43;----&#43;----------&#43; | id | name | &#43;----&#43;----------&#43; | 1 | Winston | | 7 | Jonathan |" />
     <meta name="generator" content="Hugo 0.78.2 with theme pure" />
     <title>1454 Active Users - Q. Weng</title>
     
@@ -34,35 +30,23 @@ Accounts table: &#43;----&#43;----------&#43; | id | name | &#43;----&#43;------
     <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
     <meta property="og:title" content="1454 Active Users" />
-<meta property="og:description" content="LC 1454 Active Users   Write an SQL query to find the id and the name of active users.
-Active users are those who logged in to their accounts for 5 or more consecutive days.
-Return the result table ordered by the id.
-The query result format is in the following example:
-Accounts table: &#43;----&#43;----------&#43; | id | name | &#43;----&#43;----------&#43; | 1 | Winston | | 7 | Jonathan | &#43;----&#43;----------&#43; Logins table: &#43;----&#43;------------&#43; | id | login_date | &#43;----&#43;------------&#43; | 7 | 2020-05-30 | | 1 | 2020-05-30 | | 7 | 2020-05-31 | | 7 | 2020-06-01 | | 7 | 2020-06-02 | | 7 | 2020-06-02 | | 7 | 2020-06-03 | | 1 | 2020-06-07 | | 7 | 2020-06-10 | &#43;----&#43;------------&#43; Result table: &#43;----&#43;----------&#43; | id | name | &#43;----&#43;----------&#43; | 7 | Jonathan | &#43;----&#43;----------&#43;   Solution 2020-10-04 Notes:  consecutive 5 days: DATEDIFF(date, LEAD(date,4)) = 4  SELECT DISTINCT a." />
+<meta property="og:description" content="LC 1454 Active Users Write an SQL query to find the id and the name of active users. Active users are those who logged in to their accounts for 5 or more consecutive days. Return the result table ordered by the id. The query result format is in the following example: Accounts table: &#43;----&#43;----------&#43; | id | name | &#43;----&#43;----------&#43; | 1 | Winston | | 7 | Jonathan |" />
 <meta property="og:type" content="article" />
 <meta property="og:url" content="https://foxisawesome.github.io/posts/1454-active-users/" />
 <meta property="article:published_time" content="2020-10-04T21:18:04-04:00" />
 <meta property="article:modified_time" content="2020-10-04T21:18:04-04:00" />
 <meta itemprop="name" content="1454 Active Users">
-<meta itemprop="description" content="LC 1454 Active Users   Write an SQL query to find the id and the name of active users.
-Active users are those who logged in to their accounts for 5 or more consecutive days.
-Return the result table ordered by the id.
-The query result format is in the following example:
-Accounts table: &#43;----&#43;----------&#43; | id | name | &#43;----&#43;----------&#43; | 1 | Winston | | 7 | Jonathan | &#43;----&#43;----------&#43; Logins table: &#43;----&#43;------------&#43; | id | login_date | &#43;----&#43;------------&#43; | 7 | 2020-05-30 | | 1 | 2020-05-30 | | 7 | 2020-05-31 | | 7 | 2020-06-01 | | 7 | 2020-06-02 | | 7 | 2020-06-02 | | 7 | 2020-06-03 | | 1 | 2020-06-07 | | 7 | 2020-06-10 | &#43;----&#43;------------&#43; Result table: &#43;----&#43;----------&#43; | id | name | &#43;----&#43;----------&#43; | 7 | Jonathan | &#43;----&#43;----------&#43;   Solution 2020-10-04 Notes:  consecutive 5 days: DATEDIFF(date, LEAD(date,4)) = 4  SELECT DISTINCT a.">
+<meta itemprop="description" content="LC 1454 Active Users Write an SQL query to find the id and the name of active users. Active users are those who logged in to their accounts for 5 or more consecutive days. Return the result table ordered by the id. The query result format is in the following example: Accounts table: &#43;----&#43;----------&#43; | id | name | &#43;----&#43;----------&#43; | 1 | Winston | | 7 | Jonathan |">
 <meta itemprop="datePublished" content="2020-10-04T21:18:04-04:00" />
 <meta itemprop="dateModified" content="2020-10-04T21:18:04-04:00" />
-<meta itemprop="wordCount" content="194">
+<meta itemprop="wordCount" content="263">
 
 
 
 <meta itemprop="keywords" content="leetcode," />
 <meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="1454 Active Users"/>
-<meta name="twitter:description" content="LC 1454 Active Users   Write an SQL query to find the id and the name of active users.
-Active users are those who logged in to their accounts for 5 or more consecutive days.
-Return the result table ordered by the id.
-The query result format is in the following example:
-Accounts table: &#43;----&#43;----------&#43; | id | name | &#43;----&#43;----------&#43; | 1 | Winston | | 7 | Jonathan | &#43;----&#43;----------&#43; Logins table: &#43;----&#43;------------&#43; | id | login_date | &#43;----&#43;------------&#43; | 7 | 2020-05-30 | | 1 | 2020-05-30 | | 7 | 2020-05-31 | | 7 | 2020-06-01 | | 7 | 2020-06-02 | | 7 | 2020-06-02 | | 7 | 2020-06-03 | | 1 | 2020-06-07 | | 7 | 2020-06-10 | &#43;----&#43;------------&#43; Result table: &#43;----&#43;----------&#43; | id | name | &#43;----&#43;----------&#43; | 7 | Jonathan | &#43;----&#43;----------&#43;   Solution 2020-10-04 Notes:  consecutive 5 days: DATEDIFF(date, LEAD(date,4)) = 4  SELECT DISTINCT a."/>
+<meta name="twitter:description" content="LC 1454 Active Users Write an SQL query to find the id and the name of active users. Active users are those who logged in to their accounts for 5 or more consecutive days. Return the result table ordered by the id. The query result format is in the following example: Accounts table: &#43;----&#43;----------&#43; | id | name | &#43;----&#43;----------&#43; | 1 | Winston | | 7 | Jonathan |"/>
 
     <!--[if lte IE 9]>
         <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
@@ -166,7 +150,7 @@ Accounts table: &#43;----&#43;----------&#43; | id | name | &#43;----&#43;------
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">236</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">1</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">6</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">136</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">135</span></li>
         </ul>
     </div>
 </div>
@@ -233,7 +217,7 @@ Accounts table: &#43;----&#43;----------&#43; | id | name | &#43;----&#43;------
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">368</span></li>
+                    class="tag-list-count">367</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -377,6 +361,20 @@ Result table:
 </code></pre>
 </blockquote>
 <h2 id="solution">Solution</h2>
+<h4 id="2020-11-06-notes">2020-11-06 Notes:</h4>
+<ul>
+<li>连续五天是 LEAD 4 个row。efficiency稍微高一点。</li>
+</ul>
+<pre><code class="language-mysql">SELECT DISTINCT id, name
+FROM (
+    SELECT a.*, login_date, 
+    LEAD(login_date, 4) OVER(PARTITION BY id ORDER BY login_date) AS l_date
+    FROM accounts a
+    JOIN (SELECT DISTINCT id, login_date FROM logins) b
+    ON a.id = b.id
+) c
+WHERE DATEDIFF(l_date, login_date)=4
+</code></pre>
 <h4 id="2020-10-04-notes">2020-10-04 Notes:</h4>
 <ul>
 <li>consecutive 5 days: <code>DATEDIFF(date, LEAD(date,4)) = 4</code></li>

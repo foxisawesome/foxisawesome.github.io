@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://foxisawesome.github.io/sql/1412-total-sales-amount-by-year/</loc>
+    <loc>https://foxisawesome.github.io/posts/1412-total-sales-amount-by-year/</loc>
     <lastmod>2020-11-06T13:34:35-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -24,6 +24,13 @@
   </url>
   
   <url>
+    <loc>https://foxisawesome.github.io/posts/</loc>
+    <lastmod>2020-11-06T13:34:35-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://foxisawesome.github.io/</loc>
     <lastmod>2020-11-06T13:34:35-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -38,13 +45,6 @@
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/sql/</loc>
-    <lastmod>2020-11-06T13:34:35-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://foxisawesome.github.io/tags/</loc>
     <lastmod>2020-11-06T13:34:35-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -53,6 +53,13 @@
   
   <url>
     <loc>https://foxisawesome.github.io/sql/1384-total-sales-amount-by-year/</loc>
+    <lastmod>2020-11-06T13:34:15-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/sql/</loc>
     <lastmod>2020-11-06T13:34:15-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -122,13 +129,6 @@
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/sql/1454-active-users/</loc>
-    <lastmod>2020-11-06T13:30:56-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://foxisawesome.github.io/posts/1238-circular-permutation-in-binary-representation/</loc>
     <lastmod>2020-11-04T14:40:15-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -151,13 +151,6 @@
   
   <url>
     <loc>https://foxisawesome.github.io/tags/dia/</loc>
-    <lastmod>2020-11-04T14:40:15-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/posts/</loc>
     <lastmod>2020-11-04T14:40:15-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

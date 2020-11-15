@@ -5,19 +5,10 @@
     <link>https://foxisawesome.github.io/sql/</link>
     <description>Recent content in Sqls on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 06 Nov 2020 13:34:35 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2020 13:34:15 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/sql/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>202 Happy Number</title>
-      <link>https://foxisawesome.github.io/posts/202-happy-number/</link>
-      <pubDate>Wed, 23 Sep 2020 19:33:27 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/202-happy-number/</guid>
-      <description>LC 202 Happy Number Write an algorithm to determine if a number n is &amp;ldquo;happy&amp;rdquo;. A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers</description>
-    </item>
     
     <item>
       <title>278 First Bad Version</title>
@@ -189,6 +180,15 @@
       
       <guid>https://foxisawesome.github.io/posts/77-combinations/</guid>
       <description>LC 77 Combinations Given two integers n and k, return all possible combinations of k numbers out of 1 &amp;hellip; n. Solution 2020-09-21 Notes: Dfs 模版搞一下。没啥特别的。 class Solution: def combine(self, n: int, k: int) -&amp;gt; List[List[int]]: out = [] nums = [i for i in range(1,n+1)] self.dfs(n,k,nums,[],out) return out def dfs(self, n, k, nums, path, out): if len(path)==k: out.append(path[:])</description>
+    </item>
+    
+    <item>
+      <title>40 Combination Sum Ii</title>
+      <link>https://foxisawesome.github.io/posts/40-combination-sum-ii/</link>
+      <pubDate>Mon, 21 Sep 2020 14:17:59 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/40-combination-sum-ii/</guid>
+      <description>LC 40 Combination Sum Ii Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target. Each number in candidates may only be used once in the combination. Input: candidates = [10,1,2,7,6,1,5], target = 8, A solution set is:[[1, 7], [1, 2, 5], [2, 6],[1, 1, 6]] Solution 2020-09-21 Notes: 这题与39题</description>
     </item>
     
   </channel>

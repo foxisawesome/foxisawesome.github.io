@@ -5,19 +5,10 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Nov 2020 14:40:15 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2020 13:34:35 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>40 Combination Sum Ii</title>
-      <link>https://foxisawesome.github.io/posts/40-combination-sum-ii/</link>
-      <pubDate>Mon, 21 Sep 2020 14:17:59 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/40-combination-sum-ii/</guid>
-      <description>LC 40 Combination Sum Ii Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target. Each number in candidates may only be used once in the combination. Input: candidates = [10,1,2,7,6,1,5], target = 8, A solution set is:[[1, 7], [1, 2, 5], [2, 6],[1, 1, 6]] Solution 2020-09-21 Notes: 这题与39题</description>
-    </item>
     
     <item>
       <title>39 Combination Sum</title>
@@ -189,6 +180,15 @@ Input: 1 0 1 0 0 1 0 1 1 1 1 1 1 1 1 1 0 0 1 0 Output: 4   Solution 2020-09-20 N
       
       <guid>https://foxisawesome.github.io/posts/953-verifying-an-alien-dictionary/</guid>
       <description>LC 953 Verifying an Alien Dictionary In an alien language, surprisingly they also use english lowercase letters, but possibly in a different order. The order of the alphabet is some permutation of lowercase letters. Given a sequence of words written in the alien language, and the order of the alphabet, return true if and only if the given words are sorted lexicographicaly in this alien language. Input: words = [&amp;quot;word&amp;quot;,&amp;quot;world&amp;quot;,&amp;quot;row&amp;quot;],</description>
+    </item>
+    
+    <item>
+      <title>70 Climbing Stairs</title>
+      <link>https://foxisawesome.github.io/posts/70-climbing-stairs/</link>
+      <pubDate>Tue, 15 Sep 2020 16:48:27 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/70-climbing-stairs/</guid>
+      <description>LC 70 Climbing Stairs You are climbing a stair case. It takes n steps to reach to the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top? Solution 2020-09-15 Notes: 最经典的dp题了。dp[i] = dp[i-1] + dp[i-2], 主要是dp[i] 和</description>
     </item>
     
   </channel>

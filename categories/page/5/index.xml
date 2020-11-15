@@ -11,15 +11,6 @@
     
     
     <item>
-      <title>1086 High Five</title>
-      <link>https://foxisawesome.github.io/posts/1086-high-five/</link>
-      <pubDate>Mon, 19 Oct 2020 13:49:24 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1086-high-five/</guid>
-      <description>LC 1086 High Five Given a list of scores of different students, return the average score of each student&amp;rsquo;s top five scores in the order of each student&amp;rsquo;s id. Each entry items[i] has items[i][0] the student&amp;rsquo;s id, and items[i][1] the student&amp;rsquo;s score. The average score is calculated using integer division. Solution 2020-10-19 Notes: 秒了 class Solution: def highFive(self, items: List[List[int]]) -&amp;gt; List[List[int]]: d = collections.defaultdict(list) for i in items:</description>
-    </item>
-    
-    <item>
       <title>1252 Cells With Odd Values in a Matrix</title>
       <link>https://foxisawesome.github.io/posts/1252-cells-with-odd-values-in-a-matrix/</link>
       <pubDate>Mon, 19 Oct 2020 13:36:39 -0400</pubDate>
@@ -195,6 +186,15 @@ A valid e-mail has a prefix name and a domain where:
       <description>LC 1479 Sales by Day of the Week   Write an SQL query to report how many units in each category have been ordered on each day of the week.
 Return the result table ordered by category.
  Solution 2020-10-16 Notes:  DAYOFWEEK() : ‘2’ is Mon. MYSQL does not have pivot function, use below template  WITH combo AS ( SELECT b.*, DAYOFWEEK(order_date) AS week, item_category FROM items a LEFT JOIN orders b ON a.</description>
+    </item>
+    
+    <item>
+      <title>615 Average Salary Departments vs Company</title>
+      <link>https://foxisawesome.github.io/posts/615-average-salary-departments-vs-company/</link>
+      <pubDate>Fri, 16 Oct 2020 09:08:36 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/615-average-salary-departments-vs-company/</guid>
+      <description>LC 615 Average Salary Departments vs Company Given two tables as below, write a query to display the comparison result (higher/lower/same) of the average salary of employees in a department to the company&amp;rsquo;s average salary. Table: salary | id | employee_id | amount | pay_date | |----|-------------|--------|------------| | 1 | 1 | 9000 | 2017-03-31 | | 2 | 2 | 6000 | 2017-03-31 | | 3 | 3 |</description>
     </item>
     
   </channel>

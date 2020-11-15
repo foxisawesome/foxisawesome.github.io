@@ -10,15 +10,6 @@
     
     
     <item>
-      <title>1077 Project Employees III</title>
-      <link>https://foxisawesome.github.io/posts/1077-project-employees-iii/</link>
-      <pubDate>Thu, 29 Oct 2020 09:24:05 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1077-project-employees-iii/</guid>
-      <description>LC 1077 Project Employees III Write an SQL query that reports the most experienced employees in each project. In case of a tie, report all employees with the maximum number of experience years. Solution 2020-10-29 Notes: 秒了 SELECT project_id, employee_id FROM ( SELECT a.*, RANK() OVER(PARTITION BY project_id ORDER BY experience_years DESC) AS rk FROM project a JOIN employee b ON a.employee_id = b.employee_id ) c WHERE rk =</description>
-    </item>
-    
-    <item>
       <title>1069 Product Sales Analysis II</title>
       <link>https://foxisawesome.github.io/posts/1069-product-sales-analysis-ii/</link>
       <pubDate>Thu, 29 Oct 2020 09:15:54 -0400</pubDate>
@@ -200,6 +191,15 @@ Input: &amp;quot;abc&amp;quot; Output: 3 Explanation: Three palindromic strings:
       
       <guid>https://foxisawesome.github.io/posts/152-maximum-product-subarray/</guid>
       <description>LC 152 Maximum Product Subarray Given an integer array nums, find the contiguous subarray within an array (containing at least one number) which has the largest product. Input: [2,3,-2,4] Output: 6 Explanation: [2,3] has the largest product 6. Solution 2020-10-21 Notes: 最大值可能来自三种来源：nums[i], prev_max X nums[i], prev_min X numi[i] 优化了</description>
+    </item>
+    
+    <item>
+      <title>1398 Customers Who Bought Products a and B but Not C</title>
+      <link>https://foxisawesome.github.io/posts/1398-customers-who-bought-products-a-and-b-but-not-c/</link>
+      <pubDate>Wed, 21 Oct 2020 11:20:02 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1398-customers-who-bought-products-a-and-b-but-not-c/</guid>
+      <description>LC 1398 Customers Who Bought Products a and B but Not C Write an SQL query to report the customer_id and customer_name of customers who bought products &amp;ldquo;A&amp;rdquo;, &amp;ldquo;B&amp;rdquo; but did not buy the product &amp;ldquo;C&amp;rdquo; since we want to recommend them buy this product. Return the result table ordered by customer_id. Solution 2020-10-21 Notes: 秒了 SELECT a.* FROM customers a JOIN ( SELECT * FROM orders GROUP BY</description>
     </item>
     
   </channel>

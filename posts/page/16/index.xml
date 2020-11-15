@@ -5,19 +5,10 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Nov 2020 14:40:15 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2020 13:34:35 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>501 Find Mode in Binary Search Tree</title>
-      <link>https://foxisawesome.github.io/posts/501-find-mode-in-binary-search-tree/</link>
-      <pubDate>Sat, 12 Sep 2020 21:54:14 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/501-find-mode-in-binary-search-tree/</guid>
-      <description>LC 501 Find Mode in Binary Search Tree Given a binary search tree (BST) with duplicates, find all the mode(s) (the most frequently occurred element) in the given BST. Assume a BST is defined as follows: The left subtree of a node contains only nodes with keys less than or equal to the node&amp;rsquo;s key. The right subtree of a node contains only nodes with keys greater than or equal</description>
-    </item>
     
     <item>
       <title>621 Task Scheduler</title>
@@ -198,6 +189,15 @@ For example, this binary tree [1,2,2,3,4,4,3] is symmetric:
       
       <guid>https://foxisawesome.github.io/posts/112-path-sum/</guid>
       <description>LC 112 Path Sum Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum. Given the below binary tree and sum = 22, 5 / \ 4 8 / / \ 11 13 4 / \ \ 7 2 1 return true, as there exist a root-to-leaf path 5-&amp;gt;4-&amp;gt;11-&amp;gt;2 which sum</description>
+    </item>
+    
+    <item>
+      <title>104 Maximum Depth of Binary Tree</title>
+      <link>https://foxisawesome.github.io/posts/104-maximum-depth-of-binary-tree/</link>
+      <pubDate>Wed, 09 Sep 2020 21:45:11 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/104-maximum-depth-of-binary-tree/</guid>
+      <description>LC 104 Maximum Depth of Binary Tree Given a binary tree, find its maximum depth. The maximum depth is the number of nodes along the longest path from the root node down to the farthest leaf node. Given binary tree [3,9,20,null,null,15,7], 3 / \ 9 20 / \ 15 7 Solution 2020-09-09 Notes: 注意patterns. Beat the TREE! # Definition for</description>
     </item>
     
   </channel>

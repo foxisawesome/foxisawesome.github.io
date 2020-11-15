@@ -11,15 +11,6 @@
     
     
     <item>
-      <title>615 Average Salary Departments vs Company</title>
-      <link>https://foxisawesome.github.io/posts/615-average-salary-departments-vs-company/</link>
-      <pubDate>Fri, 16 Oct 2020 09:08:36 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/615-average-salary-departments-vs-company/</guid>
-      <description>LC 615 Average Salary Departments vs Company Given two tables as below, write a query to display the comparison result (higher/lower/same) of the average salary of employees in a department to the company&amp;rsquo;s average salary. Table: salary | id | employee_id | amount | pay_date | |----|-------------|--------|------------| | 1 | 1 | 9000 | 2017-03-31 | | 2 | 2 | 6000 | 2017-03-31 | | 3 | 3 |</description>
-    </item>
-    
-    <item>
       <title>1024 Video Stitching</title>
       <link>https://foxisawesome.github.io/posts/1024-video-stitching/</link>
       <pubDate>Thu, 15 Oct 2020 12:03:45 -0400</pubDate>
@@ -195,6 +186,18 @@ Input:
       
       <guid>https://foxisawesome.github.io/posts/547-friend-circles/</guid>
       <description>LC 547 Friend Circles There are N students in a class. Some of them are friends, while some are not. Their friendship is transitive in nature. For example, if A is a direct friend of B, and B is a direct friend of C, then A is an indirect friend of C. And we defined a friend circle is a group of students who are direct or indirect friends. Given</description>
+    </item>
+    
+    <item>
+      <title>1280 Students and Examinations</title>
+      <link>https://foxisawesome.github.io/posts/1280-students-and-examinations/</link>
+      <pubDate>Sun, 11 Oct 2020 15:57:59 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1280-students-and-examinations/</guid>
+      <description>LC 1280 Students and Examinations   Write an SQL query to find the number of times each student attended each exam.
+Order the result table by student_id and subject_name.
+The query result format is in the following example:
+Students table: +------------+--------------+ | student_id | student_name | +------------+--------------+ | 1 | Alice | | 2 | Bob | | 13 | John | | 6 | Alex | +------------+--------------+ Subjects table: +--------------+ | subject_name | +--------------+ | Math | | Physics | | Programming | +--------------+ Examinations table: +------------+--------------+ | student_id | subject_name | +------------+--------------+ | 1 | Math | | 1 | Physics | | 1 | Programming | | 2 | Programming | | 1 | Physics | | 1 | Math | | 13 | Math | | 13 | Programming | | 13 | Physics | | 2 | Math | | 1 | Math | +------------+--------------+ Result table: +------------+--------------+--------------+----------------+ | student_id | student_name | subject_name | attended_exams | +------------+--------------+--------------+----------------+ | 1 | Alice | Math | 3 | | 1 | Alice | Physics | 2 | | 1 | Alice | Programming | 1 | | 2 | Bob | Math | 1 | | 2 | Bob | Physics | 0 | | 2 | Bob | Programming | 1 | | 6 | Alex | Math | 0 | | 6 | Alex | Physics | 0 | | 6 | Alex | Programming | 0 | | 13 | John | Math | 1 | | 13 | John | Physics | 1 | | 13 | John | Programming | 1 | +------------+--------------+--------------+----------------+   Solution 2020-10-11 Notes: SELECT a.</description>
     </item>
     
   </channel>

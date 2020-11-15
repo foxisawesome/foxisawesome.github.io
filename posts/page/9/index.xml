@@ -5,19 +5,10 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Nov 2020 14:40:15 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2020 13:34:35 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>114 Flatten Binary Tree to Linked List</title>
-      <link>https://foxisawesome.github.io/posts/114-flatten-binary-tree-to-linked-list/</link>
-      <pubDate>Sun, 04 Oct 2020 10:58:04 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/114-flatten-binary-tree-to-linked-list/</guid>
-      <description>LC 114 Flatten Binary Tree to Linked List Given a binary tree, flatten it to a linked list in-place. For example, given the following tree: 1 / \ 2 5 / \ \ 3 4 6 The flattened tree should look like: 1 \ 2 \ 3 \ 4 \ 5 \ 6 Solution 2020-10-04 Notes: 感觉这题是 tree 真正体会recu</description>
-    </item>
     
     <item>
       <title>1596 the Most Frequently Ordered Products for Each Customer</title>
@@ -190,6 +181,15 @@ Warehouse table: +------------+--------------+-------------+ | name | product_id
       
       <guid>https://foxisawesome.github.io/posts/339-nested-list-weight-sum/</guid>
       <description>LC 339 Nested List Weight Sum Given a nested list of integers, return the sum of all integers in the list weighted by their depth. Each element is either an integer, or a list &amp;ndash; whose elements may also be integers or other lists. Example 1: Input: [[1,1],2,[1,1]] Output: 10 Explanation: Four 1&#39;s at depth 2, one 2 at depth 1. Example 2: Input: [1,[4,[6]]] Output: 27 Explanation: One 1</description>
+    </item>
+    
+    <item>
+      <title>224 Basic Calculator</title>
+      <link>https://foxisawesome.github.io/posts/224-basic-calculator/</link>
+      <pubDate>Thu, 01 Oct 2020 14:11:32 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/224-basic-calculator/</guid>
+      <description>LC 224 Basic Calculator mplement a basic calculator to evaluate a simple expression string. The expression string may contain open ( and closing parentheses ), the plus + or minus sign -, non-negative integers and empty spaces ``. Input: &amp;quot;(1+(4+5+2)-3)+(6+8)&amp;quot; Output: 23 Solution 2020-10-01 Notes: Calculator 3 题：LC 224, LC 227, LC 772 都好难。三题的解法大同小异，</description>
     </item>
     
   </channel>
