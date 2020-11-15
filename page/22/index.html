@@ -288,6 +288,86 @@
         <h1 itemprop="name">
   <a
     class="article-title"
+    href="/posts/595-big-countries/"
+    >595 Big Countries</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 595 Big Countries   A country is big if it has an area of bigger than 3 million square km or a population of more than 25 million.
+Write a SQL solution to output big countries' name, population and area.
+ Solution 2020-10-08 Notes:   #Union solution is actually faster than using #or.
+  Why Union is faster than OR?
+Strictly speaking, Using UNION is faster when it comes to cases like scan two different column like this
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/595-big-countries/" class="">
+  <time datetime="2020-10-08 17:00:05 -0400 EDT" itemprop="datePublished">2020-10-08</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/595-big-countries/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/596-classes-more-than-5-students/"
+    >596 Classes More Than 5 Students</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 596 Classes More Than 5 Students   There is a table courses with columns: student and class
+Please list out all classes which have more than or equal to 5 students.
+ Solution 2020-10-08 Notes: SELECT DISTINCT class FROM ( SELECT *, COUNT(student) OVER(PARTITION BY class) AS ct FROM (SELECT DISTINCT student, class FROM courses) b ) a WHERE ct &gt;= 5  
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/596-classes-more-than-5-students/" class="">
+  <time datetime="2020-10-08 16:53:20 -0400 EDT" itemprop="datePublished">2020-10-08</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/596-classes-more-than-5-students/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
     href="/posts/1532-the-most-recent-three-orders/"
     >1532 the Most Recent Three Orders</a
   >
@@ -432,82 +512,6 @@ Departments table: +------+--------------------------+ | id | name | +------+---
   </span>
 
         <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1350-students-with-invalid-departments/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/1174-immediate-food-delivery-ii/"
-    >1174 Immediate Food Delivery II</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 1174 Immediate Food Delivery II Write an SQL query to find the percentage of immediate orders in the first orders of all customers, rounded to 2 decimal places. The query result format is in the following example: Delivery table: +-------------+-------------+------------+-----------------------------+ | delivery_id | customer_id | order_date | customer_pref_delivery_date | +-------------+-------------+------------+-----------------------------+ | 1 | 1 | 2019-08-01 | 2019-08-02 | | 2 | 2 | 2019-08-02 | 2019-08-02 | |
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1174-immediate-food-delivery-ii/" class="">
-  <time datetime="2020-10-07 21:29:20 -0400 EDT" itemprop="datePublished">2020-10-07</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1174-immediate-food-delivery-ii/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/1173-immediate-food-delivery-i/"
-    >1173 Immediate Food Delivery I</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 1173 Immediate Food Delivery I   Write an SQL query to find the percentage of immediate orders in the table, rounded to 2 decimal places.
-The query result format is in the following example:
-Delivery table: +-------------+-------------+------------+-----------------------------+ | delivery_id | customer_id | order_date | customer_pref_delivery_date | +-------------+-------------+------------+-----------------------------+ | 1 | 1 | 2019-08-01 | 2019-08-02 | | 2 | 5 | 2019-08-02 | 2019-08-02 | | 3 | 1 | 2019-08-11 | 2019-08-11 | | 4 | 3 | 2019-08-24 | 2019-08-26 | | 5 | 4 | 2019-08-21 | 2019-08-22 | | 6 | 2 | 2019-08-11 | 2019-08-13 | +-------------+-------------+------------+-----------------------------+ Result table: +----------------------+ | immediate_percentage | +----------------------+ | 33.
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1173-immediate-food-delivery-i/" class="">
-  <time datetime="2020-10-07 21:23:23 -0400 EDT" itemprop="datePublished">2020-10-07</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1173-immediate-food-delivery-i/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article></div>
   
