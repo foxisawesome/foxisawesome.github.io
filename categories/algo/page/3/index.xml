@@ -5,82 +5,10 @@
     <link>https://foxisawesome.github.io/categories/algo/</link>
     <description>Recent content in algo on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Nov 2020 14:40:15 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2020 13:35:18 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/algo/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>1069 Product Sales Analysis II</title>
-      <link>https://foxisawesome.github.io/posts/1069-product-sales-analysis-ii/</link>
-      <pubDate>Thu, 29 Oct 2020 09:15:54 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1069-product-sales-analysis-ii/</guid>
-      <description>LC 1069 Product Sales Analysis II   Write an SQL query that reports the total quantity sold for every product id.
- Solution 2020-10-29 Notes: SELECT product_id, SUM(quantity) AS total_quantity FROM sales GROUP BY 1 ORDER BY 1  </description>
-    </item>
-    
-    <item>
-      <title>1068 Product Sales Analysis I</title>
-      <link>https://foxisawesome.github.io/posts/1068-product-sales-analysis-i/</link>
-      <pubDate>Thu, 29 Oct 2020 09:11:53 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1068-product-sales-analysis-i/</guid>
-      <description>LC 1068 Product Sales Analysis I   Write an SQL query that reports all product names of the products in the Sales table along with their selling year and price.
- Solution 2020-10-29 Notes: select a.product_name, b.year, b.price from product a join sales b on a.product_id = b.product_id order by year, price ;  </description>
-    </item>
-    
-    <item>
-      <title>601 Human Traffic of Stadium</title>
-      <link>https://foxisawesome.github.io/posts/601-human-traffic-of-stadium/</link>
-      <pubDate>Tue, 27 Oct 2020 15:47:32 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/601-human-traffic-of-stadium/</guid>
-      <description>LC 601 Human Traffic of Stadium   Write an SQL query to display the records with three or more rows with consecutive id&amp;rsquo;s, and the number of people is greater than or equal to 100 for each.
-Return the result table ordered by visit_date in ascending order.
-The query result format is in the following example.
-Stadium table: +------+------------+-----------+ | id | visit_date | people | +------+------------+-----------+ | 1 | 2017-01-01 | 10 | | 2 | 2017-01-02 | 109 | | 3 | 2017-01-03 | 150 | | 4 | 2017-01-04 | 99 | | 5 | 2017-01-05 | 145 | | 6 | 2017-01-06 | 1455 | | 7 | 2017-01-07 | 199 | | 8 | 2017-01-09 | 188 | +------+------------+-----------+ Result table: +------+------------+-----------+ | id | visit_date | people | +------+------------+-----------+ | 5 | 2017-01-05 | 145 | | 6 | 2017-01-06 | 1455 | | 7 | 2017-01-07 | 199 | | 8 | 2017-01-09 | 188 | +------+------------+-----------+   Solution 2020-10-27 Notes:  it is slower than version #2.</description>
-    </item>
-    
-    <item>
-      <title>614 Second Degree Follower</title>
-      <link>https://foxisawesome.github.io/posts/614-second-degree-follower/</link>
-      <pubDate>Sun, 25 Oct 2020 14:53:46 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/614-second-degree-follower/</guid>
-      <description>LC 614 Second Degree Follower   In facebook, there is a follow table with two columns: followee, follower.
-Please write a sql query to get the amount of each follower’s follower if he/she has one.
-For example:
-+-------------+------------+ | followee | follower | +-------------+------------+ | A | B | | B | C | | B | D | | D | E | +-------------+------------+  should output:
-+-------------+------------+ | follower | num | +-------------+------------+ | B | 2 | | D | 1 | +-------------+------------+  Explaination: Both B and D exist in the follower list, when as a followee, B&amp;rsquo;s follower is C and D, and D&amp;rsquo;s follower is E.</description>
-    </item>
-    
-    <item>
-      <title>608 Tree Node</title>
-      <link>https://foxisawesome.github.io/posts/608-tree-node/</link>
-      <pubDate>Sun, 25 Oct 2020 14:50:31 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/608-tree-node/</guid>
-      <description>LC 608 Tree Node Given a table tree, id is identifier of the tree node and p_id is its parent node&amp;rsquo;s id. +----+------+ | id | p_id | +----+------+ | 1 | null | | 2 | 1 | | 3 | 1 | | 4 | 2 | | 5 | 2 | +----+------+ Each node in the tree can be one of three types: Leaf: if the node</description>
-    </item>
-    
-    <item>
-      <title>610 Triangle Judgement</title>
-      <link>https://foxisawesome.github.io/posts/610-triangle-judgement/</link>
-      <pubDate>Sun, 25 Oct 2020 10:02:33 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/610-triangle-judgement/</guid>
-      <description>LC 610 Triangle Judgement Could you help Tim by writing a query to judge whether these three sides can form a triangle, assuming table triangle holds the length of the three sides x, y and z. | x | y | z | |----|----|----| | 13 | 15 | 30 | | 10 | 20 | 15 | For the sample data above, your query should return the follow result:</description>
-    </item>
-    
-    <item>
-      <title>612 Shortest Distance in a Plane</title>
-      <link>https://foxisawesome.github.io/posts/612-shortest-distance-in-a-plane/</link>
-      <pubDate>Sun, 25 Oct 2020 10:00:41 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/612-shortest-distance-in-a-plane/</guid>
-      <description>LC 612 Shortest Distance in a Plane Table point_2d holds the coordinates (x,y) of some unique points (more than two) in a plane. Write a query to find the shortest distance between these points rounded to 2 decimals. | x | y | |----|----| | -1 | -1 | | 0 | 0 | | -1 | -2 | The shortest distance is 1.00 from point (-1,-1) to (-1,2). So</description>
-    </item>
     
     <item>
       <title>586 Customer Placing the Largest Number of Orders</title>
@@ -201,6 +129,71 @@ Input: &amp;quot;abc&amp;quot; Output: 3 Explanation: Three palindromic strings:
       
       <guid>https://foxisawesome.github.io/posts/1398-customers-who-bought-products-a-and-b-but-not-c/</guid>
       <description>LC 1398 Customers Who Bought Products a and B but Not C Write an SQL query to report the customer_id and customer_name of customers who bought products &amp;ldquo;A&amp;rdquo;, &amp;ldquo;B&amp;rdquo; but did not buy the product &amp;ldquo;C&amp;rdquo; since we want to recommend them buy this product. Return the result table ordered by customer_id. Solution 2020-10-21 Notes: 秒了 SELECT a.* FROM customers a JOIN ( SELECT * FROM orders GROUP BY</description>
+    </item>
+    
+    <item>
+      <title>1308 Running Total for Different Genders</title>
+      <link>https://foxisawesome.github.io/posts/1308-running-total-for-different-genders/</link>
+      <pubDate>Wed, 21 Oct 2020 11:14:44 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1308-running-total-for-different-genders/</guid>
+      <description>LC 1308 Running Total for Different Genders Write an SQL query to find the total score for each gender at each day. Order the result table by gender and day The query result format is in the following example: Scores table: +-------------+--------+------------+--------------+ | player_name | gender | day | score_points | +-------------+--------+------------+--------------+ | Aron | F | 2020-01-01 | 17 | | Alice | F | 2020-01-07 | 23 |</description>
+    </item>
+    
+    <item>
+      <title>1393 Capital Gainloss</title>
+      <link>https://foxisawesome.github.io/posts/1393-capital-gainloss/</link>
+      <pubDate>Wed, 21 Oct 2020 11:10:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1393-capital-gainloss/</guid>
+      <description>LC 1393 Capital Gainloss Write an SQL query to report the Capital gain/loss for each stock. The capital gain/loss of a stock is total gain or loss after buying and selling the stock one or many times. Return the result table in any order. The query result format is in the following example: Stocks table: +---------------+-----------+---------------+--------+ | stock_name | operation | operation_day | price | +---------------+-----------+---------------+--------+ | Leetcode | Buy</description>
+    </item>
+    
+    <item>
+      <title>1445 Apples Oranges</title>
+      <link>https://foxisawesome.github.io/posts/1445-apples-oranges/</link>
+      <pubDate>Wed, 21 Oct 2020 10:09:59 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1445-apples-oranges/</guid>
+      <description>LC 1445 Apples Oranges Write an SQL query to report the difference between number of apples and oranges sold each day. Return the result table ordered by sale_date in format (&amp;lsquo;YYYY-MM-DD&amp;rsquo;). The query result format is in the following example: Sales table: +------------+------------+-------------+ | sale_date | fruit | sold_num | +------------+------------+-------------+ | 2020-05-01 | apples | 10 | | 2020-05-01 | oranges | 8 | | 2020-05-02 | apples |</description>
+    </item>
+    
+    <item>
+      <title>1270 All People Report to the Given Manager</title>
+      <link>https://foxisawesome.github.io/posts/1270-all-people-report-to-the-given-manager/</link>
+      <pubDate>Wed, 21 Oct 2020 10:02:05 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1270-all-people-report-to-the-given-manager/</guid>
+      <description>LC 1270 All People Report to the Given Manager Write an SQL query to find employee_id of all employees that directly or indirectly report their work to the head of the company. The indirect relation between managers will not exceed 3 managers as the company is small. Return result table in any order without duplicates. The query result format is in the following example: Employees table: +-------------+---------------+------------+ | employee_id |</description>
+    </item>
+    
+    <item>
+      <title>383 Ransom Note</title>
+      <link>https://foxisawesome.github.io/posts/383-ransom-note/</link>
+      <pubDate>Mon, 19 Oct 2020 19:35:54 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/383-ransom-note/</guid>
+      <description>LC 383 Ransom Note   Given an arbitrary ransom note string and another string containing letters from all the magazines, write a function that will return true if the ransom note can be constructed from the magazines ; otherwise, it will return false.
+Each letter in the magazine string can only be used once in your ransom note.
+Input: ransomNote = &amp;quot;a&amp;quot;, magazine = &amp;quot;b&amp;quot; Output: false   Solution 2020-10-19 Notes:  edge case is acutally hard to get them right in the first place  class Solution: def canConstruct(self, ransomNote: str, magazine: str) -&amp;gt; bool: if not ransomNote: return True if not magazine: return False d = collections.</description>
+    </item>
+    
+    <item>
+      <title>682 Baseball Game</title>
+      <link>https://foxisawesome.github.io/posts/682-baseball-game/</link>
+      <pubDate>Mon, 19 Oct 2020 16:34:58 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/682-baseball-game/</guid>
+      <description>LC 682 Baseball Game You are keeping score for a baseball game with strange rules. The game consists of several rounds, where the scores of past rounds may affect future rounds&#39; scores. At the beginning of the game, you start with an empty record. You are given a list of strings ops, where ops[i] is the ith operation you must apply to the record and is one of the following:</description>
+    </item>
+    
+    <item>
+      <title>1167 Minimum Cost to Connect Sticks</title>
+      <link>https://foxisawesome.github.io/posts/1167-minimum-cost-to-connect-sticks/</link>
+      <pubDate>Mon, 19 Oct 2020 16:16:26 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1167-minimum-cost-to-connect-sticks/</guid>
+      <description>LC 1167 Minimum Cost to Connect Sticks You have some number of sticks with positive integer lengths. These lengths are given as an array sticks, where sticks[i] is the length of the ith stick. You can connect any two sticks of lengths x and y into one stick by paying a cost of x + y. You must connect all the sticks until there is only one stick remaining. Return</description>
     </item>
     
   </channel>

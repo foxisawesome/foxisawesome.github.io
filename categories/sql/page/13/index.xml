@@ -5,19 +5,10 @@
     <link>https://foxisawesome.github.io/categories/sql/</link>
     <description>Recent content in sql on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 06 Nov 2020 13:34:35 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2020 13:34:15 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/sql/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>278 First Bad Version</title>
-      <link>https://foxisawesome.github.io/posts/278-first-bad-version/</link>
-      <pubDate>Wed, 23 Sep 2020 19:18:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/278-first-bad-version/</guid>
-      <description>LC 278 First Bad Version You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad. Suppose you have n versions [1, 2, ..., n] and you want to find out the first bad one,</description>
-    </item>
     
     <item>
       <title>35 Search Insert Position</title>
@@ -189,6 +180,15 @@
       
       <guid>https://foxisawesome.github.io/posts/40-combination-sum-ii/</guid>
       <description>LC 40 Combination Sum Ii Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target. Each number in candidates may only be used once in the combination. Input: candidates = [10,1,2,7,6,1,5], target = 8, A solution set is:[[1, 7], [1, 2, 5], [2, 6],[1, 1, 6]] Solution 2020-09-21 Notes: 这题与39题</description>
+    </item>
+    
+    <item>
+      <title>39 Combination Sum</title>
+      <link>https://foxisawesome.github.io/posts/39-combination-sum/</link>
+      <pubDate>Mon, 21 Sep 2020 14:11:52 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/39-combination-sum/</guid>
+      <description>LC 39 Combination Sum Given a set of candidate numbers (candidates) (without duplicates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target. Input: candidates = [2,3,6,7], target = 7, A solution set is: [[7],[2,2,3]] Solution 2020-09-21 Notes: 简单的DFS题，注意：path要是list(),</description>
     </item>
     
   </channel>

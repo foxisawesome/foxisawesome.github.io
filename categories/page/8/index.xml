@@ -5,77 +5,10 @@
     <link>https://foxisawesome.github.io/categories/</link>
     <description>Recent content in Categories on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 06 Nov 2020 13:34:35 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2020 13:34:15 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>1174 Immediate Food Delivery II</title>
-      <link>https://foxisawesome.github.io/posts/1174-immediate-food-delivery-ii/</link>
-      <pubDate>Wed, 07 Oct 2020 21:29:20 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1174-immediate-food-delivery-ii/</guid>
-      <description>LC 1174 Immediate Food Delivery II Write an SQL query to find the percentage of immediate orders in the first orders of all customers, rounded to 2 decimal places. The query result format is in the following example: Delivery table: +-------------+-------------+------------+-----------------------------+ | delivery_id | customer_id | order_date | customer_pref_delivery_date | +-------------+-------------+------------+-----------------------------+ | 1 | 1 | 2019-08-01 | 2019-08-02 | | 2 | 2 | 2019-08-02 | 2019-08-02 | |</description>
-    </item>
-    
-    <item>
-      <title>1173 Immediate Food Delivery I</title>
-      <link>https://foxisawesome.github.io/posts/1173-immediate-food-delivery-i/</link>
-      <pubDate>Wed, 07 Oct 2020 21:23:23 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1173-immediate-food-delivery-i/</guid>
-      <description>LC 1173 Immediate Food Delivery I   Write an SQL query to find the percentage of immediate orders in the table, rounded to 2 decimal places.
-The query result format is in the following example:
-Delivery table: +-------------+-------------+------------+-----------------------------+ | delivery_id | customer_id | order_date | customer_pref_delivery_date | +-------------+-------------+------------+-----------------------------+ | 1 | 1 | 2019-08-01 | 2019-08-02 | | 2 | 5 | 2019-08-02 | 2019-08-02 | | 3 | 1 | 2019-08-11 | 2019-08-11 | | 4 | 3 | 2019-08-24 | 2019-08-26 | | 5 | 4 | 2019-08-21 | 2019-08-22 | | 6 | 2 | 2019-08-11 | 2019-08-13 | +-------------+-------------+------------+-----------------------------+ Result table: +----------------------+ | immediate_percentage | +----------------------+ | 33.</description>
-    </item>
-    
-    <item>
-      <title>763 Partition Labels</title>
-      <link>https://foxisawesome.github.io/posts/763-partition-labels/</link>
-      <pubDate>Wed, 07 Oct 2020 21:12:44 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/763-partition-labels/</guid>
-      <description>LC 763 Partition Labels A string S of lowercase English letters is given. We want to partition this string into as many parts as possible so that each letter appears in at most one part, and return a list of integers representing the size of these parts. Input: S = &amp;quot;ababcbacadefegdehijhklij&amp;quot; Output: [9,7,8] Explanation: The partition is &amp;quot;ababcbaca&amp;quot;, &amp;quot;defegde&amp;quot;, &amp;quot;hijhklij&amp;quot;. This is a partition so that each letter appears in</description>
-    </item>
-    
-    <item>
-      <title>1285 Find the Start and End Number of Continuous Ranges</title>
-      <link>https://foxisawesome.github.io/posts/1285-find-the-start-and-end-number-of-continuous-ranges/</link>
-      <pubDate>Tue, 06 Oct 2020 22:18:54 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1285-find-the-start-and-end-number-of-continuous-ranges/</guid>
-      <description>LC 1285 Find the Start and End Number of Continuous Ranges Write an SQL query to find the start and end number of continuous ranges in table Logs. Order the result table by start_id. The query result format is in the following example: Logs table: +------------+ | log_id | +------------+ | 1 | | 2 | | 3 | | 7 | | 8 | | 10 | +------------+ Result</description>
-    </item>
-    
-    <item>
-      <title>626 Exchange Seats</title>
-      <link>https://foxisawesome.github.io/posts/626-exchange-seats/</link>
-      <pubDate>Tue, 06 Oct 2020 21:59:09 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/626-exchange-seats/</guid>
-      <description>LC 626 Exchange Seats   Can you write a SQL query to output the result for Mary?
-+---------+---------+ | id | student | +---------+---------+ | 1 | Abbot | | 2 | Doris | | 3 | Emerson | | 4 | Green | | 5 | Jeames | +---------+---------+  For the sample input, the output is:
-+---------+---------+ | id | student | +---------+---------+ | 1 | Doris | | 2 | Abbot | | 3 | Green | | 4 | Emerson | | 5 | Jeames | +---------+---------+   Solution 2020-10-06 Notes: SELECT CASE WHEN MOD(id, 2) = 1 AND id !</description>
-    </item>
-    
-    <item>
-      <title>55 Jump Game</title>
-      <link>https://foxisawesome.github.io/posts/55-jump-game/</link>
-      <pubDate>Tue, 06 Oct 2020 19:25:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/55-jump-game/</guid>
-      <description>LC 55 Jump Game Given an array of non-negative integers, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Determine if you are able to reach the last index. Input: nums = [2,3,1,1,4] Output: true Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index. Solution 2020-10-06 Notes: 这</description>
-    </item>
-    
-    <item>
-      <title>1194 Tournament Winners</title>
-      <link>https://foxisawesome.github.io/posts/1194-tournament-winners/</link>
-      <pubDate>Mon, 05 Oct 2020 21:07:02 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1194-tournament-winners/</guid>
-      <description>LC 1194 Tournament Winners The winner in each group is the player who scored the maximum total points within the group. In the case of a tie, the lowest player_id wins. Write an SQL query to find the winner in each group. The query result format is in the following example: Players table: +-----------+------------+ | player_id | group_id | +-----------+------------+ | 15 | 1 | | 25 | 1 |</description>
-    </item>
     
     <item>
       <title>571 Find Median Given Frequency of Numbers</title>
@@ -93,6 +26,64 @@ Delivery table: +-------------+-------------+------------+----------------------
       
       <guid>https://foxisawesome.github.io/posts/569-median-employee-salary/</guid>
       <description>LC 569 Median Employee Salary The Employee table holds all employees. The employee table has three columns: Employee Id, Company Name, and Salary. +-----+------------+--------+ |Id | Company | Salary | +-----+------------+--------+ |1 | A | 2341 | |2 | A | 341 | |3 | A | 15 | |4 | A | 15314 | |5 | A | 451 | |6 | A | 513 | |7 | B</description>
+    </item>
+    
+    <item>
+      <title>1412 Total Sales Amount by Year</title>
+      <link>https://foxisawesome.github.io/posts/1412-total-sales-amount-by-year/</link>
+      <pubDate>Mon, 05 Oct 2020 13:34:35 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1412-total-sales-amount-by-year/</guid>
+      <description>LC 1412 Total Sales Amount by Year Write an SQL query to report the students (student_id, student_name) being &amp;ldquo;quiet&amp;rdquo; in ALL exams. Don&amp;rsquo;t return the student who has never taken any exam. Return the result table ordered by student_id. The query result format is in the following example. Student table: +-------------+---------------+ | student_id | student_name | +-------------+---------------+ | 1 | Daniel | | 2 | Jade | | 3 |</description>
+    </item>
+    
+    <item>
+      <title>1555 Bank Account Summary</title>
+      <link>https://foxisawesome.github.io/posts/1555-bank-account-summary/</link>
+      <pubDate>Mon, 05 Oct 2020 13:32:28 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1555-bank-account-summary/</guid>
+      <description>LC 1555 Bank Account Summary   Write an SQL query to report.
+ user_id user_name credit, current balance after performing transactions. credit_limit_breached, check credit_limit (&amp;ldquo;Yes&amp;rdquo; or &amp;ldquo;No&amp;rdquo;)  Return the result table in any order.
+Users table: +------------+--------------+-------------+ | user_id | user_name | credit | +------------+--------------+-------------+ | 1 | Moustafa | 100 | | 2 | Jonathan | 200 | | 3 | Winston | 10000 | | 4 | Luis | 800 | +------------+--------------+-------------+ Transactions table: +------------+------------+------------+----------+---------------+ | trans_id | paid_by | paid_to | amount | transacted_on | +------------+------------+------------+----------+---------------+ | 1 | 1 | 3 | 400 | 2020-08-01 | | 2 | 3 | 2 | 500 | 2020-08-02 | | 3 | 2 | 1 | 200 | 2020-08-03 | +------------+------------+------------+----------+---------------+ Result table: +------------+------------+------------+-----------------------+ | user_id | user_name | credit | credit_limit_breached | +------------+------------+------------+-----------------------+ | 1 | Moustafa | -100 | Yes | | 2 | Jonathan | 500 | No | | 3 | Winston | 9900 | No | | 4 | Luis | 800 | No | +------------+------------+------------+-----------------------+ Moustafa paid $400 on &amp;quot;2020-08-01&amp;quot; and received $200 on &amp;quot;2020-08-03&amp;quot;, credit (100 -400 +200) = -$100 Jonathan received $500 on &amp;quot;2020-08-02&amp;quot; and paid $200 on &amp;quot;2020-08-08&amp;quot;, credit (200 +500 -200) = $500 Winston received $400 on &amp;quot;2020-08-01&amp;quot; and paid $500 on &amp;quot;2020-08-03&amp;quot;, credit (10000 +400 -500) = $9990 Luis didn&#39;t received any transfer, credit = $800   Solution 2020-11-06 Notes: WITH receive AS( SELECT paid_to, SUM(amount) AS amount_r FROM transactions GROUP BY 1 ), payment AS( SELECT paid_by, SUM(amount) AS amount_t FROM transactions GROUP BY 1 ) SELECT user_id, user_name, (credit + IFNULL(amount_r,0) - IFNULL(amount_t,0)) AS credit, (CASE WHEN credit + IFNULL(amount_r,0) - IFNULL(amount_t,0) &amp;lt; 0 THEN &#39;Yes&#39; ELSE &#39;No&#39; END) AS credit_limit_breached FROM users a LEFT JOIN receive b ON a.</description>
+    </item>
+    
+    <item>
+      <title>1549 the Most Recent Orders for Each Product</title>
+      <link>https://foxisawesome.github.io/posts/1549-the-most-recent-orders-for-each-product/</link>
+      <pubDate>Mon, 05 Oct 2020 13:32:13 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1549-the-most-recent-orders-for-each-product/</guid>
+      <description>LC 1549 the Most Recent Orders for Each Product Write an SQL query to find the most recent order(s) of each product. Return the result table sorted by product_name in ascending order and in case of a tie by the product_id in ascending order. If there still a tie, order them by the order_id in ascending order. Customers +-------------+-----------+ | customer_id | name | +-------------+-----------+ | 1 | Winston |</description>
+    </item>
+    
+    <item>
+      <title>1527 Patients With a Condition</title>
+      <link>https://foxisawesome.github.io/posts/1527-patients-with-a-condition/</link>
+      <pubDate>Mon, 05 Oct 2020 13:31:51 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1527-patients-with-a-condition/</guid>
+      <description>LC 1527 Patients With a Condition   Write an SQL query to report the patient_id, patient_name all conditions of patients who have Type I Diabetes. Type I Diabetes always starts with DIAB1 prefix
+Return the result table in any order.
+Patients +------------+--------------+--------------+ | patient_id | patient_name | conditions | +------------+--------------+--------------+ | 1 | Daniel | YFEV COUGH | | 2 | Alice | | | 3 | Bob | DIAB100 MYOP | | 4 | George | ACNE DIAB100 | | 5 | Alain | DIAB201 | +------------+--------------+--------------+ Result table: +------------+--------------+--------------+ | patient_id | patient_name | conditions | +------------+--------------+--------------+ | 3 | Bob | DIAB100 MYOP | | 4 | George | ACNE DIAB100 | +------------+--------------+--------------+ Bob and George both have a condition that starts with DIAB1.</description>
+    </item>
+    
+    <item>
+      <title>1468 Calculate Salaries</title>
+      <link>https://foxisawesome.github.io/posts/1468-calculate-salaries/</link>
+      <pubDate>Mon, 05 Oct 2020 13:31:33 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1468-calculate-salaries/</guid>
+      <description>LC 1468 Calculate Salaries Write an SQL query to find the salaries of the employees after applying taxes. The tax rate is calculated for each company based on the following criteria: 0% If the max salary of any employee in the company is less than 1000$. 24% If the max salary of any employee in the company is in the range [1000, 10000] inclusive. 49% If the max salary of</description>
+    </item>
+    
+    <item>
+      <title>1459 Rectangles Area</title>
+      <link>https://foxisawesome.github.io/posts/1459-rectangles-area/</link>
+      <pubDate>Mon, 05 Oct 2020 13:31:17 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1459-rectangles-area/</guid>
+      <description>LC 1459 Rectangles Area Write an SQL query to report of all possible rectangles which can be formed by any two points of the table. Each row in the result contains three columns (p1, p2, area) where: p1 and p2 are the id of two opposite corners of a rectangle and p1 &amp;lt; p2. Area of this rectangle is represented by the column area. Report the query in descending order</description>
     </item>
     
     <item>
@@ -196,6 +187,15 @@ Please write a SQL query to output movies with an odd numbered ID and a descript
       
       <guid>https://foxisawesome.github.io/posts/114-flatten-binary-tree-to-linked-list/</guid>
       <description>LC 114 Flatten Binary Tree to Linked List Given a binary tree, flatten it to a linked list in-place. For example, given the following tree: 1 / \ 2 5 / \ \ 3 4 6 The flattened tree should look like: 1 \ 2 \ 3 \ 4 \ 5 \ 6 Solution 2020-10-04 Notes: 感觉这题是 tree 真正体会recu</description>
+    </item>
+    
+    <item>
+      <title>1596 the Most Frequently Ordered Products for Each Customer</title>
+      <link>https://foxisawesome.github.io/posts/1596-the-most-frequently-ordered-products-for-each-customer/</link>
+      <pubDate>Sat, 03 Oct 2020 19:53:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1596-the-most-frequently-ordered-products-for-each-customer/</guid>
+      <description>LC 1596 the Most Frequently Ordered Products for Each Customer Write an SQL query to find the most frequently ordered product(s) for each customer. The result table should have the product_id and product_name for each customer_id who ordered at least one order. Return the result table in any order. The query result format is in the following example: Orders +----------+------------+-------------+------------+ | order_id | order_date | customer_id | product_id | +----------+------------+-------------+------------+</description>
     </item>
     
   </channel>

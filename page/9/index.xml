@@ -5,19 +5,10 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 06 Nov 2020 13:34:35 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2020 13:34:15 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>1596 the Most Frequently Ordered Products for Each Customer</title>
-      <link>https://foxisawesome.github.io/posts/1596-the-most-frequently-ordered-products-for-each-customer/</link>
-      <pubDate>Sat, 03 Oct 2020 19:53:30 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1596-the-most-frequently-ordered-products-for-each-customer/</guid>
-      <description>LC 1596 the Most Frequently Ordered Products for Each Customer Write an SQL query to find the most frequently ordered product(s) for each customer. The result table should have the product_id and product_name for each customer_id who ordered at least one order. Return the result table in any order. The query result format is in the following example: Orders +----------+------------+-------------+------------+ | order_id | order_date | customer_id | product_id | +----------+------------+-------------+------------+</description>
-    </item>
     
     <item>
       <title>1571 Warehouse Manager</title>
@@ -190,6 +181,15 @@ Warehouse table: +------------+--------------+-------------+ | name | product_id
       
       <guid>https://foxisawesome.github.io/posts/224-basic-calculator/</guid>
       <description>LC 224 Basic Calculator mplement a basic calculator to evaluate a simple expression string. The expression string may contain open ( and closing parentheses ), the plus + or minus sign -, non-negative integers and empty spaces ``. Input: &amp;quot;(1+(4+5+2)-3)+(6+8)&amp;quot; Output: 23 Solution 2020-10-01 Notes: Calculator 3 题：LC 224, LC 227, LC 772 都好难。三题的解法大同小异，</description>
+    </item>
+    
+    <item>
+      <title>356 Line Reflection</title>
+      <link>https://foxisawesome.github.io/posts/356-line-reflection/</link>
+      <pubDate>Thu, 01 Oct 2020 13:21:41 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/356-line-reflection/</guid>
+      <description>LC 356 Line Reflection Given n points on a 2D plane, find if there is such a line parallel to y-axis that reflect the given points symmetrically, in other words, answer whether or not if there exists a line that after reflecting all points over the given line the set of the original points is the same that the reflected ones. Note that there can be repeated points. Solution 2020-10-01</description>
     </item>
     
   </channel>

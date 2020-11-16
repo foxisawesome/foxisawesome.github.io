@@ -5,19 +5,10 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 06 Nov 2020 13:34:35 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2020 13:34:15 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>1412 Total Sales Amount by Year</title>
-      <link>https://foxisawesome.github.io/posts/1412-total-sales-amount-by-year/</link>
-      <pubDate>Fri, 06 Nov 2020 13:34:35 -0500</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1412-total-sales-amount-by-year/</guid>
-      <description>LC 1412 Total Sales Amount by Year Write an SQL query to report the students (student_id, student_name) being &amp;ldquo;quiet&amp;rdquo; in ALL exams. Don&amp;rsquo;t return the student who has never taken any exam. Return the result table ordered by student_id. The query result format is in the following example. Student table: +-------------+---------------+ | student_id | student_name | +-------------+---------------+ | 1 | Daniel | | 2 | Jade | | 3 |</description>
-    </item>
     
     <item>
       <title>1384 Total Sales Amount by Year</title>
@@ -62,60 +53,6 @@
       
       <guid>https://foxisawesome.github.io/sql/1565-unique-orders-and-customers-per-month/</guid>
       <description>LC 1565 Unique Orders and Customers per Month    Solution 2020-11-06 Notes:     </description>
-    </item>
-    
-    <item>
-      <title>1555 Bank Account Summary</title>
-      <link>https://foxisawesome.github.io/sql/1555-bank-account-summary/</link>
-      <pubDate>Fri, 06 Nov 2020 13:32:28 -0500</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1555-bank-account-summary/</guid>
-      <description>LC 1555 Bank Account Summary    Solution 2020-11-06 Notes:     </description>
-    </item>
-    
-    <item>
-      <title>1549 the Most Recent Orders for Each Product</title>
-      <link>https://foxisawesome.github.io/sql/1549-the-most-recent-orders-for-each-product/</link>
-      <pubDate>Fri, 06 Nov 2020 13:32:13 -0500</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1549-the-most-recent-orders-for-each-product/</guid>
-      <description>LC 1549 the Most Recent Orders for Each Product    Solution 2020-11-06 Notes:     </description>
-    </item>
-    
-    <item>
-      <title>1527 Patients With a Condition</title>
-      <link>https://foxisawesome.github.io/sql/1527-patients-with-a-condition/</link>
-      <pubDate>Fri, 06 Nov 2020 13:31:51 -0500</pubDate>
-      
-      <guid>https://foxisawesome.github.io/sql/1527-patients-with-a-condition/</guid>
-      <description>LC 1527 Patients With a Condition    Solution 2020-11-06 Notes:     </description>
-    </item>
-    
-    <item>
-      <title>1468 Calculate Salaries</title>
-      <link>https://foxisawesome.github.io/posts/1468-calculate-salaries/</link>
-      <pubDate>Fri, 06 Nov 2020 13:31:33 -0500</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1468-calculate-salaries/</guid>
-      <description>LC 1468 Calculate Salaries Write an SQL query to find the salaries of the employees after applying taxes. The tax rate is calculated for each company based on the following criteria: 0% If the max salary of any employee in the company is less than 1000$. 24% If the max salary of any employee in the company is in the range [1000, 10000] inclusive. 49% If the max salary of</description>
-    </item>
-    
-    <item>
-      <title>1459 Rectangles Area</title>
-      <link>https://foxisawesome.github.io/posts/1459-rectangles-area/</link>
-      <pubDate>Fri, 06 Nov 2020 13:31:17 -0500</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1459-rectangles-area/</guid>
-      <description>LC 1459 Rectangles Area Write an SQL query to report of all possible rectangles which can be formed by any two points of the table. Each row in the result contains three columns (p1, p2, area) where: p1 and p2 are the id of two opposite corners of a rectangle and p1 &amp;lt; p2. Area of this rectangle is represented by the column area. Report the query in descending order</description>
-    </item>
-    
-    <item>
-      <title>1238 Circular Permutation in Binary Representation</title>
-      <link>https://foxisawesome.github.io/posts/1238-circular-permutation-in-binary-representation/</link>
-      <pubDate>Wed, 04 Nov 2020 14:40:15 -0500</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1238-circular-permutation-in-binary-representation/</guid>
-      <description>LC 1238 Circular Permutation in Binary Representation    Solution 2020-11-04 Notes:  gray code 1 &amp;laquo; n = 2**n   class Solution: def circularPermutation(self, n: int, start: int) -&amp;gt; List[int]: return [start ^ i ^ i &amp;gt;&amp;gt; 1 for i in range(1 &amp;lt;&amp;lt; n)] # Time O(2^N) # Space O(2^N)  bit manipulation:</description>
     </item>
     
     <item>
@@ -200,6 +137,71 @@ Variables table: +------+-------+ | name | value | +------+-------+ | x | 66 | |
       <description>LC 1435 Create a Session Bar Chart   Write an SQL query to report the (bin, total) in any order.
 The query result format is in the following example.
 Sessions table: +-------------+---------------+ | session_id | duration | +-------------+---------------+ | 1 | 30 | | 2 | 199 | | 3 | 299 | | 4 | 580 | | 5 | 1000 | +-------------+---------------+ Result table: +--------------+--------------+ | bin | total | +--------------+--------------+ | [0-5&amp;gt; | 3 | | [5-10&amp;gt; | 1 | | [10-15&amp;gt; | 0 | | 15 or more | 1 | +--------------+--------------+ For session_id 1, 2 and 3 have a duration greater or equal than 0 minutes and less than 5 minutes.</description>
+    </item>
+    
+    <item>
+      <title>1421 Npv Queries</title>
+      <link>https://foxisawesome.github.io/posts/1421-npv-queries/</link>
+      <pubDate>Sun, 01 Nov 2020 13:19:46 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1421-npv-queries/</guid>
+      <description>LC 1421 Npv Queries   Write an SQL query to find the npv of all each query of queries table.
+Return the result table in any order. The query result format is in the following example:
+NPV table: +------+--------+--------+ | id | year | npv | +------+--------+--------+ | 1 | 2018 | 100 | | 7 | 2020 | 30 | | 13 | 2019 | 40 | | 1 | 2019 | 113 | | 2 | 2008 | 121 | | 3 | 2009 | 12 | | 11 | 2020 | 99 | | 7 | 2019 | 0 | +------+--------+--------+ Queries table: +------+--------+ | id | year | +------+--------+ | 1 | 2019 | | 2 | 2008 | | 3 | 2009 | | 7 | 2018 | | 7 | 2019 | | 7 | 2020 | | 13 | 2019 | +------+--------+ Result table: +------+--------+--------+ | id | year | npv | +------+--------+--------+ | 1 | 2019 | 113 | | 2 | 2008 | 121 | | 3 | 2009 | 12 | | 7 | 2018 | 0 | | 7 | 2019 | 0 | | 7 | 2020 | 30 | | 13 | 2019 | 40 | +------+--------+--------+ The npv value of (7, 2018) is not present in the NPV table, we consider it 0.</description>
+    </item>
+    
+    <item>
+      <title>1378 Replace Employee Id With the Unique Identifier</title>
+      <link>https://foxisawesome.github.io/posts/1378-replace-employee-id-with-the-unique-identifier/</link>
+      <pubDate>Sun, 01 Nov 2020 13:17:11 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1378-replace-employee-id-with-the-unique-identifier/</guid>
+      <description>LC 1378 Replace Employee Id With the Unique Identifier Write an SQL query to show the unique ID of each user, If a user doesn&amp;rsquo;t have a unique ID replace just show null. Return the result table in any order. The query result format is in the following example: Employees table: +----+----------+ | id | name | +----+----------+ | 1 | Alice | | 7 | Bob | | 11</description>
+    </item>
+    
+    <item>
+      <title>1364 Number of Trusted Contacts of a Customer</title>
+      <link>https://foxisawesome.github.io/posts/1364-number-of-trusted-contacts-of-a-customer/</link>
+      <pubDate>Thu, 29 Oct 2020 11:19:50 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1364-number-of-trusted-contacts-of-a-customer/</guid>
+      <description>LC 1364 Number of Trusted Contacts of a Customer Write an SQL query to find the following for each invoice_id: customer_name: The name of the customer the invoice is related to. price: The price of the invoice. contacts_cnt: The number of contacts related to the customer. trusted_contacts_cnt: The number of contacts related to the customer and at the same time they are customers to the shop. (i.e His/Her email exists</description>
+    </item>
+    
+    <item>
+      <title>1341 Movie Rating</title>
+      <link>https://foxisawesome.github.io/posts/1341-movie-rating/</link>
+      <pubDate>Thu, 29 Oct 2020 11:19:39 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1341-movie-rating/</guid>
+      <description>LC 1341 Movie Rating Write the following SQL query: Find the name of the user who has rated the greatest number of movies. In case of a tie, return lexicographically smaller user name. Find the movie name with thehighest averagerating inFebruary 2020 In case of a tie, return lexicographically smaller movie name. The query is returned in 2 rows, the query result format is in the following example: Movies table:</description>
+    </item>
+    
+    <item>
+      <title>1336 Number of Transactions per Visit</title>
+      <link>https://foxisawesome.github.io/posts/1336-number-of-transactions-per-visit/</link>
+      <pubDate>Thu, 29 Oct 2020 11:19:23 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1336-number-of-transactions-per-visit/</guid>
+      <description>LC 1336 Number of Transactions per Visit Write an SQL query to find how many users visited the bank and didn&amp;rsquo;t do any transactions, how many visited the bank and did one transaction and so on. The result table will contain two columns: transactions_count which is the number of transactions done in one visit. visits_count which is the corresponding number of users who did transactions_count in one visit to the</description>
+    </item>
+    
+    <item>
+      <title>1327 List the Products Ordered in a Period</title>
+      <link>https://foxisawesome.github.io/posts/1327-list-the-products-ordered-in-a-period/</link>
+      <pubDate>Thu, 29 Oct 2020 11:19:13 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1327-list-the-products-ordered-in-a-period/</guid>
+      <description>LC 1327 List the Products Ordered in a Period Write an SQL query to get the names of products with greater than or equal to 100 units ordered in February 2020 and their amount. Return result table in any order. The query result format is in the following example: Products table: +-------------+-----------------------+------------------+ | product_id | product_name | product_category | +-------------+-----------------------+------------------+ | 1 | Leetcode Solutions | Book | | 2</description>
+    </item>
+    
+    <item>
+      <title>1303 Find the Team Size</title>
+      <link>https://foxisawesome.github.io/posts/1303-find-the-team-size/</link>
+      <pubDate>Thu, 29 Oct 2020 11:19:04 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1303-find-the-team-size/</guid>
+      <description>LC 1303 Find the Team Size Write an SQL query to find the team size of each of the employees. Return result table in any order. The query result format is in the following example: Employee Table: +-------------+------------+ | employee_id | team_id | +-------------+------------+ | 1 | 8 | | 2 | 8 | | 3 | 8 | | 4 | 7 | | 5 | 9 | |</description>
     </item>
     
   </channel>

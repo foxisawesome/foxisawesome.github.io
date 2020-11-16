@@ -5,19 +5,10 @@
     <link>https://foxisawesome.github.io/categories/algo/</link>
     <description>Recent content in algo on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Nov 2020 14:40:15 -0500</lastBuildDate>
+    <lastBuildDate>Wed, 04 Nov 2020 13:35:18 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/algo/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>91 Decode Ways</title>
-      <link>https://foxisawesome.github.io/posts/91-decode-ways/</link>
-      <pubDate>Tue, 15 Sep 2020 13:32:28 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/91-decode-ways/</guid>
-      <description>LC 91 Decode Ways A message containing letters from A-Z is being encoded to numbers using the following mapping: &#39;A&#39; -&amp;gt; 1 &#39;B&#39; -&amp;gt; 2 ... &#39;Z&#39; -&amp;gt; 26 Given a non-empty string containing only digits, determine the total number of ways to decode it. Input: &amp;ldquo;226&amp;rdquo; Output: 3 Explanation: It could be decoded as &amp;ldquo;BZ&amp;rdquo; (2 26), &amp;ldquo;VF&amp;rdquo; (22 6), or &amp;ldquo;BBF&amp;rdquo; (2 2 6). Solution 2020-09-15 Notes: 开</description>
-    </item>
     
     <item>
       <title>238 Product of Array Except Self</title>
@@ -193,6 +184,15 @@ Input: [1,3,null,null,2] Output: [3,1,null,null,2]   Solution 2020-09-13 Notes:
       
       <guid>https://foxisawesome.github.io/posts/501-find-mode-in-binary-search-tree/</guid>
       <description>LC 501 Find Mode in Binary Search Tree Given a binary search tree (BST) with duplicates, find all the mode(s) (the most frequently occurred element) in the given BST. Assume a BST is defined as follows: The left subtree of a node contains only nodes with keys less than or equal to the node&amp;rsquo;s key. The right subtree of a node contains only nodes with keys greater than or equal</description>
+    </item>
+    
+    <item>
+      <title>621 Task Scheduler</title>
+      <link>https://foxisawesome.github.io/posts/621-task-scheduler/</link>
+      <pubDate>Sat, 12 Sep 2020 21:00:42 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/621-task-scheduler/</guid>
+      <description>LC 621 Task Scheduler Given a characters array tasks, representing the tasks a CPU needs to do, where each letter represents a different task. Tasks could be done in any order. Each task is done in one unit of time. For each unit of time, the CPU could complete either one task or just be idle. However, there is a non-negative integer n that represents the cooldown period between two</description>
     </item>
     
   </channel>

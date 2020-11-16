@@ -5,19 +5,10 @@
     <link>https://foxisawesome.github.io/tags/leetcode/</link>
     <description>Recent content in leetcode on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 06 Nov 2020 13:34:35 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2020 13:34:15 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>209 Minimum Size Subarray Sum</title>
-      <link>https://foxisawesome.github.io/posts/209-minimum-size-subarray-sum/</link>
-      <pubDate>Fri, 25 Sep 2020 11:08:36 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/209-minimum-size-subarray-sum/</guid>
-      <description>LC 209 Minimum Size Subarray Sum Given an array of n positive integers and a positive integer s, find the minimal length of a contiguous subarray of which the sum ≥ s. If there isn&amp;rsquo;t one, return 0 instead. Input: s = 7, nums = [2,3,1,2,4,3] Output: 2 Explanation: the subarray [4,3] has the minimal length under the problem constraint Solution 2020-09-25 Notes: 这题 O(N)的</description>
-    </item>
     
     <item>
       <title>167 Two Sum II Input Array Is Sorted</title>
@@ -189,6 +180,15 @@
       
       <guid>https://foxisawesome.github.io/posts/202-happy-number/</guid>
       <description>LC 202 Happy Number Write an algorithm to determine if a number n is &amp;ldquo;happy&amp;rdquo;. A happy number is a number defined by the following process: Starting with any positive integer, replace the number by the sum of the squares of its digits, and repeat the process until the number equals 1 (where it will stay), or it loops endlessly in a cycle which does not include 1. Those numbers</description>
+    </item>
+    
+    <item>
+      <title>278 First Bad Version</title>
+      <link>https://foxisawesome.github.io/posts/278-first-bad-version/</link>
+      <pubDate>Wed, 23 Sep 2020 19:18:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/278-first-bad-version/</guid>
+      <description>LC 278 First Bad Version You are a product manager and currently leading a team to develop a new product. Unfortunately, the latest version of your product fails the quality check. Since each version is developed based on the previous version, all the versions after a bad version are also bad. Suppose you have n versions [1, 2, ..., n] and you want to find out the first bad one,</description>
     </item>
     
   </channel>

@@ -10,18 +10,6 @@
     
     
     <item>
-      <title>80 Remove Dup From Sorted Array II</title>
-      <link>https://foxisawesome.github.io/posts/80-remove-dup-from-sorted-array-ii/</link>
-      <pubDate>Fri, 04 Sep 2020 14:05:24 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/80-remove-dup-from-sorted-array-ii/</guid>
-      <description>LC 80 Remove Dup From Sorted Array II   Given a sorted array nums, remove the duplicates in-place such that duplicates appeared at most twice and return the new length.
-Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory.
-Given nums = [0,0,1,1,1,1,2,3,3], output [0,0,1,1,2,3,3]   Solution 2020-09-04 Notes:
- Same thing asLC 26.  class Solution: def removeDuplicates(self, nums: List[int]) -&amp;gt; int: if not nums: return 0 count = dict() count[nums[0]] = 1 slow, fast = 0, 1 while fast &amp;lt; len(nums): count[nums[fast]] = count.</description>
-    </item>
-    
-    <item>
       <title>26 Remove Dup From Sorted Array</title>
       <link>https://foxisawesome.github.io/posts/26-remove-dup-from-sorted-array/</link>
       <pubDate>Fri, 04 Sep 2020 13:45:50 -0400</pubDate>
@@ -213,6 +201,15 @@ Given a binary search tree with non-negative values, find the minimum absolute d
  Given a binary search tree with non-negative values, find the minimum absolute difference between values of any two nodes.
 Example:
 Input: 1 \ 3 / 2 Output: 1 Explanation: The minimum absolute difference is 1, which is the difference between 2 and 1 (or between 2 and 3).   8/30/2020 Note:</description>
+    </item>
+    
+    <item>
+      <title>98 Valid BST</title>
+      <link>https://foxisawesome.github.io/posts/98-valid-bst/</link>
+      <pubDate>Sun, 30 Aug 2020 20:59:02 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/98-valid-bst/</guid>
+      <description>LC 98 Valid BST Given a binary tree, determine if it is a valid binary search tree (BST). Assume a BST is defined as follows: The left subtree of a node contains only nodes with keys less than the node&amp;rsquo;s key. The right subtree of a node contains only nodes with keys greater than the node&amp;rsquo;s key. Both the left and right subtrees must also be binary search trees. Example</description>
     </item>
     
   </channel>

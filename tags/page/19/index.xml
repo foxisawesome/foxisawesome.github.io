@@ -5,19 +5,10 @@
     <link>https://foxisawesome.github.io/tags/</link>
     <description>Recent content in Tags on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 06 Nov 2020 13:34:35 -0500</lastBuildDate>
+    <lastBuildDate>Fri, 06 Nov 2020 13:34:15 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>98 Valid BST</title>
-      <link>https://foxisawesome.github.io/posts/98-valid-bst/</link>
-      <pubDate>Sun, 30 Aug 2020 20:59:02 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/98-valid-bst/</guid>
-      <description>LC 98 Valid BST Given a binary tree, determine if it is a valid binary search tree (BST). Assume a BST is defined as follows: The left subtree of a node contains only nodes with keys less than the node&amp;rsquo;s key. The right subtree of a node contains only nodes with keys greater than the node&amp;rsquo;s key. Both the left and right subtrees must also be binary search trees. Example</description>
-    </item>
     
     <item>
       <title>701 Insert Into BST</title>
