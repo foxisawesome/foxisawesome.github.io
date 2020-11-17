@@ -33,7 +33,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://foxisawesome.github.io/" />
-<meta property="og:updated_time" content="2020-11-15T19:22:49-05:00" />
+<meta property="og:updated_time" content="2020-11-06T13:34:15-05:00" />
 <meta itemprop="name" content="Q. Weng">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -284,81 +284,6 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/1082-sales-analysis-i/"
-    >1082 Sales Analysis I</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 1082 Sales Analysis I   Write an SQL query that reports the best seller by total sales price, If there is a tie, report them all.
- Solution 2020-10-29 Notes:  Window function solution, which is faster  SELECT seller_id FROM ( SELECT *, RANK() OVER(ORDER BY SUM(price) DESC) AS rk FROM sales GROUP BY seller_id ) a WHERE rk = 1   aggregation func solution  SELECT seller_id FROM sales GROUP BY 1 HAVING SUM(price) = (SELECT SUM(price) FROM sales GROUP BY seller_id ORDER BY 1 DESC LIMIT 1)  
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1082-sales-analysis-i/" class="">
-  <time datetime="2020-10-29 09:53:47 -0400 EDT" itemprop="datePublished">2020-10-29</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1082-sales-analysis-i/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/1077-project-employees-iii/"
-    >1077 Project Employees III</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 1077 Project Employees III Write an SQL query that reports the most experienced employees in each project. In case of a tie, report all employees with the maximum number of experience years. Solution 2020-10-29 Notes: 秒了 SELECT project_id, employee_id FROM ( SELECT a.*, RANK() OVER(PARTITION BY project_id ORDER BY experience_years DESC) AS rk FROM project a JOIN employee b ON a.employee_id = b.employee_id ) c WHERE rk =
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1077-project-employees-iii/" class="">
-  <time datetime="2020-10-29 09:24:05 -0400 EDT" itemprop="datePublished">2020-10-29</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1077-project-employees-iii/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
     href="/posts/1069-product-sales-analysis-ii/"
     >1069 Product Sales Analysis II</a
   >
@@ -505,6 +430,81 @@ For example:
   </span>
 
         <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/614-second-degree-follower/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/608-tree-node/"
+    >608 Tree Node</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 608 Tree Node Given a table tree, id is identifier of the tree node and p_id is its parent node&rsquo;s id. +----+------+ | id | p_id | +----+------+ | 1 | null | | 2 | 1 | | 3 | 1 | | 4 | 2 | | 5 | 2 | +----+------+ Each node in the tree can be one of three types: Leaf: if the node
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/608-tree-node/" class="">
+  <time datetime="2020-10-25 14:50:31 -0400 EDT" itemprop="datePublished">2020-10-25</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+    <a class="article-tag-link" href="/tags/dia_sql/"> dia_sql </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/608-tree-node/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/610-triangle-judgement/"
+    >610 Triangle Judgement</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 610 Triangle Judgement Could you help Tim by writing a query to judge whether these three sides can form a triangle, assuming table triangle holds the length of the three sides x, y and z. | x | y | z | |----|----|----| | 13 | 15 | 30 | | 10 | 20 | 15 | For the sample data above, your query should return the follow result:
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/610-triangle-judgement/" class="">
+  <time datetime="2020-10-25 10:02:33 -0400 EDT" itemprop="datePublished">2020-10-25</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/610-triangle-judgement/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article></div>
   

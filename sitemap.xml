@@ -3,55 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://foxisawesome.github.io/categories/</loc>
-    <lastmod>2020-11-15T19:22:49-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/categories/ml/</loc>
-    <lastmod>2020-11-15T19:22:49-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/categories/note/</loc>
-    <lastmod>2020-11-15T19:22:49-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/posts/</loc>
-    <lastmod>2020-11-15T19:22:49-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/</loc>
-    <lastmod>2020-11-15T19:22:49-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/posts/stat_notes/</loc>
-    <lastmod>2020-11-15T19:22:49-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/posts/time_series_notes/</loc>
-    <lastmod>2020-11-15T19:22:49-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://foxisawesome.github.io/sql/1384-total-sales-amount-by-year/</loc>
     <lastmod>2020-11-06T13:34:15-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -59,7 +10,21 @@
   </url>
   
   <url>
+    <loc>https://foxisawesome.github.io/categories/</loc>
+    <lastmod>2020-11-06T13:34:15-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://foxisawesome.github.io/tags/leetcode/</loc>
+    <lastmod>2020-11-06T13:34:15-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/</loc>
     <lastmod>2020-11-06T13:34:15-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -102,6 +67,13 @@
   
   <url>
     <loc>https://foxisawesome.github.io/posts/1633-percentage-of-users-attended-a-contest/</loc>
+    <lastmod>2020-11-06T13:33:11-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/</loc>
     <lastmod>2020-11-06T13:33:11-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -838,6 +810,34 @@
   <url>
     <loc>https://foxisawesome.github.io/posts/615-average-salary-departments-vs-company/</loc>
     <lastmod>2020-10-16T09:08:36-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/categories/ml/</loc>
+    <lastmod>2020-10-15T19:22:49-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/categories/note/</loc>
+    <lastmod>2020-10-15T19:22:49-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/stat_notes/</loc>
+    <lastmod>2020-10-15T19:22:49-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/time_series_notes/</loc>
+    <lastmod>2020-10-15T19:22:49-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

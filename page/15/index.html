@@ -33,7 +33,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://foxisawesome.github.io/" />
-<meta property="og:updated_time" content="2020-11-15T19:22:49-05:00" />
+<meta property="og:updated_time" content="2020-11-06T13:34:15-05:00" />
 <meta itemprop="name" content="Q. Weng">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -284,81 +284,6 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/1342-number-of-steps-to-reduce-a-number-to-zero/"
-    >1342 Number of Steps to Reduce a Number to Zero</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 1342 Number of Steps to Reduce a Number to Zero Given a non-negative integer num, return the number of steps to reduce it to zero. If the current number is even, you have to divide it by 2, otherwise, you have to subtract 1 from it. Input: num = 14 Output: 6 Explanation: Step 1) 14 is even; divide by 2 and obtain 7. Step 2) 7 is odd;
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1342-number-of-steps-to-reduce-a-number-to-zero/" class="">
-  <time datetime="2020-10-18 14:58:02 -0400 EDT" itemprop="datePublished">2020-10-18</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/math/"> math </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1342-number-of-steps-to-reduce-a-number-to-zero/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/1141-user-activity-for-the-past-30-days-i/"
-    >1141 User Activity for the Past 30 Days I</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 1141 User Activity for the Past 30 Days I Write an SQL query to find the daily active user count for a period of 30 days ending 2019-07-27 inclusively. A user was active on some day if he/she made at least one activity on that day. The query result format is in the following example: Activity table: +---------+------------+---------------+---------------+ | user_id | session_id | activity_date | activity_type | +---------+------------+---------------+---------------+ |
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1141-user-activity-for-the-past-30-days-i/" class="">
-  <time datetime="2020-10-17 21:13:03 -0400 EDT" itemprop="datePublished">2020-10-17</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1141-user-activity-for-the-past-30-days-i/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
     href="/posts/1623-all-valid-triplets-that-can-represent-a-country/"
     >1623 All Valid Triplets That Can Represent a Country</a
   >
@@ -502,6 +427,83 @@ A valid e-mail has a prefix name and a domain where:
   </span>
 
         <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1511-customer-order-frequency/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/1479-sales-by-day-of-the-week/"
+    >1479 Sales by Day of the Week</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 1479 Sales by Day of the Week   Write an SQL query to report how many units in each category have been ordered on each day of the week.
+Return the result table ordered by category.
+ Solution 2020-10-16 Notes:  DAYOFWEEK() : ‘2’ is Mon. MYSQL does not have pivot function, use below template  WITH combo AS ( SELECT b.*, DAYOFWEEK(order_date) AS week, item_category FROM items a LEFT JOIN orders b ON a.
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/1479-sales-by-day-of-the-week/" class="">
+  <time datetime="2020-10-16 09:29:59 -0400 EDT" itemprop="datePublished">2020-10-16</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+    <a class="article-tag-link" href="/tags/dia/"> dia </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1479-sales-by-day-of-the-week/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/615-average-salary-departments-vs-company/"
+    >615 Average Salary Departments vs Company</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 615 Average Salary Departments vs Company Given two tables as below, write a query to display the comparison result (higher/lower/same) of the average salary of employees in a department to the company&rsquo;s average salary. Table: salary | id | employee_id | amount | pay_date | |----|-------------|--------|------------| | 1 | 1 | 9000 | 2017-03-31 | | 2 | 2 | 6000 | 2017-03-31 | | 3 | 3 |
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/615-average-salary-departments-vs-company/" class="">
+  <time datetime="2020-10-16 09:08:36 -0400 EDT" itemprop="datePublished">2020-10-16</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/615-average-salary-departments-vs-company/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article></div>
   

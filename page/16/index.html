@@ -33,7 +33,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://foxisawesome.github.io/" />
-<meta property="og:updated_time" content="2020-11-15T19:22:49-05:00" />
+<meta property="og:updated_time" content="2020-11-06T13:34:15-05:00" />
 <meta itemprop="name" content="Q. Weng">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -284,35 +284,28 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/1479-sales-by-day-of-the-week/"
-    >1479 Sales by Day of the Week</a
+    href="/posts/stat_notes/"
+    >Statistics Notes</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 1479 Sales by Day of the Week   Write an SQL query to report how many units in each category have been ordered on each day of the week.
-Return the result table ordered by category.
- Solution 2020-10-16 Notes:  DAYOFWEEK() : ‘2’ is Mon. MYSQL does not have pivot function, use below template  WITH combo AS ( SELECT b.*, DAYOFWEEK(order_date) AS week, item_category FROM items a LEFT JOIN orders b ON a.
+        Hypothesis Testing Basics  $\alpha$: Type I error, false positive rate. Reject $H_0$ when $H_0$ is true. Significance level of test. (minimize $\alpha$) $\beta$: Type II error, false negative rate. Fail to reject $H_0$ when $H_0$ is false. power: $1-\beta$, probablility of making correct decision if alternative hypothesis is true. (maximize power). or reject null when null is false. $p$-value: the probability that we observe a more extreme statistics when $H_0$ was true.
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1479-sales-by-day-of-the-week/" class="">
-  <time datetime="2020-10-16 09:29:59 -0400 EDT" itemprop="datePublished">2020-10-16</time>
+<a href="https://foxisawesome.github.io/posts/stat_notes/" class="">
+  <time datetime="2020-10-15 19:22:49 -0500 -0500" itemprop="datePublished">2020-10-15</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/dia/"> dia </a>
-  </span>
+  <a class="article-category-link" href="/categories/note/"> note </a>
+</span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1479-sales-by-day-of-the-week/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/stat_notes/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -324,32 +317,30 @@ Return the result table ordered by category.
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/615-average-salary-departments-vs-company/"
-    >615 Average Salary Departments vs Company</a
+    href="/posts/time_series_notes/"
+    >Time Series Notes</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 615 Average Salary Departments vs Company Given two tables as below, write a query to display the comparison result (higher/lower/same) of the average salary of employees in a department to the company&rsquo;s average salary. Table: salary | id | employee_id | amount | pay_date | |----|-------------|--------|------------| | 1 | 1 | 9000 | 2017-03-31 | | 2 | 2 | 6000 | 2017-03-31 | | 3 | 3 |
+        Why does a time series have to be stationary? Stationarity is a one type of dependence structure.
+Suppose we have a data $X_1,&hellip;,X_n$. The most basic assumption is that $X_i$ are independent, i.e. we have a sample. The independence is a nice property, since using it we can derive a lot of useful results. The problem is that sometimes (or frequently, depending on the view) this property does not hold.
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/615-average-salary-departments-vs-company/" class="">
-  <time datetime="2020-10-16 09:08:36 -0400 EDT" itemprop="datePublished">2020-10-16</time>
+<a href="https://foxisawesome.github.io/posts/time_series_notes/" class="">
+  <time datetime="2020-10-15 19:22:49 -0500 -0500" itemprop="datePublished">2020-10-15</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-  </span>
+  <a class="article-category-link" href="/categories/note/"> note </a>
+  <a class="article-category-link" href="/categories/ml/"> ml </a>
+</span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/615-average-salary-departments-vs-company/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/time_series_notes/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article

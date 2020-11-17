@@ -5,28 +5,10 @@
     <link>https://foxisawesome.github.io/categories/note/</link>
     <description>Recent content in note on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 15 Nov 2020 19:22:49 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2020 19:22:49 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/note/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>1294 Weather Type in Each Country</title>
-      <link>https://foxisawesome.github.io/posts/1294-weather-type-in-each-country/</link>
-      <pubDate>Sun, 18 Oct 2020 20:27:37 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1294-weather-type-in-each-country/</guid>
-      <description>LC 1294 Weather Type in Each Country Write an SQL query to find the type of weather in each country for November 2019. The type of weather is Cold if the average weather_state is less than or equal 15, Hot if the average weather_state is greater than or equal 25 and Warm otherwise. Return result table in any order. Solution 2020-10-18 Notes: 秒了 SELECT country_name, (CASE WHEN AVG(weather_state)&amp;lt;=15 THEN</description>
-    </item>
-    
-    <item>
-      <title>361 Bomb Enemy</title>
-      <link>https://foxisawesome.github.io/posts/361-bomb-enemy/</link>
-      <pubDate>Sun, 18 Oct 2020 20:16:29 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/361-bomb-enemy/</guid>
-      <description>LC 361 Bomb Enemy   Given a 2D grid, each cell is either a wall &#39;W&#39;, an enemy &#39;E&#39; or empty &#39;0&#39; (the number zero), return the maximum enemies you can kill using one bomb. The bomb kills all the enemies in the same row and column from the planted point until it hits the wall since the wall is too strong to be destroyed. Note: You can only put the bomb at an empty cell.</description>
-    </item>
     
     <item>
       <title>723 Candy Crush</title>
@@ -150,6 +132,25 @@ Return the result table ordered by category.
       
       <guid>https://foxisawesome.github.io/posts/615-average-salary-departments-vs-company/</guid>
       <description>LC 615 Average Salary Departments vs Company Given two tables as below, write a query to display the comparison result (higher/lower/same) of the average salary of employees in a department to the company&amp;rsquo;s average salary. Table: salary | id | employee_id | amount | pay_date | |----|-------------|--------|------------| | 1 | 1 | 9000 | 2017-03-31 | | 2 | 2 | 6000 | 2017-03-31 | | 3 | 3 |</description>
+    </item>
+    
+    <item>
+      <title>Statistics Notes</title>
+      <link>https://foxisawesome.github.io/posts/stat_notes/</link>
+      <pubDate>Thu, 15 Oct 2020 19:22:49 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/stat_notes/</guid>
+      <description>Hypothesis Testing Basics  $\alpha$: Type I error, false positive rate. Reject $H_0$ when $H_0$ is true. Significance level of test. (minimize $\alpha$) $\beta$: Type II error, false negative rate. Fail to reject $H_0$ when $H_0$ is false. power: $1-\beta$, probablility of making correct decision if alternative hypothesis is true. (maximize power). or reject null when null is false. $p$-value: the probability that we observe a more extreme statistics when $H_0$ was true.</description>
+    </item>
+    
+    <item>
+      <title>Time Series Notes</title>
+      <link>https://foxisawesome.github.io/posts/time_series_notes/</link>
+      <pubDate>Thu, 15 Oct 2020 19:22:49 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/time_series_notes/</guid>
+      <description>Why does a time series have to be stationary? Stationarity is a one type of dependence structure.
+Suppose we have a data $X_1,&amp;hellip;,X_n$. The most basic assumption is that $X_i$ are independent, i.e. we have a sample. The independence is a nice property, since using it we can derive a lot of useful results. The problem is that sometimes (or frequently, depending on the view) this property does not hold.</description>
     </item>
     
     <item>
