@@ -5,10 +5,29 @@
     <link>https://foxisawesome.github.io/categories/note/</link>
     <description>Recent content in note on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 25 Sep 2020 19:13:47 -0400</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2020 19:22:49 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/note/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Statistics Notes</title>
+      <link>https://foxisawesome.github.io/posts/stat_notes/</link>
+      <pubDate>Sun, 15 Nov 2020 19:22:49 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/stat_notes/</guid>
+      <description>Hypothesis Testing Basics  $\alpha$: Type I error, false positive rate. Reject $H_0$ when $H_0$ is true. Significance level of test. (minimize $\alpha$) $\beta$: Type II error, false negative rate. Fail to reject $H_0$ when $H_0$ is false. power: $1-\beta$, probablility of making correct decision if alternative hypothesis is true. (maximize power). or reject null when null is false. $p$-value: the probability that we observe a more extreme statistics when $H_0$ was true.</description>
+    </item>
+    
+    <item>
+      <title>Time Series Notes</title>
+      <link>https://foxisawesome.github.io/posts/time_series_notes/</link>
+      <pubDate>Sun, 15 Nov 2020 19:22:49 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/time_series_notes/</guid>
+      <description>Why does a time series have to be stationary? Stationarity is a one type of dependence structure.
+Suppose we have a data $X_1,&amp;hellip;,X_n$. The most basic assumption is that $X_i$ are independent, i.e. we have a sample. The independence is a nice property, since using it we can derive a lot of useful results. The problem is that sometimes (or frequently, depending on the view) this property does not hold.</description>
+    </item>
     
     <item>
       <title>1384 Total Sales Amount by Year</title>
@@ -39,20 +58,20 @@
     
     <item>
       <title>1633 Percentage of Users Attended a Contest</title>
-      <link>https://foxisawesome.github.io/sql/1633-percentage-of-users-attended-a-contest/</link>
+      <link>https://foxisawesome.github.io/posts/1633-percentage-of-users-attended-a-contest/</link>
       <pubDate>Fri, 06 Nov 2020 13:33:11 -0500</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/1633-percentage-of-users-attended-a-contest/</guid>
-      <description>LC 1633 Percentage of Users Attended a Contest    Solution 2020-11-06 Notes:     </description>
+      <guid>https://foxisawesome.github.io/posts/1633-percentage-of-users-attended-a-contest/</guid>
+      <description>LC 1633 Percentage of Users Attended a Contest Write an SQL query to find the percentage of the users registered in each contest rounded to two decimals. Return the result table ordered by percentage in descending order. In case of a tie, order it by contest_id in ascending order. Users table: +---------+-----------+ | user_id | user_name | +---------+-----------+ | 6 | Alice | | 2 | Bob | | 7</description>
     </item>
     
     <item>
       <title>1565 Unique Orders and Customers per Month</title>
-      <link>https://foxisawesome.github.io/sql/1565-unique-orders-and-customers-per-month/</link>
+      <link>https://foxisawesome.github.io/posts/1565-unique-orders-and-customers-per-month/</link>
       <pubDate>Fri, 06 Nov 2020 13:32:52 -0500</pubDate>
       
-      <guid>https://foxisawesome.github.io/sql/1565-unique-orders-and-customers-per-month/</guid>
-      <description>LC 1565 Unique Orders and Customers per Month    Solution 2020-11-06 Notes:     </description>
+      <guid>https://foxisawesome.github.io/posts/1565-unique-orders-and-customers-per-month/</guid>
+      <description>LC 1565 Unique Orders and Customers per Month Write an SQL query to find the number of unique orders and the number of unique customers with invoices &amp;gt; $20 for each different month. Return the result table sorted in any order. Orders +----------+------------+-------------+------------+ | order_id | order_date | customer_id | invoice | +----------+------------+-------------+------------+ | 1 | 2020-09-15 | 1 | 30 | | 2 | 2020-09-17 | 2 | 90</description>
     </item>
     
     <item>
@@ -184,24 +203,6 @@ NPV table: +------+--------+--------+ | id | year | npv | +------+--------+-----
       
       <guid>https://foxisawesome.github.io/posts/1336-number-of-transactions-per-visit/</guid>
       <description>LC 1336 Number of Transactions per Visit Write an SQL query to find how many users visited the bank and didn&amp;rsquo;t do any transactions, how many visited the bank and did one transaction and so on. The result table will contain two columns: transactions_count which is the number of transactions done in one visit. visits_count which is the corresponding number of users who did transactions_count in one visit to the</description>
-    </item>
-    
-    <item>
-      <title>1327 List the Products Ordered in a Period</title>
-      <link>https://foxisawesome.github.io/posts/1327-list-the-products-ordered-in-a-period/</link>
-      <pubDate>Thu, 29 Oct 2020 11:19:13 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1327-list-the-products-ordered-in-a-period/</guid>
-      <description>LC 1327 List the Products Ordered in a Period Write an SQL query to get the names of products with greater than or equal to 100 units ordered in February 2020 and their amount. Return result table in any order. The query result format is in the following example: Products table: +-------------+-----------------------+------------------+ | product_id | product_name | product_category | +-------------+-----------------------+------------------+ | 1 | Leetcode Solutions | Book | | 2</description>
-    </item>
-    
-    <item>
-      <title>1303 Find the Team Size</title>
-      <link>https://foxisawesome.github.io/posts/1303-find-the-team-size/</link>
-      <pubDate>Thu, 29 Oct 2020 11:19:04 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1303-find-the-team-size/</guid>
-      <description>LC 1303 Find the Team Size Write an SQL query to find the team size of each of the employees. Return result table in any order. The query result format is in the following example: Employee Table: +-------------+------------+ | employee_id | team_id | +-------------+------------+ | 1 | 8 | | 2 | 8 | | 3 | 8 | | 4 | 7 | | 5 | 9 | |</description>
     </item>
     
   </channel>

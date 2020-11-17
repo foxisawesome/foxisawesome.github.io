@@ -5,10 +5,29 @@
     <link>https://foxisawesome.github.io/categories/</link>
     <description>Recent content in Categories on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 06 Nov 2020 13:34:15 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2020 19:22:49 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>602 Friend Requests Ii Who Has the Most Friends</title>
+      <link>https://foxisawesome.github.io/posts/602-friend-requests-ii-who-has-the-most-friends/</link>
+      <pubDate>Wed, 14 Oct 2020 19:41:14 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/602-friend-requests-ii-who-has-the-most-friends/</guid>
+      <description>LC 602 Friend Requests Ii Who Has the Most Friends Write a query to find the the people who has most friends and the most friends number under the following rules: It is guaranteed there is only 1 people having the most friends. The friend request could only been accepted once, which mean there is no multiple records with the same requester_id and accepter_id value. For the sample data above,</description>
+    </item>
+    
+    <item>
+      <title>974 Subarray Sums Divisible by K</title>
+      <link>https://foxisawesome.github.io/posts/974-subarray-sums-divisible-by-k/</link>
+      <pubDate>Wed, 14 Oct 2020 17:17:02 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/974-subarray-sums-divisible-by-k/</guid>
+      <description>LC 974 Subarray Sums Divisible by K   Given an array A of integers, return the number of (contiguous, non-empty) subarrays that have a sum divisible by K.
+Input: A = [4,5,0,-2,-3,1], K = 5 Output: 7 Explanation: There are 7 subarrays with a sum divisible by K = 5: [4, 5, 0, -2, -3, 1], [5], [5, 0], [5, 0, -2, -3], [0], [0, -2, -3], [-2, -3]   Solution 2020-10-14 Notes:  About the problems - sum of contiguous subarray , prefix sum is a common technique.</description>
+    </item>
     
     <item>
       <title>909 Snakes and Ladders</title>
@@ -179,26 +198,6 @@ Transactions table: +------+---------+----------+--------+------------+ | id | c
       
       <guid>https://foxisawesome.github.io/posts/1007-minimum-domino-rotations-for-equal-row/</guid>
       <description>LC 1007 Minimum Domino Rotations for Equal Row In a row of dominoes, A[i] and B[i] represent the top and bottom halves of the i-th domino. (A domino is a tile with two numbers from 1 to 6 - one on each half of the tile.) We may rotate the i-th domino, so that A[i] and B[i] swap values. Return the minimum number of rotations so that all the values</description>
-    </item>
-    
-    <item>
-      <title>1321 Restaurant Growth</title>
-      <link>https://foxisawesome.github.io/posts/1321-restaurant-growth/</link>
-      <pubDate>Fri, 09 Oct 2020 19:16:19 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1321-restaurant-growth/</guid>
-      <description>LC 1321 Restaurant Growth Write an SQL query to compute moving average of how much customer paid in a 7 days window (current day + 6 days before) . The query result format is in the following example: Return result table ordered by visited_on. average_amount should be rounded to 2 decimal places, all dates are in the format (&amp;lsquo;YYYY-MM-DD&amp;rsquo;). Customer table: +-------------+--------------+--------------+-------------+ | customer_id | name | visited_on | amount</description>
-    </item>
-    
-    <item>
-      <title>1107 New Users Daily Count</title>
-      <link>https://foxisawesome.github.io/posts/1107-new-users-daily-count/</link>
-      <pubDate>Fri, 09 Oct 2020 18:54:37 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1107-new-users-daily-count/</guid>
-      <description>LC 1107 New Users Daily Count   Write an SQL query that reports for every date within at most 90 days from today, the number of users that logged in for the first time on that date. Assume today is 2019-06-30.
-The query result format is in the following example:
-Traffic table: +---------+----------+---------------+ | user_id | activity | activity_date | +---------+----------+---------------+ | 1 | login | 2019-05-01 | | 1 | homepage | 2019-05-01 | | 1 | logout | 2019-05-01 | | 2 | login | 2019-06-21 | | 2 | logout | 2019-06-21 | | 3 | login | 2019-01-01 | | 3 | jobs | 2019-01-01 | | 3 | logout | 2019-01-01 | | 4 | login | 2019-06-21 | | 4 | groups | 2019-06-21 | | 4 | logout | 2019-06-21 | | 5 | login | 2019-03-01 | | 5 | logout | 2019-03-01 | | 5 | login | 2019-06-21 | | 5 | logout | 2019-06-21 | +---------+----------+---------------+ Result table: +------------+-------------+ | login_date | user_count | +------------+-------------+ | 2019-05-01 | 1 | | 2019-06-21 | 2 | +------------+-------------+   Solution 2020-10-09 Notes: SELECT activity_date AS login_date, COUNT(user_id) AS user_count FROM( SELECT *, ROW_NUMBER() OVER(PARTITION BY user_id ORDER BY activity_date) AS nr FROM traffic WHERE activity = &#39;login&#39; ) a WHERE nr = 1 and DATEDIFF(&#39;2019-06-30&#39;, activity_date) &amp;lt;= 90 GROUP BY 1  </description>
     </item>
     
   </channel>

@@ -5,10 +5,28 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Nov 2020 13:35:18 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2020 19:22:49 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1004 Max Consecutive Ones III</title>
+      <link>https://foxisawesome.github.io/posts/1004-max-consecutive-ones-iii/</link>
+      <pubDate>Mon, 28 Sep 2020 22:06:14 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1004-max-consecutive-ones-iii/</guid>
+      <description>LC 1004 Max Consecutive Ones III Given an array A of 0s and 1s, we may change up to K values from 0 to 1. Return the length of the longest (contiguous) subarray that contains only 1s. Input: A = [1,1,1,0,0,0,1,1,1,1,0], K = 2 Output: 6 Explanation: [1,1,1,0,0,1,1,1,1,1,1] Bolded numbers were flipped from 0 to 1. The longest subarray is underlined. Solution 2020-09-28 Notes: 这其实是倒挺</description>
+    </item>
+    
+    <item>
+      <title>1248 Count Number of Nice Subarrays</title>
+      <link>https://foxisawesome.github.io/posts/1248-count-number-of-nice-subarrays/</link>
+      <pubDate>Mon, 28 Sep 2020 21:38:49 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1248-count-number-of-nice-subarrays/</guid>
+      <description>LC 1248 Count Number of Nice Subarrays Given an array of integers nums and an integer k. A continuous subarray is called nice if there are k odd numbers on it. Return the number of nice sub-arrays. Input: nums = [1,1,2,1,1], k = 3 Output: 2 Explanation: The only sub-arrays with 3 odd numbers are [1,1,2,1] and [1,2,1,1]. Solution 2020-09-28 Notes: 这是与LC 992 一摸一</description>
+    </item>
     
     <item>
       <title>1358 Number of Substrings Containing All Three Characters</title>
@@ -170,24 +188,6 @@
       
       <guid>https://foxisawesome.github.io/posts/1137-n-th-tribonacci-number/</guid>
       <description>LC 1137 N Th Tribonacci Number The Tribonacci sequence Tn is defined as follows: T0 = 0, T1 = 1, T2 = 1, and Tn+3 = Tn + Tn+1 + Tn+2 for n &amp;gt;= 0. Given n, return the value of Tn. Solution 2020-09-25 Notes: 加个memo在 def __init__(self): 能把整个recursion写在一</description>
-    </item>
-    
-    <item>
-      <title>303 Range Sum Query Immutable</title>
-      <link>https://foxisawesome.github.io/posts/303-range-sum-query-immutable/</link>
-      <pubDate>Fri, 25 Sep 2020 14:03:09 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/303-range-sum-query-immutable/</guid>
-      <description>LC 303 Range Sum Query Immutable Given an integer array nums, find the sum of the elements between indices i and j (i ≤ j), inclusive. Given nums = [-2, 0, 3, -5, 2, -1] sumRange(0, 2) -&amp;gt; 1 sumRange(2, 5) -&amp;gt; -1 sumRange(0, 5) -&amp;gt; -3 Solution 2020-09-25 Notes: 这题要说的就是用 pre sum (cumulative sum) 来避免重复计算求</description>
-    </item>
-    
-    <item>
-      <title>209 Minimum Size Subarray Sum</title>
-      <link>https://foxisawesome.github.io/posts/209-minimum-size-subarray-sum/</link>
-      <pubDate>Fri, 25 Sep 2020 11:08:36 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/209-minimum-size-subarray-sum/</guid>
-      <description>LC 209 Minimum Size Subarray Sum Given an array of n positive integers and a positive integer s, find the minimal length of a contiguous subarray of which the sum ≥ s. If there isn&amp;rsquo;t one, return 0 instead. Input: s = 7, nums = [2,3,1,2,4,3] Output: 2 Explanation: the subarray [4,3] has the minimal length under the problem constraint Solution 2020-09-25 Notes: 这题 O(N)的</description>
     </item>
     
   </channel>

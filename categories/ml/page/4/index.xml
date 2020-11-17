@@ -5,10 +5,28 @@
     <link>https://foxisawesome.github.io/categories/ml/</link>
     <description>Recent content in ML on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 Nov 2019 21:43:28 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2020 19:22:49 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/ml/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>682 Baseball Game</title>
+      <link>https://foxisawesome.github.io/posts/682-baseball-game/</link>
+      <pubDate>Mon, 19 Oct 2020 16:34:58 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/682-baseball-game/</guid>
+      <description>LC 682 Baseball Game You are keeping score for a baseball game with strange rules. The game consists of several rounds, where the scores of past rounds may affect future rounds&#39; scores. At the beginning of the game, you start with an empty record. You are given a list of strings ops, where ops[i] is the ith operation you must apply to the record and is one of the following:</description>
+    </item>
+    
+    <item>
+      <title>1167 Minimum Cost to Connect Sticks</title>
+      <link>https://foxisawesome.github.io/posts/1167-minimum-cost-to-connect-sticks/</link>
+      <pubDate>Mon, 19 Oct 2020 16:16:26 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1167-minimum-cost-to-connect-sticks/</guid>
+      <description>LC 1167 Minimum Cost to Connect Sticks You have some number of sticks with positive integer lengths. These lengths are given as an array sticks, where sticks[i] is the length of the ith stick. You can connect any two sticks of lengths x and y into one stick by paying a cost of x + y. You must connect all the sticks until there is only one stick remaining. Return</description>
+    </item>
     
     <item>
       <title>1083 Sales Analysis II</title>
@@ -176,24 +194,6 @@ Return the result table in any order.
       
       <guid>https://foxisawesome.github.io/posts/607-sales-person/</guid>
       <description>LC 607 Sales Person Given three tables: salesperson, company, orders. Output all the names in the table salesperson, who didn’t have sales to company &amp;lsquo;RED&amp;rsquo;. Solution 2020-10-18 Notes: 秒了 SELECT DISTINCT name FROM salesperson WHERE sales_id NOT IN (SELECT sales_id FROM orders WHERE com_id IN (SELECT com_id FROM company WHERE name=&#39;RED&#39;))</description>
-    </item>
-    
-    <item>
-      <title>1294 Weather Type in Each Country</title>
-      <link>https://foxisawesome.github.io/posts/1294-weather-type-in-each-country/</link>
-      <pubDate>Sun, 18 Oct 2020 20:27:37 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1294-weather-type-in-each-country/</guid>
-      <description>LC 1294 Weather Type in Each Country Write an SQL query to find the type of weather in each country for November 2019. The type of weather is Cold if the average weather_state is less than or equal 15, Hot if the average weather_state is greater than or equal 25 and Warm otherwise. Return result table in any order. Solution 2020-10-18 Notes: 秒了 SELECT country_name, (CASE WHEN AVG(weather_state)&amp;lt;=15 THEN</description>
-    </item>
-    
-    <item>
-      <title>361 Bomb Enemy</title>
-      <link>https://foxisawesome.github.io/posts/361-bomb-enemy/</link>
-      <pubDate>Sun, 18 Oct 2020 20:16:29 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/361-bomb-enemy/</guid>
-      <description>LC 361 Bomb Enemy   Given a 2D grid, each cell is either a wall &#39;W&#39;, an enemy &#39;E&#39; or empty &#39;0&#39; (the number zero), return the maximum enemies you can kill using one bomb. The bomb kills all the enemies in the same row and column from the planted point until it hits the wall since the wall is too strong to be destroyed. Note: You can only put the bomb at an empty cell.</description>
     </item>
     
   </channel>

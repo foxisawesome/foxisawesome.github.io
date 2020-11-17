@@ -5,10 +5,32 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Nov 2020 13:35:18 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2020 19:22:49 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>530 Min Abs Dif BST</title>
+      <link>https://foxisawesome.github.io/posts/530-min-abs-dif-bst/</link>
+      <pubDate>Sun, 30 Aug 2020 20:59:36 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/530-min-abs-dif-bst/</guid>
+      <description>LC 530
+Given a binary search tree with non-negative values, find the minimum absolute difference between values of any two nodes.
+ Given a binary search tree with non-negative values, find the minimum absolute difference between values of any two nodes.
+Example:
+Input: 1 \ 3 / 2 Output: 1 Explanation: The minimum absolute difference is 1, which is the difference between 2 and 1 (or between 2 and 3).   8/30/2020 Note:</description>
+    </item>
+    
+    <item>
+      <title>98 Valid BST</title>
+      <link>https://foxisawesome.github.io/posts/98-valid-bst/</link>
+      <pubDate>Sun, 30 Aug 2020 20:59:02 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/98-valid-bst/</guid>
+      <description>LC 98 Valid BST Given a binary tree, determine if it is a valid binary search tree (BST). Assume a BST is defined as follows: The left subtree of a node contains only nodes with keys less than the node&amp;rsquo;s key. The right subtree of a node contains only nodes with keys greater than the node&amp;rsquo;s key. Both the left and right subtrees must also be binary search trees. Example</description>
+    </item>
     
     <item>
       <title>701 Insert Into BST</title>

@@ -5,10 +5,28 @@
     <link>https://foxisawesome.github.io/categories/ml/</link>
     <description>Recent content in ML on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 11 Nov 2019 21:43:28 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 15 Nov 2020 19:22:49 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/ml/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>40 Combination Sum Ii</title>
+      <link>https://foxisawesome.github.io/posts/40-combination-sum-ii/</link>
+      <pubDate>Mon, 21 Sep 2020 14:17:59 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/40-combination-sum-ii/</guid>
+      <description>LC 40 Combination Sum Ii Given a collection of candidate numbers (candidates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target. Each number in candidates may only be used once in the combination. Input: candidates = [10,1,2,7,6,1,5], target = 8, A solution set is:[[1, 7], [1, 2, 5], [2, 6],[1, 1, 6]] Solution 2020-09-21 Notes: 这题与39题</description>
+    </item>
+    
+    <item>
+      <title>39 Combination Sum</title>
+      <link>https://foxisawesome.github.io/posts/39-combination-sum/</link>
+      <pubDate>Mon, 21 Sep 2020 14:11:52 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/39-combination-sum/</guid>
+      <description>LC 39 Combination Sum Given a set of candidate numbers (candidates) (without duplicates) and a target number (target), find all unique combinations in candidates where the candidate numbers sums to target. Input: candidates = [2,3,6,7], target = 7, A solution set is: [[7],[2,2,3]] Solution 2020-09-21 Notes: 简单的DFS题，注意：path要是list(),</description>
+    </item>
     
     <item>
       <title>17 Letter Combinations of a Phone Number</title>
@@ -171,24 +189,6 @@ Input: 1 0 1 0 0 1 0 1 1 1 1 1 1 1 1 1 0 0 1 0 Output: 4   Solution 2020-09-20 N
       
       <guid>https://foxisawesome.github.io/posts/953-verifying-an-alien-dictionary/</guid>
       <description>LC 953 Verifying an Alien Dictionary In an alien language, surprisingly they also use english lowercase letters, but possibly in a different order. The order of the alphabet is some permutation of lowercase letters. Given a sequence of words written in the alien language, and the order of the alphabet, return true if and only if the given words are sorted lexicographicaly in this alien language. Input: words = [&amp;quot;word&amp;quot;,&amp;quot;world&amp;quot;,&amp;quot;row&amp;quot;],</description>
-    </item>
-    
-    <item>
-      <title>70 Climbing Stairs</title>
-      <link>https://foxisawesome.github.io/posts/70-climbing-stairs/</link>
-      <pubDate>Tue, 15 Sep 2020 16:48:27 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/70-climbing-stairs/</guid>
-      <description>LC 70 Climbing Stairs You are climbing a stair case. It takes n steps to reach to the top. Each time you can either climb 1 or 2 steps. In how many distinct ways can you climb to the top? Solution 2020-09-15 Notes: 最经典的dp题了。dp[i] = dp[i-1] + dp[i-2], 主要是dp[i] 和</description>
-    </item>
-    
-    <item>
-      <title>91 Decode Ways</title>
-      <link>https://foxisawesome.github.io/posts/91-decode-ways/</link>
-      <pubDate>Tue, 15 Sep 2020 13:32:28 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/91-decode-ways/</guid>
-      <description>LC 91 Decode Ways A message containing letters from A-Z is being encoded to numbers using the following mapping: &#39;A&#39; -&amp;gt; 1 &#39;B&#39; -&amp;gt; 2 ... &#39;Z&#39; -&amp;gt; 26 Given a non-empty string containing only digits, determine the total number of ways to decode it. Input: &amp;ldquo;226&amp;rdquo; Output: 3 Explanation: It could be decoded as &amp;ldquo;BZ&amp;rdquo; (2 26), &amp;ldquo;VF&amp;rdquo; (22 6), or &amp;ldquo;BBF&amp;rdquo; (2 2 6). Solution 2020-09-15 Notes: 开</description>
     </item>
     
   </channel>
