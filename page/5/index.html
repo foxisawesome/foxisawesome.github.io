@@ -284,82 +284,6 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/1132-reported-posts-ii/"
-    >1132 Reported Posts II</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 1132 Reported Posts II Write an SQL query to find the average for daily percentage of posts that got removed after being reported as spam, rounded to 2 decimal places. The query result format is in the following example: Actions table: +---------+---------+-------------+--------+--------+ | user_id | post_id | action_date | action | extra | +---------+---------+-------------+--------+--------+ | 1 | 1 | 2019-07-01 | view | null | | 1 | 1
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1132-reported-posts-ii/" class="">
-  <time datetime="2020-10-29 11:14:32 -0400 EDT" itemprop="datePublished">2020-10-29</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1132-reported-posts-ii/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/1127-user-purchase-platform/"
-    >1127 User Purchase Platform</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 1127 User Purchase Platform   Write an SQL query to find the total number of users and the total amount spent using mobile only, desktop only and both mobile and desktop together for each date.
-The query result format is in the following example:
-Spending table: +---------+------------+----------+--------+ | user_id | spend_date | platform | amount | +---------+------------+----------+--------+ | 1 | 2019-07-01 | mobile | 100 | | 1 | 2019-07-01 | desktop | 100 | | 2 | 2019-07-01 | mobile | 100 | | 2 | 2019-07-02 | mobile | 100 | | 3 | 2019-07-01 | desktop | 100 | | 3 | 2019-07-02 | desktop | 100 | +---------+------------+----------+--------+ Result table: +------------+----------+--------------+-------------+ | spend_date | platform | total_amount | total_users | +------------+----------+--------------+-------------+ | 2019-07-01 | desktop | 100 | 1 | | 2019-07-01 | mobile | 100 | 1 | | 2019-07-01 | both | 200 | 1 | | 2019-07-02 | desktop | 100 | 1 | | 2019-07-02 | mobile | 100 | 1 | | 2019-07-02 | both | 0 | 0 | +------------+----------+--------------+-------------+ On 2019-07-01, user 1 purchased using both desktop and mobile, user 2 purchased using mobile only and user 3 purchased using desktop only.
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1127-user-purchase-platform/" class="">
-  <time datetime="2020-10-29 11:14:19 -0400 EDT" itemprop="datePublished">2020-10-29</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1127-user-purchase-platform/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
     href="/posts/1126-active-businesses/"
     >1126 Active Businesses</a
   >
@@ -500,6 +424,82 @@ Spending table: +---------+------------+----------+--------+ | user_id | spend_d
   </span>
 
         <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1077-project-employees-iii/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/1069-product-sales-analysis-ii/"
+    >1069 Product Sales Analysis II</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 1069 Product Sales Analysis II   Write an SQL query that reports the total quantity sold for every product id.
+ Solution 2020-10-29 Notes: SELECT product_id, SUM(quantity) AS total_quantity FROM sales GROUP BY 1 ORDER BY 1  
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/1069-product-sales-analysis-ii/" class="">
+  <time datetime="2020-10-29 09:15:54 -0400 EDT" itemprop="datePublished">2020-10-29</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1069-product-sales-analysis-ii/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/1068-product-sales-analysis-i/"
+    >1068 Product Sales Analysis I</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 1068 Product Sales Analysis I   Write an SQL query that reports all product names of the products in the Sales table along with their selling year and price.
+ Solution 2020-10-29 Notes: select a.product_name, b.year, b.price from product a join sales b on a.product_id = b.product_id order by year, price ;  
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/1068-product-sales-analysis-i/" class="">
+  <time datetime="2020-10-29 09:11:53 -0400 EDT" itemprop="datePublished">2020-10-29</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1068-product-sales-analysis-i/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article></div>
   

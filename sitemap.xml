@@ -66,27 +66,6 @@
   </url>
   
   <url>
-    <loc>https://foxisawesome.github.io/posts/1633-percentage-of-users-attended-a-contest/</loc>
-    <lastmod>2020-11-06T13:33:11-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/posts/</loc>
-    <lastmod>2020-11-06T13:33:11-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/posts/1565-unique-orders-and-customers-per-month/</loc>
-    <lastmod>2020-11-06T13:32:52-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://foxisawesome.github.io/posts/1351-count-negative-numbers-in-a-sorted-matrix/</loc>
     <lastmod>2020-11-04T13:35:18-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -102,6 +81,13 @@
   
   <url>
     <loc>https://foxisawesome.github.io/tags/matrix/</loc>
+    <lastmod>2020-11-04T13:35:18-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/</loc>
     <lastmod>2020-11-04T13:35:18-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -1202,6 +1188,20 @@
   <url>
     <loc>https://foxisawesome.github.io/posts/55-jump-game/</loc>
     <lastmod>2020-10-06T19:25:01-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/1633-percentage-of-users-attended-a-contest/</loc>
+    <lastmod>2020-10-06T13:33:11-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/1565-unique-orders-and-customers-per-month/</loc>
+    <lastmod>2020-10-06T13:32:52-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

@@ -284,84 +284,6 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/383-ransom-note/"
-    >383 Ransom Note</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 383 Ransom Note   Given an arbitrary ransom note string and another string containing letters from all the magazines, write a function that will return true if the ransom note can be constructed from the magazines ; otherwise, it will return false.
-Each letter in the magazine string can only be used once in your ransom note.
-Input: ransomNote = &quot;a&quot;, magazine = &quot;b&quot; Output: false   Solution 2020-10-19 Notes:  edge case is acutally hard to get them right in the first place  class Solution: def canConstruct(self, ransomNote: str, magazine: str) -&gt; bool: if not ransomNote: return True if not magazine: return False d = collections.
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/383-ransom-note/" class="">
-  <time datetime="2020-10-19 19:35:54 -0400 EDT" itemprop="datePublished">2020-10-19</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/hashtable/"> hashtable </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/383-ransom-note/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/682-baseball-game/"
-    >682 Baseball Game</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 682 Baseball Game You are keeping score for a baseball game with strange rules. The game consists of several rounds, where the scores of past rounds may affect future rounds' scores. At the beginning of the game, you start with an empty record. You are given a list of strings ops, where ops[i] is the ith operation you must apply to the record and is one of the following:
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/682-baseball-game/" class="">
-  <time datetime="2020-10-19 16:34:58 -0400 EDT" itemprop="datePublished">2020-10-19</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/string/"> string </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/682-baseball-game/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
     href="/posts/1167-minimum-cost-to-connect-sticks/"
     >1167 Minimum Cost to Connect Sticks</a
   >
@@ -504,6 +426,83 @@ Return the result table in any order.
   </span>
 
         <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1076-project-employees-ii/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/619-biggest-single-number/"
+    >619 Biggest Single Number</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 619 Biggest Single Number   Table my_numbers contains many numbers in column num including duplicated ones. Can you write a SQL query to find the biggest number, which only appears once
+ Solution 2020-10-19 Notes: # 1 SELECT MAX(a.num) AS num FROM ( SELECT num FROM my_numbers GROUP BY num HAVING COUNT(num) = 1 ) a #2 SELECT MAX(num) AS num FROM ( SELECT *, COUNT(*) OVER(PARTITION BY num) AS ct FROM my_numbers ) a WHERE ct = 1  
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/619-biggest-single-number/" class="">
+  <time datetime="2020-10-19 15:04:59 -0400 EDT" itemprop="datePublished">2020-10-19</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/619-biggest-single-number/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/196-delete-duplicate-emails/"
+    >196 Delete Duplicate Emails</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 196 Delete Duplicate Emails   Write a SQL query to delete all duplicate email entries in a table named Person, keeping only unique emails based on its smallest Id.
++----+------------------+ | Id | Email | +----+------------------+ | 1 | john@example.com | | 2 | bob@example.com | | 3 | john@example.com | +----+------------------+ Id is the primary key column for this table.  For example, after running your query, the above Person table should have the following rows:
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/196-delete-duplicate-emails/" class="">
+  <time datetime="2020-10-19 14:53:47 -0400 EDT" itemprop="datePublished">2020-10-19</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+    <a class="article-tag-link" href="/tags/dia/"> dia </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/196-delete-duplicate-emails/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article></div>
   
