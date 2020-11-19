@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/tags/sort/</link>
     <description>Recent content in sort on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 03 Nov 2020 10:15:17 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/sort/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>987 Vertical Order Traversal of a Binary Tree</title>
+      <link>https://foxisawesome.github.io/posts/987-vertical-order-traversal-of-a-binary-tree/</link>
+      <pubDate>Sun, 13 Sep 2020 13:59:40 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/987-vertical-order-traversal-of-a-binary-tree/</guid>
+      <description>LC 987 Vertical Order Traversal of a Binary Tree Given a binary tree, return the vertical order traversal of its nodes values. For each node at position (X, Y), its left and right children respectively will be at positions (X-1, Y-1) and (X+1, Y-1). Running a vertical line from X = -infinity to X = +infinity, whenever the vertical line touches some nodes, we report the values of the nodes</description>
+    </item>
     
     <item>
       <title>501 Find Mode in Binary Search Tree</title>
@@ -189,15 +198,6 @@ For example, this binary tree [1,2,2,3,4,4,3] is symmetric:
       
       <guid>https://foxisawesome.github.io/posts/100-same-tree/</guid>
       <description>LC 100 Same Tree Given two binary trees, write a function to check if they are the same or not. Two binary trees are considered the same if they are structurally identical and the nodes have the same value. Solution 2020-09-09 Notes: Two roots 的pattern 和 single root一样。Tree 刷的略有感</description>
-    </item>
-    
-    <item>
-      <title>112 Path Sum</title>
-      <link>https://foxisawesome.github.io/posts/112-path-sum/</link>
-      <pubDate>Wed, 09 Sep 2020 21:47:10 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/112-path-sum/</guid>
-      <description>LC 112 Path Sum Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum. Given the below binary tree and sum = 22, 5 / \ 4 8 / / \ 11 13 4 / \ \ 7 2 1 return true, as there exist a root-to-leaf path 5-&amp;gt;4-&amp;gt;11-&amp;gt;2 which sum</description>
     </item>
     
   </channel>

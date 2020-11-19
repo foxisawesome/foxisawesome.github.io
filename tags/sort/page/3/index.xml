@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/tags/sort/</link>
     <description>Recent content in sort on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 03 Nov 2020 10:15:17 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/sort/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>580 Count Student Number in Departments</title>
+      <link>https://foxisawesome.github.io/posts/580-count-student-number-in-departments/</link>
+      <pubDate>Sat, 24 Oct 2020 20:11:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/580-count-student-number-in-departments/</guid>
+      <description>LC 580 Count Student Number in Departments Write a query to print the respective department name and number of students majoring in each department for all departments in the department table (even ones with no current students). Sort your results by descending number of students; if two or more departments have the same number of students, then sort those departments alphabetically by department name. *student* table: | student_id | student_name</description>
+    </item>
     
     <item>
       <title>578 Get Highest Answer Rate Question</title>
@@ -185,17 +194,6 @@ Input: ransomNote = &amp;quot;a&amp;quot;, magazine = &amp;quot;b&amp;quot; Outp
       
       <guid>https://foxisawesome.github.io/posts/1083-sales-analysis-ii/</guid>
       <description>LC 1083 Sales Analysis II Write an SQL query that reports the buyers who have bought S8 but not iPhone. Note that S8 and iPhone are products present in the Product table. The query result format is in the following example: Product table: +------------+--------------+------------+ | product_id | product_name | unit_price | +------------+--------------+------------+ | 1 | S8 | 1000 | | 2 | G4 | 800 | | 3 | iPhone</description>
-    </item>
-    
-    <item>
-      <title>1495 Friendly Movies Streamed Last Month</title>
-      <link>https://foxisawesome.github.io/posts/1495-friendly-movies-streamed-last-month/</link>
-      <pubDate>Mon, 19 Oct 2020 15:22:26 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1495-friendly-movies-streamed-last-month/</guid>
-      <description>LC 1495 Friendly Movies Streamed Last Month   Write an SQL query to report the distinct titles of the kid-friendly movies streamed in June 2020.
-Return the result table in any order.
- Solution 2020-10-19 Notes: select distinct title from content a join TVProgram b on a.content_id = b.content_id where a.kids_content = &#39;Y&#39; and a.content_type = &#39;Movies&#39; and month(b.program_date) = 6  </description>
     </item>
     
   </channel>

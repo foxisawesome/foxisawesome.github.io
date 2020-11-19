@@ -5,10 +5,21 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 06 Nov 2020 13:34:15 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>316 Remove Dup Letters</title>
+      <link>https://foxisawesome.github.io/posts/316-remove-dup-letters/</link>
+      <pubDate>Fri, 04 Sep 2020 19:56:18 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/316-remove-dup-letters/</guid>
+      <description>LC 316 Remove Dup Letters  Given a string which contains only lowercase letters, remove duplicate letters so that every letter appears once and only once. You must make sure your result is the smallest in lexicographical order among all possible results.
+Input: &amp;quot;cbacdcbc&amp;quot; Output: &amp;quot;acdb&amp;quot;   Solution 2020-09-04 Notes:   Need one-pass of s to get the counter of each letter.
+  a second pass, dial down counter at each iteration.</description>
+    </item>
     
     <item>
       <title>1081 Smallest Subsequence of Distinct Char</title>
@@ -203,15 +214,6 @@ board = [ [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;E&#39;], [&#39;S&#39;,&#39;F
       
       <guid>https://foxisawesome.github.io/posts/328-odd-even-linked-list/</guid>
       <description>LC 328 Odd Even Linked List Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes. You should try to do it in place. The program should run in O(1) space complexity and O(nodes) time complexity. Example 1: Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL Output: 1-&amp;gt;3-&amp;gt;5-&amp;gt;2-&amp;gt;4-&amp;gt;NULL Solution 2020-08-30 Notes: linked list 终</description>
-    </item>
-    
-    <item>
-      <title>1266 Minimum Time Visiting All Points</title>
-      <link>https://foxisawesome.github.io/posts/1266-minimum-time-visiting-all-points/</link>
-      <pubDate>Sun, 30 Aug 2020 21:24:22 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1266-minimum-time-visiting-all-points/</guid>
-      <description>LC 1266 Minimum Time Visiting All Points On a plane there are n points with integer coordinates points[i] = [xi, yi]. Your task is to find the minimum time in seconds to visit all points. You can move according to the next rules: In one second always you can either move vertically, horizontally by one unit or diagonally (it means to move one unit vertically and one unit horizontally in</description>
     </item>
     
   </channel>

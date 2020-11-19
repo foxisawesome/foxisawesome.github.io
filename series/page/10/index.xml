@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>339 Nested List Weight Sum</title>
+      <link>https://foxisawesome.github.io/posts/339-nested-list-weight-sum/</link>
+      <pubDate>Thu, 01 Oct 2020 15:49:03 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/339-nested-list-weight-sum/</guid>
+      <description>LC 339 Nested List Weight Sum Given a nested list of integers, return the sum of all integers in the list weighted by their depth. Each element is either an integer, or a list &amp;ndash; whose elements may also be integers or other lists. Example 1: Input: [[1,1],2,[1,1]] Output: 10 Explanation: Four 1&#39;s at depth 2, one 2 at depth 1. Example 2: Input: [1,[4,[6]]] Output: 27 Explanation: One 1</description>
+    </item>
+    
+    <item>
       <title>224 Basic Calculator</title>
       <link>https://foxisawesome.github.io/posts/224-basic-calculator/</link>
       <pubDate>Thu, 01 Oct 2020 14:11:32 -0400</pubDate>
@@ -190,15 +199,6 @@ Activity table: +-----------+-----------+------------+--------------+ | player_i
       
       <guid>https://foxisawesome.github.io/posts/567-permutation-in-string/</guid>
       <description>LC 567 Permutation in String Given two strings s1 and s2, write a function to return true if s2 contains the permutation of s1. In other words, one of the first string&amp;rsquo;s permutations is the substring of the second string. Input: s1 = &amp;quot;ab&amp;quot; s2 = &amp;quot;eidbaooo&amp;quot; Output: True Explanation: s2 contains one permutation of s1 (&amp;quot;ba&amp;quot;). Solution 2020-09-29 Notes: 这题用了slidin</description>
-    </item>
-    
-    <item>
-      <title>930 Binary Subarrays With Sum</title>
-      <link>https://foxisawesome.github.io/posts/930-binary-subarrays-with-sum/</link>
-      <pubDate>Tue, 29 Sep 2020 11:36:28 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/930-binary-subarrays-with-sum/</guid>
-      <description>LC 930 Binary Subarrays With Sum In an array A of 0s and 1s, how many non-empty subarrays have sum S? Input: A = [1,0,1,0,1], S = 2 Output: 4 Explanation: The 4 subarrays are bolded below: [1,0,1,0,1] [1,0,1,0,1] [1,0,1,0,1] [1,0,1,0,1] Solution 2020-09-29 Notes: 第一刷时按topic来刷的，这一些列题都几乎一摸一样</description>
     </item>
     
   </channel>

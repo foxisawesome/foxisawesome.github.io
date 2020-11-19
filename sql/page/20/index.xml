@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Sqls on Q. Weng</title>
+    <link>https://foxisawesome.github.io/sql/</link>
+    <description>Recent content in Sqls on Q. Weng</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <lastBuildDate>Fri, 06 Nov 2020 13:34:15 -0500</lastBuildDate>
+    
+        <atom:link href="https://foxisawesome.github.io/sql/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title></title>
+      <link>https://foxisawesome.github.io/posts/%E5%89%8D%E7%BC%80%E5%92%8C%E6%8A%80%E5%B7%A7/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/%E5%89%8D%E7%BC%80%E5%92%8C%E6%8A%80%E5%B7%A7/</guid>
+      <description>前缀和技巧 今天来聊一道简单却十分巧妙的算法问题：算出一共有几个和为 k 的子数组。 那我把所有子数组都穷举出来，算它们的和，看看谁的和等于 k 不就行</description>
+    </item>
+    
+  </channel>
+</rss>

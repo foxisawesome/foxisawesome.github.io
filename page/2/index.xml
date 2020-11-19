@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 06 Nov 2020 13:34:15 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1251 Average Selling Price</title>
+      <link>https://foxisawesome.github.io/posts/1251-average-selling-price/</link>
+      <pubDate>Thu, 29 Oct 2020 11:18:40 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1251-average-selling-price/</guid>
+      <description>LC 1251 Average Selling Price Write an SQL query to find the average selling price for each product. average_price should be rounded to 2 decimal places. The query result format is in the following example: Prices table: +------------+------------+------------+--------+ | product_id | start_date | end_date | price | +------------+------------+------------+--------+ | 1 | 2019-02-17 | 2019-02-28 | 5 | | 1 | 2019-03-01 | 2019-03-22 | 20 | | 2 | 2019-02-01</description>
+    </item>
     
     <item>
       <title>1225 Report Contiguous Dates</title>
@@ -191,15 +200,6 @@ For example:
       
       <guid>https://foxisawesome.github.io/posts/586-customer-placing-the-largest-number-of-orders/</guid>
       <description>LC 586 Customer Placing the Largest Number of Orders Query the customer_number from the *orders* table for the customer who has placed the largest number of orders. It is guaranteed that exactly one customer will have placed more orders than any other customer. Solution 2020-10-24 Notes: 秒了 select customer_number from (select customer_number, count(order_number) as ct from orders group by 1 order by ct desc) a limit 1</description>
-    </item>
-    
-    <item>
-      <title>580 Count Student Number in Departments</title>
-      <link>https://foxisawesome.github.io/posts/580-count-student-number-in-departments/</link>
-      <pubDate>Sat, 24 Oct 2020 20:11:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/580-count-student-number-in-departments/</guid>
-      <description>LC 580 Count Student Number in Departments Write a query to print the respective department name and number of students majoring in each department for all departments in the department table (even ones with no current students). Sort your results by descending number of students; if two or more departments have the same number of students, then sort those departments alphabetically by department name. *student* table: | student_id | student_name</description>
     </item>
     
   </channel>

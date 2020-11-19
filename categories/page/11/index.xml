@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/categories/</link>
     <description>Recent content in Categories on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 06 Nov 2020 13:34:15 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>930 Binary Subarrays With Sum</title>
+      <link>https://foxisawesome.github.io/posts/930-binary-subarrays-with-sum/</link>
+      <pubDate>Tue, 29 Sep 2020 11:36:28 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/930-binary-subarrays-with-sum/</guid>
+      <description>LC 930 Binary Subarrays With Sum In an array A of 0s and 1s, how many non-empty subarrays have sum S? Input: A = [1,0,1,0,1], S = 2 Output: 4 Explanation: The 4 subarrays are bolded below: [1,0,1,0,1] [1,0,1,0,1] [1,0,1,0,1] [1,0,1,0,1] Solution 2020-09-29 Notes: 第一刷时按topic来刷的，这一些列题都几乎一摸一样</description>
+    </item>
     
     <item>
       <title>1004 Max Consecutive Ones III</title>
@@ -179,15 +188,6 @@
       
       <guid>https://foxisawesome.github.io/posts/819-most-common-word/</guid>
       <description>LC 819 Most Common Word Given a paragraph and a list of banned words, return the most frequent word that is not in the list of banned words. It is guaranteed there is at least one word that isn&amp;rsquo;t banned, and that the answer is unique. Words in the list of banned words are given in lowercase, and free of punctuation. Words in the paragraph are not case sensitive. The</description>
-    </item>
-    
-    <item>
-      <title>1137 N Th Tribonacci Number</title>
-      <link>https://foxisawesome.github.io/posts/1137-n-th-tribonacci-number/</link>
-      <pubDate>Fri, 25 Sep 2020 14:13:22 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1137-n-th-tribonacci-number/</guid>
-      <description>LC 1137 N Th Tribonacci Number The Tribonacci sequence Tn is defined as follows: T0 = 0, T1 = 1, T2 = 1, and Tn+3 = Tn + Tn+1 + Tn+2 for n &amp;gt;= 0. Given n, return the value of Tn. Solution 2020-09-25 Notes: 加个memo在 def __init__(self): 能把整个recursion写在一</description>
     </item>
     
   </channel>

@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/tags/sort/</link>
     <description>Recent content in sort on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 03 Nov 2020 10:15:17 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/sort/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>112 Path Sum</title>
+      <link>https://foxisawesome.github.io/posts/112-path-sum/</link>
+      <pubDate>Wed, 09 Sep 2020 21:47:10 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/112-path-sum/</guid>
+      <description>LC 112 Path Sum Given a binary tree and a sum, determine if the tree has a root-to-leaf path such that adding up all the values along the path equals the given sum. Given the below binary tree and sum = 22, 5 / \ 4 8 / / \ 11 13 4 / \ \ 7 2 1 return true, as there exist a root-to-leaf path 5-&amp;gt;4-&amp;gt;11-&amp;gt;2 which sum</description>
+    </item>
     
     <item>
       <title>104 Maximum Depth of Binary Tree</title>
@@ -197,17 +206,6 @@ Note: Your algorithm should have a linear runtime complexity. Could you implemen
       
       <guid>https://foxisawesome.github.io/posts/1249-minimum-remove-to-make-valid-parentheses/</guid>
       <description>LC 1249 Minimum Remove to Make Valid Parentheses Given a string s of &#39;(&#39; , &#39;)&#39; and lowercase English characters. Your task is to remove the minimum number of parentheses ( &#39;(&#39; or &#39;)&#39;, in any positions ) so that the resulting parentheses string is valid and return any valid string. Input: s = &amp;quot;lee(t(c)o)de)&amp;quot; Output: &amp;quot;lee(t(c)o)de&amp;quot; Explanation: &amp;quot;lee(t(co)de)&amp;quot; , &amp;quot;lee(t(c)ode)&amp;quot; would also be accepted. Solution 2020-09-05 Notes: 很简</description>
-    </item>
-    
-    <item>
-      <title>316 Remove Dup Letters</title>
-      <link>https://foxisawesome.github.io/posts/316-remove-dup-letters/</link>
-      <pubDate>Fri, 04 Sep 2020 19:56:18 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/316-remove-dup-letters/</guid>
-      <description>LC 316 Remove Dup Letters  Given a string which contains only lowercase letters, remove duplicate letters so that every letter appears once and only once. You must make sure your result is the smallest in lexicographical order among all possible results.
-Input: &amp;quot;cbacdcbc&amp;quot; Output: &amp;quot;acdb&amp;quot;   Solution 2020-09-04 Notes:   Need one-pass of s to get the counter of each letter.
-  a second pass, dial down counter at each iteration.</description>
     </item>
     
   </channel>

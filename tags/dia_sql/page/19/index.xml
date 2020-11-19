@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>1266 Minimum Time Visiting All Points</title>
+      <link>https://foxisawesome.github.io/posts/1266-minimum-time-visiting-all-points/</link>
+      <pubDate>Sun, 30 Aug 2020 21:24:22 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1266-minimum-time-visiting-all-points/</guid>
+      <description>LC 1266 Minimum Time Visiting All Points On a plane there are n points with integer coordinates points[i] = [xi, yi]. Your task is to find the minimum time in seconds to visit all points. You can move according to the next rules: In one second always you can either move vertically, horizontally by one unit or diagonally (it means to move one unit vertically and one unit horizontally in</description>
+    </item>
+    
+    <item>
       <title>530 Min Abs Dif BST</title>
       <link>https://foxisawesome.github.io/posts/530-min-abs-dif-bst/</link>
       <pubDate>Sun, 30 Aug 2020 20:59:36 -0400</pubDate>
@@ -197,15 +206,6 @@ Hobbies Photography • Sports</description>
 1. Random Undersampling and Oversampling A widely adopted and perhaps the most straightforward method for dealing with highly imbalanced datasets is called resampling. It consists of removing samples from the majority class (under-sampling) and/or adding more examples from the minority class (over-sampling).
 Let us first create some example imbalanced data.
 from sklearn.datasets import make_classification X, y = make_classification( n_classes=2, class_sep=1.5, weights=[0.</description>
-    </item>
-    
-    <item>
-      <title></title>
-      <link>https://foxisawesome.github.io/posts/%E5%89%8D%E7%BC%80%E5%92%8C%E6%8A%80%E5%B7%A7/</link>
-      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/%E5%89%8D%E7%BC%80%E5%92%8C%E6%8A%80%E5%B7%A7/</guid>
-      <description>前缀和技巧 今天来聊一道简单却十分巧妙的算法问题：算出一共有几个和为 k 的子数组。 那我把所有子数组都穷举出来，算它们的和，看看谁的和等于 k 不就行</description>
     </item>
     
   </channel>

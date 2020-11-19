@@ -5,10 +5,21 @@
     <link>https://foxisawesome.github.io/categories/algo/</link>
     <description>Recent content in algo on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Nov 2020 13:35:18 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/algo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1495 Friendly Movies Streamed Last Month</title>
+      <link>https://foxisawesome.github.io/posts/1495-friendly-movies-streamed-last-month/</link>
+      <pubDate>Mon, 19 Oct 2020 15:22:26 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1495-friendly-movies-streamed-last-month/</guid>
+      <description>LC 1495 Friendly Movies Streamed Last Month   Write an SQL query to report the distinct titles of the kid-friendly movies streamed in June 2020.
+Return the result table in any order.
+ Solution 2020-10-19 Notes: select distinct title from content a join TVProgram b on a.content_id = b.content_id where a.kids_content = &#39;Y&#39; and a.content_type = &#39;Movies&#39; and month(b.program_date) = 6  </description>
+    </item>
     
     <item>
       <title>1076 Project Employees II</title>
@@ -183,15 +194,6 @@
       
       <guid>https://foxisawesome.github.io/posts/723-candy-crush/</guid>
       <description>LC 723 Candy Crush This question is about implementing a basic elimination algorithm for Candy Crush. Given a 2D integer array board representing the grid of candy, different positive integers board[i][j] represent different types of candies. A value of board[i][j] = 0 represents that the cell at position (i, j) is empty. The given board represents the state of the game following the player&amp;rsquo;s move. Now, you need to restore</description>
-    </item>
-    
-    <item>
-      <title>1470 Shuffle the Array</title>
-      <link>https://foxisawesome.github.io/posts/1470-shuffle-the-array/</link>
-      <pubDate>Sun, 18 Oct 2020 15:22:00 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1470-shuffle-the-array/</guid>
-      <description>LC 1470 Shuffle the Array Given the array nums consisting of 2n elements in the form [x1,x2,...,xn,y1,y2,...,yn]. Return the array in the form [x1,y1,x2,y2,...,xn,yn]. Solution 2020-10-18 Notes: 不能这么写 [i,j for i, j in zip(nums[:n],nums[n:])] class Solution: def shuffle(self, nums: List[int], n: int) -&amp;gt; List[int]: ans = [] for i, j in zip(nums[:n], nums[n:]): ans += [i] + [j] return ans # Time O(N) # Space O(N)</description>
     </item>
     
   </channel>

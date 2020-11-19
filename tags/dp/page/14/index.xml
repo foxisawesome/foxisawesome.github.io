@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>77 Combinations</title>
+      <link>https://foxisawesome.github.io/posts/77-combinations/</link>
+      <pubDate>Mon, 21 Sep 2020 14:31:35 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/77-combinations/</guid>
+      <description>LC 77 Combinations Given two integers n and k, return all possible combinations of k numbers out of 1 &amp;hellip; n. Solution 2020-09-21 Notes: Dfs 模版搞一下。没啥特别的。 class Solution: def combine(self, n: int, k: int) -&amp;gt; List[List[int]]: out = [] nums = [i for i in range(1,n+1)] self.dfs(n,k,nums,[],out) return out def dfs(self, n, k, nums, path, out): if len(path)==k: out.append(path[:])</description>
+    </item>
+    
+    <item>
       <title>40 Combination Sum Ii</title>
       <link>https://foxisawesome.github.io/posts/40-combination-sum-ii/</link>
       <pubDate>Mon, 21 Sep 2020 14:17:59 -0400</pubDate>
@@ -180,15 +189,6 @@ Input: 1 0 1 0 0 1 0 1 1 1 1 1 1 1 1 1 0 0 1 0 Output: 4   Solution 2020-09-20 N
       
       <guid>https://foxisawesome.github.io/posts/20-valid-parentheses/</guid>
       <description>LC 20 Valid Parentheses Given a string s containing just the characters &#39;(&#39;, &#39;)&#39;, &#39;{&#39;, &#39;}&#39;, &#39;[&#39; and &#39;]&#39;, determine if the input string is valid. An input string is valid if: Open brackets must be closed by the same type of brackets. Open brackets must be closed in the correct order. Solution 2020-09-19 Notes: 好经典的题。 思路如解。 class Solution: def isValid(self,</description>
-    </item>
-    
-    <item>
-      <title>953 Verifying an Alien Dictionary</title>
-      <link>https://foxisawesome.github.io/posts/953-verifying-an-alien-dictionary/</link>
-      <pubDate>Sat, 19 Sep 2020 20:17:38 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/953-verifying-an-alien-dictionary/</guid>
-      <description>LC 953 Verifying an Alien Dictionary In an alien language, surprisingly they also use english lowercase letters, but possibly in a different order. The order of the alphabet is some permutation of lowercase letters. Given a sequence of words written in the alien language, and the order of the alphabet, return true if and only if the given words are sorted lexicographicaly in this alien language. Input: words = [&amp;quot;word&amp;quot;,&amp;quot;world&amp;quot;,&amp;quot;row&amp;quot;],</description>
     </item>
     
   </channel>

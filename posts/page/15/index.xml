@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Wed, 04 Nov 2020 13:35:18 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>953 Verifying an Alien Dictionary</title>
+      <link>https://foxisawesome.github.io/posts/953-verifying-an-alien-dictionary/</link>
+      <pubDate>Sat, 19 Sep 2020 20:17:38 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/953-verifying-an-alien-dictionary/</guid>
+      <description>LC 953 Verifying an Alien Dictionary In an alien language, surprisingly they also use english lowercase letters, but possibly in a different order. The order of the alphabet is some permutation of lowercase letters. Given a sequence of words written in the alien language, and the order of the alphabet, return true if and only if the given words are sorted lexicographicaly in this alien language. Input: words = [&amp;quot;word&amp;quot;,&amp;quot;world&amp;quot;,&amp;quot;row&amp;quot;],</description>
+    </item>
     
     <item>
       <title>70 Climbing Stairs</title>
@@ -184,15 +193,6 @@ Input: [1,3,null,null,2] Output: [3,1,null,null,2]   Solution 2020-09-13 Notes:
       
       <guid>https://foxisawesome.github.io/posts/199-binary-tree-right-side-view/</guid>
       <description>LC 199 Binary Tree Right Side View Given a binary tree, imagine yourself standing on the right side of it, return the values of the nodes you can see ordered from top to bottom. Example: Input: [1,2,3,null,5,null,4] Output: [1, 3, 4] Explanation: 1 &amp;lt;--- / \ 2 3 &amp;lt;--- \ \ 5 4 &amp;lt;--- Solution 2020-09-13 Notes: 一刷虽然做出来了 但是在输出</description>
-    </item>
-    
-    <item>
-      <title>987 Vertical Order Traversal of a Binary Tree</title>
-      <link>https://foxisawesome.github.io/posts/987-vertical-order-traversal-of-a-binary-tree/</link>
-      <pubDate>Sun, 13 Sep 2020 13:59:40 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/987-vertical-order-traversal-of-a-binary-tree/</guid>
-      <description>LC 987 Vertical Order Traversal of a Binary Tree Given a binary tree, return the vertical order traversal of its nodes values. For each node at position (X, Y), its left and right children respectively will be at positions (X-1, Y-1) and (X+1, Y-1). Running a vertical line from X = -infinity to X = +infinity, whenever the vertical line touches some nodes, we report the values of the nodes</description>
     </item>
     
   </channel>

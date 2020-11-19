@@ -5,10 +5,21 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 06 Nov 2020 13:34:15 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1107 New Users Daily Count</title>
+      <link>https://foxisawesome.github.io/posts/1107-new-users-daily-count/</link>
+      <pubDate>Fri, 09 Oct 2020 18:54:37 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1107-new-users-daily-count/</guid>
+      <description>LC 1107 New Users Daily Count   Write an SQL query that reports for every date within at most 90 days from today, the number of users that logged in for the first time on that date. Assume today is 2019-06-30.
+The query result format is in the following example:
+Traffic table: +---------+----------+---------------+ | user_id | activity | activity_date | +---------+----------+---------------+ | 1 | login | 2019-05-01 | | 1 | homepage | 2019-05-01 | | 1 | logout | 2019-05-01 | | 2 | login | 2019-06-21 | | 2 | logout | 2019-06-21 | | 3 | login | 2019-01-01 | | 3 | jobs | 2019-01-01 | | 3 | logout | 2019-01-01 | | 4 | login | 2019-06-21 | | 4 | groups | 2019-06-21 | | 4 | logout | 2019-06-21 | | 5 | login | 2019-03-01 | | 5 | logout | 2019-03-01 | | 5 | login | 2019-06-21 | | 5 | logout | 2019-06-21 | +---------+----------+---------------+ Result table: +------------+-------------+ | login_date | user_count | +------------+-------------+ | 2019-05-01 | 1 | | 2019-06-21 | 2 | +------------+-------------+   Solution 2020-10-09 Notes: SELECT activity_date AS login_date, COUNT(user_id) AS user_count FROM( SELECT *, ROW_NUMBER() OVER(PARTITION BY user_id ORDER BY activity_date) AS nr FROM traffic WHERE activity = &#39;login&#39; ) a WHERE nr = 1 and DATEDIFF(&#39;2019-06-30&#39;, activity_date) &amp;lt;= 90 GROUP BY 1  </description>
+    </item>
     
     <item>
       <title>1484 Group Sold Products by the Date</title>
@@ -195,15 +206,6 @@ Delivery table: +-------------+-------------+------------+----------------------
       
       <guid>https://foxisawesome.github.io/posts/55-jump-game/</guid>
       <description>LC 55 Jump Game Given an array of non-negative integers, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Determine if you are able to reach the last index. Input: nums = [2,3,1,1,4] Output: true Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index. Solution 2020-10-06 Notes: 这</description>
-    </item>
-    
-    <item>
-      <title>1633 Percentage of Users Attended a Contest</title>
-      <link>https://foxisawesome.github.io/posts/1633-percentage-of-users-attended-a-contest/</link>
-      <pubDate>Tue, 06 Oct 2020 13:33:11 -0500</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1633-percentage-of-users-attended-a-contest/</guid>
-      <description>LC 1633 Percentage of Users Attended a Contest Write an SQL query to find the percentage of the users registered in each contest rounded to two decimals. Return the result table ordered by percentage in descending order. In case of a tie, order it by contest_id in ascending order. Users table: +---------+-----------+ | user_id | user_name | +---------+-----------+ | 6 | Alice | | 2 | Bob | | 7</description>
     </item>
     
   </channel>

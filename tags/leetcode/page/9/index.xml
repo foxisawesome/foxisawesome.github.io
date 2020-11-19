@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/tags/leetcode/</link>
     <description>Recent content in leetcode on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 06 Nov 2020 13:34:15 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>113 Path Sum II</title>
+      <link>https://foxisawesome.github.io/posts/113-path-sum-ii/</link>
+      <pubDate>Sun, 04 Oct 2020 15:04:33 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/113-path-sum-ii/</guid>
+      <description>LC 113 Path Sum II Given a binary tree and a sum, find all root-to-leaf paths where each path&amp;rsquo;s sum equals the given sum. Given the below binary tree and sum = 22, 5 / \ 4 8 / / \ 11 13 4 / \ / \ 7 2 5 1 Return: [ [5,4,11,2], [5,8,4,5] ] Solution 2020-10-04 Notes: 很明显的dfs题。但</description>
+    </item>
     
     <item>
       <title>114 Flatten Binary Tree to Linked List</title>
@@ -181,15 +190,6 @@ Warehouse table: +------------+--------------+-------------+ | name | product_id
       
       <guid>https://foxisawesome.github.io/posts/463-island-perimeter/</guid>
       <description>LC 463 Island Perimeter You are given row x col grid representing a map where grid[i][j] = 1 represents land and grid[i][j] = 0 represents water. Grid cells are connected horizontally/vertically (not diagonally). The grid is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells). The island doesn&amp;rsquo;t have &amp;ldquo;lakes&amp;rdquo;, meaning the water inside isn&amp;rsquo;t connected to the water around the island.</description>
-    </item>
-    
-    <item>
-      <title>339 Nested List Weight Sum</title>
-      <link>https://foxisawesome.github.io/posts/339-nested-list-weight-sum/</link>
-      <pubDate>Thu, 01 Oct 2020 15:49:03 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/339-nested-list-weight-sum/</guid>
-      <description>LC 339 Nested List Weight Sum Given a nested list of integers, return the sum of all integers in the list weighted by their depth. Each element is either an integer, or a list &amp;ndash; whose elements may also be integers or other lists. Example 1: Input: [[1,1],2,[1,1]] Output: 10 Explanation: Four 1&#39;s at depth 2, one 2 at depth 1. Example 2: Input: [1,[4,[6]]] Output: 27 Explanation: One 1</description>
     </item>
     
   </channel>

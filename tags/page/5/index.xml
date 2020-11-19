@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/tags/</link>
     <description>Recent content in Tags on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Fri, 06 Nov 2020 13:34:15 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1470 Shuffle the Array</title>
+      <link>https://foxisawesome.github.io/posts/1470-shuffle-the-array/</link>
+      <pubDate>Sun, 18 Oct 2020 15:22:00 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1470-shuffle-the-array/</guid>
+      <description>LC 1470 Shuffle the Array Given the array nums consisting of 2n elements in the form [x1,x2,...,xn,y1,y2,...,yn]. Return the array in the form [x1,y1,x2,y2,...,xn,yn]. Solution 2020-10-18 Notes: 不能这么写 [i,j for i, j in zip(nums[:n],nums[n:])] class Solution: def shuffle(self, nums: List[int], n: int) -&amp;gt; List[int]: ans = [] for i, j in zip(nums[:n], nums[n:]): ans += [i] + [j] return ans # Time O(N) # Space O(N)</description>
+    </item>
     
     <item>
       <title>1431 Kids With the Greatest Number of Candies</title>
@@ -190,16 +199,6 @@ Write a query to find the shortest distance between two points in these points.
       
       <guid>https://foxisawesome.github.io/posts/602-friend-requests-ii-who-has-the-most-friends/</guid>
       <description>LC 602 Friend Requests Ii Who Has the Most Friends Write a query to find the the people who has most friends and the most friends number under the following rules: It is guaranteed there is only 1 people having the most friends. The friend request could only been accepted once, which mean there is no multiple records with the same requester_id and accepter_id value. For the sample data above,</description>
-    </item>
-    
-    <item>
-      <title>974 Subarray Sums Divisible by K</title>
-      <link>https://foxisawesome.github.io/posts/974-subarray-sums-divisible-by-k/</link>
-      <pubDate>Wed, 14 Oct 2020 17:17:02 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/974-subarray-sums-divisible-by-k/</guid>
-      <description>LC 974 Subarray Sums Divisible by K   Given an array A of integers, return the number of (contiguous, non-empty) subarrays that have a sum divisible by K.
-Input: A = [4,5,0,-2,-3,1], K = 5 Output: 7 Explanation: There are 7 subarrays with a sum divisible by K = 5: [4, 5, 0, -2, -3, 1], [5], [5, 0], [5, 0, -2, -3], [0], [0, -2, -3], [-2, -3]   Solution 2020-10-14 Notes:  About the problems - sum of contiguous subarray , prefix sum is a common technique.</description>
     </item>
     
   </channel>
