@@ -5,19 +5,10 @@
     <link>https://foxisawesome.github.io/categories/note/</link>
     <description>Recent content in note on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 30 Nov 2020 21:38:19 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2020 19:22:49 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/note/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>463 Island Perimeter</title>
-      <link>https://foxisawesome.github.io/posts/463-island-perimeter/</link>
-      <pubDate>Thu, 01 Oct 2020 16:01:57 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/463-island-perimeter/</guid>
-      <description>LC 463 Island Perimeter You are given row x col grid representing a map where grid[i][j] = 1 represents land and grid[i][j] = 0 represents water. Grid cells are connected horizontally/vertically (not diagonally). The grid is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells). The island doesn&amp;rsquo;t have &amp;ldquo;lakes&amp;rdquo;, meaning the water inside isn&amp;rsquo;t connected to the water around the island.</description>
-    </item>
     
     <item>
       <title>339 Nested List Weight Sum</title>
@@ -53,6 +44,17 @@
       
       <guid>https://foxisawesome.github.io/posts/772-basic-calculator-iii/</guid>
       <description>LC 772 Basic Calculator III Implement a basic calculator to evaluate a simple expression string. The expression string contains only non-negative integers, +, -, *, / operators , open ( and closing parentheses ) and empty spaces ``. The integer division should truncate toward zero. You may assume that the given expression is always valid. All intermediate results will be in the range of [-2147483648, 2147483647]. Follow up: Could you</description>
+    </item>
+    
+    <item>
+      <title>Python Basics Notes</title>
+      <link>https://foxisawesome.github.io/posts/python_basics/</link>
+      <pubDate>Wed, 30 Sep 2020 21:38:19 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/python_basics/</guid>
+      <description>Reference: https://www.interviewbit.com/python-interview-questions/
+1. What is Python? Python is a high-level, interpreted, general-purpose programming language. Being a general-purpose language, it can be used to build almost any type of application with the right tools/libraries. Additionally, python supports objects, modules, threads, exception-handling and automatic memory management which help in modelling real-world problems and building applications to solve these problems.
+2. What are the benefits of using Python? Python is a general-purpose programming language that has simple, easy-to-learn syntax which emphasizes readability and therefore reduces the cost of program maintenance.</description>
     </item>
     
     <item>

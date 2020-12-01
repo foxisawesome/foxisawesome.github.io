@@ -3,41 +3,6 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://foxisawesome.github.io/categories/</loc>
-    <lastmod>2020-11-30T21:38:19-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/categories/note/</loc>
-    <lastmod>2020-11-30T21:38:19-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/posts/</loc>
-    <lastmod>2020-11-30T21:38:19-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/posts/python_basics/</loc>
-    <lastmod>2020-11-30T21:38:19-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
-    <loc>https://foxisawesome.github.io/</loc>
-    <lastmod>2020-11-30T21:38:19-05:00</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-  </url>
-  
-  <url>
     <loc>https://foxisawesome.github.io/posts/215-kth-largest-element-in-an-array/</loc>
     <lastmod>2020-11-19T10:30:56-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -52,7 +17,28 @@
   </url>
   
   <url>
+    <loc>https://foxisawesome.github.io/categories/</loc>
+    <lastmod>2020-11-19T10:30:56-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://foxisawesome.github.io/tags/leetcode/</loc>
+    <lastmod>2020-11-19T10:30:56-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/</loc>
+    <lastmod>2020-11-19T10:30:56-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/</loc>
     <lastmod>2020-11-19T10:30:56-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -829,6 +815,13 @@
   </url>
   
   <url>
+    <loc>https://foxisawesome.github.io/categories/note/</loc>
+    <lastmod>2020-10-15T19:22:49-05:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
     <loc>https://foxisawesome.github.io/posts/stat_notes/</loc>
     <lastmod>2020-10-15T19:22:49-05:00</lastmod>
     <changefreq>monthly</changefreq>
@@ -1510,6 +1503,13 @@
   <url>
     <loc>https://foxisawesome.github.io/posts/772-basic-calculator-iii/</loc>
     <lastmod>2020-10-01T11:38:24-04:00</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+  </url>
+  
+  <url>
+    <loc>https://foxisawesome.github.io/posts/python_basics/</loc>
+    <lastmod>2020-09-30T21:38:19-05:00</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>

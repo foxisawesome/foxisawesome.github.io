@@ -5,19 +5,10 @@
     <link>https://foxisawesome.github.io/categories/note/</link>
     <description>Recent content in note on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Mon, 30 Nov 2020 21:38:19 -0500</lastBuildDate>
+    <lastBuildDate>Thu, 15 Oct 2020 19:22:49 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/note/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>723 Candy Crush</title>
-      <link>https://foxisawesome.github.io/posts/723-candy-crush/</link>
-      <pubDate>Sun, 18 Oct 2020 19:33:47 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/723-candy-crush/</guid>
-      <description>LC 723 Candy Crush This question is about implementing a basic elimination algorithm for Candy Crush. Given a 2D integer array board representing the grid of candy, different positive integers board[i][j] represent different types of candies. A value of board[i][j] = 0 represents that the cell at position (i, j) is empty. The given board represents the state of the game following the player&amp;rsquo;s move. Now, you need to restore</description>
-    </item>
     
     <item>
       <title>1470 Shuffle the Array</title>
@@ -199,6 +190,15 @@ Write a query to find the shortest distance between two points in these points.
       <guid>https://foxisawesome.github.io/posts/603-consecutive-available-seats/</guid>
       <description>LC 603 Consecutive Available Seats   Several friends at a cinema ticket office would like to reserve consecutive available seats. Can you help to query all the consecutive available seats order by the seat_id using the following cinema table?
 | seat_id | free | |---------|------| | 1 | 1 | | 2 | 0 | | 3 | 1 | | 4 | 1 | | 5 | 1 |  Your query should return the following result for the sample case above.</description>
+    </item>
+    
+    <item>
+      <title>602 Friend Requests Ii Who Has the Most Friends</title>
+      <link>https://foxisawesome.github.io/posts/602-friend-requests-ii-who-has-the-most-friends/</link>
+      <pubDate>Wed, 14 Oct 2020 19:41:14 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/602-friend-requests-ii-who-has-the-most-friends/</guid>
+      <description>LC 602 Friend Requests Ii Who Has the Most Friends Write a query to find the the people who has most friends and the most friends number under the following rules: It is guaranteed there is only 1 people having the most friends. The friend request could only been accepted once, which mean there is no multiple records with the same requester_id and accepter_id value. For the sample data above,</description>
     </item>
     
   </channel>
