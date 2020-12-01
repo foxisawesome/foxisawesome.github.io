@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/categories/</link>
     <description>Recent content in Categories on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 30 Nov 2020 21:38:19 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>463 Island Perimeter</title>
+      <link>https://foxisawesome.github.io/posts/463-island-perimeter/</link>
+      <pubDate>Thu, 01 Oct 2020 16:01:57 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/463-island-perimeter/</guid>
+      <description>LC 463 Island Perimeter You are given row x col grid representing a map where grid[i][j] = 1 represents land and grid[i][j] = 0 represents water. Grid cells are connected horizontally/vertically (not diagonally). The grid is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells). The island doesn&amp;rsquo;t have &amp;ldquo;lakes&amp;rdquo;, meaning the water inside isn&amp;rsquo;t connected to the water around the island.</description>
+    </item>
     
     <item>
       <title>339 Nested List Weight Sum</title>
@@ -191,15 +200,6 @@ Table:Employee
       <description>LC 534 Game Play Analysis III   Write an SQL query that reports for each player and date, how many games played so far by the player. That is, the total number of games played by the player until that date. Check the example for clarity.
 The query result format is in the following example:
 Activity table: +-----------+-----------+------------+--------------+ | player_id | device_id | event_date | games_played | +-----------+-----------+------------+--------------+ | 1 | 2 | 2016-03-01 | 5 | | 1 | 2 | 2016-05-02 | 6 | | 1 | 3 | 2017-06-25 | 1 | | 3 | 1 | 2016-03-02 | 0 | | 3 | 4 | 2018-07-03 | 5 | +-----------+-----------+------------+--------------+ Result table: +-----------+------------+---------------------+ | player_id | event_date | games_played_so_far | +-----------+------------+---------------------+ | 1 | 2016-03-01 | 5 | | 1 | 2016-05-02 | 11 | | 1 | 2017-06-25 | 12 | | 3 | 2016-03-02 | 0 | | 3 | 2018-07-03 | 5 | +-----------+------------+---------------------+   Solution 2020-09-29 Notes:  SUM() OVER(ORDER BY) gives cumulative results.</description>
-    </item>
-    
-    <item>
-      <title>567 Permutation in String</title>
-      <link>https://foxisawesome.github.io/posts/567-permutation-in-string/</link>
-      <pubDate>Tue, 29 Sep 2020 13:02:26 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/567-permutation-in-string/</guid>
-      <description>LC 567 Permutation in String Given two strings s1 and s2, write a function to return true if s2 contains the permutation of s1. In other words, one of the first string&amp;rsquo;s permutations is the substring of the second string. Input: s1 = &amp;quot;ab&amp;quot; s2 = &amp;quot;eidbaooo&amp;quot; Output: True Explanation: s2 contains one permutation of s1 (&amp;quot;ba&amp;quot;). Solution 2020-09-29 Notes: 这题用了slidin</description>
     </item>
     
   </channel>

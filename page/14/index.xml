@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 30 Nov 2020 21:38:19 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>78 Subsets</title>
+      <link>https://foxisawesome.github.io/posts/78-subsets/</link>
+      <pubDate>Mon, 21 Sep 2020 14:49:34 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/78-subsets/</guid>
+      <description>LC 78 Subsets Given a set of distinct integers, nums, return all possible subsets (the power set). Input: nums = [1,2,3] Output:[[],[1],[2],[3],[1,2],[1,3],[2,3],[1,2,3]] Solution 2020-09-21 Notes: 简单的dfs题，有个新奇的点就是在dfs外面有个控制length的loop。刚开始我以为要</description>
+    </item>
     
     <item>
       <title>77 Combinations</title>
@@ -180,15 +189,6 @@ Input: 1 0 1 0 0 1 0 1 1 1 1 1 1 1 1 1 0 0 1 0 Output: 4   Solution 2020-09-20 N
       
       <guid>https://foxisawesome.github.io/posts/973-k-closest-points-to-origin/</guid>
       <description>LC 973 K Closest Points to Origin We have a list of points on the plane. Find the K closest points to the origin (0, 0). Input: points = [[1,3],[-2,2]], K = 1 Output: [[-2,2]] Explanation: The distance between (1, 3) and the origin is sqrt(10). The distance between (-2, 2) and the origin is sqrt(8). Since sqrt(8) &amp;lt; sqrt(10), (-2, 2) is closer to the origin. We only want</description>
-    </item>
-    
-    <item>
-      <title>20 Valid Parentheses</title>
-      <link>https://foxisawesome.github.io/posts/20-valid-parentheses/</link>
-      <pubDate>Sat, 19 Sep 2020 20:37:05 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/20-valid-parentheses/</guid>
-      <description>LC 20 Valid Parentheses Given a string s containing just the characters &#39;(&#39;, &#39;)&#39;, &#39;{&#39;, &#39;}&#39;, &#39;[&#39; and &#39;]&#39;, determine if the input string is valid. An input string is valid if: Open brackets must be closed by the same type of brackets. Open brackets must be closed in the correct order. Solution 2020-09-19 Notes: 好经典的题。 思路如解。 class Solution: def isValid(self,</description>
     </item>
     
   </channel>

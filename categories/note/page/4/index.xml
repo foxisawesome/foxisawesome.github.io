@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/categories/note/</link>
     <description>Recent content in note on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 15 Oct 2020 19:22:49 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 30 Nov 2020 21:38:19 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/note/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1083 Sales Analysis II</title>
+      <link>https://foxisawesome.github.io/posts/1083-sales-analysis-ii/</link>
+      <pubDate>Mon, 19 Oct 2020 15:30:49 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1083-sales-analysis-ii/</guid>
+      <description>LC 1083 Sales Analysis II Write an SQL query that reports the buyers who have bought S8 but not iPhone. Note that S8 and iPhone are products present in the Product table. The query result format is in the following example: Product table: +------------+--------------+------------+ | product_id | product_name | unit_price | +------------+--------------+------------+ | 1 | S8 | 1000 | | 2 | G4 | 800 | | 3 | iPhone</description>
+    </item>
     
     <item>
       <title>1495 Friendly Movies Streamed Last Month</title>
@@ -185,15 +194,6 @@ Return the result table in any order.
       
       <guid>https://foxisawesome.github.io/posts/361-bomb-enemy/</guid>
       <description>LC 361 Bomb Enemy   Given a 2D grid, each cell is either a wall &#39;W&#39;, an enemy &#39;E&#39; or empty &#39;0&#39; (the number zero), return the maximum enemies you can kill using one bomb. The bomb kills all the enemies in the same row and column from the planted point until it hits the wall since the wall is too strong to be destroyed. Note: You can only put the bomb at an empty cell.</description>
-    </item>
-    
-    <item>
-      <title>723 Candy Crush</title>
-      <link>https://foxisawesome.github.io/posts/723-candy-crush/</link>
-      <pubDate>Sun, 18 Oct 2020 19:33:47 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/723-candy-crush/</guid>
-      <description>LC 723 Candy Crush This question is about implementing a basic elimination algorithm for Candy Crush. Given a 2D integer array board representing the grid of candy, different positive integers board[i][j] represent different types of candies. A value of board[i][j] = 0 represents that the cell at position (i, j) is empty. The given board represents the state of the game following the player&amp;rsquo;s move. Now, you need to restore</description>
     </item>
     
   </channel>

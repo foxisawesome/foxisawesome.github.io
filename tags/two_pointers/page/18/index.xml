@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>1249 Minimum Remove to Make Valid Parentheses</title>
+      <link>https://foxisawesome.github.io/posts/1249-minimum-remove-to-make-valid-parentheses/</link>
+      <pubDate>Sat, 05 Sep 2020 14:01:30 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1249-minimum-remove-to-make-valid-parentheses/</guid>
+      <description>LC 1249 Minimum Remove to Make Valid Parentheses Given a string s of &#39;(&#39; , &#39;)&#39; and lowercase English characters. Your task is to remove the minimum number of parentheses ( &#39;(&#39; or &#39;)&#39;, in any positions ) so that the resulting parentheses string is valid and return any valid string. Input: s = &amp;quot;lee(t(c)o)de)&amp;quot; Output: &amp;quot;lee(t(c)o)de&amp;quot; Explanation: &amp;quot;lee(t(co)de)&amp;quot; , &amp;quot;lee(t(c)ode)&amp;quot; would also be accepted. Solution 2020-09-05 Notes: 很简</description>
+    </item>
+    
+    <item>
       <title>316 Remove Dup Letters</title>
       <link>https://foxisawesome.github.io/posts/316-remove-dup-letters/</link>
       <pubDate>Fri, 04 Sep 2020 19:56:18 -0400</pubDate>
@@ -205,15 +214,6 @@ board = [ [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;E&#39;], [&#39;S&#39;,&#39;F
       
       <guid>https://foxisawesome.github.io/posts/141-linked-list-cycle/</guid>
       <description>LC 141 Linked List Cycle Given a linked list, determine if it has a cycle in it. To represent a cycle in the given linked list, we use an integer pos which represents the position (0-indexed) in the linked list where tail connects to. If pos is -1, then there is no cycle in the linked list. Example 1: Input: head = [3,2,0,-4], pos = 1 Output: true Explanation: There</description>
-    </item>
-    
-    <item>
-      <title>328 Odd Even Linked List</title>
-      <link>https://foxisawesome.github.io/posts/328-odd-even-linked-list/</link>
-      <pubDate>Sun, 30 Aug 2020 21:27:32 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/328-odd-even-linked-list/</guid>
-      <description>LC 328 Odd Even Linked List Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes. You should try to do it in place. The program should run in O(1) space complexity and O(nodes) time complexity. Example 1: Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL Output: 1-&amp;gt;3-&amp;gt;5-&amp;gt;2-&amp;gt;4-&amp;gt;NULL Solution 2020-08-30 Notes: linked list 终</description>
     </item>
     
   </channel>

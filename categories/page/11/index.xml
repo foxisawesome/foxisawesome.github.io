@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/categories/</link>
     <description>Recent content in Categories on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 30 Nov 2020 21:38:19 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>567 Permutation in String</title>
+      <link>https://foxisawesome.github.io/posts/567-permutation-in-string/</link>
+      <pubDate>Tue, 29 Sep 2020 13:02:26 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/567-permutation-in-string/</guid>
+      <description>LC 567 Permutation in String Given two strings s1 and s2, write a function to return true if s2 contains the permutation of s1. In other words, one of the first string&amp;rsquo;s permutations is the substring of the second string. Input: s1 = &amp;quot;ab&amp;quot; s2 = &amp;quot;eidbaooo&amp;quot; Output: True Explanation: s2 contains one permutation of s1 (&amp;quot;ba&amp;quot;). Solution 2020-09-29 Notes: 这题用了slidin</description>
+    </item>
     
     <item>
       <title>930 Binary Subarrays With Sum</title>
@@ -179,15 +188,6 @@
       
       <guid>https://foxisawesome.github.io/posts/62-unique-paths/</guid>
       <description>LC 62 Unique Paths A robot is located at the top-left corner of a m x n grid (marked &amp;lsquo;Start&amp;rsquo; in the diagram below). The robot can only move either down or right at any point in time. The robot is trying to reach the bottom-right corner of the grid (marked &amp;lsquo;Finish&amp;rsquo; in the diagram below). How many possible unique paths are there? Solution 2020-09-25 Notes: 像cli</description>
-    </item>
-    
-    <item>
-      <title>819 Most Common Word</title>
-      <link>https://foxisawesome.github.io/posts/819-most-common-word/</link>
-      <pubDate>Fri, 25 Sep 2020 14:39:42 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/819-most-common-word/</guid>
-      <description>LC 819 Most Common Word Given a paragraph and a list of banned words, return the most frequent word that is not in the list of banned words. It is guaranteed there is at least one word that isn&amp;rsquo;t banned, and that the answer is unique. Words in the list of banned words are given in lowercase, and free of punctuation. Words in the paragraph are not case sensitive. The</description>
     </item>
     
   </channel>

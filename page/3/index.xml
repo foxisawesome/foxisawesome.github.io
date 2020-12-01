@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 30 Nov 2020 21:38:19 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>586 Customer Placing the Largest Number of Orders</title>
+      <link>https://foxisawesome.github.io/posts/586-customer-placing-the-largest-number-of-orders/</link>
+      <pubDate>Sat, 24 Oct 2020 20:14:32 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/586-customer-placing-the-largest-number-of-orders/</guid>
+      <description>LC 586 Customer Placing the Largest Number of Orders Query the customer_number from the *orders* table for the customer who has placed the largest number of orders. It is guaranteed that exactly one customer will have placed more orders than any other customer. Solution 2020-10-24 Notes: 秒了 select customer_number from (select customer_number, count(order_number) as ct from orders group by 1 order by ct desc) a limit 1</description>
+    </item>
     
     <item>
       <title>580 Count Student Number in Departments</title>
@@ -185,15 +194,6 @@ Input: ransomNote = &amp;quot;a&amp;quot;, magazine = &amp;quot;b&amp;quot; Outp
       
       <guid>https://foxisawesome.github.io/posts/1167-minimum-cost-to-connect-sticks/</guid>
       <description>LC 1167 Minimum Cost to Connect Sticks You have some number of sticks with positive integer lengths. These lengths are given as an array sticks, where sticks[i] is the length of the ith stick. You can connect any two sticks of lengths x and y into one stick by paying a cost of x + y. You must connect all the sticks until there is only one stick remaining. Return</description>
-    </item>
-    
-    <item>
-      <title>1083 Sales Analysis II</title>
-      <link>https://foxisawesome.github.io/posts/1083-sales-analysis-ii/</link>
-      <pubDate>Mon, 19 Oct 2020 15:30:49 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1083-sales-analysis-ii/</guid>
-      <description>LC 1083 Sales Analysis II Write an SQL query that reports the buyers who have bought S8 but not iPhone. Note that S8 and iPhone are products present in the Product table. The query result format is in the following example: Product table: +------------+--------------+------------+ | product_id | product_name | unit_price | +------------+--------------+------------+ | 1 | S8 | 1000 | | 2 | G4 | 800 | | 3 | iPhone</description>
     </item>
     
   </channel>

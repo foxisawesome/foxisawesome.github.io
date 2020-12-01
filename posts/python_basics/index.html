@@ -1,0 +1,1097 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+        Python Basics Notes - Q. Weng
+      </title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    
+    <meta name="theme-color" content="#000000" />
+    
+    <meta http-equiv="window-target" content="_top" />
+    
+    
+    <meta name="description" content="Reference: https://www.interviewbit.com/python-interview-questions/
+1. What is Python? Python is a high-level, interpreted, general-purpose programming language. Being a general-purpose language, it can be used to build almost any type of application with the right tools/libraries. Additionally, python supports objects, modules, threads, exception-handling and automatic memory management which help in modelling real-world problems and building applications to solve these problems.
+2. What are the benefits of using Python? Python is a general-purpose programming language that has simple, easy-to-learn syntax which emphasizes readability and therefore reduces the cost of program maintenance." />
+    <meta name="generator" content="Hugo 0.78.2 with theme pure" />
+    <title>Python Basics Notes - Q. Weng</title>
+    
+    
+    <link rel="stylesheet" href="https://foxisawesome.github.io/css/style.min.f9a354d3e7069c2b675555c86f6672f0a152ef9a764068aa27f468cd308a84a0.css">
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+    <meta property="og:title" content="Python Basics Notes" />
+<meta property="og:description" content="Reference: https://www.interviewbit.com/python-interview-questions/
+1. What is Python? Python is a high-level, interpreted, general-purpose programming language. Being a general-purpose language, it can be used to build almost any type of application with the right tools/libraries. Additionally, python supports objects, modules, threads, exception-handling and automatic memory management which help in modelling real-world problems and building applications to solve these problems.
+2. What are the benefits of using Python? Python is a general-purpose programming language that has simple, easy-to-learn syntax which emphasizes readability and therefore reduces the cost of program maintenance." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://foxisawesome.github.io/posts/python_basics/" />
+<meta property="article:published_time" content="2020-11-30T21:38:19-05:00" />
+<meta property="article:modified_time" content="2020-11-30T21:38:19-05:00" />
+<meta itemprop="name" content="Python Basics Notes">
+<meta itemprop="description" content="Reference: https://www.interviewbit.com/python-interview-questions/
+1. What is Python? Python is a high-level, interpreted, general-purpose programming language. Being a general-purpose language, it can be used to build almost any type of application with the right tools/libraries. Additionally, python supports objects, modules, threads, exception-handling and automatic memory management which help in modelling real-world problems and building applications to solve these problems.
+2. What are the benefits of using Python? Python is a general-purpose programming language that has simple, easy-to-learn syntax which emphasizes readability and therefore reduces the cost of program maintenance.">
+<meta itemprop="datePublished" content="2020-11-30T21:38:19-05:00" />
+<meta itemprop="dateModified" content="2020-11-30T21:38:19-05:00" />
+<meta itemprop="wordCount" content="5167">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Python Basics Notes"/>
+<meta name="twitter:description" content="Reference: https://www.interviewbit.com/python-interview-questions/
+1. What is Python? Python is a high-level, interpreted, general-purpose programming language. Being a general-purpose language, it can be used to build almost any type of application with the right tools/libraries. Additionally, python supports objects, modules, threads, exception-handling and automatic memory management which help in modelling real-world problems and building applications to solve these problems.
+2. What are the benefits of using Python? Python is a general-purpose programming language that has simple, easy-to-learn syntax which emphasizes readability and therefore reduces the cost of program maintenance."/>
+
+    <!--[if lte IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+      <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  
+  
+
+  <body class="main-center theme-white" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/foxisawesome" target="_blank">
+            <img class="img-circle img-rotate" src="https://foxisawesome.github.io/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Q. Weng</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md"></h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>United States</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title"> Categories</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">236</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">2</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">11</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">135</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> Tags</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/array/" class="tag-list-link">array</a><span
+                    class="tag-list-count">19</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/backtracking/" class="tag-list-link">backtracking</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/bfs/" class="tag-list-link">bfs</a><span
+                    class="tag-list-count">9</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/binary_search/" class="tag-list-link">binary_search</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/bst/" class="tag-list-link">bst</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dfs/" class="tag-list-link">dfs</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia/" class="tag-list-link">dia</a><span
+                    class="tag-list-count">34</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia_sql/" class="tag-list-link">dia_sql</a><span
+                    class="tag-list-count">23</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dp/" class="tag-list-link">dp</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/graph/" class="tag-list-link">graph</a><span
+                    class="tag-list-count">5</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/greedy/" class="tag-list-link">greedy</a><span
+                    class="tag-list-count">6</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/hashtable/" class="tag-list-link">hashtable</a><span
+                    class="tag-list-count">16</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/heap/" class="tag-list-link">heap</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
+                    class="tag-list-count">367</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
+                    class="tag-list-count">14</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/math/" class="tag-list-link">math</a><span
+                    class="tag-list-count">6</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/matrix/" class="tag-list-link">matrix</a><span
+                    class="tag-list-count">8</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/monotonic/" class="tag-list-link">monotonic</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/recursion/" class="tag-list-link">recursion</a><span
+                    class="tag-list-count">7</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/sliding_window/" class="tag-list-link">sliding_window</a><span
+                    class="tag-list-count">10</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/sort/" class="tag-list-link">sort</a><span
+                    class="tag-list-count">8</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/stack/" class="tag-list-link">stack</a><span
+                    class="tag-list-count">8</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/string/" class="tag-list-link">string</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/template/" class="tag-list-link">template</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/tree/" class="tag-list-link">tree</a><span
+                    class="tag-list-count">28</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/two_pointers/" class="tag-list-link">two_pointers</a><span
+                    class="tag-list-count">21</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/python_basics/"
+    >Python Basics Notes</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/python_basics/" class="article-date">
+  <time datetime="2020-11-30 21:38:19 -0500 EST" itemprop="datePublished">2020-11-30</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/note/"> note </a>
+</span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/posts/python_basics/#comments"
+            class="article-comment-link">Comments</a></span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <p>Reference: <a href="https://www.interviewbit.com/python-interview-questions/">https://www.interviewbit.com/python-interview-questions/</a></p>
+<h3 id="1-what-is-python">1. What is Python?</h3>
+<p>Python is a high-level, interpreted, general-purpose programming language. Being a general-purpose language, it can be used to build almost any type of application with the right tools/libraries. Additionally, python supports objects, modules, threads, exception-handling and automatic memory management which help in modelling real-world problems and building applications to solve these problems.</p>
+<h3 id="2-what-are-the-benefits-of-using-python">2. What are the benefits of using Python?</h3>
+<p>Python is a general-purpose programming language that has simple, easy-to-learn syntax which emphasizes readability and therefore reduces the cost of program maintenance. Moreover, the language is capable of scripting, completely open-source and supports third-party packages encouraging modularity and code-reuse.
+Its high-level data structures, combined with dynamic typing and dynamic binding, attract a huge community of developers for Rapid Application Development and deployment.</p>
+<h3 id="3-what-is-a-dynamically-typed-language">3. What is a dynamically typed language?</h3>
+<p>Before we understand what a dynamically typed language, we should learn about what typing is. <strong>Typing</strong> refers to type-checking in programming languages. In a *<strong>strongly-typed*</strong> language, such as Python, <strong>&ldquo;1&rdquo; + 2</strong> will result in a type error, since these languages don&rsquo;t allow for <strong>&ldquo;type-coercion&rdquo;</strong> (implicit conversion of data types). On the other hand, a *<strong>weakly-typed*</strong> language, such as Javascript, will simply output <strong>&ldquo;12&rdquo;</strong> as result.</p>
+<p>Type-checking can be done at two stages -</p>
+<ul>
+<li><strong>Static -</strong> Data Types are checked before execution.</li>
+<li><strong>Dynamic -</strong> Data Types are checked during execution.</li>
+</ul>
+<p>Python being an interpreted language, executes each statement line by line and thus type-checking is done on the fly, during execution. Hence, Python is a Dynamically Typed language.</p>
+<h3 id="4-what-is-an-interpreted-language">4. What is an Interpreted language?</h3>
+<p>An <strong>Interpreted</strong> language executes its statements line by line. Languages such as Python, Javascript, R, PHP and Ruby are prime examples of Interpreted languages. Programs written in an interpreted language runs directly from the source code, with no intermediary compilation step.</p>
+<h3 id="5-what-is-pep-8-and-why-is-it-important">5. What is PEP 8 and why is it important?</h3>
+<p>PEP stands for <strong>Python Enhancement Proposal</strong>. A PEP is an official design document providing information to the Python Community, or describing a new feature for Python or its processes. <strong>PEP 8</strong> is especially important since it documents the style guidelines for Python Code. Apparently contributing in the Python open-source community requires you to follow these style guidelines sincerely and strictly.</p>
+<h3 id="6-how-is-memory-managed-in-python">6. How is memory managed in Python?</h3>
+<p>Memory management in Python is handled by the <strong>Python Memory Manager</strong>. The memory allocated by the manager is in form of a <strong>private heap space</strong> dedicated for Python. All Python objects are stored in this heap and being private, it is inaccessible to the programmer. Though, python does provide some core API functions to work upon the private heap space.
+Additionally, Python has an in-built garbage collection to recycle the unused memory for the private heap space.</p>
+<p><img src="/img/python-memory-manager-8bac90ad8ae62383ae0d09cd7b50849bfe37278f9c82d66ea13597239cbd62fe.png.gz" alt="img"></p>
+<h3 id="7-what-are-python-namespaces-why-are-they-used">7. What are Python namespaces? Why are they used?</h3>
+<p>A namespace in Python ensures that object names in a program are unique and can be used without any conflict. Python implements these <strong>namespaces as dictionaries</strong> with &lsquo;name as key&rsquo; mapped to a corresponding &lsquo;object as value&rsquo;. This allows for multiple namespaces to use the same name and map it to a separate object. A few examples of namespaces are as follows:</p>
+<ul>
+<li><strong>Local Namespace</strong> includes local names inside a function. the namespace is temporarily created for a function call and gets cleared when the function returns.</li>
+<li><strong>Global Namespace</strong> includes names from various imported packages/ modules that is being used in the current project. This namespace is created when the package is imported in the script and lasts until the execution of the script.</li>
+<li><strong>Built-in Namespace</strong> includes built-in functions of core Python and built-in names for various types of exceptions.</li>
+</ul>
+<p><strong>Lifecycle of a namespace</strong> depends upon the scope of objects they are mapped to. If the scope of an object ends, the lifecycle of that namespace comes to an end. Hence, it isn&rsquo;t possible to access inner namespace objects from an outer namespace.</p>
+<p><img src="/img/python-namespaces-4d66efcaf95c5b42452c3e14d90c4aa4873c577c8cf72e0f2d9a8bbec9ec5cba.png.gz" alt="img"></p>
+<h3 id="8-what-is-scope-in-python">8. What is Scope in Python?</h3>
+<p>Every object in Python functions within a scope. A <strong>scope</strong> is a block of code where an object in Python remains relevant. Namespaces uniquely identify all the objects inside a program. However, these namespaces also have a scope defined for them where you could use their objects without any prefix. A few examples of scope created during code execution in Python are as follows:</p>
+<ul>
+<li>A <strong>local scope</strong> refers to the local objects available in the current function.</li>
+<li>A <strong>global scope</strong> refers to the objects available throught the code execution since their inception.</li>
+<li>A <strong>module-level scope</strong> refers to the global objects of the current module accessible in the program.</li>
+<li>An <strong>outermost scope</strong> refers to all the built-in names callable in the program. The objects in this scope are searched last to find the name referenced.</li>
+</ul>
+<p><em>Note: Local scope objects can be synced with global scope objects using keywords such as <strong>global</strong>.</em></p>
+<h3 id="9-what-is-scope-resolution-in-python">9. What is Scope Resolution in Python?</h3>
+<p>Sometimes objects within the same scope have the same name but function differently. In such cases, scope resolution comes into play in Python automatically. A few examples of such behaviour are:</p>
+<ul>
+<li>Python modules namely &lsquo;math&rsquo; and &lsquo;cmath&rsquo; have a lot of functions that are common to both of them - <code>log10()</code>, <code>acos()</code>, <code>exp()</code> etc. To resolve this amiguity, it is necessary to prefix them with their respective module, like <code>math.exp()</code> and <code>cmath.exp()</code>.</li>
+<li>Consider the code below, an object temp has been initialized to 10 globally and then to 20 on function call. However, the function call didn&rsquo;t change the value of the temp globally. Here, we can observe that Python draws a clear line between global and local variables treating both their namespaces as separate identities.</li>
+</ul>
+<pre><code class="language-python">temp = 10 	 # global-scope variable
+
+def func():
+    temp = 20   # local-scope variable
+    print(temp)
+
+print(temp) 	 # output =&gt; 10
+func() 		 # output =&gt; 20
+print(temp) 	 # output =&gt; 10
+</code></pre>
+<p>This behaviour can be overriden using the <code>global</code> keyword inside the function, as shown in the following example:</p>
+<pre><code class="language-python">temp = 10 	 # global-scope variable
+
+def func():
+	global temp
+    temp = 20   # local-scope variable
+    print(temp)
+
+print(temp) 	 # output =&gt; 10
+func() 		 # output =&gt; 20
+print(temp) 	 # output =&gt; 20
+</code></pre>
+<h3 id="10-what-are-decorators-in-python">10. What are decorators in Python?</h3>
+<p><strong>Decorators</strong> in Python are essentially functions that add functionality to an existing function in Python without changing the structure of the function itself. They are represented by the <code>@decorator_name</code> in Python and are called in bottom-up fashion. For example:</p>
+<pre><code class="language-python"># decorator function to convert to lowercase
+def lowercase_decorator(function):
+    def wrapper():
+        func = function()
+        string_lowercase = func.lower()
+        return string_lowercase
+    return wrapper
+
+# decorator function to split words
+def splitter_decorator(function):
+    def wrapper():
+        func = function()
+        string_split = func.split()
+        return string_split
+    return wrapper
+
+@splitter_decorator	# this is executed next
+@lowercase_decorator	# this is executed first
+def hello():
+    return 'Hello World'
+
+hello() 	 # output =&gt; [ 'hello' , 'world' ]
+</code></pre>
+<p>The beauty of the decorators lies in the fact that besides adding functionality to the output of the method, they can even <strong>accept arguments</strong> for functions and can further modify those arguments before passing it to the function itself. The <strong>inner nested function</strong>, i.e. &lsquo;wrapper&rsquo; function, plays a significant role here. It is implemented to enforce <strong>encapsulation</strong> and thus, keep itself hidden from the global scope.</p>
+<pre><code class="language-python"># decorator function to capitalize names
+def names_decorator(function):
+    def wrapper(arg1, arg2):
+        arg1 = arg1.capitalize()
+        arg2 = arg2.capitalize()
+        string_hello = function(arg1, arg2)
+        return string_hello
+    return wrapper
+
+@names_decorator
+def say_hello(name1, name2):
+    return 'Hello ' + name1 + '! Hello ' + name2 + '!'
+
+say_hello('sara', 'ansh') 	 # output =&gt; 'Hello Sara! Hello Ansh!'
+</code></pre>
+<h3 id="11-what-are-lists-and-tuples-what-is-the-key-difference-between-the-two">11. What are lists and tuples? What is the key difference between the two?</h3>
+<p><strong>Lists</strong> and <strong>Tuples</strong> are both <strong>sequence data types</strong> that can store a collection of objects in Python. The objects stored in both sequences can have <strong>different data types</strong>. Lists are represented with <strong>square brackets</strong> <code>['sara', 6, 0.19]</code>, while tuples are represented with <strong>parantheses</strong> <code>('ansh', 5, 0.97)</code>.
+But what is the real difference between the two? The key difference between the two is that while <strong>lists are mutable</strong>, <strong>tuples</strong> on the other hand <strong>are immutable</strong> objects. This means that lists can be modified, appended or sliced on-the-go but tuples remain constant and cannot be modified in any manner. You can run the following example on Python IDLE to confirm the difference:</p>
+<pre><code class="language-python">my_tuple = ('sara', 6, 5, 0.97)
+my_list = ['sara', 6, 5, 0.97]
+
+print(my_tuple[0])     # output =&gt; 'sara'
+print(my_list[0])     # output =&gt; 'sara'
+
+my_tuple[0] = 'ansh'    # modifying tuple =&gt; throws an error
+my_list[0] = 'ansh'    # modifying list =&gt; list modified
+
+print(my_tuple[0])     # output =&gt; 'sara'
+print(my_list[0])     # output =&gt; 'ansh'
+</code></pre>
+<h3 id="12-what-are-dict-and-list-comprehensions">12. What are Dict and List comprehensions?</h3>
+<p>Python comprehensions, like decorators, are <strong>syntactic sugar</strong> constructs that help <strong>build altered and filtered</strong> lists, dictionaries or sets from a given list, dictionary or set. Using comprehensions, saves a lot of time and code that might be considerably more verbose (containing more lines of code). Let&rsquo;s check out some examples, where comprehensions can be truly beneficial:</p>
+<ul>
+<li>
+<p>Performing mathematical operations on the entire list</p>
+<pre><code class="language-python">my_list = [2, 3, 5, 7, 11]
+  
+squared_list = [x**2 for x in my_list]    # list comprehension
+# output =&gt; [4 , 9 , 25 , 49 , 121]
+  
+squared_dict = {x:x**2 for x in my_list}    # dict comprehension
+# output =&gt; {11: 121, 2: 4 , 3: 9 , 5: 25 , 7: 49}
+</code></pre>
+</li>
+<li>
+<p>Performing conditional filtering operations on the entire list</p>
+<pre><code class="language-python">my_list = [2, 3, 5, 7, 11]
+  
+squared_list = [x**2 for x in my_list if x%2 != 0]    # list comprehension
+# output =&gt; [9 , 25 , 49 , 121]
+  
+squared_dict = {x:x**2 for x in my_list if x%2 != 0}    # dict comprehension
+# output =&gt; {11: 121, 3: 9 , 5: 25 , 7: 49}
+</code></pre>
+</li>
+<li>
+<p>Combining multiple lists into one</p>
+<p>Comprehensions allow for multiple iterators and hence, can be used to combine multiple lists into one.</p>
+<pre><code class="language-python">a = [1, 2, 3]
+b = [7, 8, 9]
+  
+[(x + y) for (x,y) in zip(a,b)]  # parallel iterators
+# output =&gt; [8, 10, 12]
+  
+[(x,y) for x in a for y in b]    # nested iterators
+# output =&gt; [(1, 7), (1, 8), (1, 9), (2, 7), (2, 8), (2, 9), (3, 7), (3, 8), (3, 9)]
+</code></pre>
+</li>
+<li>
+<p>Flattening a multi-dimensional list</p>
+<p>A similar approach of nested iterators (as above) can be applied to flatten a multi-dimensional list or work upon its inner elements.</p>
+<pre><code class="language-python">my_list = [[10,20,30],[40,50,60],[70,80,90]]
+  
+flattened = [x for temp in my_list for x in temp]
+# output =&gt; [10, 20, 30, 40, 50, 60, 70, 80, 90]
+</code></pre>
+</li>
+</ul>
+<p><em><strong>Note:</strong> List comprehensions have the same effect as the <code>map</code> method in other languages. They follow the <strong>mathematical set builder notation</strong> rather than <code>map</code> and <code>filter</code> functions in Python.</em></p>
+<h3 id="13-what-are-the-common-built-in-data-types-in-python">13. What are the common built-in data types in Python?</h3>
+<p>There are several built-in data types in Python. Although, Python doesn&rsquo;t require data types to be defined explicitly during variable declarations but type errors are likely to occur if the knowledge of data types and their compatibility with each other are neglected. Python provides <code>type()</code> and <code>isinstance()</code> functions to check the type of these variables. These data types can be grouped into the following catetgories-</p>
+<ul>
+<li>
+<p>None Type</p>
+<pre><code>None
+</code></pre>
+<p>keyword represents the null values in Python. Boolean equality operation can be performed using these NoneType objects.</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Class Name</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">NoneType</td>
+<td style="text-align:left">Represents the <strong>NULL</strong> values in Python</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Numeric Types</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Class Name</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">int</td>
+<td style="text-align:left">Stores integer literals including hex, octal and binary numbers as integers</td>
+</tr>
+<tr>
+<td style="text-align:left">float</td>
+<td style="text-align:left">Stores literals containing decimal values and/or exponent sign as floating-point numbers</td>
+</tr>
+<tr>
+<td style="text-align:left">complex</td>
+<td style="text-align:left">Stores complex number in the form (A + Bj) and has attributes: <code>real</code> and <code>imag</code></td>
+</tr>
+<tr>
+<td style="text-align:left">bool</td>
+<td style="text-align:left">Stores boolean value (True or False)</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<p><strong>Note:</strong> The standard library also includes <strong>fractions</strong> to store rational numbers and <strong>decimal</strong> to store floating-point numbers with user-defined precision.</p>
+<ul>
+<li>
+<p>Sequence Types</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Class Name</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">list</td>
+<td style="text-align:left">Mutable sequence used to store collection of items.</td>
+</tr>
+<tr>
+<td style="text-align:left">tuple</td>
+<td style="text-align:left">Immutable sequence used to store collection of items.</td>
+</tr>
+<tr>
+<td style="text-align:left">range</td>
+<td style="text-align:left">Represents an immutable sequence of numbers generated during execution.</td>
+</tr>
+<tr>
+<td style="text-align:left">str</td>
+<td style="text-align:left">Immutable sequence of Unicode code points to store textual data.</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong> The standard library also includes additional types for processing:</p>
+<ol>
+<li><strong>Binary data</strong> such as <code>bytearray</code> <code>bytes</code> <code>memoryview</code> , and</li>
+<li><strong>Text strings</strong> such as <code>str</code> .</li>
+</ol>
+</li>
+<li>
+<p>Mapping Type:</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Class Name</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">dict</td>
+<td style="text-align:left">Stores comma-separated list of <strong>key: value</strong> pairs</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>Set Types</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">Class Name</th>
+<th style="text-align:left">Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">set</td>
+<td style="text-align:left">Mutable unordered collection of distinct hashable objects</td>
+</tr>
+<tr>
+<td style="text-align:left">frozenset</td>
+<td style="text-align:left">Immutable collection of distinct hashable objects</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<p><strong>Note:</strong> <code>set</code> is mutable and thus cannot be used as key for a dictionary. On the other hand, <code>frozenset</code> is immutable and thus, hashable, and can be used as a dictionary key or as an element of another set.</p>
+<ul>
+<li>
+<p><strong>Modules</strong>
+Module is an additional built-in type supported by the Python Interpreter. It supports one special operation, i.e., <strong>attribute access</strong>: <code>mymod.myobj</code>, where <strong>mymod</strong> is a module and <strong>myobj</strong> references a name defined in m&rsquo;s symbol table. The module&rsquo;s symbol table resides in a very special attribute of the module <strong><strong>dict</strong></strong>, but direct assignment to this module is neither possible nor recommended.</p>
+</li>
+<li>
+<p><strong>Callable Types</strong>
+Callable types are the types to which function call can be applied. They can be <strong>user-defined functions</strong>, <strong>instance methods</strong>, <strong>generator functions</strong>, and some other <strong>built-in functions</strong>, <strong>methods</strong> and <strong>classes</strong>.
+Refer the documentation at <a href="https://docs.python.org/3/reference/datamodel.html">docs.python.org </a>for a detailed view into the <strong>callable types</strong>.</p>
+</li>
+</ul>
+<h3 id="14-what-is-lambda-in-python-why-is-it-used">14. What is lambda in Python? Why is it used?</h3>
+<p>Lambda is an anonymous function in Python, that can accept any number of arguments, but can only have a single expression. It is generally used in situations requiring an anonymous function for a short time period. Lambda functions can be used in either of the two ways:</p>
+<ul>
+<li>
+<p>Assigning lambda functions to a variable</p>
+<pre><code class="language-python">mul = lambda a, b : a * b
+print(mul(2, 5))    # output =&gt; 10
+</code></pre>
+</li>
+<li>
+<p>Wrapping lambda functions inside another function</p>
+<pre><code class="language-python">def myWrapper(n):
+  return lambda a : a * n
+  
+mulFive = myWrapper(5)
+print(mulFive(2))    # output =&gt; 10
+</code></pre>
+</li>
+</ul>
+<h3 id="15-what-is-pass-in-python">15. What is pass in Python?</h3>
+<p>The <code>pass </code>keyword represents a null operation in Python. It is generally used for the purpose of filling up empty blocks of code which may execute during runtime but has yet to be written. Without the <strong>pass</strong> statement in the following code, we may run into some errors during code execution.</p>
+<pre><code class="language-python">def myEmptyFunc():
+    # do nothing
+    pass
+
+myEmptyFunc()    # nothing happens
+
+## Without the pass keyword
+# File &quot;&lt;stdin&gt;&quot;, line 3
+# IndentationError: expected an indented block
+</code></pre>
+<h3 id="16-how-do-you-copy-an-object-in-python">16. How do you copy an object in Python?</h3>
+<p>In Python, the assignment statement (<code>**=**</code> operator) does not copy objects. Instead, it creates a binding between the existing object and the target variable name. To create copies of an object in Python, we need to use the <strong>copy</strong> module. Moreover, there are two ways of creating copies for the given object using the <strong>copy</strong> module -</p>
+<ul>
+<li><strong>Shallow Copy</strong> is a bit-wise copy of an object. The copied object created has an exact copy of the values in the original object. If either of the values are references to other objects, just the reference addresses for the same are copied.</li>
+<li><strong>Deep Copy</strong> copies all values recursively from source to target object, i.e. it even duplicates the objects referenced by the source object.</li>
+</ul>
+<pre><code class="language-python">from copy import copy, deepcopy
+
+list_1 = [1, 2, [3, 5], 4]
+
+## shallow copy
+
+list_2 = copy(list_1) 
+list_2[3] = 7
+list_2[2].append(6)
+
+list_2    # output =&gt; [1, 2, [3, 5, 6], 7]
+list_1    # output =&gt; [1, 2, [3, 5, 6], 4]
+
+## deep copy
+
+list_3 = deepcopy(list_1)
+list_3[3] = 8
+list_3[2].append(7)
+
+list_3    # output =&gt; [1, 2, [3, 5, 6, 7], 8]
+list_1    # output =&gt; [1, 2, [3, 5, 6], 4]
+</code></pre>
+<h3 id="17-what-is-the-difference-between-xrange-and-range-in-python">17. What is the difference between xrange and range in Python?</h3>
+<p><strong>xrange()</strong> and <strong>range()</strong> are quite similar in terms of functionality. They both generate a sequence of integers, with the only difference that <code>range()</code> returns a <strong>Python list</strong>, whereas, <code>xrange()</code> returns an <strong>xrange object</strong>.</p>
+<p><strong>So how does that make a difference?</strong> It sure does, because unlike range(), xrange() doesn&rsquo;t generate a static list, it creates the value on the go. This technique is commonly used with an object type <strong>generators</strong> and has been termed as <strong>&ldquo;yielding&rdquo;</strong>.</p>
+<p><strong>Yielding</strong> is crucial in applications where memory is a constraint. Creating a static list as in range() can lead to a <code>Memory Error</code> in such conditions, while, xrange() can handle it optimally by using just enough memory for the generator (significantly less in comparison).</p>
+<pre><code>for i in xrange(10):    # numbers from o to 9
+    print i       # output =&gt; 0 1 2 3 4 5 6 7 8 9
+
+for i in xrange(1,10):    # numbers from 1 to 9
+    print i       # output =&gt; 1 2 3 4 5 6 7 8 9
+
+for i in xrange(1, 10, 2):    # skip by two for next
+    print i       # output =&gt; 1 3 5 7 9
+</code></pre>
+<p><em><strong>Note:</strong> <strong>xrange</strong> has been <strong>deprecated</strong> as of <strong>Python 3.x</strong>. Now <code>range</code> does exactly the same what <code>xrange</code> used to do in <strong>Python 2.x</strong>, since it was way better to use xrange() than the original range() function in Python 2.x.</em></p>
+<h3 id="18-what-are-modules-and-packages-in-python">18. What are modules and packages in Python?</h3>
+<p>Python packages and Python modules are two mechanisms that allow for <strong>modular programming</strong> in Python. Modularizing ahs several advantages -</p>
+<ul>
+<li><strong>Simplicity:</strong> Working on a single module helps you focus on a relatively small portion of the problem at hand. This makes development easier and less error-prone.</li>
+<li><strong>Maintainability:</strong> Modules are designed to enforce logical boundaries between different problem domains. If they are written in a manner that reduces interdependency, it is less likely that modifications in a module might impact other parts of the program.</li>
+<li><strong>Reusability:</strong> Functions defined in a module can be easily reused by other parts of the application.</li>
+<li><strong>Scoping:</strong> Modules typically define a separate <strong>namespace</strong>, which helps avoid confusion between identifiers from other parts of the program.</li>
+</ul>
+<p><strong>Modules</strong>, in general, are simply Python files with a .py extension and can have a set of functions, classes or variables defined and implemented. They can be imported and initialized once using the <code>import</code> statement. If partial functionality is needed, import the requisite classes or functions using <code>from foo import bar</code>.</p>
+<p><strong>Packages</strong> allow for hierarchial structuring of the module namespace using <strong>dot notation</strong>. As, <strong>modules</strong> help avoid clashes between global variable names, in a similary manner, <strong>packages</strong> help avoid clashes between module names.
+Creating a package is easy since it makes use of the system&rsquo;s inherent file structure. So just stuff the modules into a folder and there you have it, the folder name as the package name. Importing a module or its contents from this package requires the package name as prefix to the module name joined by a dot.</p>
+<p><em><strong>Note:</strong> You can technically import the package as well, but alas, it doesn&rsquo;t import the modules within the package to the local namespace, thus, it is practically useless.</em></p>
+<h3 id="19-what-are-global-protected-and-private-attributes-in-python">19. What are global, protected and private attributes in Python?</h3>
+<ul>
+<li><strong>Global</strong> variables are public variables that are defined in the global scope. To use the variable in the global scope inside a function, we use the <code>global</code> keyword.</li>
+<li><strong>Protected</strong> attributes are attributes defined with a underscore prefixed to their identifier eg. <strong>_sara</strong>. They can still be accessed and modified from outside the class they are defined in but a responsible developer should refrain from doing so.</li>
+<li><strong>Private</strong> attributes are attributes with double underscore prefixed to their identifier eg. <strong>__ansh</strong>. They cannot be accessed or modified from the outside directly and will result in an AttributeError if such an attempt is made.</li>
+</ul>
+<h3 id="20-what-is-self-in-python">20. What is self in Python?</h3>
+<p><strong>Self</strong> is a keyword in Python used to define an instance or an object of a class. In Python, it is explicity used as the first paramter, unlike in Java where it is optional. It helps in disinguishing between the methods and attributes of a class from its local variables.</p>
+<h3 id="21-what-is-__init__">21. What is <strong>init</strong>?</h3>
+<p><code>__init__</code> is a contructor method in Python and is automatically called to allocate memory when a new object/instance is created. All classes have a <strong><strong>init</strong></strong> method associated with them. It helps in distinguishing methods and attributes of a class from local variables.</p>
+<pre><code class="language-python"># class definition
+class Student:
+    def __init__(self, fname, lname, age, section):
+        self.firstname = fname
+        self.lastname = lname
+        self.age = age
+        self.section = section
+
+# creating a new object
+stu1 = Student(&quot;Sara&quot;, &quot;Ansh&quot;, 22, &quot;A2&quot;)
+</code></pre>
+<h3 id="22-what-is-break-continue-and-pass-in-python">22. What is break, continue and pass in Python?</h3>
+<table>
+<thead>
+<tr>
+<th><strong>Break</strong></th>
+<th>The break statement terminates the loop immediately and the control flows to the statement after the body of the loop.</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Continue</strong></td>
+<td>The continue statement terminates the current iteration of the statement, skips the rest of the code in the current iteration and the control flows to the next iteration of the loop.</td>
+</tr>
+<tr>
+<td><strong>Pass</strong></td>
+<td>As explained above, pass keyword in Python is generally used to fill-up empty blocks and is similar to an empty statement represented by a semi-colon in languages such as Java, C++, Javascript etc.</td>
+</tr>
+</tbody>
+</table>
+<pre><code class="language-python">pat = [1, 3, 2, 1, 2, 3, 1, 0, 1, 3]
+
+for p in pat:
+    pass
+    if (p == 0):
+        current = p
+        break
+    elif (p % 2 == 0):
+        continue
+    print(p)    # output =&gt; 1 3 1 3 1
+
+print(current)    # output =&gt; 0
+</code></pre>
+<h3 id="23-what-is-pickling-and-unpickling">23. What is pickling and unpickling?</h3>
+<p>Python library offers a feature - <strong>serialization</strong> out of the box. Serializing a object refers to transforming it into a format that can be stored, so as to be able to deserialize it later on, to obtain the original object. Here, the <strong>pickle</strong> module comes into play.</p>
+<p><strong>Pickling</strong>
+Pickling is the name of the serialization process in Python. Any object in Python can be serialized into a byte stream and dumped as a file in the memory. The process of pickling is compact but pickle objects can be compressed further. Moreover, pickle keeps track of the objects it has serialized and the serialization is portable across versions.
+The function used for the above process is <code>pickle.dump()</code>.</p>
+<p><strong>Unpickling</strong>
+Unpickling is the complete inverse of pickling. It deserializes the byte stream to recreate the objects stored in the file, and loads the object to memory.
+The function used for the above process is <code>pickle.load()</code>.</p>
+<p><strong>Note:</strong> Python has another, more primitive, serialization module called <strong>marshall</strong>, which exists primarily to <strong>support .pyc files</strong> in Python and <strong>differs significantly from pickle</strong>.</p>
+<p><img src="/img/python-pickling-unpickling-8ddbdf2a10840a638ab6772b13577c2b4d9300801e30380a9d8a395e2dc5ffa8.png.gz" alt="img"></p>
+<h3 id="24-what-are-generators-in-python">24. What are generators in Python?</h3>
+<p>Generators are functions that return an iterable collection of items, one at a time, in a set manner. Generators, in general, are used to create iterators with a different approach. They employ the use of <code>yield</code> keyword rather than <code>return</code> to return a <strong>generator object</strong>.
+Let&rsquo;s try and build a generator for fibonacci numbers -</p>
+<pre><code class="language-python">## generate fibonacci numbers upto n
+def fib(n):
+    p, q = 0, 1
+    while(p &lt; n):
+        yield p
+        p, q = q, p + q
+
+x = fib(10)    # create generator object 
+  
+## iterating using __next__()
+x.__next__()    # output =&gt; 0
+x.__next__()    # output =&gt; 1
+x.__next__()    # output =&gt; 1
+x.__next__()    # output =&gt; 2
+x.__next__()    # output =&gt; 3
+x.__next__()    # output =&gt; 5
+x.__next__()    # output =&gt; 8
+x.__next__()    # error
+  
+## iterating using loop
+for i in fib(10):
+    print(i)    # output =&gt; 0 1 1 2 3 5 8
+</code></pre>
+<h3 id="25-what-is-pythonpath-in-python">25. What is PYTHONPATH in Python?</h3>
+<p>PYTHONPATH is an environment variable which you can set to add additional directories where Python will look for modules and packages. This is especially useful in maintaining Python libraries that you do not wish to install in the global default location.</p>
+<h3 id="26-what-is-the-use-of-help-and-dir-functions">26. What is the use of help() and dir() functions?</h3>
+<p><strong>help()</strong> function in Python is used to display the <strong>documentation</strong> of modules, classes, functions, keywords, etc. If no parameter is passed to the <code>help()</code> function, then an interactive <strong>help utility</strong> is launched on the console.
+<strong>dir()</strong> function tries to return a valid list of attributes and methods of the object it is called upon. It behaves differently with different objects, as it aims to produce the most relevant data, rather than the complete information.</p>
+<ul>
+<li>For Modules/Library objects, it returns a list of all attributes, contained in that module.</li>
+<li>For Class Objects, it returns a list of all valid attributes and base attributes.</li>
+<li>With no arguments passed, it returns a list of attributes in the current scope.</li>
+</ul>
+<h3 id="27-what-is-the-difference-between-py-and-pyc-files">27. What is the difference between .py and .pyc files?</h3>
+<ul>
+<li>.py files contain the source code of a program. Whereas, .pyc file contains the bytecode of your program. We get bytecode after compilation of .py file (source code). .pyc files are not created for all the files that you run. It is only created for the files that you import.</li>
+<li>Before executing a python program python interpreter checks for the compiled files. If the file is present, the virtual machine executes it. If not found, it checks for .py file. If found, compiles it to .pyc file and then python virtual machine executes it.</li>
+<li>Having .pyc file saves you the compilation time.</li>
+</ul>
+<h3 id="28-how-python-is-interpreted">28. How Python is interpreted?</h3>
+<ul>
+<li>Python as a language is not interpreted or compiled. Interpreted or compiled is the property of the implementation. Python is a bytecode(set of interpreter readable instructions) interpreted generally.</li>
+<li>Source code is a file with .py extension.</li>
+<li>Python compiles the source code to a set of instructions for a virtual machine. The Python interpreter is an implementation of that virtual machine. This intermediate format is called “bytecode”.</li>
+<li>.py source code is first compiled to give .pyc which is bytecode. This bytecode can be then interpreted by official CPython, or JIT(Just in Time compiler) compiled by PyPy.</li>
+</ul>
+<h3 id="29-what-are-unittests-in-python">29. What are unittests in Python?</h3>
+<ul>
+<li>unittest is a unit testing framework of Python.</li>
+<li>Unit testing means testing different components of software separately. Can you think why unit testing is important? Imagine a scenario, you are building software which uses three components namely A, B, and C. Now, suppose your software breaks at a point time. How will you find which component was responsible for breaking the software? Maybe it was component A that failed, which in turn failed component B, and this actually failed the software. There can be many such combinations.</li>
+<li>This is why it is necessary to test each and every component properly so that we know which component might be highly responsible for the failure of the software.</li>
+</ul>
+<h3 id="30-what-is-docstring-in-python">30. What is docstring in Python?</h3>
+<ul>
+<li>Documentation string or docstring is a multiline string used to document a specific code segment.</li>
+<li>The docstring should describe what the function or method does.</li>
+</ul>
+<h3 id="31-how-are-arguments-passed-by-value-or-by-reference-in-python">31. How are arguments passed by value or by reference in python?</h3>
+<ul>
+<li><strong>Pass by value:</strong> Copy of the actual object is passed. Changing the value of the copy of the object will not change the value of the original object.</li>
+<li><strong>Pass by reference:</strong> Reference to the actual object is passed. Changing the value of the new object will change the value of the original object.</li>
+</ul>
+<p>In Python, arguments are passed by reference, i.e., reference to the actual object is passed.</p>
+<pre><code class="language-python">def appendNumber(arr):
+    arr.append(4)
+
+arr = [1, 2, 3]
+
+print(arr)  #Output: =&gt; [1, 2, 3]
+appendNumber(arr)
+print(arr)  #Output: =&gt; [1, 2, 3, 4]
+</code></pre>
+<h3 id="32-what-are-iterators-in-python">32. What are iterators in Python?</h3>
+<ul>
+<li><strong>Iterator</strong> is an object.</li>
+<li>It remembers its state i.e., where it is during iteration (see code below to see how)</li>
+<li><strong><strong>iter</strong>()</strong> method initializes an iterator.</li>
+<li>It has a <strong><strong>next</strong>()</strong> method which returns the next item in iteration and points to the next element. Upon reaching the end of iterable object <strong><strong>next</strong>()</strong> must return <strong>StopIteration</strong> exception.</li>
+<li>It is also self iterable.</li>
+<li>Iterators are objects with which we can iterate over iterable objects like lists, strings, etc.</li>
+</ul>
+<pre><code class="language-python">class ArrayList:
+    def __init__(self, number_list):
+        self.numbers = number_list
+	
+    def __iter__(self):
+            self.pos = 0
+            return self
+
+	def __next__(self):
+		if(self.pos &lt; len(self.numbers)):
+            self.pos += 1
+            return self.numbers[self.pos - 1]
+   		else:
+             raise StopIteration
+
+array_obj = ArrayList([1, 2, 3])
+
+it = array_obj.__iter__()
+# it = iter(array_obj)
+
+print(it.__next__()) #output: 1
+print(it.__next__()) #output: 2
+print(it.__next__()) #output: 3
+
+print(next(it))
+#Throws Exception
+#Traceback (most recent call last):
+#...
+#StopIteration
+</code></pre>
+<h3 id="33-what-is-slicing-in-python">33. What is slicing in Python?</h3>
+<ul>
+<li>As the name suggests, ‘slicing’ is taking parts of.</li>
+<li>Syntax for slicing is <strong>[start : stop : step]</strong></li>
+<li><strong>start</strong> is the starting index from where to slice a list or tuple</li>
+<li><strong>stop</strong> is the ending index or where to sop.</li>
+<li><strong>step</strong> is the number of steps to jump.</li>
+<li>Default value for <strong>start</strong> is 0, <strong>stop</strong> is number of items, <strong>step</strong> is 1.</li>
+<li>Slicing can be done on <strong>strings</strong>, <strong>arrays</strong>, <strong>lists</strong>, and <strong>tuples</strong>.</li>
+</ul>
+<pre><code class="language-python">numbers = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+print(numbers[1 : : 2])  #output : [2, 4, 6, 8, 10]
+</code></pre>
+<h3 id="34-explain-how-can-you-make-a-python-script-executable-on-unix">34. Explain how can you make a Python Script executable on Unix?</h3>
+<ul>
+<li>Script file must begin with <strong>#!/usr/bin/env python</strong></li>
+</ul>
+<h3 id="35-explain-how-to-delete-a-file-in-python">35. Explain how to delete a file in Python?</h3>
+<ul>
+<li>Use command <strong>os.remove(file_name)</strong></li>
+</ul>
+<pre><code class="language-python">import os
+os.remove(&quot;ChangedFile.csv&quot;)
+print(&quot;File Removed!&quot;)
+</code></pre>
+<h3 id="36-explain-split-and-join-functions-in-python">36. Explain split() and join() functions in Python?</h3>
+<ul>
+<li>You can use <strong>split()</strong> function to split a string based on a delimiter to a list of strings.</li>
+<li>You can use <strong>join()</strong> function to join a list of strings based on a delimiter to give a single string.</li>
+</ul>
+<pre><code class="language-python">string = &quot;This is a string.&quot;
+string_list = string.split(' ') #delimiter is ‘space’ character or ‘ ‘
+print(string_list) #output: ['This', 'is', 'a', 'string.']
+print(' '.join(string_list)) #output: This is a string.
+</code></pre>
+<h3 id="37-what-is-the-difference-between-python-arrays-and-lists">37. What is the difference between Python Arrays and lists?</h3>
+<ul>
+<li>Arrays in python can only contain elements of same data types i.e., data type of array should be homogeneous. It is a thin wrapper around C language arrays and consumes far less memory than lists.</li>
+<li>Lists in python can contain elements of different data types i.e., data type of lists can be heterogeneous. It has the disadvantage of consuming large memory.</li>
+</ul>
+<pre><code class="language-python">import array
+
+a = array.array('i', [1, 2, 3])
+
+for i in a:
+    print(i, end=' ')    #OUTPUT: 1 2 3
+
+a = array.array('i', [1, 2, 'string'])    
+#OUTPUT: TypeError: an integer is required (got type str)
+
+a = [1, 2, 'string']
+
+for i in a:
+    print(i, end=' ')    #OUTPUT: 1 2 string
+</code></pre>
+<h3 id="38-what-does-args-and-kwargs-mean">38. What does *args and **kwargs mean?</h3>
+<p>*<strong>args</strong></p>
+<ul>
+<li>*args is a special syntax used in function definition to pass variable-length argument.</li>
+<li>“*” means variable length and “args” is the name used by convention. You can use any other.</li>
+</ul>
+<pre><code class="language-python">def multiply(a, b, *argv):
+    mul = a * b
+
+    for num in argv:
+        mul *= num
+
+    return mul
+
+print(multiply(1, 2, 3, 4, 5)) #output: 120
+</code></pre>
+<p>*<strong>*kwargs</strong></p>
+<ul>
+<li>**kwargs is a special syntax used in function definition to pass variable-length keyworded argument.</li>
+<li>Here, also, “kwargs” is used just by convention. You can use any other name.</li>
+<li>Keyworded argument means a variable which has a name when passed to a function.</li>
+<li>It is actually a dictionary of variable name and its value.</li>
+</ul>
+<pre><code class="language-python">def tellArguments(**kwargs):
+    for key, value in kwargs.items():
+        print(key + &quot;: &quot; + value)
+tellArguments(arg1 = &quot;argument 1&quot;, arg2 = &quot;argument 2&quot;, arg3 = &quot;argument 3&quot;)
+#output:
+# arg1: argument 1
+# arg2: argument 2
+# arg3: argument 3
+</code></pre>
+<h3 id="39-what-are-negative-indexes-and-why-are-they-used">39. What are negative indexes and why are they used?</h3>
+<ul>
+<li>Negative indexes are the indexes from the end of the list or tuple or string.</li>
+<li><strong>Arr[-1]</strong> means last element of array <strong>Arr[]</strong></li>
+</ul>
+<pre><code class="language-python">arr = [1, 2, 3, 4, 5, 6]
+
+#get the last element
+print(arr[-1]) #output 6
+
+#get the second last element
+print(arr[-2]) #output 5
+</code></pre>
+
+    </div>
+    <div class="article-footer">
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/foxisawesome" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/qweng/" target="_blank" title="linkedin" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-linkedin"></i></a></li>
+    <li><a href="https://foxisawesome.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2019  -
+    2020
+
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_SVG"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: true, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/sql.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://foxisawesome.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://foxisawesome.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'https:\/\/foxisawesome.github.io',
+            CONTENT_URL: 'https:\/\/foxisawesome.github.io\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://foxisawesome.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-176995936-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

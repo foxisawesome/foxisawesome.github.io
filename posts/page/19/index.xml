@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 30 Nov 2020 21:38:19 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>328 Odd Even Linked List</title>
+      <link>https://foxisawesome.github.io/posts/328-odd-even-linked-list/</link>
+      <pubDate>Sun, 30 Aug 2020 21:27:32 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/328-odd-even-linked-list/</guid>
+      <description>LC 328 Odd Even Linked List Given a singly linked list, group all odd nodes together followed by the even nodes. Please note here we are talking about the node number and not the value in the nodes. You should try to do it in place. The program should run in O(1) space complexity and O(nodes) time complexity. Example 1: Input: 1-&amp;gt;2-&amp;gt;3-&amp;gt;4-&amp;gt;5-&amp;gt;NULL Output: 1-&amp;gt;3-&amp;gt;5-&amp;gt;2-&amp;gt;4-&amp;gt;NULL Solution 2020-08-30 Notes: linked list 终</description>
+    </item>
     
     <item>
       <title>1266 Minimum Time Visiting All Points</title>
@@ -194,18 +203,6 @@ You may assume that each input would have *exactly* one solution, and you may no
   Research and Interests Data Analysis Probability and Statistics • Bayesian Analysis • Machine Learning • Time Series Analysis • Natural Language Processing • Visualization.
 Others Knowledge Sharing • Data Science • Clean Code
 Hobbies Photography • Sports</description>
-    </item>
-    
-    <item>
-      <title>Imbalance Data Handling Notes</title>
-      <link>https://foxisawesome.github.io/posts/imbalance_data_handling_notes/</link>
-      <pubDate>Mon, 11 Nov 2019 21:43:28 -0500</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/imbalance_data_handling_notes/</guid>
-      <description>reference: The 5 Most Useful Techniques to Handle Imbalanced Datasets
-1. Random Undersampling and Oversampling A widely adopted and perhaps the most straightforward method for dealing with highly imbalanced datasets is called resampling. It consists of removing samples from the majority class (under-sampling) and/or adding more examples from the minority class (over-sampling).
-Let us first create some example imbalanced data.
-from sklearn.datasets import make_classification X, y = make_classification( n_classes=2, class_sep=1.5, weights=[0.</description>
     </item>
     
   </channel>

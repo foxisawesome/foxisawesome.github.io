@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>1321 Restaurant Growth</title>
+      <link>https://foxisawesome.github.io/posts/1321-restaurant-growth/</link>
+      <pubDate>Fri, 09 Oct 2020 19:16:19 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1321-restaurant-growth/</guid>
+      <description>LC 1321 Restaurant Growth Write an SQL query to compute moving average of how much customer paid in a 7 days window (current day + 6 days before) . The query result format is in the following example: Return result table ordered by visited_on. average_amount should be rounded to 2 decimal places, all dates are in the format (&amp;lsquo;YYYY-MM-DD&amp;rsquo;). Customer table: +-------------+--------------+--------------+-------------+ | customer_id | name | visited_on | amount</description>
+    </item>
+    
+    <item>
       <title>1107 New Users Daily Count</title>
       <link>https://foxisawesome.github.io/posts/1107-new-users-daily-count/</link>
       <pubDate>Fri, 09 Oct 2020 18:54:37 -0400</pubDate>
@@ -197,15 +206,6 @@ Delivery table: +-------------+-------------+------------+----------------------
       <description>LC 626 Exchange Seats   Can you write a SQL query to output the result for Mary?
 +---------+---------+ | id | student | +---------+---------+ | 1 | Abbot | | 2 | Doris | | 3 | Emerson | | 4 | Green | | 5 | Jeames | +---------+---------+  For the sample input, the output is:
 +---------+---------+ | id | student | +---------+---------+ | 1 | Doris | | 2 | Abbot | | 3 | Green | | 4 | Emerson | | 5 | Jeames | +---------+---------+   Solution 2020-10-06 Notes: SELECT CASE WHEN MOD(id, 2) = 1 AND id !</description>
-    </item>
-    
-    <item>
-      <title>55 Jump Game</title>
-      <link>https://foxisawesome.github.io/posts/55-jump-game/</link>
-      <pubDate>Tue, 06 Oct 2020 19:25:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/55-jump-game/</guid>
-      <description>LC 55 Jump Game Given an array of non-negative integers, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Determine if you are able to reach the last index. Input: nums = [2,3,1,1,4] Output: true Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index. Solution 2020-10-06 Notes: 这</description>
     </item>
     
   </channel>

@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>819 Most Common Word</title>
+      <link>https://foxisawesome.github.io/posts/819-most-common-word/</link>
+      <pubDate>Fri, 25 Sep 2020 14:39:42 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/819-most-common-word/</guid>
+      <description>LC 819 Most Common Word Given a paragraph and a list of banned words, return the most frequent word that is not in the list of banned words. It is guaranteed there is at least one word that isn&amp;rsquo;t banned, and that the answer is unique. Words in the list of banned words are given in lowercase, and free of punctuation. Words in the paragraph are not case sensitive. The</description>
+    </item>
+    
+    <item>
       <title>1137 N Th Tribonacci Number</title>
       <link>https://foxisawesome.github.io/posts/1137-n-th-tribonacci-number/</link>
       <pubDate>Fri, 25 Sep 2020 14:13:22 -0400</pubDate>
@@ -179,15 +188,6 @@
       
       <guid>https://foxisawesome.github.io/posts/28-implement-strstr/</guid>
       <description>LC 28 Implement Strstr Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack. Input: haystack = &amp;quot;hello&amp;quot;, needle = &amp;quot;ll&amp;quot; Output: 2 Solution 2020-09-23 Notes: 官方解答里有中 $\mathcal{O}(N)$ 的解哦！ class Solution: def strStr(self, haystack: str, needle: str) -&amp;gt; int: hLen = len(haystack) nLen = len(needle) for i in range(hLen-nLen+1): if haystack[i:i+nLen]</description>
-    </item>
-    
-    <item>
-      <title>349 Intersection of Two Arrays</title>
-      <link>https://foxisawesome.github.io/posts/349-intersection-of-two-arrays/</link>
-      <pubDate>Wed, 23 Sep 2020 20:03:57 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/349-intersection-of-two-arrays/</guid>
-      <description>LC 349 Intersection of Two Arrays Given two arrays, write a function to compute their intersection. Each element in the result must be unique. The result can be in any order. Solution 2020-09-23 Notes: 很多做法，set本身有intersection()的method。 class Solution: def</description>
     </item>
     
   </channel>

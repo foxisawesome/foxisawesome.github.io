@@ -5,10 +5,22 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
+    <lastBuildDate>Mon, 30 Nov 2020 21:38:19 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Imbalance Data Handling Notes</title>
+      <link>https://foxisawesome.github.io/posts/imbalance_data_handling_notes/</link>
+      <pubDate>Mon, 11 Nov 2019 21:43:28 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/imbalance_data_handling_notes/</guid>
+      <description>reference: The 5 Most Useful Techniques to Handle Imbalanced Datasets
+1. Random Undersampling and Oversampling A widely adopted and perhaps the most straightforward method for dealing with highly imbalanced datasets is called resampling. It consists of removing samples from the majority class (under-sampling) and/or adding more examples from the minority class (over-sampling).
+Let us first create some example imbalanced data.
+from sklearn.datasets import make_classification X, y = make_classification( n_classes=2, class_sep=1.5, weights=[0.</description>
+    </item>
     
     <item>
       <title></title>
