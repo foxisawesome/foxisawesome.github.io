@@ -11,6 +11,24 @@
     
     
     <item>
+      <title>612 Shortest Distance in a Plane</title>
+      <link>https://foxisawesome.github.io/posts/612-shortest-distance-in-a-plane/</link>
+      <pubDate>Sun, 25 Oct 2020 10:00:41 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/612-shortest-distance-in-a-plane/</guid>
+      <description>LC 612 Shortest Distance in a Plane Table point_2d holds the coordinates (x,y) of some unique points (more than two) in a plane. Write a query to find the shortest distance between these points rounded to 2 decimals. | x | y | |----|----| | -1 | -1 | | 0 | 0 | | -1 | -2 | The shortest distance is 1.00 from point (-1,-1) to (-1,2). So</description>
+    </item>
+    
+    <item>
+      <title>586 Customer Placing the Largest Number of Orders</title>
+      <link>https://foxisawesome.github.io/posts/586-customer-placing-the-largest-number-of-orders/</link>
+      <pubDate>Sat, 24 Oct 2020 20:14:32 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/586-customer-placing-the-largest-number-of-orders/</guid>
+      <description>LC 586 Customer Placing the Largest Number of Orders Query the customer_number from the *orders* table for the customer who has placed the largest number of orders. It is guaranteed that exactly one customer will have placed more orders than any other customer. Solution 2020-10-24 Notes: 秒了 select customer_number from (select customer_number, count(order_number) as ct from orders group by 1 order by ct desc) a limit 1</description>
+    </item>
+    
+    <item>
       <title>580 Count Student Number in Departments</title>
       <link>https://foxisawesome.github.io/posts/580-count-student-number-in-departments/</link>
       <pubDate>Sat, 24 Oct 2020 20:11:01 -0400</pubDate>
@@ -176,24 +194,6 @@ Input: ransomNote = &amp;quot;a&amp;quot;, magazine = &amp;quot;b&amp;quot; Outp
       
       <guid>https://foxisawesome.github.io/posts/682-baseball-game/</guid>
       <description>LC 682 Baseball Game You are keeping score for a baseball game with strange rules. The game consists of several rounds, where the scores of past rounds may affect future rounds&#39; scores. At the beginning of the game, you start with an empty record. You are given a list of strings ops, where ops[i] is the ith operation you must apply to the record and is one of the following:</description>
-    </item>
-    
-    <item>
-      <title>1167 Minimum Cost to Connect Sticks</title>
-      <link>https://foxisawesome.github.io/posts/1167-minimum-cost-to-connect-sticks/</link>
-      <pubDate>Mon, 19 Oct 2020 16:16:26 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1167-minimum-cost-to-connect-sticks/</guid>
-      <description>LC 1167 Minimum Cost to Connect Sticks You have some number of sticks with positive integer lengths. These lengths are given as an array sticks, where sticks[i] is the length of the ith stick. You can connect any two sticks of lengths x and y into one stick by paying a cost of x + y. You must connect all the sticks until there is only one stick remaining. Return</description>
-    </item>
-    
-    <item>
-      <title>1083 Sales Analysis II</title>
-      <link>https://foxisawesome.github.io/posts/1083-sales-analysis-ii/</link>
-      <pubDate>Mon, 19 Oct 2020 15:30:49 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1083-sales-analysis-ii/</guid>
-      <description>LC 1083 Sales Analysis II Write an SQL query that reports the buyers who have bought S8 but not iPhone. Note that S8 and iPhone are products present in the Product table. The query result format is in the following example: Product table: +------------+--------------+------------+ | product_id | product_name | unit_price | +------------+--------------+------------+ | 1 | S8 | 1000 | | 2 | G4 | 800 | | 3 | iPhone</description>
     </item>
     
   </channel>

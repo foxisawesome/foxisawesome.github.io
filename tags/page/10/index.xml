@@ -5,10 +5,28 @@
     <link>https://foxisawesome.github.io/tags/</link>
     <description>Recent content in Tags on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>66 Plus One</title>
+      <link>https://foxisawesome.github.io/posts/66-plus-one/</link>
+      <pubDate>Thu, 01 Oct 2020 16:14:59 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/66-plus-one/</guid>
+      <description>LC 66 Plus One Given a non-empty array of digits representing a non-negative integer, increment one to the integer. The digits are stored such that the most significant digit is at the head of the list, and each element in the array contains a single digit. You may assume the integer does not contain any leading zero, except the number 0 itself. Solution 2020-10-01 Notes: 简单题，走</description>
+    </item>
+    
+    <item>
+      <title>463 Island Perimeter</title>
+      <link>https://foxisawesome.github.io/posts/463-island-perimeter/</link>
+      <pubDate>Thu, 01 Oct 2020 16:01:57 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/463-island-perimeter/</guid>
+      <description>LC 463 Island Perimeter You are given row x col grid representing a map where grid[i][j] = 1 represents land and grid[i][j] = 0 represents water. Grid cells are connected horizontally/vertically (not diagonally). The grid is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells). The island doesn&amp;rsquo;t have &amp;ldquo;lakes&amp;rdquo;, meaning the water inside isn&amp;rsquo;t connected to the water around the island.</description>
+    </item>
     
     <item>
       <title>339 Nested List Weight Sum</title>
@@ -182,26 +200,6 @@ Note that you must write a single update statement, DO NOT write any select stat
       <description>LC 577 Employee Bonus   Select all employee&amp;rsquo;s name and bonus whose bonus is &amp;lt; 1000.
 Table:Employee
 +-------+--------+-----------+--------+ | empId | name | supervisor| salary | +-------+--------+-----------+--------+ | 1 | John | 3 | 1000 | | 2 | Dan | 3 | 2000 | | 3 | Brad | null | 4000 | | 4 | Thomas | 3 | 4000 | +-------+--------+-----------+--------+ empId is the primary key column for this table.</description>
-    </item>
-    
-    <item>
-      <title>574 Winning Candidate</title>
-      <link>https://foxisawesome.github.io/posts/574-winning-candidate/</link>
-      <pubDate>Tue, 29 Sep 2020 13:40:03 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/574-winning-candidate/</guid>
-      <description>LC 574 Winning Candidate Write a sql to find the name of the winning candidate, the above example will return the winner B. Solution 2020-09-29 Notes: 先 group by, 在 order by 里放 aggregation function SELECT name FROM candidate WHERE id = ( SELECT candidateid FROM vote GROUP BY candidateid ORDER BY COUNT(*) DESC LIMIT 1 ) 2020-10-14 Notes: Window function + aggregation function SELECT name FROM candidate a</description>
-    </item>
-    
-    <item>
-      <title>534 Game Play Analysis III</title>
-      <link>https://foxisawesome.github.io/posts/534-game-play-analysis-iii/</link>
-      <pubDate>Tue, 29 Sep 2020 13:30:11 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/534-game-play-analysis-iii/</guid>
-      <description>LC 534 Game Play Analysis III   Write an SQL query that reports for each player and date, how many games played so far by the player. That is, the total number of games played by the player until that date. Check the example for clarity.
-The query result format is in the following example:
-Activity table: +-----------+-----------+------------+--------------+ | player_id | device_id | event_date | games_played | +-----------+-----------+------------+--------------+ | 1 | 2 | 2016-03-01 | 5 | | 1 | 2 | 2016-05-02 | 6 | | 1 | 3 | 2017-06-25 | 1 | | 3 | 1 | 2016-03-02 | 0 | | 3 | 4 | 2018-07-03 | 5 | +-----------+-----------+------------+--------------+ Result table: +-----------+------------+---------------------+ | player_id | event_date | games_played_so_far | +-----------+------------+---------------------+ | 1 | 2016-03-01 | 5 | | 1 | 2016-05-02 | 11 | | 1 | 2017-06-25 | 12 | | 3 | 2016-03-02 | 0 | | 3 | 2018-07-03 | 5 | +-----------+------------+---------------------+   Solution 2020-09-29 Notes:  SUM() OVER(ORDER BY) gives cumulative results.</description>
     </item>
     
   </channel>

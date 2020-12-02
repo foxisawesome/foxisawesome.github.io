@@ -39,7 +39,7 @@
 <meta itemprop="description" content="LC 1501 Countries You Can Safely Invest In Write an SQL query to find the countries where this company can invest. Return the result table in any order. The query result format is in the following example. Person table: &#43;----&#43;----------&#43;--------------&#43; | id | name | phone_number | &#43;----&#43;----------&#43;--------------&#43; | 3 | Jonathan | 051-1234567 | | 12 | Elvis | 051-7654321 | | 1 | Moncef | 212-1234567 | |">
 <meta itemprop="datePublished" content="2020-10-22T10:50:21-04:00" />
 <meta itemprop="dateModified" content="2020-10-22T10:50:21-04:00" />
-<meta itemprop="wordCount" content="262">
+<meta itemprop="wordCount" content="296">
 
 
 
@@ -147,7 +147,7 @@
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">236</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">238</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">11</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">135</span></li>
@@ -213,7 +213,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">367</span></li>
+                    class="tag-list-count">369</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -257,7 +257,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/tree/" class="tag-list-link">tree</a><span
-                    class="tag-list-count">28</span></li>
+                    class="tag-list-count">30</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/two_pointers/" class="tag-list-link">two_pointers</a><span
@@ -369,15 +369,22 @@ Result table:
 </code></pre>
 </blockquote>
 <h2 id="solution">Solution</h2>
-<h4 id="2020-10-22-notes">2020-10-22 Notes:</h4>
+<h4 id="2020-12-01-notes">2020-12-01 Notes:</h4>
 <ul>
-<li>这个连接的好复杂。</li>
+<li>JOIN 的 ON clause 还能使用 <code>OR</code> 这样轻松的避免了使用union all。</li>
+<li>好复杂的join 但还好</li>
 </ul>
-<pre><code class="language-mysql">SELECT a.name AS country
-FROM person p JOIN calls c ON p.id=c.caller_id OR c.callee_id=p.id
-JOIN country a ON a.country_code = LEFT(p.phone_number,3)
-GROUP BY 1
-HAVING AVG(duration) &gt; (SELECT AVG(duration) FROM calls)
+<pre><code class="language-mysql">SELECT c.name AS country
+
+FROM person a
+JOIN calls b 
+ON a.id = b.caller_id OR a.id = b.callee_id
+
+JOIN country c
+ON c.country_code = LEFT(a.phone_number,3)
+
+GROUP BY c.name
+HAVING AVG(b.duration) &gt; (SELECT AVG(duration) FROM calls) 
 </code></pre>
 
     </div>

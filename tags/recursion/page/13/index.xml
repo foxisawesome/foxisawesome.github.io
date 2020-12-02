@@ -11,6 +11,24 @@
     
     
     <item>
+      <title>27 Remove Element</title>
+      <link>https://foxisawesome.github.io/posts/27-remove-element/</link>
+      <pubDate>Wed, 23 Sep 2020 20:30:03 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/27-remove-element/</guid>
+      <description>LC 27 Remove Element Given an array nums and a value val, remove all instances of that value in-place and return the new length. Do not allocate extra space for another array, you must do this by modifying the input array in-place with O(1) extra memory. The order of elements can be changed. It doesn&amp;rsquo;t matter what you leave beyond the new length. Solution 2020-10-08 Notes: 三刷，用</description>
+    </item>
+    
+    <item>
+      <title>28 Implement Strstr</title>
+      <link>https://foxisawesome.github.io/posts/28-implement-strstr/</link>
+      <pubDate>Wed, 23 Sep 2020 20:08:40 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/28-implement-strstr/</guid>
+      <description>LC 28 Implement Strstr Return the index of the first occurrence of needle in haystack, or -1 if needle is not part of haystack. Input: haystack = &amp;quot;hello&amp;quot;, needle = &amp;quot;ll&amp;quot; Output: 2 Solution 2020-09-23 Notes: 官方解答里有中 $\mathcal{O}(N)$ 的解哦！ class Solution: def strStr(self, haystack: str, needle: str) -&amp;gt; int: hLen = len(haystack) nLen = len(needle) for i in range(hLen-nLen+1): if haystack[i:i+nLen]</description>
+    </item>
+    
+    <item>
       <title>349 Intersection of Two Arrays</title>
       <link>https://foxisawesome.github.io/posts/349-intersection-of-two-arrays/</link>
       <pubDate>Wed, 23 Sep 2020 20:03:57 -0400</pubDate>
@@ -171,24 +189,6 @@
       
       <guid>https://foxisawesome.github.io/posts/133-clone-graph/</guid>
       <description>LC 133 Clone Graph Given a reference of a node in a connected undirected graph. Return a deep copy (clone) of the graph. Solution 2020-09-21 Notes: 刷graph第一题，对这种数据结构还不是很懂，抄了一遍 负雪明烛 的还得体会下。一般的遍历只</description>
-    </item>
-    
-    <item>
-      <title>1323 Maximum 69 Number</title>
-      <link>https://foxisawesome.github.io/posts/1323-maximum-69-number/</link>
-      <pubDate>Mon, 21 Sep 2020 15:51:59 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1323-maximum-69-number/</guid>
-      <description>LC 1323 Maximum 69 Number Given a positive integer num consisting only of digits 6 and 9. Return the maximum number you can get by changing at most one digit (6 becomes 9, and 9 becomes 6). Solution 2020-09-21 Notes: 开始时我想着转成str()后，用binary search出最</description>
-    </item>
-    
-    <item>
-      <title>47 Permutations II</title>
-      <link>https://foxisawesome.github.io/posts/47-permutations-ii/</link>
-      <pubDate>Mon, 21 Sep 2020 15:33:45 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/47-permutations-ii/</guid>
-      <description>LC 47 Permutations II Given a collection of numbers that might contain duplicates, return all possible unique permutations. Solution 2020-09-21 Notes: LC 46 的升级版。这题添加了nums里有duplicates的case。 为了保证输出时 distinct out 的条件，可以</description>
     </item>
     
   </channel>

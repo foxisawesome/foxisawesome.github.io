@@ -5,10 +5,29 @@
     <link>https://foxisawesome.github.io/tags/leetcode/</link>
     <description>Recent content in leetcode on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>603 Consecutive Available Seats</title>
+      <link>https://foxisawesome.github.io/posts/603-consecutive-available-seats/</link>
+      <pubDate>Wed, 14 Oct 2020 19:47:16 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/603-consecutive-available-seats/</guid>
+      <description>LC 603 Consecutive Available Seats   Several friends at a cinema ticket office would like to reserve consecutive available seats. Can you help to query all the consecutive available seats order by the seat_id using the following cinema table?
+| seat_id | free | |---------|------| | 1 | 1 | | 2 | 0 | | 3 | 1 | | 4 | 1 | | 5 | 1 |  Your query should return the following result for the sample case above.</description>
+    </item>
+    
+    <item>
+      <title>602 Friend Requests Ii Who Has the Most Friends</title>
+      <link>https://foxisawesome.github.io/posts/602-friend-requests-ii-who-has-the-most-friends/</link>
+      <pubDate>Wed, 14 Oct 2020 19:41:14 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/602-friend-requests-ii-who-has-the-most-friends/</guid>
+      <description>LC 602 Friend Requests Ii Who Has the Most Friends Write a query to find the the people who has most friends and the most friends number under the following rules: It is guaranteed there is only 1 people having the most friends. The friend request could only been accepted once, which mean there is no multiple records with the same requester_id and accepter_id value. For the sample data above,</description>
+    </item>
     
     <item>
       <title>974 Subarray Sums Divisible by K</title>
@@ -180,24 +199,6 @@ Transactions table: +------+---------+----------+--------+------------+ | id | c
       
       <guid>https://foxisawesome.github.io/posts/835-image-overlap/</guid>
       <description>LC 835 Image Overlap You are given two images img1 and img2 both of size n x n, represented as binary, square matrices of the same size. (A binary matrix has only 0s and 1s as values.) We translate one image however we choose (sliding it left, right, up, or down any number of units), and place it on top of the other image. After, the overlap of this translation</description>
-    </item>
-    
-    <item>
-      <title>1007 Minimum Domino Rotations for Equal Row</title>
-      <link>https://foxisawesome.github.io/posts/1007-minimum-domino-rotations-for-equal-row/</link>
-      <pubDate>Fri, 09 Oct 2020 19:35:36 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1007-minimum-domino-rotations-for-equal-row/</guid>
-      <description>LC 1007 Minimum Domino Rotations for Equal Row In a row of dominoes, A[i] and B[i] represent the top and bottom halves of the i-th domino. (A domino is a tile with two numbers from 1 to 6 - one on each half of the tile.) We may rotate the i-th domino, so that A[i] and B[i] swap values. Return the minimum number of rotations so that all the values</description>
-    </item>
-    
-    <item>
-      <title>1321 Restaurant Growth</title>
-      <link>https://foxisawesome.github.io/posts/1321-restaurant-growth/</link>
-      <pubDate>Fri, 09 Oct 2020 19:16:19 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1321-restaurant-growth/</guid>
-      <description>LC 1321 Restaurant Growth Write an SQL query to compute moving average of how much customer paid in a 7 days window (current day + 6 days before) . The query result format is in the following example: Return result table ordered by visited_on. average_amount should be rounded to 2 decimal places, all dates are in the format (&amp;lsquo;YYYY-MM-DD&amp;rsquo;). Customer table: +-------------+--------------+--------------+-------------+ | customer_id | name | visited_on | amount</description>
     </item>
     
   </channel>

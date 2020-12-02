@@ -5,10 +5,28 @@
     <link>https://foxisawesome.github.io/tags/tree/</link>
     <description>Recent content in tree on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 13 Oct 2020 16:05:34 -0400</lastBuildDate>
+    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/tree/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1167 Minimum Cost to Connect Sticks</title>
+      <link>https://foxisawesome.github.io/posts/1167-minimum-cost-to-connect-sticks/</link>
+      <pubDate>Mon, 19 Oct 2020 16:16:26 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1167-minimum-cost-to-connect-sticks/</guid>
+      <description>LC 1167 Minimum Cost to Connect Sticks You have some number of sticks with positive integer lengths. These lengths are given as an array sticks, where sticks[i] is the length of the ith stick. You can connect any two sticks of lengths x and y into one stick by paying a cost of x + y. You must connect all the sticks until there is only one stick remaining. Return</description>
+    </item>
+    
+    <item>
+      <title>1083 Sales Analysis II</title>
+      <link>https://foxisawesome.github.io/posts/1083-sales-analysis-ii/</link>
+      <pubDate>Mon, 19 Oct 2020 15:30:49 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1083-sales-analysis-ii/</guid>
+      <description>LC 1083 Sales Analysis II Write an SQL query that reports the buyers who have bought S8 but not iPhone. Note that S8 and iPhone are products present in the Product table. The query result format is in the following example: Product table: +------------+--------------+------------+ | product_id | product_name | unit_price | +------------+--------------+------------+ | 1 | S8 | 1000 | | 2 | G4 | 800 | | 3 | iPhone</description>
+    </item>
     
     <item>
       <title>1495 Friendly Movies Streamed Last Month</title>
@@ -176,24 +194,6 @@ Return the result table in any order.
       
       <guid>https://foxisawesome.github.io/posts/1294-weather-type-in-each-country/</guid>
       <description>LC 1294 Weather Type in Each Country Write an SQL query to find the type of weather in each country for November 2019. The type of weather is Cold if the average weather_state is less than or equal 15, Hot if the average weather_state is greater than or equal 25 and Warm otherwise. Return result table in any order. Solution 2020-10-18 Notes: 秒了 SELECT country_name, (CASE WHEN AVG(weather_state)&amp;lt;=15 THEN</description>
-    </item>
-    
-    <item>
-      <title>361 Bomb Enemy</title>
-      <link>https://foxisawesome.github.io/posts/361-bomb-enemy/</link>
-      <pubDate>Sun, 18 Oct 2020 20:16:29 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/361-bomb-enemy/</guid>
-      <description>LC 361 Bomb Enemy   Given a 2D grid, each cell is either a wall &#39;W&#39;, an enemy &#39;E&#39; or empty &#39;0&#39; (the number zero), return the maximum enemies you can kill using one bomb. The bomb kills all the enemies in the same row and column from the planted point until it hits the wall since the wall is too strong to be destroyed. Note: You can only put the bomb at an empty cell.</description>
-    </item>
-    
-    <item>
-      <title>723 Candy Crush</title>
-      <link>https://foxisawesome.github.io/posts/723-candy-crush/</link>
-      <pubDate>Sun, 18 Oct 2020 19:33:47 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/723-candy-crush/</guid>
-      <description>LC 723 Candy Crush This question is about implementing a basic elimination algorithm for Candy Crush. Given a 2D integer array board representing the grid of candy, different positive integers board[i][j] represent different types of candies. A value of board[i][j] = 0 represents that the cell at position (i, j) is empty. The given board represents the state of the game following the player&amp;rsquo;s move. Now, you need to restore</description>
     </item>
     
   </channel>

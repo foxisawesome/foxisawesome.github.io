@@ -39,7 +39,7 @@
 <meta itemprop="description" content="LC 608 Tree Node Given a table tree, id is identifier of the tree node and p_id is its parent node&rsquo;s id. &#43;----&#43;------&#43; | id | p_id | &#43;----&#43;------&#43; | 1 | null | | 2 | 1 | | 3 | 1 | | 4 | 2 | | 5 | 2 | &#43;----&#43;------&#43; Each node in the tree can be one of three types: Leaf: if the node">
 <meta itemprop="datePublished" content="2020-10-25T14:50:31-04:00" />
 <meta itemprop="dateModified" content="2020-10-25T14:50:31-04:00" />
-<meta itemprop="wordCount" content="226">
+<meta itemprop="wordCount" content="292">
 
 
 
@@ -147,7 +147,7 @@
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">236</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">238</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">11</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">135</span></li>
@@ -213,7 +213,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">367</span></li>
+                    class="tag-list-count">369</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -257,7 +257,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/tree/" class="tag-list-link">tree</a><span
-                    class="tag-list-count">28</span></li>
+                    class="tag-list-count">30</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/two_pointers/" class="tag-list-link">two_pointers</a><span
@@ -338,6 +338,17 @@
 <p>Write a query to print the node id and the type of the node. Sort your output by the node id. The result for the above sample is:</p>
 </blockquote>
 <h2 id="solution">Solution</h2>
+<h4 id="2020-12-01-notes">2020-12-01 Notes:</h4>
+<p>二刷的改进版，稍微高效了点。漫漫的刷题之路。。。</p>
+<pre><code class="language-mysql">SELECT DISTINCT a.id, CASE WHEN b.id is NULL THEN 'Root' 
+                WHEN c.id is NULL THEN 'Leaf'
+                ELSE 'Inner' END AS Type
+FROM tree a
+LEFT JOIN tree b
+ON a.p_id = b.id
+LEFT JOIN tree c
+ON a.id = c.p_id
+</code></pre>
 <h4 id="2020-10-25-notes">2020-10-25 Notes:</h4>
 <p>这个不是很efficient</p>
 <pre><code class="language-mysql">SELECT DISTINCT id, 

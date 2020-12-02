@@ -33,7 +33,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://foxisawesome.github.io/" />
-<meta property="og:updated_time" content="2020-11-19T10:30:56-05:00" />
+<meta property="og:updated_time" content="2020-12-01T15:17:30-05:00" />
 <meta itemprop="name" content="Q. Weng">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -139,7 +139,7 @@
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">236</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">238</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">2</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">11</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">135</span></li>
@@ -205,7 +205,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">367</span></li>
+                    class="tag-list-count">369</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -249,7 +249,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/tree/" class="tag-list-link">tree</a><span
-                    class="tag-list-count">28</span></li>
+                    class="tag-list-count">30</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/two_pointers/" class="tag-list-link">two_pointers</a><span
@@ -271,6 +271,82 @@
     
     
     
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/1076-project-employees-ii/"
+    >1076 Project Employees II</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 1076 Project Employees II Write an SQL query that reports all the projects that have the most employees. The query result format is in the following example: Project table: +-------------+-------------+ | project_id | employee_id | +-------------+-------------+ | 1 | 1 | | 1 | 2 | | 1 | 3 | | 2 | 1 | | 2 | 4 | +-------------+-------------+ Result table: +-------------+ | project_id | +-------------+
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/1076-project-employees-ii/" class="">
+  <time datetime="2020-10-19 15:19:45 -0400 EDT" itemprop="datePublished">2020-10-19</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+    <a class="article-tag-link" href="/tags/dia_sql/"> dia_sql </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1076-project-employees-ii/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/619-biggest-single-number/"
+    >619 Biggest Single Number</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 619 Biggest Single Number   Table my_numbers contains many numbers in column num including duplicated ones. Can you write a SQL query to find the biggest number, which only appears once
+ Solution 2020-10-19 Notes: # 1 SELECT MAX(a.num) AS num FROM ( SELECT num FROM my_numbers GROUP BY num HAVING COUNT(num) = 1 ) a #2 SELECT MAX(num) AS num FROM ( SELECT *, COUNT(*) OVER(PARTITION BY num) AS ct FROM my_numbers ) a WHERE ct = 1  
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/619-biggest-single-number/" class="">
+  <time datetime="2020-10-19 15:04:59 -0400 EDT" itemprop="datePublished">2020-10-19</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/619-biggest-single-number/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
     <article
       class="article article-type-page"
       itemscope
@@ -422,80 +498,6 @@
 
         <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1148-article-views-i/#comments" class="article-comment-link">Comments</a></span>
       </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/1050-actors-and-directors-who-cooperated-at-least-three-times/"
-    >1050 Actors and Directors Who Cooperated at Least Three Times</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 1050 Actors and Directors Who Cooperated at Least Three Times Write a SQL query for a report that provides the pairs (actor_id, director_id) where the actor have cooperated with the director at least 3 times. ActorDirector table: +-------------+-------------+-------------+ | actor_id | director_id | timestamp | +-------------+-------------+-------------+ | 1 | 1 | 0 | | 1 | 1 | 1 | | 1 | 1 | 2 | | 1
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1050-actors-and-directors-who-cooperated-at-least-three-times/" class="">
-  <time datetime="2020-10-19 14:39:31 -0400 EDT" itemprop="datePublished">2020-10-19</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1050-actors-and-directors-who-cooperated-at-least-three-times/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/183-customers-who-never-order/"
-    >183 Customers Who Never Order</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 183 Customers Who Never Order Suppose that a website contains two tables, the Customers table and the Orders table. Write a SQL query to find all customers who never order anything. Solution 2020-10-19 Notes: 秒了 SELECT name AS customers FROM customers WHERE id NOT IN (SELECT customerID FROM orders)
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/183-customers-who-never-order/" class="">
-  <time datetime="2020-10-19 14:34:11 -0400 EDT" itemprop="datePublished">2020-10-19</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/183-customers-who-never-order/#comments" class="article-comment-link">Comments</a></span>
-      </p>
     </article></div>
   
 <nav class="bar bar-footer clearfix" data-stick-bottom>
@@ -513,7 +515,7 @@
       </li>
     </ul>
     <div class="total-article bar-right">
-      Page:11/63
+      Page:11/64
     </div>
   </div>
 </nav>

@@ -5,10 +5,28 @@
     <link>https://foxisawesome.github.io/categories/</link>
     <description>Recent content in Categories on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>108 Convert Sorted Array to Binary Search Tree</title>
+      <link>https://foxisawesome.github.io/posts/108-convert-sorted-array-to-binary-search-tree/</link>
+      <pubDate>Sun, 04 Oct 2020 16:08:38 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/108-convert-sorted-array-to-binary-search-tree/</guid>
+      <description>LC 108 Convert Sorted Array to Binary Search Tree Given an array where elements are sorted in ascending order, convert it to a height balanced BST. For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1. Given the sorted array: [-10,-3,0,5,9], One possible answer is: [0,-3,9,-10,null,5], which represents the following</description>
+    </item>
+    
+    <item>
+      <title>120 Triangle</title>
+      <link>https://foxisawesome.github.io/posts/120-triangle/</link>
+      <pubDate>Sun, 04 Oct 2020 16:00:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/120-triangle/</guid>
+      <description>LC 120 Triangle Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below. For example, given the following triangle [ [2], [3,4], [6,5,7], [4,1,8,3] ] The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11). Note: Bonus point if you are able to do this using</description>
+    </item>
     
     <item>
       <title>113 Path Sum II</title>
@@ -172,24 +190,6 @@ Warehouse table: +------------+--------------+-------------+ | name | product_id
       
       <guid>https://foxisawesome.github.io/posts/67-add-binary/</guid>
       <description>LC 67 Add Binary Given two binary strings, return their sum (also a binary string). The input strings are both non-empty and contains only characters 1 or 0. Input: a = &amp;quot;11&amp;quot;, b = &amp;quot;1&amp;quot; Output: &amp;quot;100&amp;quot; Solution 2020-10-01 Notes: 这题不像linked list的加法，得分两个loop，一个l</description>
-    </item>
-    
-    <item>
-      <title>66 Plus One</title>
-      <link>https://foxisawesome.github.io/posts/66-plus-one/</link>
-      <pubDate>Thu, 01 Oct 2020 16:14:59 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/66-plus-one/</guid>
-      <description>LC 66 Plus One Given a non-empty array of digits representing a non-negative integer, increment one to the integer. The digits are stored such that the most significant digit is at the head of the list, and each element in the array contains a single digit. You may assume the integer does not contain any leading zero, except the number 0 itself. Solution 2020-10-01 Notes: 简单题，走</description>
-    </item>
-    
-    <item>
-      <title>463 Island Perimeter</title>
-      <link>https://foxisawesome.github.io/posts/463-island-perimeter/</link>
-      <pubDate>Thu, 01 Oct 2020 16:01:57 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/463-island-perimeter/</guid>
-      <description>LC 463 Island Perimeter You are given row x col grid representing a map where grid[i][j] = 1 represents land and grid[i][j] = 0 represents water. Grid cells are connected horizontally/vertically (not diagonally). The grid is completely surrounded by water, and there is exactly one island (i.e., one or more connected land cells). The island doesn&amp;rsquo;t have &amp;ldquo;lakes&amp;rdquo;, meaning the water inside isn&amp;rsquo;t connected to the water around the island.</description>
     </item>
     
   </channel>

@@ -5,10 +5,30 @@
     <link>https://foxisawesome.github.io/categories/</link>
     <description>Recent content in Categories on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>626 Exchange Seats</title>
+      <link>https://foxisawesome.github.io/posts/626-exchange-seats/</link>
+      <pubDate>Tue, 06 Oct 2020 21:59:09 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/626-exchange-seats/</guid>
+      <description>LC 626 Exchange Seats   Can you write a SQL query to output the result for Mary?
++---------+---------+ | id | student | +---------+---------+ | 1 | Abbot | | 2 | Doris | | 3 | Emerson | | 4 | Green | | 5 | Jeames | +---------+---------+  For the sample input, the output is:
++---------+---------+ | id | student | +---------+---------+ | 1 | Doris | | 2 | Abbot | | 3 | Green | | 4 | Emerson | | 5 | Jeames | +---------+---------+   Solution 2020-10-06 Notes: SELECT CASE WHEN MOD(id, 2) = 1 AND id !</description>
+    </item>
+    
+    <item>
+      <title>55 Jump Game</title>
+      <link>https://foxisawesome.github.io/posts/55-jump-game/</link>
+      <pubDate>Tue, 06 Oct 2020 19:25:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/55-jump-game/</guid>
+      <description>LC 55 Jump Game Given an array of non-negative integers, you are initially positioned at the first index of the array. Each element in the array represents your maximum jump length at that position. Determine if you are able to reach the last index. Input: nums = [2,3,1,1,4] Output: true Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index. Solution 2020-10-06 Notes: 这</description>
+    </item>
     
     <item>
       <title>1633 Percentage of Users Attended a Contest</title>
@@ -178,24 +198,6 @@ Please write a SQL query to output movies with an odd numbered ID and a descript
       
       <guid>https://foxisawesome.github.io/posts/130-surrounded-regions/</guid>
       <description>LC 130 Surrounded Regions Given a 2D board containing &#39;X&#39; and &#39;O&#39; (the letter O), capture all regions surrounded by &#39;X&#39;. A region is captured by flipping all &#39;O&#39;s into &#39;X&#39;s in that surrounded region. Example: X X X X X O O X X X O X X O X X After running your function, the board should be: X X X X X X X X X X</description>
-    </item>
-    
-    <item>
-      <title>108 Convert Sorted Array to Binary Search Tree</title>
-      <link>https://foxisawesome.github.io/posts/108-convert-sorted-array-to-binary-search-tree/</link>
-      <pubDate>Sun, 04 Oct 2020 16:08:38 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/108-convert-sorted-array-to-binary-search-tree/</guid>
-      <description>LC 108 Convert Sorted Array to Binary Search Tree Given an array where elements are sorted in ascending order, convert it to a height balanced BST. For this problem, a height-balanced binary tree is defined as a binary tree in which the depth of the two subtrees of every node never differ by more than 1. Given the sorted array: [-10,-3,0,5,9], One possible answer is: [0,-3,9,-10,null,5], which represents the following</description>
-    </item>
-    
-    <item>
-      <title>120 Triangle</title>
-      <link>https://foxisawesome.github.io/posts/120-triangle/</link>
-      <pubDate>Sun, 04 Oct 2020 16:00:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/120-triangle/</guid>
-      <description>LC 120 Triangle Given a triangle, find the minimum path sum from top to bottom. Each step you may move to adjacent numbers on the row below. For example, given the following triangle [ [2], [3,4], [6,5,7], [4,1,8,3] ] The minimum path sum from top to bottom is 11 (i.e., 2 + 3 + 5 + 1 = 11). Note: Bonus point if you are able to do this using</description>
     </item>
     
   </channel>

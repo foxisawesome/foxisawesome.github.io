@@ -5,10 +5,32 @@
     <link>https://foxisawesome.github.io/tags/leetcode/</link>
     <description>Recent content in leetcode on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 19 Nov 2020 10:30:56 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>211 Design Add and Search Words Data Structure</title>
+      <link>https://foxisawesome.github.io/posts/211-design-add-and-search-words-data-structure/</link>
+      <pubDate>Tue, 01 Dec 2020 15:17:30 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/211-design-add-and-search-words-data-structure/</guid>
+      <description>LC 211 Design Add and Search Words Data Structure   Design a data structure that supports adding new words and finding if a string matches any previously added string.
+Implement the WordDictionary class:
+ WordDictionary() Initializes the object. void addWord(word) Adds word to the data structure, it can be matched later. bool search(word) Returns true if there is any string in the data structure that matches word or false otherwise.</description>
+    </item>
+    
+    <item>
+      <title>208 Implement Trie Prefix Tree</title>
+      <link>https://foxisawesome.github.io/posts/208-implement-trie-prefix-tree/</link>
+      <pubDate>Tue, 01 Dec 2020 14:55:09 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/208-implement-trie-prefix-tree/</guid>
+      <description>LC 208 Implement Trie Prefix Tree   Implement a trie with insert, search, and startsWith methods.
+Example:
+Trie trie = new Trie(); trie.insert(&amp;quot;apple&amp;quot;); trie.search(&amp;quot;apple&amp;quot;); // returns true trie.search(&amp;quot;app&amp;quot;); // returns false trie.startsWith(&amp;quot;app&amp;quot;); // returns true trie.insert(&amp;quot;app&amp;quot;); trie.search(&amp;quot;app&amp;quot;); // returns true   Solution 2020-12-01 Notes:  each child node is a dict. current = current.children[w] recursively adds letter to the tree structure. .isword marks if it is a complete word.</description>
+    </item>
     
     <item>
       <title>215 Kth Largest Element in an Array</title>
@@ -189,24 +211,6 @@ NPV table: +------+--------+--------+ | id | year | npv | +------+--------+-----
       
       <guid>https://foxisawesome.github.io/posts/1327-list-the-products-ordered-in-a-period/</guid>
       <description>LC 1327 List the Products Ordered in a Period Write an SQL query to get the names of products with greater than or equal to 100 units ordered in February 2020 and their amount. Return result table in any order. The query result format is in the following example: Products table: +-------------+-----------------------+------------------+ | product_id | product_name | product_category | +-------------+-----------------------+------------------+ | 1 | Leetcode Solutions | Book | | 2</description>
-    </item>
-    
-    <item>
-      <title>1303 Find the Team Size</title>
-      <link>https://foxisawesome.github.io/posts/1303-find-the-team-size/</link>
-      <pubDate>Thu, 29 Oct 2020 11:19:04 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1303-find-the-team-size/</guid>
-      <description>LC 1303 Find the Team Size Write an SQL query to find the team size of each of the employees. Return result table in any order. The query result format is in the following example: Employee Table: +-------------+------------+ | employee_id | team_id | +-------------+------------+ | 1 | 8 | | 2 | 8 | | 3 | 8 | | 4 | 7 | | 5 | 9 | |</description>
-    </item>
-    
-    <item>
-      <title>1264 Page Recommendations</title>
-      <link>https://foxisawesome.github.io/posts/1264-page-recommendations/</link>
-      <pubDate>Thu, 29 Oct 2020 11:18:52 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1264-page-recommendations/</guid>
-      <description>LC 1264 Page Recommendations Write an SQL query to recommend pages to the user with user_id = 1 using the pages that your friends liked. It should not recommend pages you already liked. Return result table in any order without duplicates. The query result format is in the following example: Friendship table: +----------+----------+ | user1_id | user2_id | +----------+----------+ | 1 | 2 | | 1 | 3 | |</description>
     </item>
     
   </channel>
