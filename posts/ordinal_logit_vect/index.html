@@ -39,7 +39,7 @@
 <meta itemprop="description" content="Load libaries # libs import pandas as pd import numpy as np import time import os # plotting setting from matplotlib import pyplot as plt %matplotlib inline import seaborn as sns sns.set_style(&#39;darkgrid&#39;, {&#39;axes.facecolor&#39;: &#39;.9&#39;}) sns.set_palette(palette=&#39;deep&#39;) sns_c = sns.color_palette(palette=&#39;deep&#39;) # display setting from IPython.core.interactiveshell import InteractiveShell InteractiveShell.ast_node_interactivity = &quot;all&quot; from IPython.display import display np.set_printoptions(precision=12)  Algo: The ordinal logistic regression is a variant of normal logistic regression, where its numerator is CDF.">
 <meta itemprop="datePublished" content="2020-12-06T16:48:55-05:00" />
 <meta itemprop="dateModified" content="2020-12-06T16:48:55-05:00" />
-<meta itemprop="wordCount" content="401">
+<meta itemprop="wordCount" content="400">
 
 
 
@@ -344,7 +344,7 @@ P(k-1) &amp;=&amp; P(x &gt;= k-1) - P(x &gt;= k)  \\\<br>
 P(1) &amp;=&amp; 1- P(target &gt;= 2)  \\\<br>
 \end{eqnarray}
 $$</p>
-<pre><code class="language-python">#tape x: n x p (n loans, p features)
+<pre><code class="language-python">#tape x: n x p (n rows, p features)
 n = 1000
 p = 5
 
@@ -378,7 +378,7 @@ tran_M = np.dstack((p_f8, p_f74, p_f3))
 # check row add up to 1
 # np.sum(tran_M[0,0,:])
 
-# s_t0: n x 1 x 6, each loan row prob add to 1
+# s_t0: n x 1 x 6, each row prob add to 1
 # s_t0 = ith row: [s3, s4, s5, s6, s7, s8]
 s_t0 = np.random.uniform(0,1,(n,1,6))
 s_t0 /= np.sum(s_t0, axis=2).reshape(n,1,1)
