@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 06 Dec 2020 16:48:55 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>835 Image Overlap</title>
+      <link>https://foxisawesome.github.io/posts/835-image-overlap/</link>
+      <pubDate>Sun, 11 Oct 2020 10:12:32 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/835-image-overlap/</guid>
+      <description>LC 835 Image Overlap You are given two images img1 and img2 both of size n x n, represented as binary, square matrices of the same size. (A binary matrix has only 0s and 1s as values.) We translate one image however we choose (sliding it left, right, up, or down any number of units), and place it on top of the other image. After, the overlap of this translation</description>
+    </item>
     
     <item>
       <title>1007 Minimum Domino Rotations for Equal Row</title>
@@ -195,15 +204,6 @@ Delivery table: +-------------+-------------+------------+----------------------
       
       <guid>https://foxisawesome.github.io/posts/763-partition-labels/</guid>
       <description>LC 763 Partition Labels A string S of lowercase English letters is given. We want to partition this string into as many parts as possible so that each letter appears in at most one part, and return a list of integers representing the size of these parts. Input: S = &amp;quot;ababcbacadefegdehijhklij&amp;quot; Output: [9,7,8] Explanation: The partition is &amp;quot;ababcbaca&amp;quot;, &amp;quot;defegde&amp;quot;, &amp;quot;hijhklij&amp;quot;. This is a partition so that each letter appears in</description>
-    </item>
-    
-    <item>
-      <title>1285 Find the Start and End Number of Continuous Ranges</title>
-      <link>https://foxisawesome.github.io/posts/1285-find-the-start-and-end-number-of-continuous-ranges/</link>
-      <pubDate>Tue, 06 Oct 2020 22:18:54 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1285-find-the-start-and-end-number-of-continuous-ranges/</guid>
-      <description>LC 1285 Find the Start and End Number of Continuous Ranges Write an SQL query to find the start and end number of continuous ranges in table Logs. Order the result table by start_id. The query result format is in the following example: Logs table: +------------+ | log_id | +------------+ | 1 | | 2 | | 3 | | 7 | | 8 | | 10 | +------------+ Result</description>
     </item>
     
   </channel>

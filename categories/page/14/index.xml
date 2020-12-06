@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/categories/</link>
     <description>Recent content in Categories on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 06 Dec 2020 16:48:55 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>133 Clone Graph</title>
+      <link>https://foxisawesome.github.io/posts/133-clone-graph/</link>
+      <pubDate>Mon, 21 Sep 2020 16:18:49 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/133-clone-graph/</guid>
+      <description>LC 133 Clone Graph Given a reference of a node in a connected undirected graph. Return a deep copy (clone) of the graph. Solution 2020-09-21 Notes: 刷graph第一题，对这种数据结构还不是很懂，抄了一遍 负雪明烛 的还得体会下。一般的遍历只</description>
+    </item>
     
     <item>
       <title>1323 Maximum 69 Number</title>
@@ -180,15 +189,6 @@ Input: 1 0 1 0 0 1 0 1 1 1 1 1 1 1 1 1 0 0 1 0 Output: 4   Solution 2020-09-20 N
       
       <guid>https://foxisawesome.github.io/posts/983-minimum-cost-for-tickets/</guid>
       <description>LC 983 Minimum Cost for Tickets    Solution 2020-09-19 Notes:    # Time O() # Space O()  </description>
-    </item>
-    
-    <item>
-      <title>322 Coin Change</title>
-      <link>https://foxisawesome.github.io/posts/322-coin-change/</link>
-      <pubDate>Sat, 19 Sep 2020 21:28:01 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/322-coin-change/</guid>
-      <description>LC 322 Coin Change You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1. Input: coins = [1, 2, 5], amount = 11 Output: 3 Explanation: 11 = 5 + 5</description>
     </item>
     
   </channel>

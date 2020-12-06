@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>69 Sqrtx</title>
+      <link>https://foxisawesome.github.io/posts/69-sqrtx/</link>
+      <pubDate>Sat, 07 Mar 2020 22:51:59 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/69-sqrtx/</guid>
+      <description>LC 69 Sqrtx Implement int sqrt(int x). Sqrt(8) = 2 Solution 2020-03-07 Notes: 标准的binary search 模版， right 从x//2开始。 2020-10-06 Notes： 今天又做了一遍，这题虽然看起来像是寻找left bound</description>
+    </item>
+    
+    <item>
       <title>1 Two Sum</title>
       <link>https://foxisawesome.github.io/posts/1-two-sum/</link>
       <pubDate>Sat, 01 Feb 2020 14:01:30 -0400</pubDate>

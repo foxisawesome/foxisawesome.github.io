@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/categories/ml/</link>
     <description>Recent content in ML on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 15 Oct 2020 19:22:49 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 06 Dec 2020 16:48:55 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/ml/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1327 List the Products Ordered in a Period</title>
+      <link>https://foxisawesome.github.io/posts/1327-list-the-products-ordered-in-a-period/</link>
+      <pubDate>Thu, 29 Oct 2020 11:19:13 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1327-list-the-products-ordered-in-a-period/</guid>
+      <description>LC 1327 List the Products Ordered in a Period Write an SQL query to get the names of products with greater than or equal to 100 units ordered in February 2020 and their amount. Return result table in any order. The query result format is in the following example: Products table: +-------------+-----------------------+------------------+ | product_id | product_name | product_category | +-------------+-----------------------+------------------+ | 1 | Leetcode Solutions | Book | | 2</description>
+    </item>
     
     <item>
       <title>1303 Find the Team Size</title>
@@ -191,15 +200,6 @@ For example:
       
       <guid>https://foxisawesome.github.io/posts/608-tree-node/</guid>
       <description>LC 608 Tree Node Given a table tree, id is identifier of the tree node and p_id is its parent node&amp;rsquo;s id. +----+------+ | id | p_id | +----+------+ | 1 | null | | 2 | 1 | | 3 | 1 | | 4 | 2 | | 5 | 2 | +----+------+ Each node in the tree can be one of three types: Leaf: if the node</description>
-    </item>
-    
-    <item>
-      <title>610 Triangle Judgement</title>
-      <link>https://foxisawesome.github.io/posts/610-triangle-judgement/</link>
-      <pubDate>Sun, 25 Oct 2020 10:02:33 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/610-triangle-judgement/</guid>
-      <description>LC 610 Triangle Judgement Could you help Tim by writing a query to judge whether these three sides can form a triangle, assuming table triangle holds the length of the three sides x, y and z. | x | y | z | |----|----|----| | 13 | 15 | 30 | | 10 | 20 | 15 | For the sample data above, your query should return the follow result:</description>
     </item>
     
   </channel>

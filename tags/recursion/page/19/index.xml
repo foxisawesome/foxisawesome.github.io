@@ -11,6 +11,15 @@
     
     
     <item>
+      <title>957 Prison Cells</title>
+      <link>https://foxisawesome.github.io/posts/957-prison-cells/</link>
+      <pubDate>Mon, 31 Aug 2020 19:26:18 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/957-prison-cells/</guid>
+      <description>LC 957 Prison Cells There are 8 prison cells in a row, and each cell is either occupied or vacant. Each day, whether the cell is occupied or vacant changes according to the following rules: If a cell has two adjacent neighbors that are both occupied or both vacant, then the cell becomes occupied. Otherwise, it becomes vacant. (Note that because the prison is a row, the first and the</description>
+    </item>
+    
+    <item>
       <title>735 Aseroid Collision</title>
       <link>https://foxisawesome.github.io/posts/735-aseroid-collision/</link>
       <pubDate>Mon, 31 Aug 2020 19:05:25 -0400</pubDate>
@@ -186,15 +195,6 @@ Input: 1 \ 3 / 2 Output: 1 Explanation: The minimum absolute difference is 1, wh
       <description>LC 204 Count Primes   Count the number of prime numbers less than a non-negative number, **n**.
  Solution 2020-09-12 Notes:   In mathematics, the sieve of Eratosthenes is an ancient algorithm for finding all prime numbers up to any given limit.
   class Solution: def countPrimes(self, n: int) -&amp;gt; int: if n &amp;lt; 2: return 0 grid = [1] * n grid[0] = 0 grid[1] = 0 for i in range(2,int(n**0.</description>
-    </item>
-    
-    <item>
-      <title>69 Sqrtx</title>
-      <link>https://foxisawesome.github.io/posts/69-sqrtx/</link>
-      <pubDate>Sat, 07 Mar 2020 22:51:59 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/69-sqrtx/</guid>
-      <description>LC 69 Sqrtx Implement int sqrt(int x). Sqrt(8) = 2 Solution 2020-03-07 Notes: 标准的binary search 模版， right 从x//2开始。 2020-10-06 Notes： 今天又做了一遍，这题虽然看起来像是寻找left bound</description>
     </item>
     
   </channel>

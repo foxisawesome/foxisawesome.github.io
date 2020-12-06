@@ -33,7 +33,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://foxisawesome.github.io/" />
-<meta property="og:updated_time" content="2020-12-01T15:17:30-05:00" />
+<meta property="og:updated_time" content="2020-12-06T16:48:55-05:00" />
 <meta itemprop="name" content="Q. Weng">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -140,8 +140,8 @@
     <div class="widget-body">
         <ul class="category-list">
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">238</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">2</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">11</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">12</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">135</span></li>
         </ul>
     </div>
@@ -271,6 +271,45 @@
     
     
     
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/105-construct-binary-tree-from-preorder-and-inorder-traversal/"
+    >105 Construct Binary Tree From Preorder and Inorder Traversal</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 105 Construct Binary Tree From Preorder and Inorder Traversal Given preorder and inorder traversal of a tree, construct the binary tree. Note: You may assume that duplicates do not exist in the tree. For example, given preorder = [3,9,20,15,7] inorder = [9,3,15,20,7] Return the following binary tree: 3 / \ 9 20 / \ 15 7 Solution 2020-10-13 Notes: 这题关键是 root 在 ino
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/105-construct-binary-tree-from-preorder-and-inorder-traversal/" class="">
+  <time datetime="2020-10-13 15:21:19 -0400 EDT" itemprop="datePublished">2020-10-13</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/algo/"> algo </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+    <a class="article-tag-link" href="/tags/tree/"> tree </a>
+    <a class="article-tag-link" href="/tags/dia/"> dia </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/105-construct-binary-tree-from-preorder-and-inorder-traversal/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
     <article
       class="article article-type-page"
       itemscope
@@ -465,46 +504,6 @@ Students table: +------------+--------------+ | student_id | student_name | +---
   </span>
 
         <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1280-students-and-examinations/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/1205-monthly-transactions-ii/"
-    >1205 Monthly Transactions II</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 1205 Monthly Transactions II   Write an SQL query to find for each month and country, the number of approved transactions and their total amount, the number of chargebacks and their total amount.
-Note: In your query, given the month and country, ignore rows with all zeros.
-The query result format is in the following example:
-Transactions table: +------+---------+----------+--------+------------+ | id | country | state | amount | trans_date | +------+---------+----------+--------+------------+ | 101 | US | approved | 1000 | 2019-05-18 | | 102 | US | declined | 2000 | 2019-05-19 | | 103 | US | approved | 3000 | 2019-06-10 | | 104 | US | approved | 4000 | 2019-06-13 | | 105 | US | approved | 5000 | 2019-06-15 | +------+---------+----------+--------+------------+ Chargebacks table: +------------+------------+ | trans_id | trans_date | +------------+------------+ | 102 | 2019-05-29 | | 101 | 2019-06-30 | | 105 | 2019-09-18 | +------------+------------+ Result table: +----------+---------+----------------+-----------------+-------------------+--------------------+ | month | country | approved_count | approved_amount | chargeback_count | chargeback_amount | +----------+---------+----------------+-----------------+-------------------+--------------------+ | 2019-05 | US | 1 | 1000 | 1 | 2000 | | 2019-06 | US | 3 | 12000 | 1 | 1000 | | 2019-09 | US | 0 | 0 | 1 | 5000 | +----------+---------+----------------+-----------------+-------------------+--------------------+   Solution 2020-10-11 Notes: SELECT month, country, SUM(CASE WHEN state = &quot;approved&quot; THEN 1 ELSE 0 END) AS approved_count, SUM(CASE WHEN state = &quot;approved&quot; THEN amount ELSE 0 END) AS approved_amount, SUM(CASE WHEN state = &quot;back&quot; THEN 1 ELSE 0 END) AS chargeback_count, SUM(CASE WHEN state = &quot;back&quot; THEN amount ELSE 0 END) AS chargeback_amount FROM( SELECT LEFT(chargebacks.
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1205-monthly-transactions-ii/" class="">
-  <time datetime="2020-10-11 15:45:17 -0400 EDT" itemprop="datePublished">2020-10-11</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1205-monthly-transactions-ii/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article></div>
   

@@ -5,10 +5,21 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 06 Dec 2020 16:48:55 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>577 Employee Bonus</title>
+      <link>https://foxisawesome.github.io/posts/577-employee-bonus/</link>
+      <pubDate>Tue, 29 Sep 2020 13:49:21 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/577-employee-bonus/</guid>
+      <description>LC 577 Employee Bonus   Select all employee&amp;rsquo;s name and bonus whose bonus is &amp;lt; 1000.
+Table:Employee
++-------+--------+-----------+--------+ | empId | name | supervisor| salary | +-------+--------+-----------+--------+ | 1 | John | 3 | 1000 | | 2 | Dan | 3 | 2000 | | 3 | Brad | null | 4000 | | 4 | Thomas | 3 | 4000 | +-------+--------+-----------+--------+ empId is the primary key column for this table.</description>
+    </item>
     
     <item>
       <title>574 Winning Candidate</title>
@@ -181,15 +192,6 @@ Activity table: +-----------+-----------+------------+--------------+ | player_i
       
       <guid>https://foxisawesome.github.io/posts/cheatsheet/</guid>
       <description> [[x,y] for x in [0,3] for y in [6,9]]: generate pairs [[0, 6], [0, 9], [3, 6], [3, 9]] [[x,y] for x, y in zip([&#39;a&#39;,&#39;b&#39;],[&#39;c&#39;,&#39;d&#39;])]: [[&amp;lsquo;a&amp;rsquo;, &amp;lsquo;c&amp;rsquo;], [&amp;lsquo;b&amp;rsquo;, &amp;rsquo;d&#39;]] one liner to create dictionary:lookup = {val: i for i, val in enumerate(order)} this reverse check dict and return max val count in dict  max_val = max(dict.values()) max_freq = max(dict, key=dict.get) for key, val in dict.items(): if val == max_val: return key sorted_dict = sorted(dict, key = lambda x: (-dict[x]) ) sorted_dict[0]   sort a by b: [x for _,x in sorted(zip(b,a))]  </description>
-    </item>
-    
-    <item>
-      <title>36 Valid Sudoku</title>
-      <link>https://foxisawesome.github.io/posts/36-valid-sudoku/</link>
-      <pubDate>Fri, 25 Sep 2020 19:13:25 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/36-valid-sudoku/</guid>
-      <description>LC 36 Valid Sudoku Determine if a 9x9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules: Each row must contain the digits 1-9 without repetition. Each column must contain the digits 1-9 without repetition. Each of the 9 3x3 sub-boxes of the grid must contain the digits 1-9 without repetition. A partially filled sudoku which is valid. Solution 2020-09-25 Notes: 按</description>
     </item>
     
   </channel>

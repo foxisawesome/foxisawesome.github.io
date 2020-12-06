@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/categories/ml/</link>
     <description>Recent content in ML on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Thu, 15 Oct 2020 19:22:49 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 06 Dec 2020 16:48:55 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/ml/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>610 Triangle Judgement</title>
+      <link>https://foxisawesome.github.io/posts/610-triangle-judgement/</link>
+      <pubDate>Sun, 25 Oct 2020 10:02:33 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/610-triangle-judgement/</guid>
+      <description>LC 610 Triangle Judgement Could you help Tim by writing a query to judge whether these three sides can form a triangle, assuming table triangle holds the length of the three sides x, y and z. | x | y | z | |----|----|----| | 13 | 15 | 30 | | 10 | 20 | 15 | For the sample data above, your query should return the follow result:</description>
+    </item>
     
     <item>
       <title>612 Shortest Distance in a Plane</title>
@@ -185,15 +194,6 @@ Input: &amp;quot;abc&amp;quot; Output: 3 Explanation: Three palindromic strings:
       <description>LC 383 Ransom Note   Given an arbitrary ransom note string and another string containing letters from all the magazines, write a function that will return true if the ransom note can be constructed from the magazines ; otherwise, it will return false.
 Each letter in the magazine string can only be used once in your ransom note.
 Input: ransomNote = &amp;quot;a&amp;quot;, magazine = &amp;quot;b&amp;quot; Output: false   Solution 2020-10-19 Notes:  edge case is acutally hard to get them right in the first place  class Solution: def canConstruct(self, ransomNote: str, magazine: str) -&amp;gt; bool: if not ransomNote: return True if not magazine: return False d = collections.</description>
-    </item>
-    
-    <item>
-      <title>682 Baseball Game</title>
-      <link>https://foxisawesome.github.io/posts/682-baseball-game/</link>
-      <pubDate>Mon, 19 Oct 2020 16:34:58 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/682-baseball-game/</guid>
-      <description>LC 682 Baseball Game You are keeping score for a baseball game with strange rules. The game consists of several rounds, where the scores of past rounds may affect future rounds&#39; scores. At the beginning of the game, you start with an empty record. You are given a list of strings ops, where ops[i] is the ith operation you must apply to the record and is one of the following:</description>
     </item>
     
   </channel>

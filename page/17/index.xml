@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 06 Dec 2020 16:48:55 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>110 Balanced Binary Tree</title>
+      <link>https://foxisawesome.github.io/posts/110-balanced-binary-tree/</link>
+      <pubDate>Thu, 10 Sep 2020 16:09:25 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/110-balanced-binary-tree/</guid>
+      <description>LC 110 Balanced Binary Tree Given a binary tree, determine if it is height-balanced. For this problem, a height-balanced binary tree is defined as: a binary tree in which the left and right subtrees of every node differ in height by no more than 1. Given the following tree [3,9,20,null,null,15,7]:Return true. 3 / \ 9 20 / \ 15 7 Given the following tree [1,2,2,3,3,null,null,4,4]:Return false. 1 / \ 2</description>
+    </item>
     
     <item>
       <title>951 Flip Equivalent Binary Trees</title>
@@ -201,15 +210,6 @@ If the fractional part is repeating, enclose the repeating part in parentheses.
 If multiple answers are possible, just return any of them.
 Extreme case: numer = -2147483648, denominator = -1999
  Solution 2020-09-05 Notes:  Details: python built-in divmod() returns floor, which is not friendly in negative case.</description>
-    </item>
-    
-    <item>
-      <title>159 Longest Substring With at Most Two Distinct Characters</title>
-      <link>https://foxisawesome.github.io/posts/159-longest-substring-with-at-most-two-distinct-characters/</link>
-      <pubDate>Sat, 05 Sep 2020 21:08:15 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/159-longest-substring-with-at-most-two-distinct-characters/</guid>
-      <description>LC 159 Longest Substring With at Most Two Distinct Characters Given a string *s* , find the length of the longest substring *t* that contains at most 2 distinct characters. Input: &amp;quot;ccaabbb&amp;quot; Output: 5 Explanation: t is &amp;quot;aabbb&amp;quot; which its length is 5. Solution 2020-09-05 Notes: 今天周末出去走了一圈，回家刷题效率可以啊。 class Solution: def</description>
     </item>
     
   </channel>

@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 06 Dec 2020 16:48:55 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>322 Coin Change</title>
+      <link>https://foxisawesome.github.io/posts/322-coin-change/</link>
+      <pubDate>Sat, 19 Sep 2020 21:28:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/322-coin-change/</guid>
+      <description>LC 322 Coin Change You are given coins of different denominations and a total amount of money amount. Write a function to compute the fewest number of coins that you need to make up that amount. If that amount of money cannot be made up by any combination of the coins, return -1. Input: coins = [1, 2, 5], amount = 11 Output: 3 Explanation: 11 = 5 + 5</description>
+    </item>
     
     <item>
       <title>692 Top K Frequent Words</title>
@@ -181,18 +190,6 @@
       
       <guid>https://foxisawesome.github.io/posts/146-lru-cache/</guid>
       <description>LC 146 LRU Cache Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put. get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1. put(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity, it should</description>
-    </item>
-    
-    <item>
-      <title>99 Recover Binary Search Tree</title>
-      <link>https://foxisawesome.github.io/posts/99-recover-binary-search-tree/</link>
-      <pubDate>Sun, 13 Sep 2020 20:10:43 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/99-recover-binary-search-tree/</guid>
-      <description>LC 99 Recover Binary Search Tree   Two elements of a binary search tree (BST) are swapped by mistake.
-Recover the tree without changing its structure.
-Input: [1,3,null,null,2] Output: [3,1,null,null,2]   Solution 2020-09-13 Notes:
-    </description>
     </item>
     
   </channel>

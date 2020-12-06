@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 06 Dec 2020 16:48:55 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>159 Longest Substring With at Most Two Distinct Characters</title>
+      <link>https://foxisawesome.github.io/posts/159-longest-substring-with-at-most-two-distinct-characters/</link>
+      <pubDate>Sat, 05 Sep 2020 21:08:15 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/159-longest-substring-with-at-most-two-distinct-characters/</guid>
+      <description>LC 159 Longest Substring With at Most Two Distinct Characters Given a string *s* , find the length of the longest substring *t* that contains at most 2 distinct characters. Input: &amp;quot;ccaabbb&amp;quot; Output: 5 Explanation: t is &amp;quot;aabbb&amp;quot; which its length is 5. Solution 2020-09-05 Notes: 今天周末出去走了一圈，回家刷题效率可以啊。 class Solution: def</description>
+    </item>
     
     <item>
       <title>136 Single Number</title>
@@ -207,15 +216,6 @@ board = [ [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;E&#39;], [&#39;S&#39;,&#39;F
       
       <guid>https://foxisawesome.github.io/posts/1041-robot-bounded-in-circle/</guid>
       <description>LC 1041 Robot Bounded in Circle On an infinite plane, a robot initially stands at (0, 0) and faces north. The robot can receive one of three instructions: &amp;quot;G&amp;quot;: go straight 1 unit; &amp;quot;L&amp;quot;: turn 90 degrees to the left; &amp;quot;R&amp;quot;: turn 90 degress to the right. The robot performs the instructions given in order, and repeats them forever. Return true if and only if there exists a circle in</description>
-    </item>
-    
-    <item>
-      <title>957 Prison Cells</title>
-      <link>https://foxisawesome.github.io/posts/957-prison-cells/</link>
-      <pubDate>Mon, 31 Aug 2020 19:26:18 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/957-prison-cells/</guid>
-      <description>LC 957 Prison Cells There are 8 prison cells in a row, and each cell is either occupied or vacant. Each day, whether the cell is occupied or vacant changes according to the following rules: If a cell has two adjacent neighbors that are both occupied or both vacant, then the cell becomes occupied. Otherwise, it becomes vacant. (Note that because the prison is a row, the first and the</description>
     </item>
     
   </channel>

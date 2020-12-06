@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 06 Dec 2020 16:48:55 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>67 Add Binary</title>
+      <link>https://foxisawesome.github.io/posts/67-add-binary/</link>
+      <pubDate>Thu, 01 Oct 2020 19:23:49 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/67-add-binary/</guid>
+      <description>LC 67 Add Binary Given two binary strings, return their sum (also a binary string). The input strings are both non-empty and contains only characters 1 or 0. Input: a = &amp;quot;11&amp;quot;, b = &amp;quot;1&amp;quot; Output: &amp;quot;100&amp;quot; Solution 2020-10-01 Notes: 这题不像linked list的加法，得分两个loop，一个l</description>
+    </item>
     
     <item>
       <title>66 Plus One</title>
@@ -189,17 +198,6 @@ A user can&amp;rsquo;t perform more than one activity at the same time. Return t
 Given a table salary, such as the one below, that has m=male and f=female values. Swap all f and m values (i.e., change all f values to m and vice versa) with a single update statement and no intermediate temp table.
 Note that you must write a single update statement, DO NOT write any select statement for this problem.
  Solution 2020-09-29 Notes:  UPDATE statement.</description>
-    </item>
-    
-    <item>
-      <title>577 Employee Bonus</title>
-      <link>https://foxisawesome.github.io/posts/577-employee-bonus/</link>
-      <pubDate>Tue, 29 Sep 2020 13:49:21 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/577-employee-bonus/</guid>
-      <description>LC 577 Employee Bonus   Select all employee&amp;rsquo;s name and bonus whose bonus is &amp;lt; 1000.
-Table:Employee
-+-------+--------+-----------+--------+ | empId | name | supervisor| salary | +-------+--------+-----------+--------+ | 1 | John | 3 | 1000 | | 2 | Dan | 3 | 2000 | | 3 | Brad | null | 4000 | | 4 | Thomas | 3 | 4000 | +-------+--------+-----------+--------+ empId is the primary key column for this table.</description>
     </item>
     
   </channel>

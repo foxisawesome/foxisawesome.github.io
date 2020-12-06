@@ -33,7 +33,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://foxisawesome.github.io/" />
-<meta property="og:updated_time" content="2020-12-01T15:17:30-05:00" />
+<meta property="og:updated_time" content="2020-12-06T16:48:55-05:00" />
 <meta itemprop="name" content="Q. Weng">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -140,8 +140,8 @@
     <div class="widget-body">
         <ul class="category-list">
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">238</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">2</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">11</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">12</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">135</span></li>
         </ul>
     </div>
@@ -271,6 +271,45 @@
     
     
     
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/1107-new-users-daily-count/"
+    >1107 New Users Daily Count</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 1107 New Users Daily Count   Write an SQL query that reports for every date within at most 90 days from today, the number of users that logged in for the first time on that date. Assume today is 2019-06-30.
+The query result format is in the following example:
+Traffic table: +---------+----------+---------------+ | user_id | activity | activity_date | +---------+----------+---------------+ | 1 | login | 2019-05-01 | | 1 | homepage | 2019-05-01 | | 1 | logout | 2019-05-01 | | 2 | login | 2019-06-21 | | 2 | logout | 2019-06-21 | | 3 | login | 2019-01-01 | | 3 | jobs | 2019-01-01 | | 3 | logout | 2019-01-01 | | 4 | login | 2019-06-21 | | 4 | groups | 2019-06-21 | | 4 | logout | 2019-06-21 | | 5 | login | 2019-03-01 | | 5 | logout | 2019-03-01 | | 5 | login | 2019-06-21 | | 5 | logout | 2019-06-21 | +---------+----------+---------------+ Result table: +------------+-------------+ | login_date | user_count | +------------+-------------+ | 2019-05-01 | 1 | | 2019-06-21 | 2 | +------------+-------------+   Solution 2020-10-09 Notes: SELECT activity_date AS login_date, COUNT(user_id) AS user_count FROM( SELECT *, ROW_NUMBER() OVER(PARTITION BY user_id ORDER BY activity_date) AS nr FROM traffic WHERE activity = 'login' ) a WHERE nr = 1 and DATEDIFF('2019-06-30', activity_date) &lt;= 90 GROUP BY 1  
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/1107-new-users-daily-count/" class="">
+  <time datetime="2020-10-09 18:54:37 -0400 EDT" itemprop="datePublished">2020-10-09</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1107-new-users-daily-count/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
     <article
       class="article article-type-page"
       itemscope
@@ -459,46 +498,6 @@
   </span>
 
         <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/347-top-k-frequent-elements/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/127-word-ladder/"
-    >127 Word Ladder</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 127 Word Ladder Given two words (beginWord and endWord), and a dictionary&rsquo;s word list, find the length of shortest transformation sequence from beginWord to endWord, such that: Only one letter can be changed at a time. Each transformed word must exist in the word list. Input: beginWord = &quot;hit&quot;, endWord = &quot;cog&quot;, wordList = [&quot;hot&quot;,&quot;dot&quot;,&quot;dog&quot;,&quot;lot&quot;,&quot;log&quot;,&quot;cog&quot;] Output: 5 Explanation: As one shortest transformation is &quot;hit&quot; -&gt; &quot;hot&quot; -&gt; &quot;dot&quot; -&gt;
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/127-word-ladder/" class="">
-  <time datetime="2020-10-08 21:14:34 -0400 EDT" itemprop="datePublished">2020-10-08</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/bfs/"> BFS </a>
-    <a class="article-tag-link" href="/tags/hashtable/"> hashtable </a>
-    <a class="article-tag-link" href="/tags/dia/"> dia </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/127-word-ladder/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article></div>
   

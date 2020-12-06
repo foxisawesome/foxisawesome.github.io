@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 06 Dec 2020 16:48:55 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Ordinal Logit and Markov Chain Vectorization</title>
+      <link>https://foxisawesome.github.io/posts/ordinal_logit_vect/</link>
+      <pubDate>Sun, 06 Dec 2020 16:48:55 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/ordinal_logit_vect/</guid>
+      <description>Load libaries # libs import pandas as pd import numpy as np import time import os # plotting setting from matplotlib import pyplot as plt %matplotlib inline import seaborn as sns sns.set_style(&#39;darkgrid&#39;, {&#39;axes.facecolor&#39;: &#39;.9&#39;}) sns.set_palette(palette=&#39;deep&#39;) sns_c = sns.color_palette(palette=&#39;deep&#39;) # display setting from IPython.core.interactiveshell import InteractiveShell InteractiveShell.ast_node_interactivity = &amp;quot;all&amp;quot; from IPython.display import display np.set_printoptions(precision=12)  Algo: The ordinal logistic regression is a variant of normal logistic regression, where its numerator is CDF.</description>
+    </item>
     
     <item>
       <title>211 Design Add and Search Words Data Structure</title>
@@ -202,15 +211,6 @@ NPV table: +------+--------+--------+ | id | year | npv | +------+--------+-----
       
       <guid>https://foxisawesome.github.io/posts/1336-number-of-transactions-per-visit/</guid>
       <description>LC 1336 Number of Transactions per Visit Write an SQL query to find how many users visited the bank and didn&amp;rsquo;t do any transactions, how many visited the bank and did one transaction and so on. The result table will contain two columns: transactions_count which is the number of transactions done in one visit. visits_count which is the corresponding number of users who did transactions_count in one visit to the</description>
-    </item>
-    
-    <item>
-      <title>1327 List the Products Ordered in a Period</title>
-      <link>https://foxisawesome.github.io/posts/1327-list-the-products-ordered-in-a-period/</link>
-      <pubDate>Thu, 29 Oct 2020 11:19:13 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1327-list-the-products-ordered-in-a-period/</guid>
-      <description>LC 1327 List the Products Ordered in a Period Write an SQL query to get the names of products with greater than or equal to 100 units ordered in February 2020 and their amount. Return result table in any order. The query result format is in the following example: Products table: +-------------+-----------------------+------------------+ | product_id | product_name | product_category | +-------------+-----------------------+------------------+ | 1 | Leetcode Solutions | Book | | 2</description>
     </item>
     
   </channel>

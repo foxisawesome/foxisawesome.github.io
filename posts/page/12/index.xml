@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
+    <lastBuildDate>Sun, 06 Dec 2020 16:48:55 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>36 Valid Sudoku</title>
+      <link>https://foxisawesome.github.io/posts/36-valid-sudoku/</link>
+      <pubDate>Fri, 25 Sep 2020 19:13:25 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/36-valid-sudoku/</guid>
+      <description>LC 36 Valid Sudoku Determine if a 9x9 Sudoku board is valid. Only the filled cells need to be validated according to the following rules: Each row must contain the digits 1-9 without repetition. Each column must contain the digits 1-9 without repetition. Each of the 9 3x3 sub-boxes of the grid must contain the digits 1-9 without repetition. A partially filled sudoku which is valid. Solution 2020-09-25 Notes: 按</description>
+    </item>
     
     <item>
       <title>771 Jewels and Stones</title>
@@ -180,15 +189,6 @@
       
       <guid>https://foxisawesome.github.io/posts/1070-product-sales-analysis-iii/</guid>
       <description>LC 1070 Product Sales Analysis III Write an SQL query that selects the product id, year, quantity, and price for the first year of every product sold. Solution 2020-09-23 Notes: 这题的test case 1有问题，论坛里有类似讨论。 SELECT product_id, year AS first_year, quantity, price FROM ( SELECT product_id, year, quantity, price, ROW_NUMBER() OVER(PARTITION BY product_id</description>
-    </item>
-    
-    <item>
-      <title>1231 Divide Chocolate</title>
-      <link>https://foxisawesome.github.io/posts/1231-divide-chocolate/</link>
-      <pubDate>Wed, 23 Sep 2020 21:15:59 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1231-divide-chocolate/</guid>
-      <description>LC 1231 Divide Chocolate You have one chocolate bar that consists of some chunks. Each chunk has its own sweetness given by the array sweetness. You want to share the chocolate with your K friends so you start cutting the chocolate bar into K+1 pieces using K cuts, each piece consists of some consecutive chunks. Being generous, you will eat the piece with the minimum total sweetness and give the</description>
     </item>
     
   </channel>
