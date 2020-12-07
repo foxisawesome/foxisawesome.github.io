@@ -5,7 +5,7 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 06 Dec 2020 16:48:55 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -187,10 +187,10 @@ Activity table: +-----------+-----------+------------+--------------+ | player_i
     
     <item>
       <title>Cheatsheet</title>
-      <link>https://foxisawesome.github.io/posts/cheatsheet/</link>
+      <link>https://foxisawesome.github.io/notes/cheatsheet/</link>
       <pubDate>Fri, 25 Sep 2020 19:13:47 -0400</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/cheatsheet/</guid>
+      <guid>https://foxisawesome.github.io/notes/cheatsheet/</guid>
       <description> [[x,y] for x in [0,3] for y in [6,9]]: generate pairs [[0, 6], [0, 9], [3, 6], [3, 9]] [[x,y] for x, y in zip([&#39;a&#39;,&#39;b&#39;],[&#39;c&#39;,&#39;d&#39;])]: [[&amp;lsquo;a&amp;rsquo;, &amp;lsquo;c&amp;rsquo;], [&amp;lsquo;b&amp;rsquo;, &amp;rsquo;d&#39;]] one liner to create dictionary:lookup = {val: i for i, val in enumerate(order)} this reverse check dict and return max val count in dict  max_val = max(dict.values()) max_freq = max(dict, key=dict.get) for key, val in dict.items(): if val == max_val: return key sorted_dict = sorted(dict, key = lambda x: (-dict[x]) ) sorted_dict[0]   sort a by b: [x for _,x in sorted(zip(b,a))]  </description>
     </item>
     

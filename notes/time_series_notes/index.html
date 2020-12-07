@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+        Time Series Notes - Q. Weng
+      </title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    
+    <meta name="theme-color" content="#000000" />
+    
+    <meta http-equiv="window-target" content="_top" />
+    
+    
+    <meta name="description" content="Reference links  PSU: https://online.stat.psu.edu/stat510/  Why does a time series have to be stationary? Stationarity is a one type of dependence structure.
+Suppose we have a data $X_1,&amp;hellip;,X_n$. The most basic assumption is that $X_i$ are independent, i.e. we have a sample. The independence is a nice property, since using it we can derive a lot of useful results. The problem is that sometimes (or frequently, depending on the view) this property does not hold." />
+    <meta name="generator" content="Hugo 0.78.2 with theme pure" />
+    <title>Time Series Notes - Q. Weng</title>
+    
+    
+    <link rel="stylesheet" href="https://foxisawesome.github.io/css/style.min.f9a354d3e7069c2b675555c86f6672f0a152ef9a764068aa27f468cd308a84a0.css">
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+    <meta property="og:title" content="Time Series Notes" />
+<meta property="og:description" content="Reference links  PSU: https://online.stat.psu.edu/stat510/  Why does a time series have to be stationary? Stationarity is a one type of dependence structure.
+Suppose we have a data $X_1,&hellip;,X_n$. The most basic assumption is that $X_i$ are independent, i.e. we have a sample. The independence is a nice property, since using it we can derive a lot of useful results. The problem is that sometimes (or frequently, depending on the view) this property does not hold." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://foxisawesome.github.io/notes/time_series_notes/" />
+<meta property="article:published_time" content="2020-10-15T19:22:49-05:00" />
+<meta property="article:modified_time" content="2020-10-15T19:22:49-05:00" />
+<meta itemprop="name" content="Time Series Notes">
+<meta itemprop="description" content="Reference links  PSU: https://online.stat.psu.edu/stat510/  Why does a time series have to be stationary? Stationarity is a one type of dependence structure.
+Suppose we have a data $X_1,&hellip;,X_n$. The most basic assumption is that $X_i$ are independent, i.e. we have a sample. The independence is a nice property, since using it we can derive a lot of useful results. The problem is that sometimes (or frequently, depending on the view) this property does not hold.">
+<meta itemprop="datePublished" content="2020-10-15T19:22:49-05:00" />
+<meta itemprop="dateModified" content="2020-10-15T19:22:49-05:00" />
+<meta itemprop="wordCount" content="1655">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Time Series Notes"/>
+<meta name="twitter:description" content="Reference links  PSU: https://online.stat.psu.edu/stat510/  Why does a time series have to be stationary? Stationarity is a one type of dependence structure.
+Suppose we have a data $X_1,&hellip;,X_n$. The most basic assumption is that $X_i$ are independent, i.e. we have a sample. The independence is a nice property, since using it we can derive a lot of useful results. The problem is that sometimes (or frequently, depending on the view) this property does not hold."/>
+
+    <!--[if lte IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+      <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  
+  
+
+  <body class="main-center theme-white" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/foxisawesome" target="_blank">
+            <img class="img-circle img-rotate" src="https://foxisawesome.github.io/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Q. Weng</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md"></h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>United States</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title"> Categories</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">238</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">12</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">135</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> Tags</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/array/" class="tag-list-link">array</a><span
+                    class="tag-list-count">19</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/backtracking/" class="tag-list-link">backtracking</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/bfs/" class="tag-list-link">bfs</a><span
+                    class="tag-list-count">9</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/binary_search/" class="tag-list-link">binary_search</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/bst/" class="tag-list-link">bst</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dfs/" class="tag-list-link">dfs</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia/" class="tag-list-link">dia</a><span
+                    class="tag-list-count">34</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia_sql/" class="tag-list-link">dia_sql</a><span
+                    class="tag-list-count">23</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dp/" class="tag-list-link">dp</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/graph/" class="tag-list-link">graph</a><span
+                    class="tag-list-count">5</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/greedy/" class="tag-list-link">greedy</a><span
+                    class="tag-list-count">6</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/hashtable/" class="tag-list-link">hashtable</a><span
+                    class="tag-list-count">16</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/heap/" class="tag-list-link">heap</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
+                    class="tag-list-count">369</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
+                    class="tag-list-count">14</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/math/" class="tag-list-link">math</a><span
+                    class="tag-list-count">6</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/matrix/" class="tag-list-link">matrix</a><span
+                    class="tag-list-count">8</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/monotonic/" class="tag-list-link">monotonic</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/recursion/" class="tag-list-link">recursion</a><span
+                    class="tag-list-count">7</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/sliding_window/" class="tag-list-link">sliding_window</a><span
+                    class="tag-list-count">10</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/sort/" class="tag-list-link">sort</a><span
+                    class="tag-list-count">8</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/stack/" class="tag-list-link">stack</a><span
+                    class="tag-list-count">8</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/string/" class="tag-list-link">string</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/template/" class="tag-list-link">template</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/tree/" class="tag-list-link">tree</a><span
+                    class="tag-list-count">30</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/two_pointers/" class="tag-list-link">two_pointers</a><span
+                    class="tag-list-count">21</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/notes/time_series_notes/"
+    >Time Series Notes</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/notes/time_series_notes/" class="article-date">
+  <time datetime="2020-10-15 19:22:49 -0500 -0500" itemprop="datePublished">2020-10-15</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/note/"> note </a>
+  <a class="article-category-link" href="/categories/ml/"> ml </a>
+</span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/notes/time_series_notes/#comments"
+            class="article-comment-link">Comments</a></span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h1 id="reference-links">Reference links</h1>
+<ol>
+<li>PSU: <a href="https://online.stat.psu.edu/stat510/">https://online.stat.psu.edu/stat510/</a></li>
+</ol>
+<h2 id="why-does-a-time-series-have-to-be-stationary">Why does a time series have to be stationary?</h2>
+<p>Stationarity is a one type of dependence structure.</p>
+<p>Suppose we have a data $X_1,&hellip;,X_n$. The most basic assumption is that $X_i$ are independent, i.e. we have a sample. The independence is a nice property, since using it we can derive a lot of useful results. The problem is that sometimes (or frequently, depending on the view) this property does not hold.</p>
+<p>Now independence is a unique property, two random variables can be independent only in one way, but they can be dependent in various ways. So stationarity is one way of modeling the dependence structure. It turns out that a lot of nice results which holds for independent random variables (law of large numbers, central limit theorem to name a few) hold for stationary random variables (we should strictly say sequences). And of course it turns out that a lot of data can be considered stationary, so the concept of stationarity is very important in modeling non-independent data.</p>
+<p>When we have determined that we have stationarity, naturally we want to model it. This is where ARMA models come in. It turns out that any stationary data can be approximated with stationary ARMA model, thanks to Wold decomposition theorem. So that is why ARMA models are very popular and that is why we need to make sure that the series is stationary to use these models.</p>
+<p>Now again the same story holds as with independence and dependence. Stationarity is defined uniquely, i.e. data is either stationary or not, so there is only way for data to be stationary, but lots of ways for it to be non-stationary. Again it turns out that a lot of data becomes stationary after certain transformation. ARIMA model is one model for non-stationarity. It assumes that the data becomes stationary after differencing.</p>
+<p>In the regression context the stationarity is important since the same results which apply for independent data holds if the data is stationary.</p>
+<p>In addition to this, stationary processes avoid the problem of spurious regression.</p>
+<h2 id="stationary-arma-processes">Stationary ARMA Processes</h2>
+<h4 id="covariance-stationary-weakly-stationary">Covariance-stationary (weakly stationary):</h4>
+<p>$$
+\begin{eqnarray}
+&amp;E(Y_t) = \mu \qquad &amp;\text{for all $t$} \nonumber \\\<br>
+&amp;E(Y_t-\mu)(Y_{t-j} - \mu) = \gamma_j \qquad &amp;\text{for all $t$ and any $j$}
+\end{eqnarray}
+$$
+where $\gamma_j$ is the $j$-th autocovariance. **Not time varying**.</p>
+<ul>
+<li>For any covariance-stationary process: $\gamma_j = \gamma_{-j}$.</li>
+<li>$MA(1)$ process is covariance stationary.</li>
+<li>$AR(1)$ when $|\phi|&lt;1$ then it is covariance stationary.</li>
+<li>The stationarity of an $ARMA(p,q)$ process depends entirely on the autoregressive parameters and not on the moving average parameters.</li>
+</ul>
+<h4 id="strict-stationary">Strict stationary:</h4>
+<p>For any values of $j_1, j_2, \cdots, j_n$, the joint distribution of $(Y_t, Y_{t+j_1}, Y_{t+j_2}, \cdots, Y_{t+j_n})$ depends only on the intervals separating the dates $(j_1, j_2, \cdots, j_n)$ and not on the date itself $(t)$, i.e.:$F(Y_0, Y_{j_1}, Y_{j_2}, \cdots, Y_{j_n}) = F(Y_t, Y_{t+j_1}, Y_{t+j_2}, \cdots, Y_{t+j_n})$, where $F(\cdot)$ is the joint distribution function.</p>
+<ul>
+<li>If a process is strictly stationary with finite second moments, then it must be covariance-stationary.</li>
+<li>Autocorrelation: $\rho_j \equiv \gamma_j / \gamma_0 $</li>
+</ul>
+<h4 id="ergodicity">Ergodicity:</h4>
+<ul>
+<li>
+<p>Ensemble Average: $E (Y_t) = \underset{I \rightarrow \infty}{\text{plim}} (1/I) \sum_{i=1}^I Y_t^{(i)} $</p>
+</li>
+<li>
+<p>Time Average:  $ \bar{y} \equiv (1/T)\sum^T_{t=1} y_t^{(1)}$</p>
+</li>
+<li>
+<p>A covariance-stationary process is said to be \textbf{ergodic} for the mean if time average converges in probability to $E(Y_t)$ as $T\rightarrow \infty$.</p>
+</li>
+<li>
+<p>A process will be ergodic for the mean provided that the auto-covariance $\gamma_j$ goes to zero sufficiently quickly as $j$ becomes large.</p>
+</li>
+</ul>
+<h4 id="invertibility">Invertibility:</h4>
+<p>For the $MA(q)$ process: $ Y_t - \mu = \Phi(L)\varepsilon_t$. Factor the moving average  operator as: $\Phi(L) = (1-\lambda_1 L)(1-\lambda_2 L)\cdots(1-\lambda_q L)$, if $|\lambda_i|&lt;1$ for all $i$, then the roots of $\Phi(L)$ all lie outside of the unit circle and MA(q) is invertible. <strong>If $MA(p)$ is invertible then it has a $AR(\infty)$ representation</strong>.</p>
+<h4 id="sums-of-arma-processes">Sums of ARMA Processes:</h4>
+<ul>
+<li>$MA(1) + WN \Rightarrow MA(1)$</li>
+<li>$ MA(q_1) + MA(q_2) = MA(max[q_1, q_2])$</li>
+<li>$AR(1) + AR(1) = ARMA(2,1) $</li>
+</ul>
+<h2 id="wolds-decomposition-theorem">Wold&rsquo;s Decomposition Theorem</h2>
+<p>Any zero-mean covariance-stationary process $Y_t$ can be represented in the form:
+$$
+Y_t = \sum^\infty_{j=0}\Psi_j\varepsilon_{t-j}+\kappa_t
+$$
+where $\Psi_0 = 1$ and $\Psi_j^2 &lt; \infty$. The term $\varepsilon_t$ is white noise and represents the error made in forecasting $Y_t$ on the basis of a linear function of lagged $Y$: $\varepsilon_t \equiv Y_t - \hat{E}(Y_t | Y_{t-1}, Y_{t-2}, \cdots)$. The value of $\kappa_t$ is uncorrelated with $\varepsilon_{t-j}$ for any $j$, though $\kappa_t$ can be predicted arbitrarily well from a linear function of past values of $Y$: $\kappa_t = \hat{E} (\kappa_t | Y_{t-1}, Y_{t-2}, \cdots). $</p>
+<h2 id="box-jenkins-approach--model-philosophy">Box-Jenkins Approach / Model Philosophy</h2>
+<ul>
+<li>If necessary, transform data, such that covariance stationarity is achieved.</li>
+<li>Inspect, Autocorrelation Function (ACF) and Partial Autocorrelation Function (PACF) for initial guesses of p and q. (Decaying ACF indicates the the goodness of fit for AR($p$) part. Only the PACF could tell the lag order $q$. It should be up to the last PACF outside the 95% significance band)</li>
+<li>Estimate proposed model.</li>
+<li>Check residuals (diagnostic tests) and stationarity of process. The residuals should follow normal distribution without any serial correlation. Plot ACF, QQ-plot for visual test or Jarque-Bera, Shapiro-Bera test for more rigorous purposes. Also <strong>Box-Ljung test</strong> could be used to test the goodness of fit for the proposed $ARMA(p,q)$ model.</li>
+<li>If item 4 fails, go to item 2 and repeat. If in doubt, choose the more parsimonious model specification.</li>
+</ul>
+<h3 id="identify-the-orders-of-ar-or-ma-models">Identify The Orders of AR or MA Models</h3>
+<ul>
+<li>
+<p>The partial autocorrelations at all lags can be computed by fitting a succession of autoregressive models with increasing numbers of lags. In particular, the partial autocorrelation at lag k is equal to the estimated AR(k) coefficient in an autoregressive model with k terms&ndash;i.e., a multiple regression model in which Y is regressed on LAG(Y,1), LAG(Y,2), etc., up to LAG(Y,k). Thus, by mere inspection of the PACF you can determine how many AR terms you need to use to explain the autocorrelation pattern in a time series: if the partial autocorrelation is significant at lag k and not significant at any higher order lags&ndash;i.e., if the PACF &ldquo;cuts off&rdquo; at lag k&ndash;then this suggests that you should try fitting an autoregressive model of order k.</p>
+</li>
+<li>
+<p><strong>PACF</strong> determins $p$.
+$$
+y_t = C + \alpha_1 y_{t-1} + \alpha_2 y_{t-2} + \cdots + \alpha_m y_{t-m} + u_t
+$$
+If the PACF ($\alpha_i$) of the differenced series displays a sharp cutoff and/or the lag-1 autocorrelation is **positive** i.e., if the series appears slightly &ldquo;underdifferenced&rdquo;&ndash;then consider adding an **AR** term to the model. The lag at which the PACF cuts off is the indicated number of AR terms.</p>
+</li>
+<li>
+<p><strong>ACF</strong> determins $q$.
+$$
+\rho_h = \frac{\gamma_h}{\gamma_0}
+$$
+If the ACF($\rho_h$) of the differenced series displays a sharp cutoff and/or the lag-1 autocorrelation is <strong>negative</strong>&ndash;i.e., if the series appears slightly &ldquo;overdifferenced&rdquo;&ndash;then consider adding an <strong>MA</strong> term to the model. The lag at which the ACF cuts off is the indicated number of MA terms.</p>
+</li>
+<li>
+<p>A partial autocorrelation is the amount of correlation between a variable and a lag of itself that is not explained by correlations at all lower-order-lags. The autocorrelation of a time series $Y$ at lag 1 is the coefficient of correlation between $Y_{t}$ and $Y_{t-1}$, which is presumably also the correlation between $Y_{t-1}$ and $Y_{t-2}$. But if $Y_{t}$ is correlated with $Y_{t-1}$, and $Y_{t-1}$ is equally correlated with $Y_{t-2}$, then we should also expect to find correlation between $Y_{t}$ and $Y_{t-2}$. In fact, the amount of correlation we should expect at lag 2 is precisely the square of the lag-1 correlation. Thus, the correlation at lag 1 &ldquo;propagates&rdquo; to lag 2 and presumably to higher-order lags. The partial autocorrelation at lag 2 is therefore the difference between the actual correlation at lag 2 and the expected correlation due to the propagation of correlation at lag 1.</p>
+</li>
+</ul>
+<h2 id="models-of-nonstationary-time-series">Models of Nonstationary Time Series</h2>
+<p>If the raw time series data is nonstationary, two popular approaches exist:</p>
+<ul>
+<li>
+<p>Trend-stationary model: $y_t = \alpha + \delta t + \psi (L) \epsilon_t$</p>
+<ul>
+<li>
+<p>Wrong Treatment: subtracting $\delta t$ from $y_t$ would succeed in removing the time-dependence of the mean but not the variance. For example, $ y_t - \delta t =  y_0 + (\varepsilon_1 + \varepsilon_2 + \cdots + \varepsilon_t) \equiv y_0 + u_t $, where $Var(u_t) = t\sigma^2$, time-varying variance.</p>
+</li>
+<li>
+<p>thus subtracting a time trend from a unit root process is not sufficient to produce a stationary time series. Unless we know that $\mu_t$ follows a covariance-stationary process.</p>
+</li>
+</ul>
+</li>
+<li>
+<p>Unit root process (if I(1), then random walk process): $ (1-L)y_t = \sigma + \psi(L) \epsilon_t $
+The alternative expression of this process is $y_t \sim I(1)$, integrated of order 1. The term &ldquo;integrated&rdquo; comes from calculus; if $dy/dt = x$, then y is the integral of $x$. In discrete time series, if $\Delta y_t = x_t $, then $y$ might be also viewed as the integral of $x$. Then this could extend to $ARIMA(p,d,q)$.</p>
+</li>
+<li>
+<p>The Correct Treatment: difference the series to introduce into the moving average representation. $\Delta y_t =\sigma + (1-L)\psi (L) \varepsilon_t $</p>
+</li>
+<li>
+<p>Log-difference and growth rate or percentage change:
+$$
+\begin{eqnarray*}
+(1-L)\log(y_t) &amp;=&amp; \log(y_t/y_{t-1}) \nonumber \\\<br>
+&amp;=&amp; \log { 1+ [(y_t - y_{t-1})/y_{t-1}]} \nonumber \\\<br>
+&amp;\cong &amp; (y_t - y_{t-1})/y_{t-1}
+\end{eqnarray*}
+$$</p>
+</li>
+<li>
+<p>Parsimonious models often perform best, and autoregressions are much easier to estimate and forecast than moving average processes, particularly moving average processes with a root near unity.</p>
+</li>
+</ul>
+<h2 id="cointegration">Cointegration</h2>
+<ul>
+<li>$y \sim I(0)$ means stationary</li>
+</ul>
+<p>$$
+\begin{eqnarray*}
+(1-\Phi_1L -\Phi_1L^2 -\cdots -\Phi_pL^p) y_t &amp;=&amp; (1+\theta_1L +\theta_2L^2 +\cdots +\theta_qL^q) \varepsilon_t \\\<br>
+P(L) y_t &amp;=&amp; Q(L) \varepsilon_t
+\end{eqnarray*}
+$$</p>
+<ol>
+<li>if 1 eigen vaue of $P(L)$ is unity, all other are inside the unit circle, then $I(1)$.</li>
+<li>if 2 eigen vaues of $P(L)$ are unity, all other are inside the unit circle, then $I(2)$.</li>
+<li>if all roots outside unit circle in $P(L)$ then <strong>sationary</strong>. If all roots outside unit circle in $Q(L)$ then <strong>invertible</strong>.</li>
+<li>if invertible then $MA(q) \to AR(\infty)$. Then further $ARMA(p,q) \to AR(\infty)$.</li>
+<li>Dickey-Fuller unity root test. $H_0: y_t = y_{t-1} + c + \varepsilon_t$. if it fails to reject, then non-stationary. Why stationarity is required? regeression is i.i.d, so it does not capture serial correlation.</li>
+</ol>
+
+    </div>
+    <div class="article-footer">
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/foxisawesome" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/qweng/" target="_blank" title="linkedin" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-linkedin"></i></a></li>
+    <li><a href="https://foxisawesome.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2019  -
+    2020
+
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_SVG"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: true, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/sql.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://foxisawesome.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://foxisawesome.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'https:\/\/foxisawesome.github.io',
+            CONTENT_URL: 'https:\/\/foxisawesome.github.io\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://foxisawesome.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-176995936-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

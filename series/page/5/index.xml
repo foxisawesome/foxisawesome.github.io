@@ -152,20 +152,20 @@ Return the result table ordered by category.
     </item>
     
     <item>
-      <title>Statistics Notes</title>
-      <link>https://foxisawesome.github.io/posts/stat_notes/</link>
+      <title>Statistics Notes (Unfinished)</title>
+      <link>https://foxisawesome.github.io/notes/stat_notes/</link>
       <pubDate>Thu, 15 Oct 2020 19:22:49 -0500</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/stat_notes/</guid>
+      <guid>https://foxisawesome.github.io/notes/stat_notes/</guid>
       <description>Hypothesis Testing Basics  $\alpha$: Type I error, false positive rate. Reject $H_0$ when $H_0$ is true. Significance level of test. (minimize $\alpha$) $\beta$: Type II error, false negative rate. Fail to reject $H_0$ when $H_0$ is false. power: $1-\beta$, probablility of making correct decision if alternative hypothesis is true. (maximize power). or reject null when null is false. $p$-value: the probability that we observe a more extreme statistics when $H_0$ was true.</description>
     </item>
     
     <item>
       <title>Time Series Notes</title>
-      <link>https://foxisawesome.github.io/posts/time_series_notes/</link>
+      <link>https://foxisawesome.github.io/notes/time_series_notes/</link>
       <pubDate>Thu, 15 Oct 2020 19:22:49 -0500</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/time_series_notes/</guid>
+      <guid>https://foxisawesome.github.io/notes/time_series_notes/</guid>
       <description>Reference links  PSU: https://online.stat.psu.edu/stat510/  Why does a time series have to be stationary? Stationarity is a one type of dependence structure.
 Suppose we have a data $X_1,&amp;hellip;,X_n$. The most basic assumption is that $X_i$ are independent, i.e. we have a sample. The independence is a nice property, since using it we can derive a lot of useful results. The problem is that sometimes (or frequently, depending on the view) this property does not hold.</description>
     </item>

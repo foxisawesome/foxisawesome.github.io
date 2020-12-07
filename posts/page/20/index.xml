@@ -5,7 +5,7 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 06 Dec 2020 16:48:55 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -47,10 +47,10 @@ Hobbies Photography • Sports</description>
     
     <item>
       <title>Imbalance Data Handling Notes</title>
-      <link>https://foxisawesome.github.io/posts/imbalance_data_handling_notes/</link>
+      <link>https://foxisawesome.github.io/notes/imbalance_data_handling_notes/</link>
       <pubDate>Mon, 11 Nov 2019 21:43:28 -0500</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/imbalance_data_handling_notes/</guid>
+      <guid>https://foxisawesome.github.io/notes/imbalance_data_handling_notes/</guid>
       <description>reference: The 5 Most Useful Techniques to Handle Imbalanced Datasets
 1. Random Undersampling and Oversampling A widely adopted and perhaps the most straightforward method for dealing with highly imbalanced datasets is called resampling. It consists of removing samples from the majority class (under-sampling) and/or adding more examples from the minority class (over-sampling).
 Let us first create some example imbalanced data.

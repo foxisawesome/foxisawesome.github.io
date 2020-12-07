@@ -280,19 +280,20 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/ordinal_logit_vect/"
-    >Ordinal Logit and Markov Chain Vectorization</a
+    href="/notes/ordinal_logit_vect/"
+    >Ordinal Logit and Markov Chain Process Vectorization</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        Load libaries # libs import pandas as pd import numpy as np import time import os # plotting setting from matplotlib import pyplot as plt %matplotlib inline import seaborn as sns sns.set_style('darkgrid', {'axes.facecolor': '.9'}) sns.set_palette(palette='deep') sns_c = sns.color_palette(palette='deep') # display setting from IPython.core.interactiveshell import InteractiveShell InteractiveShell.ast_node_interactivity = &quot;all&quot; from IPython.display import display np.set_printoptions(precision=12)  Algo: The ordinal logistic regression is a variant of normal logistic regression, where its numerator is CDF.
+        This post mainly talks about how to implement ordinal logist regression prediction in numpy using matrix form.
+Load libaries # libs import pandas as pd import numpy as np import time import os # plotting setting from matplotlib import pyplot as plt %matplotlib inline import seaborn as sns sns.set_style('darkgrid', {'axes.facecolor': '.9'}) sns.set_palette(palette='deep') sns_c = sns.color_palette(palette='deep') # display setting from IPython.core.interactiveshell import InteractiveShell InteractiveShell.ast_node_interactivity = &quot;all&quot; from IPython.display import display np.set_printoptions(precision=12)  Algo: The ordinal logistic regression is a variant of normal logistic regression, where its numerator is CDF.
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/ordinal_logit_vect/" class="">
+<a href="https://foxisawesome.github.io/notes/ordinal_logit_vect/" class="">
   <time datetime="2020-12-06 16:48:55 -0500 EST" itemprop="datePublished">2020-12-06</time>
 </a>
 </span>
@@ -302,7 +303,7 @@
   <a class="article-category-link" href="/categories/ml/"> ML </a>
 </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/ordinal_logit_vect/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/notes/ordinal_logit_vect/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -314,35 +315,28 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/211-design-add-and-search-words-data-structure/"
-    >211 Design Add and Search Words Data Structure</a
+    href="/notes/stat_notes/"
+    >Statistics Notes (Unfinished)</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 211 Design Add and Search Words Data Structure   Design a data structure that supports adding new words and finding if a string matches any previously added string.
-Implement the WordDictionary class:
- WordDictionary() Initializes the object. void addWord(word) Adds word to the data structure, it can be matched later. bool search(word) Returns true if there is any string in the data structure that matches word or false otherwise.
+        Hypothesis Testing Basics  $\alpha$: Type I error, false positive rate. Reject $H_0$ when $H_0$ is true. Significance level of test. (minimize $\alpha$) $\beta$: Type II error, false negative rate. Fail to reject $H_0$ when $H_0$ is false. power: $1-\beta$, probablility of making correct decision if alternative hypothesis is true. (maximize power). or reject null when null is false. $p$-value: the probability that we observe a more extreme statistics when $H_0$ was true.
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/211-design-add-and-search-words-data-structure/" class="">
-  <time datetime="2020-12-01 15:17:30 -0500 EST" itemprop="datePublished">2020-12-01</time>
+<a href="https://foxisawesome.github.io/notes/stat_notes/" class="">
+  <time datetime="2020-10-15 19:22:49 -0500 -0500" itemprop="datePublished">2020-10-15</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/tree/"> tree </a>
-  </span>
+  <a class="article-category-link" href="/categories/note/"> note </a>
+</span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/211-design-add-and-search-words-data-structure/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/notes/stat_notes/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -354,35 +348,30 @@ Implement the WordDictionary class:
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/208-implement-trie-prefix-tree/"
-    >208 Implement Trie Prefix Tree</a
+    href="/notes/time_series_notes/"
+    >Time Series Notes</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 208 Implement Trie Prefix Tree   Implement a trie with insert, search, and startsWith methods.
-Example:
-Trie trie = new Trie(); trie.insert(&quot;apple&quot;); trie.search(&quot;apple&quot;); // returns true trie.search(&quot;app&quot;); // returns false trie.startsWith(&quot;app&quot;); // returns true trie.insert(&quot;app&quot;); trie.search(&quot;app&quot;); // returns true   Solution 2020-12-01 Notes:  each child node is a dict. current = current.children[w] recursively adds letter to the tree structure. .isword marks if it is a complete word.
+        Reference links  PSU: https://online.stat.psu.edu/stat510/  Why does a time series have to be stationary? Stationarity is a one type of dependence structure.
+Suppose we have a data $X_1,&hellip;,X_n$. The most basic assumption is that $X_i$ are independent, i.e. we have a sample. The independence is a nice property, since using it we can derive a lot of useful results. The problem is that sometimes (or frequently, depending on the view) this property does not hold.
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/208-implement-trie-prefix-tree/" class="">
-  <time datetime="2020-12-01 14:55:09 -0500 EST" itemprop="datePublished">2020-12-01</time>
+<a href="https://foxisawesome.github.io/notes/time_series_notes/" class="">
+  <time datetime="2020-10-15 19:22:49 -0500 -0500" itemprop="datePublished">2020-10-15</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/tree/"> tree </a>
-  </span>
+  <a class="article-category-link" href="/categories/note/"> note </a>
+  <a class="article-category-link" href="/categories/ml/"> ml </a>
+</span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/208-implement-trie-prefix-tree/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/notes/time_series_notes/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -394,33 +383,30 @@ Trie trie = new Trie(); trie.insert(&quot;apple&quot;); trie.search(&quot;apple&
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/215-kth-largest-element-in-an-array/"
-    >215 Kth Largest Element in an Array</a
+    href="/notes/python_basics/"
+    >Python Basics Notes</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 215 Kth Largest Element in an Array Find the kth largest element in an unsorted array. Note that it is the kth largest element in the sorted order, not the kth distinct element. Input: [3,2,1,5,6,4] and k = 2 Output: 5 Solution 2020-11-19 Notes: Sort() class Solution: def findKthLargest(self, nums: List[int], k: int) -&gt; int: nums.sort(reverse=True) return nums[k-1] # Time O(NlogN) # Space O(1) Heap: 构建he
+        Reference: https://www.interviewbit.com/python-interview-questions/
+1. What is Python? Python is a high-level, interpreted, general-purpose programming language. Being a general-purpose language, it can be used to build almost any type of application with the right tools/libraries. Additionally, python supports objects, modules, threads, exception-handling and automatic memory management which help in modelling real-world problems and building applications to solve these problems.
+2. What are the benefits of using Python? Python is a general-purpose programming language that has simple, easy-to-learn syntax which emphasizes readability and therefore reduces the cost of program maintenance.
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/215-kth-largest-element-in-an-array/" class="">
-  <time datetime="2020-11-19 10:30:56 -0500 EST" itemprop="datePublished">2020-11-19</time>
+<a href="https://foxisawesome.github.io/notes/python_basics/" class="">
+  <time datetime="2020-09-30 21:38:19 -0500 -0500" itemprop="datePublished">2020-09-30</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/sort/"> sort </a>
-  </span>
+  <a class="article-category-link" href="/categories/note/"> note </a>
+</span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/215-kth-largest-element-in-an-array/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/notes/python_basics/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -432,35 +418,28 @@ Trie trie = new Trie(); trie.insert(&quot;apple&quot;); trie.search(&quot;apple&
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/1351-count-negative-numbers-in-a-sorted-matrix/"
-    >1351 Count Negative Numbers in a Sorted Matrix</a
+    href="/notes/cheatsheet/"
+    >Cheatsheet</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 1351 Count Negative Numbers in a Sorted Matrix   Given a m * n matrix grid which is sorted in non-increasing order both row-wise and column-wise.
-Return the number of negative numbers in grid.
-Input: grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]] Output: 8 Explanation: There are 8 negatives number in the matrix.   Solution 2020-11-04 Notes: class Solution: def countNegatives(self, grid: List[List[int]]) -&gt; int: nr, nc = len(grid), len(grid[0]) ans, i = 0, 0 while i &lt; nr: j = 0 while j &lt; nc: if grid[i][j] &lt; 0: ans += nc-j break else: j += 1 i += 1 return ans # Time O(MN) # Space O(1)  
+         [[x,y] for x in [0,3] for y in [6,9]]: generate pairs [[0, 6], [0, 9], [3, 6], [3, 9]] [[x,y] for x, y in zip(['a','b'],['c','d'])]: [[&lsquo;a&rsquo;, &lsquo;c&rsquo;], [&lsquo;b&rsquo;, &rsquo;d']] one liner to create dictionary:lookup = {val: i for i, val in enumerate(order)} this reverse check dict and return max val count in dict  max_val = max(dict.values()) max_freq = max(dict, key=dict.get) for key, val in dict.items(): if val == max_val: return key sorted_dict = sorted(dict, key = lambda x: (-dict[x]) ) sorted_dict[0]   sort a by b: [x for _,x in sorted(zip(b,a))]  
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1351-count-negative-numbers-in-a-sorted-matrix/" class="">
-  <time datetime="2020-11-04 13:35:18 -0500 EST" itemprop="datePublished">2020-11-04</time>
+<a href="https://foxisawesome.github.io/notes/cheatsheet/" class="">
+  <time datetime="2020-09-25 19:13:47 -0400 EDT" itemprop="datePublished">2020-09-25</time>
 </a>
 </span>
 <span class="article-category">
   <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/algo/"> algo </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/matrix/"> matrix </a>
-  </span>
+  <a class="article-category-link" href="/categories/note/"> note </a>
+</span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1351-count-negative-numbers-in-a-sorted-matrix/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/notes/cheatsheet/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -472,20 +451,20 @@ Input: grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]] Output: 8 Explan
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/942-di-string-match/"
-    >942 Di String Match</a
+    href="/notes/sliding-window-note/"
+    >Sliding Window Note</a
   >
 </h1>
 
       </div>
       <div class="article-entry text-muted" itemprop="description">
-        LC 942 Di String Match Given a string S that only contains &ldquo;I&rdquo; (increase) or &ldquo;D&rdquo; (decrease), let N = S.length. Return any permutation A of [0, 1, ..., N] such that for all i = 0, ..., N-1: If S[i] == &quot;I&quot;, then A[i] &lt; A[i+1] If S[i] == &quot;D&quot;, then A[i] &gt; A[i+1] Input: &quot;IDID&quot; Output: [0,4,1,3,2] Solution 2020-11-03 Notes: 这题的examp
+        滑动窗口算法的思路是这样： 1、我们在字符串S中使用双指针中的左右指针技巧，初始化left = right = 0，把索引左闭右开区间[left, right)
       </div>
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/942-di-string-match/" class="">
-  <time datetime="2020-11-03 10:43:04 -0500 EST" itemprop="datePublished">2020-11-03</time>
+<a href="https://foxisawesome.github.io/notes/sliding-window-note/" class="">
+  <time datetime="2020-08-30 17:08:55 -0400 EDT" itemprop="datePublished">2020-08-30</time>
 </a>
 </span>
 <span class="article-category">
@@ -494,11 +473,10 @@ Input: grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]] Output: 8 Explan
 </span>  
   <span class="article-tag">
     <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/two_pointers/"> two_pointers </a>
+    <a class="article-tag-link" href="/tags/template/"> template </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/942-di-string-match/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/notes/sliding-window-note/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article></div>
   
@@ -512,7 +490,7 @@ Input: grid = [[4,3,2,-1],[3,2,1,-1],[1,1,-1,-2],[-1,-1,-2,-3]] Output: 8 Explan
       </li>
     </ul>
     <div class="total-article bar-right">
-      Page:1/64
+      Page:1/2
     </div>
   </div>
 </nav>

@@ -5,7 +5,7 @@
     <link>https://foxisawesome.github.io/posts/</link>
     <description>Recent content in Posts on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 06 Dec 2020 16:48:55 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/posts/index.xml" rel="self" type="application/rss+xml" />
     
@@ -75,10 +75,10 @@
     
     <item>
       <title>Python Basics Notes</title>
-      <link>https://foxisawesome.github.io/posts/python_basics/</link>
+      <link>https://foxisawesome.github.io/notes/python_basics/</link>
       <pubDate>Wed, 30 Sep 2020 21:38:19 -0500</pubDate>
       
-      <guid>https://foxisawesome.github.io/posts/python_basics/</guid>
+      <guid>https://foxisawesome.github.io/notes/python_basics/</guid>
       <description>Reference: https://www.interviewbit.com/python-interview-questions/
 1. What is Python? Python is a high-level, interpreted, general-purpose programming language. Being a general-purpose language, it can be used to build almost any type of application with the right tools/libraries. Additionally, python supports objects, modules, threads, exception-handling and automatic memory management which help in modelling real-world problems and building applications to solve these problems.
 2. What are the benefits of using Python? Python is a general-purpose programming language that has simple, easy-to-learn syntax which emphasizes readability and therefore reduces the cost of program maintenance.</description>
