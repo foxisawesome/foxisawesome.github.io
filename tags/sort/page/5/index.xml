@@ -167,7 +167,7 @@ Return the result table ordered by category.
       <pubDate>Thu, 15 Oct 2020 19:22:49 -0500</pubDate>
       
       <guid>https://foxisawesome.github.io/notes/time_series_notes/</guid>
-      <description>Reference links  PSU: https://online.stat.psu.edu/stat510/  Why does a time series have to be stationary? Stationarity is a one type of dependence structure.
+      <description>Reference  PSU: https://online.stat.psu.edu/stat510/  Why does a time series have to be stationary? Stationarity is a one type of dependence structure.
 Suppose we have a data $X_1,&amp;hellip;,X_n$. The most basic assumption is that $X_i$ are independent, i.e. we have a sample. The independence is a nice property, since using it we can derive a lot of useful results. The problem is that sometimes (or frequently, depending on the view) this property does not hold.</description>
     </item>
     
