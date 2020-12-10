@@ -42,7 +42,7 @@ Load libaries # libs import pandas as pd import numpy as np import time import o
 Load libaries # libs import pandas as pd import numpy as np import time import os # plotting setting from matplotlib import pyplot as plt %matplotlib inline import seaborn as sns sns.set_style(&#39;darkgrid&#39;, {&#39;axes.facecolor&#39;: &#39;.9&#39;}) sns.set_palette(palette=&#39;deep&#39;) sns_c = sns.color_palette(palette=&#39;deep&#39;) # display setting from IPython.core.interactiveshell import InteractiveShell InteractiveShell.ast_node_interactivity = &quot;all&quot; from IPython.display import display np.set_printoptions(precision=12)  Algo: The ordinal logistic regression is a variant of normal logistic regression, where its numerator is CDF.">
 <meta itemprop="datePublished" content="2020-12-06T16:48:55-05:00" />
 <meta itemprop="dateModified" content="2020-12-06T16:48:55-05:00" />
-<meta itemprop="wordCount" content="417">
+<meta itemprop="wordCount" content="499">
 
 
 
@@ -343,11 +343,38 @@ np.set_printoptions(precision=12)
 <p>The ordinal logistic regression is a variant of normal logistic regression, where its numerator is CDF. It garuantees that the output prob of each category is rank ordered.</p>
 <p>$$
 \begin{eqnarray}
-P(k) &amp;=&amp; P(x &gt;= k)  \\\<br>
-P(k-1) &amp;=&amp; P(x &gt;= k-1) - P(x &gt;= k)  \\\<br>
-\cdots \\\<br>
-P(1) &amp;=&amp; 1- P(target &gt;= 2)  \\\<br>
+P(k) &amp;=&amp; P(x &gt;= k)  \\<br>
+P(k-1) &amp;=&amp; P(x &gt;= k-1) - P(x &gt;= k)  \\<br>
+&amp;\cdots&amp; \\<br>
+P(1) &amp;=&amp; 1- P(x &gt;= 2)  \\<br>
 \end{eqnarray}
+$$</p>
+<p>Once, ordinal logistic regression has been scored, put the transition rates in a Makov Chain process as follow:
+$$
+s_t^T \cdot M = s_{t+1}^T
+$$</p>
+<p>where:
+$$
+s_t =
+\begin{bmatrix}
+s_3 \\<br>
+\cdots \\<br>
+s_8
+\end{bmatrix},
+\qquad
+M =
+\begin{bmatrix}
+p_{33} &amp; \cdots &amp; p_{38}\\<br>
+&amp; \vdots &amp;             \\<br>
+p_{83} &amp; \cdots &amp; p_{88}
+\end{bmatrix}_{6\times 6},
+\qquad
+\begin{cases}
+p_{38}  = \text{CDF}_{3 \cdot 8} \\<br>
+p_{37}  = \text{CDF}_{3\cdot 7} - \text{CDF}_{3 \cdot 8} \\<br>
+\cdots \\<br>
+p_{33}  = 1-\text{CDF}_{3\cdot 4}
+\end{cases}
 $$</p>
 <pre><code class="language-python">#tape x: n x p (n rows, p features)
 n = 1000
@@ -373,12 +400,13 @@ y = y.reshape(n,6,5)
 # [p38, p37, p36, p35, p34, p33]
 # ...
 # [p88, p87, p86, p85, p84, p83]
-# prob_x8 = y[0], prob_x7 = y[1]-y[0], ..., prob_x4=y[-2]-y[-1], prob_x3 = 1-y[-1] 
+# prob_x8 = y[0], prob_x7 = y[1]-y[0], ..., 
+# prob_x4=y[-2]-y[-1], prob_x3 = 1-y[-1] 
 p_f8  = y[:,:,0].reshape(n,-1,1)
 p_f74 = np.diff(y[:,:,:])
 p_f3  = (1- y[:,:,-1]).reshape(n,-1,1)
         
-tran_M = np.dstack((p_f8, p_f74, p_f3))
+tran_M = np.dstack((p_f3, p_f74, p_f8))
 # tran_M[0,:,:]
 # check row add up to 1
 # np.sum(tran_M[0,0,:])
