@@ -16,7 +16,7 @@
       <pubDate>Tue, 19 Jan 2021 21:05:36 -0500</pubDate>
       
       <guid>https://foxisawesome.github.io/posts/9-palindrome-number/</guid>
-      <description>LC 9 Palindrome Number Given an integer x, return true if x is palindrome integer. An integer is a palindrome when it reads the same backward as forward. For example, 121 is palindrome while 123 is not. Solution 2021-01-19 Notes: 不用str()的做法。just keep taking the inverse of x. class Solution: def isPalindrome(self, x: int) -&amp;gt; bool: if</description>
+      <description>LC 9 Palindrome Number Given an integer x, return true if x is palindrome integer. An integer is a palindrome when it reads the same backward as forward. For example, 121 is palindrome while 123 is not. Solution 2021-01-19 Notes: 不用str()的做法。just keep taking the inverse of x. x==inverse//10 is to ignore the middle digit of an</description>
     </item>
     
     <item>
