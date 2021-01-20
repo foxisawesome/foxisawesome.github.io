@@ -22,7 +22,7 @@
     
     <meta name="description" content="This post mainly talks about how to implement ordinal logist regression prediction in numpy using matrix form.
 Load libaries # libs import pandas as pd import numpy as np import time import os # plotting setting from matplotlib import pyplot as plt %matplotlib inline import seaborn as sns sns.set_style(&#39;darkgrid&#39;, {&#39;axes.facecolor&#39;: &#39;.9&#39;}) sns.set_palette(palette=&#39;deep&#39;) sns_c = sns.color_palette(palette=&#39;deep&#39;) # display setting from IPython.core.interactiveshell import InteractiveShell InteractiveShell.ast_node_interactivity = &amp;quot;all&amp;quot; from IPython.display import display np.set_printoptions(precision=12)  Algo: The ordinal logistic regression is a variant of normal logistic regression, where its numerator is CDF." />
-    <meta name="generator" content="Hugo 0.78.2 with theme pure" />
+    <meta name="generator" content="Hugo 0.80.0 with theme pure" />
     <title>Ordinal Logit and Markov Chain Process Vectorization - Q. Weng</title>
     
     
@@ -151,7 +151,7 @@ Load libaries # libs import pandas as pd import numpy as np import time import o
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">238</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">239</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">3</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">12</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">135</span></li>
@@ -217,7 +217,7 @@ Load libaries # libs import pandas as pd import numpy as np import time import o
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">369</span></li>
+                    class="tag-list-count">370</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -233,6 +233,10 @@ Load libaries # libs import pandas as pd import numpy as np import time import o
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/monotonic/" class="tag-list-link">monotonic</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/num/" class="tag-list-link">num</a><span
                     class="tag-list-count">1</span></li>
             
             
@@ -403,7 +407,7 @@ y = y.reshape(n,6,5)
 # prob_x8 = y[0], prob_x7 = y[1]-y[0], ..., 
 # prob_x4=y[-2]-y[-1], prob_x3 = 1-y[-1] 
 p_f8  = y[:,:,0].reshape(n,-1,1)
-p_f74 = np.diff(y[:,:,:])
+p_f74 = np.flip(np.diff(y[:,:,:]),2)
 p_f3  = (1- y[:,:,-1]).reshape(n,-1,1)
         
 tran_M = np.dstack((p_f3, p_f74, p_f8))
@@ -479,7 +483,7 @@ np.tensordot(b,a,axes=((1),(1))).swapaxes(0,1)
 </ul>
   <div class="copyright">
     &copy;2019  -
-    2020
+    2021
 
   </div>
 </footer>

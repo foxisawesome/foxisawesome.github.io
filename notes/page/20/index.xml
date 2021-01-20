@@ -11,6 +11,17 @@
     
     
     <item>
+      <title>204 Count Primes</title>
+      <link>https://foxisawesome.github.io/posts/204-count-primes/</link>
+      <pubDate>Sun, 12 Apr 2020 21:33:18 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/204-count-primes/</guid>
+      <description>LC 204 Count Primes   Count the number of prime numbers less than a non-negative number, **n**.
+ Solution 2020-09-12 Notes:   In mathematics, the sieve of Eratosthenes is an ancient algorithm for finding all prime numbers up to any given limit.
+  class Solution: def countPrimes(self, n: int) -&amp;gt; int: if n &amp;lt; 2: return 0 grid = [1] * n grid[0] = 0 grid[1] = 0 for i in range(2,int(n**0.</description>
+    </item>
+    
+    <item>
       <title>69 Sqrtx</title>
       <link>https://foxisawesome.github.io/posts/69-sqrtx/</link>
       <pubDate>Sat, 07 Mar 2020 22:51:59 -0400</pubDate>
@@ -55,6 +66,18 @@ Hobbies Photography • Sports</description>
 1. Random Undersampling and Oversampling A widely adopted and perhaps the most straightforward method for dealing with highly imbalanced datasets is called resampling. It consists of removing samples from the majority class (under-sampling) and/or adding more examples from the minority class (over-sampling).
 Let us first create some example imbalanced data.
 from sklearn.datasets import make_classification X, y = make_classification( n_classes=2, class_sep=1.5, weights=[0.</description>
+    </item>
+    
+    <item>
+      <title></title>
+      <link>https://foxisawesome.github.io/notes/nas/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>https://foxisawesome.github.io/notes/nas/</guid>
+      <description>rsync rsync -avh ~/Dropbox ninja@192.168.0.230:/volume3/backup 
+rsync -avh --backup –-backup-dir=”backup $(date +\%Y-\%m-\%d)” –-delete /Users/tnelson/Desktop /Volumes/DocsBackup
+https://eshop.macsales.com/blog/45185-mac-101-learn-the-power-of-rsync-for-backup-remote-archive-systems/
+rsync -rtb –backup-dir=”/volume3/vol4_8T/backup/backup $(date +\%Y-\%m-\%d)” –delete ~/Downloads/stat_notes -e ssh ninja@192.168.0.230:/volume3/vol4_8T/backup 2&amp;gt;~/Downloads/rsync_error.log</description>
     </item>
     
     <item>

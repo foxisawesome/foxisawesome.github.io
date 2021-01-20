@@ -11,6 +11,18 @@
     
     
     <item>
+      <title>627 Swap Salary</title>
+      <link>https://foxisawesome.github.io/posts/627-swap-salary/</link>
+      <pubDate>Tue, 29 Sep 2020 13:54:07 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/627-swap-salary/</guid>
+      <description>LC 627 Swap Salary   SQL Schema
+Given a table salary, such as the one below, that has m=male and f=female values. Swap all f and m values (i.e., change all f values to m and vice versa) with a single update statement and no intermediate temp table.
+Note that you must write a single update statement, DO NOT write any select statement for this problem.
+ Solution 2020-09-29 Notes:  UPDATE statement.</description>
+    </item>
+    
+    <item>
       <title>577 Employee Bonus</title>
       <link>https://foxisawesome.github.io/posts/577-employee-bonus/</link>
       <pubDate>Tue, 29 Sep 2020 13:49:21 -0400</pubDate>
@@ -183,15 +195,6 @@ Activity table: +-----------+-----------+------------+--------------+ | player_i
       
       <guid>https://foxisawesome.github.io/posts/74-search-a-2d-matrix/</guid>
       <description>LC 74 Search a 2d Matrix Write an efficient algorithm that searches for a value in an m x n matrix. This matrix has the following properties: Integers in each row are sorted from left to right. The first integer of each row is greater than the last integer of the previous row. Solution 2020-09-25 Notes: Right bound binary search returns the closest left bound, e.g. binarySearch([1,3,5,7], 4). 两次</description>
-    </item>
-    
-    <item>
-      <title>Cheatsheet</title>
-      <link>https://foxisawesome.github.io/notes/cheatsheet/</link>
-      <pubDate>Fri, 25 Sep 2020 19:13:47 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/notes/cheatsheet/</guid>
-      <description> [[x,y] for x in [0,3] for y in [6,9]]: generate pairs [[0, 6], [0, 9], [3, 6], [3, 9]] [[x,y] for x, y in zip([&#39;a&#39;,&#39;b&#39;],[&#39;c&#39;,&#39;d&#39;])]: [[&amp;lsquo;a&amp;rsquo;, &amp;lsquo;c&amp;rsquo;], [&amp;lsquo;b&amp;rsquo;, &amp;rsquo;d&#39;]] one liner to create dictionary:lookup = {val: i for i, val in enumerate(order)} this reverse check dict and return max val count in dict  max_val = max(dict.values()) max_freq = max(dict, key=dict.get) for key, val in dict.items(): if val == max_val: return key sorted_dict = sorted(dict, key = lambda x: (-dict[x]) ) sorted_dict[0]   sort a by b: [x for _,x in sorted(zip(b,a))]  </description>
     </item>
     
   </channel>

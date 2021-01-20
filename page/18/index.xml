@@ -5,10 +5,23 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 06 Dec 2020 16:48:55 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 19 Jan 2021 21:05:36 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>166 Fraction to Recurring Decimal</title>
+      <link>https://foxisawesome.github.io/posts/166-fraction-to-recurring-decimal/</link>
+      <pubDate>Sat, 05 Sep 2020 22:05:28 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/166-fraction-to-recurring-decimal/</guid>
+      <description>LC 166 Fraction to Recurring Decimal   Given two integers representing the numerator and denominator of a fraction, return the fraction in string format.
+If the fractional part is repeating, enclose the repeating part in parentheses.
+If multiple answers are possible, just return any of them.
+Extreme case: numer = -2147483648, denominator = -1999
+ Solution 2020-09-05 Notes:  Details: python built-in divmod() returns floor, which is not friendly in negative case.</description>
+    </item>
     
     <item>
       <title>159 Longest Substring With at Most Two Distinct Characters</title>
@@ -207,15 +220,6 @@ board = [ [&#39;A&#39;,&#39;B&#39;,&#39;C&#39;,&#39;E&#39;], [&#39;S&#39;,&#39;F
       
       <guid>https://foxisawesome.github.io/posts/981-time-based-key-value-store/</guid>
       <description>LC 981 Time Based Key Value Store Create a timebased key-value store class TimeMap, that supports two operations. set(string key, string value, int timestamp) Stores the key and value, along with the given timestamp. get(string key, int timestamp) Returns a value such that set(key, value, timestamp_prev) was called previously, with timestamp_prev &amp;lt;= timestamp. If there are multiple such values, it returns the one with the largest timestamp_prev. If there are</description>
-    </item>
-    
-    <item>
-      <title>1041 Robot Bounded in Circle</title>
-      <link>https://foxisawesome.github.io/posts/1041-robot-bounded-in-circle/</link>
-      <pubDate>Mon, 31 Aug 2020 22:14:45 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1041-robot-bounded-in-circle/</guid>
-      <description>LC 1041 Robot Bounded in Circle On an infinite plane, a robot initially stands at (0, 0) and faces north. The robot can receive one of three instructions: &amp;quot;G&amp;quot;: go straight 1 unit; &amp;quot;L&amp;quot;: turn 90 degrees to the left; &amp;quot;R&amp;quot;: turn 90 degress to the right. The robot performs the instructions given in order, and repeats them forever. Return true if and only if there exists a circle in</description>
     </item>
     
   </channel>

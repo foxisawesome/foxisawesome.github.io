@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>608 Tree Node</title>
+      <link>https://foxisawesome.github.io/posts/608-tree-node/</link>
+      <pubDate>Sun, 25 Oct 2020 14:50:31 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/608-tree-node/</guid>
+      <description>LC 608 Tree Node Given a table tree, id is identifier of the tree node and p_id is its parent node&amp;rsquo;s id. +----+------+ | id | p_id | +----+------+ | 1 | null | | 2 | 1 | | 3 | 1 | | 4 | 2 | | 5 | 2 | +----+------+ Each node in the tree can be one of three types: Leaf: if the node</description>
+    </item>
+    
+    <item>
       <title>610 Triangle Judgement</title>
       <link>https://foxisawesome.github.io/posts/610-triangle-judgement/</link>
       <pubDate>Sun, 25 Oct 2020 10:02:33 -0400</pubDate>
@@ -182,17 +191,6 @@ Input: &amp;quot;abc&amp;quot; Output: 3 Explanation: Three palindromic strings:
       
       <guid>https://foxisawesome.github.io/posts/1270-all-people-report-to-the-given-manager/</guid>
       <description>LC 1270 All People Report to the Given Manager Write an SQL query to find employee_id of all employees that directly or indirectly report their work to the head of the company. The indirect relation between managers will not exceed 3 managers as the company is small. Return result table in any order without duplicates. The query result format is in the following example: Employees table: +-------------+---------------+------------+ | employee_id |</description>
-    </item>
-    
-    <item>
-      <title>383 Ransom Note</title>
-      <link>https://foxisawesome.github.io/posts/383-ransom-note/</link>
-      <pubDate>Mon, 19 Oct 2020 19:35:54 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/383-ransom-note/</guid>
-      <description>LC 383 Ransom Note   Given an arbitrary ransom note string and another string containing letters from all the magazines, write a function that will return true if the ransom note can be constructed from the magazines ; otherwise, it will return false.
-Each letter in the magazine string can only be used once in your ransom note.
-Input: ransomNote = &amp;quot;a&amp;quot;, magazine = &amp;quot;b&amp;quot; Output: false   Solution 2020-10-19 Notes:  edge case is acutally hard to get them right in the first place  class Solution: def canConstruct(self, ransomNote: str, magazine: str) -&amp;gt; bool: if not ransomNote: return True if not magazine: return False d = collections.</description>
     </item>
     
   </channel>

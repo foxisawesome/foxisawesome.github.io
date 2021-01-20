@@ -10,6 +10,15 @@
     
     
     <item>
+      <title>9 Palindrome Number</title>
+      <link>https://foxisawesome.github.io/posts/9-palindrome-number/</link>
+      <pubDate>Tue, 19 Jan 2021 21:05:36 -0500</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/9-palindrome-number/</guid>
+      <description>LC 9 Palindrome Number Given an integer x, return true if x is palindrome integer. An integer is a palindrome when it reads the same backward as forward. For example, 121 is palindrome while 123 is not. Solution 2021-01-19 Notes: 不用str()的做法。just keep taking the inverse of x. class Solution: def isPalindrome(self, x: int) -&amp;gt; bool: if</description>
+    </item>
+    
+    <item>
       <title>Ordinal Logit and Markov Chain Process Vectorization</title>
       <link>https://foxisawesome.github.io/notes/ordinal_logit_vect/</link>
       <pubDate>Sun, 06 Dec 2020 16:48:55 -0500</pubDate>
@@ -202,15 +211,6 @@ NPV table: +------+--------+--------+ | id | year | npv | +------+--------+-----
       
       <guid>https://foxisawesome.github.io/posts/1341-movie-rating/</guid>
       <description>LC 1341 Movie Rating Write the following SQL query: Find the name of the user who has rated the greatest number of movies. In case of a tie, return lexicographically smaller user name. Find the movie name with thehighest averagerating inFebruary 2020 In case of a tie, return lexicographically smaller movie name. The query is returned in 2 rows, the query result format is in the following example: Movies table:</description>
-    </item>
-    
-    <item>
-      <title>1336 Number of Transactions per Visit</title>
-      <link>https://foxisawesome.github.io/posts/1336-number-of-transactions-per-visit/</link>
-      <pubDate>Thu, 29 Oct 2020 11:19:23 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/1336-number-of-transactions-per-visit/</guid>
-      <description>LC 1336 Number of Transactions per Visit Write an SQL query to find how many users visited the bank and didn&amp;rsquo;t do any transactions, how many visited the bank and did one transaction and so on. The result table will contain two columns: transactions_count which is the number of transactions done in one visit. visits_count which is the corresponding number of users who did transactions_count in one visit to the</description>
     </item>
     
   </channel>

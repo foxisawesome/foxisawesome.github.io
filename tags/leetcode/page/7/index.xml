@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/tags/leetcode/</link>
     <description>Recent content in leetcode on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 19 Jan 2021 21:05:36 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1197 Minimum Knight Moves</title>
+      <link>https://foxisawesome.github.io/posts/1197-minimum-knight-moves/</link>
+      <pubDate>Sun, 11 Oct 2020 10:38:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1197-minimum-knight-moves/</guid>
+      <description>LC 1197 Minimum Knight Moves In an infinite chess board with coordinates from -infinity to +infinity, you have a knight at square [0, 0]. A knight has 8 possible moves it can make, as illustrated below. Each move is two squares in a cardinal direction, then one square in an orthogonal direction. Solution 2020-10-11 Notes: 这题最优解是dp 但使用naiv</description>
+    </item>
     
     <item>
       <title>835 Image Overlap</title>
@@ -195,15 +204,6 @@ Departments table: +------+--------------------------+ | id | name | +------+---
       <description>LC 1173 Immediate Food Delivery I   Write an SQL query to find the percentage of immediate orders in the table, rounded to 2 decimal places.
 The query result format is in the following example:
 Delivery table: +-------------+-------------+------------+-----------------------------+ | delivery_id | customer_id | order_date | customer_pref_delivery_date | +-------------+-------------+------------+-----------------------------+ | 1 | 1 | 2019-08-01 | 2019-08-02 | | 2 | 5 | 2019-08-02 | 2019-08-02 | | 3 | 1 | 2019-08-11 | 2019-08-11 | | 4 | 3 | 2019-08-24 | 2019-08-26 | | 5 | 4 | 2019-08-21 | 2019-08-22 | | 6 | 2 | 2019-08-11 | 2019-08-13 | +-------------+-------------+------------+-----------------------------+ Result table: +----------------------+ | immediate_percentage | +----------------------+ | 33.</description>
-    </item>
-    
-    <item>
-      <title>763 Partition Labels</title>
-      <link>https://foxisawesome.github.io/posts/763-partition-labels/</link>
-      <pubDate>Wed, 07 Oct 2020 21:12:44 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/763-partition-labels/</guid>
-      <description>LC 763 Partition Labels A string S of lowercase English letters is given. We want to partition this string into as many parts as possible so that each letter appears in at most one part, and return a list of integers representing the size of these parts. Input: S = &amp;quot;ababcbacadefegdehijhklij&amp;quot; Output: [9,7,8] Explanation: The partition is &amp;quot;ababcbaca&amp;quot;, &amp;quot;defegde&amp;quot;, &amp;quot;hijhklij&amp;quot;. This is a partition so that each letter appears in</description>
     </item>
     
   </channel>

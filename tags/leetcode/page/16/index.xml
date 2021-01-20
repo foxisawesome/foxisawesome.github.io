@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/tags/leetcode/</link>
     <description>Recent content in leetcode on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 19 Jan 2021 21:05:36 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/tags/leetcode/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>146 LRU Cache</title>
+      <link>https://foxisawesome.github.io/posts/146-lru-cache/</link>
+      <pubDate>Sun, 13 Sep 2020 21:16:45 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/146-lru-cache/</guid>
+      <description>LC 146 LRU Cache Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put. get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1. put(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity, it should</description>
+    </item>
     
     <item>
       <title>99 Recover Binary Search Tree</title>
@@ -186,15 +195,6 @@ Weather +----+------------+-------------+ | id | recordDate | Temperature | +---
       
       <guid>https://foxisawesome.github.io/posts/178-rank-scores/</guid>
       <description>LC 178 Rank Scores Write a SQL query to rank scores. If there is a tie between two scores, both should have the same ranking. Note that after a tie, the next ranking number should be the next consecutive integer value. In other words, there should be no &amp;ldquo;holes&amp;rdquo; between ranks. +----+-------+ | Id | Score | +----+-------+ | 1 | 3.50 | | 2 | 3.65 | | 3</description>
-    </item>
-    
-    <item>
-      <title>312 Burst Balloons</title>
-      <link>https://foxisawesome.github.io/posts/312-burst-balloons/</link>
-      <pubDate>Thu, 10 Sep 2020 20:58:53 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/312-burst-balloons/</guid>
-      <description>LC 312 Burst Balloons Given n balloons, indexed from 0 to n-1. Each balloon is painted with a number on it represented by array nums. You are asked to burst all the balloons. If the you burst balloon i you will get nums[left] * nums[i] * nums[right] coins. Here left and right are adjacent indices of i. After the burst, the left and right then becomes adjacent. Find the maximum</description>
     </item>
     
   </channel>

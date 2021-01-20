@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 06 Dec 2020 16:48:55 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 19 Jan 2021 21:05:36 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>137 Single Number II</title>
+      <link>https://foxisawesome.github.io/posts/137-single-number-ii/</link>
+      <pubDate>Sun, 04 Oct 2020 20:43:36 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/137-single-number-ii/</guid>
+      <description>LC 137 Single Number II Given a non-empty array of integers, every element appears three times except for one, which appears exactly once. Find that single one. Note: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory? Input: [2,2,3,2] Output: 3 Input: [0,1,0,1,0,1,99] Output: 99 Solution 2020-10-04 Notes: 因为确定那个特殊值只出现一次，</description>
+    </item>
     
     <item>
       <title>130 Surrounded Regions</title>
@@ -181,15 +190,6 @@ Warehouse table: +------------+--------------+-------------+ | name | product_id
       
       <guid>https://foxisawesome.github.io/posts/118-pascals-triangle/</guid>
       <description>LC 118 Pascals Triangle Given a non-negative integer numRows, generate the first numRows of Pascal&amp;rsquo;s triangle. Solution 2020-10-02 Notes: 没有特别的。 class Solution: def generate(self, numRows: int) -&amp;gt; List[List[int]]: ans = [[1]*i for i in range(1,numRows+1)] if numRows &amp;gt;= 3: for i in range(2,numRows): for j in range(1,i): ans[i][j] = sum(ans[i-1][j-1:j+1]) return ans # Time O(N) # Space O(N)</description>
-    </item>
-    
-    <item>
-      <title>8 String to Integer Atoi</title>
-      <link>https://foxisawesome.github.io/posts/8-string-to-integer-atoi/</link>
-      <pubDate>Fri, 02 Oct 2020 11:08:37 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/8-string-to-integer-atoi/</guid>
-      <description>LC 8 String to Integer Atoi Implement atoi which converts a string to an integer. The function first discards as many whitespace characters as necessary until the first non-whitespace character is found. Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible, and interprets them as a numerical value. The string can contain additional characters after those that form</description>
     </item>
     
   </channel>

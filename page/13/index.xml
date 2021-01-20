@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/</link>
     <description>Recent content on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 06 Dec 2020 16:48:55 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 19 Jan 2021 21:05:36 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>1070 Product Sales Analysis III</title>
+      <link>https://foxisawesome.github.io/posts/1070-product-sales-analysis-iii/</link>
+      <pubDate>Wed, 23 Sep 2020 21:32:01 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/1070-product-sales-analysis-iii/</guid>
+      <description>LC 1070 Product Sales Analysis III Write an SQL query that selects the product id, year, quantity, and price for the first year of every product sold. Solution 2020-09-23 Notes: 这题的test case 1有问题，论坛里有类似讨论。 SELECT product_id, year AS first_year, quantity, price FROM ( SELECT product_id, year, quantity, price, ROW_NUMBER() OVER(PARTITION BY product_id</description>
+    </item>
     
     <item>
       <title>1231 Divide Chocolate</title>
@@ -180,15 +189,6 @@
       
       <guid>https://foxisawesome.github.io/posts/542-01-matrix/</guid>
       <description>LC 542 01 Matrix Given a matrix consists of 0 and 1, find the distance of the nearest 0 for each cell. Input: [[0,0,0],[0,1,0],[1,1,1]] Output:[[0,0,0],[0,1,0],[1,2,1]] Solution 2020-09-21 Notes: 很经典的BFS题。这题的关键是BFS每一个step中所有的点都向四周找0，如果找到水</description>
-    </item>
-    
-    <item>
-      <title>200 Number of Islands</title>
-      <link>https://foxisawesome.github.io/posts/200-number-of-islands/</link>
-      <pubDate>Mon, 21 Sep 2020 20:29:23 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/200-number-of-islands/</guid>
-      <description>LC 200 Number of Islands Given a 2d grid map of &#39;1&#39;s (land) and &#39;0&#39;s (water), count the number of islands. An island is surrounded by water and is formed by connecting adjacent lands horizontally or vertically. You may assume all four edges of the grid are all surrounded by water. Input: grid = [ [&amp;quot;1&amp;quot;,&amp;quot;1&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;], [&amp;quot;1&amp;quot;,&amp;quot;1&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;], [&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;1&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;], [&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;0&amp;quot;,&amp;quot;1&amp;quot;,&amp;quot;1&amp;quot;] ] Output: 3 Solution 2020-09-21 Notes: 很经典的B</description>
     </item>
     
   </channel>

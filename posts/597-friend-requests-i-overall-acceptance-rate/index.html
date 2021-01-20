@@ -22,7 +22,7 @@
     
     <meta name="description" content="LC 597 Friend Requests I Overall Acceptance Rate   Write a query to find the overall acceptance rate of requests rounded to 2 decimals, which is the number of acceptance divide the number of requests.
  Solution 2020-10-19 Notes: SELECT round(ifnull( (select count(*) from (select distinct requester_id, accepter_id from request_accepted) a) / (select count(*) from (select distinct sender_id, send_to_id from friend_request) b) ,0),2) as accept_rate  " />
-    <meta name="generator" content="Hugo 0.78.2 with theme pure" />
+    <meta name="generator" content="Hugo 0.80.0 with theme pure" />
     <title>597 Friend Requests I Overall Acceptance Rate - Q. Weng</title>
     
     
@@ -151,7 +151,7 @@
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">238</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">239</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">3</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">12</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">135</span></li>
@@ -217,7 +217,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">369</span></li>
+                    class="tag-list-count">370</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -233,6 +233,10 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/monotonic/" class="tag-list-link">monotonic</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/num/" class="tag-list-link">num</a><span
                     class="tag-list-count">1</span></li>
             
             
@@ -352,7 +356,7 @@
 </ul>
   <div class="copyright">
     &copy;2019  -
-    2020
+    2021
 
   </div>
 </footer>

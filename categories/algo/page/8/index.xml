@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/categories/algo/</link>
     <description>Recent content in algo on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 19 Jan 2021 21:05:36 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/algo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>763 Partition Labels</title>
+      <link>https://foxisawesome.github.io/posts/763-partition-labels/</link>
+      <pubDate>Wed, 07 Oct 2020 21:12:44 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/763-partition-labels/</guid>
+      <description>LC 763 Partition Labels A string S of lowercase English letters is given. We want to partition this string into as many parts as possible so that each letter appears in at most one part, and return a list of integers representing the size of these parts. Input: S = &amp;quot;ababcbacadefegdehijhklij&amp;quot; Output: [9,7,8] Explanation: The partition is &amp;quot;ababcbaca&amp;quot;, &amp;quot;defegde&amp;quot;, &amp;quot;hijhklij&amp;quot;. This is a partition so that each letter appears in</description>
+    </item>
     
     <item>
       <title>1285 Find the Start and End Number of Continuous Ranges</title>
@@ -189,15 +198,6 @@ Project table: +-------------+-------------+ | project_id | employee_id | +-----
       <description>LC 620 Not Boring Movies   X city opened a new cinema, many people would like to go to this cinema. The cinema also gives out a poster indicating the movies’ ratings and descriptions.
 Please write a SQL query to output movies with an odd numbered ID and a description that is not &amp;lsquo;boring&amp;rsquo;. Order the result by rating.
  Solution 2020-10-04 Notes: SELECT * FROM cinema WHERE id % 2 = 1 AND description !</description>
-    </item>
-    
-    <item>
-      <title>137 Single Number II</title>
-      <link>https://foxisawesome.github.io/posts/137-single-number-ii/</link>
-      <pubDate>Sun, 04 Oct 2020 20:43:36 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/137-single-number-ii/</guid>
-      <description>LC 137 Single Number II Given a non-empty array of integers, every element appears three times except for one, which appears exactly once. Find that single one. Note: Your algorithm should have a linear runtime complexity. Could you implement it without using extra memory? Input: [2,2,3,2] Output: 3 Input: [0,1,0,1,0,1,99] Output: 99 Solution 2020-10-04 Notes: 因为确定那个特殊值只出现一次，</description>
     </item>
     
   </channel>

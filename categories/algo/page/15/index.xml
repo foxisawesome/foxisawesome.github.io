@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/categories/algo/</link>
     <description>Recent content in algo on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Tue, 01 Dec 2020 15:17:30 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 19 Jan 2021 21:05:36 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/algo/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>983 Minimum Cost for Tickets</title>
+      <link>https://foxisawesome.github.io/posts/983-minimum-cost-for-tickets/</link>
+      <pubDate>Sat, 19 Sep 2020 22:24:28 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/983-minimum-cost-for-tickets/</guid>
+      <description>LC 983 Minimum Cost for Tickets    Solution 2020-09-19 Notes:    # Time O() # Space O()  </description>
+    </item>
     
     <item>
       <title>322 Coin Change</title>
@@ -181,15 +190,6 @@
       
       <guid>https://foxisawesome.github.io/posts/176-second-highest-salary/</guid>
       <description>LC 176 Second Highest Salary Write a SQL query to get the second highest salary from the Employee table. Solution 2020-09-13 Notes: 这easy题有个小坑，要是table 不存在second highest，于是subquery就不会</description>
-    </item>
-    
-    <item>
-      <title>146 LRU Cache</title>
-      <link>https://foxisawesome.github.io/posts/146-lru-cache/</link>
-      <pubDate>Sun, 13 Sep 2020 21:16:45 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/146-lru-cache/</guid>
-      <description>LC 146 LRU Cache Design and implement a data structure for Least Recently Used (LRU) cache. It should support the following operations: get and put. get(key) - Get the value (will always be positive) of the key if the key exists in the cache, otherwise return -1. put(key, value) - Set or insert the value if the key is not already present. When the cache reached its capacity, it should</description>
     </item>
     
   </channel>

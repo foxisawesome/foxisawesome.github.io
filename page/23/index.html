@@ -20,7 +20,7 @@
     
     
     
-    <meta name="generator" content="Hugo 0.78.2 with theme pure" />
+    <meta name="generator" content="Hugo 0.80.0 with theme pure" />
     <title>Q. Weng</title>
     
     <link rel="alternate" type="application/rss+xml" href="https://foxisawesome.github.io/index.xml" title="Q. Weng" />
@@ -33,7 +33,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://foxisawesome.github.io/" />
-<meta property="og:updated_time" content="2020-12-06T16:48:55-05:00" />
+<meta property="og:updated_time" content="2021-01-19T21:05:36-05:00" />
 <meta itemprop="name" content="Q. Weng">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -139,7 +139,7 @@
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">238</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">239</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">3</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">12</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">135</span></li>
@@ -205,7 +205,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">369</span></li>
+                    class="tag-list-count">370</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -221,6 +221,10 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/monotonic/" class="tag-list-link">monotonic</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/num/" class="tag-list-link">num</a><span
                     class="tag-list-count">1</span></li>
             
             
@@ -271,6 +275,45 @@
     
     
     
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/1607-sellers-with-no-sales/"
+    >1607 Sellers With No Sales</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 1607 Sellers With No Sales   Write an SQL query to report the names of all sellers who did not make any sales in 2020.
+Return the result table ordered by seller_name in ascending order.
+ Solution 2020-10-08 Notes: SELECT DISTINCT seller_name FROM seller WHERE seller_id NOT IN (SELECT seller_id FROM orders WHERE LEFT(sale_date,4)=2020) ORDER BY 1  
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/1607-sellers-with-no-sales/" class="">
+  <time datetime="2020-10-08 16:39:02 -0400 EDT" itemprop="datePublished">2020-10-08</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1607-sellers-with-no-sales/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
     <article
       class="article article-type-page"
       itemscope
@@ -462,44 +505,6 @@ Delivery table: +-------------+-------------+------------+----------------------
 
         <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/763-partition-labels/#comments" class="article-comment-link">Comments</a></span>
       </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/1285-find-the-start-and-end-number-of-continuous-ranges/"
-    >1285 Find the Start and End Number of Continuous Ranges</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 1285 Find the Start and End Number of Continuous Ranges Write an SQL query to find the start and end number of continuous ranges in table Logs. Order the result table by start_id. The query result format is in the following example: Logs table: +------------+ | log_id | +------------+ | 1 | | 2 | | 3 | | 7 | | 8 | | 10 | +------------+ Result
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1285-find-the-start-and-end-number-of-continuous-ranges/" class="">
-  <time datetime="2020-10-06 22:18:54 -0400 EDT" itemprop="datePublished">2020-10-06</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/dia_sql/"> dia_sql </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1285-find-the-start-and-end-number-of-continuous-ranges/#comments" class="article-comment-link">Comments</a></span>
-      </p>
     </article></div>
   
 <nav class="bar bar-footer clearfix" data-stick-bottom>
@@ -533,7 +538,7 @@ Delivery table: +-------------+-------------+------------+----------------------
 </ul>
   <div class="copyright">
     &copy;2019  -
-    2020
+    2021
 
   </div>
 </footer>

@@ -23,7 +23,7 @@
     <meta name="description" content="LC 1555 Bank Account Summary   Write an SQL query to report.
  user_id user_name credit, current balance after performing transactions. credit_limit_breached, check credit_limit (&amp;ldquo;Yes&amp;rdquo; or &amp;ldquo;No&amp;rdquo;)  Return the result table in any order.
 Users table: &#43;------------&#43;--------------&#43;-------------&#43; | user_id | user_name | credit | &#43;------------&#43;--------------&#43;-------------&#43; | 1 | Moustafa | 100 | | 2 | Jonathan | 200 | | 3 | Winston | 10000 | | 4 | Luis | 800 | &#43;------------&#43;--------------&#43;-------------&#43; Transactions table: &#43;------------&#43;------------&#43;------------&#43;----------&#43;---------------&#43; | trans_id | paid_by | paid_to | amount | transacted_on | &#43;------------&#43;------------&#43;------------&#43;----------&#43;---------------&#43; | 1 | 1 | 3 | 400 | 2020-08-01 | | 2 | 3 | 2 | 500 | 2020-08-02 | | 3 | 2 | 1 | 200 | 2020-08-03 | &#43;------------&#43;------------&#43;------------&#43;----------&#43;---------------&#43; Result table: &#43;------------&#43;------------&#43;------------&#43;-----------------------&#43; | user_id | user_name | credit | credit_limit_breached | &#43;------------&#43;------------&#43;------------&#43;-----------------------&#43; | 1 | Moustafa | -100 | Yes | | 2 | Jonathan | 500 | No | | 3 | Winston | 9900 | No | | 4 | Luis | 800 | No | &#43;------------&#43;------------&#43;------------&#43;-----------------------&#43; Moustafa paid $400 on &amp;quot;2020-08-01&amp;quot; and received $200 on &amp;quot;2020-08-03&amp;quot;, credit (100 -400 &#43;200) = -$100 Jonathan received $500 on &amp;quot;2020-08-02&amp;quot; and paid $200 on &amp;quot;2020-08-08&amp;quot;, credit (200 &#43;500 -200) = $500 Winston received $400 on &amp;quot;2020-08-01&amp;quot; and paid $500 on &amp;quot;2020-08-03&amp;quot;, credit (10000 &#43;400 -500) = $9990 Luis didn&#39;t received any transfer, credit = $800   Solution 2020-11-06 Notes: WITH receive AS( SELECT paid_to, SUM(amount) AS amount_r FROM transactions GROUP BY 1 ), payment AS( SELECT paid_by, SUM(amount) AS amount_t FROM transactions GROUP BY 1 ) SELECT user_id, user_name, (credit &#43; IFNULL(amount_r,0) - IFNULL(amount_t,0)) AS credit, (CASE WHEN credit &#43; IFNULL(amount_r,0) - IFNULL(amount_t,0) &amp;lt; 0 THEN &#39;Yes&#39; ELSE &#39;No&#39; END) AS credit_limit_breached FROM users a LEFT JOIN receive b ON a." />
-    <meta name="generator" content="Hugo 0.78.2 with theme pure" />
+    <meta name="generator" content="Hugo 0.80.0 with theme pure" />
     <title>1555 Bank Account Summary - Q. Weng</title>
     
     
@@ -155,7 +155,7 @@ Users table: &#43;------------&#43;--------------&#43;-------------&#43; | user_
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">238</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">239</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">3</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">12</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">135</span></li>
@@ -221,7 +221,7 @@ Users table: &#43;------------&#43;--------------&#43;-------------&#43; | user_
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">369</span></li>
+                    class="tag-list-count">370</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -237,6 +237,10 @@ Users table: &#43;------------&#43;--------------&#43;-------------&#43; | user_
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/monotonic/" class="tag-list-link">monotonic</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/num/" class="tag-list-link">num</a><span
                     class="tag-list-count">1</span></li>
             
             
@@ -411,7 +415,7 @@ ORDER BY 1
 </ul>
   <div class="copyright">
     &copy;2019  -
-    2020
+    2021
 
   </div>
 </footer>

@@ -5,10 +5,19 @@
     <link>https://foxisawesome.github.io/categories/</link>
     <description>Recent content in Categories on Q. Weng</description>
     <generator>Hugo -- gohugo.io</generator>
-    <lastBuildDate>Sun, 06 Dec 2020 16:48:55 -0500</lastBuildDate>
+    <lastBuildDate>Tue, 19 Jan 2021 21:05:36 -0500</lastBuildDate>
     
         <atom:link href="https://foxisawesome.github.io/categories/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>8 String to Integer Atoi</title>
+      <link>https://foxisawesome.github.io/posts/8-string-to-integer-atoi/</link>
+      <pubDate>Fri, 02 Oct 2020 11:08:37 -0400</pubDate>
+      
+      <guid>https://foxisawesome.github.io/posts/8-string-to-integer-atoi/</guid>
+      <description>LC 8 String to Integer Atoi Implement atoi which converts a string to an integer. The function first discards as many whitespace characters as necessary until the first non-whitespace character is found. Then, starting from this character, takes an optional initial plus or minus sign followed by as many numerical digits as possible, and interprets them as a numerical value. The string can contain additional characters after those that form</description>
+    </item>
     
     <item>
       <title>67 Add Binary</title>
@@ -186,18 +195,6 @@ A user can&amp;rsquo;t perform more than one activity at the same time. Return t
       <guid>https://foxisawesome.github.io/posts/1045-customers-who-bought-all-products/</guid>
       <description>LC 1045 Customers Who Bought All Products   Write an SQL query for a report that provides the customer ids from the Customer table that bought all the products in the Product table.
  Solution 2020-09-29 Notes: SELECT customer_id FROM ( SELECT customer_id, COUNT(DISTINCT product_key) AS ct FROM customer GROUP BY customer_id ORDER BY 1 ) a WHERE ct = (SELECT COUNT(*) from product) ORDER BY 1 ;  </description>
-    </item>
-    
-    <item>
-      <title>627 Swap Salary</title>
-      <link>https://foxisawesome.github.io/posts/627-swap-salary/</link>
-      <pubDate>Tue, 29 Sep 2020 13:54:07 -0400</pubDate>
-      
-      <guid>https://foxisawesome.github.io/posts/627-swap-salary/</guid>
-      <description>LC 627 Swap Salary   SQL Schema
-Given a table salary, such as the one below, that has m=male and f=female values. Swap all f and m values (i.e., change all f values to m and vice versa) with a single update statement and no intermediate temp table.
-Note that you must write a single update statement, DO NOT write any select statement for this problem.
- Solution 2020-09-29 Notes:  UPDATE statement.</description>
     </item>
     
   </channel>
