@@ -33,7 +33,7 @@
 <meta property="og:description" content="" />
 <meta property="og:type" content="website" />
 <meta property="og:url" content="https://foxisawesome.github.io/" />
-<meta property="og:updated_time" content="2021-01-19T21:05:36-05:00" />
+<meta property="og:updated_time" content="2021-02-02T20:26:25-05:00" />
 <meta itemprop="name" content="Q. Weng">
 <meta itemprop="description" content="">
 <meta name="twitter:card" content="summary"/>
@@ -139,10 +139,10 @@
     <h3 class="widget-title"> Categories</h3>
     <div class="widget-body">
         <ul class="category-list">
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">239</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">234</span></li>
             <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">3</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">12</span></li>
-            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">135</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">15</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">132</span></li>
         </ul>
     </div>
 </div>
@@ -153,7 +153,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/array/" class="tag-list-link">array</a><span
-                    class="tag-list-count">19</span></li>
+                    class="tag-list-count">17</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/backtracking/" class="tag-list-link">backtracking</a><span
@@ -177,7 +177,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia/" class="tag-list-link">dia</a><span
-                    class="tag-list-count">34</span></li>
+                    class="tag-list-count">32</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia_sql/" class="tag-list-link">dia_sql</a><span
@@ -197,7 +197,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/hashtable/" class="tag-list-link">hashtable</a><span
-                    class="tag-list-count">16</span></li>
+                    class="tag-list-count">15</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/heap/" class="tag-list-link">heap</a><span
@@ -205,7 +205,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
-                    class="tag-list-count">370</span></li>
+                    class="tag-list-count">362</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
@@ -253,7 +253,7 @@
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/tree/" class="tag-list-link">tree</a><span
-                    class="tag-list-count">30</span></li>
+                    class="tag-list-count">29</span></li>
             
             
             <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/two_pointers/" class="tag-list-link">two_pointers</a><span
@@ -284,7 +284,81 @@
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/578-get-highest-answer-rate-question/"
+    href="/posts/sql/586-customer-placing-the-largest-number-of-orders/"
+    >586 Customer Placing the Largest Number of Orders</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 586 Customer Placing the Largest Number of Orders Query the customer_number from the *orders* table for the customer who has placed the largest number of orders. It is guaranteed that exactly one customer will have placed more orders than any other customer. Solution 2020-10-24 Notes: 秒了 select customer_number from (select customer_number, count(order_number) as ct from orders group by 1 order by ct desc) a limit 1
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/sql/586-customer-placing-the-largest-number-of-orders/" class="">
+  <time datetime="2020-10-24 20:14:32 -0400 EDT" itemprop="datePublished">2020-10-24</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/sql/586-customer-placing-the-largest-number-of-orders/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/sql/580-count-student-number-in-departments/"
+    >580 Count Student Number in Departments</a
+  >
+</h1>
+
+      </div>
+      <div class="article-entry text-muted" itemprop="description">
+        LC 580 Count Student Number in Departments Write a query to print the respective department name and number of students majoring in each department for all departments in the department table (even ones with no current students). Sort your results by descending number of students; if two or more departments have the same number of students, then sort those departments alphabetically by department name. *student* table: | student_id | student_name
+      </div>
+      <p class="article-meta">
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/posts/sql/580-count-student-number-in-departments/" class="">
+  <time datetime="2020-10-24 20:11:01 -0400 EDT" itemprop="datePublished">2020-10-24</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/sql/"> sql </a>
+</span>  
+  <span class="article-tag">
+    <i class="icon icon-tags"></i>&nbsp;
+    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
+  </span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/sql/580-count-student-number-in-departments/#comments" class="article-comment-link">Comments</a></span>
+      </p>
+    </article>
+    <article
+      class="article article-type-page"
+      itemscope
+      itemtype="http://schema.org/BlogPosting"
+    >
+      <div class="article-header">
+        <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/posts/sql/578-get-highest-answer-rate-question/"
     >578 Get Highest Answer Rate Question</a
   >
 </h1>
@@ -298,7 +372,7 @@ Write a sql query to identify the question which has the highest answer rate.
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/578-get-highest-answer-rate-question/" class="">
+<a href="https://foxisawesome.github.io/posts/sql/578-get-highest-answer-rate-question/" class="">
   <time datetime="2020-10-24 20:07:05 -0400 EDT" itemprop="datePublished">2020-10-24</time>
 </a>
 </span>
@@ -311,7 +385,7 @@ Write a sql query to identify the question which has the highest answer rate.
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/578-get-highest-answer-rate-question/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/sql/578-get-highest-answer-rate-question/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -323,7 +397,7 @@ Write a sql query to identify the question which has the highest answer rate.
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/570-managers-with-at-least-5-direct-reports/"
+    href="/posts/sql/570-managers-with-at-least-5-direct-reports/"
     >570 Managers With at Least 5 Direct Reports</a
   >
 </h1>
@@ -335,7 +409,7 @@ Write a sql query to identify the question which has the highest answer rate.
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/570-managers-with-at-least-5-direct-reports/" class="">
+<a href="https://foxisawesome.github.io/posts/sql/570-managers-with-at-least-5-direct-reports/" class="">
   <time datetime="2020-10-24 19:50:25 -0400 EDT" itemprop="datePublished">2020-10-24</time>
 </a>
 </span>
@@ -348,7 +422,7 @@ Write a sql query to identify the question which has the highest answer rate.
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/570-managers-with-at-least-5-direct-reports/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/sql/570-managers-with-at-least-5-direct-reports/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -360,7 +434,7 @@ Write a sql query to identify the question which has the highest answer rate.
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/550-game-play-analysis-iv/"
+    href="/posts/sql/550-game-play-analysis-iv/"
     >550 Game Play Analysis Iv</a
   >
 </h1>
@@ -372,7 +446,7 @@ Write a sql query to identify the question which has the highest answer rate.
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/550-game-play-analysis-iv/" class="">
+<a href="https://foxisawesome.github.io/posts/sql/550-game-play-analysis-iv/" class="">
   <time datetime="2020-10-24 19:46:40 -0400 EDT" itemprop="datePublished">2020-10-24</time>
 </a>
 </span>
@@ -385,7 +459,7 @@ Write a sql query to identify the question which has the highest answer rate.
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/550-game-play-analysis-iv/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/sql/550-game-play-analysis-iv/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article>
     <article
@@ -397,7 +471,7 @@ Write a sql query to identify the question which has the highest answer rate.
         <h1 itemprop="name">
   <a
     class="article-title"
-    href="/posts/511-game-play-analysis-i/"
+    href="/posts/sql/511-game-play-analysis-i/"
     >511 Game Play Analysis I</a
   >
 </h1>
@@ -409,7 +483,7 @@ Write a sql query to identify the question which has the highest answer rate.
       <p class="article-meta">
 <span class="article-date">
   <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/511-game-play-analysis-i/" class="">
+<a href="https://foxisawesome.github.io/posts/sql/511-game-play-analysis-i/" class="">
   <time datetime="2020-10-24 19:38:18 -0400 EDT" itemprop="datePublished">2020-10-24</time>
 </a>
 </span>
@@ -422,82 +496,7 @@ Write a sql query to identify the question which has the highest answer rate.
     <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
   </span>
 
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/511-game-play-analysis-i/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/1501-countries-you-can-safely-invest-in/"
-    >1501 Countries You Can Safely Invest In</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 1501 Countries You Can Safely Invest In Write an SQL query to find the countries where this company can invest. Return the result table in any order. The query result format is in the following example. Person table: +----+----------+--------------+ | id | name | phone_number | +----+----------+--------------+ | 3 | Jonathan | 051-1234567 | | 12 | Elvis | 051-7654321 | | 1 | Moncef | 212-1234567 | |
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1501-countries-you-can-safely-invest-in/" class="">
-  <time datetime="2020-10-22 10:50:21 -0400 EDT" itemprop="datePublished">2020-10-22</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-    <a class="article-tag-link" href="/tags/dia_sql/"> dia_sql </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1501-countries-you-can-safely-invest-in/#comments" class="article-comment-link">Comments</a></span>
-      </p>
-    </article>
-    <article
-      class="article article-type-page"
-      itemscope
-      itemtype="http://schema.org/BlogPosting"
-    >
-      <div class="article-header">
-        <h1 itemprop="name">
-  <a
-    class="article-title"
-    href="/posts/1097-game-play-analysis-v/"
-    >1097 Game Play Analysis V</a
-  >
-</h1>
-
-      </div>
-      <div class="article-entry text-muted" itemprop="description">
-        LC 1097 Game Play Analysis V We define the install date of a player to be the first login day of that player. We also define day 1 retention of some date X to be the number of players whose install date is X and they logged back in on the day right after X, divided by the number of players whose install date is X, rounded to 2 decimal
-      </div>
-      <p class="article-meta">
-<span class="article-date">
-  <i class="icon icon-calendar-check"></i>&nbsp;
-<a href="https://foxisawesome.github.io/posts/1097-game-play-analysis-v/" class="">
-  <time datetime="2020-10-22 10:35:41 -0400 EDT" itemprop="datePublished">2020-10-22</time>
-</a>
-</span>
-<span class="article-category">
-  <i class="icon icon-folder"></i>&nbsp;
-  <a class="article-category-link" href="/categories/sql/"> sql </a>
-</span>  
-  <span class="article-tag">
-    <i class="icon icon-tags"></i>&nbsp;
-    <a class="article-tag-link" href="/tags/leetcode/"> leetcode </a>
-  </span>
-
-        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/1097-game-play-analysis-v/#comments" class="article-comment-link">Comments</a></span>
+        <span class="post-comment"><i class="icon icon-comment"></i> &nbsp;<a href="/posts/sql/511-game-play-analysis-i/#comments" class="article-comment-link">Comments</a></span>
       </p>
     </article></div>
   
@@ -516,7 +515,7 @@ Write a sql query to identify the question which has the highest answer rate.
       </li>
     </ul>
     <div class="total-article bar-right">
-      Page:8/64
+      Page:8/63
     </div>
   </div>
 </nav>
@@ -577,8 +576,8 @@ Write a sql query to identify the question which has the highest answer rate.
                 TAGS: 'Tags',
                 UNTITLED: '(Untitled)',
             },
-            ROOT_URL: 'https:\/\/foxisawesome.github.io',
-            CONTENT_URL: 'https:\/\/foxisawesome.github.io\/searchindex.json ',
+            ROOT_URL: 'https:\/\/foxisawesome.github.io\/',
+            CONTENT_URL: 'https:\/\/foxisawesome.github.io\/\/searchindex.json ',
         };
         window.INSIGHT_CONFIG = INSIGHT_CONFIG;
     })(window);

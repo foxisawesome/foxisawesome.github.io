@@ -1,0 +1,491 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+        Random Processes - Q. Weng
+      </title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    
+    <meta name="theme-color" content="#000000" />
+    
+    <meta http-equiv="window-target" content="_top" />
+    
+    
+    <meta name="description" content="Discrete-time Markov Chain Consider a discrete-time random process ${X_m, m=0,1,2,\dots}$. In the very simple case where the $X_m$&amp;rsquo;s are independent, the analysis of this process is relatively straightforward. In this case, there is no &amp;ldquo;memory&amp;rdquo; in the system, so each $X_m$ can be looked at independently from previous ones.
+However, for many real-life processes, the independence assumption is not valid. For example, if $X_m$ is the stock price of a company at time $m \in {0,1,2,." />
+    <meta name="generator" content="Hugo 0.80.0 with theme pure" />
+    <title>Random Processes - Q. Weng</title>
+    
+    
+    <link rel="stylesheet" href="https://foxisawesome.github.io/css/style.min.f9a354d3e7069c2b675555c86f6672f0a152ef9a764068aa27f468cd308a84a0.css">
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+    <meta property="og:title" content="Random Processes" />
+<meta property="og:description" content="Discrete-time Markov Chain Consider a discrete-time random process ${X_m, m=0,1,2,\dots}$. In the very simple case where the $X_m$&rsquo;s are independent, the analysis of this process is relatively straightforward. In this case, there is no &ldquo;memory&rdquo; in the system, so each $X_m$ can be looked at independently from previous ones.
+However, for many real-life processes, the independence assumption is not valid. For example, if $X_m$ is the stock price of a company at time $m \in {0,1,2,." />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://foxisawesome.github.io/notes/random_processes/" />
+<meta property="article:published_time" content="2021-02-02T20:26:25-05:00" />
+<meta property="article:modified_time" content="2021-02-02T20:26:25-05:00" />
+<meta itemprop="name" content="Random Processes">
+<meta itemprop="description" content="Discrete-time Markov Chain Consider a discrete-time random process ${X_m, m=0,1,2,\dots}$. In the very simple case where the $X_m$&rsquo;s are independent, the analysis of this process is relatively straightforward. In this case, there is no &ldquo;memory&rdquo; in the system, so each $X_m$ can be looked at independently from previous ones.
+However, for many real-life processes, the independence assumption is not valid. For example, if $X_m$ is the stock price of a company at time $m \in {0,1,2,.">
+<meta itemprop="datePublished" content="2021-02-02T20:26:25-05:00" />
+<meta itemprop="dateModified" content="2021-02-02T20:26:25-05:00" />
+<meta itemprop="wordCount" content="1178">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Random Processes"/>
+<meta name="twitter:description" content="Discrete-time Markov Chain Consider a discrete-time random process ${X_m, m=0,1,2,\dots}$. In the very simple case where the $X_m$&rsquo;s are independent, the analysis of this process is relatively straightforward. In this case, there is no &ldquo;memory&rdquo; in the system, so each $X_m$ can be looked at independently from previous ones.
+However, for many real-life processes, the independence assumption is not valid. For example, if $X_m$ is the stock price of a company at time $m \in {0,1,2,."/>
+
+    <!--[if lte IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+      <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  
+  
+
+  <body class="main-center theme-white" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/foxisawesome" target="_blank">
+            <img class="img-circle img-rotate" src="https://foxisawesome.github.io/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Q. Weng</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md"></h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>United States</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title"> Categories</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">234</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">15</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">132</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> Tags</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/array/" class="tag-list-link">array</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/backtracking/" class="tag-list-link">backtracking</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/bfs/" class="tag-list-link">bfs</a><span
+                    class="tag-list-count">9</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/binary_search/" class="tag-list-link">binary_search</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/bst/" class="tag-list-link">bst</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dfs/" class="tag-list-link">dfs</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia/" class="tag-list-link">dia</a><span
+                    class="tag-list-count">32</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia_sql/" class="tag-list-link">dia_sql</a><span
+                    class="tag-list-count">23</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dp/" class="tag-list-link">dp</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/graph/" class="tag-list-link">graph</a><span
+                    class="tag-list-count">5</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/greedy/" class="tag-list-link">greedy</a><span
+                    class="tag-list-count">6</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/hashtable/" class="tag-list-link">hashtable</a><span
+                    class="tag-list-count">15</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/heap/" class="tag-list-link">heap</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
+                    class="tag-list-count">362</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
+                    class="tag-list-count">14</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/math/" class="tag-list-link">math</a><span
+                    class="tag-list-count">6</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/matrix/" class="tag-list-link">matrix</a><span
+                    class="tag-list-count">8</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/monotonic/" class="tag-list-link">monotonic</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/num/" class="tag-list-link">num</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/recursion/" class="tag-list-link">recursion</a><span
+                    class="tag-list-count">7</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/sliding_window/" class="tag-list-link">sliding_window</a><span
+                    class="tag-list-count">10</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/sort/" class="tag-list-link">sort</a><span
+                    class="tag-list-count">8</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/stack/" class="tag-list-link">stack</a><span
+                    class="tag-list-count">8</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/string/" class="tag-list-link">string</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/template/" class="tag-list-link">template</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/tree/" class="tag-list-link">tree</a><span
+                    class="tag-list-count">29</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/two_pointers/" class="tag-list-link">two_pointers</a><span
+                    class="tag-list-count">21</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/notes/random_processes/"
+    >Random Processes</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/notes/random_processes/" class="article-date">
+  <time datetime="2021-02-02 20:26:25 -0500 EST" itemprop="datePublished">2021-02-02</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/note/"> note </a>
+</span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/notes/random_processes/#comments"
+            class="article-comment-link">Comments</a></span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h2 id="discrete-time-markov-chain">Discrete-time Markov Chain</h2>
+<p>Consider a discrete-time random process ${X_m, m=0,1,2,\dots}$. In the very simple case where the $X_m$&rsquo;s are independent, the analysis of this process is relatively straightforward. In this case, there is no &ldquo;memory&rdquo; in the system, so each $X_m$ can be looked at independently from previous ones.</p>
+<p>However, for many real-life processes, the independence assumption is not valid. For example, if $X_m$ is the stock price of a company at time $m \in {0,1,2,..}$, then it is reasonable to assume that the $X_m$&rsquo;s are dependent. Therefore, we need to develop models where the value of $X_m$ depends on the previous values. In a Markov chain, $X_{m+1}$ depends on $X_{m}$, but given $X_{m}$, it does not depend on the other previous values $X_0$, $X_1$, $\cdots$, $X_{m-1}$. That is, conditioned on $X_m$, the random variable $X_{m+1}$ is independent of the random variables $X_0$, $X_1$, $\cdots$, $X_{m-1}$.</p>
+<p>Markov chains are usually used to model the evolution of &ldquo;states&rdquo; in probabilistic systems. More specifically, consider a system with the set of possible states $S={s_1, s_2,&hellip;}$. Without loss of generality, the states are usually chosen to be $0$, $1$, $2$, $\cdots$,  or  $1$, $2$, $3$, $\cdots$, depending on which one is more convenient for a particular problem. If $X_n=i$, we say that the system is in state $i$ at time $n$.  The idea behind Markov chains is usually summarized as follows: &ldquo;conditioned on the current state, the past and the future states are independent.&rdquo;</p>
+<p>For example, suppose that we are modeling a queue at a bank. The number of people in the queue is a non-negative integer. Here, the state of the system can be defined as the number of people in the queue. More specifically, if $X_n$ shows the number of people in the queue at time $n$, then $X_n \in S={0,1,2,&hellip;}$. The set $S$ is called the <strong>state space</strong> of the Markov chain. Let us now provide a formal definition for discrete-time Markov chains.</p>
+<p>Discrete-Time Markov Chains</p>
+<p>Consider the random process ${X_n, n=0,1,2,\cdots}$, where $R_{X_i}=S \subset {0,1,2,\cdots}$. We say that this process is a **Markov chain** if
+$$
+P(X_{m+1}=j |X_{m}=i, X_{m-1}=i_{m-1}, \cdots, X_{0}=i_{0}) \<br>
+= P(X_{m+1}=j |X_{m}=i),
+$$
+for all $m, j, i, i_0, i_1, \cdots i_{m-1}$.</p>
+<p>If the number of states is finite, e.g., $S={0,1,2,\cdots, r}$, we call it a <strong>finite</strong> Markov chain.</p>
+<p>If $X_n=j$, we say that the process is in state $j$. The numbers $P(X_{m+1}=j |X_{m}=i)$  are called the **transition probabilities** (of order 1). We assume that the transition probabilities do not depend on time. That is, $P(X_{m+1}=j |X_{m}=i)$ does not depend on $m$. Thus, we can define:
+$$
+p_{ij}= P(X_{m+1}=j |X_{m}=i).
+$$
+In other words, if the process is in state $i$, it will next make a transition to state $j$ with probability $p_{ij}$.</p>
+<p>We often list the transition probabilities in a matrix. The matrix is called the <strong>state transition matrix</strong> or <strong>transition probability matrix</strong> and is usually shown by $P$. Assuming the states are $1$, $2$, $\cdots$, $r$, then the state transition matrix is given by
+$$
+P = \begin{bmatrix}
+p_{11} &amp; p_{12} &amp; &hellip; &amp; p_{1r}  \<br>
+p_{21} &amp; p_{22} &amp; &hellip; &amp; p_{2r}  \<br>
+.      &amp;   .    &amp;  .  &amp;  .      \<br>
+.      &amp;   .    &amp;  .  &amp;  .      \<br>
+.      &amp;   .    &amp;  .  &amp;  .      \<br>
+p_{r1} &amp; p_{r2} &amp; &hellip; &amp; p_{rr}
+\end{bmatrix}.
+$$
+Note that $p_{ij} \geq 0$, and for all $i$, we have
+$$
+\sum_{k=1}^{r} p_{ik} =\sum_{k=1}^{r} P(X_{m+1}=k |X_{m}=i)=1.
+$$</p>
+<p>This is because, given that we are in state $i$, the next state must be one of the possible states. Thus, when we sum over all the possible values of $k$, we should get one. That is, the rows of any state transition matrix must sum to one.</p>
+<h2 id="counting-processes">Counting Processes</h2>
+<p>In some problems, we count the occurrences of some types of events. In such scenarios, we are dealing with a <em>counting process</em>. For example, you might have a random process $N(t)$ that shows the number of customers who arrive at a supermarket by time t starting from time 0. For such a processes, we usually assume $N(0)=0$, so as time passes and customers arrive, $N(t)$ takes positive integer values.</p>
+<hr>
+<p><strong>Definition</strong>
+A random process ${N(t),t∈[0,∞)}$ is said to be a <strong>counting process</strong> if $N(t)$ is the number of events occurred from time 00 up to and including time tt. For a counting process, we assume</p>
+<ol>
+<li>$N(0)=0$;</li>
+<li>$N(t)∈{0,1,2,⋯}$, for all $t∈[0,∞)$;</li>
+<li>for $0≤s&lt;t$, $N(t)−N(s)$ shows the number of events that occur in the interval $(s,t]$.</li>
+</ol>
+<hr>
+<p>Since counting processes have been used to model arrivals (such as the supermarket example above), we usually refer to the occurrence of each event as an &ldquo;arrival&rdquo;. For example, if $N(t)$ is the number of accidents in a city up to time tt, we still refer to each accident as an arrival. Figure 11.1 shows a possible realization and the corresponding sample function of a counting process.</p>
+<p><!-- raw HTML omitted --></p>
+<p>A possible realization and the corresponding sample path of a counting process.By the above definition, the only sources of randomness are the arrival times $T_i$. Before introducing the Poisson process, we would like to provide two definitions.</p>
+<p><strong>Definition</strong></p>
+<blockquote>
+<p>Let ${X(t), t \in [0, \infty)} $ be a continuous-time random process. We say that $X(t)$  has <!-- raw HTML omitted -->independent increments<!-- raw HTML omitted --> if, for all $0 \leq t_1 \lt t_2 \lt t_3 \cdots \lt t_n$, the random variables: $X(t_2)-X(t_1), ; X(t_3)-X(t_2), ; \cdots, ; X(t_n)-X(t_{n-1})$ are independent.</p>
+</blockquote>
+<p>Note that for a counting process, $N(t_i)-N(t_{i-1})$ is the number of arrivals in the interval $(t_{i-1},t_i]$. Thus, a counting process has independent increments if the numbers of arrivals in non-overlapping (disjoint) intervals $(t_1,t_2], (t_2,t_3], ; \cdots, ; (t_{n-1},t_n]$ are independent. Having independent increments simplifies analysis of a counting process. For example, suppose that we would like to find the probability of having $2$ arrivals in the interval $(1,2]$, and $3$ arrivals in the interval $(3,5]$. Since the two intervals $(1,2]$ and $(3,5]$ are disjoint, we can write
+$$
+\begin{align*}
+P\left(\textrm{$2$ arrivals in $(1,2]$  $;$ and  $;$ $3$ arrivals in $(3,5]$}\right) = P\left(\textrm{$2$ arrivals in $(1,2]$}\right) \cdot  P\left(\textrm{$3$ arrivals in $(3,5]$}\right).
+\end{align*}
+$$</p>
+<p><strong>Definition</strong></p>
+<blockquote>
+<p>Let ${X(t), t \in [0, \infty)}$ be a continuous-time random process. We say that $X(t)$  has <!-- raw HTML omitted -->stationary increments<!-- raw HTML omitted --> if, for all $t_2&gt;t_1\geq0$, and all $r&gt;0$, the two random variables $X(t_2)-X(t_1)$  and $X(t_2+r)-X(t_1+r)$ have the same distributions. In other words, the distribution of the difference depends only on the length of the interval $(t_1,t_2]$, and not on the exact location of the interval on the real line.</p>
+</blockquote>
+<p>Note that for a counting process $N(t)$, $N(t_2)-N(t_1)$ is the number of arrivals in the interval $(t_1,t_2]$. We also assume $N(0)=0$. Therefore, a counting process has stationary increments if  for all $t_2&gt;t_1\geq0$, $N(t_2)-N(t_1)$ has the same distribution as $N(t_2-t_1)$. This means that the distribution of the number of arrivals in any interval depends only on the length of the interval, and not on the exact location of the interval on the real line.</p>
+<p>A counting process has <!-- raw HTML omitted -->independent increments<!-- raw HTML omitted --> if the numbers of arrivals in non-overlapping (disjoint) intervals are independent.</p>
+<p>A counting process has <!-- raw HTML omitted -->stationary increments<!-- raw HTML omitted --> if,  for all $t_2&gt;t_1\geq0$, $N(t_2)-N(t_1)$ has the same distribution as $N(t_2-t_1)$.</p>
+<h2 id="reference">Reference</h2>
+<ul>
+<li><a href="https://www.probabilitycourse.com/chapter11/11_1_2_basic_concepts_of_the_poisson_process.php">poisson process</a></li>
+</ul>
+
+    </div>
+    <div class="article-footer">
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/foxisawesome" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/qweng/" target="_blank" title="linkedin" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-linkedin"></i></a></li>
+    <li><a href="https://foxisawesome.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2019  -
+    2021
+
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_SVG"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: true, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/mysql.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://foxisawesome.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://foxisawesome.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'https:\/\/foxisawesome.github.io\/',
+            CONTENT_URL: 'https:\/\/foxisawesome.github.io\/\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://foxisawesome.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-176995936-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>

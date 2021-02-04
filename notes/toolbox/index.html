@@ -1,0 +1,554 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>
+        Handy Toolbox - Q. Weng
+      </title>
+        <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport"
+      content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+    <meta name="renderer" content="webkit">
+    <meta http-equiv="Cache-Control" content="no-transform" />
+    <meta http-equiv="Cache-Control" content="no-siteapp" />
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <meta name="format-detection" content="telephone=no,email=no,adress=no">
+    
+    <meta name="theme-color" content="#000000" />
+    
+    <meta http-equiv="window-target" content="_top" />
+    
+    
+    <meta name="description" content="python setting # libs import pandas as pd import numpy as np import time import os import sys sys.path.insert(1, &#39;/Users/admin/Dropbox/analytics/codes/utility&#39;) import data # plotting setting from matplotlib import pyplot as plt %matplotlib inline import seaborn as sns sns.set_style(&#39;darkgrid&#39;, {&#39;axes.facecolor&#39;: &#39;.9&#39;}) sns.set_palette(palette=&#39;deep&#39;) sns_c = sns.color_palette(palette=&#39;deep&#39;) # display setting from IPython.core.interactiveshell import InteractiveShell InteractiveShell.ast_node_interactivity = &amp;quot;all&amp;quot; from IPython.display import display np.set_printoptions(precision=12) Git git init: initiate git function for the folder git status" />
+    <meta name="generator" content="Hugo 0.80.0 with theme pure" />
+    <title>Handy Toolbox - Q. Weng</title>
+    
+    
+    <link rel="stylesheet" href="https://foxisawesome.github.io/css/style.min.f9a354d3e7069c2b675555c86f6672f0a152ef9a764068aa27f468cd308a84a0.css">
+    
+    <link rel="stylesheet" href="https://cdn.staticfile.org/highlight.js/9.15.10/styles/github.min.css" async>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.css" async>
+    <meta property="og:title" content="Handy Toolbox" />
+<meta property="og:description" content="python setting # libs import pandas as pd import numpy as np import time import os import sys sys.path.insert(1, &#39;/Users/admin/Dropbox/analytics/codes/utility&#39;) import data # plotting setting from matplotlib import pyplot as plt %matplotlib inline import seaborn as sns sns.set_style(&#39;darkgrid&#39;, {&#39;axes.facecolor&#39;: &#39;.9&#39;}) sns.set_palette(palette=&#39;deep&#39;) sns_c = sns.color_palette(palette=&#39;deep&#39;) # display setting from IPython.core.interactiveshell import InteractiveShell InteractiveShell.ast_node_interactivity = &quot;all&quot; from IPython.display import display np.set_printoptions(precision=12) Git git init: initiate git function for the folder git status" />
+<meta property="og:type" content="article" />
+<meta property="og:url" content="https://foxisawesome.github.io/notes/toolbox/" />
+<meta property="article:published_time" content="2021-02-02T13:38:23-05:00" />
+<meta property="article:modified_time" content="2021-02-02T13:38:23-05:00" />
+<meta itemprop="name" content="Handy Toolbox">
+<meta itemprop="description" content="python setting # libs import pandas as pd import numpy as np import time import os import sys sys.path.insert(1, &#39;/Users/admin/Dropbox/analytics/codes/utility&#39;) import data # plotting setting from matplotlib import pyplot as plt %matplotlib inline import seaborn as sns sns.set_style(&#39;darkgrid&#39;, {&#39;axes.facecolor&#39;: &#39;.9&#39;}) sns.set_palette(palette=&#39;deep&#39;) sns_c = sns.color_palette(palette=&#39;deep&#39;) # display setting from IPython.core.interactiveshell import InteractiveShell InteractiveShell.ast_node_interactivity = &quot;all&quot; from IPython.display import display np.set_printoptions(precision=12) Git git init: initiate git function for the folder git status">
+<meta itemprop="datePublished" content="2021-02-02T13:38:23-05:00" />
+<meta itemprop="dateModified" content="2021-02-02T13:38:23-05:00" />
+<meta itemprop="wordCount" content="580">
+
+
+
+<meta itemprop="keywords" content="" />
+<meta name="twitter:card" content="summary"/>
+<meta name="twitter:title" content="Handy Toolbox"/>
+<meta name="twitter:description" content="python setting # libs import pandas as pd import numpy as np import time import os import sys sys.path.insert(1, &#39;/Users/admin/Dropbox/analytics/codes/utility&#39;) import data # plotting setting from matplotlib import pyplot as plt %matplotlib inline import seaborn as sns sns.set_style(&#39;darkgrid&#39;, {&#39;axes.facecolor&#39;: &#39;.9&#39;}) sns.set_palette(palette=&#39;deep&#39;) sns_c = sns.color_palette(palette=&#39;deep&#39;) # display setting from IPython.core.interactiveshell import InteractiveShell InteractiveShell.ast_node_interactivity = &quot;all&quot; from IPython.display import display np.set_printoptions(precision=12) Git git init: initiate git function for the folder git status"/>
+
+    <!--[if lte IE 9]>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/classlist/1.1.20170427/classList.min.js"></script>
+      <![endif]-->
+
+    <!--[if lt IE 9]>
+        <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/dest/respond.min.js"></script>
+      <![endif]-->
+  </head>
+
+  
+  
+
+  <body class="main-center theme-white" itemscope itemtype="http://schema.org/WebPage"><header class="header" itemscope itemtype="http://schema.org/WPHeader">
+    <div class="slimContent">
+      <div class="navbar-header">
+        <div class="profile-block text-center">
+          <a id="avatar" href="https://github.com/foxisawesome" target="_blank">
+            <img class="img-circle img-rotate" src="https://foxisawesome.github.io/avatar.png" width="200" height="200">
+          </a>
+          <h2 id="name" class="hidden-xs hidden-sm">Q. Weng</h2>
+          <h3 id="title" class="hidden-xs hidden-sm hidden-md"></h3>
+          <small id="location" class="text-muted hidden-xs hidden-sm"><i class="icon icon-map-marker"></i>United States</small>
+        </div><div class="search" id="search-form-wrap">
+    <form class="search-form sidebar-form">
+        <div class="input-group">
+            <input type="text" class="search-form-input form-control" placeholder="Search" />
+            <span class="input-group-btn">
+                <button type="submit" class="search-form-submit btn btn-flat" onclick="return false;"><i
+                        class="icon icon-search"></i></button>
+            </span>
+        </div>
+        <div class="ins-search">
+            <div class="ins-search-mask"></div>
+            <div class="ins-search-container">
+                <div class="ins-input-wrapper">
+                    <input type="text" class="ins-search-input" placeholder="Type something..."
+                        x-webkit-speech />
+                    <button type="button" class="close ins-close ins-selectable" data-dismiss="modal"
+                        aria-label="Close"><span aria-hidden="true">×</span></button>
+                </div>
+                <div class="ins-section-wrapper">
+                    <div class="ins-section-container"></div>
+                </div>
+            </div>
+        </div>
+    </form>
+</div>
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#main-navbar" aria-controls="main-navbar" aria-expanded="false">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav id="main-navbar" class="collapse navbar-collapse" itemscope itemtype="http://schema.org/SiteNavigationElement" role="navigation">
+        <ul class="nav navbar-nav main-nav">
+            <li class="menu-item menu-item-home">
+                <a href="/">
+                    <i class="icon icon-home-fill"></i>
+                  <span class="menu-title">Home</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-about">
+                <a href="/about/">
+                    <i class="icon icon-cup-fill"></i>
+                  <span class="menu-title">About</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-categories">
+                <a href="/categories/">
+                    <i class="icon icon-folder"></i>
+                  <span class="menu-title">Categories</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-tags">
+                <a href="/tags/">
+                    <i class="icon icon-tags"></i>
+                  <span class="menu-title">Tags</span>
+                </a>
+            </li>
+            <li class="menu-item menu-item-archives">
+                <a href="/posts/">
+                    <i class="icon icon-archives-fill"></i>
+                  <span class="menu-title">Archives</span>
+                </a>
+            </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+<aside class="sidebar" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    
+      <div class="widget">
+    <h3 class="widget-title"> Categories</h3>
+    <div class="widget-body">
+        <ul class="category-list">
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/algo/" class="category-list-link">algo</a><span class="category-list-count">234</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/ml/" class="category-list-link">ml</a><span class="category-list-count">3</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/note/" class="category-list-link">note</a><span class="category-list-count">15</span></li>
+            <li class="category-list-item"><a href="https://foxisawesome.github.io/categories/sql/" class="category-list-link">sql</a><span class="category-list-count">132</span></li>
+        </ul>
+    </div>
+</div>
+      <div class="widget">
+    <h3 class="widget-title"> Tags</h3>
+    <div class="widget-body">
+        <ul class="tag-list">
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/array/" class="tag-list-link">array</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/backtracking/" class="tag-list-link">backtracking</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/bfs/" class="tag-list-link">bfs</a><span
+                    class="tag-list-count">9</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/binary_search/" class="tag-list-link">binary_search</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/bst/" class="tag-list-link">bst</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dfs/" class="tag-list-link">dfs</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia/" class="tag-list-link">dia</a><span
+                    class="tag-list-count">32</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dia_sql/" class="tag-list-link">dia_sql</a><span
+                    class="tag-list-count">23</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/dp/" class="tag-list-link">dp</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/graph/" class="tag-list-link">graph</a><span
+                    class="tag-list-count">5</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/greedy/" class="tag-list-link">greedy</a><span
+                    class="tag-list-count">6</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/hashtable/" class="tag-list-link">hashtable</a><span
+                    class="tag-list-count">15</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/heap/" class="tag-list-link">heap</a><span
+                    class="tag-list-count">4</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/leetcode/" class="tag-list-link">leetcode</a><span
+                    class="tag-list-count">362</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/linkedlist/" class="tag-list-link">linkedlist</a><span
+                    class="tag-list-count">14</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/math/" class="tag-list-link">math</a><span
+                    class="tag-list-count">6</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/matrix/" class="tag-list-link">matrix</a><span
+                    class="tag-list-count">8</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/monotonic/" class="tag-list-link">monotonic</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/num/" class="tag-list-link">num</a><span
+                    class="tag-list-count">1</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/recursion/" class="tag-list-link">recursion</a><span
+                    class="tag-list-count">7</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/sliding_window/" class="tag-list-link">sliding_window</a><span
+                    class="tag-list-count">10</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/sort/" class="tag-list-link">sort</a><span
+                    class="tag-list-count">8</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/stack/" class="tag-list-link">stack</a><span
+                    class="tag-list-count">8</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/string/" class="tag-list-link">string</a><span
+                    class="tag-list-count">17</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/template/" class="tag-list-link">template</a><span
+                    class="tag-list-count">3</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/tree/" class="tag-list-link">tree</a><span
+                    class="tag-list-count">29</span></li>
+            
+            
+            <li class="tag-list-item"><a href="https://foxisawesome.github.io/tags/two_pointers/" class="tag-list-link">two_pointers</a><span
+                    class="tag-list-count">21</span></li>
+            
+        </ul>
+
+    </div>
+</div>
+  </div>
+</aside>
+
+    
+    
+<aside class="sidebar sidebar-toc collapse" id="collapseToc" itemscope itemtype="http://schema.org/WPSideBar">
+  <div class="slimContent">
+    <h4 class="toc-title">Catalogue</h4>
+    <nav id="toc" class="js-toc toc">
+
+    </nav>
+  </div>
+</aside>
+<main class="main" role="main"><div class="content">
+  <article id="-" class="article article-type-" itemscope
+    itemtype="http://schema.org/BlogPosting">
+    
+    <div class="article-header">
+      <h1 itemprop="name">
+  <a
+    class="article-title"
+    href="/notes/toolbox/"
+    >Handy Toolbox</a
+  >
+</h1>
+
+      <div class="article-meta">
+        
+<span class="article-date">
+  <i class="icon icon-calendar-check"></i>&nbsp;
+<a href="https://foxisawesome.github.io/notes/toolbox/" class="article-date">
+  <time datetime="2021-02-02 13:38:23 -0500 EST" itemprop="datePublished">2021-02-02</time>
+</a>
+</span>
+<span class="article-category">
+  <i class="icon icon-folder"></i>&nbsp;
+  <a class="article-category-link" href="/categories/note/"> note </a>
+</span>
+
+        <span class="post-comment"><i class="icon icon-comment"></i>&nbsp;<a href="/notes/toolbox/#comments"
+            class="article-comment-link">Comments</a></span>
+      </div>
+    </div>
+    <div class="article-entry marked-body js-toc-content" itemprop="articleBody">
+      <h2 id="python-setting">python setting</h2>
+<pre><code class="language-python"># libs
+import pandas as pd
+import numpy as np
+import time
+import os
+import sys
+
+sys.path.insert(1, '/Users/admin/Dropbox/analytics/codes/utility')
+import data
+
+# plotting setting
+from matplotlib import pyplot as plt
+%matplotlib inline
+
+import seaborn as sns
+sns.set_style('darkgrid', {'axes.facecolor': '.9'})
+sns.set_palette(palette='deep')
+sns_c = sns.color_palette(palette='deep')
+
+# display setting
+from IPython.core.interactiveshell import InteractiveShell
+InteractiveShell.ast_node_interactivity = &quot;all&quot;
+from IPython.display import display
+np.set_printoptions(precision=12)
+</code></pre>
+<h2 id="git">Git</h2>
+<p><code>git init</code>: initiate git function for the folder</p>
+<p><code>git status</code></p>
+<p><code>git add *.txt</code></p>
+<p><code>git commit -m “XXX”</code>: could have second <code>-m</code>, for additional message</p>
+<p><code>git log</code></p>
+<p><code>git ls-files --stage</code></p>
+<h3 id="revert--checkout-to-a-prev-commit">revert / checkout to a prev commit</h3>
+<p><code>git checkout commit-SHA-1</code></p>
+<p><code>git reset --merge</code></p>
+<p><code>git switch -c &lt;new branch name&gt; </code></p>
+<h3 id="branch-and-merge">branch and merge</h3>
+<p><code>git branch working</code></p>
+<p><code>git merge working</code>: recursive, Fast Forward, rebasising under master/current branch</p>
+<p><code>git branch -d &lt;branch&gt;</code></p>
+<h2 id="github">Github</h2>
+<p><code>git remote add &lt;name&gt; &lt;url&gt;</code>: add a new remote repo</p>
+<p><code>git remote -v</code>: check all remote repo</p>
+<p><code>git push -u &lt;remote&gt; &lt;branch&gt;</code> :<code>git push -u blog master</code>  -u is to keep syncing with remote,</p>
+<p><code>git clone &lt;url&gt;</code></p>
+<p><code>git pull</code> = fetch and merge</p>
+<p><code>git fetch</code> = just download</p>
+<p><code>git push origin --delete test</code> delete remote origin branch: test</p>
+<p>git checkout hash#</p>
+<p>git revert hash#</p>
+<h2 id="hugo">Hugo</h2>
+<ul>
+<li>create new post: <code>hugo new posts/XXX.md</code></li>
+<li>publish website:<code>hugo server -D --disableFastRender --bind 0.0.0.0 --baseURL http://ip:1313</code></li>
+<li>something reference</li>
+</ul>
+<h3 id="conda">Conda</h3>
+<ul>
+<li>update all package: <code>conda update --all</code></li>
+<li>Clean all cache: <code>conda clean --all</code></li>
+</ul>
+<h2 id="unix">Unix</h2>
+<p><code>grep -r --color '&lt;search string&gt;' folder/path</code>: search content in a folder</p>
+<p><code>ln -s &lt;original/path/*.file&gt; &lt;target/path&gt;</code>: create soft links</p>
+<p><code>du -sh *</code>: disk utility showing folder size</p>
+<p><code>chflags -R hidden stuff</code></p>
+<p><code>pip list --outdated</code></p>
+<h2 id="youtube-dl">YouTube-dl</h2>
+<p><code>youtube-dl -F 'https://www.youtube.com/watch?v=eHsErlPJWUU’</code></p>
+<p><code>youtube-dl -f 18 'url'</code></p>
+<h2 id="ssh">SSH</h2>
+<ol>
+<li><code>ssh-keygen</code></li>
+<li><code>ssh-copy-id -i ~/.ssh/id_rsa admin@ip</code></li>
+<li>need to set .ssh folder on NAS as 755 <code>chmod 755 ~/.ssh</code></li>
+<li><code>ssh admin@ip</code></li>
+</ol>
+<ul>
+<li>
+<p>foward traffic</p>
+<p><code>ssh -D127.0.0.1:9000 admin@ip -p 1987</code> leave it open once opened</p>
+<p>open local terminal check <code>netstat -nat</code></p>
+</li>
+</ul>
+<h2 id="rsync">rsync</h2>
+<ul>
+<li>
+<p>rsync backup files and store removed files to archive folder<code>rsync -aPh --backup --backup-dir=backup_$(date +%Y-%m-%d) --delete ~/file admin@ip:~/backup</code></p>
+</li>
+<li>
+<p>rsync local files to server: <code>rsync -ah local/file admin@ip -p xxx:~/web</code></p>
+</li>
+</ul>
+<h2 id="ffmpeg">ffmpeg</h2>
+<ol>
+<li>remove audio, subtitle track</li>
+</ol>
+<p><code>for x in ./*.mkv; ffmpeg -i $x -map 0 -map -0: a:0 -map -0:s:0 -c copy ./out/$x.mkv</code></p>
+<p>Note:</p>
+<ul>
+<li><code>-map 0</code> selects all streams from the input.</li>
+<li><code>-map -0:a</code> then deselects all audio streams from the input.</li>
+<li><code>-map 0: a:0</code> remove #0 streams from the input.</li>
+<li><code>-map -0:s:0</code> remove #0 subtitle streams from the input.</li>
+</ul>
+<ol start="2">
+<li>encode to apple HEVC</li>
+</ol>
+<p><code>for x in ./*.mov; ffmpeg -i $x -c:v libx265 -crf 22 -c:a copy -tag:v hvc1 $x.mp4</code></p>
+<pre><code>ffmpeg -i input.mt2s -scodec copy -acodec copy -vcodec copy -f matroska input.mkv
+</code></pre>
+<h2 id="mkvmerge">mkvmerge</h2>
+<p><code>for x in ./*.mkv; mkvmerge -o ./out/$x.mkv -A $x.mp4 -D -a 1,3 $x</code></p>
+<p>-A: no audio; -D: no video; -a 1,3: choose audio stream 1 and 3</p>
+<h2 id="fdupes">fdupes</h2>
+<p><code>fdupes -r -rdN .</code>  recursively remote dupes in the folder leaving only first appear copy.</p>
+<h2 id="网易云音乐">网易云音乐</h2>
+<p><code>cd /Applications/UnblockNeteaseMusic; node app.js -p 80:443 -f 223.252.199.66</code></p>
+<h2 id="mount-a-raid-member-disk">mount a raid member disk</h2>
+<p><a href="https://blog.sleeplessbeastie.eu/2012/05/08/how-to-mount-software-raid1-member-using-mdadm/">https://blog.sleeplessbeastie.eu/2012/05/08/how-to-mount-software-raid1-member-using-mdadm/</a></p>
+<p><code>mkdir /mnt/test</code></p>
+<p><code>fdisk -l</code></p>
+<p><code>parted /dev/sda print</code> to figure out which disk#</p>
+<p><code>sudo mdadm --examine /dev/sda4</code></p>
+<p><code>sudo mdadm -A -R /dev/md9 /dev/sda4</code></p>
+<p><code>sudo mount /dev/md9 /mnt/test</code></p>
+<h2 id="mount-remote-server-folder-to-local-via-sshfs">mount remote server folder to local via sshfs</h2>
+<ul>
+<li>
+<p>mount:  <code>sshfs -o follow_symlinks admin@ip:/volume1 ~/Downloads/vol1</code></p>
+</li>
+<li>
+<p>unmount:  <code>umount -f ~/Downloads/vol1</code></p>
+</li>
+</ul>
+
+    </div>
+    <div class="article-footer">
+    </div>
+  </article>
+<section id="comments">
+</section>
+
+</div>
+
+</main><footer class="footer" itemscope itemtype="http://schema.org/WPFooter">
+<ul class="social-links">
+    <li><a href="https://github.com/foxisawesome" target="_blank" title="github" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-github"></i></a></li>
+    <li><a href="https://www.linkedin.com/in/qweng/" target="_blank" title="linkedin" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-linkedin"></i></a></li>
+    <li><a href="https://foxisawesome.github.io/index.xml" target="_blank" title="rss" data-toggle=tooltip data-placement=top >
+            <i class="icon icon-rss"></i></a></li>
+</ul>
+  <div class="copyright">
+    &copy;2019  -
+    2021
+
+  </div>
+</footer>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.7/MathJax.js?config=TeX-MML-AM_SVG"></script>
+
+<script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+            showMathMenu: true, //disables context menu
+            tex2jax: {
+            inlineMath: [ ['$','$'], ['\\(','\\)'] ]
+           }
+    });
+</script>
+
+
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.4.1/dist/jquery.min.js"></script>
+<script>
+    window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')
+</script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/highlight.min.js"></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/python.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/javascript.min.js" defer></script>
+<script type="text/javascript" src="https://cdn.staticfile.org/highlight.js/9.15.10/languages/mysql.min.js" defer></script><script>
+    hljs.configure({
+        tabReplace: '    ', 
+        classPrefix: ''     
+        
+    })
+    hljs.initHighlightingOnLoad();
+</script>
+<script src="https://foxisawesome.github.io/js/application.min.bdeb64b910570b6c41badc6a05b7afb0c8ad9efd8525de3c7257d59e786326a3.js"></script>
+<script src="https://foxisawesome.github.io/js/plugin.min.51ff8c7317566f82259170fa36e09c4493adc9b9378b427a01ad3f017ebac7dd.js"></script>
+
+<script>
+    (function (window) {
+        var INSIGHT_CONFIG = {
+            TRANSLATION: {
+                POSTS: 'Posts',
+                PAGES: 'Pages',
+                CATEGORIES: 'Categories',
+                TAGS: 'Tags',
+                UNTITLED: '(Untitled)',
+            },
+            ROOT_URL: 'https:\/\/foxisawesome.github.io\/',
+            CONTENT_URL: 'https:\/\/foxisawesome.github.io\/\/searchindex.json ',
+        };
+        window.INSIGHT_CONFIG = INSIGHT_CONFIG;
+    })(window);
+</script>
+<script type="text/javascript" src="https://foxisawesome.github.io/js/insight.min.a343cd9a5a7698336b28ef3a7c16a3a1b1d2d5fb17dc8ed04022bbe08cc5459073a15bdafa3a8a58cdd56080784bdd69fa70b1ae8597565c799c57ed00f0e120.js" defer></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tocbot/4.4.2/tocbot.min.js"></script>
+<script>
+    tocbot.init({
+        
+        tocSelector: '.js-toc',
+        
+        contentSelector: '.js-toc-content',
+        
+        headingSelector: 'h1, h2, h3',
+        
+        hasInnerContainers: true,
+    });
+</script>
+
+
+<script type="application/javascript">
+var doNotTrack = false;
+if (!doNotTrack) {
+	window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+	ga('create', 'UA-176995936-1', 'auto');
+	
+	ga('send', 'pageview');
+}
+</script>
+<script async src='https://www.google-analytics.com/analytics.js'></script>
+
+  </body>
+</html>
